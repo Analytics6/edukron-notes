@@ -1,0 +1,17 @@
+[
+  {
+    "listing": "/index.html",
+    "items": [
+      "/posts/gradient-descent.html",
+      "/courses/data-science/python-data-analysis.html",
+      "/courses/data-science/data-cleaning.html",
+      "/courses/data-science/exploratory-analysis.html",
+      "/courses/machine-learning/kmeans-from-scratch.html",
+      "/courses/artificial-intelligence/search-and-astar.html",
+      "/courses/artificial-intelligence/neural-network-from-scratch.html",
+      "/courses/artificial-intelligence/language-models-and-attention.html",
+      "/posts/model-evaluation.html",
+      "/posts/publish-cloud.html"
+    ]
+  }
+]
