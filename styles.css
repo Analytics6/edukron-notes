@@ -1,0 +1,231 @@
+:root {
+  --ink: #172033;
+  --muted: #667085;
+  --paper: #fbfcfe;
+  --line: #e6e9f0;
+  --violet: #6d5dfc;
+  --cyan: #32c5d2;
+  --navy: #111827;
+}
+
+body {
+  color: var(--ink);
+  background: #ffffff;
+  font-size: 1.03rem;
+}
+
+.navbar {
+  background: rgba(255, 255, 255, 0.97) !important;
+  border-bottom: 1px solid var(--line);
+  box-shadow: 0 4px 20px rgba(23, 32, 51, 0.04);
+}
+
+.navbar-brand {
+  color: var(--ink) !important;
+  font-weight: 750;
+  letter-spacing: -0.02em;
+}
+
+.navbar .nav-link,
+.navbar .quarto-search-button,
+.navbar .navbar-toggler-icon {
+  color: #465066 !important;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link:focus {
+  color: var(--violet) !important;
+}
+
+.hero {
+  margin: 1.5rem 0 3rem;
+  padding: clamp(2rem, 6vw, 4.5rem);
+  border: 1px solid rgba(109, 93, 252, 0.18);
+  border-radius: 1.5rem;
+  background:
+    linear-gradient(135deg, rgba(109, 93, 252, 0.055), rgba(50, 197, 210, 0.035)),
+    #ffffff;
+  box-shadow: 0 24px 60px rgba(23, 32, 51, 0.08);
+}
+
+.hero-kicker {
+  color: var(--violet);
+  font-size: 0.8rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.hero h1 {
+  max-width: 13ch;
+  margin: 0.5rem 0 1rem;
+  font-size: clamp(2.6rem, 7vw, 5.3rem);
+  line-height: 0.98;
+  letter-spacing: -0.055em;
+}
+
+.hero p {
+  max-width: 48rem;
+  margin-bottom: 1.5rem;
+  color: #4b5565;
+  font-size: clamp(1.05rem, 2vw, 1.28rem);
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.hero-actions a {
+  display: inline-block;
+  padding: 0.72rem 1rem;
+  border: 1px solid var(--line);
+  border-radius: 0.75rem;
+  color: var(--ink);
+  background: #ffffff;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.hero-actions a:first-child {
+  border-color: var(--violet);
+  color: #ffffff;
+  background: var(--violet);
+}
+
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+  margin: 1.25rem 0 3rem;
+}
+
+.feature-grid > p {
+  display: contents;
+}
+
+.feature-card {
+  padding: 1.25rem;
+  border: 1px solid var(--line);
+  border-radius: 1rem;
+  background: rgba(255, 255, 255, 0.82);
+}
+
+.course-card {
+  display: block;
+  padding: 1.4rem;
+  border: 1px solid var(--line);
+  border-radius: 1rem;
+  color: var(--ink);
+  background: #ffffff;
+  box-shadow: 0 12px 28px rgba(23, 32, 51, 0.045);
+  text-decoration: none;
+  transition: transform 160ms ease, border-color 160ms ease, box-shadow 160ms ease;
+}
+
+.course-card:hover {
+  border-color: rgba(109, 93, 252, 0.45);
+  color: var(--ink);
+  box-shadow: 0 16px 34px rgba(23, 32, 51, 0.08);
+  transform: translateY(-3px);
+}
+
+.course-card .course-number {
+  display: block;
+  margin-bottom: 0.55rem;
+  color: var(--violet);
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.course-card strong {
+  display: block;
+  margin-bottom: 0.4rem;
+  font-size: 1.2rem;
+}
+
+.course-card span {
+  color: var(--muted);
+}
+
+.course-outline {
+  width: 100%;
+  margin: 1.5rem 0 2.5rem;
+  border-collapse: separate;
+  border-spacing: 0;
+  border: 1px solid var(--line);
+  border-radius: 0.9rem;
+  overflow: hidden;
+}
+
+.course-outline th,
+.course-outline td {
+  padding: 0.9rem 1rem;
+  border-bottom: 1px solid var(--line);
+}
+
+.course-outline tr:last-child td {
+  border-bottom: 0;
+}
+
+.course-outline th {
+  background: #f8f9fc;
+}
+
+.feature-card strong {
+  display: block;
+  margin-bottom: 0.35rem;
+  font-size: 1.05rem;
+}
+
+.feature-card span {
+  color: var(--muted);
+}
+
+.quarto-listing-default .listing-item {
+  padding: 1.2rem 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.quarto-listing-default .listing-title {
+  font-weight: 750;
+  letter-spacing: -0.02em;
+}
+
+div.sourceCode,
+.cell-output pre {
+  border: 1px solid #dfe3ec;
+  border-radius: 0.75rem;
+}
+
+.cell {
+  margin: 1.4rem 0;
+}
+
+.cell-output {
+  margin-top: 0.55rem;
+  padding-left: 0.85rem;
+  border-left: 3px solid rgba(50, 197, 210, 0.65);
+}
+
+blockquote {
+  border-left-color: var(--violet);
+  color: #4b5565;
+}
+
+code {
+  color: #5548d8;
+}
+
+.callout {
+  border-radius: 0.75rem;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding: 2rem 1.25rem;
+  }
+}

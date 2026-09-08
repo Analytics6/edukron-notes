@@ -1,0 +1,10 @@
+/.quarto/
+/_site/
+/**/.jupyter_cache/
+__pycache__/
+*.py[cod]
+.venv/
+.ipynb_checkpoints/
+
+
+**/*.quarto_ipynb

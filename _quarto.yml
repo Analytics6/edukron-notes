@@ -1,0 +1,76 @@
+project:
+  type: website
+  output-dir: _site
+  render:
+    - "*.ipynb"
+    - "posts/*.ipynb"
+    - "courses/**/*.ipynb"
+
+website:
+  title: "Edukron Notes"
+  site-url: "https://analytics6.github.io/edukron-notes/"
+  description: "A notebook-first academy for data science, machine learning, and artificial intelligence."
+  navbar:
+    background: light
+    left:
+      - text: "Home"
+        href: index.ipynb
+      - text: "Data Science"
+        menu:
+          - text: "Course overview"
+            href: courses/data-science/index.ipynb
+          - text: "Python for data analysis"
+            href: courses/data-science/python-data-analysis.ipynb
+          - text: "Cleaning real-world data"
+            href: courses/data-science/data-cleaning.ipynb
+          - text: "Exploratory data analysis"
+            href: courses/data-science/exploratory-analysis.ipynb
+      - text: "Machine Learning"
+        menu:
+          - text: "Course overview"
+            href: courses/machine-learning/index.ipynb
+          - text: "Gradient descent, visually"
+            href: posts/gradient-descent.ipynb
+          - text: "A baseline worth trusting"
+            href: posts/model-evaluation.ipynb
+          - text: "K-means from scratch"
+            href: courses/machine-learning/kmeans-from-scratch.ipynb
+      - text: "Artificial Intelligence"
+        menu:
+          - text: "Course overview"
+            href: courses/artificial-intelligence/index.ipynb
+          - text: "Search with A*"
+            href: courses/artificial-intelligence/search-and-astar.ipynb
+          - text: "A neural network from scratch"
+            href: courses/artificial-intelligence/neural-network-from-scratch.ipynb
+          - text: "Language models and attention"
+            href: courses/artificial-intelligence/language-models-and-attention.ipynb
+      - text: "Cloud Setup"
+        href: posts/publish-cloud.ipynb
+      - text: "About"
+        href: about.ipynb
+  search:
+    location: navbar
+    type: overlay
+  page-footer:
+    left: "Built from Jupyter notebooks with Quarto."
+    right: "Code, results, and explanation—together."
+
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: true
+    toc-location: right
+    code-fold: show
+    code-copy: true
+    code-overflow: wrap
+    anchor-sections: true
+    smooth-scroll: true
+
+execute:
+  enabled: true
+  warning: false
+  error: false
+
+jupyter: notebook-blog
