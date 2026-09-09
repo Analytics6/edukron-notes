@@ -104,6 +104,8 @@ ul.task-list li input[type="checkbox"] {
   </li>  
   <li class="nav-item dropdown ">
     <a class="nav-link dropdown-toggle" href="#" id="nav-menu-full-stack-ai" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+      <i class="bi bi-cpu" role="img">
+</i> 
  <span class="menu-text">Full Stack AI</span>
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-full-stack-ai">    
@@ -155,6 +157,8 @@ ul.task-list li input[type="checkbox"] {
   </li>
   <li class="nav-item dropdown ">
     <a class="nav-link dropdown-toggle" href="#" id="nav-menu-azure-data-engineering" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+      <i class="bi bi-database" role="img">
+</i> 
  <span class="menu-text">Azure Data Engineering</span>
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-azure-data-engineering">    
@@ -206,6 +210,8 @@ ul.task-list li input[type="checkbox"] {
   </li>
   <li class="nav-item dropdown ">
     <a class="nav-link dropdown-toggle" href="#" id="nav-menu-azure-devops" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+      <i class="bi bi-infinity" role="img">
+</i> 
  <span class="menu-text">Azure DevOps</span>
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-azure-devops">    
@@ -257,6 +263,8 @@ ul.task-list li input[type="checkbox"] {
   </li>
   <li class="nav-item dropdown ">
     <a class="nav-link dropdown-toggle" href="#" id="nav-menu-interview-questions" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+      <i class="bi bi-question-circle" role="img">
+</i> 
  <span class="menu-text">Interview Questions</span>
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-interview-questions">    
@@ -280,6 +288,8 @@ ul.task-list li input[type="checkbox"] {
   </li>
   <li class="nav-item dropdown ">
     <a class="nav-link dropdown-toggle" href="#" id="nav-menu-project-flows" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+      <i class="bi bi-kanban" role="img">
+</i> 
  <span class="menu-text">Project Flows</span>
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-project-flows">    
@@ -319,8 +329,7 @@ ul.task-list li input[type="checkbox"] {
   <ul>
   <li><a href="#purpose" id="toc-purpose" class="nav-link active" data-scroll-target="#purpose">Purpose</a></li>
   <li><a href="#notebook-format" id="toc-notebook-format" class="nav-link" data-scroll-target="#notebook-format">Notebook format</a></li>
-  <li><a href="#content-status" id="toc-content-status" class="nav-link" data-scroll-target="#content-status">Content status</a></li>
-  <li><a href="#what-to-send-next" id="toc-what-to-send-next" class="nav-link" data-scroll-target="#what-to-send-next">What to send next</a></li>
+  <li><a href="#course-modules" id="toc-course-modules" class="nav-link" data-scroll-target="#course-modules">Course modules</a></li>
   </ul>
 </nav>
     </div>
@@ -368,10 +377,10 @@ ul.task-list li input[type="checkbox"] {
 
 
 <section class="course-overview-hero">
-<span class="overview-eyebrow">Course overview</span>
-<p>
-Workload orchestration, networking, scaling, upgrades, and Azure Kubernetes Service.
-</p>
+<div class="overview-lead">
+<pre><code>&lt;span class="topic-icon"&gt;&lt;i class="bi bi-boxes" aria-hidden="true"&gt;&lt;/i&gt;&lt;/span&gt;
+&lt;div&gt;&lt;span class="overview-eyebrow"&gt;Course overview&lt;/span&gt;&lt;p&gt;Workload orchestration, networking, scaling, upgrades, and Azure Kubernetes Service.&lt;/p&gt;&lt;/div&gt;</code></pre>
+</div>
 </section>
 <div class="overview-meta">
 <div>
@@ -386,39 +395,39 @@ Workload orchestration, networking, scaling, upgrades, and Azure Kubernetes Serv
 </div>
 <section id="purpose" class="level2">
 <h2 class="anchored" data-anchor-id="purpose">Purpose</h2>
-<p>This page is the permanent overview for <strong>Kubernetes &amp; AKS</strong> inside the <strong>Azure DevOps</strong> learning path. It establishes where the material will live and how learners will move through it. The detailed syllabus is intentionally open until you provide the course contents.</p>
+<p>This is the course map for <strong>Kubernetes &amp; AKS</strong> inside the <strong>Azure DevOps</strong> learning path. It defines the learning format and provides a stable home for the detailed notebook sequence.</p>
 </section>
 <section id="notebook-format" class="level2">
 <h2 class="anchored" data-anchor-id="notebook-format">Notebook format</h2>
 <p>Every approved topic will be published as a focused <code>.ipynb</code> lesson using the same readable structure:</p>
 <div class="overview-grid">
 <div class="overview-card">
-<strong>Concept notes</strong><span>Plain-language explanations and useful mental models.</span>
+<i class="bi bi-journal-text" aria-hidden="true"></i><strong>Concept notes</strong><span>Plain-language explanations and useful mental models.</span>
 </div>
 <div class="overview-card">
-<strong>Worked examples</strong><span>Code, commands, diagrams, or configurations with commentary.</span>
+<i class="bi bi-code-square" aria-hidden="true"></i><strong>Worked examples</strong><span>Code, commands, diagrams, or configurations with commentary.</span>
 </div>
 <div class="overview-card">
-<strong>Practice</strong><span>Checks, exercises, and guided challenges in the notebook.</span>
+<i class="bi bi-pencil-square" aria-hidden="true"></i><strong>Practice</strong><span>Checks, exercises, and guided challenges in the notebook.</span>
 </div>
 <div class="overview-card">
-<strong>Recap</strong><span>Key takeaways, common mistakes, and interview prompts.</span>
+<i class="bi bi-check2-circle" aria-hidden="true"></i><strong>Recap</strong><span>Key takeaways, common mistakes, and interview prompts.</span>
 </div>
 </div>
 </section>
-<section id="content-status" class="level2">
-<h2 class="anchored" data-anchor-id="content-status">Content status</h2>
+<section id="course-modules" class="level2">
+<h2 class="anchored" data-anchor-id="course-modules">Course modules</h2>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Note</span>Ready for your material
+<span class="screen-reader-only">Note</span>Syllabus in preparation
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>The navigation and overview are published first. No detailed curriculum has been invented or locked in.</p>
+<p>The detailed sequence will be published here after the curriculum is approved.</p>
 </div>
 </div>
 <table class="caption-top table">
@@ -431,27 +440,23 @@ Workload orchestration, networking, scaling, upgrades, and Azure Kubernetes Serv
 <tbody>
 <tr class="odd">
 <td>Modules</td>
-<td>Awaiting your course contents</td>
+<td>Curriculum review</td>
 </tr>
 <tr class="even">
 <td>Datasets and examples</td>
-<td>Awaiting your preferred material</td>
+<td>Curriculum review</td>
 </tr>
 <tr class="odd">
 <td>Exercises and assessments</td>
-<td>Added after modules are approved</td>
+<td>Scheduled after module approval</td>
 </tr>
 <tr class="even">
 <td>Capstone</td>
-<td>Added after the learning sequence is confirmed</td>
+<td>Scheduled after sequence approval</td>
 </tr>
 </tbody>
 </table>
-</section>
-<section id="what-to-send-next" class="level2">
-<h2 class="anchored" data-anchor-id="what-to-send-next">What to send next</h2>
-<p>Send the module names in the order you want them taught. You can also include notes, links, datasets, exercises, or existing repositories for each module.</p>
-<p><a href="index.html">← Back to Azure DevOps</a></p>
+<p><a href="index.html"><i class="bi bi-arrow-left" aria-hidden="true"></i> Back to Azure DevOps</a></p>
 
 
 </section>
@@ -861,13 +866,13 @@ Workload orchestration, networking, scaling, upgrades, and Azure Kubernetes Serv
 <footer class="footer">
   <div class="nav-footer">
     <div class="nav-footer-left">
-<p>Built from Jupyter notebooks with Quarto.</p>
+<p>© 2026 Edukron Notes</p>
 </div>   
     <div class="nav-footer-center">
       &nbsp;
     </div>
     <div class="nav-footer-right">
-<p>Code, results, and explanation—together.</p>
+<p>Notebook courses for AI, data engineering, and DevOps</p>
 </div>
   </div>
 </footer>
