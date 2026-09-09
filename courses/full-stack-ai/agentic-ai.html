@@ -6,11 +6,11 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Edukron Notes Academy">
-<meta name="dcterms.date" content="2026-09-08">
-<meta name="description" content="Turn missing, duplicated, mistyped, and impossible observations into an auditable dataset.">
+<meta name="author" content="Edukron Notes">
+<meta name="dcterms.date" content="2026-09-09">
+<meta name="description" content="Tool-using AI systems with planning, memory, guardrails, and observability.">
 
-<title>Cleaning real-world data – Edukron Notes</title>
+<title>Agentic AI — Overview – Edukron Notes</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -29,45 +29,10 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for syntax highlighting */
-html { -webkit-text-size-adjust: 100%; }
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-}
 </style>
 
 
-<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js" integrity="sha384-ZvpUoO/+PpLXR1lu4jmpXWu80pZlYUAfxl5NsBMWOEPSjUn/6Z/hRTt8+pR6L4N2" crossorigin="anonymous"></script><script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
 <script src="../../site_libs/quarto-nav/headroom.min.js"></script>
 <script src="../../site_libs/clipboard/clipboard.min.js"></script>
 <script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
@@ -111,9 +76,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   }
 }</script>
 <style>html{ scroll-behavior: smooth; }</style>
-<script src="https://cdn.jsdelivr.net/npm/requirejs@2.3.6/require.min.js" integrity="sha384-c9c+LnTbwQ3aujuU7ULEPVvgLs+Fn6fJUvIGTsuu1ZcCf11fiEubah0ttpca4ntM sha384-6V1/AdqZRWk1KAlWbKBlGhN7VG4iE/yAZcO6NZPMF8od0vukrvr0tg4qY6NSrItx" crossorigin="anonymous"></script>
-
-<script type="application/javascript">define('jquery', [],function() {return window.jQuery;})</script>
 
 
 <link rel="stylesheet" href="../../styles.css">
@@ -355,15 +317,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#learning-goals" id="toc-learning-goals" class="nav-link active" data-scroll-target="#learning-goals">Learning goals</a></li>
-  <li><a href="#profile-problems-before-fixing-them" id="toc-profile-problems-before-fixing-them" class="nav-link" data-scroll-target="#profile-problems-before-fixing-them">1. Profile problems before fixing them</a></li>
-  <li><a href="#normalize-representation-before-comparing-values" id="toc-normalize-representation-before-comparing-values" class="nav-link" data-scroll-target="#normalize-representation-before-comparing-values">2. Normalize representation before comparing values</a></li>
-  <li><a href="#parse-types-and-make-failures-visible" id="toc-parse-types-and-make-failures-visible" class="nav-link" data-scroll-target="#parse-types-and-make-failures-visible">3. Parse types and make failures visible</a></li>
-  <li><a href="#define-what-duplicate-means" id="toc-define-what-duplicate-means" class="nav-link" data-scroll-target="#define-what-duplicate-means">4. Define what duplicate means</a></li>
-  <li><a href="#separate-impossible-from-unusual" id="toc-separate-impossible-from-unusual" class="nav-link" data-scroll-target="#separate-impossible-from-unusual">5. Separate impossible from unusual</a></li>
-  <li><a href="#impute-with-contextand-keep-a-flag" id="toc-impute-with-contextand-keep-a-flag" class="nav-link" data-scroll-target="#impute-with-contextand-keep-a-flag">6. Impute with context—and keep a flag</a></li>
-  <li><a href="#turn-expectations-into-checks" id="toc-turn-expectations-into-checks" class="nav-link" data-scroll-target="#turn-expectations-into-checks">7. Turn expectations into checks</a></li>
-  <li><a href="#cleaning-checklist" id="toc-cleaning-checklist" class="nav-link" data-scroll-target="#cleaning-checklist">Cleaning checklist</a></li>
+  <li><a href="#purpose" id="toc-purpose" class="nav-link active" data-scroll-target="#purpose">Purpose</a></li>
+  <li><a href="#notebook-format" id="toc-notebook-format" class="nav-link" data-scroll-target="#notebook-format">Notebook format</a></li>
+  <li><a href="#content-status" id="toc-content-status" class="nav-link" data-scroll-target="#content-status">Content status</a></li>
+  <li><a href="#what-to-send-next" id="toc-what-to-send-next" class="nav-link" data-scroll-target="#what-to-send-next">What to send next</a></li>
   </ul>
 </nav>
     </div>
@@ -372,17 +329,16 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Cleaning real-world data</h1>
+<h1 class="title">Agentic AI — Overview</h1>
   <div class="quarto-categories">
-    <div class="quarto-category">data-science</div>
-    <div class="quarto-category">cleaning</div>
-    <div class="quarto-category">pandas</div>
+    <div class="quarto-category">Course-overview</div>
+    <div class="quarto-category">full-stack-ai</div>
   </div>
   </div>
 
 <div>
   <div class="description">
-    Turn missing, duplicated, mistyped, and impossible observations into an auditable dataset.
+    Tool-using AI systems with planning, memory, guardrails, and observability.
   </div>
 </div>
 
@@ -392,14 +348,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <div>
     <div class="quarto-title-meta-heading">Author</div>
     <div class="quarto-title-meta-contents">
-             <p>Edukron Notes Academy </p>
+             <p>Edukron Notes </p>
           </div>
   </div>
     
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">September 8, 2026</p>
+      <p class="date">September 9, 2026</p>
     </div>
   </div>
   
@@ -411,452 +367,91 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<p>Cleaning is not deleting everything unusual. It is translating domain rules into explicit, reviewable transformations. A reliable cleaning notebook preserves raw data, measures each problem, applies a justified rule, and checks the result.</p>
-<section id="learning-goals" class="level2">
-<h2 class="anchored" data-anchor-id="learning-goals">Learning goals</h2>
-<p>You will profile missingness, normalize text, parse mixed types, remove exact duplicates, distinguish impossible values from rare values, impute with group context, and write validation checks.</p>
-<div id="dirty-data" class="cell" data-execution_count="1">
-<details open="" class="code-fold">
-<summary>Code</summary>
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>raw <span class="op">=</span> pd.DataFrame({</span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>    <span class="st">"customer_id"</span>: [<span class="st">"C01"</span>, <span class="st">"C02"</span>, <span class="st">"C03"</span>, <span class="st">"C03"</span>, <span class="st">"C04"</span>, <span class="st">"C05"</span>, <span class="st">"C06"</span>, <span class="st">"C07"</span>],</span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>    <span class="st">"city"</span>: [<span class="st">" Bengaluru "</span>, <span class="st">"MUMBAI"</span>, <span class="st">"Bengaluru"</span>, <span class="st">"Bengaluru"</span>, <span class="va">None</span>, <span class="st">"mumbai"</span>, <span class="st">"Delhi"</span>, <span class="st">"delhi "</span>],</span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>    <span class="st">"age"</span>: [<span class="st">"29"</span>, <span class="st">"41"</span>, <span class="st">"unknown"</span>, <span class="st">"unknown"</span>, <span class="st">"-4"</span>, <span class="st">"37"</span>, <span class="st">"212"</span>, <span class="st">"33"</span>],</span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>    <span class="st">"monthly_spend"</span>: [<span class="dv">3200</span>, <span class="dv">5100</span>, np.nan, np.nan, <span class="dv">2800</span>, <span class="dv">4900</span>, <span class="dv">6400</span>, <span class="dv">4500</span>],</span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>    <span class="st">"signup_date"</span>: [<span class="st">"2026-01-05"</span>, <span class="st">"05/02/2026"</span>, <span class="st">"2026-03-12"</span>, <span class="st">"2026-03-12"</span>,</span>
-<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>                    <span class="st">"not recorded"</span>, <span class="st">"2026-04-19"</span>, <span class="st">"2026-02-28"</span>, <span class="st">"2026-06-01"</span>],</span>
-<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>})</span>
-<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>raw</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</details>
-<div class="cell-output cell-output-display" data-execution_count="1">
+<section class="course-overview-hero">
+<span class="overview-eyebrow">Course overview</span>
+<p>
+Tool-using AI systems with planning, memory, guardrails, and observability.
+</p>
+</section>
+<div class="overview-meta">
 <div>
-
-
-<table class="dataframe caption-top table table-sm table-striped small" data-border="1">
+<span>Learning path</span><strong>Full Stack AI</strong>
+</div>
+<div>
+<span>Format</span><strong>Jupyter notebooks</strong>
+</div>
+<div>
+<span>Content status</span><strong>Overview ready</strong>
+</div>
+</div>
+<section id="purpose" class="level2">
+<h2 class="anchored" data-anchor-id="purpose">Purpose</h2>
+<p>This page is the permanent overview for <strong>Agentic AI</strong> inside the <strong>Full Stack AI</strong> learning path. It establishes where the material will live and how learners will move through it. The detailed syllabus is intentionally open until you provide the course contents.</p>
+</section>
+<section id="notebook-format" class="level2">
+<h2 class="anchored" data-anchor-id="notebook-format">Notebook format</h2>
+<p>Every approved topic will be published as a focused <code>.ipynb</code> lesson using the same readable structure:</p>
+<div class="overview-grid">
+<div class="overview-card">
+<strong>Concept notes</strong><span>Plain-language explanations and useful mental models.</span>
+</div>
+<div class="overview-card">
+<strong>Worked examples</strong><span>Code, commands, diagrams, or configurations with commentary.</span>
+</div>
+<div class="overview-card">
+<strong>Practice</strong><span>Checks, exercises, and guided challenges in the notebook.</span>
+</div>
+<div class="overview-card">
+<strong>Recap</strong><span>Key takeaways, common mistakes, and interview prompts.</span>
+</div>
+</div>
+</section>
+<section id="content-status" class="level2">
+<h2 class="anchored" data-anchor-id="content-status">Content status</h2>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Ready for your material
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>The navigation and overview are published first. No detailed curriculum has been invented or locked in.</p>
+</div>
+</div>
+<table class="caption-top table">
 <thead>
 <tr class="header">
-<th data-quarto-table-cell-role="th"></th>
-<th data-quarto-table-cell-role="th">customer_id</th>
-<th data-quarto-table-cell-role="th">city</th>
-<th data-quarto-table-cell-role="th">age</th>
-<th data-quarto-table-cell-role="th">monthly_spend</th>
-<th data-quarto-table-cell-role="th">signup_date</th>
+<th>Overview component</th>
+<th>Current status</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<th data-quarto-table-cell-role="th">0</th>
-<td>C01</td>
-<td>Bengaluru</td>
-<td>29</td>
-<td>3200.0</td>
-<td>2026-01-05</td>
+<td>Modules</td>
+<td>Awaiting your course contents</td>
 </tr>
 <tr class="even">
-<th data-quarto-table-cell-role="th">1</th>
-<td>C02</td>
-<td>MUMBAI</td>
-<td>41</td>
-<td>5100.0</td>
-<td>05/02/2026</td>
+<td>Datasets and examples</td>
+<td>Awaiting your preferred material</td>
 </tr>
 <tr class="odd">
-<th data-quarto-table-cell-role="th">2</th>
-<td>C03</td>
-<td>Bengaluru</td>
-<td>unknown</td>
-<td>NaN</td>
-<td>2026-03-12</td>
+<td>Exercises and assessments</td>
+<td>Added after modules are approved</td>
 </tr>
 <tr class="even">
-<th data-quarto-table-cell-role="th">3</th>
-<td>C03</td>
-<td>Bengaluru</td>
-<td>unknown</td>
-<td>NaN</td>
-<td>2026-03-12</td>
-</tr>
-<tr class="odd">
-<th data-quarto-table-cell-role="th">4</th>
-<td>C04</td>
-<td>NaN</td>
-<td>-4</td>
-<td>2800.0</td>
-<td>not recorded</td>
-</tr>
-<tr class="even">
-<th data-quarto-table-cell-role="th">5</th>
-<td>C05</td>
-<td>mumbai</td>
-<td>37</td>
-<td>4900.0</td>
-<td>2026-04-19</td>
-</tr>
-<tr class="odd">
-<th data-quarto-table-cell-role="th">6</th>
-<td>C06</td>
-<td>Delhi</td>
-<td>212</td>
-<td>6400.0</td>
-<td>2026-02-28</td>
-</tr>
-<tr class="even">
-<th data-quarto-table-cell-role="th">7</th>
-<td>C07</td>
-<td>delhi</td>
-<td>33</td>
-<td>4500.0</td>
-<td>2026-06-01</td>
+<td>Capstone</td>
+<td>Added after the learning sequence is confirmed</td>
 </tr>
 </tbody>
 </table>
-
-</div>
-</div>
-</div>
 </section>
-<section id="profile-problems-before-fixing-them" class="level2">
-<h2 class="anchored" data-anchor-id="profile-problems-before-fixing-them">1. Profile problems before fixing them</h2>
-<p>A missing-value count alone is not enough. Inspect types, duplicate rows, value ranges, and suspicious category spellings. Save these measurements so you can later show what changed.</p>
-<div id="profile-code" class="cell" data-execution_count="2">
-<details open="" class="code-fold">
-<summary>Code</summary>
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>profile <span class="op">=</span> pd.DataFrame({</span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>    <span class="st">"dtype"</span>: raw.dtypes.astype(<span class="bu">str</span>),</span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>    <span class="st">"missing"</span>: raw.isna().<span class="bu">sum</span>(),</span>
-<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>    <span class="st">"unique"</span>: raw.nunique(dropna<span class="op">=</span><span class="va">True</span>),</span>
-<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>})</span>
-<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"exact duplicate rows: </span><span class="sc">{</span>raw<span class="sc">.</span>duplicated()<span class="sc">.</span><span class="bu">sum</span>()<span class="sc">}</span><span class="ss">"</span>)</span>
-<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>profile</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</details>
-<div class="cell-output cell-output-stdout">
-<pre><code>exact duplicate rows: 1</code></pre>
-</div>
-<div class="cell-output cell-output-display" data-execution_count="2">
-<div>
-
-
-<table class="dataframe caption-top table table-sm table-striped small" data-border="1">
-<thead>
-<tr class="header">
-<th data-quarto-table-cell-role="th"></th>
-<th data-quarto-table-cell-role="th">dtype</th>
-<th data-quarto-table-cell-role="th">missing</th>
-<th data-quarto-table-cell-role="th">unique</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<th data-quarto-table-cell-role="th">customer_id</th>
-<td>str</td>
-<td>0</td>
-<td>7</td>
-</tr>
-<tr class="even">
-<th data-quarto-table-cell-role="th">city</th>
-<td>str</td>
-<td>1</td>
-<td>6</td>
-</tr>
-<tr class="odd">
-<th data-quarto-table-cell-role="th">age</th>
-<td>str</td>
-<td>0</td>
-<td>7</td>
-</tr>
-<tr class="even">
-<th data-quarto-table-cell-role="th">monthly_spend</th>
-<td>float64</td>
-<td>2</td>
-<td>6</td>
-</tr>
-<tr class="odd">
-<th data-quarto-table-cell-role="th">signup_date</th>
-<td>str</td>
-<td>0</td>
-<td>7</td>
-</tr>
-</tbody>
-</table>
-
-</div>
-</div>
-</div>
-</section>
-<section id="normalize-representation-before-comparing-values" class="level2">
-<h2 class="anchored" data-anchor-id="normalize-representation-before-comparing-values">2. Normalize representation before comparing values</h2>
-<p>Whitespace and capitalization create false categories. Normalize them first; map aliases only when you have a controlled vocabulary.</p>
-<div id="normalize-code" class="cell" data-execution_count="3">
-<details open="" class="code-fold">
-<summary>Code</summary>
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>clean <span class="op">=</span> raw.copy()</span>
-<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>clean[<span class="st">"city"</span>] <span class="op">=</span> clean[<span class="st">"city"</span>].astype(<span class="st">"string"</span>).<span class="bu">str</span>.strip().<span class="bu">str</span>.title()</span>
-<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>clean[<span class="st">"city"</span>].value_counts(dropna<span class="op">=</span><span class="va">False</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</details>
-<div class="cell-output cell-output-display" data-execution_count="3">
-<pre><code>city
-Bengaluru    3
-Mumbai       2
-Delhi        2
-&lt;NA&gt;         1
-Name: count, dtype: int64[pyarrow]</code></pre>
-</div>
-</div>
-</section>
-<section id="parse-types-and-make-failures-visible" class="level2">
-<h2 class="anchored" data-anchor-id="parse-types-and-make-failures-visible">3. Parse types and make failures visible</h2>
-<p><code>errors='coerce'</code> turns invalid representations into missing values. That is useful only if you count the new failures rather than silently accepting them. Mixed date formats should be parsed deliberately.</p>
-<div id="types-code" class="cell" data-execution_count="4">
-<details open="" class="code-fold">
-<summary>Code</summary>
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>clean[<span class="st">"age"</span>] <span class="op">=</span> pd.to_numeric(clean[<span class="st">"age"</span>], errors<span class="op">=</span><span class="st">"coerce"</span>)</span>
-<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>clean[<span class="st">"signup_date"</span>] <span class="op">=</span> pd.to_datetime(clean[<span class="st">"signup_date"</span>], <span class="bu">format</span><span class="op">=</span><span class="st">"mixed"</span>, errors<span class="op">=</span><span class="st">"coerce"</span>)</span>
-<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>clean[[<span class="st">"age"</span>, <span class="st">"signup_date"</span>]].isna().<span class="bu">sum</span>().rename(<span class="st">"missing_after_parsing"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</details>
-<div class="cell-output cell-output-display" data-execution_count="4">
-<pre><code>age            2
-signup_date    1
-Name: missing_after_parsing, dtype: int64</code></pre>
-</div>
-</div>
-</section>
-<section id="define-what-duplicate-means" class="level2">
-<h2 class="anchored" data-anchor-id="define-what-duplicate-means">4. Define what duplicate means</h2>
-<p>Two identical rows are easy. Repeated customer IDs are a domain question: they might be duplicated exports or legitimate repeated events. Here every row is meant to represent one customer snapshot, so an exact repeated row can be removed.</p>
-<div id="duplicates-code" class="cell" data-execution_count="5">
-<details open="" class="code-fold">
-<summary>Code</summary>
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>before <span class="op">=</span> <span class="bu">len</span>(clean)</span>
-<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>clean <span class="op">=</span> clean.drop_duplicates().copy()</span>
-<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"removed </span><span class="sc">{</span>before <span class="op">-</span> <span class="bu">len</span>(clean)<span class="sc">}</span><span class="ss"> exact duplicate row"</span>)</span>
-<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"customer IDs still duplicated: </span><span class="sc">{</span>clean<span class="sc">.</span>customer_id<span class="sc">.</span>duplicated()<span class="sc">.</span><span class="bu">sum</span>()<span class="sc">}</span><span class="ss">"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</details>
-<div class="cell-output cell-output-stdout">
-<pre><code>removed 1 exact duplicate row
-customer IDs still duplicated: 0</code></pre>
-</div>
-</div>
-</section>
-<section id="separate-impossible-from-unusual" class="level2">
-<h2 class="anchored" data-anchor-id="separate-impossible-from-unusual">5. Separate impossible from unusual</h2>
-<p>An age of 212 is not just an outlier for this customer dataset; it violates a defined range. Replace impossible values with missing so the same imputation policy handles them. Do not automatically delete a rare but valid high spender.</p>
-<div id="rules-code" class="cell" data-execution_count="6">
-<details open="" class="code-fold">
-<summary>Code</summary>
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb10"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>valid_age <span class="op">=</span> clean[<span class="st">"age"</span>].between(<span class="dv">18</span>, <span class="dv">100</span>)</span>
-<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>clean.loc[<span class="op">~</span>valid_age <span class="op">&amp;</span> clean[<span class="st">"age"</span>].notna(), <span class="st">"age"</span>] <span class="op">=</span> np.nan</span>
-<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a>clean[[<span class="st">"customer_id"</span>, <span class="st">"age"</span>, <span class="st">"monthly_spend"</span>]]</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</details>
-<div class="cell-output cell-output-display" data-execution_count="6">
-<div>
-
-
-<table class="dataframe caption-top table table-sm table-striped small" data-border="1">
-<thead>
-<tr class="header">
-<th data-quarto-table-cell-role="th"></th>
-<th data-quarto-table-cell-role="th">customer_id</th>
-<th data-quarto-table-cell-role="th">age</th>
-<th data-quarto-table-cell-role="th">monthly_spend</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<th data-quarto-table-cell-role="th">0</th>
-<td>C01</td>
-<td>29.0</td>
-<td>3200.0</td>
-</tr>
-<tr class="even">
-<th data-quarto-table-cell-role="th">1</th>
-<td>C02</td>
-<td>41.0</td>
-<td>5100.0</td>
-</tr>
-<tr class="odd">
-<th data-quarto-table-cell-role="th">2</th>
-<td>C03</td>
-<td>NaN</td>
-<td>NaN</td>
-</tr>
-<tr class="even">
-<th data-quarto-table-cell-role="th">4</th>
-<td>C04</td>
-<td>NaN</td>
-<td>2800.0</td>
-</tr>
-<tr class="odd">
-<th data-quarto-table-cell-role="th">5</th>
-<td>C05</td>
-<td>37.0</td>
-<td>4900.0</td>
-</tr>
-<tr class="even">
-<th data-quarto-table-cell-role="th">6</th>
-<td>C06</td>
-<td>NaN</td>
-<td>6400.0</td>
-</tr>
-<tr class="odd">
-<th data-quarto-table-cell-role="th">7</th>
-<td>C07</td>
-<td>33.0</td>
-<td>4500.0</td>
-</tr>
-</tbody>
-</table>
-
-</div>
-</div>
-</div>
-</section>
-<section id="impute-with-contextand-keep-a-flag" class="level2">
-<h2 class="anchored" data-anchor-id="impute-with-contextand-keep-a-flag">6. Impute with context—and keep a flag</h2>
-<p>Imputation invents a value. Preserve that fact in an indicator column. We use the city median when available, then fall back to the overall median.</p>
-<div id="impute-code" class="cell" data-execution_count="7">
-<details open="" class="code-fold">
-<summary>Code</summary>
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb11"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>clean[<span class="st">"spend_was_missing"</span>] <span class="op">=</span> clean[<span class="st">"monthly_spend"</span>].isna()</span>
-<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>city_medians <span class="op">=</span> clean.groupby(<span class="st">"city"</span>)[<span class="st">"monthly_spend"</span>].transform(<span class="st">"median"</span>)</span>
-<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a>clean[<span class="st">"monthly_spend"</span>] <span class="op">=</span> (</span>
-<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a>    clean[<span class="st">"monthly_spend"</span>]</span>
-<span id="cb11-5"><a href="#cb11-5" aria-hidden="true" tabindex="-1"></a>    .fillna(city_medians)</span>
-<span id="cb11-6"><a href="#cb11-6" aria-hidden="true" tabindex="-1"></a>    .fillna(clean[<span class="st">"monthly_spend"</span>].median())</span>
-<span id="cb11-7"><a href="#cb11-7" aria-hidden="true" tabindex="-1"></a>)</span>
-<span id="cb11-8"><a href="#cb11-8" aria-hidden="true" tabindex="-1"></a>clean[<span class="st">"age"</span>] <span class="op">=</span> clean[<span class="st">"age"</span>].fillna(clean[<span class="st">"age"</span>].median())</span>
-<span id="cb11-9"><a href="#cb11-9" aria-hidden="true" tabindex="-1"></a>clean</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</details>
-<div class="cell-output cell-output-display" data-execution_count="7">
-<div>
-
-
-<table class="dataframe caption-top table table-sm table-striped small" data-border="1">
-<thead>
-<tr class="header">
-<th data-quarto-table-cell-role="th"></th>
-<th data-quarto-table-cell-role="th">customer_id</th>
-<th data-quarto-table-cell-role="th">city</th>
-<th data-quarto-table-cell-role="th">age</th>
-<th data-quarto-table-cell-role="th">monthly_spend</th>
-<th data-quarto-table-cell-role="th">signup_date</th>
-<th data-quarto-table-cell-role="th">spend_was_missing</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<th data-quarto-table-cell-role="th">0</th>
-<td>C01</td>
-<td>Bengaluru</td>
-<td>29.0</td>
-<td>3200.0</td>
-<td>2026-01-05</td>
-<td>False</td>
-</tr>
-<tr class="even">
-<th data-quarto-table-cell-role="th">1</th>
-<td>C02</td>
-<td>Mumbai</td>
-<td>41.0</td>
-<td>5100.0</td>
-<td>2026-05-02</td>
-<td>False</td>
-</tr>
-<tr class="odd">
-<th data-quarto-table-cell-role="th">2</th>
-<td>C03</td>
-<td>Bengaluru</td>
-<td>35.0</td>
-<td>3200.0</td>
-<td>2026-03-12</td>
-<td>True</td>
-</tr>
-<tr class="even">
-<th data-quarto-table-cell-role="th">4</th>
-<td>C04</td>
-<td>&lt;NA&gt;</td>
-<td>35.0</td>
-<td>2800.0</td>
-<td>NaT</td>
-<td>False</td>
-</tr>
-<tr class="odd">
-<th data-quarto-table-cell-role="th">5</th>
-<td>C05</td>
-<td>Mumbai</td>
-<td>37.0</td>
-<td>4900.0</td>
-<td>2026-04-19</td>
-<td>False</td>
-</tr>
-<tr class="even">
-<th data-quarto-table-cell-role="th">6</th>
-<td>C06</td>
-<td>Delhi</td>
-<td>35.0</td>
-<td>6400.0</td>
-<td>2026-02-28</td>
-<td>False</td>
-</tr>
-<tr class="odd">
-<th data-quarto-table-cell-role="th">7</th>
-<td>C07</td>
-<td>Delhi</td>
-<td>33.0</td>
-<td>4500.0</td>
-<td>2026-06-01</td>
-<td>False</td>
-</tr>
-</tbody>
-</table>
-
-</div>
-</div>
-</div>
-</section>
-<section id="turn-expectations-into-checks" class="level2">
-<h2 class="anchored" data-anchor-id="turn-expectations-into-checks">7. Turn expectations into checks</h2>
-<p>A pipeline is trustworthy when invalid output causes a loud failure. These assertions are a lightweight data contract.</p>
-<div id="validate-code" class="cell" data-execution_count="8">
-<details open="" class="code-fold">
-<summary>Code</summary>
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb12"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="cf">assert</span> clean[<span class="st">"customer_id"</span>].is_unique</span>
-<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a><span class="cf">assert</span> clean[<span class="st">"age"</span>].between(<span class="dv">18</span>, <span class="dv">100</span>).<span class="bu">all</span>()</span>
-<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a><span class="cf">assert</span> clean[<span class="st">"monthly_spend"</span>].ge(<span class="dv">0</span>).<span class="bu">all</span>()</span>
-<span id="cb12-4"><a href="#cb12-4" aria-hidden="true" tabindex="-1"></a><span class="cf">assert</span> clean[<span class="st">"city"</span>].dropna().isin([<span class="st">"Bengaluru"</span>, <span class="st">"Mumbai"</span>, <span class="st">"Delhi"</span>]).<span class="bu">all</span>()</span>
-<span id="cb12-5"><a href="#cb12-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb12-6"><a href="#cb12-6" aria-hidden="true" tabindex="-1"></a>quality_report <span class="op">=</span> pd.Series({</span>
-<span id="cb12-7"><a href="#cb12-7" aria-hidden="true" tabindex="-1"></a>    <span class="st">"rows_before"</span>: <span class="bu">len</span>(raw),</span>
-<span id="cb12-8"><a href="#cb12-8" aria-hidden="true" tabindex="-1"></a>    <span class="st">"rows_after"</span>: <span class="bu">len</span>(clean),</span>
-<span id="cb12-9"><a href="#cb12-9" aria-hidden="true" tabindex="-1"></a>    <span class="st">"remaining_missing_cells"</span>: <span class="bu">int</span>(clean.isna().<span class="bu">sum</span>().<span class="bu">sum</span>()),</span>
-<span id="cb12-10"><a href="#cb12-10" aria-hidden="true" tabindex="-1"></a>    <span class="st">"imputed_spend_values"</span>: <span class="bu">int</span>(clean.spend_was_missing.<span class="bu">sum</span>()),</span>
-<span id="cb12-11"><a href="#cb12-11" aria-hidden="true" tabindex="-1"></a>})</span>
-<span id="cb12-12"><a href="#cb12-12" aria-hidden="true" tabindex="-1"></a>quality_report</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</details>
-<div class="cell-output cell-output-display" data-execution_count="8">
-<pre><code>rows_before                8
-rows_after                 7
-remaining_missing_cells    2
-imputed_spend_values       1
-dtype: int64</code></pre>
-</div>
-</div>
-</section>
-<section id="cleaning-checklist" class="level2">
-<h2 class="anchored" data-anchor-id="cleaning-checklist">Cleaning checklist</h2>
-<ul>
-<li>Preserve the raw input.</li>
-<li>Profile before and after.</li>
-<li>Normalize representation before counting categories.</li>
-<li>Record parsing failures.</li>
-<li>Define duplicate keys from the meaning of one row.</li>
-<li>Distinguish invalid values from uncommon values.</li>
-<li>Flag imputed observations.</li>
-<li>Fail loudly when the output violates a contract.</li>
-</ul>
-<p><strong>Try it yourself:</strong> add an invalid city spelling and a negative spend value. Extend the pipeline so both are detected, then write a quality-report row for each rule. Continue to <strong><a href="exploratory-analysis.html">Exploratory data analysis</a></strong>.</p>
+<section id="what-to-send-next" class="level2">
+<h2 class="anchored" data-anchor-id="what-to-send-next">What to send next</h2>
+<p>Send the module names in the order you want them taught. You can also include notes, links, datasets, exercises, or existing repositories for each module.</p>
+<p><a href="index.html">← Back to Full Stack AI</a></p>
 
 
 </section>

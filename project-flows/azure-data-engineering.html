@@ -6,8 +6,11 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Edukron Notes">
+<meta name="dcterms.date" content="2026-09-09">
+<meta name="description" content="A complete flow for delivering a governed and observable Azure data platform.">
 
-<title>Edukron Notes</title>
+<title>Azure Data Engineering — Overview – Edukron Notes</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -29,23 +32,23 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-f0f4b58164ec92a07fcd2db94b0e5cbd.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-f0f4b58164ec92a07fcd2db94b0e5cbd.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -75,7 +78,7 @@ ul.task-list li input[type="checkbox"] {
 <style>html{ scroll-behavior: smooth; }</style>
 
 
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="../styles.css">
 </head>
 
 <body class="nav-fixed quarto-light">
@@ -85,7 +88,7 @@ ul.task-list li input[type="checkbox"] {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../index.html">
     <span class="navbar-title">Edukron Notes</span>
     </a>
   </div>
@@ -96,7 +99,7 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./index.html" aria-current="page"> 
+    <a class="nav-link" href="../index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item dropdown ">
@@ -105,47 +108,47 @@ ul.task-list li input[type="checkbox"] {
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-full-stack-ai">    
         <li>
-    <a class="dropdown-item" href="./courses/full-stack-ai/index.html">
+    <a class="dropdown-item" href="../courses/full-stack-ai/index.html">
  <span class="dropdown-text">Program overview</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./courses/full-stack-ai/python.html">
+    <a class="dropdown-item" href="../courses/full-stack-ai/python.html">
  <span class="dropdown-text">Python</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./courses/full-stack-ai/sql.html">
+    <a class="dropdown-item" href="../courses/full-stack-ai/sql.html">
  <span class="dropdown-text">SQL</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./courses/full-stack-ai/data-science.html">
+    <a class="dropdown-item" href="../courses/full-stack-ai/data-science.html">
  <span class="dropdown-text">Data Science</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./courses/full-stack-ai/machine-learning.html">
+    <a class="dropdown-item" href="../courses/full-stack-ai/machine-learning.html">
  <span class="dropdown-text">Machine Learning</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./courses/full-stack-ai/artificial-intelligence.html">
+    <a class="dropdown-item" href="../courses/full-stack-ai/artificial-intelligence.html">
  <span class="dropdown-text">Artificial Intelligence</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./courses/full-stack-ai/deep-learning.html">
+    <a class="dropdown-item" href="../courses/full-stack-ai/deep-learning.html">
  <span class="dropdown-text">Deep Learning</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./courses/full-stack-ai/generative-ai.html">
+    <a class="dropdown-item" href="../courses/full-stack-ai/generative-ai.html">
  <span class="dropdown-text">Generative AI</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./courses/full-stack-ai/large-language-models.html">
+    <a class="dropdown-item" href="../courses/full-stack-ai/large-language-models.html">
  <span class="dropdown-text">Large Language Models (LLMs)</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./courses/full-stack-ai/rag.html">
+    <a class="dropdown-item" href="../courses/full-stack-ai/rag.html">
  <span class="dropdown-text">Retrieval Augmented Generation (RAG)</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./courses/full-stack-ai/agentic-ai.html">
+    <a class="dropdown-item" href="../courses/full-stack-ai/agentic-ai.html">
  <span class="dropdown-text">Agentic AI</span></a>
   </li>  
     </ul>
@@ -156,47 +159,47 @@ ul.task-list li input[type="checkbox"] {
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-azure-data-engineering">    
         <li>
-    <a class="dropdown-item" href="./courses/azure-data-engineering/index.html">
+    <a class="dropdown-item" href="../courses/azure-data-engineering/index.html">
  <span class="dropdown-text">Program overview</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./courses/azure-data-engineering/python.html">
+    <a class="dropdown-item" href="../courses/azure-data-engineering/python.html">
  <span class="dropdown-text">Python</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./courses/azure-data-engineering/sql.html">
+    <a class="dropdown-item" href="../courses/azure-data-engineering/sql.html">
  <span class="dropdown-text">SQL</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./courses/azure-data-engineering/fundamentals.html">
+    <a class="dropdown-item" href="../courses/azure-data-engineering/fundamentals.html">
  <span class="dropdown-text">Data Engineering Fundamentals</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./courses/azure-data-engineering/azure-data-factory.html">
+    <a class="dropdown-item" href="../courses/azure-data-engineering/azure-data-factory.html">
  <span class="dropdown-text">Azure Data Factory (ADF)</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./courses/azure-data-engineering/adls-gen2.html">
+    <a class="dropdown-item" href="../courses/azure-data-engineering/adls-gen2.html">
  <span class="dropdown-text">Azure Data Lake Storage Gen2</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./courses/azure-data-engineering/azure-databricks.html">
+    <a class="dropdown-item" href="../courses/azure-data-engineering/azure-databricks.html">
  <span class="dropdown-text">Azure Databricks</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./courses/azure-data-engineering/pyspark.html">
+    <a class="dropdown-item" href="../courses/azure-data-engineering/pyspark.html">
  <span class="dropdown-text">PySpark</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./courses/azure-data-engineering/azure-synapse.html">
+    <a class="dropdown-item" href="../courses/azure-data-engineering/azure-synapse.html">
  <span class="dropdown-text">Azure Synapse Analytics</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./courses/azure-data-engineering/microsoft-fabric.html">
+    <a class="dropdown-item" href="../courses/azure-data-engineering/microsoft-fabric.html">
  <span class="dropdown-text">Microsoft Fabric</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./courses/azure-data-engineering/delta-lake.html">
+    <a class="dropdown-item" href="../courses/azure-data-engineering/delta-lake.html">
  <span class="dropdown-text">Delta Lake</span></a>
   </li>  
     </ul>
@@ -207,47 +210,47 @@ ul.task-list li input[type="checkbox"] {
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-azure-devops">    
         <li>
-    <a class="dropdown-item" href="./courses/azure-devops/index.html">
+    <a class="dropdown-item" href="../courses/azure-devops/index.html">
  <span class="dropdown-text">Program overview</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./courses/azure-devops/linux-shell-scripting.html">
+    <a class="dropdown-item" href="../courses/azure-devops/linux-shell-scripting.html">
  <span class="dropdown-text">Linux &amp; Shell Scripting</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./courses/azure-devops/git-version-control.html">
+    <a class="dropdown-item" href="../courses/azure-devops/git-version-control.html">
  <span class="dropdown-text">Git &amp; Version Control</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./courses/azure-devops/azure-repos.html">
+    <a class="dropdown-item" href="../courses/azure-devops/azure-repos.html">
  <span class="dropdown-text">Azure Repos</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./courses/azure-devops/azure-pipelines.html">
+    <a class="dropdown-item" href="../courses/azure-devops/azure-pipelines.html">
  <span class="dropdown-text">Azure Pipelines (CI/CD)</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./courses/azure-devops/yaml-pipelines.html">
+    <a class="dropdown-item" href="../courses/azure-devops/yaml-pipelines.html">
  <span class="dropdown-text">YAML Pipeline Development</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./courses/azure-devops/docker.html">
+    <a class="dropdown-item" href="../courses/azure-devops/docker.html">
  <span class="dropdown-text">Docker &amp; Containerization</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./courses/azure-devops/kubernetes-aks.html">
+    <a class="dropdown-item" href="../courses/azure-devops/kubernetes-aks.html">
  <span class="dropdown-text">Kubernetes &amp; AKS</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./courses/azure-devops/terraform.html">
+    <a class="dropdown-item" href="../courses/azure-devops/terraform.html">
  <span class="dropdown-text">Terraform Infrastructure as Code</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./courses/azure-devops/azure-cloud-services.html">
+    <a class="dropdown-item" href="../courses/azure-devops/azure-cloud-services.html">
  <span class="dropdown-text">Azure Cloud Services</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./courses/azure-devops/devsecops-monitoring.html">
+    <a class="dropdown-item" href="../courses/azure-devops/devsecops-monitoring.html">
  <span class="dropdown-text">DevSecOps &amp; Monitoring</span></a>
   </li>  
     </ul>
@@ -258,19 +261,19 @@ ul.task-list li input[type="checkbox"] {
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-interview-questions">    
         <li>
-    <a class="dropdown-item" href="./interview-questions/index.html">
+    <a class="dropdown-item" href="../interview-questions/index.html">
  <span class="dropdown-text">Section overview</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./interview-questions/full-stack-ai.html">
+    <a class="dropdown-item" href="../interview-questions/full-stack-ai.html">
  <span class="dropdown-text">Full Stack AI</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./interview-questions/azure-data-engineering.html">
+    <a class="dropdown-item" href="../interview-questions/azure-data-engineering.html">
  <span class="dropdown-text">Azure Data Engineering</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./interview-questions/azure-devops.html">
+    <a class="dropdown-item" href="../interview-questions/azure-devops.html">
  <span class="dropdown-text">Azure DevOps</span></a>
   </li>  
     </ul>
@@ -281,19 +284,19 @@ ul.task-list li input[type="checkbox"] {
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-project-flows">    
         <li>
-    <a class="dropdown-item" href="./project-flows/index.html">
+    <a class="dropdown-item" href="../project-flows/index.html">
  <span class="dropdown-text">Section overview</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./project-flows/full-stack-ai.html">
+    <a class="dropdown-item" href="../project-flows/full-stack-ai.html">
  <span class="dropdown-text">Full Stack AI</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./project-flows/azure-data-engineering.html">
+    <a class="dropdown-item" href="../project-flows/azure-data-engineering.html">
  <span class="dropdown-text">Azure Data Engineering</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./project-flows/azure-devops.html">
+    <a class="dropdown-item" href="../project-flows/azure-devops.html">
  <span class="dropdown-text">Azure DevOps</span></a>
   </li>  
     </ul>
@@ -306,50 +309,149 @@ ul.task-list li input[type="checkbox"] {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#purpose" id="toc-purpose" class="nav-link active" data-scroll-target="#purpose">Purpose</a></li>
+  <li><a href="#notebook-format" id="toc-notebook-format" class="nav-link" data-scroll-target="#notebook-format">Notebook format</a></li>
+  <li><a href="#content-status" id="toc-content-status" class="nav-link" data-scroll-target="#content-status">Content status</a></li>
+  <li><a href="#what-to-send-next" id="toc-what-to-send-next" class="nav-link" data-scroll-target="#what-to-send-next">What to send next</a></li>
+  </ul>
+</nav>
+    </div>
 <!-- main -->
-<main class="content column-page" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
+<main class="content" id="quarto-document-content">
 
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Azure Data Engineering — Overview</h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">Project-flow-overview</div>
+    <div class="quarto-category">project-flows</div>
+  </div>
+  </div>
 
-
-
-<section class="hero">
-<div class="hero-kicker">
-Notebook-first learning library
+<div>
+  <div class="description">
+    A complete flow for delivering a governed and observable Azure data platform.
+  </div>
 </div>
-<h1>
-Learn technology by working through it.
-</h1>
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Edukron Notes </p>
+          </div>
+  </div>
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">September 9, 2026</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section class="course-overview-hero">
+<span class="overview-eyebrow">Project-flow overview</span>
 <p>
-Edukron Notes organizes AI, data engineering, and DevOps into clear learning paths. Every published lesson is a Jupyter notebook designed for notes, examples, outputs, practice, and revision.
+A complete flow for delivering a governed and observable Azure data platform.
 </p>
-<div class="hero-actions">
-<a href="courses/full-stack-ai/index.html">Explore Full Stack AI</a><a href="courses/azure-data-engineering/index.html">Explore Data Engineering</a>
+</section>
+<div class="overview-meta">
+<div>
+<span>Learning path</span><strong>Project Flows</strong>
+</div>
+<div>
+<span>Format</span><strong>Jupyter notebooks</strong>
+</div>
+<div>
+<span>Content status</span><strong>Overview ready</strong>
+</div>
+</div>
+<section id="purpose" class="level2">
+<h2 class="anchored" data-anchor-id="purpose">Purpose</h2>
+<p>This page is the permanent overview for <strong>Azure Data Engineering</strong> inside the <strong>Project Flows</strong> learning path. It establishes where the material will live and how learners will move through it. The detailed syllabus is intentionally open until you provide the course contents.</p>
+</section>
+<section id="notebook-format" class="level2">
+<h2 class="anchored" data-anchor-id="notebook-format">Notebook format</h2>
+<p>Every approved topic will be published as a focused <code>.ipynb</code> lesson using the same readable structure:</p>
+<div class="overview-grid">
+<div class="overview-card">
+<strong>Problem and scope</strong><span>Business goal, users, constraints, and success measures.</span>
+</div>
+<div class="overview-card">
+<strong>Architecture</strong><span>Components, interfaces, data flow, and design choices.</span>
+</div>
+<div class="overview-card">
+<strong>Implementation</strong><span>Build sequence, validation gates, and deliverables.</span>
+</div>
+<div class="overview-card">
+<strong>Operations</strong><span>Deployment, monitoring, security, cost, and improvement.</span>
+</div>
 </div>
 </section>
-<section id="top-level-learning-paths" class="level2">
-<h2 class="anchored" data-anchor-id="top-level-learning-paths">Top-level learning paths</h2>
-<div class="feature-grid program-grid">
-<p><a class="course-card" href="courses/full-stack-ai/index.html"><span class="course-number">Top-level menu</span><strong>Full Stack AI</strong><span>A complete path from programming and data foundations to production-ready generative and agentic AI systems.</span></a> <a class="course-card" href="courses/azure-data-engineering/index.html"><span class="course-number">Top-level menu</span><strong>Azure Data Engineering</strong><span>An end-to-end path for designing, building, governing, and operating modern data platforms on Azure.</span></a> <a class="course-card" href="courses/azure-devops/index.html"><span class="course-number">Top-level menu</span><strong>Azure DevOps</strong><span>A practical path from source control and automation to secure cloud delivery, containers, infrastructure, and operations.</span></a> <a class="course-card" href="interview-questions/index.html"><span class="course-number">Top-level menu</span><strong>Interview Questions</strong><span>Structured preparation pages for concept checks, scenario questions, coding discussions, and system-design interviews.</span></a> <a class="course-card" href="project-flows/index.html"><span class="course-number">Top-level menu</span><strong>Project Flows</strong><span>End-to-end implementation maps that connect requirements, architecture, delivery, testing, deployment, and operations.</span></a></p>
+<section id="content-status" class="level2">
+<h2 class="anchored" data-anchor-id="content-status">Content status</h2>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
 </div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Ready for your material
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>The navigation and overview are published first. No detailed curriculum has been invented or locked in.</p>
+</div>
+</div>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Overview component</th>
+<th>Current status</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Use case</td>
+<td>Awaiting your project scenario</td>
+</tr>
+<tr class="even">
+<td>Technology stack</td>
+<td>Awaiting your selected services and tools</td>
+</tr>
+<tr class="odd">
+<td>Architecture and stages</td>
+<td>Added from your project flow</td>
+</tr>
+<tr class="even">
+<td>Implementation notebooks</td>
+<td>Added after the flow is approved</td>
+</tr>
+</tbody>
+</table>
 </section>
-<section id="curriculum-status" class="level2">
-<h2 class="anchored" data-anchor-id="curriculum-status">Curriculum status</h2>
-<p>The complete navigation and individual overview pages are ready. Detailed module notebooks will be added from the course contents you provide next.</p>
-<div class="overview-meta home-meta">
-<div>
-<span>Course overviews</span><strong>30</strong>
-</div>
-<div>
-<span>Interview overviews</span><strong>3</strong>
-</div>
-<div>
-<span>Project-flow overviews</span><strong>3</strong>
-</div>
-</div>
+<section id="what-to-send-next" class="level2">
+<h2 class="anchored" data-anchor-id="what-to-send-next">What to send next</h2>
+<p>Send the use case, required technologies, expected architecture, and any stages or deliverables that must appear in the flow.</p>
+<p><a href="index.html">← Back to Project Flows</a></p>
 
 
 </section>
@@ -773,5 +875,5 @@ Edukron Notes organizes AI, data engineering, and DevOps into clear learning pat
 
 
 
-<script src="site_libs/quarto-html/zenscroll-min.js"></script>
+<script src="../site_libs/quarto-html/zenscroll-min.js"></script>
 </body></html>
