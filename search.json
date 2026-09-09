@@ -4,7 +4,7 @@
     "href": "project-flows/index.html",
     "title": "Project Flows — Overview",
     "section": "",
-    "text": "&lt;span class=\"topic-icon\"&gt;&lt;i class=\"bi bi-kanban\" aria-hidden=\"true\"&gt;&lt;/i&gt;&lt;/span&gt;\n&lt;div&gt;&lt;span class=\"overview-eyebrow\"&gt;Project Flows&lt;/span&gt;&lt;p&gt;End-to-end implementation maps that connect requirements, architecture, delivery, testing, deployment, and operations.&lt;/p&gt;&lt;/div&gt;"
+    "text": "Project Flows\n\nEnd-to-end implementation maps that connect requirements, architecture, delivery, testing, deployment, and operations."
   },
   {
     "objectID": "project-flows/index.html#choose-an-overview",
@@ -25,7 +25,7 @@
     "href": "project-flows/azure-devops.html",
     "title": "Azure DevOps — Overview",
     "section": "",
-    "text": "&lt;span class=\"topic-icon\"&gt;&lt;i class=\"bi bi-infinity\" aria-hidden=\"true\"&gt;&lt;/i&gt;&lt;/span&gt;\n&lt;div&gt;&lt;span class=\"overview-eyebrow\"&gt;Project-flow overview&lt;/span&gt;&lt;p&gt;A complete flow for establishing secure, repeatable application and infrastructure delivery.&lt;/p&gt;&lt;/div&gt;"
+    "text": "Project-flow overview\n\nA complete flow for establishing secure, repeatable application and infrastructure delivery."
   },
   {
     "objectID": "project-flows/azure-devops.html#purpose",
@@ -53,7 +53,7 @@
     "href": "interview-questions/index.html",
     "title": "Interview Questions — Overview",
     "section": "",
-    "text": "&lt;span class=\"topic-icon\"&gt;&lt;i class=\"bi bi-question-circle\" aria-hidden=\"true\"&gt;&lt;/i&gt;&lt;/span&gt;\n&lt;div&gt;&lt;span class=\"overview-eyebrow\"&gt;Interview Questions&lt;/span&gt;&lt;p&gt;Structured preparation pages for concept checks, scenario questions, coding discussions, and system-design interviews.&lt;/p&gt;&lt;/div&gt;"
+    "text": "Interview Questions\n\nStructured preparation pages for concept checks, scenario questions, coding discussions, and system-design interviews."
   },
   {
     "objectID": "interview-questions/index.html#choose-an-overview",
@@ -74,7 +74,7 @@
     "href": "interview-questions/azure-devops.html",
     "title": "Azure DevOps — Overview",
     "section": "",
-    "text": "&lt;span class=\"topic-icon\"&gt;&lt;i class=\"bi bi-infinity\" aria-hidden=\"true\"&gt;&lt;/i&gt;&lt;/span&gt;\n&lt;div&gt;&lt;span class=\"overview-eyebrow\"&gt;Interview-track overview&lt;/span&gt;&lt;p&gt;Interview preparation for Git, CI/CD, containers, IaC, AKS, security, and operations.&lt;/p&gt;&lt;/div&gt;"
+    "text": "Interview-track overview\n\nInterview preparation for Git, CI/CD, containers, IaC, AKS, security, and operations."
   },
   {
     "objectID": "interview-questions/azure-devops.html#purpose",
@@ -165,7 +165,7 @@
     "href": "courses/full-stack-ai/sql.html",
     "title": "SQL — Overview",
     "section": "",
-    "text": "&lt;span class=\"topic-icon\"&gt;&lt;i class=\"bi bi-database\" aria-hidden=\"true\"&gt;&lt;/i&gt;&lt;/span&gt;\n&lt;div&gt;&lt;span class=\"overview-eyebrow\"&gt;Course overview&lt;/span&gt;&lt;p&gt;Querying, transforming, and validating relational data for analytics and AI.&lt;/p&gt;&lt;/div&gt;"
+    "text": "Course overview\n\nQuerying, transforming, and validating relational data for analytics and AI."
   },
   {
     "objectID": "courses/full-stack-ai/sql.html#purpose",
@@ -193,7 +193,7 @@
     "href": "courses/full-stack-ai/python.html",
     "title": "Python — Overview",
     "section": "",
-    "text": "&lt;span class=\"topic-icon\"&gt;&lt;i class=\"bi bi-code-square\" aria-hidden=\"true\"&gt;&lt;/i&gt;&lt;/span&gt;\n&lt;div&gt;&lt;span class=\"overview-eyebrow\"&gt;Course overview&lt;/span&gt;&lt;p&gt;Programming foundations for data, automation, APIs, and AI applications.&lt;/p&gt;&lt;/div&gt;"
+    "text": "Course overview\n\nProgramming foundations for data, automation, APIs, and AI applications."
   },
   {
     "objectID": "courses/full-stack-ai/python.html#purpose",
@@ -221,7 +221,7 @@
     "href": "courses/full-stack-ai/large-language-models.html",
     "title": "Large Language Models (LLMs) — Overview",
     "section": "",
-    "text": "&lt;span class=\"topic-icon\"&gt;&lt;i class=\"bi bi-chat-square-text\" aria-hidden=\"true\"&gt;&lt;/i&gt;&lt;/span&gt;\n&lt;div&gt;&lt;span class=\"overview-eyebrow\"&gt;Course overview&lt;/span&gt;&lt;p&gt;Tokens, transformers, prompting, adaptation, inference, and evaluation.&lt;/p&gt;&lt;/div&gt;"
+    "text": "Course overview\n\nTokens, transformers, prompting, adaptation, inference, and evaluation."
   },
   {
     "objectID": "courses/full-stack-ai/large-language-models.html#purpose",
@@ -249,7 +249,7 @@
     "href": "courses/full-stack-ai/generative-ai.html",
     "title": "Generative AI — Overview",
     "section": "",
-    "text": "&lt;span class=\"topic-icon\"&gt;&lt;i class=\"bi bi-stars\" aria-hidden=\"true\"&gt;&lt;/i&gt;&lt;/span&gt;\n&lt;div&gt;&lt;span class=\"overview-eyebrow\"&gt;Course overview&lt;/span&gt;&lt;p&gt;Building and evaluating systems that generate text and other useful outputs.&lt;/p&gt;&lt;/div&gt;"
+    "text": "Course overview\n\nBuilding and evaluating systems that generate text and other useful outputs."
   },
   {
     "objectID": "courses/full-stack-ai/generative-ai.html#purpose",
@@ -277,7 +277,7 @@
     "href": "courses/full-stack-ai/data-science.html",
     "title": "Data Science — Overview",
     "section": "",
-    "text": "&lt;span class=\"topic-icon\"&gt;&lt;i class=\"bi bi-bar-chart-line\" aria-hidden=\"true\"&gt;&lt;/i&gt;&lt;/span&gt;\n&lt;div&gt;&lt;span class=\"overview-eyebrow\"&gt;Course overview&lt;/span&gt;&lt;p&gt;A reproducible workflow for cleaning, exploring, visualizing, and explaining data.&lt;/p&gt;&lt;/div&gt;"
+    "text": "Course overview\n\nA reproducible workflow for cleaning, exploring, visualizing, and explaining data."
   },
   {
     "objectID": "courses/full-stack-ai/data-science.html#purpose",
@@ -305,7 +305,7 @@
     "href": "courses/full-stack-ai/agentic-ai.html",
     "title": "Agentic AI — Overview",
     "section": "",
-    "text": "&lt;span class=\"topic-icon\"&gt;&lt;i class=\"bi bi-node-plus\" aria-hidden=\"true\"&gt;&lt;/i&gt;&lt;/span&gt;\n&lt;div&gt;&lt;span class=\"overview-eyebrow\"&gt;Course overview&lt;/span&gt;&lt;p&gt;Tool-using AI systems with planning, memory, guardrails, and observability.&lt;/p&gt;&lt;/div&gt;"
+    "text": "Course overview\n\nTool-using AI systems with planning, memory, guardrails, and observability."
   },
   {
     "objectID": "courses/full-stack-ai/agentic-ai.html#purpose",
@@ -445,7 +445,7 @@
     "href": "courses/azure-devops/terraform.html",
     "title": "Terraform Infrastructure as Code (IaC) — Overview",
     "section": "",
-    "text": "&lt;span class=\"topic-icon\"&gt;&lt;i class=\"bi bi-building\" aria-hidden=\"true\"&gt;&lt;/i&gt;&lt;/span&gt;\n&lt;div&gt;&lt;span class=\"overview-eyebrow\"&gt;Course overview&lt;/span&gt;&lt;p&gt;Repeatable Azure infrastructure using state, modules, plans, and automation.&lt;/p&gt;&lt;/div&gt;"
+    "text": "Course overview\n\nRepeatable Azure infrastructure using state, modules, plans, and automation."
   },
   {
     "objectID": "courses/azure-devops/terraform.html#purpose",
@@ -473,7 +473,7 @@
     "href": "courses/azure-devops/kubernetes-aks.html",
     "title": "Kubernetes & AKS — Overview",
     "section": "",
-    "text": "&lt;span class=\"topic-icon\"&gt;&lt;i class=\"bi bi-boxes\" aria-hidden=\"true\"&gt;&lt;/i&gt;&lt;/span&gt;\n&lt;div&gt;&lt;span class=\"overview-eyebrow\"&gt;Course overview&lt;/span&gt;&lt;p&gt;Workload orchestration, networking, scaling, upgrades, and Azure Kubernetes Service.&lt;/p&gt;&lt;/div&gt;"
+    "text": "Course overview\n\nWorkload orchestration, networking, scaling, upgrades, and Azure Kubernetes Service."
   },
   {
     "objectID": "courses/azure-devops/kubernetes-aks.html#purpose",
@@ -501,7 +501,7 @@
     "href": "courses/azure-devops/git-version-control.html",
     "title": "Git & Version Control — Overview",
     "section": "",
-    "text": "&lt;span class=\"topic-icon\"&gt;&lt;i class=\"bi bi-git\" aria-hidden=\"true\"&gt;&lt;/i&gt;&lt;/span&gt;\n&lt;div&gt;&lt;span class=\"overview-eyebrow\"&gt;Course overview&lt;/span&gt;&lt;p&gt;Commit design, branching, collaboration, recovery, and maintainable history.&lt;/p&gt;&lt;/div&gt;"
+    "text": "Course overview\n\nCommit design, branching, collaboration, recovery, and maintainable history."
   },
   {
     "objectID": "courses/azure-devops/git-version-control.html#purpose",
@@ -529,7 +529,7 @@
     "href": "courses/azure-devops/devsecops-monitoring.html",
     "title": "DevSecOps & Monitoring — Overview",
     "section": "",
-    "text": "&lt;span class=\"topic-icon\"&gt;&lt;i class=\"bi bi-shield-check\" aria-hidden=\"true\"&gt;&lt;/i&gt;&lt;/span&gt;\n&lt;div&gt;&lt;span class=\"overview-eyebrow\"&gt;Course overview&lt;/span&gt;&lt;p&gt;Security controls, supply-chain checks, telemetry, alerting, and incident learning.&lt;/p&gt;&lt;/div&gt;"
+    "text": "Course overview\n\nSecurity controls, supply-chain checks, telemetry, alerting, and incident learning."
   },
   {
     "objectID": "courses/azure-devops/devsecops-monitoring.html#purpose",
@@ -557,7 +557,7 @@
     "href": "courses/azure-devops/azure-pipelines.html",
     "title": "Azure Pipelines (CI/CD) — Overview",
     "section": "",
-    "text": "&lt;span class=\"topic-icon\"&gt;&lt;i class=\"bi bi-infinity\" aria-hidden=\"true\"&gt;&lt;/i&gt;&lt;/span&gt;\n&lt;div&gt;&lt;span class=\"overview-eyebrow\"&gt;Course overview&lt;/span&gt;&lt;p&gt;Automated build, test, release, environments, approvals, and deployment strategies.&lt;/p&gt;&lt;/div&gt;"
+    "text": "Course overview\n\nAutomated build, test, release, environments, approvals, and deployment strategies."
   },
   {
     "objectID": "courses/azure-devops/azure-pipelines.html#purpose",
@@ -585,7 +585,7 @@
     "href": "courses/azure-data-engineering/sql.html",
     "title": "SQL — Overview",
     "section": "",
-    "text": "&lt;span class=\"topic-icon\"&gt;&lt;i class=\"bi bi-database\" aria-hidden=\"true\"&gt;&lt;/i&gt;&lt;/span&gt;\n&lt;div&gt;&lt;span class=\"overview-eyebrow\"&gt;Course overview&lt;/span&gt;&lt;p&gt;SQL for analytical models, data quality, performance, and warehouse workloads.&lt;/p&gt;&lt;/div&gt;"
+    "text": "Course overview\n\nSQL for analytical models, data quality, performance, and warehouse workloads."
   },
   {
     "objectID": "courses/azure-data-engineering/sql.html#purpose",
@@ -613,7 +613,7 @@
     "href": "courses/azure-data-engineering/pyspark.html",
     "title": "PySpark — Overview",
     "section": "",
-    "text": "&lt;span class=\"topic-icon\"&gt;&lt;i class=\"bi bi-lightning\" aria-hidden=\"true\"&gt;&lt;/i&gt;&lt;/span&gt;\n&lt;div&gt;&lt;span class=\"overview-eyebrow\"&gt;Course overview&lt;/span&gt;&lt;p&gt;Distributed data processing with DataFrames, transformations, tuning, and testing.&lt;/p&gt;&lt;/div&gt;"
+    "text": "Course overview\n\nDistributed data processing with DataFrames, transformations, tuning, and testing."
   },
   {
     "objectID": "courses/azure-data-engineering/pyspark.html#purpose",
@@ -641,7 +641,7 @@
     "href": "courses/azure-data-engineering/index.html",
     "title": "Azure Data Engineering — Overview",
     "section": "",
-    "text": "&lt;span class=\"topic-icon\"&gt;&lt;i class=\"bi bi-database\" aria-hidden=\"true\"&gt;&lt;/i&gt;&lt;/span&gt;\n&lt;div&gt;&lt;span class=\"overview-eyebrow\"&gt;Learning path&lt;/span&gt;&lt;p&gt;An end-to-end path for designing, building, governing, and operating modern data platforms on Azure.&lt;/p&gt;&lt;/div&gt;"
+    "text": "Learning path\n\nAn end-to-end path for designing, building, governing, and operating modern data platforms on Azure."
   },
   {
     "objectID": "courses/azure-data-engineering/index.html#choose-an-overview",
@@ -662,7 +662,7 @@
     "href": "courses/azure-data-engineering/delta-lake.html",
     "title": "Delta Lake — Overview",
     "section": "",
-    "text": "&lt;span class=\"topic-icon\"&gt;&lt;i class=\"bi bi-database-check\" aria-hidden=\"true\"&gt;&lt;/i&gt;&lt;/span&gt;\n&lt;div&gt;&lt;span class=\"overview-eyebrow\"&gt;Course overview&lt;/span&gt;&lt;p&gt;Reliable lakehouse tables using transactions, schema controls, history, and optimization.&lt;/p&gt;&lt;/div&gt;"
+    "text": "Course overview\n\nReliable lakehouse tables using transactions, schema controls, history, and optimization."
   },
   {
     "objectID": "courses/azure-data-engineering/delta-lake.html#purpose",
@@ -690,7 +690,7 @@
     "href": "courses/azure-data-engineering/azure-databricks.html",
     "title": "Azure Databricks — Overview",
     "section": "",
-    "text": "&lt;span class=\"topic-icon\"&gt;&lt;i class=\"bi bi-layers\" aria-hidden=\"true\"&gt;&lt;/i&gt;&lt;/span&gt;\n&lt;div&gt;&lt;span class=\"overview-eyebrow\"&gt;Course overview&lt;/span&gt;&lt;p&gt;Collaborative lakehouse engineering, jobs, notebooks, governance, and performance.&lt;/p&gt;&lt;/div&gt;"
+    "text": "Course overview\n\nCollaborative lakehouse engineering, jobs, notebooks, governance, and performance."
   },
   {
     "objectID": "courses/azure-data-engineering/azure-databricks.html#purpose",
@@ -718,7 +718,7 @@
     "href": "courses/azure-data-engineering/adls-gen2.html",
     "title": "Azure Data Lake Storage Gen2 (ADLS Gen2) — Overview",
     "section": "",
-    "text": "&lt;span class=\"topic-icon\"&gt;&lt;i class=\"bi bi-hdd-stack\" aria-hidden=\"true\"&gt;&lt;/i&gt;&lt;/span&gt;\n&lt;div&gt;&lt;span class=\"overview-eyebrow\"&gt;Course overview&lt;/span&gt;&lt;p&gt;Secure, scalable lake storage with practical organization and access patterns.&lt;/p&gt;&lt;/div&gt;"
+    "text": "Course overview\n\nSecure, scalable lake storage with practical organization and access patterns."
   },
   {
     "objectID": "courses/azure-data-engineering/adls-gen2.html#purpose",
@@ -891,9 +891,9 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "Edukron Notes",
+    "title": "\nEdukron Notes\n",
     "section": "",
-    "text": "&lt;span class=\"blog-kicker\"&gt;Technical notebook library&lt;/span&gt;\n&lt;h1&gt;Edukron Notes&lt;/h1&gt;\n&lt;p&gt;Course maps, executable tutorials, interview preparation, and implementation flows for AI, data engineering, and DevOps.&lt;/p&gt;\n\n\n\n\n\n\n\nCourses\n\nLearning paths\n\n\n\nStructured from foundations to applied delivery.\n\n\n\n  10 subjectsFull Stack AIA complete path from programming and data foundations to production-ready generative and agentic AI systems.     10 subjectsAzure Data EngineeringAn end-to-end path for designing, building, governing, and operating modern data platforms on Azure.     10 subjectsAzure DevOpsA practical path from source control and automation to secure cloud delivery, containers, infrastructure, and operations.  \n\n\n\nPractice\n\nInterview and project libraries\n\n\n\nFocused preparation and end-to-end delivery maps.\n\n\n\n  3 collectionsInterview QuestionsStructured preparation pages for concept checks, scenario questions, coding discussions, and system-design interviews.     3 collectionsProject FlowsEnd-to-end implementation maps that connect requirements, architecture, delivery, testing, deployment, and operations.  \n\n\n\nNotebook archive\n\nFeatured tutorials\n\n\n\nRunnable lessons from the existing library.\n\n\n\nCleaning real-world dataData Science · executable notebook Gradient descent, visuallyMachine Learning · executable notebook K-means from scratchMachine Learning · executable notebook Search with A*Artificial Intelligence · executable notebook"
+    "text": "Technical notebook library\n\nEdukron Notes\n\n\nCourse maps, executable tutorials, interview preparation, and implementation flows for AI, data engineering, and DevOps.\n\n\n\n\n\n\n\n\nCourses\n\nLearning paths\n\n\n\nStructured from foundations to applied delivery.\n\n\n\n  10 subjectsFull Stack AIA complete path from programming and data foundations to production-ready generative and agentic AI systems.     10 subjectsAzure Data EngineeringAn end-to-end path for designing, building, governing, and operating modern data platforms on Azure.     10 subjectsAzure DevOpsA practical path from source control and automation to secure cloud delivery, containers, infrastructure, and operations.  \n\n\n\nPractice\n\nInterview and project libraries\n\n\n\nFocused preparation and end-to-end delivery maps.\n\n\n\n  3 collectionsInterview QuestionsStructured preparation pages for concept checks, scenario questions, coding discussions, and system-design interviews.     3 collectionsProject FlowsEnd-to-end implementation maps that connect requirements, architecture, delivery, testing, deployment, and operations.  \n\n\n\nNotebook archive\n\nFeatured tutorials\n\n\n\nRunnable lessons from the existing library.\n\n\n\nCleaning real-world dataData Science · executable notebook Gradient descent, visuallyMachine Learning · executable notebook K-means from scratchMachine Learning · executable notebook Search with A*Artificial Intelligence · executable notebook"
   },
   {
     "objectID": "about.html",
@@ -1103,7 +1103,7 @@
     "href": "courses/azure-data-engineering/azure-data-factory.html",
     "title": "Azure Data Factory (ADF) — Overview",
     "section": "",
-    "text": "&lt;span class=\"topic-icon\"&gt;&lt;i class=\"bi bi-diagram-3\" aria-hidden=\"true\"&gt;&lt;/i&gt;&lt;/span&gt;\n&lt;div&gt;&lt;span class=\"overview-eyebrow\"&gt;Course overview&lt;/span&gt;&lt;p&gt;Metadata-driven pipelines, orchestration, integration runtimes, and monitoring.&lt;/p&gt;&lt;/div&gt;"
+    "text": "Course overview\n\nMetadata-driven pipelines, orchestration, integration runtimes, and monitoring."
   },
   {
     "objectID": "courses/azure-data-engineering/azure-data-factory.html#purpose",
@@ -1131,7 +1131,7 @@
     "href": "courses/azure-data-engineering/azure-synapse.html",
     "title": "Azure Synapse Analytics — Overview",
     "section": "",
-    "text": "&lt;span class=\"topic-icon\"&gt;&lt;i class=\"bi bi-table\" aria-hidden=\"true\"&gt;&lt;/i&gt;&lt;/span&gt;\n&lt;div&gt;&lt;span class=\"overview-eyebrow\"&gt;Course overview&lt;/span&gt;&lt;p&gt;Integrated SQL, Spark, pipelines, and analytics-serving patterns.&lt;/p&gt;&lt;/div&gt;"
+    "text": "Course overview\n\nIntegrated SQL, Spark, pipelines, and analytics-serving patterns."
   },
   {
     "objectID": "courses/azure-data-engineering/azure-synapse.html#purpose",
@@ -1159,7 +1159,7 @@
     "href": "courses/azure-data-engineering/fundamentals.html",
     "title": "Data Engineering Fundamentals — Overview",
     "section": "",
-    "text": "&lt;span class=\"topic-icon\"&gt;&lt;i class=\"bi bi-diagram-3\" aria-hidden=\"true\"&gt;&lt;/i&gt;&lt;/span&gt;\n&lt;div&gt;&lt;span class=\"overview-eyebrow\"&gt;Course overview&lt;/span&gt;&lt;p&gt;Core architecture, batch and streaming patterns, reliability, and governance.&lt;/p&gt;&lt;/div&gt;"
+    "text": "Course overview\n\nCore architecture, batch and streaming patterns, reliability, and governance."
   },
   {
     "objectID": "courses/azure-data-engineering/fundamentals.html#purpose",
@@ -1187,7 +1187,7 @@
     "href": "courses/azure-data-engineering/microsoft-fabric.html",
     "title": "Microsoft Fabric — Overview",
     "section": "",
-    "text": "&lt;span class=\"topic-icon\"&gt;&lt;i class=\"bi bi-boxes\" aria-hidden=\"true\"&gt;&lt;/i&gt;&lt;/span&gt;\n&lt;div&gt;&lt;span class=\"overview-eyebrow\"&gt;Course overview&lt;/span&gt;&lt;p&gt;Unified analytics with OneLake, engineering, warehousing, pipelines, and governance.&lt;/p&gt;&lt;/div&gt;"
+    "text": "Course overview\n\nUnified analytics with OneLake, engineering, warehousing, pipelines, and governance."
   },
   {
     "objectID": "courses/azure-data-engineering/microsoft-fabric.html#purpose",
@@ -1215,7 +1215,7 @@
     "href": "courses/azure-data-engineering/python.html",
     "title": "Python — Overview",
     "section": "",
-    "text": "&lt;span class=\"topic-icon\"&gt;&lt;i class=\"bi bi-code-square\" aria-hidden=\"true\"&gt;&lt;/i&gt;&lt;/span&gt;\n&lt;div&gt;&lt;span class=\"overview-eyebrow\"&gt;Course overview&lt;/span&gt;&lt;p&gt;Python for ingestion, transformation, orchestration, testing, and automation.&lt;/p&gt;&lt;/div&gt;"
+    "text": "Course overview\n\nPython for ingestion, transformation, orchestration, testing, and automation."
   },
   {
     "objectID": "courses/azure-data-engineering/python.html#purpose",
@@ -1243,7 +1243,7 @@
     "href": "courses/azure-devops/azure-cloud-services.html",
     "title": "Azure Cloud Services — Overview",
     "section": "",
-    "text": "&lt;span class=\"topic-icon\"&gt;&lt;i class=\"bi bi-cloud\" aria-hidden=\"true\"&gt;&lt;/i&gt;&lt;/span&gt;\n&lt;div&gt;&lt;span class=\"overview-eyebrow\"&gt;Course overview&lt;/span&gt;&lt;p&gt;Choosing and integrating Azure compute, networking, identity, storage, and monitoring.&lt;/p&gt;&lt;/div&gt;"
+    "text": "Course overview\n\nChoosing and integrating Azure compute, networking, identity, storage, and monitoring."
   },
   {
     "objectID": "courses/azure-devops/azure-cloud-services.html#purpose",
@@ -1271,7 +1271,7 @@
     "href": "courses/azure-devops/azure-repos.html",
     "title": "Azure Repos — Overview",
     "section": "",
-    "text": "&lt;span class=\"topic-icon\"&gt;&lt;i class=\"bi bi-folder2-open\" aria-hidden=\"true\"&gt;&lt;/i&gt;&lt;/span&gt;\n&lt;div&gt;&lt;span class=\"overview-eyebrow\"&gt;Course overview&lt;/span&gt;&lt;p&gt;Repository policies, pull requests, permissions, and team collaboration on Azure DevOps.&lt;/p&gt;&lt;/div&gt;"
+    "text": "Course overview\n\nRepository policies, pull requests, permissions, and team collaboration on Azure DevOps."
   },
   {
     "objectID": "courses/azure-devops/azure-repos.html#purpose",
@@ -1299,7 +1299,7 @@
     "href": "courses/azure-devops/docker.html",
     "title": "Docker & Containerization — Overview",
     "section": "",
-    "text": "&lt;span class=\"topic-icon\"&gt;&lt;i class=\"bi bi-box-seam\" aria-hidden=\"true\"&gt;&lt;/i&gt;&lt;/span&gt;\n&lt;div&gt;&lt;span class=\"overview-eyebrow\"&gt;Course overview&lt;/span&gt;&lt;p&gt;Images, containers, registries, networking, security, and production practices.&lt;/p&gt;&lt;/div&gt;"
+    "text": "Course overview\n\nImages, containers, registries, networking, security, and production practices."
   },
   {
     "objectID": "courses/azure-devops/docker.html#purpose",
@@ -1327,7 +1327,7 @@
     "href": "courses/azure-devops/index.html",
     "title": "Azure DevOps — Overview",
     "section": "",
-    "text": "&lt;span class=\"topic-icon\"&gt;&lt;i class=\"bi bi-infinity\" aria-hidden=\"true\"&gt;&lt;/i&gt;&lt;/span&gt;\n&lt;div&gt;&lt;span class=\"overview-eyebrow\"&gt;Learning path&lt;/span&gt;&lt;p&gt;A practical path from source control and automation to secure cloud delivery, containers, infrastructure, and operations.&lt;/p&gt;&lt;/div&gt;"
+    "text": "Learning path\n\nA practical path from source control and automation to secure cloud delivery, containers, infrastructure, and operations."
   },
   {
     "objectID": "courses/azure-devops/index.html#choose-an-overview",
@@ -1348,7 +1348,7 @@
     "href": "courses/azure-devops/linux-shell-scripting.html",
     "title": "Linux & Shell Scripting — Overview",
     "section": "",
-    "text": "&lt;span class=\"topic-icon\"&gt;&lt;i class=\"bi bi-terminal\" aria-hidden=\"true\"&gt;&lt;/i&gt;&lt;/span&gt;\n&lt;div&gt;&lt;span class=\"overview-eyebrow\"&gt;Course overview&lt;/span&gt;&lt;p&gt;Command-line fluency and dependable scripts for delivery and operations.&lt;/p&gt;&lt;/div&gt;"
+    "text": "Course overview\n\nCommand-line fluency and dependable scripts for delivery and operations."
   },
   {
     "objectID": "courses/azure-devops/linux-shell-scripting.html#purpose",
@@ -1376,7 +1376,7 @@
     "href": "courses/azure-devops/yaml-pipelines.html",
     "title": "YAML Pipeline Development — Overview",
     "section": "",
-    "text": "&lt;span class=\"topic-icon\"&gt;&lt;i class=\"bi bi-filetype-yml\" aria-hidden=\"true\"&gt;&lt;/i&gt;&lt;/span&gt;\n&lt;div&gt;&lt;span class=\"overview-eyebrow\"&gt;Course overview&lt;/span&gt;&lt;p&gt;Reusable, parameterized, secure, and testable pipeline definitions.&lt;/p&gt;&lt;/div&gt;"
+    "text": "Course overview\n\nReusable, parameterized, secure, and testable pipeline definitions."
   },
   {
     "objectID": "courses/azure-devops/yaml-pipelines.html#purpose",
@@ -1544,7 +1544,7 @@
     "href": "courses/full-stack-ai/artificial-intelligence.html",
     "title": "Artificial Intelligence — Overview",
     "section": "",
-    "text": "&lt;span class=\"topic-icon\"&gt;&lt;i class=\"bi bi-robot\" aria-hidden=\"true\"&gt;&lt;/i&gt;&lt;/span&gt;\n&lt;div&gt;&lt;span class=\"overview-eyebrow\"&gt;Course overview&lt;/span&gt;&lt;p&gt;Search, reasoning, knowledge representation, planning, and intelligent systems.&lt;/p&gt;&lt;/div&gt;"
+    "text": "Course overview\n\nSearch, reasoning, knowledge representation, planning, and intelligent systems."
   },
   {
     "objectID": "courses/full-stack-ai/artificial-intelligence.html#purpose",
@@ -1572,7 +1572,7 @@
     "href": "courses/full-stack-ai/deep-learning.html",
     "title": "Deep Learning — Overview",
     "section": "",
-    "text": "&lt;span class=\"topic-icon\"&gt;&lt;i class=\"bi bi-cpu\" aria-hidden=\"true\"&gt;&lt;/i&gt;&lt;/span&gt;\n&lt;div&gt;&lt;span class=\"overview-eyebrow\"&gt;Course overview&lt;/span&gt;&lt;p&gt;Neural networks, representation learning, optimization, and modern architectures.&lt;/p&gt;&lt;/div&gt;"
+    "text": "Course overview\n\nNeural networks, representation learning, optimization, and modern architectures."
   },
   {
     "objectID": "courses/full-stack-ai/deep-learning.html#purpose",
@@ -1600,7 +1600,7 @@
     "href": "courses/full-stack-ai/index.html",
     "title": "Full Stack AI — Overview",
     "section": "",
-    "text": "&lt;span class=\"topic-icon\"&gt;&lt;i class=\"bi bi-cpu\" aria-hidden=\"true\"&gt;&lt;/i&gt;&lt;/span&gt;\n&lt;div&gt;&lt;span class=\"overview-eyebrow\"&gt;Learning path&lt;/span&gt;&lt;p&gt;A complete path from programming and data foundations to production-ready generative and agentic AI systems.&lt;/p&gt;&lt;/div&gt;"
+    "text": "Learning path\n\nA complete path from programming and data foundations to production-ready generative and agentic AI systems."
   },
   {
     "objectID": "courses/full-stack-ai/index.html#choose-an-overview",
@@ -1621,7 +1621,7 @@
     "href": "courses/full-stack-ai/machine-learning.html",
     "title": "Machine Learning — Overview",
     "section": "",
-    "text": "&lt;span class=\"topic-icon\"&gt;&lt;i class=\"bi bi-diagram-3\" aria-hidden=\"true\"&gt;&lt;/i&gt;&lt;/span&gt;\n&lt;div&gt;&lt;span class=\"overview-eyebrow\"&gt;Course overview&lt;/span&gt;&lt;p&gt;Model training, evaluation, feature workflows, and responsible prediction.&lt;/p&gt;&lt;/div&gt;"
+    "text": "Course overview\n\nModel training, evaluation, feature workflows, and responsible prediction."
   },
   {
     "objectID": "courses/full-stack-ai/machine-learning.html#purpose",
@@ -1649,7 +1649,7 @@
     "href": "courses/full-stack-ai/rag.html",
     "title": "Retrieval Augmented Generation (RAG) — Overview",
     "section": "",
-    "text": "&lt;span class=\"topic-icon\"&gt;&lt;i class=\"bi bi-search\" aria-hidden=\"true\"&gt;&lt;/i&gt;&lt;/span&gt;\n&lt;div&gt;&lt;span class=\"overview-eyebrow\"&gt;Course overview&lt;/span&gt;&lt;p&gt;Grounding model responses in retrieved, traceable knowledge.&lt;/p&gt;&lt;/div&gt;"
+    "text": "Course overview\n\nGrounding model responses in retrieved, traceable knowledge."
   },
   {
     "objectID": "courses/full-stack-ai/rag.html#purpose",
@@ -1719,7 +1719,7 @@
     "href": "interview-questions/azure-data-engineering.html",
     "title": "Azure Data Engineering — Overview",
     "section": "",
-    "text": "&lt;span class=\"topic-icon\"&gt;&lt;i class=\"bi bi-database\" aria-hidden=\"true\"&gt;&lt;/i&gt;&lt;/span&gt;\n&lt;div&gt;&lt;span class=\"overview-eyebrow\"&gt;Interview-track overview&lt;/span&gt;&lt;p&gt;Interview preparation for data architecture, pipelines, Spark, lakehouse, and Azure services.&lt;/p&gt;&lt;/div&gt;"
+    "text": "Interview-track overview\n\nInterview preparation for data architecture, pipelines, Spark, lakehouse, and Azure services."
   },
   {
     "objectID": "interview-questions/azure-data-engineering.html#purpose",
@@ -1747,7 +1747,7 @@
     "href": "interview-questions/full-stack-ai.html",
     "title": "Full Stack AI — Overview",
     "section": "",
-    "text": "&lt;span class=\"topic-icon\"&gt;&lt;i class=\"bi bi-cpu\" aria-hidden=\"true\"&gt;&lt;/i&gt;&lt;/span&gt;\n&lt;div&gt;&lt;span class=\"overview-eyebrow\"&gt;Interview-track overview&lt;/span&gt;&lt;p&gt;Interview preparation across Python, SQL, data science, ML, LLMs, RAG, and agents.&lt;/p&gt;&lt;/div&gt;"
+    "text": "Interview-track overview\n\nInterview preparation across Python, SQL, data science, ML, LLMs, RAG, and agents."
   },
   {
     "objectID": "interview-questions/full-stack-ai.html#purpose",
@@ -1775,7 +1775,7 @@
     "href": "project-flows/azure-data-engineering.html",
     "title": "Azure Data Engineering — Overview",
     "section": "",
-    "text": "&lt;span class=\"topic-icon\"&gt;&lt;i class=\"bi bi-database\" aria-hidden=\"true\"&gt;&lt;/i&gt;&lt;/span&gt;\n&lt;div&gt;&lt;span class=\"overview-eyebrow\"&gt;Project-flow overview&lt;/span&gt;&lt;p&gt;A complete flow for delivering a governed and observable Azure data platform.&lt;/p&gt;&lt;/div&gt;"
+    "text": "Project-flow overview\n\nA complete flow for delivering a governed and observable Azure data platform."
   },
   {
     "objectID": "project-flows/azure-data-engineering.html#purpose",
@@ -1803,7 +1803,7 @@
     "href": "project-flows/full-stack-ai.html",
     "title": "Full Stack AI — Overview",
     "section": "",
-    "text": "&lt;span class=\"topic-icon\"&gt;&lt;i class=\"bi bi-cpu\" aria-hidden=\"true\"&gt;&lt;/i&gt;&lt;/span&gt;\n&lt;div&gt;&lt;span class=\"overview-eyebrow\"&gt;Project-flow overview&lt;/span&gt;&lt;p&gt;A complete flow for designing, building, evaluating, deploying, and monitoring an AI product.&lt;/p&gt;&lt;/div&gt;"
+    "text": "Project-flow overview\n\nA complete flow for designing, building, evaluating, deploying, and monitoring an AI product."
   },
   {
     "objectID": "project-flows/full-stack-ai.html#purpose",
