@@ -5,50 +5,111 @@ project:
     - "*.ipynb"
     - "posts/*.ipynb"
     - "courses/**/*.ipynb"
+    - "interview-questions/**/*.ipynb"
+    - "project-flows/**/*.ipynb"
+    - "!EdukronCodes Repositories/**"
 
 website:
   title: "Edukron Notes"
   site-url: "https://analytics6.github.io/edukron-notes/"
-  description: "A notebook-first academy for data science, machine learning, and artificial intelligence."
+  description: "Notebook-first courses for Full Stack AI, Azure Data Engineering, Azure DevOps, interview preparation, and project delivery."
   navbar:
     background: light
     left:
       - text: "Home"
         href: index.ipynb
-      - text: "Data Science"
+      - text: "Full Stack AI"
         menu:
-          - text: "Course overview"
-            href: courses/data-science/index.ipynb
-          - text: "Python for data analysis"
-            href: courses/data-science/python-data-analysis.ipynb
-          - text: "Cleaning real-world data"
-            href: courses/data-science/data-cleaning.ipynb
-          - text: "Exploratory data analysis"
-            href: courses/data-science/exploratory-analysis.ipynb
-      - text: "Machine Learning"
+          - text: "Program overview"
+            href: courses/full-stack-ai/index.ipynb
+          - text: "Python"
+            href: courses/full-stack-ai/python.ipynb
+          - text: "SQL"
+            href: courses/full-stack-ai/sql.ipynb
+          - text: "Data Science"
+            href: courses/full-stack-ai/data-science.ipynb
+          - text: "Machine Learning"
+            href: courses/full-stack-ai/machine-learning.ipynb
+          - text: "Artificial Intelligence"
+            href: courses/full-stack-ai/artificial-intelligence.ipynb
+          - text: "Deep Learning"
+            href: courses/full-stack-ai/deep-learning.ipynb
+          - text: "Generative AI"
+            href: courses/full-stack-ai/generative-ai.ipynb
+          - text: "Large Language Models (LLMs)"
+            href: courses/full-stack-ai/large-language-models.ipynb
+          - text: "Retrieval Augmented Generation (RAG)"
+            href: courses/full-stack-ai/rag.ipynb
+          - text: "Agentic AI"
+            href: courses/full-stack-ai/agentic-ai.ipynb
+      - text: "Azure Data Engineering"
         menu:
-          - text: "Course overview"
-            href: courses/machine-learning/index.ipynb
-          - text: "Gradient descent, visually"
-            href: posts/gradient-descent.ipynb
-          - text: "A baseline worth trusting"
-            href: posts/model-evaluation.ipynb
-          - text: "K-means from scratch"
-            href: courses/machine-learning/kmeans-from-scratch.ipynb
-      - text: "Artificial Intelligence"
+          - text: "Program overview"
+            href: courses/azure-data-engineering/index.ipynb
+          - text: "Python"
+            href: courses/azure-data-engineering/python.ipynb
+          - text: "SQL"
+            href: courses/azure-data-engineering/sql.ipynb
+          - text: "Data Engineering Fundamentals"
+            href: courses/azure-data-engineering/fundamentals.ipynb
+          - text: "Azure Data Factory (ADF)"
+            href: courses/azure-data-engineering/azure-data-factory.ipynb
+          - text: "Azure Data Lake Storage Gen2"
+            href: courses/azure-data-engineering/adls-gen2.ipynb
+          - text: "Azure Databricks"
+            href: courses/azure-data-engineering/azure-databricks.ipynb
+          - text: "PySpark"
+            href: courses/azure-data-engineering/pyspark.ipynb
+          - text: "Azure Synapse Analytics"
+            href: courses/azure-data-engineering/azure-synapse.ipynb
+          - text: "Microsoft Fabric"
+            href: courses/azure-data-engineering/microsoft-fabric.ipynb
+          - text: "Delta Lake"
+            href: courses/azure-data-engineering/delta-lake.ipynb
+      - text: "Azure DevOps"
         menu:
-          - text: "Course overview"
-            href: courses/artificial-intelligence/index.ipynb
-          - text: "Search with A*"
-            href: courses/artificial-intelligence/search-and-astar.ipynb
-          - text: "A neural network from scratch"
-            href: courses/artificial-intelligence/neural-network-from-scratch.ipynb
-          - text: "Language models and attention"
-            href: courses/artificial-intelligence/language-models-and-attention.ipynb
-      - text: "Cloud Setup"
-        href: posts/publish-cloud.ipynb
-      - text: "About"
-        href: about.ipynb
+          - text: "Program overview"
+            href: courses/azure-devops/index.ipynb
+          - text: "Linux & Shell Scripting"
+            href: courses/azure-devops/linux-shell-scripting.ipynb
+          - text: "Git & Version Control"
+            href: courses/azure-devops/git-version-control.ipynb
+          - text: "Azure Repos"
+            href: courses/azure-devops/azure-repos.ipynb
+          - text: "Azure Pipelines (CI/CD)"
+            href: courses/azure-devops/azure-pipelines.ipynb
+          - text: "YAML Pipeline Development"
+            href: courses/azure-devops/yaml-pipelines.ipynb
+          - text: "Docker & Containerization"
+            href: courses/azure-devops/docker.ipynb
+          - text: "Kubernetes & AKS"
+            href: courses/azure-devops/kubernetes-aks.ipynb
+          - text: "Terraform Infrastructure as Code"
+            href: courses/azure-devops/terraform.ipynb
+          - text: "Azure Cloud Services"
+            href: courses/azure-devops/azure-cloud-services.ipynb
+          - text: "DevSecOps & Monitoring"
+            href: courses/azure-devops/devsecops-monitoring.ipynb
+      - text: "Interview Questions"
+        menu:
+          - text: "Section overview"
+            href: interview-questions/index.ipynb
+          - text: "Full Stack AI"
+            href: interview-questions/full-stack-ai.ipynb
+          - text: "Azure Data Engineering"
+            href: interview-questions/azure-data-engineering.ipynb
+          - text: "Azure DevOps"
+            href: interview-questions/azure-devops.ipynb
+      - text: "Project Flows"
+        menu:
+          - text: "Section overview"
+            href: project-flows/index.ipynb
+          - text: "Full Stack AI"
+            href: project-flows/full-stack-ai.ipynb
+          - text: "Azure Data Engineering"
+            href: project-flows/azure-data-engineering.ipynb
+          - text: "Azure DevOps"
+            href: project-flows/azure-devops.ipynb
   search:
     location: navbar
     type: overlay
