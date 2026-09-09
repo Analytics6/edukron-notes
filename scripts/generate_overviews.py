@@ -35,6 +35,7 @@ TRACKS = [
     {
         "key": "full-stack-ai",
         "title": "Full Stack AI",
+        "icon": "cpu",
         "kind": "course",
         "directory": "courses/full-stack-ai",
         "description": "A complete path from programming and data foundations to production-ready generative and agentic AI systems.",
@@ -54,6 +55,7 @@ TRACKS = [
     {
         "key": "azure-data-engineering",
         "title": "Azure Data Engineering",
+        "icon": "database",
         "kind": "course",
         "directory": "courses/azure-data-engineering",
         "description": "An end-to-end path for designing, building, governing, and operating modern data platforms on Azure.",
@@ -73,6 +75,7 @@ TRACKS = [
     {
         "key": "azure-devops",
         "title": "Azure DevOps",
+        "icon": "infinity",
         "kind": "course",
         "directory": "courses/azure-devops",
         "description": "A practical path from source control and automation to secure cloud delivery, containers, infrastructure, and operations.",
@@ -92,6 +95,7 @@ TRACKS = [
     {
         "key": "interview-questions",
         "title": "Interview Questions",
+        "icon": "question-circle",
         "kind": "interview",
         "directory": "interview-questions",
         "description": "Structured preparation pages for concept checks, scenario questions, coding discussions, and system-design interviews.",
@@ -104,6 +108,7 @@ TRACKS = [
     {
         "key": "project-flows",
         "title": "Project Flows",
+        "icon": "kanban",
         "kind": "project",
         "directory": "project-flows",
         "description": "End-to-end implementation maps that connect requirements, architecture, delivery, testing, deployment, and operations.",
@@ -114,6 +119,55 @@ TRACKS = [
         ],
     },
 ]
+
+ITEM_ICONS = {
+    "full-stack-ai": {
+        "python": "code-square",
+        "sql": "database",
+        "data-science": "bar-chart-line",
+        "machine-learning": "diagram-3",
+        "artificial-intelligence": "robot",
+        "deep-learning": "cpu",
+        "generative-ai": "stars",
+        "large-language-models": "chat-square-text",
+        "rag": "search",
+        "agentic-ai": "node-plus",
+    },
+    "azure-data-engineering": {
+        "python": "code-square",
+        "sql": "database",
+        "fundamentals": "diagram-3",
+        "azure-data-factory": "diagram-3",
+        "adls-gen2": "hdd-stack",
+        "azure-databricks": "layers",
+        "pyspark": "lightning",
+        "azure-synapse": "table",
+        "microsoft-fabric": "boxes",
+        "delta-lake": "database-check",
+    },
+    "azure-devops": {
+        "linux-shell-scripting": "terminal",
+        "git-version-control": "git",
+        "azure-repos": "folder2-open",
+        "azure-pipelines": "infinity",
+        "yaml-pipelines": "filetype-yml",
+        "docker": "box-seam",
+        "kubernetes-aks": "boxes",
+        "terraform": "building",
+        "azure-cloud-services": "cloud",
+        "devsecops-monitoring": "shield-check",
+    },
+    "interview-questions": {
+        "full-stack-ai": "cpu",
+        "azure-data-engineering": "database",
+        "azure-devops": "infinity",
+    },
+    "project-flows": {
+        "full-stack-ai": "cpu",
+        "azure-data-engineering": "database",
+        "azure-devops": "infinity",
+    },
+}
 
 
 def lines(text: str) -> list[str]:
@@ -162,47 +216,47 @@ execute: false
 def overview_cards(kind: str) -> str:
     if kind == "interview":
         return '''<div class="overview-grid">
-  <div class="overview-card"><strong>Concept checks</strong><span>Clear definitions and concise explanations.</span></div>
-  <div class="overview-card"><strong>Scenario questions</strong><span>Trade-offs, diagnosis, and design decisions.</span></div>
-  <div class="overview-card"><strong>Practical rounds</strong><span>Code, SQL, configuration, and troubleshooting prompts.</span></div>
-  <div class="overview-card"><strong>Answer guides</strong><span>Short answer, deep dive, example, and follow-up format.</span></div>
+  <div class="overview-card"><i class="bi bi-check2-circle" aria-hidden="true"></i><strong>Concept checks</strong><span>Clear definitions and concise explanations.</span></div>
+  <div class="overview-card"><i class="bi bi-signpost-split" aria-hidden="true"></i><strong>Scenario questions</strong><span>Trade-offs, diagnosis, and design decisions.</span></div>
+  <div class="overview-card"><i class="bi bi-terminal" aria-hidden="true"></i><strong>Practical rounds</strong><span>Code, SQL, configuration, and troubleshooting prompts.</span></div>
+  <div class="overview-card"><i class="bi bi-chat-square-text" aria-hidden="true"></i><strong>Answer guides</strong><span>Short answer, deep dive, example, and follow-up format.</span></div>
 </div>'''
     if kind == "project":
         return '''<div class="overview-grid">
-  <div class="overview-card"><strong>Problem and scope</strong><span>Business goal, users, constraints, and success measures.</span></div>
-  <div class="overview-card"><strong>Architecture</strong><span>Components, interfaces, data flow, and design choices.</span></div>
-  <div class="overview-card"><strong>Implementation</strong><span>Build sequence, validation gates, and deliverables.</span></div>
-  <div class="overview-card"><strong>Operations</strong><span>Deployment, monitoring, security, cost, and improvement.</span></div>
+  <div class="overview-card"><i class="bi bi-bullseye" aria-hidden="true"></i><strong>Problem and scope</strong><span>Business goal, users, constraints, and success measures.</span></div>
+  <div class="overview-card"><i class="bi bi-diagram-3" aria-hidden="true"></i><strong>Architecture</strong><span>Components, interfaces, data flow, and design choices.</span></div>
+  <div class="overview-card"><i class="bi bi-tools" aria-hidden="true"></i><strong>Implementation</strong><span>Build sequence, validation gates, and deliverables.</span></div>
+  <div class="overview-card"><i class="bi bi-activity" aria-hidden="true"></i><strong>Operations</strong><span>Deployment, monitoring, security, cost, and improvement.</span></div>
 </div>'''
     return '''<div class="overview-grid">
-  <div class="overview-card"><strong>Concept notes</strong><span>Plain-language explanations and useful mental models.</span></div>
-  <div class="overview-card"><strong>Worked examples</strong><span>Code, commands, diagrams, or configurations with commentary.</span></div>
-  <div class="overview-card"><strong>Practice</strong><span>Checks, exercises, and guided challenges in the notebook.</span></div>
-  <div class="overview-card"><strong>Recap</strong><span>Key takeaways, common mistakes, and interview prompts.</span></div>
+  <div class="overview-card"><i class="bi bi-journal-text" aria-hidden="true"></i><strong>Concept notes</strong><span>Plain-language explanations and useful mental models.</span></div>
+  <div class="overview-card"><i class="bi bi-code-square" aria-hidden="true"></i><strong>Worked examples</strong><span>Code, commands, diagrams, or configurations with commentary.</span></div>
+  <div class="overview-card"><i class="bi bi-pencil-square" aria-hidden="true"></i><strong>Practice</strong><span>Checks, exercises, and guided challenges in the notebook.</span></div>
+  <div class="overview-card"><i class="bi bi-check2-circle" aria-hidden="true"></i><strong>Recap</strong><span>Key takeaways, common mistakes, and interview prompts.</span></div>
 </div>'''
 
 
 def status_table(kind: str) -> str:
     if kind == "interview":
         rows = [
-            ("Question groups", "Awaiting your topic list"),
-            ("Difficulty levels", "Awaiting your preference"),
-            ("Answer depth", "Awaiting your examples or notes"),
-            ("Mock interview set", "Added after questions are approved"),
+            ("Question groups", "Curriculum review"),
+            ("Difficulty levels", "Curriculum review"),
+            ("Answer guides", "Scheduled after question approval"),
+            ("Mock interview set", "Scheduled after question approval"),
         ]
     elif kind == "project":
         rows = [
-            ("Use case", "Awaiting your project scenario"),
-            ("Technology stack", "Awaiting your selected services and tools"),
-            ("Architecture and stages", "Added from your project flow"),
-            ("Implementation notebooks", "Added after the flow is approved"),
+            ("Use case", "Curriculum review"),
+            ("Technology stack", "Curriculum review"),
+            ("Architecture and stages", "Scheduled after flow approval"),
+            ("Implementation notebooks", "Scheduled after flow approval"),
         ]
     else:
         rows = [
-            ("Modules", "Awaiting your course contents"),
-            ("Datasets and examples", "Awaiting your preferred material"),
-            ("Exercises and assessments", "Added after modules are approved"),
-            ("Capstone", "Added after the learning sequence is confirmed"),
+            ("Modules", "Curriculum review"),
+            ("Datasets and examples", "Curriculum review"),
+            ("Exercises and assessments", "Scheduled after module approval"),
+            ("Capstone", "Scheduled after sequence approval"),
         ]
     table = ["| Overview component | Current status |", "|---|---|"]
     table.extend(f"| {name} | {status} |" for name, status in rows)
@@ -215,18 +269,21 @@ def item_overview(track: dict, slug: str, title: str, description: str) -> list[
         "interview": "Interview-track overview",
         "project": "Project-flow overview",
     }[track["kind"]]
-    next_request = {
-        "course": "Send the module names in the order you want them taught. You can also include notes, links, datasets, exercises, or existing repositories for each module.",
-        "interview": "Send the questions or topic groups you want covered, plus the expected experience level and preferred answer depth.",
-        "project": "Send the use case, required technologies, expected architecture, and any stages or deliverables that must appear in the flow.",
+    module_label = {
+        "course": "Course modules",
+        "interview": "Question collections",
+        "project": "Implementation stages",
     }[track["kind"]]
+    icon = ITEM_ICONS[track["key"]][slug]
     return [
         raw_cell("front-matter", front_matter(f"{title} — Overview", description, track["key"], page_label.replace(" ", "-"))),
         markdown_cell(
             "overview-hero",
             f'''<section class="course-overview-hero">
-  <span class="overview-eyebrow">{page_label}</span>
-  <p>{description}</p>
+  <div class="overview-lead">
+    <span class="topic-icon"><i class="bi bi-{icon}" aria-hidden="true"></i></span>
+    <div><span class="overview-eyebrow">{page_label}</span><p>{description}</p></div>
+  </div>
 </section>
 
 <div class="overview-meta">
@@ -239,7 +296,7 @@ def item_overview(track: dict, slug: str, title: str, description: str) -> list[
             "purpose",
             f'''## Purpose
 
-This page is the permanent overview for **{title}** inside the **{track["title"]}** learning path. It establishes where the material will live and how learners will move through it. The detailed syllabus is intentionally open until you provide the course contents.''',
+This is the course map for **{title}** inside the **{track["title"]}** learning path. It defines the learning format and provides a stable home for the detailed notebook sequence.''',
         ),
         markdown_cell(
             "notebook-standard",
@@ -251,29 +308,25 @@ Every approved topic will be published as a focused `.ipynb` lesson using the sa
         ),
         markdown_cell(
             "content-status",
-            f'''## Content status
+            f'''## {module_label}
 
 ::: {{.callout-note}}
-### Ready for your material
-The navigation and overview are published first. No detailed curriculum has been invented or locked in.
+### Syllabus in preparation
+The detailed sequence will be published here after the curriculum is approved.
 :::
 
 {status_table(track["kind"])}''',
         ),
         markdown_cell(
-            "next-step",
-            f'''## What to send next
-
-{next_request}
-
-[← Back to {track["title"]}](index.html)''',
+            "back-link",
+            f'''[<i class="bi bi-arrow-left" aria-hidden="true"></i> Back to {track["title"]}](index.html)''',
         ),
     ]
 
 
 def track_index(track: dict) -> list[dict]:
     cards = "\n".join(
-        f'  <a class="course-card" href="{slug}.html"><span class="course-number">Overview</span><strong>{title}</strong><span>{description}</span></a>'
+        f'  <a class="course-card" href="{slug}.html"><span class="card-icon"><i class="bi bi-{ITEM_ICONS[track["key"]][slug]}" aria-hidden="true"></i></span><span class="course-number">Overview</span><strong>{title}</strong><span>{description}</span></a>'
         for slug, title, description in track["items"]
     )
     page_label = "Learning path" if track["kind"] == "course" else track["title"]
@@ -282,13 +335,15 @@ def track_index(track: dict) -> list[dict]:
         markdown_cell(
             "program-intro",
             f'''<section class="program-intro">
-  <span class="overview-eyebrow">{page_label}</span>
-  <p>{track["description"]}</p>
+  <div class="overview-lead">
+    <span class="topic-icon"><i class="bi bi-{track["icon"]}" aria-hidden="true"></i></span>
+    <div><span class="overview-eyebrow">{page_label}</span><p>{track["description"]}</p></div>
+  </div>
 </section>
 
 ::: {{.callout-tip}}
-### Overview pages are ready
-Choose any item below. Detailed notebook lessons will be added after you provide the contents.
+### Course map
+Each subject has a dedicated overview. Detailed notebooks are added in the approved learning sequence.
 :::''',
         ),
         markdown_cell(
@@ -309,10 +364,17 @@ All material in this section will remain notebook-first: white reading surfaces,
 
 
 def home_page() -> list[dict]:
-    cards = "\n".join(
-        f'  <a class="course-card" href="{track["directory"]}/index.html"><span class="course-number">Top-level menu</span><strong>{track["title"]}</strong><span>{track["description"]}</span></a>'
-        for track in TRACKS
-    )
+    def track_card(track: dict) -> str:
+        item_count = len(track["items"])
+        item_label = "subjects" if track["kind"] == "course" else "collections"
+        return f'''  <a class="blog-card" href="{track["directory"]}/index.html">
+    <span class="card-icon"><i class="bi bi-{track["icon"]}" aria-hidden="true"></i></span>
+    <span class="blog-card-copy"><span class="course-number">{item_count} {item_label}</span><strong>{track["title"]}</strong><span>{track["description"]}</span></span>
+    <i class="bi bi-arrow-up-right" aria-hidden="true"></i>
+  </a>'''
+
+    course_cards = "\n".join(track_card(track) for track in TRACKS[:3])
+    resource_cards = "\n".join(track_card(track) for track in TRACKS[3:])
     return [
         raw_cell(
             "front-matter",
@@ -325,32 +387,41 @@ execute: false
 ---''',
         ),
         markdown_cell(
-            "hero",
-            '''<section class="hero">
-  <div class="hero-kicker">Notebook-first learning library</div>
-  <h1>Learn technology by working through it.</h1>
-  <p>Edukron Notes organizes AI, data engineering, and DevOps into clear learning paths. Every published lesson is a Jupyter notebook designed for notes, examples, outputs, practice, and revision.</p>
-  <div class="hero-actions"><a href="courses/full-stack-ai/index.html">Explore Full Stack AI</a><a href="courses/azure-data-engineering/index.html">Explore Data Engineering</a></div>
-</section>''',
+            "masthead",
+            '''<header class="blog-masthead">
+  <div>
+    <span class="blog-kicker">Technical notebook library</span>
+    <h1>Edukron Notes</h1>
+    <p>Course maps, executable tutorials, interview preparation, and implementation flows for AI, data engineering, and DevOps.</p>
+  </div>
+  <div class="masthead-mark" aria-hidden="true"><i class="bi bi-journal-code"></i></div>
+</header>''',
         ),
         markdown_cell(
-            "paths",
-            f'''## Top-level learning paths
+            "courses",
+            f'''<div class="section-heading"><div><span>Courses</span><h2>Learning paths</h2></div><p>Structured from foundations to applied delivery.</p></div>
 
-<div class="feature-grid program-grid">
-{cards}
+<div class="blog-grid blog-grid-primary">
+{course_cards}
 </div>''',
         ),
         markdown_cell(
-            "status",
-            '''## Curriculum status
+            "resources",
+            f'''<div class="section-heading"><div><span>Practice</span><h2>Interview and project libraries</h2></div><p>Focused preparation and end-to-end delivery maps.</p></div>
 
-The complete navigation and individual overview pages are ready. Detailed module notebooks will be added from the course contents you provide next.
+<div class="blog-grid">
+{resource_cards}
+</div>''',
+        ),
+        markdown_cell(
+            "featured",
+            '''<div class="section-heading"><div><span>Notebook archive</span><h2>Featured tutorials</h2></div><p>Runnable lessons from the existing library.</p></div>
 
-<div class="overview-meta home-meta">
-  <div><span>Course overviews</span><strong>30</strong></div>
-  <div><span>Interview overviews</span><strong>3</strong></div>
-  <div><span>Project-flow overviews</span><strong>3</strong></div>
+<div class="article-list">
+  <a href="courses/data-science/data-cleaning.html"><span class="article-icon"><i class="bi bi-funnel" aria-hidden="true"></i></span><span><strong>Cleaning real-world data</strong><small>Data Science · executable notebook</small></span><i class="bi bi-arrow-right" aria-hidden="true"></i></a>
+  <a href="posts/gradient-descent.html"><span class="article-icon"><i class="bi bi-graph-down-arrow" aria-hidden="true"></i></span><span><strong>Gradient descent, visually</strong><small>Machine Learning · executable notebook</small></span><i class="bi bi-arrow-right" aria-hidden="true"></i></a>
+  <a href="courses/machine-learning/kmeans-from-scratch.html"><span class="article-icon"><i class="bi bi-bounding-box-circles" aria-hidden="true"></i></span><span><strong>K-means from scratch</strong><small>Machine Learning · executable notebook</small></span><i class="bi bi-arrow-right" aria-hidden="true"></i></a>
+  <a href="courses/artificial-intelligence/search-and-astar.html"><span class="article-icon"><i class="bi bi-signpost-split" aria-hidden="true"></i></span><span><strong>Search with A*</strong><small>Artificial Intelligence · executable notebook</small></span><i class="bi bi-arrow-right" aria-hidden="true"></i></a>
 </div>''',
         ),
     ]

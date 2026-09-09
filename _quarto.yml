@@ -2,7 +2,8 @@ project:
   type: website
   output-dir: _site
   render:
-    - "*.ipynb"
+    - "index.ipynb"
+    - "about.ipynb"
     - "posts/*.ipynb"
     - "courses/**/*.ipynb"
     - "interview-questions/**/*.ipynb"
@@ -19,6 +20,7 @@ website:
       - text: "Home"
         href: index.ipynb
       - text: "Full Stack AI"
+        icon: cpu
         menu:
           - text: "Program overview"
             href: courses/full-stack-ai/index.ipynb
@@ -43,6 +45,7 @@ website:
           - text: "Agentic AI"
             href: courses/full-stack-ai/agentic-ai.ipynb
       - text: "Azure Data Engineering"
+        icon: database
         menu:
           - text: "Program overview"
             href: courses/azure-data-engineering/index.ipynb
@@ -67,6 +70,7 @@ website:
           - text: "Delta Lake"
             href: courses/azure-data-engineering/delta-lake.ipynb
       - text: "Azure DevOps"
+        icon: infinity
         menu:
           - text: "Program overview"
             href: courses/azure-devops/index.ipynb
@@ -91,6 +95,7 @@ website:
           - text: "DevSecOps & Monitoring"
             href: courses/azure-devops/devsecops-monitoring.ipynb
       - text: "Interview Questions"
+        icon: question-circle
         menu:
           - text: "Section overview"
             href: interview-questions/index.ipynb
@@ -101,6 +106,7 @@ website:
           - text: "Azure DevOps"
             href: interview-questions/azure-devops.ipynb
       - text: "Project Flows"
+        icon: kanban
         menu:
           - text: "Section overview"
             href: project-flows/index.ipynb
@@ -114,8 +120,8 @@ website:
     location: navbar
     type: overlay
   page-footer:
-    left: "Built from Jupyter notebooks with Quarto."
-    right: "Code, results, and explanation—together."
+    left: "© 2026 Edukron Notes"
+    right: "Notebook courses for AI, data engineering, and DevOps"
 
 format:
   html:
