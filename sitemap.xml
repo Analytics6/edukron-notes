@@ -2,19 +2,19 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://analytics6.github.io/edukron-notes/project-flows/index.html</loc>
-    <lastmod>2026-09-09T10:44:29.950Z</lastmod>
+    <lastmod>2026-09-09T11:26:20.758Z</lastmod>
   </url>
   <url>
     <loc>https://analytics6.github.io/edukron-notes/project-flows/azure-devops.html</loc>
-    <lastmod>2026-09-09T10:44:29.952Z</lastmod>
+    <lastmod>2026-09-09T11:26:20.764Z</lastmod>
   </url>
   <url>
     <loc>https://analytics6.github.io/edukron-notes/interview-questions/index.html</loc>
-    <lastmod>2026-09-09T10:44:29.943Z</lastmod>
+    <lastmod>2026-09-09T11:26:20.744Z</lastmod>
   </url>
   <url>
     <loc>https://analytics6.github.io/edukron-notes/interview-questions/azure-devops.html</loc>
-    <lastmod>2026-09-09T10:44:29.948Z</lastmod>
+    <lastmod>2026-09-09T11:26:20.755Z</lastmod>
   </url>
   <url>
     <loc>https://analytics6.github.io/edukron-notes/courses/machine-learning/kmeans-from-scratch.html</loc>
@@ -22,183 +22,259 @@
   </url>
   <url>
     <loc>https://analytics6.github.io/edukron-notes/courses/full-stack-ai/sql.html</loc>
-    <lastmod>2026-09-09T10:44:29.909Z</lastmod>
+    <lastmod>2026-09-09T11:26:20.642Z</lastmod>
   </url>
   <url>
-    <loc>https://analytics6.github.io/edukron-notes/courses/full-stack-ai/python.html</loc>
-    <lastmod>2026-09-09T10:44:29.907Z</lastmod>
+    <loc>https://analytics6.github.io/edukron-notes/courses/full-stack-ai/python/19-capstone-learning-analytics-pipeline.html</loc>
+    <lastmod>2026-09-09T11:26:21.347Z</lastmod>
   </url>
   <url>
-    <loc>https://analytics6.github.io/edukron-notes/courses/full-stack-ai/large-language-models.html</loc>
-    <lastmod>2026-09-09T10:44:29.914Z</lastmod>
+    <loc>https://analytics6.github.io/edukron-notes/courses/full-stack-ai/python/17-concurrency-and-performance.html</loc>
+    <lastmod>2026-09-09T11:26:21.337Z</lastmod>
   </url>
   <url>
-    <loc>https://analytics6.github.io/edukron-notes/courses/full-stack-ai/generative-ai.html</loc>
-    <lastmod>2026-09-09T10:44:29.914Z</lastmod>
+    <loc>https://analytics6.github.io/edukron-notes/courses/full-stack-ai/python/15-apis-and-automation.html</loc>
+    <lastmod>2026-09-09T11:26:21.324Z</lastmod>
   </url>
   <url>
-    <loc>https://analytics6.github.io/edukron-notes/courses/full-stack-ai/data-science.html</loc>
-    <lastmod>2026-09-09T10:44:29.909Z</lastmod>
+    <loc>https://analytics6.github.io/edukron-notes/courses/full-stack-ai/python/13-visualization.html</loc>
+    <lastmod>2026-09-09T11:26:21.311Z</lastmod>
   </url>
   <url>
-    <loc>https://analytics6.github.io/edukron-notes/courses/full-stack-ai/agentic-ai.html</loc>
-    <lastmod>2026-09-09T10:44:29.918Z</lastmod>
+    <loc>https://analytics6.github.io/edukron-notes/courses/full-stack-ai/python/11-numpy.html</loc>
+    <lastmod>2026-09-09T11:26:21.301Z</lastmod>
   </url>
   <url>
-    <loc>https://analytics6.github.io/edukron-notes/courses/data-science/index.html</loc>
-    <lastmod>2026-09-09T03:00:28.348Z</lastmod>
+    <loc>https://analytics6.github.io/edukron-notes/courses/full-stack-ai/python/09-oop-and-dataclasses.html</loc>
+    <lastmod>2026-09-09T11:26:21.291Z</lastmod>
   </url>
   <url>
-    <loc>https://analytics6.github.io/edukron-notes/courses/data-science/data-cleaning.html</loc>
-    <lastmod>2026-09-09T02:59:43.214Z</lastmod>
+    <loc>https://analytics6.github.io/edukron-notes/courses/full-stack-ai/python/07-errors-debugging-and-logging.html</loc>
+    <lastmod>2026-09-09T11:26:21.279Z</lastmod>
   </url>
   <url>
-    <loc>https://analytics6.github.io/edukron-notes/courses/azure-devops/terraform.html</loc>
-    <lastmod>2026-09-09T10:44:29.941Z</lastmod>
+    <loc>https://analytics6.github.io/edukron-notes/courses/full-stack-ai/python/05-text-and-regex.html</loc>
+    <lastmod>2026-09-09T11:26:21.270Z</lastmod>
   </url>
   <url>
-    <loc>https://analytics6.github.io/edukron-notes/courses/azure-devops/kubernetes-aks.html</loc>
-    <lastmod>2026-09-09T10:44:29.939Z</lastmod>
+    <loc>https://analytics6.github.io/edukron-notes/courses/full-stack-ai/python/03-collections.html</loc>
+    <lastmod>2026-09-09T11:26:21.259Z</lastmod>
   </url>
   <url>
-    <loc>https://analytics6.github.io/edukron-notes/courses/azure-devops/git-version-control.html</loc>
-    <lastmod>2026-09-09T10:44:29.934Z</lastmod>
+    <loc>https://analytics6.github.io/edukron-notes/courses/full-stack-ai/python/01-language-foundations.html</loc>
+    <lastmod>2026-09-09T11:26:21.246Z</lastmod>
   </url>
   <url>
-    <loc>https://analytics6.github.io/edukron-notes/courses/azure-devops/devsecops-monitoring.html</loc>
-    <lastmod>2026-09-09T10:44:29.943Z</lastmod>
+    <loc>https://analytics6.github.io/edukron-notes/courses/full-stack-ai/machine-learning.html</loc>
+    <lastmod>2026-09-09T11:26:20.648Z</lastmod>
   </url>
   <url>
-    <loc>https://analytics6.github.io/edukron-notes/courses/azure-devops/azure-pipelines.html</loc>
-    <lastmod>2026-09-09T10:44:29.937Z</lastmod>
+    <loc>https://analytics6.github.io/edukron-notes/courses/full-stack-ai/index.html</loc>
+    <lastmod>2026-09-09T11:26:20.640Z</lastmod>
   </url>
   <url>
-    <loc>https://analytics6.github.io/edukron-notes/courses/azure-data-engineering/sql.html</loc>
-    <lastmod>2026-09-09T10:44:29.922Z</lastmod>
+    <loc>https://analytics6.github.io/edukron-notes/courses/full-stack-ai/deep-learning.html</loc>
+    <lastmod>2026-09-09T11:26:20.655Z</lastmod>
   </url>
   <url>
-    <loc>https://analytics6.github.io/edukron-notes/courses/azure-data-engineering/pyspark.html</loc>
-    <lastmod>2026-09-09T10:44:29.926Z</lastmod>
-  </url>
-  <url>
-    <loc>https://analytics6.github.io/edukron-notes/courses/azure-data-engineering/index.html</loc>
-    <lastmod>2026-09-09T10:44:29.918Z</lastmod>
-  </url>
-  <url>
-    <loc>https://analytics6.github.io/edukron-notes/courses/azure-data-engineering/delta-lake.html</loc>
-    <lastmod>2026-09-09T10:44:29.930Z</lastmod>
-  </url>
-  <url>
-    <loc>https://analytics6.github.io/edukron-notes/courses/azure-data-engineering/azure-databricks.html</loc>
-    <lastmod>2026-09-09T10:44:29.926Z</lastmod>
-  </url>
-  <url>
-    <loc>https://analytics6.github.io/edukron-notes/courses/azure-data-engineering/adls-gen2.html</loc>
-    <lastmod>2026-09-09T10:44:29.924Z</lastmod>
-  </url>
-  <url>
-    <loc>https://analytics6.github.io/edukron-notes/courses/artificial-intelligence/neural-network-from-scratch.html</loc>
-    <lastmod>2026-09-09T02:58:29.548Z</lastmod>
-  </url>
-  <url>
-    <loc>https://analytics6.github.io/edukron-notes/courses/artificial-intelligence/index.html</loc>
-    <lastmod>2026-09-09T02:57:23.583Z</lastmod>
-  </url>
-  <url>
-    <loc>https://analytics6.github.io/edukron-notes/posts/gradient-descent.html</loc>
-    <lastmod>2026-09-09T03:02:45.543Z</lastmod>
-  </url>
-  <url>
-    <loc>https://analytics6.github.io/edukron-notes/index.html</loc>
-    <lastmod>2026-09-09T10:44:29.897Z</lastmod>
-  </url>
-  <url>
-    <loc>https://analytics6.github.io/edukron-notes/about.html</loc>
-    <lastmod>2026-09-09T02:56:56.807Z</lastmod>
-  </url>
-  <url>
-    <loc>https://analytics6.github.io/edukron-notes/posts/model-evaluation.html</loc>
-    <lastmod>2026-09-09T03:03:11.555Z</lastmod>
-  </url>
-  <url>
-    <loc>https://analytics6.github.io/edukron-notes/courses/artificial-intelligence/language-models-and-attention.html</loc>
-    <lastmod>2026-09-09T03:05:27.870Z</lastmod>
-  </url>
-  <url>
-    <loc>https://analytics6.github.io/edukron-notes/courses/artificial-intelligence/search-and-astar.html</loc>
-    <lastmod>2026-09-09T02:58:51.219Z</lastmod>
-  </url>
-  <url>
-    <loc>https://analytics6.github.io/edukron-notes/courses/azure-data-engineering/azure-data-factory.html</loc>
-    <lastmod>2026-09-09T10:44:29.924Z</lastmod>
-  </url>
-  <url>
-    <loc>https://analytics6.github.io/edukron-notes/courses/azure-data-engineering/azure-synapse.html</loc>
-    <lastmod>2026-09-09T10:44:29.928Z</lastmod>
-  </url>
-  <url>
-    <loc>https://analytics6.github.io/edukron-notes/courses/azure-data-engineering/fundamentals.html</loc>
-    <lastmod>2026-09-09T10:44:29.922Z</lastmod>
-  </url>
-  <url>
-    <loc>https://analytics6.github.io/edukron-notes/courses/azure-data-engineering/microsoft-fabric.html</loc>
-    <lastmod>2026-09-09T10:44:29.928Z</lastmod>
-  </url>
-  <url>
-    <loc>https://analytics6.github.io/edukron-notes/courses/azure-data-engineering/python.html</loc>
-    <lastmod>2026-09-09T10:44:29.920Z</lastmod>
-  </url>
-  <url>
-    <loc>https://analytics6.github.io/edukron-notes/courses/azure-devops/azure-cloud-services.html</loc>
-    <lastmod>2026-09-09T10:44:29.941Z</lastmod>
-  </url>
-  <url>
-    <loc>https://analytics6.github.io/edukron-notes/courses/azure-devops/azure-repos.html</loc>
-    <lastmod>2026-09-09T10:44:29.934Z</lastmod>
-  </url>
-  <url>
-    <loc>https://analytics6.github.io/edukron-notes/courses/azure-devops/docker.html</loc>
-    <lastmod>2026-09-09T10:44:29.939Z</lastmod>
-  </url>
-  <url>
-    <loc>https://analytics6.github.io/edukron-notes/courses/azure-devops/index.html</loc>
-    <lastmod>2026-09-09T10:44:29.930Z</lastmod>
-  </url>
-  <url>
-    <loc>https://analytics6.github.io/edukron-notes/courses/azure-devops/linux-shell-scripting.html</loc>
-    <lastmod>2026-09-09T10:44:29.932Z</lastmod>
-  </url>
-  <url>
-    <loc>https://analytics6.github.io/edukron-notes/courses/azure-devops/yaml-pipelines.html</loc>
-    <lastmod>2026-09-09T10:44:29.937Z</lastmod>
-  </url>
-  <url>
-    <loc>https://analytics6.github.io/edukron-notes/courses/data-science/exploratory-analysis.html</loc>
-    <lastmod>2026-09-09T03:00:06.986Z</lastmod>
+    <loc>https://analytics6.github.io/edukron-notes/courses/full-stack-ai/artificial-intelligence.html</loc>
+    <lastmod>2026-09-09T11:26:20.653Z</lastmod>
   </url>
   <url>
     <loc>https://analytics6.github.io/edukron-notes/courses/data-science/python-data-analysis.html</loc>
     <lastmod>2026-09-09T03:00:50.749Z</lastmod>
   </url>
   <url>
-    <loc>https://analytics6.github.io/edukron-notes/courses/full-stack-ai/artificial-intelligence.html</loc>
-    <lastmod>2026-09-09T10:44:29.909Z</lastmod>
+    <loc>https://analytics6.github.io/edukron-notes/courses/data-science/exploratory-analysis.html</loc>
+    <lastmod>2026-09-09T03:00:06.986Z</lastmod>
   </url>
   <url>
-    <loc>https://analytics6.github.io/edukron-notes/courses/full-stack-ai/deep-learning.html</loc>
-    <lastmod>2026-09-09T10:44:29.909Z</lastmod>
+    <loc>https://analytics6.github.io/edukron-notes/courses/azure-devops/yaml-pipelines.html</loc>
+    <lastmod>2026-09-09T11:26:20.725Z</lastmod>
   </url>
   <url>
-    <loc>https://analytics6.github.io/edukron-notes/courses/full-stack-ai/index.html</loc>
-    <lastmod>2026-09-09T10:44:29.906Z</lastmod>
+    <loc>https://analytics6.github.io/edukron-notes/courses/azure-devops/linux-shell-scripting.html</loc>
+    <lastmod>2026-09-09T11:26:20.710Z</lastmod>
   </url>
   <url>
-    <loc>https://analytics6.github.io/edukron-notes/courses/full-stack-ai/machine-learning.html</loc>
-    <lastmod>2026-09-09T10:44:29.909Z</lastmod>
+    <loc>https://analytics6.github.io/edukron-notes/courses/azure-devops/index.html</loc>
+    <lastmod>2026-09-09T11:26:20.707Z</lastmod>
+  </url>
+  <url>
+    <loc>https://analytics6.github.io/edukron-notes/courses/azure-devops/docker.html</loc>
+    <lastmod>2026-09-09T11:26:20.727Z</lastmod>
+  </url>
+  <url>
+    <loc>https://analytics6.github.io/edukron-notes/courses/azure-devops/azure-repos.html</loc>
+    <lastmod>2026-09-09T11:26:20.715Z</lastmod>
+  </url>
+  <url>
+    <loc>https://analytics6.github.io/edukron-notes/courses/azure-devops/azure-cloud-services.html</loc>
+    <lastmod>2026-09-09T11:26:20.737Z</lastmod>
+  </url>
+  <url>
+    <loc>https://analytics6.github.io/edukron-notes/courses/azure-data-engineering/python.html</loc>
+    <lastmod>2026-09-09T11:26:20.676Z</lastmod>
+  </url>
+  <url>
+    <loc>https://analytics6.github.io/edukron-notes/courses/azure-data-engineering/microsoft-fabric.html</loc>
+    <lastmod>2026-09-09T11:26:20.701Z</lastmod>
+  </url>
+  <url>
+    <loc>https://analytics6.github.io/edukron-notes/courses/azure-data-engineering/fundamentals.html</loc>
+    <lastmod>2026-09-09T11:26:20.681Z</lastmod>
+  </url>
+  <url>
+    <loc>https://analytics6.github.io/edukron-notes/courses/azure-data-engineering/azure-synapse.html</loc>
+    <lastmod>2026-09-09T11:26:20.697Z</lastmod>
+  </url>
+  <url>
+    <loc>https://analytics6.github.io/edukron-notes/courses/azure-data-engineering/azure-data-factory.html</loc>
+    <lastmod>2026-09-09T11:26:20.686Z</lastmod>
+  </url>
+  <url>
+    <loc>https://analytics6.github.io/edukron-notes/courses/artificial-intelligence/search-and-astar.html</loc>
+    <lastmod>2026-09-09T02:58:51.219Z</lastmod>
+  </url>
+  <url>
+    <loc>https://analytics6.github.io/edukron-notes/courses/artificial-intelligence/language-models-and-attention.html</loc>
+    <lastmod>2026-09-09T03:05:27.870Z</lastmod>
+  </url>
+  <url>
+    <loc>https://analytics6.github.io/edukron-notes/posts/model-evaluation.html</loc>
+    <lastmod>2026-09-09T03:03:11.555Z</lastmod>
+  </url>
+  <url>
+    <loc>https://analytics6.github.io/edukron-notes/about.html</loc>
+    <lastmod>2026-09-09T02:56:56.807Z</lastmod>
+  </url>
+  <url>
+    <loc>https://analytics6.github.io/edukron-notes/index.html</loc>
+    <lastmod>2026-09-09T11:26:20.638Z</lastmod>
+  </url>
+  <url>
+    <loc>https://analytics6.github.io/edukron-notes/posts/gradient-descent.html</loc>
+    <lastmod>2026-09-09T03:02:45.543Z</lastmod>
+  </url>
+  <url>
+    <loc>https://analytics6.github.io/edukron-notes/courses/artificial-intelligence/index.html</loc>
+    <lastmod>2026-09-09T02:57:23.583Z</lastmod>
+  </url>
+  <url>
+    <loc>https://analytics6.github.io/edukron-notes/courses/artificial-intelligence/neural-network-from-scratch.html</loc>
+    <lastmod>2026-09-09T02:58:29.548Z</lastmod>
+  </url>
+  <url>
+    <loc>https://analytics6.github.io/edukron-notes/courses/azure-data-engineering/adls-gen2.html</loc>
+    <lastmod>2026-09-09T11:26:20.689Z</lastmod>
+  </url>
+  <url>
+    <loc>https://analytics6.github.io/edukron-notes/courses/azure-data-engineering/azure-databricks.html</loc>
+    <lastmod>2026-09-09T11:26:20.692Z</lastmod>
+  </url>
+  <url>
+    <loc>https://analytics6.github.io/edukron-notes/courses/azure-data-engineering/delta-lake.html</loc>
+    <lastmod>2026-09-09T11:26:20.705Z</lastmod>
+  </url>
+  <url>
+    <loc>https://analytics6.github.io/edukron-notes/courses/azure-data-engineering/index.html</loc>
+    <lastmod>2026-09-09T11:26:20.672Z</lastmod>
+  </url>
+  <url>
+    <loc>https://analytics6.github.io/edukron-notes/courses/azure-data-engineering/pyspark.html</loc>
+    <lastmod>2026-09-09T11:26:20.695Z</lastmod>
+  </url>
+  <url>
+    <loc>https://analytics6.github.io/edukron-notes/courses/azure-data-engineering/sql.html</loc>
+    <lastmod>2026-09-09T11:26:20.678Z</lastmod>
+  </url>
+  <url>
+    <loc>https://analytics6.github.io/edukron-notes/courses/azure-devops/azure-pipelines.html</loc>
+    <lastmod>2026-09-09T11:26:20.722Z</lastmod>
+  </url>
+  <url>
+    <loc>https://analytics6.github.io/edukron-notes/courses/azure-devops/devsecops-monitoring.html</loc>
+    <lastmod>2026-09-09T11:26:20.741Z</lastmod>
+  </url>
+  <url>
+    <loc>https://analytics6.github.io/edukron-notes/courses/azure-devops/git-version-control.html</loc>
+    <lastmod>2026-09-09T11:26:20.712Z</lastmod>
+  </url>
+  <url>
+    <loc>https://analytics6.github.io/edukron-notes/courses/azure-devops/kubernetes-aks.html</loc>
+    <lastmod>2026-09-09T11:26:20.731Z</lastmod>
+  </url>
+  <url>
+    <loc>https://analytics6.github.io/edukron-notes/courses/azure-devops/terraform.html</loc>
+    <lastmod>2026-09-09T11:26:20.734Z</lastmod>
+  </url>
+  <url>
+    <loc>https://analytics6.github.io/edukron-notes/courses/data-science/data-cleaning.html</loc>
+    <lastmod>2026-09-09T02:59:43.214Z</lastmod>
+  </url>
+  <url>
+    <loc>https://analytics6.github.io/edukron-notes/courses/data-science/index.html</loc>
+    <lastmod>2026-09-09T03:00:28.348Z</lastmod>
+  </url>
+  <url>
+    <loc>https://analytics6.github.io/edukron-notes/courses/full-stack-ai/agentic-ai.html</loc>
+    <lastmod>2026-09-09T11:26:20.669Z</lastmod>
+  </url>
+  <url>
+    <loc>https://analytics6.github.io/edukron-notes/courses/full-stack-ai/data-science.html</loc>
+    <lastmod>2026-09-09T11:26:20.645Z</lastmod>
+  </url>
+  <url>
+    <loc>https://analytics6.github.io/edukron-notes/courses/full-stack-ai/generative-ai.html</loc>
+    <lastmod>2026-09-09T11:26:20.659Z</lastmod>
+  </url>
+  <url>
+    <loc>https://analytics6.github.io/edukron-notes/courses/full-stack-ai/large-language-models.html</loc>
+    <lastmod>2026-09-09T11:26:20.662Z</lastmod>
+  </url>
+  <url>
+    <loc>https://analytics6.github.io/edukron-notes/courses/full-stack-ai/python.html</loc>
+    <lastmod>2026-09-09T11:26:21.242Z</lastmod>
+  </url>
+  <url>
+    <loc>https://analytics6.github.io/edukron-notes/courses/full-stack-ai/python/02-control-flow.html</loc>
+    <lastmod>2026-09-09T11:26:21.254Z</lastmod>
+  </url>
+  <url>
+    <loc>https://analytics6.github.io/edukron-notes/courses/full-stack-ai/python/04-functions.html</loc>
+    <lastmod>2026-09-09T11:26:21.263Z</lastmod>
+  </url>
+  <url>
+    <loc>https://analytics6.github.io/edukron-notes/courses/full-stack-ai/python/06-files-and-data-formats.html</loc>
+    <lastmod>2026-09-09T11:26:21.274Z</lastmod>
+  </url>
+  <url>
+    <loc>https://analytics6.github.io/edukron-notes/courses/full-stack-ai/python/08-modules-packages-environments.html</loc>
+    <lastmod>2026-09-09T11:26:21.286Z</lastmod>
+  </url>
+  <url>
+    <loc>https://analytics6.github.io/edukron-notes/courses/full-stack-ai/python/10-pythonic-abstractions.html</loc>
+    <lastmod>2026-09-09T11:26:21.295Z</lastmod>
+  </url>
+  <url>
+    <loc>https://analytics6.github.io/edukron-notes/courses/full-stack-ai/python/12-pandas.html</loc>
+    <lastmod>2026-09-09T11:26:21.306Z</lastmod>
+  </url>
+  <url>
+    <loc>https://analytics6.github.io/edukron-notes/courses/full-stack-ai/python/14-testing-typing-quality.html</loc>
+    <lastmod>2026-09-09T11:26:21.315Z</lastmod>
+  </url>
+  <url>
+    <loc>https://analytics6.github.io/edukron-notes/courses/full-stack-ai/python/16-sql-and-databases.html</loc>
+    <lastmod>2026-09-09T11:26:21.330Z</lastmod>
+  </url>
+  <url>
+    <loc>https://analytics6.github.io/edukron-notes/courses/full-stack-ai/python/18-python-for-ml-ai.html</loc>
+    <lastmod>2026-09-09T11:26:21.342Z</lastmod>
   </url>
   <url>
     <loc>https://analytics6.github.io/edukron-notes/courses/full-stack-ai/rag.html</loc>
-    <lastmod>2026-09-09T10:44:29.916Z</lastmod>
+    <lastmod>2026-09-09T11:26:20.664Z</lastmod>
   </url>
   <url>
     <loc>https://analytics6.github.io/edukron-notes/courses/machine-learning/index.html</loc>
@@ -206,18 +282,18 @@
   </url>
   <url>
     <loc>https://analytics6.github.io/edukron-notes/interview-questions/azure-data-engineering.html</loc>
-    <lastmod>2026-09-09T10:44:29.946Z</lastmod>
+    <lastmod>2026-09-09T11:26:20.749Z</lastmod>
   </url>
   <url>
     <loc>https://analytics6.github.io/edukron-notes/interview-questions/full-stack-ai.html</loc>
-    <lastmod>2026-09-09T10:44:29.946Z</lastmod>
+    <lastmod>2026-09-09T11:26:20.746Z</lastmod>
   </url>
   <url>
     <loc>https://analytics6.github.io/edukron-notes/project-flows/azure-data-engineering.html</loc>
-    <lastmod>2026-09-09T10:44:29.952Z</lastmod>
+    <lastmod>2026-09-09T11:26:20.762Z</lastmod>
   </url>
   <url>
     <loc>https://analytics6.github.io/edukron-notes/project-flows/full-stack-ai.html</loc>
-    <lastmod>2026-09-09T10:44:29.950Z</lastmod>
+    <lastmod>2026-09-09T11:26:20.760Z</lastmod>
   </url>
 </urlset>
