@@ -279,12 +279,12 @@ def item_overview(track: dict, slug: str, title: str, description: str) -> list[
         raw_cell("front-matter", front_matter(f"{title} — Overview", description, track["key"], page_label.replace(" ", "-"))),
         markdown_cell(
             "overview-hero",
-            f'''<section class="course-overview-hero">
-  <div class="overview-lead">
-    <span class="topic-icon"><i class="bi bi-{icon}" aria-hidden="true"></i></span>
-    <div><span class="overview-eyebrow">{page_label}</span><p>{description}</p></div>
-  </div>
-</section>
+            f'''<div class="course-overview-hero">
+<div class="overview-lead">
+<span class="topic-icon"><i class="bi bi-{icon}" aria-hidden="true"></i></span>
+<div><span class="overview-eyebrow">{page_label}</span><p>{description}</p></div>
+</div>
+</div>
 
 <div class="overview-meta">
   <div><span>Learning path</span><strong>{track["title"]}</strong></div>
@@ -334,12 +334,12 @@ def track_index(track: dict) -> list[dict]:
         raw_cell("front-matter", front_matter(f'{track["title"]} — Overview', track["description"], track["key"], "program-overview")),
         markdown_cell(
             "program-intro",
-            f'''<section class="program-intro">
-  <div class="overview-lead">
-    <span class="topic-icon"><i class="bi bi-{track["icon"]}" aria-hidden="true"></i></span>
-    <div><span class="overview-eyebrow">{page_label}</span><p>{track["description"]}</p></div>
-  </div>
-</section>
+            f'''<div class="program-intro">
+<div class="overview-lead">
+<span class="topic-icon"><i class="bi bi-{track["icon"]}" aria-hidden="true"></i></span>
+<div><span class="overview-eyebrow">{page_label}</span><p>{track["description"]}</p></div>
+</div>
+</div>
 
 ::: {{.callout-tip}}
 ### Course map
@@ -388,14 +388,14 @@ execute: false
         ),
         markdown_cell(
             "masthead",
-            '''<header class="blog-masthead">
-  <div>
-    <span class="blog-kicker">Technical notebook library</span>
-    <h1>Edukron Notes</h1>
-    <p>Course maps, executable tutorials, interview preparation, and implementation flows for AI, data engineering, and DevOps.</p>
-  </div>
-  <div class="masthead-mark" aria-hidden="true"><i class="bi bi-journal-code"></i></div>
-</header>''',
+            '''<div class="blog-masthead">
+<div>
+<span class="blog-kicker">Technical notebook library</span>
+<h1>Edukron Notes</h1>
+<p>Course maps, executable tutorials, interview preparation, and implementation flows for AI, data engineering, and DevOps.</p>
+</div>
+<div class="masthead-mark" aria-hidden="true"><i class="bi bi-journal-code"></i></div>
+</div>''',
         ),
         markdown_cell(
             "courses",
