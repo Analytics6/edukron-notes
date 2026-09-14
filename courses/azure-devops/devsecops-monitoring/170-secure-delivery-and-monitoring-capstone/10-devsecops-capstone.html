@@ -1,0 +1,1142 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.10.18">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Edukron Notes">
+<meta name="dcterms.date" content="2026-09-14">
+<meta name="description" content="Notebook tutorial for DevSecOps capstone in Secure delivery and monitoring capstone.">
+
+<title>170.10 DevSecOps capstone – Edukron Notes</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="../../../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../../../">
+<script src="../../../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../../../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../../../site_libs/bootstrap/bootstrap-f0f4b58164ec92a07fcd2db94b0e5cbd.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<style>html{ scroll-behavior: smooth; }</style>
+
+
+<link rel="stylesheet" href="../../../../styles.css">
+</head>
+
+<body class="nav-fixed quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../../../../index.html">
+    <span class="navbar-title">Edukron Notes</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../../../index.html"> 
+<span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-full-stack-ai" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+      <i class="bi bi-cpu" role="img">
+</i> 
+ <span class="menu-text">Full Stack AI</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-full-stack-ai">    
+        <li>
+    <a class="dropdown-item" href="../../../../courses/full-stack-ai/index.html">
+ <span class="dropdown-text">Program overview</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../../courses/full-stack-ai/python.html">
+ <span class="dropdown-text">Python</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../../courses/full-stack-ai/sql.html">
+ <span class="dropdown-text">SQL</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../../courses/full-stack-ai/data-science.html">
+ <span class="dropdown-text">Data Science</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../../courses/full-stack-ai/machine-learning.html">
+ <span class="dropdown-text">Machine Learning</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../../courses/full-stack-ai/artificial-intelligence.html">
+ <span class="dropdown-text">Artificial Intelligence</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../../courses/full-stack-ai/deep-learning.html">
+ <span class="dropdown-text">Deep Learning</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../../courses/full-stack-ai/generative-ai.html">
+ <span class="dropdown-text">Generative AI</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../../courses/full-stack-ai/large-language-models.html">
+ <span class="dropdown-text">Large Language Models (LLMs)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../../courses/full-stack-ai/rag.html">
+ <span class="dropdown-text">Retrieval Augmented Generation (RAG)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../../courses/full-stack-ai/agentic-ai.html">
+ <span class="dropdown-text">Agentic AI</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-azure-data-engineering" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+      <i class="bi bi-database" role="img">
+</i> 
+ <span class="menu-text">Azure Data Engineering</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-azure-data-engineering">    
+        <li>
+    <a class="dropdown-item" href="../../../../courses/azure-data-engineering/index.html">
+ <span class="dropdown-text">Program overview</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../../courses/azure-data-engineering/python.html">
+ <span class="dropdown-text">Python</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../../courses/azure-data-engineering/sql.html">
+ <span class="dropdown-text">SQL</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../../courses/azure-data-engineering/fundamentals.html">
+ <span class="dropdown-text">Data Engineering Fundamentals</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../../courses/azure-data-engineering/azure-data-factory.html">
+ <span class="dropdown-text">Azure Data Factory (ADF)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../../courses/azure-data-engineering/adls-gen2.html">
+ <span class="dropdown-text">Azure Data Lake Storage Gen2</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../../courses/azure-data-engineering/azure-databricks.html">
+ <span class="dropdown-text">Azure Databricks</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../../courses/azure-data-engineering/pyspark.html">
+ <span class="dropdown-text">PySpark</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../../courses/azure-data-engineering/azure-synapse.html">
+ <span class="dropdown-text">Azure Synapse Analytics</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../../courses/azure-data-engineering/microsoft-fabric.html">
+ <span class="dropdown-text">Microsoft Fabric</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../../courses/azure-data-engineering/delta-lake.html">
+ <span class="dropdown-text">Delta Lake</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-azure-devops" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+      <i class="bi bi-infinity" role="img">
+</i> 
+ <span class="menu-text">Azure DevOps</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-azure-devops">    
+        <li>
+    <a class="dropdown-item" href="../../../../courses/azure-devops/index.html">
+ <span class="dropdown-text">Program overview</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../../courses/azure-devops/linux-shell-scripting.html">
+ <span class="dropdown-text">Linux &amp; Shell Scripting</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../../courses/azure-devops/git-version-control.html">
+ <span class="dropdown-text">Git &amp; Version Control</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../../courses/azure-devops/azure-repos.html">
+ <span class="dropdown-text">Azure Repos</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../../courses/azure-devops/azure-pipelines.html">
+ <span class="dropdown-text">Azure Pipelines (CI/CD)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../../courses/azure-devops/yaml-pipelines.html">
+ <span class="dropdown-text">YAML Pipeline Development</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../../courses/azure-devops/docker.html">
+ <span class="dropdown-text">Docker &amp; Containerization</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../../courses/azure-devops/kubernetes-aks.html">
+ <span class="dropdown-text">Kubernetes &amp; AKS</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../../courses/azure-devops/terraform.html">
+ <span class="dropdown-text">Terraform Infrastructure as Code</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../../courses/azure-devops/azure-cloud-services.html">
+ <span class="dropdown-text">Azure Cloud Services</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../../courses/azure-devops/devsecops-monitoring.html">
+ <span class="dropdown-text">DevSecOps &amp; Monitoring</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-interview-questions" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+      <i class="bi bi-question-circle" role="img">
+</i> 
+ <span class="menu-text">Interview Questions</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-interview-questions">    
+        <li>
+    <a class="dropdown-item" href="../../../../interview-questions/index.html">
+ <span class="dropdown-text">Section overview</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../../interview-questions/full-stack-ai.html">
+ <span class="dropdown-text">Full Stack AI</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../../interview-questions/azure-data-engineering.html">
+ <span class="dropdown-text">Azure Data Engineering</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../../interview-questions/azure-devops.html">
+ <span class="dropdown-text">Azure DevOps</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-project-flows" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+      <i class="bi bi-kanban" role="img">
+</i> 
+ <span class="menu-text">Project Flows</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-project-flows">    
+        <li>
+    <a class="dropdown-item" href="../../../../project-flows/index.html">
+ <span class="dropdown-text">Section overview</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../../project-flows/full-stack-ai.html">
+ <span class="dropdown-text">Full Stack AI</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../../project-flows/azure-data-engineering.html">
+ <span class="dropdown-text">Azure Data Engineering</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../../project-flows/azure-devops.html">
+ <span class="dropdown-text">Azure DevOps</span></a>
+  </li>  
+    </ul>
+  </li>
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#placement-and-prerequisites" id="toc-placement-and-prerequisites" class="nav-link active" data-scroll-target="#placement-and-prerequisites">Placement and prerequisites</a>
+  <ul class="collapse">
+  <li><a href="#learning-objectives" id="toc-learning-objectives" class="nav-link" data-scroll-target="#learning-objectives">Learning objectives</a></li>
+  </ul></li>
+  <li><a href="#concept-foundations" id="toc-concept-foundations" class="nav-link" data-scroll-target="#concept-foundations">Concept foundations</a></li>
+  <li><a href="#mental-model" id="toc-mental-model" class="nav-link" data-scroll-target="#mental-model">Mental model</a></li>
+  <li><a href="#a-repeatable-workflow" id="toc-a-repeatable-workflow" class="nav-link" data-scroll-target="#a-repeatable-workflow">A repeatable workflow</a></li>
+  <li><a href="#annotated-example" id="toc-annotated-example" class="nav-link" data-scroll-target="#annotated-example">Annotated example</a>
+  <ul class="collapse">
+  <li><a href="#how-to-read-it" id="toc-how-to-read-it" class="nav-link" data-scroll-target="#how-to-read-it">How to read it</a></li>
+  </ul></li>
+  <li><a href="#walkthrough-and-design-decisions" id="toc-walkthrough-and-design-decisions" class="nav-link" data-scroll-target="#walkthrough-and-design-decisions">Walkthrough and design decisions</a></li>
+  <li><a href="#guided-lab" id="toc-guided-lab" class="nav-link" data-scroll-target="#guided-lab">Guided lab</a>
+  <ul class="collapse">
+  <li><a href="#acceptance-criteria" id="toc-acceptance-criteria" class="nav-link" data-scroll-target="#acceptance-criteria">Acceptance criteria</a></li>
+  </ul></li>
+  <li><a href="#solution-blueprint" id="toc-solution-blueprint" class="nav-link" data-scroll-target="#solution-blueprint">Solution blueprint</a></li>
+  <li><a href="#common-mistakes-and-fixes" id="toc-common-mistakes-and-fixes" class="nav-link" data-scroll-target="#common-mistakes-and-fixes">Common mistakes and fixes</a></li>
+  <li><a href="#practice-tasks" id="toc-practice-tasks" class="nav-link" data-scroll-target="#practice-tasks">Practice tasks</a></li>
+  <li><a href="#knowledge-check" id="toc-knowledge-check" class="nav-link" data-scroll-target="#knowledge-check">Knowledge check</a></li>
+  <li><a href="#recap-and-reference" id="toc-recap-and-reference" class="nav-link" data-scroll-target="#recap-and-reference">Recap and reference</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">170.10 DevSecOps capstone</h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">Azure DevOps</div>
+    <div class="quarto-category">DevSecOps &amp; Monitoring</div>
+    <div class="quarto-category">Secure delivery and monitoring capstone</div>
+  </div>
+  </div>
+
+<div>
+  <div class="description">
+    Notebook tutorial for DevSecOps capstone in Secure delivery and monitoring capstone.
+  </div>
+</div>
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Edukron Notes </p>
+          </div>
+  </div>
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">September 14, 2026</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<div class="lesson-banner">
+<span class="lesson-kicker">Topic 170 · Lesson 10 of 10</span>
+<h2 class="anchored">
+DevSecOps capstone
+</h2>
+<p>
+Azure DevOps → DevSecOps &amp; Monitoring → Secure delivery and monitoring capstone. Learn the concept, apply a repeatable workflow, and produce evidence that the result is correct.
+</p>
+</div>
+<section id="placement-and-prerequisites" class="level2">
+<h2 class="anchored" data-anchor-id="placement-and-prerequisites">Placement and prerequisites</h2>
+<p>This notebook develops <strong>DevSecOps capstone</strong>, one of ten focused lessons in <strong>Secure delivery and monitoring capstone</strong>. It assumes familiarity with <strong>Operational readiness</strong>. No cloud credentials are required: platform examples are copy-ready patterns, and the executable checks use only Python’s standard library.</p>
+<section id="learning-objectives" class="level3">
+<h3 class="anchored" data-anchor-id="learning-objectives">Learning objectives</h3>
+<p>By the end, you will be able to:</p>
+<ol type="1">
+<li>Explain where devsecops capstone belongs in the wider DevSecOps &amp; Monitoring workflow.</li>
+<li>Translate a requirement into an explicit trusted context, bounded intelligent workflow, and evaluated response.</li>
+<li>Apply security, reliability, and observability checks before calling the work complete.</li>
+<li>Defend design tradeoffs and recognize the most common failure modes.</li>
+</ol>
+</section>
+</section>
+<section id="concept-foundations" class="level2">
+<h2 class="anchored" data-anchor-id="concept-foundations">Concept foundations</h2>
+<p><strong>DevSecOps capstone</strong> is useful when it converts intent into a result that another person or system can inspect. In this topic, the essential chain is <strong>trusted context → bounded intelligent workflow → evaluated response</strong>. Skipping any link creates ambiguity: an undefined input makes results untrustworthy, an implicit process is difficult to repeat, and an outcome without evidence is difficult to operate.</p>
+<p>Treat the lesson as a contract, not a one-time command. State what enters the boundary, which assumptions are valid, what changes, and how success is measured. This framing works for code, data, cloud resources, interview answers, and project delivery because it separates the goal from the implementation detail.</p>
+<p>Three qualities should be designed together:</p>
+<ul>
+<li><strong>Correctness:</strong> acceptance criteria and tests prove that the intended behavior occurred.</li>
+<li><strong>Safety:</strong> permissions, secrets, validation, and rollback limit the impact of mistakes.</li>
+<li><strong>Operability:</strong> logs, metrics, ownership, and runbooks make the result supportable after release.</li>
+</ul>
+<p>The first implementation should be intentionally small. Add scale, abstraction, or automation only after a baseline works and its evidence is visible. This keeps failure analysis local and makes every later optimization measurable.</p>
+</section>
+<section id="mental-model" class="level2">
+<h2 class="anchored" data-anchor-id="mental-model">Mental model</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Layer</th>
+<th>Question</th>
+<th>Evidence to retain</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Purpose</td>
+<td>Why do we need devsecops capstone?</td>
+<td>Requirement and measurable outcome</td>
+</tr>
+<tr class="even">
+<td>Input</td>
+<td>What trusted context crosses the boundary?</td>
+<td>Schema, version, owner, sensitivity</td>
+</tr>
+<tr class="odd">
+<td>Process</td>
+<td>How does bounded intelligent workflow behave?</td>
+<td>Reviewed configuration or code</td>
+</tr>
+<tr class="even">
+<td>Output</td>
+<td>What makes the evaluated response usable?</td>
+<td>Contract, checks, and consumer sign-off</td>
+</tr>
+<tr class="odd">
+<td>Operations</td>
+<td>What happens when it fails?</td>
+<td>Telemetry, alert, recovery, and owner</td>
+</tr>
+</tbody>
+</table>
+<p>The table is a compact design review. If a row cannot be answered, record it as an assumption or risk before implementation.</p>
+</section>
+<section id="a-repeatable-workflow" class="level2">
+<h2 class="anchored" data-anchor-id="a-repeatable-workflow">A repeatable workflow</h2>
+<ol type="1">
+<li><strong>Frame the outcome.</strong> Write one sentence describing the user or system value of devsecops capstone.</li>
+<li><strong>Inventory constraints.</strong> Capture scale, latency, cost, privacy, compatibility, and team skills.</li>
+<li><strong>Define the contract.</strong> Specify the trusted context, normal cases, edge cases, and the expected evaluated response.</li>
+<li><strong>Build the smallest slice.</strong> Implement one path through bounded intelligent workflow and keep it reproducible.</li>
+<li><strong>Verify deliberately.</strong> Test success, empty input, invalid input, partial failure, and retry behavior.</li>
+<li><strong>Operationalize.</strong> Add ownership, telemetry, documentation, and a safe correction or rollback path.</li>
+</ol>
+<p>This order prevents tool selection from replacing problem definition. A production design may loop through the steps several times as evidence changes.</p>
+</section>
+<section id="annotated-example" class="level2">
+<h2 class="anchored" data-anchor-id="annotated-example">Annotated example</h2>
+<p>The following pattern is intentionally compact. Adapt names and platform-specific properties, but retain the explicit input, transformation, output, and verification boundary.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> dataclasses <span class="im">import</span> dataclass</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="at">@dataclass</span>(frozen<span class="op">=</span><span class="va">True</span>)</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="kw">class</span> DevsecopsCapstonePlan:</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>    input_contract: <span class="bu">str</span> <span class="op">=</span> <span class="st">"trusted context"</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>    operation: <span class="bu">str</span> <span class="op">=</span> <span class="st">"bounded intelligent workflow"</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>    acceptance_evidence: <span class="bu">str</span> <span class="op">=</span> <span class="st">"evaluated response"</span></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>plan <span class="op">=</span> DevsecopsCapstonePlan()</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="cf">assert</span> <span class="bu">all</span>(<span class="bu">vars</span>(plan).values())</span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>plan</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<section id="how-to-read-it" class="level3">
+<h3 class="anchored" data-anchor-id="how-to-read-it">How to read it</h3>
+<p>The example names the unit of work, exposes inputs, and makes success inspectable. It avoids embedded secrets and hidden environment assumptions. In a real repository, pair it with automated validation, pinned dependencies, and a short operational note.</p>
+<div id="executable-model" class="cell">
+<details open="" class="code-fold">
+<summary>Code</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> dataclasses <span class="im">import</span> dataclass, asdict</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="at">@dataclass</span>(frozen<span class="op">=</span><span class="va">True</span>)</span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="kw">class</span> LessonContract:</span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>    lesson: <span class="bu">str</span></span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>    source: <span class="bu">str</span></span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>    process: <span class="bu">str</span></span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>    outcome: <span class="bu">str</span></span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>    evidence: <span class="bu">tuple</span>[<span class="bu">str</span>, ...]</span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a>contract <span class="op">=</span> LessonContract(</span>
+<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a>    lesson<span class="op">=</span><span class="st">'DevSecOps capstone'</span>,</span>
+<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a>    source<span class="op">=</span><span class="st">'trusted context'</span>,</span>
+<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a>    process<span class="op">=</span><span class="st">'bounded intelligent workflow'</span>,</span>
+<span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a>    outcome<span class="op">=</span><span class="st">'evaluated response'</span>,</span>
+<span id="cb2-16"><a href="#cb2-16" aria-hidden="true" tabindex="-1"></a>    evidence<span class="op">=</span>(<span class="st">"automated check"</span>, <span class="st">"review record"</span>, <span class="st">"operational signal"</span>),</span>
+<span id="cb2-17"><a href="#cb2-17" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb2-18"><a href="#cb2-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-19"><a href="#cb2-19" aria-hidden="true" tabindex="-1"></a><span class="cf">assert</span> contract.lesson <span class="kw">and</span> <span class="bu">len</span>(contract.evidence) <span class="op">&gt;=</span> <span class="dv">3</span></span>
+<span id="cb2-20"><a href="#cb2-20" aria-hidden="true" tabindex="-1"></a>asdict(contract)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</details>
+</div>
+</section>
+</section>
+<section id="walkthrough-and-design-decisions" class="level2">
+<h2 class="anchored" data-anchor-id="walkthrough-and-design-decisions">Walkthrough and design decisions</h2>
+<p>The executable contract above is a small design artifact. Immutability prevents accidental mutation during the lesson, while named fields make assumptions reviewable. The assertion is deliberately simple: it shows that a notebook should verify its own essential invariant rather than depend on visual inspection alone.</p>
+<p>For <strong>DevSecOps capstone</strong>, enrich the contract with domain-specific limits. Examples include data schemas, model thresholds, deployment health checks, access policies, response-time budgets, or answer-scoring rubrics. Keep the core contract stable while implementation details evolve.</p>
+<blockquote class="blockquote">
+<p><strong>Decision rule:</strong> prefer a design that makes failure visible and recovery routine over one that succeeds only under ideal conditions.</p>
+</blockquote>
+</section>
+<section id="guided-lab" class="level2">
+<h2 class="anchored" data-anchor-id="guided-lab">Guided lab</h2>
+<p><strong>Scenario:</strong> Your team must introduce devsecops capstone as part of Secure delivery and monitoring capstone. The first release serves one controlled environment, but it must be safe to repeat and simple to audit.</p>
+<ol type="1">
+<li>Write a one-sentence outcome and name the consumer.</li>
+<li>List three properties of the trusted context that must be validated.</li>
+<li>Break bounded intelligent workflow into three independently verifiable steps.</li>
+<li>Define one positive, one boundary, and one failure test.</li>
+<li>Choose a telemetry signal and a threshold that should alert an owner.</li>
+<li>Describe a rollback, replay, or correction procedure.</li>
+</ol>
+<section id="acceptance-criteria" class="level3">
+<h3 class="anchored" data-anchor-id="acceptance-criteria">Acceptance criteria</h3>
+<ul>
+<li>Inputs and outputs have named owners and contracts.</li>
+<li>The happy path and at least two failure paths are testable.</li>
+<li>No credentials or environment-specific values are embedded in the artifact.</li>
+<li>A reviewer can determine what ran, which version ran, and whether it succeeded.</li>
+</ul>
+</section>
+</section>
+<section id="solution-blueprint" class="level2">
+<h2 class="anchored" data-anchor-id="solution-blueprint">Solution blueprint</h2>
+<p>A strong solution might use the following structure:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Concern</th>
+<th>Example decision for DevSecOps capstone</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Outcome</td>
+<td>Deliver a repeatable evaluated response for a named consumer</td>
+</tr>
+<tr class="even">
+<td>Contract</td>
+<td>Reject missing identifiers and incompatible versions before bounded intelligent workflow</td>
+</tr>
+<tr class="odd">
+<td>Stages</td>
+<td>Validate → perform the smallest change → verify the result</td>
+</tr>
+<tr class="even">
+<td>Tests</td>
+<td>Normal input, empty or boundary input, invalid input, interrupted run</td>
+</tr>
+<tr class="odd">
+<td>Security</td>
+<td>Managed identity or scoped secret; least-privilege authorization</td>
+</tr>
+<tr class="even">
+<td>Telemetry</td>
+<td>Run ID, duration, status, item count, and structured error category</td>
+</tr>
+<tr class="odd">
+<td>Recovery</td>
+<td>Preserve the last known good state and document replay or rollback</td>
+</tr>
+</tbody>
+</table>
+<p>The exact technology can vary. The important part is traceability from requirement to implementation, test evidence, and operational ownership.</p>
+<div id="quality-check" class="cell">
+<details open="" class="code-fold">
+<summary>Code</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>required_controls <span class="op">=</span> {</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>    <span class="st">"contract"</span>: <span class="va">True</span>,</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>    <span class="st">"automated_check"</span>: <span class="va">True</span>,</span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>    <span class="st">"least_privilege"</span>: <span class="va">True</span>,</span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>    <span class="st">"telemetry"</span>: <span class="va">True</span>,</span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>    <span class="st">"recovery_path"</span>: <span class="va">True</span>,</span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>missing <span class="op">=</span> [name <span class="cf">for</span> name, present <span class="kw">in</span> required_controls.items() <span class="cf">if</span> <span class="kw">not</span> present]</span>
+<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a>readiness_score <span class="op">=</span> <span class="dv">100</span> <span class="op">*</span> (<span class="bu">len</span>(required_controls) <span class="op">-</span> <span class="bu">len</span>(missing)) <span class="op">/</span> <span class="bu">len</span>(required_controls)</span>
+<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a><span class="cf">assert</span> <span class="kw">not</span> missing, <span class="ss">f"Missing controls: </span><span class="sc">{</span>missing<span class="sc">}</span><span class="ss">"</span></span>
+<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a>{<span class="st">"lesson"</span>: <span class="st">'DevSecOps capstone'</span>, <span class="st">"readiness_score"</span>: readiness_score, <span class="st">"status"</span>: <span class="st">"ready for review"</span>}</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</details>
+</div>
+</section>
+<section id="common-mistakes-and-fixes" class="level2">
+<h2 class="anchored" data-anchor-id="common-mistakes-and-fixes">Common mistakes and fixes</h2>
+<ul>
+<li><strong>Starting with the tool.</strong> Restate the outcome and constraints before choosing syntax or a service.</li>
+<li><strong>Treating the happy path as complete.</strong> Add boundary, invalid-input, interruption, and retry tests.</li>
+<li><strong>Hiding state.</strong> Version configuration and expose identifiers so a run can be reproduced.</li>
+<li><strong>Embedding secrets.</strong> Use an approved secret store or workload identity and scope access narrowly.</li>
+<li><strong>Logging without context.</strong> Include a run or correlation ID, stage, status, duration, and safe error category.</li>
+<li><strong>Optimizing without a baseline.</strong> Measure correctness, cost, and latency before changing the design.</li>
+<li><strong>No recovery owner.</strong> Document who responds and how to roll back, replay, or correct the result.</li>
+</ul>
+</section>
+<section id="practice-tasks" class="level2">
+<h2 class="anchored" data-anchor-id="practice-tasks">Practice tasks</h2>
+<ol type="1">
+<li><strong>Explain:</strong> describe devsecops capstone to a new teammate without naming a vendor product.</li>
+<li><strong>Model:</strong> draw the trusted context → bounded intelligent workflow → evaluated response boundary and mark trust boundaries.</li>
+<li><strong>Implement:</strong> adapt the example to a realistic object from your own project.</li>
+<li><strong>Test:</strong> add one assertion for a boundary condition and one for a failure condition.</li>
+<li><strong>Operate:</strong> define two metrics, one alert, and the first diagnostic action in a runbook.</li>
+<li><strong>Extend:</strong> connect this lesson to <strong>the next syllabus topic or a portfolio extension</strong> and identify the new contract between them.</li>
+</ol>
+</section>
+<section id="knowledge-check" class="level2">
+<h2 class="anchored" data-anchor-id="knowledge-check">Knowledge check</h2>
+<ol type="1">
+<li>Why should devsecops capstone begin with an outcome rather than a tool choice?</li>
+<li>Which evidence proves the evaluated response is both correct and operable?</li>
+<li>Where should validation occur, and what should happen to rejected input?</li>
+<li>How do idempotency or safe retries change recovery design?</li>
+<li>Which tradeoff would you discuss in a design review?</li>
+</ol>
+<details>
+<summary>
+<strong>Suggested answers</strong>
+</summary>
+<ol type="1">
+<li>Outcomes remain stable while implementation options change; they make alternatives comparable.</li>
+<li>Use automated checks plus versioned run evidence, telemetry, and consumer acceptance.</li>
+<li>Validate at the boundary before side effects; quarantine or report rejected input with safe context.</li>
+<li>They prevent duplicate effects and make replay a controlled recovery mechanism.</li>
+<li>Explain a concrete balance such as simplicity versus scale, latency versus cost, or autonomy versus control.</li>
+</ol>
+</details>
+</section>
+<section id="recap-and-reference" class="level2">
+<h2 class="anchored" data-anchor-id="recap-and-reference">Recap and reference</h2>
+<p>You can now place <strong>DevSecOps capstone</strong> inside <strong>Secure delivery and monitoring capstone</strong>, define its contract, implement a small verifiable slice, and attach security, reliability, and operational evidence. The durable mental model is:</p>
+<blockquote class="blockquote">
+<p><strong>Explicit input → controlled change → verified output → observable operation</strong></p>
+</blockquote>
+<p>Continue with <strong>the next syllabus topic or a portfolio extension</strong> or strengthen this notebook by replacing the sample contract with an artifact from your own portfolio.</p>
+<p>Official reference: <a href="https://learn.microsoft.com/azure/well-architected/">Azure Well-Architected Framework</a></p>
+<nav class="lesson-nav" aria-label="Lesson navigation">
+<a class="lesson-nav-link" href="09-operational-readiness.html"><span>← Previous</span><strong>Operational Readiness</strong></a><a class="lesson-nav-home" href="../../devsecops-monitoring.html"><span>Course overview</span><strong>DevSecOps &amp; Monitoring</strong></a><a class="lesson-nav-link lesson-nav-next" href="../../../../interview-questions/full-stack-ai/171-python-and-sql-interview-preparation/01-python-language-questions.html"><span>Next →</span><strong>Python Language Questions</strong></a>
+</nav>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/analytics6\.github\.io\/edukron-notes\/");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p>© 2026 Edukron Notes</p>
+</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    </div>
+    <div class="nav-footer-right">
+<p>Notebook courses for AI, data engineering, and DevOps</p>
+</div>
+  </div>
+</footer>
+
+
+
+
+<script src="../../../../site_libs/quarto-html/zenscroll-min.js"></script>
+</body></html>
