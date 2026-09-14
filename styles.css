@@ -819,8 +819,218 @@ div.sourceCode {
     text-align: center;
   }
 
-  .lesson-nav {
+.lesson-nav {
     align-items: flex-start;
     flex-direction: column;
+  }
+}
+
+/* Complete 2,000-notebook curriculum library */
+.curriculum-summary {
+  margin-bottom: 1.25rem;
+}
+
+.course-stat-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.9rem;
+  margin: 1.25rem 0 1.5rem;
+}
+
+.course-stat-grid > div {
+  padding: 1rem 1.1rem;
+  border: 1px solid var(--line);
+  border-radius: 0.9rem;
+  background: #fff;
+  box-shadow: 0 8px 22px rgba(25, 31, 56, 0.045);
+}
+
+.course-stat-grid strong,
+.course-stat-grid span {
+  display: block;
+}
+
+.course-stat-grid strong {
+  color: var(--ink);
+  font-size: 1.28rem;
+  letter-spacing: -0.025em;
+}
+
+.course-stat-grid span {
+  margin-top: 0.15rem;
+  color: var(--muted);
+  font-size: 0.84rem;
+}
+
+.course-start {
+  margin: 0;
+}
+
+.curriculum-topic {
+  margin: 0 0 0.85rem;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 0.9rem;
+  background: #fff;
+  box-shadow: 0 8px 24px rgba(25, 31, 56, 0.04);
+}
+
+.curriculum-topic summary {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 0.9rem;
+  padding: 1rem 1.1rem;
+  cursor: pointer;
+  list-style: none;
+}
+
+.curriculum-topic summary::-webkit-details-marker {
+  display: none;
+}
+
+.curriculum-topic summary::after {
+  content: "+";
+  grid-column: 4;
+  color: var(--violet);
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.curriculum-topic[open] summary::after {
+  content: "−";
+}
+
+.curriculum-topic summary strong {
+  color: var(--ink);
+  font-size: 1rem;
+}
+
+.curriculum-topic summary > span:last-of-type {
+  color: var(--muted);
+  font-size: 0.78rem;
+  white-space: nowrap;
+}
+
+.topic-number {
+  display: inline-flex;
+  padding: 0.25rem 0.55rem;
+  border-radius: 999px;
+  background: rgba(93, 77, 221, 0.09);
+  color: var(--violet);
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.035em;
+  text-transform: uppercase;
+}
+
+.topic-lessons {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.65rem;
+  padding: 0 1rem 1rem;
+  border-top: 1px solid var(--line);
+  background: #fbfcff;
+}
+
+.topic-lessons > p {
+  display: contents;
+}
+
+.topic-lesson-link {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 0.7rem;
+  margin-top: 0.75rem;
+  padding: 0.8rem;
+  border: 1px solid #e7e9f1;
+  border-radius: 0.7rem;
+  background: #fff;
+  color: var(--ink);
+  text-decoration: none;
+  transition: border-color 160ms ease, transform 160ms ease, box-shadow 160ms ease;
+}
+
+.topic-lesson-link:hover {
+  transform: translateY(-1px);
+  border-color: rgba(93, 77, 221, 0.38);
+  box-shadow: 0 8px 18px rgba(25, 31, 56, 0.06);
+}
+
+.topic-lesson-link span {
+  color: var(--violet);
+  font-size: 0.72rem;
+  font-weight: 800;
+}
+
+.topic-lesson-link strong {
+  font-size: 0.88rem;
+  line-height: 1.3;
+}
+
+.topic-lesson-link i {
+  color: var(--muted);
+}
+
+.lesson-nav-link,
+.lesson-nav-home {
+  display: flex;
+  min-width: 0;
+  flex: 1 1 0;
+  flex-direction: column;
+  padding: 0.85rem 1rem;
+  border: 1px solid var(--line);
+  border-radius: 0.75rem;
+  background: #fff;
+  color: var(--ink);
+  text-decoration: none;
+}
+
+.lesson-nav-link span,
+.lesson-nav-home span {
+  color: var(--muted);
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.lesson-nav-link strong,
+.lesson-nav-home strong {
+  overflow: hidden;
+  margin-top: 0.15rem;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.lesson-nav-next {
+  text-align: right;
+}
+
+@media (max-width: 768px) {
+  .course-stat-grid,
+  .topic-lessons {
+    grid-template-columns: 1fr;
+  }
+
+  .curriculum-topic summary {
+    grid-template-columns: auto minmax(0, 1fr) auto;
+  }
+
+  .curriculum-topic summary > span:last-of-type {
+    display: none;
+  }
+
+  .curriculum-topic summary::after {
+    grid-column: 3;
+  }
+
+  .lesson-nav-link,
+  .lesson-nav-home {
+    width: 100%;
+  }
+
+  .lesson-nav-next {
+    text-align: left;
   }
 }

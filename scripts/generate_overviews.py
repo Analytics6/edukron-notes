@@ -1,8 +1,7 @@
-"""Generate the Edukron Notes curriculum overview notebooks.
+"""Generate the Edukron Notes home page and five top-level track pages.
 
-Most subjects currently use overview pages as stable curriculum destinations.
-The complete Full Stack AI Python course is generated separately by
-``scripts/generate_python_course.py`` and is intentionally preserved here.
+Course overview pages and the complete lesson library are managed by
+``scripts/generate_curriculum_library.py``.
 """
 
 from __future__ import annotations
@@ -326,7 +325,7 @@ The detailed sequence will be published here after the curriculum is approved.
 
 def track_index(track: dict) -> list[dict]:
     def item_card(slug: str, title: str, description: str) -> str:
-        status = "Complete course" if track["key"] == "full-stack-ai" and slug == "python" else "Overview"
+        status = "Full syllabus"
         return f'  <a class="course-card" href="{slug}.html"><span class="card-icon"><i class="bi bi-{ITEM_ICONS[track["key"]][slug]}" aria-hidden="true"></i></span><span class="course-number">{status}</span><strong>{title}</strong><span>{description}</span></a>'
 
     cards = "\n".join(
@@ -347,7 +346,7 @@ def track_index(track: dict) -> list[dict]:
 
 ::: {{.callout-tip}}
 ### Course map
-Each subject has a dedicated overview. Detailed notebooks are added in the approved learning sequence.
+Each subject has a dedicated overview with its complete topic sequence, lesson notebooks, guided practice, solutions, and knowledge checks.
 :::''',
         ),
         markdown_cell(
@@ -435,15 +434,7 @@ def main() -> None:
     write_notebook("index.ipynb", home_page())
     for track in TRACKS:
         write_notebook(f'{track["directory"]}/index.ipynb', track_index(track))
-        for slug, title, description in track["items"]:
-            if track["key"] == "full-stack-ai" and slug == "python":
-                continue
-            write_notebook(
-                f'{track["directory"]}/{slug}.ipynb',
-                item_overview(track, slug, title, description),
-            )
-    page_count = sum(1 + len(track["items"]) for track in TRACKS)
-    print(f"Generated {page_count} overview notebooks.")
+    print(f"Generated {1 + len(TRACKS)} top-level overview notebooks.")
 
 
 if __name__ == "__main__":
