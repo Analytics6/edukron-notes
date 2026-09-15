@@ -1,12 +1,13 @@
 <!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
-<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml"><head>
-<meta charset="utf-8"/>
-<meta content="quarto-1.10.18" name="generator"/>
-<meta content="width=device-width, initial-scale=1.0, user-scalable=yes" name="viewport"/>
-<meta content="Edukron Notes" name="author"/>
-<meta content="2026-09-14" name="dcterms.date"/>
-<meta content="Complete notebook syllabus for Generative AI in Full Stack AI." name="description"/>
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.10.18">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="description" content="Complete notebook syllabus for Generative AI in Full Stack AI.">
+
 <title>Generative AI – Edukron Notes</title>
 <style>
 /* Default styles provided by pandoc.
@@ -27,23 +28,25 @@ ul.task-list li input[type="checkbox"] {
   vertical-align: middle;
 }
 </style>
+
+
 <script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
 <script src="../../site_libs/quarto-nav/headroom.min.js"></script>
 <script src="../../site_libs/clipboard/clipboard.min.js"></script>
 <script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
 <script src="../../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../../site_libs/quarto-search/quarto-search.js"></script>
-<meta content="../../" name="quarto:offset"/>
+<meta name="quarto:offset" content="../../">
 <script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="../../site_libs/quarto-html/popper.min.js"></script>
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet"/>
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" id="quarto-text-highlighting-styles" rel="stylesheet"/>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet"/>
-<link append-hash="true" data-mode="light" href="../../site_libs/bootstrap/bootstrap-f0f4b58164ec92a07fcd2db94b0e5cbd.min.css" id="quarto-bootstrap" rel="stylesheet"/>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-0f70c849674a990122300108587fb581.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -71,511 +74,633 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 <style>html{ scroll-behavior: smooth; }</style>
-<link href="../../styles.css" rel="stylesheet"/>
+
+
+<link rel="stylesheet" href="../../styles.css">
 </head>
+
 <body class="nav-fixed quarto-light">
+
 <div id="quarto-search-results"></div>
-<header class="headroom fixed-top" id="quarto-header">
-<nav class="navbar navbar-expand-lg" data-bs-theme="dark">
-<div class="navbar-container container-fluid">
-<div class="navbar-brand-container mx-auto">
-<a class="navbar-brand" href="../../index.html">
-<span class="navbar-title">Edukron Notes</span>
-</a>
-</div>
-<div class="" id="quarto-search" title="Search"></div>
-<button aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-bs-target="#navbarCollapse" data-bs-toggle="collapse" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }" role="menu" type="button">
-<span class="navbar-toggler-icon"></span>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../../index.html">
+    <span class="navbar-title">Edukron Notes</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
 </button>
-<div class="collapse navbar-collapse" id="navbarCollapse">
-<ul class="navbar-nav navbar-nav-scroll me-auto">
-<li class="nav-item">
-<a class="nav-link" href="../../index.html">
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../index.html"> 
 <span class="menu-text">Home</span></a>
-</li>
-<li class="nav-item dropdown">
-<a aria-expanded="false" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" id="nav-menu-full-stack-ai" role="link">
-<i class="bi bi-cpu" role="img">
-</i>
-<span class="menu-text">Full Stack AI</span>
-</a>
-<ul aria-labelledby="nav-menu-full-stack-ai" class="dropdown-menu">
-<li>
-<a class="dropdown-item" href="../../courses/full-stack-ai/index.html">
-<span class="dropdown-text">Program overview</span></a>
-</li>
-<li>
-<a class="dropdown-item" href="../../courses/full-stack-ai/python.html">
-<span class="dropdown-text">Python</span></a>
-</li>
-<li>
-<a class="dropdown-item" href="../../courses/full-stack-ai/sql.html">
-<span class="dropdown-text">SQL</span></a>
-</li>
-<li>
-<a class="dropdown-item" href="../../courses/full-stack-ai/data-science.html">
-<span class="dropdown-text">Data Science</span></a>
-</li>
-<li>
-<a class="dropdown-item" href="../../courses/full-stack-ai/machine-learning.html">
-<span class="dropdown-text">Machine Learning</span></a>
-</li>
-<li>
-<a class="dropdown-item" href="../../courses/full-stack-ai/artificial-intelligence.html">
-<span class="dropdown-text">Artificial Intelligence</span></a>
-</li>
-<li>
-<a class="dropdown-item" href="../../courses/full-stack-ai/deep-learning.html">
-<span class="dropdown-text">Deep Learning</span></a>
-</li>
-<li>
-<a class="dropdown-item" href="../../courses/full-stack-ai/generative-ai.html">
-<span class="dropdown-text">Generative AI</span></a>
-</li>
-<li>
-<a class="dropdown-item" href="../../courses/full-stack-ai/large-language-models.html">
-<span class="dropdown-text">Large Language Models (LLMs)</span></a>
-</li>
-<li>
-<a class="dropdown-item" href="../../courses/full-stack-ai/rag.html">
-<span class="dropdown-text">Retrieval Augmented Generation (RAG)</span></a>
-</li>
-<li>
-<a class="dropdown-item" href="../../courses/full-stack-ai/agentic-ai.html">
-<span class="dropdown-text">Agentic AI</span></a>
-</li>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-full-stack-ai" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+      <i class="bi bi-cpu" role="img">
+</i> 
+ <span class="menu-text">Full Stack AI</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-full-stack-ai">    
+        <li>
+    <a class="dropdown-item" href="../../courses/full-stack-ai/index.html">
+ <span class="dropdown-text">Program overview</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../courses/full-stack-ai/python.html">
+ <span class="dropdown-text">Python</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../courses/full-stack-ai/sql.html">
+ <span class="dropdown-text">SQL</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../courses/full-stack-ai/data-science.html">
+ <span class="dropdown-text">Data Science</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../courses/full-stack-ai/machine-learning.html">
+ <span class="dropdown-text">Machine Learning</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../courses/full-stack-ai/artificial-intelligence.html">
+ <span class="dropdown-text">Artificial Intelligence</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../courses/full-stack-ai/deep-learning.html">
+ <span class="dropdown-text">Deep Learning</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../courses/full-stack-ai/generative-ai.html">
+ <span class="dropdown-text">Generative AI</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../courses/full-stack-ai/large-language-models.html">
+ <span class="dropdown-text">Large Language Models (LLMs)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../courses/full-stack-ai/rag.html">
+ <span class="dropdown-text">Retrieval Augmented Generation (RAG)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../courses/full-stack-ai/agentic-ai.html">
+ <span class="dropdown-text">Agentic AI</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-azure-data-engineering" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+      <i class="bi bi-database" role="img">
+</i> 
+ <span class="menu-text">Azure Data Engineering</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-azure-data-engineering">    
+        <li>
+    <a class="dropdown-item" href="../../courses/azure-data-engineering/index.html">
+ <span class="dropdown-text">Program overview</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../courses/azure-data-engineering/python.html">
+ <span class="dropdown-text">Python</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../courses/azure-data-engineering/sql.html">
+ <span class="dropdown-text">SQL</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../courses/azure-data-engineering/fundamentals.html">
+ <span class="dropdown-text">Data Engineering Fundamentals</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../courses/azure-data-engineering/azure-data-factory.html">
+ <span class="dropdown-text">Azure Data Factory (ADF)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../courses/azure-data-engineering/adls-gen2.html">
+ <span class="dropdown-text">Azure Data Lake Storage Gen2</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../courses/azure-data-engineering/azure-databricks.html">
+ <span class="dropdown-text">Azure Databricks</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../courses/azure-data-engineering/pyspark.html">
+ <span class="dropdown-text">PySpark</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../courses/azure-data-engineering/azure-synapse.html">
+ <span class="dropdown-text">Azure Synapse Analytics</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../courses/azure-data-engineering/microsoft-fabric.html">
+ <span class="dropdown-text">Microsoft Fabric</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../courses/azure-data-engineering/delta-lake.html">
+ <span class="dropdown-text">Delta Lake</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-azure-devops" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+      <i class="bi bi-infinity" role="img">
+</i> 
+ <span class="menu-text">Azure DevOps</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-azure-devops">    
+        <li>
+    <a class="dropdown-item" href="../../courses/azure-devops/index.html">
+ <span class="dropdown-text">Program overview</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../courses/azure-devops/linux-shell-scripting.html">
+ <span class="dropdown-text">Linux &amp; Shell Scripting</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../courses/azure-devops/git-version-control.html">
+ <span class="dropdown-text">Git &amp; Version Control</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../courses/azure-devops/azure-repos.html">
+ <span class="dropdown-text">Azure Repos</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../courses/azure-devops/azure-pipelines.html">
+ <span class="dropdown-text">Azure Pipelines (CI/CD)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../courses/azure-devops/yaml-pipelines.html">
+ <span class="dropdown-text">YAML Pipeline Development</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../courses/azure-devops/docker.html">
+ <span class="dropdown-text">Docker &amp; Containerization</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../courses/azure-devops/kubernetes-aks.html">
+ <span class="dropdown-text">Kubernetes &amp; AKS</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../courses/azure-devops/terraform.html">
+ <span class="dropdown-text">Terraform Infrastructure as Code</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../courses/azure-devops/azure-cloud-services.html">
+ <span class="dropdown-text">Azure Cloud Services</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../courses/azure-devops/devsecops-monitoring.html">
+ <span class="dropdown-text">DevSecOps &amp; Monitoring</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-interview-questions" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+      <i class="bi bi-question-circle" role="img">
+</i> 
+ <span class="menu-text">Interview Questions</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-interview-questions">    
+        <li>
+    <a class="dropdown-item" href="../../interview-questions/index.html">
+ <span class="dropdown-text">Section overview</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../interview-questions/full-stack-ai.html">
+ <span class="dropdown-text">Full Stack AI</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../interview-questions/azure-data-engineering.html">
+ <span class="dropdown-text">Azure Data Engineering</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../interview-questions/azure-devops.html">
+ <span class="dropdown-text">Azure DevOps</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-project-flows" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+      <i class="bi bi-kanban" role="img">
+</i> 
+ <span class="menu-text">Project Flows</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-project-flows">    
+        <li>
+    <a class="dropdown-item" href="../../project-flows/index.html">
+ <span class="dropdown-text">Section overview</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../project-flows/full-stack-ai.html">
+ <span class="dropdown-text">Full Stack AI</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../project-flows/azure-data-engineering.html">
+ <span class="dropdown-text">Azure Data Engineering</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../project-flows/azure-devops.html">
+ <span class="dropdown-text">Azure DevOps</span></a>
+  </li>  
+    </ul>
+  </li>
 </ul>
-</li>
-<li class="nav-item dropdown">
-<a aria-expanded="false" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" id="nav-menu-azure-data-engineering" role="link">
-<i class="bi bi-database" role="img">
-</i>
-<span class="menu-text">Azure Data Engineering</span>
-</a>
-<ul aria-labelledby="nav-menu-azure-data-engineering" class="dropdown-menu">
-<li>
-<a class="dropdown-item" href="../../courses/azure-data-engineering/index.html">
-<span class="dropdown-text">Program overview</span></a>
-</li>
-<li>
-<a class="dropdown-item" href="../../courses/azure-data-engineering/python.html">
-<span class="dropdown-text">Python</span></a>
-</li>
-<li>
-<a class="dropdown-item" href="../../courses/azure-data-engineering/sql.html">
-<span class="dropdown-text">SQL</span></a>
-</li>
-<li>
-<a class="dropdown-item" href="../../courses/azure-data-engineering/fundamentals.html">
-<span class="dropdown-text">Data Engineering Fundamentals</span></a>
-</li>
-<li>
-<a class="dropdown-item" href="../../courses/azure-data-engineering/azure-data-factory.html">
-<span class="dropdown-text">Azure Data Factory (ADF)</span></a>
-</li>
-<li>
-<a class="dropdown-item" href="../../courses/azure-data-engineering/adls-gen2.html">
-<span class="dropdown-text">Azure Data Lake Storage Gen2</span></a>
-</li>
-<li>
-<a class="dropdown-item" href="../../courses/azure-data-engineering/azure-databricks.html">
-<span class="dropdown-text">Azure Databricks</span></a>
-</li>
-<li>
-<a class="dropdown-item" href="../../courses/azure-data-engineering/pyspark.html">
-<span class="dropdown-text">PySpark</span></a>
-</li>
-<li>
-<a class="dropdown-item" href="../../courses/azure-data-engineering/azure-synapse.html">
-<span class="dropdown-text">Azure Synapse Analytics</span></a>
-</li>
-<li>
-<a class="dropdown-item" href="../../courses/azure-data-engineering/microsoft-fabric.html">
-<span class="dropdown-text">Microsoft Fabric</span></a>
-</li>
-<li>
-<a class="dropdown-item" href="../../courses/azure-data-engineering/delta-lake.html">
-<span class="dropdown-text">Delta Lake</span></a>
-</li>
-</ul>
-</li>
-<li class="nav-item dropdown">
-<a aria-expanded="false" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" id="nav-menu-azure-devops" role="link">
-<i class="bi bi-infinity" role="img">
-</i>
-<span class="menu-text">Azure DevOps</span>
-</a>
-<ul aria-labelledby="nav-menu-azure-devops" class="dropdown-menu">
-<li>
-<a class="dropdown-item" href="../../courses/azure-devops/index.html">
-<span class="dropdown-text">Program overview</span></a>
-</li>
-<li>
-<a class="dropdown-item" href="../../courses/azure-devops/linux-shell-scripting.html">
-<span class="dropdown-text">Linux &amp; Shell Scripting</span></a>
-</li>
-<li>
-<a class="dropdown-item" href="../../courses/azure-devops/git-version-control.html">
-<span class="dropdown-text">Git &amp; Version Control</span></a>
-</li>
-<li>
-<a class="dropdown-item" href="../../courses/azure-devops/azure-repos.html">
-<span class="dropdown-text">Azure Repos</span></a>
-</li>
-<li>
-<a class="dropdown-item" href="../../courses/azure-devops/azure-pipelines.html">
-<span class="dropdown-text">Azure Pipelines (CI/CD)</span></a>
-</li>
-<li>
-<a class="dropdown-item" href="../../courses/azure-devops/yaml-pipelines.html">
-<span class="dropdown-text">YAML Pipeline Development</span></a>
-</li>
-<li>
-<a class="dropdown-item" href="../../courses/azure-devops/docker.html">
-<span class="dropdown-text">Docker &amp; Containerization</span></a>
-</li>
-<li>
-<a class="dropdown-item" href="../../courses/azure-devops/kubernetes-aks.html">
-<span class="dropdown-text">Kubernetes &amp; AKS</span></a>
-</li>
-<li>
-<a class="dropdown-item" href="../../courses/azure-devops/terraform.html">
-<span class="dropdown-text">Terraform Infrastructure as Code</span></a>
-</li>
-<li>
-<a class="dropdown-item" href="../../courses/azure-devops/azure-cloud-services.html">
-<span class="dropdown-text">Azure Cloud Services</span></a>
-</li>
-<li>
-<a class="dropdown-item" href="../../courses/azure-devops/devsecops-monitoring.html">
-<span class="dropdown-text">DevSecOps &amp; Monitoring</span></a>
-</li>
-</ul>
-</li>
-<li class="nav-item dropdown">
-<a aria-expanded="false" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" id="nav-menu-interview-questions" role="link">
-<i class="bi bi-question-circle" role="img">
-</i>
-<span class="menu-text">Interview Questions</span>
-</a>
-<ul aria-labelledby="nav-menu-interview-questions" class="dropdown-menu">
-<li>
-<a class="dropdown-item" href="../../interview-questions/index.html">
-<span class="dropdown-text">Section overview</span></a>
-</li>
-<li>
-<a class="dropdown-item" href="../../interview-questions/full-stack-ai.html">
-<span class="dropdown-text">Full Stack AI</span></a>
-</li>
-<li>
-<a class="dropdown-item" href="../../interview-questions/azure-data-engineering.html">
-<span class="dropdown-text">Azure Data Engineering</span></a>
-</li>
-<li>
-<a class="dropdown-item" href="../../interview-questions/azure-devops.html">
-<span class="dropdown-text">Azure DevOps</span></a>
-</li>
-</ul>
-</li>
-<li class="nav-item dropdown">
-<a aria-expanded="false" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" id="nav-menu-project-flows" role="link">
-<i class="bi bi-kanban" role="img">
-</i>
-<span class="menu-text">Project Flows</span>
-</a>
-<ul aria-labelledby="nav-menu-project-flows" class="dropdown-menu">
-<li>
-<a class="dropdown-item" href="../../project-flows/index.html">
-<span class="dropdown-text">Section overview</span></a>
-</li>
-<li>
-<a class="dropdown-item" href="../../project-flows/full-stack-ai.html">
-<span class="dropdown-text">Full Stack AI</span></a>
-</li>
-<li>
-<a class="dropdown-item" href="../../project-flows/azure-data-engineering.html">
-<span class="dropdown-text">Azure Data Engineering</span></a>
-</li>
-<li>
-<a class="dropdown-item" href="../../project-flows/azure-devops.html">
-<span class="dropdown-text">Azure DevOps</span></a>
-</li>
-</ul>
-</li>
-</ul>
-</div> <!-- /navcollapse -->
-<div class="quarto-navbar-tools">
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
 </div>
-</div> <!-- /container-fluid -->
-</nav>
+      </div> <!-- /container-fluid -->
+    </nav>
 </header>
 <!-- content -->
-<div class="quarto-container page-columns page-rows-contents page-layout-full page-navbar" id="quarto-content">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
+    
 <!-- main -->
 <main class="content column-page" id="quarto-document-content">
-<header class="quarto-title-block default" id="title-block-header">
+
+<header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
 <h1 class="title">Generative AI</h1>
 </div>
+
 <div>
-<div class="description">
+  <div class="description">
     Complete notebook syllabus for Generative AI in Full Stack AI.
   </div>
 </div>
-<div class="quarto-title-meta">
-<div>
-<div class="quarto-title-meta-heading">Author</div>
-<div class="quarto-title-meta-contents">
-<p>Edukron Notes </p>
-</div>
-</div>
-<div>
-<div class="quarto-title-meta-heading">Published</div>
-<div class="quarto-title-meta-contents">
-<p class="date">September 14, 2026</p>
-</div>
-</div>
-</div>
+
+
+<div class="quarto-title-meta column-page">
+
+    
+  
+    
+  </div>
+  
+
+
 </header>
+
+
 <div class="course-workspace notebook-chrome">
 <div class="notebook-toolbar">
-<span class="notebook-file"><i aria-hidden="true" class="bi bi-journal-code"></i><strong>generative-ai.ipynb</strong></span>
-<span class="notebook-status"><i aria-hidden="true" class="bi bi-check-circle-fill"></i> Trusted</span>
-<span class="notebook-kernel"><i aria-hidden="true" class="bi bi-diagram-3"></i> Learning path</span>
+<p><span class="notebook-file"><i class="bi bi-journal-code" aria-hidden="true"></i><strong>generative-ai.ipynb</strong></span> <span class="notebook-status"><i class="bi bi-check-circle-fill" aria-hidden="true"></i> Trusted</span> <span class="notebook-kernel"><i class="bi bi-diagram-3" aria-hidden="true"></i> Learning path</span></p>
 </div>
 <div class="course-workspace-hero">
 <span class="overview-kicker">Full Stack AI</span>
-<h1>Generative AI</h1>
-<p>A complete notebook-first syllabus organized from foundations to applied delivery. Every lesson combines clear notes, a worked pattern, executable validation, a guided lab, a solution blueprint, practice, and knowledge checks.</p>
-<div class="course-tags"><span><i class="bi bi-signpost-split"></i> Foundation to advanced</span><span><i class="bi bi-code-square"></i> Hands-on practice</span><span><i class="bi bi-patch-check"></i> Review ready</span></div>
-<p class="course-start"><a class="btn btn-primary" href="generative-ai/052-generative-ai-foundations/01-generative-versus-discriminative-models.html"><i class="bi bi-play-fill"></i> Start the first notebook</a></p>
+<h1>
+Generative AI
+</h1>
+<p>
+A complete notebook-first syllabus organized from foundations to applied delivery. Every lesson combines clear notes, a worked pattern, executable validation, a guided lab, a solution blueprint, practice, and knowledge checks.
+</p>
+<div class="course-tags">
+<span><i class="bi bi-signpost-split"></i> Foundation to advanced</span><span><i class="bi bi-code-square"></i> Hands-on practice</span><span><i class="bi bi-patch-check"></i> Review ready</span>
+</div>
+<p class="course-start">
+<a class="btn btn-primary" href="generative-ai/052-generative-ai-foundations/01-generative-versus-discriminative-models.html"><i class="bi bi-play-fill"></i> Start the first notebook</a>
+</p>
 </div>
 </div>
-<section class="level2" id="how-to-use-this-course">
+<section id="how-to-use-this-course" class="level2">
 <h2 class="anchored" data-anchor-id="how-to-use-this-course">How to use this course</h2>
 <p>Work through lessons in order for a complete pathway, or open a topic for focused reference. Type or adapt the examples, complete the guided lab before reading its blueprint, and preserve your test evidence as a portfolio artifact. Cloud and infrastructure examples are safe, copy-ready teaching patterns; execute them in your own sandbox only after substituting approved identities, names, and policies.</p>
-</section>
 <section class="learning-plan-section" id="learning-plan">
-<div class="path-section-heading"><div><span class="overview-kicker">Recommended schedule</span><h2>Learning plan</h2><p>A practical schedule for completing Generative AI with retained evidence, not passive reading.</p></div></div>
-<div class="plan-metrics">
-<div><i class="bi bi-calendar3"></i><span>Standard path</span><strong>8 weeks</strong><small>One topic each week, then integration</small></div>
-<div><i class="bi bi-lightning-charge"></i><span>Intensive path</span><strong>5 weeks</strong><small>Two topics each week, then integration</small></div>
-<div><i class="bi bi-clock"></i><span>Weekly commitment</span><strong>6–8 hours</strong><small>Study, code, practice, and reflection</small></div>
-<div><i class="bi bi-folder-check"></i><span>Finish line</span><strong>Portfolio evidence</strong><small>Tests, decisions, notes, and a capstone</small></div>
+<div class="path-section-heading">
+<div>
+<span class="overview-kicker">Recommended schedule</span>
+<h2 class="anchored">
+Learning plan
+</h2>
+<p>
+A practical schedule for completing Generative AI with retained evidence, not passive reading.
+</p>
 </div>
-<div aria-label="Weekly study loop" class="study-loop">
-<div><span>01</span><i class="bi bi-book"></i><strong>Understand</strong><small>Read the notes and explain the mental model.</small></div>
-<i aria-hidden="true" class="bi bi-arrow-right study-loop-arrow"></i>
-<div><span>02</span><i class="bi bi-play-circle"></i><strong>Run</strong><small>Execute the example and inspect every result.</small></div>
-<i aria-hidden="true" class="bi bi-arrow-right study-loop-arrow"></i>
-<div><span>03</span><i class="bi bi-tools"></i><strong>Adapt</strong><small>Change the inputs and complete the guided lab.</small></div>
-<i aria-hidden="true" class="bi bi-arrow-right study-loop-arrow"></i>
-<div><span>04</span><i class="bi bi-patch-check"></i><strong>Prove</strong><small>Pass checks and retain reviewable evidence.</small></div>
+</div>
+<div class="plan-metrics">
+<div>
+<i class="bi bi-calendar3"></i><span>Standard path</span><strong>8 weeks</strong><small>One topic each week, then integration</small>
+</div>
+<div>
+<i class="bi bi-lightning-charge"></i><span>Intensive path</span><strong>5 weeks</strong><small>Two topics each week, then integration</small>
+</div>
+<div>
+<i class="bi bi-clock"></i><span>Weekly commitment</span><strong>6–8 hours</strong><small>Study, code, practice, and reflection</small>
+</div>
+<div>
+<i class="bi bi-folder-check"></i><span>Finish line</span><strong>Portfolio evidence</strong><small>Tests, decisions, notes, and a capstone</small>
+</div>
+</div>
+<div class="study-loop" aria-label="Weekly study loop">
+<div>
+<span>01</span><i class="bi bi-book"></i><strong>Understand</strong><small>Read the notes and explain the mental model.</small>
+</div>
+<i class="bi bi-arrow-right study-loop-arrow" aria-hidden="true"></i>
+<div>
+<span>02</span><i class="bi bi-play-circle"></i><strong>Run</strong><small>Execute the example and inspect every result.</small>
+</div>
+<i class="bi bi-arrow-right study-loop-arrow" aria-hidden="true"></i>
+<div>
+<span>03</span><i class="bi bi-tools"></i><strong>Adapt</strong><small>Change the inputs and complete the guided lab.</small>
+</div>
+<i class="bi bi-arrow-right study-loop-arrow" aria-hidden="true"></i>
+<div>
+<span>04</span><i class="bi bi-patch-check"></i><strong>Prove</strong><small>Pass checks and retain reviewable evidence.</small>
+</div>
 </div>
 <div class="plan-weeks">
 <details class="plan-week plan-topic-week" open="">
-<summary><span class="plan-week-number">Week 01</span><strong>Generative-AI foundations</strong><span class="plan-stage">Foundation</span></summary>
+<summary>
+<span class="plan-week-number">Week 01</span><strong>Generative-AI foundations</strong><span class="plan-stage">Foundation</span>
+</summary>
 <div class="plan-week-body">
-<div><span>Learn</span><p>Begin with <a href="generative-ai/052-generative-ai-foundations/01-generative-versus-discriminative-models.html">Generative versus discriminative models</a> and write the core mental model in your own words.</p></div>
-<div><span>Practice</span><p>Run, change, and explain the worked patterns across the middle lessons. Keep test evidence and questions.</p></div>
-<div><span>Demonstrate</span><p>Complete <a href="generative-ai/052-generative-ai-foundations/10-first-genai-application.html">First GenAI application</a> without copying the solution blueprint first.</p></div>
+<div>
+<span>Learn</span>
+<p>
+Begin with <a href="generative-ai/052-generative-ai-foundations/01-generative-versus-discriminative-models.html">Generative versus discriminative models</a> and write the core mental model in your own words.
+</p>
 </div>
-</details><details class="plan-week plan-topic-week">
-<summary><span class="plan-week-number">Week 02</span><strong>Prompt engineering</strong><span class="plan-stage">Core skills</span></summary>
+<div>
+<span>Practice</span>
+<p>
+Run, change, and explain the worked patterns across the middle lessons. Keep test evidence and questions.
+</p>
+</div>
+<div>
+<span>Demonstrate</span>
+<p>
+Complete <a href="generative-ai/052-generative-ai-foundations/10-first-genai-application.html">First GenAI application</a> without copying the solution blueprint first.
+</p>
+</div>
+</div>
+</details>
+<details class="plan-week plan-topic-week">
+<summary>
+<span class="plan-week-number">Week 02</span><strong>Prompt engineering</strong><span class="plan-stage">Core skills</span>
+</summary>
 <div class="plan-week-body">
-<div><span>Learn</span><p>Begin with <a href="generative-ai/053-prompt-engineering/01-prompt-anatomy.html">Prompt anatomy</a> and write the core mental model in your own words.</p></div>
-<div><span>Practice</span><p>Run, change, and explain the worked patterns across the middle lessons. Keep test evidence and questions.</p></div>
-<div><span>Demonstrate</span><p>Complete <a href="generative-ai/053-prompt-engineering/10-prompt-engineering-project.html">Prompt-engineering project</a> without copying the solution blueprint first.</p></div>
+<div>
+<span>Learn</span>
+<p>
+Begin with <a href="generative-ai/053-prompt-engineering/01-prompt-anatomy.html">Prompt anatomy</a> and write the core mental model in your own words.
+</p>
 </div>
-</details><details class="plan-week plan-topic-week">
-<summary><span class="plan-week-number">Week 03</span><strong>Text-generation applications</strong><span class="plan-stage">Core skills</span></summary>
+<div>
+<span>Practice</span>
+<p>
+Run, change, and explain the worked patterns across the middle lessons. Keep test evidence and questions.
+</p>
+</div>
+<div>
+<span>Demonstrate</span>
+<p>
+Complete <a href="generative-ai/053-prompt-engineering/10-prompt-engineering-project.html">Prompt-engineering project</a> without copying the solution blueprint first.
+</p>
+</div>
+</div>
+</details>
+<details class="plan-week plan-topic-week">
+<summary>
+<span class="plan-week-number">Week 03</span><strong>Text-generation applications</strong><span class="plan-stage">Core skills</span>
+</summary>
 <div class="plan-week-body">
-<div><span>Learn</span><p>Begin with <a href="generative-ai/054-text-generation-applications/01-summarization.html">Summarization</a> and write the core mental model in your own words.</p></div>
-<div><span>Practice</span><p>Run, change, and explain the worked patterns across the middle lessons. Keep test evidence and questions.</p></div>
-<div><span>Demonstrate</span><p>Complete <a href="generative-ai/054-text-generation-applications/10-text-application-project.html">Text-application project</a> without copying the solution blueprint first.</p></div>
+<div>
+<span>Learn</span>
+<p>
+Begin with <a href="generative-ai/054-text-generation-applications/01-summarization.html">Summarization</a> and write the core mental model in your own words.
+</p>
 </div>
-</details><details class="plan-week plan-topic-week">
-<summary><span class="plan-week-number">Week 04</span><strong>Image and multimodal generation</strong><span class="plan-stage">Core skills</span></summary>
+<div>
+<span>Practice</span>
+<p>
+Run, change, and explain the worked patterns across the middle lessons. Keep test evidence and questions.
+</p>
+</div>
+<div>
+<span>Demonstrate</span>
+<p>
+Complete <a href="generative-ai/054-text-generation-applications/10-text-application-project.html">Text-application project</a> without copying the solution blueprint first.
+</p>
+</div>
+</div>
+</details>
+<details class="plan-week plan-topic-week">
+<summary>
+<span class="plan-week-number">Week 04</span><strong>Image and multimodal generation</strong><span class="plan-stage">Core skills</span>
+</summary>
 <div class="plan-week-body">
-<div><span>Learn</span><p>Begin with <a href="generative-ai/055-image-and-multimodal-generation/01-image-generation-foundations.html">Image-generation foundations</a> and write the core mental model in your own words.</p></div>
-<div><span>Practice</span><p>Run, change, and explain the worked patterns across the middle lessons. Keep test evidence and questions.</p></div>
-<div><span>Demonstrate</span><p>Complete <a href="generative-ai/055-image-and-multimodal-generation/10-multimodal-project.html">Multimodal project</a> without copying the solution blueprint first.</p></div>
+<div>
+<span>Learn</span>
+<p>
+Begin with <a href="generative-ai/055-image-and-multimodal-generation/01-image-generation-foundations.html">Image-generation foundations</a> and write the core mental model in your own words.
+</p>
 </div>
-</details><details class="plan-week plan-topic-week">
-<summary><span class="plan-week-number">Week 05</span><strong>Generative-AI evaluation and safety</strong><span class="plan-stage">Applied delivery</span></summary>
+<div>
+<span>Practice</span>
+<p>
+Run, change, and explain the worked patterns across the middle lessons. Keep test evidence and questions.
+</p>
+</div>
+<div>
+<span>Demonstrate</span>
+<p>
+Complete <a href="generative-ai/055-image-and-multimodal-generation/10-multimodal-project.html">Multimodal project</a> without copying the solution blueprint first.
+</p>
+</div>
+</div>
+</details>
+<details class="plan-week plan-topic-week">
+<summary>
+<span class="plan-week-number">Week 05</span><strong>Generative-AI evaluation and safety</strong><span class="plan-stage">Applied delivery</span>
+</summary>
 <div class="plan-week-body">
-<div><span>Learn</span><p>Begin with <a href="generative-ai/056-generative-ai-evaluation-and-safety/01-evaluation-strategy.html">Evaluation strategy</a> and write the core mental model in your own words.</p></div>
-<div><span>Practice</span><p>Run, change, and explain the worked patterns across the middle lessons. Keep test evidence and questions.</p></div>
-<div><span>Demonstrate</span><p>Complete <a href="generative-ai/056-generative-ai-evaluation-and-safety/10-safety-evaluation-project.html">Safety-evaluation project</a> without copying the solution blueprint first.</p></div>
+<div>
+<span>Learn</span>
+<p>
+Begin with <a href="generative-ai/056-generative-ai-evaluation-and-safety/01-evaluation-strategy.html">Evaluation strategy</a> and write the core mental model in your own words.
+</p>
 </div>
-</details><details class="plan-week plan-topic-week">
-<summary><span class="plan-week-number">Week 06</span><strong>Generative-AI application engineering</strong><span class="plan-stage">Applied delivery</span></summary>
+<div>
+<span>Practice</span>
+<p>
+Run, change, and explain the worked patterns across the middle lessons. Keep test evidence and questions.
+</p>
+</div>
+<div>
+<span>Demonstrate</span>
+<p>
+Complete <a href="generative-ai/056-generative-ai-evaluation-and-safety/10-safety-evaluation-project.html">Safety-evaluation project</a> without copying the solution blueprint first.
+</p>
+</div>
+</div>
+</details>
+<details class="plan-week plan-topic-week">
+<summary>
+<span class="plan-week-number">Week 06</span><strong>Generative-AI application engineering</strong><span class="plan-stage">Applied delivery</span>
+</summary>
 <div class="plan-week-body">
-<div><span>Learn</span><p>Begin with <a href="generative-ai/057-generative-ai-application-engineering/01-model-apis.html">Model APIs</a> and write the core mental model in your own words.</p></div>
-<div><span>Practice</span><p>Run, change, and explain the worked patterns across the middle lessons. Keep test evidence and questions.</p></div>
-<div><span>Demonstrate</span><p>Complete <a href="generative-ai/057-generative-ai-application-engineering/10-genai-application-project.html">GenAI application project</a> without copying the solution blueprint first.</p></div>
+<div>
+<span>Learn</span>
+<p>
+Begin with <a href="generative-ai/057-generative-ai-application-engineering/01-model-apis.html">Model APIs</a> and write the core mental model in your own words.
+</p>
 </div>
-</details><details class="plan-week plan-topic-week">
-<summary><span class="plan-week-number">Week 07</span><strong>Adaptation and production GenAI</strong><span class="plan-stage">Integration &amp; capstone</span></summary>
+<div>
+<span>Practice</span>
+<p>
+Run, change, and explain the worked patterns across the middle lessons. Keep test evidence and questions.
+</p>
+</div>
+<div>
+<span>Demonstrate</span>
+<p>
+Complete <a href="generative-ai/057-generative-ai-application-engineering/10-genai-application-project.html">GenAI application project</a> without copying the solution blueprint first.
+</p>
+</div>
+</div>
+</details>
+<details class="plan-week plan-topic-week">
+<summary>
+<span class="plan-week-number">Week 07</span><strong>Adaptation and production GenAI</strong><span class="plan-stage">Integration &amp; capstone</span>
+</summary>
 <div class="plan-week-body">
-<div><span>Learn</span><p>Begin with <a href="generative-ai/058-adaptation-and-production-genai/01-model-selection-strategy.html">Model-selection strategy</a> and write the core mental model in your own words.</p></div>
-<div><span>Practice</span><p>Run, change, and explain the worked patterns across the middle lessons. Keep test evidence and questions.</p></div>
-<div><span>Demonstrate</span><p>Complete <a href="generative-ai/058-adaptation-and-production-genai/10-generative-ai-capstone.html">Generative-AI capstone</a> without copying the solution blueprint first.</p></div>
+<div>
+<span>Learn</span>
+<p>
+Begin with <a href="generative-ai/058-adaptation-and-production-genai/01-model-selection-strategy.html">Model-selection strategy</a> and write the core mental model in your own words.
+</p>
 </div>
-</details><div class="plan-integration-week">
+<div>
+<span>Practice</span>
+<p>
+Run, change, and explain the worked patterns across the middle lessons. Keep test evidence and questions.
+</p>
+</div>
+<div>
+<span>Demonstrate</span>
+<p>
+Complete <a href="generative-ai/058-adaptation-and-production-genai/10-generative-ai-capstone.html">Generative-AI capstone</a> without copying the solution blueprint first.
+</p>
+</div>
+</div>
+</details>
+<div class="plan-integration-week">
 <span class="plan-week-number">Week 08</span>
-<div><strong>Integration, review, and portfolio evidence</strong><p>Connect the topic artifacts, close weak areas, and publish one reviewable Generative AI outcome. Use <a href="generative-ai/058-adaptation-and-production-genai/10-generative-ai-capstone.html">Generative-AI capstone</a> as the final checkpoint.</p></div>
-<i aria-hidden="true" class="bi bi-trophy"></i>
+<div>
+<strong>Integration, review, and portfolio evidence</strong>
+<p>
+Connect the topic artifacts, close weak areas, and publish one reviewable Generative AI outcome. Use <a href="generative-ai/058-adaptation-and-production-genai/10-generative-ai-capstone.html">Generative-AI capstone</a> as the final checkpoint.
+</p>
+</div>
+<p><i class="bi bi-trophy" aria-hidden="true"></i></p>
 </div>
 </div>
-</section><section class="learning-path-section" id="full-learning-path">
-<div class="path-section-heading"><div><span class="overview-kicker">Ordered progression</span><h2>Full learning path</h2><p>Follow every stage in sequence. Each stage links directly to its first notebook and ends with a concrete mastery checkpoint.</p></div><span class="path-route"><i class="bi bi-signpost-2"></i> Full Stack AI → Generative AI</span></div>
+</section>
+<section class="learning-path-section" id="full-learning-path">
+<div class="path-section-heading">
+<div>
+<span class="overview-kicker">Ordered progression</span>
+<h2 class="anchored">
+Full learning path
+</h2>
+<p>
+Follow every stage in sequence. Each stage links directly to its first notebook and ends with a concrete mastery checkpoint.
+</p>
+</div>
+<span class="path-route"><i class="bi bi-signpost-2"></i> Full Stack AI → Generative AI</span>
+</div>
 <div class="learning-path">
-<a class="learning-path-step" data-topic="052" href="generative-ai/052-generative-ai-foundations/01-generative-versus-discriminative-models.html">
-<span class="path-index">01</span>
-<span class="path-step-copy"><span class="path-phase">Foundation · Topic 052</span><strong>Generative-AI foundations</strong><small>Enter with Generative versus discriminative models. Demonstrate mastery through First GenAI application.</small></span>
-<i aria-hidden="true" class="bi bi-arrow-right"></i>
-</a><a class="learning-path-step" data-topic="053" href="generative-ai/053-prompt-engineering/01-prompt-anatomy.html">
-<span class="path-index">02</span>
-<span class="path-step-copy"><span class="path-phase">Core skills · Topic 053</span><strong>Prompt engineering</strong><small>Enter with Prompt anatomy. Demonstrate mastery through Prompt-engineering project.</small></span>
-<i aria-hidden="true" class="bi bi-arrow-right"></i>
-</a><a class="learning-path-step" data-topic="054" href="generative-ai/054-text-generation-applications/01-summarization.html">
-<span class="path-index">03</span>
-<span class="path-step-copy"><span class="path-phase">Core skills · Topic 054</span><strong>Text-generation applications</strong><small>Enter with Summarization. Demonstrate mastery through Text-application project.</small></span>
-<i aria-hidden="true" class="bi bi-arrow-right"></i>
-</a><a class="learning-path-step" data-topic="055" href="generative-ai/055-image-and-multimodal-generation/01-image-generation-foundations.html">
-<span class="path-index">04</span>
-<span class="path-step-copy"><span class="path-phase">Core skills · Topic 055</span><strong>Image and multimodal generation</strong><small>Enter with Image-generation foundations. Demonstrate mastery through Multimodal project.</small></span>
-<i aria-hidden="true" class="bi bi-arrow-right"></i>
-</a><a class="learning-path-step" data-topic="056" href="generative-ai/056-generative-ai-evaluation-and-safety/01-evaluation-strategy.html">
-<span class="path-index">05</span>
-<span class="path-step-copy"><span class="path-phase">Applied delivery · Topic 056</span><strong>Generative-AI evaluation and safety</strong><small>Enter with Evaluation strategy. Demonstrate mastery through Safety-evaluation project.</small></span>
-<i aria-hidden="true" class="bi bi-arrow-right"></i>
-</a><a class="learning-path-step" data-topic="057" href="generative-ai/057-generative-ai-application-engineering/01-model-apis.html">
-<span class="path-index">06</span>
-<span class="path-step-copy"><span class="path-phase">Applied delivery · Topic 057</span><strong>Generative-AI application engineering</strong><small>Enter with Model APIs. Demonstrate mastery through GenAI application project.</small></span>
-<i aria-hidden="true" class="bi bi-arrow-right"></i>
-</a><a class="learning-path-step" data-topic="058" href="generative-ai/058-adaptation-and-production-genai/01-model-selection-strategy.html">
-<span class="path-index">07</span>
-<span class="path-step-copy"><span class="path-phase">Integration &amp; capstone · Topic 058</span><strong>Adaptation and production GenAI</strong><small>Enter with Model-selection strategy. Demonstrate mastery through Generative-AI capstone.</small></span>
-<i aria-hidden="true" class="bi bi-arrow-right"></i>
-</a>
+<p><a class="learning-path-step" data-topic="052" href="generative-ai/052-generative-ai-foundations/01-generative-versus-discriminative-models.html"> <span class="path-index">01</span> <span class="path-step-copy"><span class="path-phase">Foundation · Topic 052</span><strong>Generative-AI foundations</strong><small>Enter with Generative versus discriminative models. Demonstrate mastery through First GenAI application.</small></span> <i class="bi bi-arrow-right" aria-hidden="true"></i> </a><a class="learning-path-step" data-topic="053" href="generative-ai/053-prompt-engineering/01-prompt-anatomy.html"> <span class="path-index">02</span> <span class="path-step-copy"><span class="path-phase">Core skills · Topic 053</span><strong>Prompt engineering</strong><small>Enter with Prompt anatomy. Demonstrate mastery through Prompt-engineering project.</small></span> <i class="bi bi-arrow-right" aria-hidden="true"></i> </a><a class="learning-path-step" data-topic="054" href="generative-ai/054-text-generation-applications/01-summarization.html"> <span class="path-index">03</span> <span class="path-step-copy"><span class="path-phase">Core skills · Topic 054</span><strong>Text-generation applications</strong><small>Enter with Summarization. Demonstrate mastery through Text-application project.</small></span> <i class="bi bi-arrow-right" aria-hidden="true"></i> </a><a class="learning-path-step" data-topic="055" href="generative-ai/055-image-and-multimodal-generation/01-image-generation-foundations.html"> <span class="path-index">04</span> <span class="path-step-copy"><span class="path-phase">Core skills · Topic 055</span><strong>Image and multimodal generation</strong><small>Enter with Image-generation foundations. Demonstrate mastery through Multimodal project.</small></span> <i class="bi bi-arrow-right" aria-hidden="true"></i> </a><a class="learning-path-step" data-topic="056" href="generative-ai/056-generative-ai-evaluation-and-safety/01-evaluation-strategy.html"> <span class="path-index">05</span> <span class="path-step-copy"><span class="path-phase">Applied delivery · Topic 056</span><strong>Generative-AI evaluation and safety</strong><small>Enter with Evaluation strategy. Demonstrate mastery through Safety-evaluation project.</small></span> <i class="bi bi-arrow-right" aria-hidden="true"></i> </a><a class="learning-path-step" data-topic="057" href="generative-ai/057-generative-ai-application-engineering/01-model-apis.html"> <span class="path-index">06</span> <span class="path-step-copy"><span class="path-phase">Applied delivery · Topic 057</span><strong>Generative-AI application engineering</strong><small>Enter with Model APIs. Demonstrate mastery through GenAI application project.</small></span> <i class="bi bi-arrow-right" aria-hidden="true"></i> </a><a class="learning-path-step" data-topic="058" href="generative-ai/058-adaptation-and-production-genai/01-model-selection-strategy.html"> <span class="path-index">07</span> <span class="path-step-copy"><span class="path-phase">Integration &amp; capstone · Topic 058</span><strong>Adaptation and production GenAI</strong><small>Enter with Model-selection strategy. Demonstrate mastery through Generative-AI capstone.</small></span> <i class="bi bi-arrow-right" aria-hidden="true"></i> </a></p>
 </div>
-<div class="path-finish"><span><i class="bi bi-trophy-fill"></i></span><div><small>Completion milestone</small><strong>Connect the complete Generative AI workflow</strong><p>Combine evidence from every stage and finish with Generative-AI capstone. You should be able to explain the architecture, reproduce the core workflow, diagnose failure, and defend the main tradeoffs.</p></div></div>
-</section><div class="syllabus-heading" id="notebook-syllabus">
-<div><span class="overview-kicker">Course contents</span><h2>Notebook syllabus</h2><p>Open a topic to browse its lessons, or search the complete course by concept.</p></div>
-<label class="syllabus-search" for="full-stack-ai-generative-ai-catalog-search"><i aria-hidden="true" class="bi bi-search"></i><input aria-label="Search the Generative AI syllabus" autocomplete="off" id="full-stack-ai-generative-ai-catalog-search" placeholder="Find a topic or lesson" type="search"/></label>
+<div class="path-finish">
+<span><i class="bi bi-trophy-fill"></i></span>
+<div>
+<small>Completion milestone</small><strong>Connect the complete Generative AI workflow</strong>
+<p>
+Combine evidence from every stage and finish with Generative-AI capstone. You should be able to explain the architecture, reproduce the core workflow, diagnose failure, and defend the main tradeoffs.
+</p>
 </div>
-<div class="curriculum-catalog" id="full-stack-ai-generative-ai-catalog">
+</div>
+</section>
+<div id="notebook-syllabus" class="syllabus-heading">
+<div>
+<span class="overview-kicker">Course contents</span>
+<h2 class="anchored">
+Notebook syllabus
+</h2>
+<p>
+Open a topic to browse its lessons, or search the complete course by concept.
+</p>
+</div>
+<p><label class="syllabus-search" for="full-stack-ai-generative-ai-catalog-search"><i class="bi bi-search" aria-hidden="true"></i><input id="full-stack-ai-generative-ai-catalog-search" type="search" placeholder="Find a topic or lesson" autocomplete="off" aria-label="Search the Generative AI syllabus"></label></p>
+</div>
+<div id="full-stack-ai-generative-ai-catalog" class="curriculum-catalog">
 <details class="curriculum-topic" open="">
-<summary><span class="topic-number">Topic 052</span><strong>Generative-AI foundations</strong></summary>
+<summary>
+<span class="topic-number">Topic 052</span><strong>Generative-AI foundations</strong>
+</summary>
 <div class="topic-lessons">
-<a class="topic-lesson-link" href="generative-ai/052-generative-ai-foundations/01-generative-versus-discriminative-models.html"><span>052.01</span><strong>Generative versus discriminative models</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="generative-ai/052-generative-ai-foundations/02-generative-ai-ecosystem.html"><span>052.02</span><strong>Generative-AI ecosystem</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="generative-ai/052-generative-ai-foundations/03-foundation-models.html"><span>052.03</span><strong>Foundation models</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="generative-ai/052-generative-ai-foundations/04-model-modalities.html"><span>052.04</span><strong>Model modalities</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="generative-ai/052-generative-ai-foundations/05-tokens-and-context.html"><span>052.05</span><strong>Tokens and context</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="generative-ai/052-generative-ai-foundations/06-sampling.html"><span>052.06</span><strong>Sampling</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="generative-ai/052-generative-ai-foundations/07-temperature-and-top-p.html"><span>052.07</span><strong>Temperature and top-p</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="generative-ai/052-generative-ai-foundations/08-hallucination.html"><span>052.08</span><strong>Hallucination</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="generative-ai/052-generative-ai-foundations/09-application-patterns.html"><span>052.09</span><strong>Application patterns</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="generative-ai/052-generative-ai-foundations/10-first-genai-application.html"><span>052.10</span><strong>First GenAI application</strong><i class="bi bi-arrow-right"></i></a>
+<p><a class="topic-lesson-link" href="generative-ai/052-generative-ai-foundations/01-generative-versus-discriminative-models.html"><span>052.01</span><strong>Generative versus discriminative models</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="generative-ai/052-generative-ai-foundations/02-generative-ai-ecosystem.html"><span>052.02</span><strong>Generative-AI ecosystem</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="generative-ai/052-generative-ai-foundations/03-foundation-models.html"><span>052.03</span><strong>Foundation models</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="generative-ai/052-generative-ai-foundations/04-model-modalities.html"><span>052.04</span><strong>Model modalities</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="generative-ai/052-generative-ai-foundations/05-tokens-and-context.html"><span>052.05</span><strong>Tokens and context</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="generative-ai/052-generative-ai-foundations/06-sampling.html"><span>052.06</span><strong>Sampling</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="generative-ai/052-generative-ai-foundations/07-temperature-and-top-p.html"><span>052.07</span><strong>Temperature and top-p</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="generative-ai/052-generative-ai-foundations/08-hallucination.html"><span>052.08</span><strong>Hallucination</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="generative-ai/052-generative-ai-foundations/09-application-patterns.html"><span>052.09</span><strong>Application patterns</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="generative-ai/052-generative-ai-foundations/10-first-genai-application.html"><span>052.10</span><strong>First GenAI application</strong><i class="bi bi-arrow-right"></i></a></p>
 </div>
 </details>
 <details class="curriculum-topic">
-<summary><span class="topic-number">Topic 053</span><strong>Prompt engineering</strong></summary>
+<summary>
+<span class="topic-number">Topic 053</span><strong>Prompt engineering</strong>
+</summary>
 <div class="topic-lessons">
-<a class="topic-lesson-link" href="generative-ai/053-prompt-engineering/01-prompt-anatomy.html"><span>053.01</span><strong>Prompt anatomy</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="generative-ai/053-prompt-engineering/02-instruction-design.html"><span>053.02</span><strong>Instruction design</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="generative-ai/053-prompt-engineering/03-context-design.html"><span>053.03</span><strong>Context design</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="generative-ai/053-prompt-engineering/04-zero-shot-prompting.html"><span>053.04</span><strong>Zero-shot prompting</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="generative-ai/053-prompt-engineering/05-few-shot-prompting.html"><span>053.05</span><strong>Few-shot prompting</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="generative-ai/053-prompt-engineering/06-reasoning-prompts.html"><span>053.06</span><strong>Reasoning prompts</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="generative-ai/053-prompt-engineering/07-role-prompting.html"><span>053.07</span><strong>Role prompting</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="generative-ai/053-prompt-engineering/08-prompt-templates.html"><span>053.08</span><strong>Prompt templates</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="generative-ai/053-prompt-engineering/09-prompt-testing.html"><span>053.09</span><strong>Prompt testing</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="generative-ai/053-prompt-engineering/10-prompt-engineering-project.html"><span>053.10</span><strong>Prompt-engineering project</strong><i class="bi bi-arrow-right"></i></a>
+<p><a class="topic-lesson-link" href="generative-ai/053-prompt-engineering/01-prompt-anatomy.html"><span>053.01</span><strong>Prompt anatomy</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="generative-ai/053-prompt-engineering/02-instruction-design.html"><span>053.02</span><strong>Instruction design</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="generative-ai/053-prompt-engineering/03-context-design.html"><span>053.03</span><strong>Context design</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="generative-ai/053-prompt-engineering/04-zero-shot-prompting.html"><span>053.04</span><strong>Zero-shot prompting</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="generative-ai/053-prompt-engineering/05-few-shot-prompting.html"><span>053.05</span><strong>Few-shot prompting</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="generative-ai/053-prompt-engineering/06-reasoning-prompts.html"><span>053.06</span><strong>Reasoning prompts</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="generative-ai/053-prompt-engineering/07-role-prompting.html"><span>053.07</span><strong>Role prompting</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="generative-ai/053-prompt-engineering/08-prompt-templates.html"><span>053.08</span><strong>Prompt templates</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="generative-ai/053-prompt-engineering/09-prompt-testing.html"><span>053.09</span><strong>Prompt testing</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="generative-ai/053-prompt-engineering/10-prompt-engineering-project.html"><span>053.10</span><strong>Prompt-engineering project</strong><i class="bi bi-arrow-right"></i></a></p>
 </div>
 </details>
 <details class="curriculum-topic">
-<summary><span class="topic-number">Topic 054</span><strong>Text-generation applications</strong></summary>
+<summary>
+<span class="topic-number">Topic 054</span><strong>Text-generation applications</strong>
+</summary>
 <div class="topic-lessons">
-<a class="topic-lesson-link" href="generative-ai/054-text-generation-applications/01-summarization.html"><span>054.01</span><strong>Summarization</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="generative-ai/054-text-generation-applications/02-classification.html"><span>054.02</span><strong>Classification</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="generative-ai/054-text-generation-applications/03-information-extraction.html"><span>054.03</span><strong>Information extraction</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="generative-ai/054-text-generation-applications/04-question-answering.html"><span>054.04</span><strong>Question answering</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="generative-ai/054-text-generation-applications/05-translation.html"><span>054.05</span><strong>Translation</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="generative-ai/054-text-generation-applications/06-content-generation.html"><span>054.06</span><strong>Content generation</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="generative-ai/054-text-generation-applications/07-structured-output.html"><span>054.07</span><strong>Structured output</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="generative-ai/054-text-generation-applications/08-tool-assisted-generation.html"><span>054.08</span><strong>Tool-assisted generation</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="generative-ai/054-text-generation-applications/09-output-validation.html"><span>054.09</span><strong>Output validation</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="generative-ai/054-text-generation-applications/10-text-application-project.html"><span>054.10</span><strong>Text-application project</strong><i class="bi bi-arrow-right"></i></a>
+<p><a class="topic-lesson-link" href="generative-ai/054-text-generation-applications/01-summarization.html"><span>054.01</span><strong>Summarization</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="generative-ai/054-text-generation-applications/02-classification.html"><span>054.02</span><strong>Classification</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="generative-ai/054-text-generation-applications/03-information-extraction.html"><span>054.03</span><strong>Information extraction</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="generative-ai/054-text-generation-applications/04-question-answering.html"><span>054.04</span><strong>Question answering</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="generative-ai/054-text-generation-applications/05-translation.html"><span>054.05</span><strong>Translation</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="generative-ai/054-text-generation-applications/06-content-generation.html"><span>054.06</span><strong>Content generation</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="generative-ai/054-text-generation-applications/07-structured-output.html"><span>054.07</span><strong>Structured output</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="generative-ai/054-text-generation-applications/08-tool-assisted-generation.html"><span>054.08</span><strong>Tool-assisted generation</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="generative-ai/054-text-generation-applications/09-output-validation.html"><span>054.09</span><strong>Output validation</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="generative-ai/054-text-generation-applications/10-text-application-project.html"><span>054.10</span><strong>Text-application project</strong><i class="bi bi-arrow-right"></i></a></p>
 </div>
 </details>
 <details class="curriculum-topic">
-<summary><span class="topic-number">Topic 055</span><strong>Image and multimodal generation</strong></summary>
+<summary>
+<span class="topic-number">Topic 055</span><strong>Image and multimodal generation</strong>
+</summary>
 <div class="topic-lessons">
-<a class="topic-lesson-link" href="generative-ai/055-image-and-multimodal-generation/01-image-generation-foundations.html"><span>055.01</span><strong>Image-generation foundations</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="generative-ai/055-image-and-multimodal-generation/02-text-to-image-prompting.html"><span>055.02</span><strong>Text-to-image prompting</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="generative-ai/055-image-and-multimodal-generation/03-image-editing.html"><span>055.03</span><strong>Image editing</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="generative-ai/055-image-and-multimodal-generation/04-vision-language-models.html"><span>055.04</span><strong>Vision-language models</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="generative-ai/055-image-and-multimodal-generation/05-image-understanding.html"><span>055.05</span><strong>Image understanding</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="generative-ai/055-image-and-multimodal-generation/06-document-intelligence.html"><span>055.06</span><strong>Document intelligence</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="generative-ai/055-image-and-multimodal-generation/07-audio-generation-concepts.html"><span>055.07</span><strong>Audio-generation concepts</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="generative-ai/055-image-and-multimodal-generation/08-multimodal-workflows.html"><span>055.08</span><strong>Multimodal workflows</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="generative-ai/055-image-and-multimodal-generation/09-multimodal-safety.html"><span>055.09</span><strong>Multimodal safety</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="generative-ai/055-image-and-multimodal-generation/10-multimodal-project.html"><span>055.10</span><strong>Multimodal project</strong><i class="bi bi-arrow-right"></i></a>
+<p><a class="topic-lesson-link" href="generative-ai/055-image-and-multimodal-generation/01-image-generation-foundations.html"><span>055.01</span><strong>Image-generation foundations</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="generative-ai/055-image-and-multimodal-generation/02-text-to-image-prompting.html"><span>055.02</span><strong>Text-to-image prompting</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="generative-ai/055-image-and-multimodal-generation/03-image-editing.html"><span>055.03</span><strong>Image editing</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="generative-ai/055-image-and-multimodal-generation/04-vision-language-models.html"><span>055.04</span><strong>Vision-language models</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="generative-ai/055-image-and-multimodal-generation/05-image-understanding.html"><span>055.05</span><strong>Image understanding</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="generative-ai/055-image-and-multimodal-generation/06-document-intelligence.html"><span>055.06</span><strong>Document intelligence</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="generative-ai/055-image-and-multimodal-generation/07-audio-generation-concepts.html"><span>055.07</span><strong>Audio-generation concepts</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="generative-ai/055-image-and-multimodal-generation/08-multimodal-workflows.html"><span>055.08</span><strong>Multimodal workflows</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="generative-ai/055-image-and-multimodal-generation/09-multimodal-safety.html"><span>055.09</span><strong>Multimodal safety</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="generative-ai/055-image-and-multimodal-generation/10-multimodal-project.html"><span>055.10</span><strong>Multimodal project</strong><i class="bi bi-arrow-right"></i></a></p>
 </div>
 </details>
 <details class="curriculum-topic">
-<summary><span class="topic-number">Topic 056</span><strong>Generative-AI evaluation and safety</strong></summary>
+<summary>
+<span class="topic-number">Topic 056</span><strong>Generative-AI evaluation and safety</strong>
+</summary>
 <div class="topic-lessons">
-<a class="topic-lesson-link" href="generative-ai/056-generative-ai-evaluation-and-safety/01-evaluation-strategy.html"><span>056.01</span><strong>Evaluation strategy</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="generative-ai/056-generative-ai-evaluation-and-safety/02-reference-based-evaluation.html"><span>056.02</span><strong>Reference-based evaluation</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="generative-ai/056-generative-ai-evaluation-and-safety/03-llm-as-judge.html"><span>056.03</span><strong>LLM-as-judge</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="generative-ai/056-generative-ai-evaluation-and-safety/04-human-evaluation.html"><span>056.04</span><strong>Human evaluation</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="generative-ai/056-generative-ai-evaluation-and-safety/05-hallucination-evaluation.html"><span>056.05</span><strong>Hallucination evaluation</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="generative-ai/056-generative-ai-evaluation-and-safety/06-prompt-injection.html"><span>056.06</span><strong>Prompt injection</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="generative-ai/056-generative-ai-evaluation-and-safety/07-content-safety.html"><span>056.07</span><strong>Content safety</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="generative-ai/056-generative-ai-evaluation-and-safety/08-privacy-protection.html"><span>056.08</span><strong>Privacy protection</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="generative-ai/056-generative-ai-evaluation-and-safety/09-red-teaming.html"><span>056.09</span><strong>Red teaming</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="generative-ai/056-generative-ai-evaluation-and-safety/10-safety-evaluation-project.html"><span>056.10</span><strong>Safety-evaluation project</strong><i class="bi bi-arrow-right"></i></a>
+<p><a class="topic-lesson-link" href="generative-ai/056-generative-ai-evaluation-and-safety/01-evaluation-strategy.html"><span>056.01</span><strong>Evaluation strategy</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="generative-ai/056-generative-ai-evaluation-and-safety/02-reference-based-evaluation.html"><span>056.02</span><strong>Reference-based evaluation</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="generative-ai/056-generative-ai-evaluation-and-safety/03-llm-as-judge.html"><span>056.03</span><strong>LLM-as-judge</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="generative-ai/056-generative-ai-evaluation-and-safety/04-human-evaluation.html"><span>056.04</span><strong>Human evaluation</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="generative-ai/056-generative-ai-evaluation-and-safety/05-hallucination-evaluation.html"><span>056.05</span><strong>Hallucination evaluation</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="generative-ai/056-generative-ai-evaluation-and-safety/06-prompt-injection.html"><span>056.06</span><strong>Prompt injection</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="generative-ai/056-generative-ai-evaluation-and-safety/07-content-safety.html"><span>056.07</span><strong>Content safety</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="generative-ai/056-generative-ai-evaluation-and-safety/08-privacy-protection.html"><span>056.08</span><strong>Privacy protection</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="generative-ai/056-generative-ai-evaluation-and-safety/09-red-teaming.html"><span>056.09</span><strong>Red teaming</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="generative-ai/056-generative-ai-evaluation-and-safety/10-safety-evaluation-project.html"><span>056.10</span><strong>Safety-evaluation project</strong><i class="bi bi-arrow-right"></i></a></p>
 </div>
 </details>
 <details class="curriculum-topic">
-<summary><span class="topic-number">Topic 057</span><strong>Generative-AI application engineering</strong></summary>
+<summary>
+<span class="topic-number">Topic 057</span><strong>Generative-AI application engineering</strong>
+</summary>
 <div class="topic-lessons">
-<a class="topic-lesson-link" href="generative-ai/057-generative-ai-application-engineering/01-model-apis.html"><span>057.01</span><strong>Model APIs</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="generative-ai/057-generative-ai-application-engineering/02-streaming-responses.html"><span>057.02</span><strong>Streaming responses</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="generative-ai/057-generative-ai-application-engineering/03-conversation-state.html"><span>057.03</span><strong>Conversation state</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="generative-ai/057-generative-ai-application-engineering/04-structured-schemas.html"><span>057.04</span><strong>Structured schemas</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="generative-ai/057-generative-ai-application-engineering/05-function-calling.html"><span>057.05</span><strong>Function calling</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="generative-ai/057-generative-ai-application-engineering/06-caching.html"><span>057.06</span><strong>Caching</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="generative-ai/057-generative-ai-application-engineering/07-cost-control.html"><span>057.07</span><strong>Cost control</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="generative-ai/057-generative-ai-application-engineering/08-error-handling.html"><span>057.08</span><strong>Error handling</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="generative-ai/057-generative-ai-application-engineering/09-application-observability.html"><span>057.09</span><strong>Application observability</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="generative-ai/057-generative-ai-application-engineering/10-genai-application-project.html"><span>057.10</span><strong>GenAI application project</strong><i class="bi bi-arrow-right"></i></a>
+<p><a class="topic-lesson-link" href="generative-ai/057-generative-ai-application-engineering/01-model-apis.html"><span>057.01</span><strong>Model APIs</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="generative-ai/057-generative-ai-application-engineering/02-streaming-responses.html"><span>057.02</span><strong>Streaming responses</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="generative-ai/057-generative-ai-application-engineering/03-conversation-state.html"><span>057.03</span><strong>Conversation state</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="generative-ai/057-generative-ai-application-engineering/04-structured-schemas.html"><span>057.04</span><strong>Structured schemas</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="generative-ai/057-generative-ai-application-engineering/05-function-calling.html"><span>057.05</span><strong>Function calling</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="generative-ai/057-generative-ai-application-engineering/06-caching.html"><span>057.06</span><strong>Caching</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="generative-ai/057-generative-ai-application-engineering/07-cost-control.html"><span>057.07</span><strong>Cost control</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="generative-ai/057-generative-ai-application-engineering/08-error-handling.html"><span>057.08</span><strong>Error handling</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="generative-ai/057-generative-ai-application-engineering/09-application-observability.html"><span>057.09</span><strong>Application observability</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="generative-ai/057-generative-ai-application-engineering/10-genai-application-project.html"><span>057.10</span><strong>GenAI application project</strong><i class="bi bi-arrow-right"></i></a></p>
 </div>
 </details>
 <details class="curriculum-topic">
-<summary><span class="topic-number">Topic 058</span><strong>Adaptation and production GenAI</strong></summary>
+<summary>
+<span class="topic-number">Topic 058</span><strong>Adaptation and production GenAI</strong>
+</summary>
 <div class="topic-lessons">
-<a class="topic-lesson-link" href="generative-ai/058-adaptation-and-production-genai/01-model-selection-strategy.html"><span>058.01</span><strong>Model-selection strategy</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="generative-ai/058-adaptation-and-production-genai/02-fine-tuning-concepts.html"><span>058.02</span><strong>Fine-tuning concepts</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="generative-ai/058-adaptation-and-production-genai/03-instruction-datasets.html"><span>058.03</span><strong>Instruction datasets</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="generative-ai/058-adaptation-and-production-genai/04-preference-optimization.html"><span>058.04</span><strong>Preference optimization</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="generative-ai/058-adaptation-and-production-genai/05-synthetic-data.html"><span>058.05</span><strong>Synthetic data</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="generative-ai/058-adaptation-and-production-genai/06-model-deployment.html"><span>058.06</span><strong>Model deployment</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="generative-ai/058-adaptation-and-production-genai/07-latency-optimization.html"><span>058.07</span><strong>Latency optimization</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="generative-ai/058-adaptation-and-production-genai/08-production-monitoring.html"><span>058.08</span><strong>Production monitoring</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="generative-ai/058-adaptation-and-production-genai/09-governance.html"><span>058.09</span><strong>Governance</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="generative-ai/058-adaptation-and-production-genai/10-generative-ai-capstone.html"><span>058.10</span><strong>Generative-AI capstone</strong><i class="bi bi-arrow-right"></i></a>
+<p><a class="topic-lesson-link" href="generative-ai/058-adaptation-and-production-genai/01-model-selection-strategy.html"><span>058.01</span><strong>Model-selection strategy</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="generative-ai/058-adaptation-and-production-genai/02-fine-tuning-concepts.html"><span>058.02</span><strong>Fine-tuning concepts</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="generative-ai/058-adaptation-and-production-genai/03-instruction-datasets.html"><span>058.03</span><strong>Instruction datasets</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="generative-ai/058-adaptation-and-production-genai/04-preference-optimization.html"><span>058.04</span><strong>Preference optimization</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="generative-ai/058-adaptation-and-production-genai/05-synthetic-data.html"><span>058.05</span><strong>Synthetic data</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="generative-ai/058-adaptation-and-production-genai/06-model-deployment.html"><span>058.06</span><strong>Model deployment</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="generative-ai/058-adaptation-and-production-genai/07-latency-optimization.html"><span>058.07</span><strong>Latency optimization</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="generative-ai/058-adaptation-and-production-genai/08-production-monitoring.html"><span>058.08</span><strong>Production monitoring</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="generative-ai/058-adaptation-and-production-genai/09-governance.html"><span>058.09</span><strong>Governance</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="generative-ai/058-adaptation-and-production-genai/10-generative-ai-capstone.html"><span>058.10</span><strong>Generative-AI capstone</strong><i class="bi bi-arrow-right"></i></a></p>
 </div>
 </details>
 </div>
-<p class="syllabus-empty" hidden="" id="full-stack-ai-generative-ai-catalog-empty"><i class="bi bi-search"></i> No matching lessons were found.</p>
+<p class="syllabus-empty" id="full-stack-ai-generative-ai-catalog-empty" hidden="">
+<i class="bi bi-search"></i> No matching lessons were found.
+</p>
 <script>
 document.addEventListener("DOMContentLoaded", () => {
   const catalog = document.getElementById("full-stack-ai-generative-ai-catalog");
@@ -604,10 +729,14 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 </script>
-<section class="level2" id="completion-standard">
+</section>
+<section id="completion-standard" class="level2">
 <h2 class="anchored" data-anchor-id="completion-standard">Completion standard</h2>
 <p>You have completed <strong>Generative AI</strong> when you can explain each topic, reproduce its core workflow, pass the notebook checks, defend the main tradeoffs, and combine the lessons into one reviewable portfolio project. Use the practice tasks as evidence rather than treating page reading alone as completion.</p>
+
+
 </section>
+
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
@@ -1011,17 +1140,21 @@ document.addEventListener("DOMContentLoaded", () => {
   </script>
 </div> <!-- /content -->
 <footer class="footer">
-<div class="nav-footer">
-<div class="nav-footer-left">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
 <p>© 2026 Edukron Notes</p>
-</div>
-<div class="nav-footer-center">
-       
+</div>   
+    <div class="nav-footer-center">
+      &nbsp;
     </div>
-<div class="nav-footer-right">
+    <div class="nav-footer-right">
 <p>Notebook courses for AI, data engineering, and DevOps</p>
 </div>
-</div>
+  </div>
 </footer>
+
+
+
+
 <script src="../../site_libs/quarto-html/zenscroll-min.js"></script>
 </body></html>

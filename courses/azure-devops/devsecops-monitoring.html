@@ -1,12 +1,13 @@
 <!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
-<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml"><head>
-<meta charset="utf-8"/>
-<meta content="quarto-1.10.18" name="generator"/>
-<meta content="width=device-width, initial-scale=1.0, user-scalable=yes" name="viewport"/>
-<meta content="Edukron Notes" name="author"/>
-<meta content="2026-09-14" name="dcterms.date"/>
-<meta content="Complete notebook syllabus for DevSecOps &amp; Monitoring in Azure DevOps." name="description"/>
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.10.18">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="description" content="Complete notebook syllabus for DevSecOps &amp; Monitoring in Azure DevOps.">
+
 <title>DevSecOps &amp; Monitoring – Edukron Notes</title>
 <style>
 /* Default styles provided by pandoc.
@@ -27,23 +28,25 @@ ul.task-list li input[type="checkbox"] {
   vertical-align: middle;
 }
 </style>
+
+
 <script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
 <script src="../../site_libs/quarto-nav/headroom.min.js"></script>
 <script src="../../site_libs/clipboard/clipboard.min.js"></script>
 <script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
 <script src="../../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../../site_libs/quarto-search/quarto-search.js"></script>
-<meta content="../../" name="quarto:offset"/>
+<meta name="quarto:offset" content="../../">
 <script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="../../site_libs/quarto-html/popper.min.js"></script>
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet"/>
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" id="quarto-text-highlighting-styles" rel="stylesheet"/>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet"/>
-<link append-hash="true" data-mode="light" href="../../site_libs/bootstrap/bootstrap-f0f4b58164ec92a07fcd2db94b0e5cbd.min.css" id="quarto-bootstrap" rel="stylesheet"/>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-0f70c849674a990122300108587fb581.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -71,407 +74,501 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 <style>html{ scroll-behavior: smooth; }</style>
-<link href="../../styles.css" rel="stylesheet"/>
+
+
+<link rel="stylesheet" href="../../styles.css">
 </head>
+
 <body class="nav-fixed quarto-light">
+
 <div id="quarto-search-results"></div>
-<header class="headroom fixed-top" id="quarto-header">
-<nav class="navbar navbar-expand-lg" data-bs-theme="dark">
-<div class="navbar-container container-fluid">
-<div class="navbar-brand-container mx-auto">
-<a class="navbar-brand" href="../../index.html">
-<span class="navbar-title">Edukron Notes</span>
-</a>
-</div>
-<div class="" id="quarto-search" title="Search"></div>
-<button aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-bs-target="#navbarCollapse" data-bs-toggle="collapse" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }" role="menu" type="button">
-<span class="navbar-toggler-icon"></span>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../../index.html">
+    <span class="navbar-title">Edukron Notes</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
 </button>
-<div class="collapse navbar-collapse" id="navbarCollapse">
-<ul class="navbar-nav navbar-nav-scroll me-auto">
-<li class="nav-item">
-<a class="nav-link" href="../../index.html">
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../index.html"> 
 <span class="menu-text">Home</span></a>
-</li>
-<li class="nav-item dropdown">
-<a aria-expanded="false" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" id="nav-menu-full-stack-ai" role="link">
-<i class="bi bi-cpu" role="img">
-</i>
-<span class="menu-text">Full Stack AI</span>
-</a>
-<ul aria-labelledby="nav-menu-full-stack-ai" class="dropdown-menu">
-<li>
-<a class="dropdown-item" href="../../courses/full-stack-ai/index.html">
-<span class="dropdown-text">Program overview</span></a>
-</li>
-<li>
-<a class="dropdown-item" href="../../courses/full-stack-ai/python.html">
-<span class="dropdown-text">Python</span></a>
-</li>
-<li>
-<a class="dropdown-item" href="../../courses/full-stack-ai/sql.html">
-<span class="dropdown-text">SQL</span></a>
-</li>
-<li>
-<a class="dropdown-item" href="../../courses/full-stack-ai/data-science.html">
-<span class="dropdown-text">Data Science</span></a>
-</li>
-<li>
-<a class="dropdown-item" href="../../courses/full-stack-ai/machine-learning.html">
-<span class="dropdown-text">Machine Learning</span></a>
-</li>
-<li>
-<a class="dropdown-item" href="../../courses/full-stack-ai/artificial-intelligence.html">
-<span class="dropdown-text">Artificial Intelligence</span></a>
-</li>
-<li>
-<a class="dropdown-item" href="../../courses/full-stack-ai/deep-learning.html">
-<span class="dropdown-text">Deep Learning</span></a>
-</li>
-<li>
-<a class="dropdown-item" href="../../courses/full-stack-ai/generative-ai.html">
-<span class="dropdown-text">Generative AI</span></a>
-</li>
-<li>
-<a class="dropdown-item" href="../../courses/full-stack-ai/large-language-models.html">
-<span class="dropdown-text">Large Language Models (LLMs)</span></a>
-</li>
-<li>
-<a class="dropdown-item" href="../../courses/full-stack-ai/rag.html">
-<span class="dropdown-text">Retrieval Augmented Generation (RAG)</span></a>
-</li>
-<li>
-<a class="dropdown-item" href="../../courses/full-stack-ai/agentic-ai.html">
-<span class="dropdown-text">Agentic AI</span></a>
-</li>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-full-stack-ai" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+      <i class="bi bi-cpu" role="img">
+</i> 
+ <span class="menu-text">Full Stack AI</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-full-stack-ai">    
+        <li>
+    <a class="dropdown-item" href="../../courses/full-stack-ai/index.html">
+ <span class="dropdown-text">Program overview</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../courses/full-stack-ai/python.html">
+ <span class="dropdown-text">Python</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../courses/full-stack-ai/sql.html">
+ <span class="dropdown-text">SQL</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../courses/full-stack-ai/data-science.html">
+ <span class="dropdown-text">Data Science</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../courses/full-stack-ai/machine-learning.html">
+ <span class="dropdown-text">Machine Learning</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../courses/full-stack-ai/artificial-intelligence.html">
+ <span class="dropdown-text">Artificial Intelligence</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../courses/full-stack-ai/deep-learning.html">
+ <span class="dropdown-text">Deep Learning</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../courses/full-stack-ai/generative-ai.html">
+ <span class="dropdown-text">Generative AI</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../courses/full-stack-ai/large-language-models.html">
+ <span class="dropdown-text">Large Language Models (LLMs)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../courses/full-stack-ai/rag.html">
+ <span class="dropdown-text">Retrieval Augmented Generation (RAG)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../courses/full-stack-ai/agentic-ai.html">
+ <span class="dropdown-text">Agentic AI</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-azure-data-engineering" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+      <i class="bi bi-database" role="img">
+</i> 
+ <span class="menu-text">Azure Data Engineering</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-azure-data-engineering">    
+        <li>
+    <a class="dropdown-item" href="../../courses/azure-data-engineering/index.html">
+ <span class="dropdown-text">Program overview</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../courses/azure-data-engineering/python.html">
+ <span class="dropdown-text">Python</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../courses/azure-data-engineering/sql.html">
+ <span class="dropdown-text">SQL</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../courses/azure-data-engineering/fundamentals.html">
+ <span class="dropdown-text">Data Engineering Fundamentals</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../courses/azure-data-engineering/azure-data-factory.html">
+ <span class="dropdown-text">Azure Data Factory (ADF)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../courses/azure-data-engineering/adls-gen2.html">
+ <span class="dropdown-text">Azure Data Lake Storage Gen2</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../courses/azure-data-engineering/azure-databricks.html">
+ <span class="dropdown-text">Azure Databricks</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../courses/azure-data-engineering/pyspark.html">
+ <span class="dropdown-text">PySpark</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../courses/azure-data-engineering/azure-synapse.html">
+ <span class="dropdown-text">Azure Synapse Analytics</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../courses/azure-data-engineering/microsoft-fabric.html">
+ <span class="dropdown-text">Microsoft Fabric</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../courses/azure-data-engineering/delta-lake.html">
+ <span class="dropdown-text">Delta Lake</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-azure-devops" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+      <i class="bi bi-infinity" role="img">
+</i> 
+ <span class="menu-text">Azure DevOps</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-azure-devops">    
+        <li>
+    <a class="dropdown-item" href="../../courses/azure-devops/index.html">
+ <span class="dropdown-text">Program overview</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../courses/azure-devops/linux-shell-scripting.html">
+ <span class="dropdown-text">Linux &amp; Shell Scripting</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../courses/azure-devops/git-version-control.html">
+ <span class="dropdown-text">Git &amp; Version Control</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../courses/azure-devops/azure-repos.html">
+ <span class="dropdown-text">Azure Repos</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../courses/azure-devops/azure-pipelines.html">
+ <span class="dropdown-text">Azure Pipelines (CI/CD)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../courses/azure-devops/yaml-pipelines.html">
+ <span class="dropdown-text">YAML Pipeline Development</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../courses/azure-devops/docker.html">
+ <span class="dropdown-text">Docker &amp; Containerization</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../courses/azure-devops/kubernetes-aks.html">
+ <span class="dropdown-text">Kubernetes &amp; AKS</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../courses/azure-devops/terraform.html">
+ <span class="dropdown-text">Terraform Infrastructure as Code</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../courses/azure-devops/azure-cloud-services.html">
+ <span class="dropdown-text">Azure Cloud Services</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../courses/azure-devops/devsecops-monitoring.html">
+ <span class="dropdown-text">DevSecOps &amp; Monitoring</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-interview-questions" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+      <i class="bi bi-question-circle" role="img">
+</i> 
+ <span class="menu-text">Interview Questions</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-interview-questions">    
+        <li>
+    <a class="dropdown-item" href="../../interview-questions/index.html">
+ <span class="dropdown-text">Section overview</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../interview-questions/full-stack-ai.html">
+ <span class="dropdown-text">Full Stack AI</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../interview-questions/azure-data-engineering.html">
+ <span class="dropdown-text">Azure Data Engineering</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../interview-questions/azure-devops.html">
+ <span class="dropdown-text">Azure DevOps</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-project-flows" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+      <i class="bi bi-kanban" role="img">
+</i> 
+ <span class="menu-text">Project Flows</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-project-flows">    
+        <li>
+    <a class="dropdown-item" href="../../project-flows/index.html">
+ <span class="dropdown-text">Section overview</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../project-flows/full-stack-ai.html">
+ <span class="dropdown-text">Full Stack AI</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../project-flows/azure-data-engineering.html">
+ <span class="dropdown-text">Azure Data Engineering</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../project-flows/azure-devops.html">
+ <span class="dropdown-text">Azure DevOps</span></a>
+  </li>  
+    </ul>
+  </li>
 </ul>
-</li>
-<li class="nav-item dropdown">
-<a aria-expanded="false" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" id="nav-menu-azure-data-engineering" role="link">
-<i class="bi bi-database" role="img">
-</i>
-<span class="menu-text">Azure Data Engineering</span>
-</a>
-<ul aria-labelledby="nav-menu-azure-data-engineering" class="dropdown-menu">
-<li>
-<a class="dropdown-item" href="../../courses/azure-data-engineering/index.html">
-<span class="dropdown-text">Program overview</span></a>
-</li>
-<li>
-<a class="dropdown-item" href="../../courses/azure-data-engineering/python.html">
-<span class="dropdown-text">Python</span></a>
-</li>
-<li>
-<a class="dropdown-item" href="../../courses/azure-data-engineering/sql.html">
-<span class="dropdown-text">SQL</span></a>
-</li>
-<li>
-<a class="dropdown-item" href="../../courses/azure-data-engineering/fundamentals.html">
-<span class="dropdown-text">Data Engineering Fundamentals</span></a>
-</li>
-<li>
-<a class="dropdown-item" href="../../courses/azure-data-engineering/azure-data-factory.html">
-<span class="dropdown-text">Azure Data Factory (ADF)</span></a>
-</li>
-<li>
-<a class="dropdown-item" href="../../courses/azure-data-engineering/adls-gen2.html">
-<span class="dropdown-text">Azure Data Lake Storage Gen2</span></a>
-</li>
-<li>
-<a class="dropdown-item" href="../../courses/azure-data-engineering/azure-databricks.html">
-<span class="dropdown-text">Azure Databricks</span></a>
-</li>
-<li>
-<a class="dropdown-item" href="../../courses/azure-data-engineering/pyspark.html">
-<span class="dropdown-text">PySpark</span></a>
-</li>
-<li>
-<a class="dropdown-item" href="../../courses/azure-data-engineering/azure-synapse.html">
-<span class="dropdown-text">Azure Synapse Analytics</span></a>
-</li>
-<li>
-<a class="dropdown-item" href="../../courses/azure-data-engineering/microsoft-fabric.html">
-<span class="dropdown-text">Microsoft Fabric</span></a>
-</li>
-<li>
-<a class="dropdown-item" href="../../courses/azure-data-engineering/delta-lake.html">
-<span class="dropdown-text">Delta Lake</span></a>
-</li>
-</ul>
-</li>
-<li class="nav-item dropdown">
-<a aria-expanded="false" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" id="nav-menu-azure-devops" role="link">
-<i class="bi bi-infinity" role="img">
-</i>
-<span class="menu-text">Azure DevOps</span>
-</a>
-<ul aria-labelledby="nav-menu-azure-devops" class="dropdown-menu">
-<li>
-<a class="dropdown-item" href="../../courses/azure-devops/index.html">
-<span class="dropdown-text">Program overview</span></a>
-</li>
-<li>
-<a class="dropdown-item" href="../../courses/azure-devops/linux-shell-scripting.html">
-<span class="dropdown-text">Linux &amp; Shell Scripting</span></a>
-</li>
-<li>
-<a class="dropdown-item" href="../../courses/azure-devops/git-version-control.html">
-<span class="dropdown-text">Git &amp; Version Control</span></a>
-</li>
-<li>
-<a class="dropdown-item" href="../../courses/azure-devops/azure-repos.html">
-<span class="dropdown-text">Azure Repos</span></a>
-</li>
-<li>
-<a class="dropdown-item" href="../../courses/azure-devops/azure-pipelines.html">
-<span class="dropdown-text">Azure Pipelines (CI/CD)</span></a>
-</li>
-<li>
-<a class="dropdown-item" href="../../courses/azure-devops/yaml-pipelines.html">
-<span class="dropdown-text">YAML Pipeline Development</span></a>
-</li>
-<li>
-<a class="dropdown-item" href="../../courses/azure-devops/docker.html">
-<span class="dropdown-text">Docker &amp; Containerization</span></a>
-</li>
-<li>
-<a class="dropdown-item" href="../../courses/azure-devops/kubernetes-aks.html">
-<span class="dropdown-text">Kubernetes &amp; AKS</span></a>
-</li>
-<li>
-<a class="dropdown-item" href="../../courses/azure-devops/terraform.html">
-<span class="dropdown-text">Terraform Infrastructure as Code</span></a>
-</li>
-<li>
-<a class="dropdown-item" href="../../courses/azure-devops/azure-cloud-services.html">
-<span class="dropdown-text">Azure Cloud Services</span></a>
-</li>
-<li>
-<a class="dropdown-item" href="../../courses/azure-devops/devsecops-monitoring.html">
-<span class="dropdown-text">DevSecOps &amp; Monitoring</span></a>
-</li>
-</ul>
-</li>
-<li class="nav-item dropdown">
-<a aria-expanded="false" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" id="nav-menu-interview-questions" role="link">
-<i class="bi bi-question-circle" role="img">
-</i>
-<span class="menu-text">Interview Questions</span>
-</a>
-<ul aria-labelledby="nav-menu-interview-questions" class="dropdown-menu">
-<li>
-<a class="dropdown-item" href="../../interview-questions/index.html">
-<span class="dropdown-text">Section overview</span></a>
-</li>
-<li>
-<a class="dropdown-item" href="../../interview-questions/full-stack-ai.html">
-<span class="dropdown-text">Full Stack AI</span></a>
-</li>
-<li>
-<a class="dropdown-item" href="../../interview-questions/azure-data-engineering.html">
-<span class="dropdown-text">Azure Data Engineering</span></a>
-</li>
-<li>
-<a class="dropdown-item" href="../../interview-questions/azure-devops.html">
-<span class="dropdown-text">Azure DevOps</span></a>
-</li>
-</ul>
-</li>
-<li class="nav-item dropdown">
-<a aria-expanded="false" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" id="nav-menu-project-flows" role="link">
-<i class="bi bi-kanban" role="img">
-</i>
-<span class="menu-text">Project Flows</span>
-</a>
-<ul aria-labelledby="nav-menu-project-flows" class="dropdown-menu">
-<li>
-<a class="dropdown-item" href="../../project-flows/index.html">
-<span class="dropdown-text">Section overview</span></a>
-</li>
-<li>
-<a class="dropdown-item" href="../../project-flows/full-stack-ai.html">
-<span class="dropdown-text">Full Stack AI</span></a>
-</li>
-<li>
-<a class="dropdown-item" href="../../project-flows/azure-data-engineering.html">
-<span class="dropdown-text">Azure Data Engineering</span></a>
-</li>
-<li>
-<a class="dropdown-item" href="../../project-flows/azure-devops.html">
-<span class="dropdown-text">Azure DevOps</span></a>
-</li>
-</ul>
-</li>
-</ul>
-</div> <!-- /navcollapse -->
-<div class="quarto-navbar-tools">
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
 </div>
-</div> <!-- /container-fluid -->
-</nav>
+      </div> <!-- /container-fluid -->
+    </nav>
 </header>
 <!-- content -->
-<div class="quarto-container page-columns page-rows-contents page-layout-full page-navbar" id="quarto-content">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
+    
 <!-- main -->
 <main class="content column-page" id="quarto-document-content">
-<header class="quarto-title-block default" id="title-block-header">
+
+<header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
 <h1 class="title">DevSecOps &amp; Monitoring</h1>
 </div>
+
 <div>
-<div class="description">
+  <div class="description">
     Complete notebook syllabus for DevSecOps &amp; Monitoring in Azure DevOps.
   </div>
 </div>
-<div class="quarto-title-meta">
-<div>
-<div class="quarto-title-meta-heading">Author</div>
-<div class="quarto-title-meta-contents">
-<p>Edukron Notes </p>
-</div>
-</div>
-<div>
-<div class="quarto-title-meta-heading">Published</div>
-<div class="quarto-title-meta-contents">
-<p class="date">September 14, 2026</p>
-</div>
-</div>
-</div>
+
+
+<div class="quarto-title-meta column-page">
+
+    
+  
+    
+  </div>
+  
+
+
 </header>
+
+
 <div class="course-workspace notebook-chrome">
 <div class="notebook-toolbar">
-<span class="notebook-file"><i aria-hidden="true" class="bi bi-journal-code"></i><strong>devsecops-monitoring.ipynb</strong></span>
-<span class="notebook-status"><i aria-hidden="true" class="bi bi-check-circle-fill"></i> Trusted</span>
-<span class="notebook-kernel"><i aria-hidden="true" class="bi bi-diagram-3"></i> Learning path</span>
+<p><span class="notebook-file"><i class="bi bi-journal-code" aria-hidden="true"></i><strong>devsecops-monitoring.ipynb</strong></span> <span class="notebook-status"><i class="bi bi-check-circle-fill" aria-hidden="true"></i> Trusted</span> <span class="notebook-kernel"><i class="bi bi-diagram-3" aria-hidden="true"></i> Learning path</span></p>
 </div>
 <div class="course-workspace-hero">
 <span class="overview-kicker">Azure DevOps</span>
-<h1>DevSecOps &amp; Monitoring</h1>
-<p>A complete notebook-first syllabus organized from foundations to applied delivery. Every lesson combines clear notes, a worked pattern, executable validation, a guided lab, a solution blueprint, practice, and knowledge checks.</p>
-<div class="course-tags"><span><i class="bi bi-signpost-split"></i> Foundation to advanced</span><span><i class="bi bi-code-square"></i> Hands-on practice</span><span><i class="bi bi-patch-check"></i> Review ready</span></div>
-<p class="course-start"><a class="btn btn-primary" href="devsecops-monitoring/168-devsecops-foundations-and-supply-chain-security/01-shift-left-security.html"><i class="bi bi-play-fill"></i> Start the first notebook</a></p>
+<h1>
+DevSecOps &amp; Monitoring
+</h1>
+<p>
+A complete notebook-first syllabus organized from foundations to applied delivery. Every lesson combines clear notes, a worked pattern, executable validation, a guided lab, a solution blueprint, practice, and knowledge checks.
+</p>
+<div class="course-tags">
+<span><i class="bi bi-signpost-split"></i> Foundation to advanced</span><span><i class="bi bi-code-square"></i> Hands-on practice</span><span><i class="bi bi-patch-check"></i> Review ready</span>
+</div>
+<p class="course-start">
+<a class="btn btn-primary" href="devsecops-monitoring/168-devsecops-foundations-and-supply-chain-security/01-shift-left-security.html"><i class="bi bi-play-fill"></i> Start the first notebook</a>
+</p>
 </div>
 </div>
-<section class="level2" id="how-to-use-this-course">
+<section id="how-to-use-this-course" class="level2">
 <h2 class="anchored" data-anchor-id="how-to-use-this-course">How to use this course</h2>
 <p>Work through lessons in order for a complete pathway, or open a topic for focused reference. Type or adapt the examples, complete the guided lab before reading its blueprint, and preserve your test evidence as a portfolio artifact. Cloud and infrastructure examples are safe, copy-ready teaching patterns; execute them in your own sandbox only after substituting approved identities, names, and policies.</p>
-</section>
 <section class="learning-plan-section" id="learning-plan">
-<div class="path-section-heading"><div><span class="overview-kicker">Recommended schedule</span><h2>Learning plan</h2><p>A practical schedule for completing DevSecOps &amp; Monitoring with retained evidence, not passive reading.</p></div></div>
-<div class="plan-metrics">
-<div><i class="bi bi-calendar3"></i><span>Standard path</span><strong>4 weeks</strong><small>One topic each week, then integration</small></div>
-<div><i class="bi bi-lightning-charge"></i><span>Intensive path</span><strong>3 weeks</strong><small>Two topics each week, then integration</small></div>
-<div><i class="bi bi-clock"></i><span>Weekly commitment</span><strong>6–8 hours</strong><small>Study, code, practice, and reflection</small></div>
-<div><i class="bi bi-folder-check"></i><span>Finish line</span><strong>Portfolio evidence</strong><small>Tests, decisions, notes, and a capstone</small></div>
+<div class="path-section-heading">
+<div>
+<span class="overview-kicker">Recommended schedule</span>
+<h2 class="anchored">
+Learning plan
+</h2>
+<p>
+A practical schedule for completing DevSecOps &amp; Monitoring with retained evidence, not passive reading.
+</p>
 </div>
-<div aria-label="Weekly study loop" class="study-loop">
-<div><span>01</span><i class="bi bi-book"></i><strong>Understand</strong><small>Read the notes and explain the mental model.</small></div>
-<i aria-hidden="true" class="bi bi-arrow-right study-loop-arrow"></i>
-<div><span>02</span><i class="bi bi-play-circle"></i><strong>Run</strong><small>Execute the example and inspect every result.</small></div>
-<i aria-hidden="true" class="bi bi-arrow-right study-loop-arrow"></i>
-<div><span>03</span><i class="bi bi-tools"></i><strong>Adapt</strong><small>Change the inputs and complete the guided lab.</small></div>
-<i aria-hidden="true" class="bi bi-arrow-right study-loop-arrow"></i>
-<div><span>04</span><i class="bi bi-patch-check"></i><strong>Prove</strong><small>Pass checks and retain reviewable evidence.</small></div>
+</div>
+<div class="plan-metrics">
+<div>
+<i class="bi bi-calendar3"></i><span>Standard path</span><strong>4 weeks</strong><small>One topic each week, then integration</small>
+</div>
+<div>
+<i class="bi bi-lightning-charge"></i><span>Intensive path</span><strong>3 weeks</strong><small>Two topics each week, then integration</small>
+</div>
+<div>
+<i class="bi bi-clock"></i><span>Weekly commitment</span><strong>6–8 hours</strong><small>Study, code, practice, and reflection</small>
+</div>
+<div>
+<i class="bi bi-folder-check"></i><span>Finish line</span><strong>Portfolio evidence</strong><small>Tests, decisions, notes, and a capstone</small>
+</div>
+</div>
+<div class="study-loop" aria-label="Weekly study loop">
+<div>
+<span>01</span><i class="bi bi-book"></i><strong>Understand</strong><small>Read the notes and explain the mental model.</small>
+</div>
+<i class="bi bi-arrow-right study-loop-arrow" aria-hidden="true"></i>
+<div>
+<span>02</span><i class="bi bi-play-circle"></i><strong>Run</strong><small>Execute the example and inspect every result.</small>
+</div>
+<i class="bi bi-arrow-right study-loop-arrow" aria-hidden="true"></i>
+<div>
+<span>03</span><i class="bi bi-tools"></i><strong>Adapt</strong><small>Change the inputs and complete the guided lab.</small>
+</div>
+<i class="bi bi-arrow-right study-loop-arrow" aria-hidden="true"></i>
+<div>
+<span>04</span><i class="bi bi-patch-check"></i><strong>Prove</strong><small>Pass checks and retain reviewable evidence.</small>
+</div>
 </div>
 <div class="plan-weeks">
 <details class="plan-week plan-topic-week" open="">
-<summary><span class="plan-week-number">Week 01</span><strong>DevSecOps foundations and supply-chain security</strong><span class="plan-stage">Foundation</span></summary>
+<summary>
+<span class="plan-week-number">Week 01</span><strong>DevSecOps foundations and supply-chain security</strong><span class="plan-stage">Foundation</span>
+</summary>
 <div class="plan-week-body">
-<div><span>Learn</span><p>Begin with <a href="devsecops-monitoring/168-devsecops-foundations-and-supply-chain-security/01-shift-left-security.html">Shift-left security</a> and write the core mental model in your own words.</p></div>
-<div><span>Practice</span><p>Run, change, and explain the worked patterns across the middle lessons. Keep test evidence and questions.</p></div>
-<div><span>Demonstrate</span><p>Complete <a href="devsecops-monitoring/168-devsecops-foundations-and-supply-chain-security/10-security-pipeline-project.html">Security-pipeline project</a> without copying the solution blueprint first.</p></div>
+<div>
+<span>Learn</span>
+<p>
+Begin with <a href="devsecops-monitoring/168-devsecops-foundations-and-supply-chain-security/01-shift-left-security.html">Shift-left security</a> and write the core mental model in your own words.
+</p>
 </div>
-</details><details class="plan-week plan-topic-week">
-<summary><span class="plan-week-number">Week 02</span><strong>Observability and incident response</strong><span class="plan-stage">Core skills</span></summary>
+<div>
+<span>Practice</span>
+<p>
+Run, change, and explain the worked patterns across the middle lessons. Keep test evidence and questions.
+</p>
+</div>
+<div>
+<span>Demonstrate</span>
+<p>
+Complete <a href="devsecops-monitoring/168-devsecops-foundations-and-supply-chain-security/10-security-pipeline-project.html">Security-pipeline project</a> without copying the solution blueprint first.
+</p>
+</div>
+</div>
+</details>
+<details class="plan-week plan-topic-week">
+<summary>
+<span class="plan-week-number">Week 02</span><strong>Observability and incident response</strong><span class="plan-stage">Core skills</span>
+</summary>
 <div class="plan-week-body">
-<div><span>Learn</span><p>Begin with <a href="devsecops-monitoring/169-observability-and-incident-response/01-logs-metrics-and-traces.html">Logs metrics and traces</a> and write the core mental model in your own words.</p></div>
-<div><span>Practice</span><p>Run, change, and explain the worked patterns across the middle lessons. Keep test evidence and questions.</p></div>
-<div><span>Demonstrate</span><p>Complete <a href="devsecops-monitoring/169-observability-and-incident-response/10-observability-project.html">Observability project</a> without copying the solution blueprint first.</p></div>
+<div>
+<span>Learn</span>
+<p>
+Begin with <a href="devsecops-monitoring/169-observability-and-incident-response/01-logs-metrics-and-traces.html">Logs metrics and traces</a> and write the core mental model in your own words.
+</p>
 </div>
-</details><details class="plan-week plan-topic-week">
-<summary><span class="plan-week-number">Week 03</span><strong>Secure delivery and monitoring capstone</strong><span class="plan-stage">Integration &amp; capstone</span></summary>
+<div>
+<span>Practice</span>
+<p>
+Run, change, and explain the worked patterns across the middle lessons. Keep test evidence and questions.
+</p>
+</div>
+<div>
+<span>Demonstrate</span>
+<p>
+Complete <a href="devsecops-monitoring/169-observability-and-incident-response/10-observability-project.html">Observability project</a> without copying the solution blueprint first.
+</p>
+</div>
+</div>
+</details>
+<details class="plan-week plan-topic-week">
+<summary>
+<span class="plan-week-number">Week 03</span><strong>Secure delivery and monitoring capstone</strong><span class="plan-stage">Integration &amp; capstone</span>
+</summary>
 <div class="plan-week-body">
-<div><span>Learn</span><p>Begin with <a href="devsecops-monitoring/170-secure-delivery-and-monitoring-capstone/01-security-architecture.html">Security architecture</a> and write the core mental model in your own words.</p></div>
-<div><span>Practice</span><p>Run, change, and explain the worked patterns across the middle lessons. Keep test evidence and questions.</p></div>
-<div><span>Demonstrate</span><p>Complete <a href="devsecops-monitoring/170-secure-delivery-and-monitoring-capstone/10-devsecops-capstone.html">DevSecOps capstone</a> without copying the solution blueprint first.</p></div>
+<div>
+<span>Learn</span>
+<p>
+Begin with <a href="devsecops-monitoring/170-secure-delivery-and-monitoring-capstone/01-security-architecture.html">Security architecture</a> and write the core mental model in your own words.
+</p>
 </div>
-</details><div class="plan-integration-week">
+<div>
+<span>Practice</span>
+<p>
+Run, change, and explain the worked patterns across the middle lessons. Keep test evidence and questions.
+</p>
+</div>
+<div>
+<span>Demonstrate</span>
+<p>
+Complete <a href="devsecops-monitoring/170-secure-delivery-and-monitoring-capstone/10-devsecops-capstone.html">DevSecOps capstone</a> without copying the solution blueprint first.
+</p>
+</div>
+</div>
+</details>
+<div class="plan-integration-week">
 <span class="plan-week-number">Week 04</span>
-<div><strong>Integration, review, and portfolio evidence</strong><p>Connect the topic artifacts, close weak areas, and publish one reviewable DevSecOps &amp; Monitoring outcome. Use <a href="devsecops-monitoring/170-secure-delivery-and-monitoring-capstone/10-devsecops-capstone.html">DevSecOps capstone</a> as the final checkpoint.</p></div>
-<i aria-hidden="true" class="bi bi-trophy"></i>
+<div>
+<strong>Integration, review, and portfolio evidence</strong>
+<p>
+Connect the topic artifacts, close weak areas, and publish one reviewable DevSecOps &amp; Monitoring outcome. Use <a href="devsecops-monitoring/170-secure-delivery-and-monitoring-capstone/10-devsecops-capstone.html">DevSecOps capstone</a> as the final checkpoint.
+</p>
+</div>
+<p><i class="bi bi-trophy" aria-hidden="true"></i></p>
 </div>
 </div>
-</section><section class="learning-path-section" id="full-learning-path">
-<div class="path-section-heading"><div><span class="overview-kicker">Ordered progression</span><h2>Full learning path</h2><p>Follow every stage in sequence. Each stage links directly to its first notebook and ends with a concrete mastery checkpoint.</p></div><span class="path-route"><i class="bi bi-signpost-2"></i> Azure DevOps → DevSecOps &amp; Monitoring</span></div>
+</section>
+<section class="learning-path-section" id="full-learning-path">
+<div class="path-section-heading">
+<div>
+<span class="overview-kicker">Ordered progression</span>
+<h2 class="anchored">
+Full learning path
+</h2>
+<p>
+Follow every stage in sequence. Each stage links directly to its first notebook and ends with a concrete mastery checkpoint.
+</p>
+</div>
+<span class="path-route"><i class="bi bi-signpost-2"></i> Azure DevOps → DevSecOps &amp; Monitoring</span>
+</div>
 <div class="learning-path">
-<a class="learning-path-step" data-topic="168" href="devsecops-monitoring/168-devsecops-foundations-and-supply-chain-security/01-shift-left-security.html">
-<span class="path-index">01</span>
-<span class="path-step-copy"><span class="path-phase">Foundation · Topic 168</span><strong>DevSecOps foundations and supply-chain security</strong><small>Enter with Shift-left security. Demonstrate mastery through Security-pipeline project.</small></span>
-<i aria-hidden="true" class="bi bi-arrow-right"></i>
-</a><a class="learning-path-step" data-topic="169" href="devsecops-monitoring/169-observability-and-incident-response/01-logs-metrics-and-traces.html">
-<span class="path-index">02</span>
-<span class="path-step-copy"><span class="path-phase">Core skills · Topic 169</span><strong>Observability and incident response</strong><small>Enter with Logs metrics and traces. Demonstrate mastery through Observability project.</small></span>
-<i aria-hidden="true" class="bi bi-arrow-right"></i>
-</a><a class="learning-path-step" data-topic="170" href="devsecops-monitoring/170-secure-delivery-and-monitoring-capstone/01-security-architecture.html">
-<span class="path-index">03</span>
-<span class="path-step-copy"><span class="path-phase">Integration &amp; capstone · Topic 170</span><strong>Secure delivery and monitoring capstone</strong><small>Enter with Security architecture. Demonstrate mastery through DevSecOps capstone.</small></span>
-<i aria-hidden="true" class="bi bi-arrow-right"></i>
-</a>
+<p><a class="learning-path-step" data-topic="168" href="devsecops-monitoring/168-devsecops-foundations-and-supply-chain-security/01-shift-left-security.html"> <span class="path-index">01</span> <span class="path-step-copy"><span class="path-phase">Foundation · Topic 168</span><strong>DevSecOps foundations and supply-chain security</strong><small>Enter with Shift-left security. Demonstrate mastery through Security-pipeline project.</small></span> <i class="bi bi-arrow-right" aria-hidden="true"></i> </a><a class="learning-path-step" data-topic="169" href="devsecops-monitoring/169-observability-and-incident-response/01-logs-metrics-and-traces.html"> <span class="path-index">02</span> <span class="path-step-copy"><span class="path-phase">Core skills · Topic 169</span><strong>Observability and incident response</strong><small>Enter with Logs metrics and traces. Demonstrate mastery through Observability project.</small></span> <i class="bi bi-arrow-right" aria-hidden="true"></i> </a><a class="learning-path-step" data-topic="170" href="devsecops-monitoring/170-secure-delivery-and-monitoring-capstone/01-security-architecture.html"> <span class="path-index">03</span> <span class="path-step-copy"><span class="path-phase">Integration &amp; capstone · Topic 170</span><strong>Secure delivery and monitoring capstone</strong><small>Enter with Security architecture. Demonstrate mastery through DevSecOps capstone.</small></span> <i class="bi bi-arrow-right" aria-hidden="true"></i> </a></p>
 </div>
-<div class="path-finish"><span><i class="bi bi-trophy-fill"></i></span><div><small>Completion milestone</small><strong>Connect the complete DevSecOps &amp; Monitoring workflow</strong><p>Combine evidence from every stage and finish with DevSecOps capstone. You should be able to explain the architecture, reproduce the core workflow, diagnose failure, and defend the main tradeoffs.</p></div></div>
-</section><div class="syllabus-heading" id="notebook-syllabus">
-<div><span class="overview-kicker">Course contents</span><h2>Notebook syllabus</h2><p>Open a topic to browse its lessons, or search the complete course by concept.</p></div>
-<label class="syllabus-search" for="azure-devops-devsecops-and-monitoring-catalog-search"><i aria-hidden="true" class="bi bi-search"></i><input aria-label="Search the DevSecOps &amp; Monitoring syllabus" autocomplete="off" id="azure-devops-devsecops-and-monitoring-catalog-search" placeholder="Find a topic or lesson" type="search"/></label>
+<div class="path-finish">
+<span><i class="bi bi-trophy-fill"></i></span>
+<div>
+<small>Completion milestone</small><strong>Connect the complete DevSecOps &amp; Monitoring workflow</strong>
+<p>
+Combine evidence from every stage and finish with DevSecOps capstone. You should be able to explain the architecture, reproduce the core workflow, diagnose failure, and defend the main tradeoffs.
+</p>
 </div>
-<div class="curriculum-catalog" id="azure-devops-devsecops-and-monitoring-catalog">
+</div>
+</section>
+<div id="notebook-syllabus" class="syllabus-heading">
+<div>
+<span class="overview-kicker">Course contents</span>
+<h2 class="anchored">
+Notebook syllabus
+</h2>
+<p>
+Open a topic to browse its lessons, or search the complete course by concept.
+</p>
+</div>
+<p><label class="syllabus-search" for="azure-devops-devsecops-and-monitoring-catalog-search"><i class="bi bi-search" aria-hidden="true"></i><input id="azure-devops-devsecops-and-monitoring-catalog-search" type="search" placeholder="Find a topic or lesson" autocomplete="off" aria-label="Search the DevSecOps &amp; Monitoring syllabus"></label></p>
+</div>
+<div id="azure-devops-devsecops-and-monitoring-catalog" class="curriculum-catalog">
 <details class="curriculum-topic" open="">
-<summary><span class="topic-number">Topic 168</span><strong>DevSecOps foundations and supply-chain security</strong></summary>
+<summary>
+<span class="topic-number">Topic 168</span><strong>DevSecOps foundations and supply-chain security</strong>
+</summary>
 <div class="topic-lessons">
-<a class="topic-lesson-link" href="devsecops-monitoring/168-devsecops-foundations-and-supply-chain-security/01-shift-left-security.html"><span>168.01</span><strong>Shift-left security</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="devsecops-monitoring/168-devsecops-foundations-and-supply-chain-security/02-threat-modeling.html"><span>168.02</span><strong>Threat modeling</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="devsecops-monitoring/168-devsecops-foundations-and-supply-chain-security/03-secure-coding.html"><span>168.03</span><strong>Secure coding</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="devsecops-monitoring/168-devsecops-foundations-and-supply-chain-security/04-dependency-scanning.html"><span>168.04</span><strong>Dependency scanning</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="devsecops-monitoring/168-devsecops-foundations-and-supply-chain-security/05-secret-scanning.html"><span>168.05</span><strong>Secret scanning</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="devsecops-monitoring/168-devsecops-foundations-and-supply-chain-security/06-sast.html"><span>168.06</span><strong>SAST</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="devsecops-monitoring/168-devsecops-foundations-and-supply-chain-security/07-dast.html"><span>168.07</span><strong>DAST</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="devsecops-monitoring/168-devsecops-foundations-and-supply-chain-security/08-container-scanning.html"><span>168.08</span><strong>Container scanning</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="devsecops-monitoring/168-devsecops-foundations-and-supply-chain-security/09-software-bills-of-materials.html"><span>168.09</span><strong>Software bills of materials</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="devsecops-monitoring/168-devsecops-foundations-and-supply-chain-security/10-security-pipeline-project.html"><span>168.10</span><strong>Security-pipeline project</strong><i class="bi bi-arrow-right"></i></a>
+<p><a class="topic-lesson-link" href="devsecops-monitoring/168-devsecops-foundations-and-supply-chain-security/01-shift-left-security.html"><span>168.01</span><strong>Shift-left security</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="devsecops-monitoring/168-devsecops-foundations-and-supply-chain-security/02-threat-modeling.html"><span>168.02</span><strong>Threat modeling</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="devsecops-monitoring/168-devsecops-foundations-and-supply-chain-security/03-secure-coding.html"><span>168.03</span><strong>Secure coding</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="devsecops-monitoring/168-devsecops-foundations-and-supply-chain-security/04-dependency-scanning.html"><span>168.04</span><strong>Dependency scanning</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="devsecops-monitoring/168-devsecops-foundations-and-supply-chain-security/05-secret-scanning.html"><span>168.05</span><strong>Secret scanning</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="devsecops-monitoring/168-devsecops-foundations-and-supply-chain-security/06-sast.html"><span>168.06</span><strong>SAST</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="devsecops-monitoring/168-devsecops-foundations-and-supply-chain-security/07-dast.html"><span>168.07</span><strong>DAST</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="devsecops-monitoring/168-devsecops-foundations-and-supply-chain-security/08-container-scanning.html"><span>168.08</span><strong>Container scanning</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="devsecops-monitoring/168-devsecops-foundations-and-supply-chain-security/09-software-bills-of-materials.html"><span>168.09</span><strong>Software bills of materials</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="devsecops-monitoring/168-devsecops-foundations-and-supply-chain-security/10-security-pipeline-project.html"><span>168.10</span><strong>Security-pipeline project</strong><i class="bi bi-arrow-right"></i></a></p>
 </div>
 </details>
 <details class="curriculum-topic">
-<summary><span class="topic-number">Topic 169</span><strong>Observability and incident response</strong></summary>
+<summary>
+<span class="topic-number">Topic 169</span><strong>Observability and incident response</strong>
+</summary>
 <div class="topic-lessons">
-<a class="topic-lesson-link" href="devsecops-monitoring/169-observability-and-incident-response/01-logs-metrics-and-traces.html"><span>169.01</span><strong>Logs metrics and traces</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="devsecops-monitoring/169-observability-and-incident-response/02-telemetry-design.html"><span>169.02</span><strong>Telemetry design</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="devsecops-monitoring/169-observability-and-incident-response/03-service-level-indicators.html"><span>169.03</span><strong>Service-level indicators</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="devsecops-monitoring/169-observability-and-incident-response/04-service-level-objectives.html"><span>169.04</span><strong>Service-level objectives</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="devsecops-monitoring/169-observability-and-incident-response/05-dashboards.html"><span>169.05</span><strong>Dashboards</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="devsecops-monitoring/169-observability-and-incident-response/06-alert-design.html"><span>169.06</span><strong>Alert design</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="devsecops-monitoring/169-observability-and-incident-response/07-distributed-tracing.html"><span>169.07</span><strong>Distributed tracing</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="devsecops-monitoring/169-observability-and-incident-response/08-incident-response.html"><span>169.08</span><strong>Incident response</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="devsecops-monitoring/169-observability-and-incident-response/09-post-incident-reviews.html"><span>169.09</span><strong>Post-incident reviews</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="devsecops-monitoring/169-observability-and-incident-response/10-observability-project.html"><span>169.10</span><strong>Observability project</strong><i class="bi bi-arrow-right"></i></a>
+<p><a class="topic-lesson-link" href="devsecops-monitoring/169-observability-and-incident-response/01-logs-metrics-and-traces.html"><span>169.01</span><strong>Logs metrics and traces</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="devsecops-monitoring/169-observability-and-incident-response/02-telemetry-design.html"><span>169.02</span><strong>Telemetry design</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="devsecops-monitoring/169-observability-and-incident-response/03-service-level-indicators.html"><span>169.03</span><strong>Service-level indicators</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="devsecops-monitoring/169-observability-and-incident-response/04-service-level-objectives.html"><span>169.04</span><strong>Service-level objectives</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="devsecops-monitoring/169-observability-and-incident-response/05-dashboards.html"><span>169.05</span><strong>Dashboards</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="devsecops-monitoring/169-observability-and-incident-response/06-alert-design.html"><span>169.06</span><strong>Alert design</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="devsecops-monitoring/169-observability-and-incident-response/07-distributed-tracing.html"><span>169.07</span><strong>Distributed tracing</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="devsecops-monitoring/169-observability-and-incident-response/08-incident-response.html"><span>169.08</span><strong>Incident response</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="devsecops-monitoring/169-observability-and-incident-response/09-post-incident-reviews.html"><span>169.09</span><strong>Post-incident reviews</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="devsecops-monitoring/169-observability-and-incident-response/10-observability-project.html"><span>169.10</span><strong>Observability project</strong><i class="bi bi-arrow-right"></i></a></p>
 </div>
 </details>
 <details class="curriculum-topic">
-<summary><span class="topic-number">Topic 170</span><strong>Secure delivery and monitoring capstone</strong></summary>
+<summary>
+<span class="topic-number">Topic 170</span><strong>Secure delivery and monitoring capstone</strong>
+</summary>
 <div class="topic-lessons">
-<a class="topic-lesson-link" href="devsecops-monitoring/170-secure-delivery-and-monitoring-capstone/01-security-architecture.html"><span>170.01</span><strong>Security architecture</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="devsecops-monitoring/170-secure-delivery-and-monitoring-capstone/02-policy-as-code.html"><span>170.02</span><strong>Policy as code</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="devsecops-monitoring/170-secure-delivery-and-monitoring-capstone/03-identity-controls.html"><span>170.03</span><strong>Identity controls</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="devsecops-monitoring/170-secure-delivery-and-monitoring-capstone/04-release-controls.html"><span>170.04</span><strong>Release controls</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="devsecops-monitoring/170-secure-delivery-and-monitoring-capstone/05-runtime-protection.html"><span>170.05</span><strong>Runtime protection</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="devsecops-monitoring/170-secure-delivery-and-monitoring-capstone/06-vulnerability-management.html"><span>170.06</span><strong>Vulnerability management</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="devsecops-monitoring/170-secure-delivery-and-monitoring-capstone/07-compliance-evidence.html"><span>170.07</span><strong>Compliance evidence</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="devsecops-monitoring/170-secure-delivery-and-monitoring-capstone/08-resilience-testing.html"><span>170.08</span><strong>Resilience testing</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="devsecops-monitoring/170-secure-delivery-and-monitoring-capstone/09-operational-readiness.html"><span>170.09</span><strong>Operational readiness</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="devsecops-monitoring/170-secure-delivery-and-monitoring-capstone/10-devsecops-capstone.html"><span>170.10</span><strong>DevSecOps capstone</strong><i class="bi bi-arrow-right"></i></a>
+<p><a class="topic-lesson-link" href="devsecops-monitoring/170-secure-delivery-and-monitoring-capstone/01-security-architecture.html"><span>170.01</span><strong>Security architecture</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="devsecops-monitoring/170-secure-delivery-and-monitoring-capstone/02-policy-as-code.html"><span>170.02</span><strong>Policy as code</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="devsecops-monitoring/170-secure-delivery-and-monitoring-capstone/03-identity-controls.html"><span>170.03</span><strong>Identity controls</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="devsecops-monitoring/170-secure-delivery-and-monitoring-capstone/04-release-controls.html"><span>170.04</span><strong>Release controls</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="devsecops-monitoring/170-secure-delivery-and-monitoring-capstone/05-runtime-protection.html"><span>170.05</span><strong>Runtime protection</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="devsecops-monitoring/170-secure-delivery-and-monitoring-capstone/06-vulnerability-management.html"><span>170.06</span><strong>Vulnerability management</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="devsecops-monitoring/170-secure-delivery-and-monitoring-capstone/07-compliance-evidence.html"><span>170.07</span><strong>Compliance evidence</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="devsecops-monitoring/170-secure-delivery-and-monitoring-capstone/08-resilience-testing.html"><span>170.08</span><strong>Resilience testing</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="devsecops-monitoring/170-secure-delivery-and-monitoring-capstone/09-operational-readiness.html"><span>170.09</span><strong>Operational readiness</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="devsecops-monitoring/170-secure-delivery-and-monitoring-capstone/10-devsecops-capstone.html"><span>170.10</span><strong>DevSecOps capstone</strong><i class="bi bi-arrow-right"></i></a></p>
 </div>
 </details>
 </div>
-<p class="syllabus-empty" hidden="" id="azure-devops-devsecops-and-monitoring-catalog-empty"><i class="bi bi-search"></i> No matching lessons were found.</p>
+<p class="syllabus-empty" id="azure-devops-devsecops-and-monitoring-catalog-empty" hidden="">
+<i class="bi bi-search"></i> No matching lessons were found.
+</p>
 <script>
 document.addEventListener("DOMContentLoaded", () => {
   const catalog = document.getElementById("azure-devops-devsecops-and-monitoring-catalog");
@@ -500,10 +597,14 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 </script>
-<section class="level2" id="completion-standard">
+</section>
+<section id="completion-standard" class="level2">
 <h2 class="anchored" data-anchor-id="completion-standard">Completion standard</h2>
 <p>You have completed <strong>DevSecOps &amp; Monitoring</strong> when you can explain each topic, reproduce its core workflow, pass the notebook checks, defend the main tradeoffs, and combine the lessons into one reviewable portfolio project. Use the practice tasks as evidence rather than treating page reading alone as completion.</p>
+
+
 </section>
+
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
@@ -907,17 +1008,21 @@ document.addEventListener("DOMContentLoaded", () => {
   </script>
 </div> <!-- /content -->
 <footer class="footer">
-<div class="nav-footer">
-<div class="nav-footer-left">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
 <p>© 2026 Edukron Notes</p>
-</div>
-<div class="nav-footer-center">
-       
+</div>   
+    <div class="nav-footer-center">
+      &nbsp;
     </div>
-<div class="nav-footer-right">
+    <div class="nav-footer-right">
 <p>Notebook courses for AI, data engineering, and DevOps</p>
 </div>
-</div>
+  </div>
 </footer>
+
+
+
+
 <script src="../../site_libs/quarto-html/zenscroll-min.js"></script>
 </body></html>

@@ -1,12 +1,13 @@
 <!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
-<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml"><head>
-<meta charset="utf-8"/>
-<meta content="quarto-1.10.18" name="generator"/>
-<meta content="width=device-width, initial-scale=1.0, user-scalable=yes" name="viewport"/>
-<meta content="Edukron Notes" name="author"/>
-<meta content="2026-09-14" name="dcterms.date"/>
-<meta content="Complete notebook syllabus for Artificial Intelligence in Full Stack AI." name="description"/>
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.10.18">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="description" content="Complete notebook syllabus for Artificial Intelligence in Full Stack AI.">
+
 <title>Artificial Intelligence – Edukron Notes</title>
 <style>
 /* Default styles provided by pandoc.
@@ -27,23 +28,25 @@ ul.task-list li input[type="checkbox"] {
   vertical-align: middle;
 }
 </style>
+
+
 <script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
 <script src="../../site_libs/quarto-nav/headroom.min.js"></script>
 <script src="../../site_libs/clipboard/clipboard.min.js"></script>
 <script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
 <script src="../../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../../site_libs/quarto-search/quarto-search.js"></script>
-<meta content="../../" name="quarto:offset"/>
+<meta name="quarto:offset" content="../../">
 <script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="../../site_libs/quarto-html/popper.min.js"></script>
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet"/>
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" id="quarto-text-highlighting-styles" rel="stylesheet"/>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet"/>
-<link append-hash="true" data-mode="light" href="../../site_libs/bootstrap/bootstrap-f0f4b58164ec92a07fcd2db94b0e5cbd.min.css" id="quarto-bootstrap" rel="stylesheet"/>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-0f70c849674a990122300108587fb581.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -71,511 +74,633 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 <style>html{ scroll-behavior: smooth; }</style>
-<link href="../../styles.css" rel="stylesheet"/>
+
+
+<link rel="stylesheet" href="../../styles.css">
 </head>
+
 <body class="nav-fixed quarto-light">
+
 <div id="quarto-search-results"></div>
-<header class="headroom fixed-top" id="quarto-header">
-<nav class="navbar navbar-expand-lg" data-bs-theme="dark">
-<div class="navbar-container container-fluid">
-<div class="navbar-brand-container mx-auto">
-<a class="navbar-brand" href="../../index.html">
-<span class="navbar-title">Edukron Notes</span>
-</a>
-</div>
-<div class="" id="quarto-search" title="Search"></div>
-<button aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-bs-target="#navbarCollapse" data-bs-toggle="collapse" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }" role="menu" type="button">
-<span class="navbar-toggler-icon"></span>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../../index.html">
+    <span class="navbar-title">Edukron Notes</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
 </button>
-<div class="collapse navbar-collapse" id="navbarCollapse">
-<ul class="navbar-nav navbar-nav-scroll me-auto">
-<li class="nav-item">
-<a class="nav-link" href="../../index.html">
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../index.html"> 
 <span class="menu-text">Home</span></a>
-</li>
-<li class="nav-item dropdown">
-<a aria-expanded="false" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" id="nav-menu-full-stack-ai" role="link">
-<i class="bi bi-cpu" role="img">
-</i>
-<span class="menu-text">Full Stack AI</span>
-</a>
-<ul aria-labelledby="nav-menu-full-stack-ai" class="dropdown-menu">
-<li>
-<a class="dropdown-item" href="../../courses/full-stack-ai/index.html">
-<span class="dropdown-text">Program overview</span></a>
-</li>
-<li>
-<a class="dropdown-item" href="../../courses/full-stack-ai/python.html">
-<span class="dropdown-text">Python</span></a>
-</li>
-<li>
-<a class="dropdown-item" href="../../courses/full-stack-ai/sql.html">
-<span class="dropdown-text">SQL</span></a>
-</li>
-<li>
-<a class="dropdown-item" href="../../courses/full-stack-ai/data-science.html">
-<span class="dropdown-text">Data Science</span></a>
-</li>
-<li>
-<a class="dropdown-item" href="../../courses/full-stack-ai/machine-learning.html">
-<span class="dropdown-text">Machine Learning</span></a>
-</li>
-<li>
-<a class="dropdown-item" href="../../courses/full-stack-ai/artificial-intelligence.html">
-<span class="dropdown-text">Artificial Intelligence</span></a>
-</li>
-<li>
-<a class="dropdown-item" href="../../courses/full-stack-ai/deep-learning.html">
-<span class="dropdown-text">Deep Learning</span></a>
-</li>
-<li>
-<a class="dropdown-item" href="../../courses/full-stack-ai/generative-ai.html">
-<span class="dropdown-text">Generative AI</span></a>
-</li>
-<li>
-<a class="dropdown-item" href="../../courses/full-stack-ai/large-language-models.html">
-<span class="dropdown-text">Large Language Models (LLMs)</span></a>
-</li>
-<li>
-<a class="dropdown-item" href="../../courses/full-stack-ai/rag.html">
-<span class="dropdown-text">Retrieval Augmented Generation (RAG)</span></a>
-</li>
-<li>
-<a class="dropdown-item" href="../../courses/full-stack-ai/agentic-ai.html">
-<span class="dropdown-text">Agentic AI</span></a>
-</li>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-full-stack-ai" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+      <i class="bi bi-cpu" role="img">
+</i> 
+ <span class="menu-text">Full Stack AI</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-full-stack-ai">    
+        <li>
+    <a class="dropdown-item" href="../../courses/full-stack-ai/index.html">
+ <span class="dropdown-text">Program overview</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../courses/full-stack-ai/python.html">
+ <span class="dropdown-text">Python</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../courses/full-stack-ai/sql.html">
+ <span class="dropdown-text">SQL</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../courses/full-stack-ai/data-science.html">
+ <span class="dropdown-text">Data Science</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../courses/full-stack-ai/machine-learning.html">
+ <span class="dropdown-text">Machine Learning</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../courses/full-stack-ai/artificial-intelligence.html">
+ <span class="dropdown-text">Artificial Intelligence</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../courses/full-stack-ai/deep-learning.html">
+ <span class="dropdown-text">Deep Learning</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../courses/full-stack-ai/generative-ai.html">
+ <span class="dropdown-text">Generative AI</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../courses/full-stack-ai/large-language-models.html">
+ <span class="dropdown-text">Large Language Models (LLMs)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../courses/full-stack-ai/rag.html">
+ <span class="dropdown-text">Retrieval Augmented Generation (RAG)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../courses/full-stack-ai/agentic-ai.html">
+ <span class="dropdown-text">Agentic AI</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-azure-data-engineering" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+      <i class="bi bi-database" role="img">
+</i> 
+ <span class="menu-text">Azure Data Engineering</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-azure-data-engineering">    
+        <li>
+    <a class="dropdown-item" href="../../courses/azure-data-engineering/index.html">
+ <span class="dropdown-text">Program overview</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../courses/azure-data-engineering/python.html">
+ <span class="dropdown-text">Python</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../courses/azure-data-engineering/sql.html">
+ <span class="dropdown-text">SQL</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../courses/azure-data-engineering/fundamentals.html">
+ <span class="dropdown-text">Data Engineering Fundamentals</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../courses/azure-data-engineering/azure-data-factory.html">
+ <span class="dropdown-text">Azure Data Factory (ADF)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../courses/azure-data-engineering/adls-gen2.html">
+ <span class="dropdown-text">Azure Data Lake Storage Gen2</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../courses/azure-data-engineering/azure-databricks.html">
+ <span class="dropdown-text">Azure Databricks</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../courses/azure-data-engineering/pyspark.html">
+ <span class="dropdown-text">PySpark</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../courses/azure-data-engineering/azure-synapse.html">
+ <span class="dropdown-text">Azure Synapse Analytics</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../courses/azure-data-engineering/microsoft-fabric.html">
+ <span class="dropdown-text">Microsoft Fabric</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../courses/azure-data-engineering/delta-lake.html">
+ <span class="dropdown-text">Delta Lake</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-azure-devops" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+      <i class="bi bi-infinity" role="img">
+</i> 
+ <span class="menu-text">Azure DevOps</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-azure-devops">    
+        <li>
+    <a class="dropdown-item" href="../../courses/azure-devops/index.html">
+ <span class="dropdown-text">Program overview</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../courses/azure-devops/linux-shell-scripting.html">
+ <span class="dropdown-text">Linux &amp; Shell Scripting</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../courses/azure-devops/git-version-control.html">
+ <span class="dropdown-text">Git &amp; Version Control</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../courses/azure-devops/azure-repos.html">
+ <span class="dropdown-text">Azure Repos</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../courses/azure-devops/azure-pipelines.html">
+ <span class="dropdown-text">Azure Pipelines (CI/CD)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../courses/azure-devops/yaml-pipelines.html">
+ <span class="dropdown-text">YAML Pipeline Development</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../courses/azure-devops/docker.html">
+ <span class="dropdown-text">Docker &amp; Containerization</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../courses/azure-devops/kubernetes-aks.html">
+ <span class="dropdown-text">Kubernetes &amp; AKS</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../courses/azure-devops/terraform.html">
+ <span class="dropdown-text">Terraform Infrastructure as Code</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../courses/azure-devops/azure-cloud-services.html">
+ <span class="dropdown-text">Azure Cloud Services</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../courses/azure-devops/devsecops-monitoring.html">
+ <span class="dropdown-text">DevSecOps &amp; Monitoring</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-interview-questions" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+      <i class="bi bi-question-circle" role="img">
+</i> 
+ <span class="menu-text">Interview Questions</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-interview-questions">    
+        <li>
+    <a class="dropdown-item" href="../../interview-questions/index.html">
+ <span class="dropdown-text">Section overview</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../interview-questions/full-stack-ai.html">
+ <span class="dropdown-text">Full Stack AI</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../interview-questions/azure-data-engineering.html">
+ <span class="dropdown-text">Azure Data Engineering</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../interview-questions/azure-devops.html">
+ <span class="dropdown-text">Azure DevOps</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-project-flows" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+      <i class="bi bi-kanban" role="img">
+</i> 
+ <span class="menu-text">Project Flows</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-project-flows">    
+        <li>
+    <a class="dropdown-item" href="../../project-flows/index.html">
+ <span class="dropdown-text">Section overview</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../project-flows/full-stack-ai.html">
+ <span class="dropdown-text">Full Stack AI</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../project-flows/azure-data-engineering.html">
+ <span class="dropdown-text">Azure Data Engineering</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../project-flows/azure-devops.html">
+ <span class="dropdown-text">Azure DevOps</span></a>
+  </li>  
+    </ul>
+  </li>
 </ul>
-</li>
-<li class="nav-item dropdown">
-<a aria-expanded="false" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" id="nav-menu-azure-data-engineering" role="link">
-<i class="bi bi-database" role="img">
-</i>
-<span class="menu-text">Azure Data Engineering</span>
-</a>
-<ul aria-labelledby="nav-menu-azure-data-engineering" class="dropdown-menu">
-<li>
-<a class="dropdown-item" href="../../courses/azure-data-engineering/index.html">
-<span class="dropdown-text">Program overview</span></a>
-</li>
-<li>
-<a class="dropdown-item" href="../../courses/azure-data-engineering/python.html">
-<span class="dropdown-text">Python</span></a>
-</li>
-<li>
-<a class="dropdown-item" href="../../courses/azure-data-engineering/sql.html">
-<span class="dropdown-text">SQL</span></a>
-</li>
-<li>
-<a class="dropdown-item" href="../../courses/azure-data-engineering/fundamentals.html">
-<span class="dropdown-text">Data Engineering Fundamentals</span></a>
-</li>
-<li>
-<a class="dropdown-item" href="../../courses/azure-data-engineering/azure-data-factory.html">
-<span class="dropdown-text">Azure Data Factory (ADF)</span></a>
-</li>
-<li>
-<a class="dropdown-item" href="../../courses/azure-data-engineering/adls-gen2.html">
-<span class="dropdown-text">Azure Data Lake Storage Gen2</span></a>
-</li>
-<li>
-<a class="dropdown-item" href="../../courses/azure-data-engineering/azure-databricks.html">
-<span class="dropdown-text">Azure Databricks</span></a>
-</li>
-<li>
-<a class="dropdown-item" href="../../courses/azure-data-engineering/pyspark.html">
-<span class="dropdown-text">PySpark</span></a>
-</li>
-<li>
-<a class="dropdown-item" href="../../courses/azure-data-engineering/azure-synapse.html">
-<span class="dropdown-text">Azure Synapse Analytics</span></a>
-</li>
-<li>
-<a class="dropdown-item" href="../../courses/azure-data-engineering/microsoft-fabric.html">
-<span class="dropdown-text">Microsoft Fabric</span></a>
-</li>
-<li>
-<a class="dropdown-item" href="../../courses/azure-data-engineering/delta-lake.html">
-<span class="dropdown-text">Delta Lake</span></a>
-</li>
-</ul>
-</li>
-<li class="nav-item dropdown">
-<a aria-expanded="false" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" id="nav-menu-azure-devops" role="link">
-<i class="bi bi-infinity" role="img">
-</i>
-<span class="menu-text">Azure DevOps</span>
-</a>
-<ul aria-labelledby="nav-menu-azure-devops" class="dropdown-menu">
-<li>
-<a class="dropdown-item" href="../../courses/azure-devops/index.html">
-<span class="dropdown-text">Program overview</span></a>
-</li>
-<li>
-<a class="dropdown-item" href="../../courses/azure-devops/linux-shell-scripting.html">
-<span class="dropdown-text">Linux &amp; Shell Scripting</span></a>
-</li>
-<li>
-<a class="dropdown-item" href="../../courses/azure-devops/git-version-control.html">
-<span class="dropdown-text">Git &amp; Version Control</span></a>
-</li>
-<li>
-<a class="dropdown-item" href="../../courses/azure-devops/azure-repos.html">
-<span class="dropdown-text">Azure Repos</span></a>
-</li>
-<li>
-<a class="dropdown-item" href="../../courses/azure-devops/azure-pipelines.html">
-<span class="dropdown-text">Azure Pipelines (CI/CD)</span></a>
-</li>
-<li>
-<a class="dropdown-item" href="../../courses/azure-devops/yaml-pipelines.html">
-<span class="dropdown-text">YAML Pipeline Development</span></a>
-</li>
-<li>
-<a class="dropdown-item" href="../../courses/azure-devops/docker.html">
-<span class="dropdown-text">Docker &amp; Containerization</span></a>
-</li>
-<li>
-<a class="dropdown-item" href="../../courses/azure-devops/kubernetes-aks.html">
-<span class="dropdown-text">Kubernetes &amp; AKS</span></a>
-</li>
-<li>
-<a class="dropdown-item" href="../../courses/azure-devops/terraform.html">
-<span class="dropdown-text">Terraform Infrastructure as Code</span></a>
-</li>
-<li>
-<a class="dropdown-item" href="../../courses/azure-devops/azure-cloud-services.html">
-<span class="dropdown-text">Azure Cloud Services</span></a>
-</li>
-<li>
-<a class="dropdown-item" href="../../courses/azure-devops/devsecops-monitoring.html">
-<span class="dropdown-text">DevSecOps &amp; Monitoring</span></a>
-</li>
-</ul>
-</li>
-<li class="nav-item dropdown">
-<a aria-expanded="false" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" id="nav-menu-interview-questions" role="link">
-<i class="bi bi-question-circle" role="img">
-</i>
-<span class="menu-text">Interview Questions</span>
-</a>
-<ul aria-labelledby="nav-menu-interview-questions" class="dropdown-menu">
-<li>
-<a class="dropdown-item" href="../../interview-questions/index.html">
-<span class="dropdown-text">Section overview</span></a>
-</li>
-<li>
-<a class="dropdown-item" href="../../interview-questions/full-stack-ai.html">
-<span class="dropdown-text">Full Stack AI</span></a>
-</li>
-<li>
-<a class="dropdown-item" href="../../interview-questions/azure-data-engineering.html">
-<span class="dropdown-text">Azure Data Engineering</span></a>
-</li>
-<li>
-<a class="dropdown-item" href="../../interview-questions/azure-devops.html">
-<span class="dropdown-text">Azure DevOps</span></a>
-</li>
-</ul>
-</li>
-<li class="nav-item dropdown">
-<a aria-expanded="false" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" id="nav-menu-project-flows" role="link">
-<i class="bi bi-kanban" role="img">
-</i>
-<span class="menu-text">Project Flows</span>
-</a>
-<ul aria-labelledby="nav-menu-project-flows" class="dropdown-menu">
-<li>
-<a class="dropdown-item" href="../../project-flows/index.html">
-<span class="dropdown-text">Section overview</span></a>
-</li>
-<li>
-<a class="dropdown-item" href="../../project-flows/full-stack-ai.html">
-<span class="dropdown-text">Full Stack AI</span></a>
-</li>
-<li>
-<a class="dropdown-item" href="../../project-flows/azure-data-engineering.html">
-<span class="dropdown-text">Azure Data Engineering</span></a>
-</li>
-<li>
-<a class="dropdown-item" href="../../project-flows/azure-devops.html">
-<span class="dropdown-text">Azure DevOps</span></a>
-</li>
-</ul>
-</li>
-</ul>
-</div> <!-- /navcollapse -->
-<div class="quarto-navbar-tools">
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
 </div>
-</div> <!-- /container-fluid -->
-</nav>
+      </div> <!-- /container-fluid -->
+    </nav>
 </header>
 <!-- content -->
-<div class="quarto-container page-columns page-rows-contents page-layout-full page-navbar" id="quarto-content">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
+    
 <!-- main -->
 <main class="content column-page" id="quarto-document-content">
-<header class="quarto-title-block default" id="title-block-header">
+
+<header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
 <h1 class="title">Artificial Intelligence</h1>
 </div>
+
 <div>
-<div class="description">
+  <div class="description">
     Complete notebook syllabus for Artificial Intelligence in Full Stack AI.
   </div>
 </div>
-<div class="quarto-title-meta">
-<div>
-<div class="quarto-title-meta-heading">Author</div>
-<div class="quarto-title-meta-contents">
-<p>Edukron Notes </p>
-</div>
-</div>
-<div>
-<div class="quarto-title-meta-heading">Published</div>
-<div class="quarto-title-meta-contents">
-<p class="date">September 14, 2026</p>
-</div>
-</div>
-</div>
+
+
+<div class="quarto-title-meta column-page">
+
+    
+  
+    
+  </div>
+  
+
+
 </header>
+
+
 <div class="course-workspace notebook-chrome">
 <div class="notebook-toolbar">
-<span class="notebook-file"><i aria-hidden="true" class="bi bi-journal-code"></i><strong>artificial-intelligence.ipynb</strong></span>
-<span class="notebook-status"><i aria-hidden="true" class="bi bi-check-circle-fill"></i> Trusted</span>
-<span class="notebook-kernel"><i aria-hidden="true" class="bi bi-diagram-3"></i> Learning path</span>
+<p><span class="notebook-file"><i class="bi bi-journal-code" aria-hidden="true"></i><strong>artificial-intelligence.ipynb</strong></span> <span class="notebook-status"><i class="bi bi-check-circle-fill" aria-hidden="true"></i> Trusted</span> <span class="notebook-kernel"><i class="bi bi-diagram-3" aria-hidden="true"></i> Learning path</span></p>
 </div>
 <div class="course-workspace-hero">
 <span class="overview-kicker">Full Stack AI</span>
-<h1>Artificial Intelligence</h1>
-<p>A complete notebook-first syllabus organized from foundations to applied delivery. Every lesson combines clear notes, a worked pattern, executable validation, a guided lab, a solution blueprint, practice, and knowledge checks.</p>
-<div class="course-tags"><span><i class="bi bi-signpost-split"></i> Foundation to advanced</span><span><i class="bi bi-code-square"></i> Hands-on practice</span><span><i class="bi bi-patch-check"></i> Review ready</span></div>
-<p class="course-start"><a class="btn btn-primary" href="artificial-intelligence/037-ai-and-intelligent-agents/01-history-of-ai.html"><i class="bi bi-play-fill"></i> Start the first notebook</a></p>
+<h1>
+Artificial Intelligence
+</h1>
+<p>
+A complete notebook-first syllabus organized from foundations to applied delivery. Every lesson combines clear notes, a worked pattern, executable validation, a guided lab, a solution blueprint, practice, and knowledge checks.
+</p>
+<div class="course-tags">
+<span><i class="bi bi-signpost-split"></i> Foundation to advanced</span><span><i class="bi bi-code-square"></i> Hands-on practice</span><span><i class="bi bi-patch-check"></i> Review ready</span>
+</div>
+<p class="course-start">
+<a class="btn btn-primary" href="artificial-intelligence/037-ai-and-intelligent-agents/01-history-of-ai.html"><i class="bi bi-play-fill"></i> Start the first notebook</a>
+</p>
 </div>
 </div>
-<section class="level2" id="how-to-use-this-course">
+<section id="how-to-use-this-course" class="level2">
 <h2 class="anchored" data-anchor-id="how-to-use-this-course">How to use this course</h2>
 <p>Work through lessons in order for a complete pathway, or open a topic for focused reference. Type or adapt the examples, complete the guided lab before reading its blueprint, and preserve your test evidence as a portfolio artifact. Cloud and infrastructure examples are safe, copy-ready teaching patterns; execute them in your own sandbox only after substituting approved identities, names, and policies.</p>
-</section>
 <section class="learning-plan-section" id="learning-plan">
-<div class="path-section-heading"><div><span class="overview-kicker">Recommended schedule</span><h2>Learning plan</h2><p>A practical schedule for completing Artificial Intelligence with retained evidence, not passive reading.</p></div></div>
-<div class="plan-metrics">
-<div><i class="bi bi-calendar3"></i><span>Standard path</span><strong>8 weeks</strong><small>One topic each week, then integration</small></div>
-<div><i class="bi bi-lightning-charge"></i><span>Intensive path</span><strong>5 weeks</strong><small>Two topics each week, then integration</small></div>
-<div><i class="bi bi-clock"></i><span>Weekly commitment</span><strong>6–8 hours</strong><small>Study, code, practice, and reflection</small></div>
-<div><i class="bi bi-folder-check"></i><span>Finish line</span><strong>Portfolio evidence</strong><small>Tests, decisions, notes, and a capstone</small></div>
+<div class="path-section-heading">
+<div>
+<span class="overview-kicker">Recommended schedule</span>
+<h2 class="anchored">
+Learning plan
+</h2>
+<p>
+A practical schedule for completing Artificial Intelligence with retained evidence, not passive reading.
+</p>
 </div>
-<div aria-label="Weekly study loop" class="study-loop">
-<div><span>01</span><i class="bi bi-book"></i><strong>Understand</strong><small>Read the notes and explain the mental model.</small></div>
-<i aria-hidden="true" class="bi bi-arrow-right study-loop-arrow"></i>
-<div><span>02</span><i class="bi bi-play-circle"></i><strong>Run</strong><small>Execute the example and inspect every result.</small></div>
-<i aria-hidden="true" class="bi bi-arrow-right study-loop-arrow"></i>
-<div><span>03</span><i class="bi bi-tools"></i><strong>Adapt</strong><small>Change the inputs and complete the guided lab.</small></div>
-<i aria-hidden="true" class="bi bi-arrow-right study-loop-arrow"></i>
-<div><span>04</span><i class="bi bi-patch-check"></i><strong>Prove</strong><small>Pass checks and retain reviewable evidence.</small></div>
+</div>
+<div class="plan-metrics">
+<div>
+<i class="bi bi-calendar3"></i><span>Standard path</span><strong>8 weeks</strong><small>One topic each week, then integration</small>
+</div>
+<div>
+<i class="bi bi-lightning-charge"></i><span>Intensive path</span><strong>5 weeks</strong><small>Two topics each week, then integration</small>
+</div>
+<div>
+<i class="bi bi-clock"></i><span>Weekly commitment</span><strong>6–8 hours</strong><small>Study, code, practice, and reflection</small>
+</div>
+<div>
+<i class="bi bi-folder-check"></i><span>Finish line</span><strong>Portfolio evidence</strong><small>Tests, decisions, notes, and a capstone</small>
+</div>
+</div>
+<div class="study-loop" aria-label="Weekly study loop">
+<div>
+<span>01</span><i class="bi bi-book"></i><strong>Understand</strong><small>Read the notes and explain the mental model.</small>
+</div>
+<i class="bi bi-arrow-right study-loop-arrow" aria-hidden="true"></i>
+<div>
+<span>02</span><i class="bi bi-play-circle"></i><strong>Run</strong><small>Execute the example and inspect every result.</small>
+</div>
+<i class="bi bi-arrow-right study-loop-arrow" aria-hidden="true"></i>
+<div>
+<span>03</span><i class="bi bi-tools"></i><strong>Adapt</strong><small>Change the inputs and complete the guided lab.</small>
+</div>
+<i class="bi bi-arrow-right study-loop-arrow" aria-hidden="true"></i>
+<div>
+<span>04</span><i class="bi bi-patch-check"></i><strong>Prove</strong><small>Pass checks and retain reviewable evidence.</small>
+</div>
 </div>
 <div class="plan-weeks">
 <details class="plan-week plan-topic-week" open="">
-<summary><span class="plan-week-number">Week 01</span><strong>AI and intelligent agents</strong><span class="plan-stage">Foundation</span></summary>
+<summary>
+<span class="plan-week-number">Week 01</span><strong>AI and intelligent agents</strong><span class="plan-stage">Foundation</span>
+</summary>
 <div class="plan-week-body">
-<div><span>Learn</span><p>Begin with <a href="artificial-intelligence/037-ai-and-intelligent-agents/01-history-of-ai.html">History of AI</a> and write the core mental model in your own words.</p></div>
-<div><span>Practice</span><p>Run, change, and explain the worked patterns across the middle lessons. Keep test evidence and questions.</p></div>
-<div><span>Demonstrate</span><p>Complete <a href="artificial-intelligence/037-ai-and-intelligent-agents/10-intelligent-agent-project.html">Intelligent-agent project</a> without copying the solution blueprint first.</p></div>
+<div>
+<span>Learn</span>
+<p>
+Begin with <a href="artificial-intelligence/037-ai-and-intelligent-agents/01-history-of-ai.html">History of AI</a> and write the core mental model in your own words.
+</p>
 </div>
-</details><details class="plan-week plan-topic-week">
-<summary><span class="plan-week-number">Week 02</span><strong>Search algorithms</strong><span class="plan-stage">Core skills</span></summary>
+<div>
+<span>Practice</span>
+<p>
+Run, change, and explain the worked patterns across the middle lessons. Keep test evidence and questions.
+</p>
+</div>
+<div>
+<span>Demonstrate</span>
+<p>
+Complete <a href="artificial-intelligence/037-ai-and-intelligent-agents/10-intelligent-agent-project.html">Intelligent-agent project</a> without copying the solution blueprint first.
+</p>
+</div>
+</div>
+</details>
+<details class="plan-week plan-topic-week">
+<summary>
+<span class="plan-week-number">Week 02</span><strong>Search algorithms</strong><span class="plan-stage">Core skills</span>
+</summary>
 <div class="plan-week-body">
-<div><span>Learn</span><p>Begin with <a href="artificial-intelligence/038-search-algorithms/01-state-space-representation.html">State-space representation</a> and write the core mental model in your own words.</p></div>
-<div><span>Practice</span><p>Run, change, and explain the worked patterns across the middle lessons. Keep test evidence and questions.</p></div>
-<div><span>Demonstrate</span><p>Complete <a href="artificial-intelligence/038-search-algorithms/10-pathfinding-project.html">Pathfinding project</a> without copying the solution blueprint first.</p></div>
+<div>
+<span>Learn</span>
+<p>
+Begin with <a href="artificial-intelligence/038-search-algorithms/01-state-space-representation.html">State-space representation</a> and write the core mental model in your own words.
+</p>
 </div>
-</details><details class="plan-week plan-topic-week">
-<summary><span class="plan-week-number">Week 03</span><strong>Constraint satisfaction and optimization</strong><span class="plan-stage">Core skills</span></summary>
+<div>
+<span>Practice</span>
+<p>
+Run, change, and explain the worked patterns across the middle lessons. Keep test evidence and questions.
+</p>
+</div>
+<div>
+<span>Demonstrate</span>
+<p>
+Complete <a href="artificial-intelligence/038-search-algorithms/10-pathfinding-project.html">Pathfinding project</a> without copying the solution blueprint first.
+</p>
+</div>
+</div>
+</details>
+<details class="plan-week plan-topic-week">
+<summary>
+<span class="plan-week-number">Week 03</span><strong>Constraint satisfaction and optimization</strong><span class="plan-stage">Core skills</span>
+</summary>
 <div class="plan-week-body">
-<div><span>Learn</span><p>Begin with <a href="artificial-intelligence/039-constraint-satisfaction-and-optimization/01-constraint-satisfaction-problems.html">Constraint-satisfaction problems</a> and write the core mental model in your own words.</p></div>
-<div><span>Practice</span><p>Run, change, and explain the worked patterns across the middle lessons. Keep test evidence and questions.</p></div>
-<div><span>Demonstrate</span><p>Complete <a href="artificial-intelligence/039-constraint-satisfaction-and-optimization/10-scheduling-project.html">Scheduling project</a> without copying the solution blueprint first.</p></div>
+<div>
+<span>Learn</span>
+<p>
+Begin with <a href="artificial-intelligence/039-constraint-satisfaction-and-optimization/01-constraint-satisfaction-problems.html">Constraint-satisfaction problems</a> and write the core mental model in your own words.
+</p>
 </div>
-</details><details class="plan-week plan-topic-week">
-<summary><span class="plan-week-number">Week 04</span><strong>Knowledge representation and reasoning</strong><span class="plan-stage">Core skills</span></summary>
+<div>
+<span>Practice</span>
+<p>
+Run, change, and explain the worked patterns across the middle lessons. Keep test evidence and questions.
+</p>
+</div>
+<div>
+<span>Demonstrate</span>
+<p>
+Complete <a href="artificial-intelligence/039-constraint-satisfaction-and-optimization/10-scheduling-project.html">Scheduling project</a> without copying the solution blueprint first.
+</p>
+</div>
+</div>
+</details>
+<details class="plan-week plan-topic-week">
+<summary>
+<span class="plan-week-number">Week 04</span><strong>Knowledge representation and reasoning</strong><span class="plan-stage">Core skills</span>
+</summary>
 <div class="plan-week-body">
-<div><span>Learn</span><p>Begin with <a href="artificial-intelligence/040-knowledge-representation-and-reasoning/01-propositional-logic.html">Propositional logic</a> and write the core mental model in your own words.</p></div>
-<div><span>Practice</span><p>Run, change, and explain the worked patterns across the middle lessons. Keep test evidence and questions.</p></div>
-<div><span>Demonstrate</span><p>Complete <a href="artificial-intelligence/040-knowledge-representation-and-reasoning/10-expert-system-project.html">Expert-system project</a> without copying the solution blueprint first.</p></div>
+<div>
+<span>Learn</span>
+<p>
+Begin with <a href="artificial-intelligence/040-knowledge-representation-and-reasoning/01-propositional-logic.html">Propositional logic</a> and write the core mental model in your own words.
+</p>
 </div>
-</details><details class="plan-week plan-topic-week">
-<summary><span class="plan-week-number">Week 05</span><strong>Planning and decision-making</strong><span class="plan-stage">Applied delivery</span></summary>
+<div>
+<span>Practice</span>
+<p>
+Run, change, and explain the worked patterns across the middle lessons. Keep test evidence and questions.
+</p>
+</div>
+<div>
+<span>Demonstrate</span>
+<p>
+Complete <a href="artificial-intelligence/040-knowledge-representation-and-reasoning/10-expert-system-project.html">Expert-system project</a> without copying the solution blueprint first.
+</p>
+</div>
+</div>
+</details>
+<details class="plan-week plan-topic-week">
+<summary>
+<span class="plan-week-number">Week 05</span><strong>Planning and decision-making</strong><span class="plan-stage">Applied delivery</span>
+</summary>
 <div class="plan-week-body">
-<div><span>Learn</span><p>Begin with <a href="artificial-intelligence/041-planning-and-decision-making/01-planning-problems.html">Planning problems</a> and write the core mental model in your own words.</p></div>
-<div><span>Practice</span><p>Run, change, and explain the worked patterns across the middle lessons. Keep test evidence and questions.</p></div>
-<div><span>Demonstrate</span><p>Complete <a href="artificial-intelligence/041-planning-and-decision-making/10-planning-agent-project.html">Planning-agent project</a> without copying the solution blueprint first.</p></div>
+<div>
+<span>Learn</span>
+<p>
+Begin with <a href="artificial-intelligence/041-planning-and-decision-making/01-planning-problems.html">Planning problems</a> and write the core mental model in your own words.
+</p>
 </div>
-</details><details class="plan-week plan-topic-week">
-<summary><span class="plan-week-number">Week 06</span><strong>Probabilistic AI and reinforcement learning</strong><span class="plan-stage">Applied delivery</span></summary>
+<div>
+<span>Practice</span>
+<p>
+Run, change, and explain the worked patterns across the middle lessons. Keep test evidence and questions.
+</p>
+</div>
+<div>
+<span>Demonstrate</span>
+<p>
+Complete <a href="artificial-intelligence/041-planning-and-decision-making/10-planning-agent-project.html">Planning-agent project</a> without copying the solution blueprint first.
+</p>
+</div>
+</div>
+</details>
+<details class="plan-week plan-topic-week">
+<summary>
+<span class="plan-week-number">Week 06</span><strong>Probabilistic AI and reinforcement learning</strong><span class="plan-stage">Applied delivery</span>
+</summary>
 <div class="plan-week-body">
-<div><span>Learn</span><p>Begin with <a href="artificial-intelligence/042-probabilistic-ai-and-reinforcement-learning/01-uncertainty-in-ai.html">Uncertainty in AI</a> and write the core mental model in your own words.</p></div>
-<div><span>Practice</span><p>Run, change, and explain the worked patterns across the middle lessons. Keep test evidence and questions.</p></div>
-<div><span>Demonstrate</span><p>Complete <a href="artificial-intelligence/042-probabilistic-ai-and-reinforcement-learning/10-rl-project.html">RL project</a> without copying the solution blueprint first.</p></div>
+<div>
+<span>Learn</span>
+<p>
+Begin with <a href="artificial-intelligence/042-probabilistic-ai-and-reinforcement-learning/01-uncertainty-in-ai.html">Uncertainty in AI</a> and write the core mental model in your own words.
+</p>
 </div>
-</details><details class="plan-week plan-topic-week">
-<summary><span class="plan-week-number">Week 07</span><strong>Responsible and applied AI</strong><span class="plan-stage">Integration &amp; capstone</span></summary>
+<div>
+<span>Practice</span>
+<p>
+Run, change, and explain the worked patterns across the middle lessons. Keep test evidence and questions.
+</p>
+</div>
+<div>
+<span>Demonstrate</span>
+<p>
+Complete <a href="artificial-intelligence/042-probabilistic-ai-and-reinforcement-learning/10-rl-project.html">RL project</a> without copying the solution blueprint first.
+</p>
+</div>
+</div>
+</details>
+<details class="plan-week plan-topic-week">
+<summary>
+<span class="plan-week-number">Week 07</span><strong>Responsible and applied AI</strong><span class="plan-stage">Integration &amp; capstone</span>
+</summary>
 <div class="plan-week-body">
-<div><span>Learn</span><p>Begin with <a href="artificial-intelligence/043-responsible-and-applied-ai/01-ai-fairness.html">AI fairness</a> and write the core mental model in your own words.</p></div>
-<div><span>Practice</span><p>Run, change, and explain the worked patterns across the middle lessons. Keep test evidence and questions.</p></div>
-<div><span>Demonstrate</span><p>Complete <a href="artificial-intelligence/043-responsible-and-applied-ai/10-responsible-ai-capstone.html">Responsible-AI capstone</a> without copying the solution blueprint first.</p></div>
+<div>
+<span>Learn</span>
+<p>
+Begin with <a href="artificial-intelligence/043-responsible-and-applied-ai/01-ai-fairness.html">AI fairness</a> and write the core mental model in your own words.
+</p>
 </div>
-</details><div class="plan-integration-week">
+<div>
+<span>Practice</span>
+<p>
+Run, change, and explain the worked patterns across the middle lessons. Keep test evidence and questions.
+</p>
+</div>
+<div>
+<span>Demonstrate</span>
+<p>
+Complete <a href="artificial-intelligence/043-responsible-and-applied-ai/10-responsible-ai-capstone.html">Responsible-AI capstone</a> without copying the solution blueprint first.
+</p>
+</div>
+</div>
+</details>
+<div class="plan-integration-week">
 <span class="plan-week-number">Week 08</span>
-<div><strong>Integration, review, and portfolio evidence</strong><p>Connect the topic artifacts, close weak areas, and publish one reviewable Artificial Intelligence outcome. Use <a href="artificial-intelligence/043-responsible-and-applied-ai/10-responsible-ai-capstone.html">Responsible-AI capstone</a> as the final checkpoint.</p></div>
-<i aria-hidden="true" class="bi bi-trophy"></i>
+<div>
+<strong>Integration, review, and portfolio evidence</strong>
+<p>
+Connect the topic artifacts, close weak areas, and publish one reviewable Artificial Intelligence outcome. Use <a href="artificial-intelligence/043-responsible-and-applied-ai/10-responsible-ai-capstone.html">Responsible-AI capstone</a> as the final checkpoint.
+</p>
+</div>
+<p><i class="bi bi-trophy" aria-hidden="true"></i></p>
 </div>
 </div>
-</section><section class="learning-path-section" id="full-learning-path">
-<div class="path-section-heading"><div><span class="overview-kicker">Ordered progression</span><h2>Full learning path</h2><p>Follow every stage in sequence. Each stage links directly to its first notebook and ends with a concrete mastery checkpoint.</p></div><span class="path-route"><i class="bi bi-signpost-2"></i> Full Stack AI → Artificial Intelligence</span></div>
+</section>
+<section class="learning-path-section" id="full-learning-path">
+<div class="path-section-heading">
+<div>
+<span class="overview-kicker">Ordered progression</span>
+<h2 class="anchored">
+Full learning path
+</h2>
+<p>
+Follow every stage in sequence. Each stage links directly to its first notebook and ends with a concrete mastery checkpoint.
+</p>
+</div>
+<span class="path-route"><i class="bi bi-signpost-2"></i> Full Stack AI → Artificial Intelligence</span>
+</div>
 <div class="learning-path">
-<a class="learning-path-step" data-topic="037" href="artificial-intelligence/037-ai-and-intelligent-agents/01-history-of-ai.html">
-<span class="path-index">01</span>
-<span class="path-step-copy"><span class="path-phase">Foundation · Topic 037</span><strong>AI and intelligent agents</strong><small>Enter with History of AI. Demonstrate mastery through Intelligent-agent project.</small></span>
-<i aria-hidden="true" class="bi bi-arrow-right"></i>
-</a><a class="learning-path-step" data-topic="038" href="artificial-intelligence/038-search-algorithms/01-state-space-representation.html">
-<span class="path-index">02</span>
-<span class="path-step-copy"><span class="path-phase">Core skills · Topic 038</span><strong>Search algorithms</strong><small>Enter with State-space representation. Demonstrate mastery through Pathfinding project.</small></span>
-<i aria-hidden="true" class="bi bi-arrow-right"></i>
-</a><a class="learning-path-step" data-topic="039" href="artificial-intelligence/039-constraint-satisfaction-and-optimization/01-constraint-satisfaction-problems.html">
-<span class="path-index">03</span>
-<span class="path-step-copy"><span class="path-phase">Core skills · Topic 039</span><strong>Constraint satisfaction and optimization</strong><small>Enter with Constraint-satisfaction problems. Demonstrate mastery through Scheduling project.</small></span>
-<i aria-hidden="true" class="bi bi-arrow-right"></i>
-</a><a class="learning-path-step" data-topic="040" href="artificial-intelligence/040-knowledge-representation-and-reasoning/01-propositional-logic.html">
-<span class="path-index">04</span>
-<span class="path-step-copy"><span class="path-phase">Core skills · Topic 040</span><strong>Knowledge representation and reasoning</strong><small>Enter with Propositional logic. Demonstrate mastery through Expert-system project.</small></span>
-<i aria-hidden="true" class="bi bi-arrow-right"></i>
-</a><a class="learning-path-step" data-topic="041" href="artificial-intelligence/041-planning-and-decision-making/01-planning-problems.html">
-<span class="path-index">05</span>
-<span class="path-step-copy"><span class="path-phase">Applied delivery · Topic 041</span><strong>Planning and decision-making</strong><small>Enter with Planning problems. Demonstrate mastery through Planning-agent project.</small></span>
-<i aria-hidden="true" class="bi bi-arrow-right"></i>
-</a><a class="learning-path-step" data-topic="042" href="artificial-intelligence/042-probabilistic-ai-and-reinforcement-learning/01-uncertainty-in-ai.html">
-<span class="path-index">06</span>
-<span class="path-step-copy"><span class="path-phase">Applied delivery · Topic 042</span><strong>Probabilistic AI and reinforcement learning</strong><small>Enter with Uncertainty in AI. Demonstrate mastery through RL project.</small></span>
-<i aria-hidden="true" class="bi bi-arrow-right"></i>
-</a><a class="learning-path-step" data-topic="043" href="artificial-intelligence/043-responsible-and-applied-ai/01-ai-fairness.html">
-<span class="path-index">07</span>
-<span class="path-step-copy"><span class="path-phase">Integration &amp; capstone · Topic 043</span><strong>Responsible and applied AI</strong><small>Enter with AI fairness. Demonstrate mastery through Responsible-AI capstone.</small></span>
-<i aria-hidden="true" class="bi bi-arrow-right"></i>
-</a>
+<p><a class="learning-path-step" data-topic="037" href="artificial-intelligence/037-ai-and-intelligent-agents/01-history-of-ai.html"> <span class="path-index">01</span> <span class="path-step-copy"><span class="path-phase">Foundation · Topic 037</span><strong>AI and intelligent agents</strong><small>Enter with History of AI. Demonstrate mastery through Intelligent-agent project.</small></span> <i class="bi bi-arrow-right" aria-hidden="true"></i> </a><a class="learning-path-step" data-topic="038" href="artificial-intelligence/038-search-algorithms/01-state-space-representation.html"> <span class="path-index">02</span> <span class="path-step-copy"><span class="path-phase">Core skills · Topic 038</span><strong>Search algorithms</strong><small>Enter with State-space representation. Demonstrate mastery through Pathfinding project.</small></span> <i class="bi bi-arrow-right" aria-hidden="true"></i> </a><a class="learning-path-step" data-topic="039" href="artificial-intelligence/039-constraint-satisfaction-and-optimization/01-constraint-satisfaction-problems.html"> <span class="path-index">03</span> <span class="path-step-copy"><span class="path-phase">Core skills · Topic 039</span><strong>Constraint satisfaction and optimization</strong><small>Enter with Constraint-satisfaction problems. Demonstrate mastery through Scheduling project.</small></span> <i class="bi bi-arrow-right" aria-hidden="true"></i> </a><a class="learning-path-step" data-topic="040" href="artificial-intelligence/040-knowledge-representation-and-reasoning/01-propositional-logic.html"> <span class="path-index">04</span> <span class="path-step-copy"><span class="path-phase">Core skills · Topic 040</span><strong>Knowledge representation and reasoning</strong><small>Enter with Propositional logic. Demonstrate mastery through Expert-system project.</small></span> <i class="bi bi-arrow-right" aria-hidden="true"></i> </a><a class="learning-path-step" data-topic="041" href="artificial-intelligence/041-planning-and-decision-making/01-planning-problems.html"> <span class="path-index">05</span> <span class="path-step-copy"><span class="path-phase">Applied delivery · Topic 041</span><strong>Planning and decision-making</strong><small>Enter with Planning problems. Demonstrate mastery through Planning-agent project.</small></span> <i class="bi bi-arrow-right" aria-hidden="true"></i> </a><a class="learning-path-step" data-topic="042" href="artificial-intelligence/042-probabilistic-ai-and-reinforcement-learning/01-uncertainty-in-ai.html"> <span class="path-index">06</span> <span class="path-step-copy"><span class="path-phase">Applied delivery · Topic 042</span><strong>Probabilistic AI and reinforcement learning</strong><small>Enter with Uncertainty in AI. Demonstrate mastery through RL project.</small></span> <i class="bi bi-arrow-right" aria-hidden="true"></i> </a><a class="learning-path-step" data-topic="043" href="artificial-intelligence/043-responsible-and-applied-ai/01-ai-fairness.html"> <span class="path-index">07</span> <span class="path-step-copy"><span class="path-phase">Integration &amp; capstone · Topic 043</span><strong>Responsible and applied AI</strong><small>Enter with AI fairness. Demonstrate mastery through Responsible-AI capstone.</small></span> <i class="bi bi-arrow-right" aria-hidden="true"></i> </a></p>
 </div>
-<div class="path-finish"><span><i class="bi bi-trophy-fill"></i></span><div><small>Completion milestone</small><strong>Connect the complete Artificial Intelligence workflow</strong><p>Combine evidence from every stage and finish with Responsible-AI capstone. You should be able to explain the architecture, reproduce the core workflow, diagnose failure, and defend the main tradeoffs.</p></div></div>
-</section><div class="syllabus-heading" id="notebook-syllabus">
-<div><span class="overview-kicker">Course contents</span><h2>Notebook syllabus</h2><p>Open a topic to browse its lessons, or search the complete course by concept.</p></div>
-<label class="syllabus-search" for="full-stack-ai-artificial-intelligence-catalog-search"><i aria-hidden="true" class="bi bi-search"></i><input aria-label="Search the Artificial Intelligence syllabus" autocomplete="off" id="full-stack-ai-artificial-intelligence-catalog-search" placeholder="Find a topic or lesson" type="search"/></label>
+<div class="path-finish">
+<span><i class="bi bi-trophy-fill"></i></span>
+<div>
+<small>Completion milestone</small><strong>Connect the complete Artificial Intelligence workflow</strong>
+<p>
+Combine evidence from every stage and finish with Responsible-AI capstone. You should be able to explain the architecture, reproduce the core workflow, diagnose failure, and defend the main tradeoffs.
+</p>
 </div>
-<div class="curriculum-catalog" id="full-stack-ai-artificial-intelligence-catalog">
+</div>
+</section>
+<div id="notebook-syllabus" class="syllabus-heading">
+<div>
+<span class="overview-kicker">Course contents</span>
+<h2 class="anchored">
+Notebook syllabus
+</h2>
+<p>
+Open a topic to browse its lessons, or search the complete course by concept.
+</p>
+</div>
+<p><label class="syllabus-search" for="full-stack-ai-artificial-intelligence-catalog-search"><i class="bi bi-search" aria-hidden="true"></i><input id="full-stack-ai-artificial-intelligence-catalog-search" type="search" placeholder="Find a topic or lesson" autocomplete="off" aria-label="Search the Artificial Intelligence syllabus"></label></p>
+</div>
+<div id="full-stack-ai-artificial-intelligence-catalog" class="curriculum-catalog">
 <details class="curriculum-topic" open="">
-<summary><span class="topic-number">Topic 037</span><strong>AI and intelligent agents</strong></summary>
+<summary>
+<span class="topic-number">Topic 037</span><strong>AI and intelligent agents</strong>
+</summary>
 <div class="topic-lessons">
-<a class="topic-lesson-link" href="artificial-intelligence/037-ai-and-intelligent-agents/01-history-of-ai.html"><span>037.01</span><strong>History of AI</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="artificial-intelligence/037-ai-and-intelligent-agents/02-ai-problem-categories.html"><span>037.02</span><strong>AI problem categories</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="artificial-intelligence/037-ai-and-intelligent-agents/03-rational-agents.html"><span>037.03</span><strong>Rational agents</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="artificial-intelligence/037-ai-and-intelligent-agents/04-agent-environments.html"><span>037.04</span><strong>Agent environments</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="artificial-intelligence/037-ai-and-intelligent-agents/05-sensors-and-actuators.html"><span>037.05</span><strong>Sensors and actuators</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="artificial-intelligence/037-ai-and-intelligent-agents/06-utility-and-goals.html"><span>037.06</span><strong>Utility and goals</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="artificial-intelligence/037-ai-and-intelligent-agents/07-reactive-agents.html"><span>037.07</span><strong>Reactive agents</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="artificial-intelligence/037-ai-and-intelligent-agents/08-model-based-agents.html"><span>037.08</span><strong>Model-based agents</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="artificial-intelligence/037-ai-and-intelligent-agents/09-learning-agents.html"><span>037.09</span><strong>Learning agents</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="artificial-intelligence/037-ai-and-intelligent-agents/10-intelligent-agent-project.html"><span>037.10</span><strong>Intelligent-agent project</strong><i class="bi bi-arrow-right"></i></a>
+<p><a class="topic-lesson-link" href="artificial-intelligence/037-ai-and-intelligent-agents/01-history-of-ai.html"><span>037.01</span><strong>History of AI</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="artificial-intelligence/037-ai-and-intelligent-agents/02-ai-problem-categories.html"><span>037.02</span><strong>AI problem categories</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="artificial-intelligence/037-ai-and-intelligent-agents/03-rational-agents.html"><span>037.03</span><strong>Rational agents</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="artificial-intelligence/037-ai-and-intelligent-agents/04-agent-environments.html"><span>037.04</span><strong>Agent environments</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="artificial-intelligence/037-ai-and-intelligent-agents/05-sensors-and-actuators.html"><span>037.05</span><strong>Sensors and actuators</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="artificial-intelligence/037-ai-and-intelligent-agents/06-utility-and-goals.html"><span>037.06</span><strong>Utility and goals</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="artificial-intelligence/037-ai-and-intelligent-agents/07-reactive-agents.html"><span>037.07</span><strong>Reactive agents</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="artificial-intelligence/037-ai-and-intelligent-agents/08-model-based-agents.html"><span>037.08</span><strong>Model-based agents</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="artificial-intelligence/037-ai-and-intelligent-agents/09-learning-agents.html"><span>037.09</span><strong>Learning agents</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="artificial-intelligence/037-ai-and-intelligent-agents/10-intelligent-agent-project.html"><span>037.10</span><strong>Intelligent-agent project</strong><i class="bi bi-arrow-right"></i></a></p>
 </div>
 </details>
 <details class="curriculum-topic">
-<summary><span class="topic-number">Topic 038</span><strong>Search algorithms</strong></summary>
+<summary>
+<span class="topic-number">Topic 038</span><strong>Search algorithms</strong>
+</summary>
 <div class="topic-lessons">
-<a class="topic-lesson-link" href="artificial-intelligence/038-search-algorithms/01-state-space-representation.html"><span>038.01</span><strong>State-space representation</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="artificial-intelligence/038-search-algorithms/02-breadth-first-search.html"><span>038.02</span><strong>Breadth-first search</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="artificial-intelligence/038-search-algorithms/03-depth-first-search.html"><span>038.03</span><strong>Depth-first search</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="artificial-intelligence/038-search-algorithms/04-uniform-cost-search.html"><span>038.04</span><strong>Uniform-cost search</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="artificial-intelligence/038-search-algorithms/05-greedy-search.html"><span>038.05</span><strong>Greedy search</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="artificial-intelligence/038-search-algorithms/06-a-star-search.html"><span>038.06</span><strong>A-star search</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="artificial-intelligence/038-search-algorithms/07-heuristic-design.html"><span>038.07</span><strong>Heuristic design</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="artificial-intelligence/038-search-algorithms/08-bidirectional-search.html"><span>038.08</span><strong>Bidirectional search</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="artificial-intelligence/038-search-algorithms/09-search-performance.html"><span>038.09</span><strong>Search performance</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="artificial-intelligence/038-search-algorithms/10-pathfinding-project.html"><span>038.10</span><strong>Pathfinding project</strong><i class="bi bi-arrow-right"></i></a>
+<p><a class="topic-lesson-link" href="artificial-intelligence/038-search-algorithms/01-state-space-representation.html"><span>038.01</span><strong>State-space representation</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="artificial-intelligence/038-search-algorithms/02-breadth-first-search.html"><span>038.02</span><strong>Breadth-first search</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="artificial-intelligence/038-search-algorithms/03-depth-first-search.html"><span>038.03</span><strong>Depth-first search</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="artificial-intelligence/038-search-algorithms/04-uniform-cost-search.html"><span>038.04</span><strong>Uniform-cost search</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="artificial-intelligence/038-search-algorithms/05-greedy-search.html"><span>038.05</span><strong>Greedy search</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="artificial-intelligence/038-search-algorithms/06-a-star-search.html"><span>038.06</span><strong>A-star search</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="artificial-intelligence/038-search-algorithms/07-heuristic-design.html"><span>038.07</span><strong>Heuristic design</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="artificial-intelligence/038-search-algorithms/08-bidirectional-search.html"><span>038.08</span><strong>Bidirectional search</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="artificial-intelligence/038-search-algorithms/09-search-performance.html"><span>038.09</span><strong>Search performance</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="artificial-intelligence/038-search-algorithms/10-pathfinding-project.html"><span>038.10</span><strong>Pathfinding project</strong><i class="bi bi-arrow-right"></i></a></p>
 </div>
 </details>
 <details class="curriculum-topic">
-<summary><span class="topic-number">Topic 039</span><strong>Constraint satisfaction and optimization</strong></summary>
+<summary>
+<span class="topic-number">Topic 039</span><strong>Constraint satisfaction and optimization</strong>
+</summary>
 <div class="topic-lessons">
-<a class="topic-lesson-link" href="artificial-intelligence/039-constraint-satisfaction-and-optimization/01-constraint-satisfaction-problems.html"><span>039.01</span><strong>Constraint-satisfaction problems</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="artificial-intelligence/039-constraint-satisfaction-and-optimization/02-backtracking.html"><span>039.02</span><strong>Backtracking</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="artificial-intelligence/039-constraint-satisfaction-and-optimization/03-constraint-propagation.html"><span>039.03</span><strong>Constraint propagation</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="artificial-intelligence/039-constraint-satisfaction-and-optimization/04-variable-ordering-heuristics.html"><span>039.04</span><strong>Variable-ordering heuristics</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="artificial-intelligence/039-constraint-satisfaction-and-optimization/05-local-search.html"><span>039.05</span><strong>Local search</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="artificial-intelligence/039-constraint-satisfaction-and-optimization/06-hill-climbing.html"><span>039.06</span><strong>Hill climbing</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="artificial-intelligence/039-constraint-satisfaction-and-optimization/07-simulated-annealing.html"><span>039.07</span><strong>Simulated annealing</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="artificial-intelligence/039-constraint-satisfaction-and-optimization/08-genetic-algorithms.html"><span>039.08</span><strong>Genetic algorithms</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="artificial-intelligence/039-constraint-satisfaction-and-optimization/09-optimization-evaluation.html"><span>039.09</span><strong>Optimization evaluation</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="artificial-intelligence/039-constraint-satisfaction-and-optimization/10-scheduling-project.html"><span>039.10</span><strong>Scheduling project</strong><i class="bi bi-arrow-right"></i></a>
+<p><a class="topic-lesson-link" href="artificial-intelligence/039-constraint-satisfaction-and-optimization/01-constraint-satisfaction-problems.html"><span>039.01</span><strong>Constraint-satisfaction problems</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="artificial-intelligence/039-constraint-satisfaction-and-optimization/02-backtracking.html"><span>039.02</span><strong>Backtracking</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="artificial-intelligence/039-constraint-satisfaction-and-optimization/03-constraint-propagation.html"><span>039.03</span><strong>Constraint propagation</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="artificial-intelligence/039-constraint-satisfaction-and-optimization/04-variable-ordering-heuristics.html"><span>039.04</span><strong>Variable-ordering heuristics</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="artificial-intelligence/039-constraint-satisfaction-and-optimization/05-local-search.html"><span>039.05</span><strong>Local search</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="artificial-intelligence/039-constraint-satisfaction-and-optimization/06-hill-climbing.html"><span>039.06</span><strong>Hill climbing</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="artificial-intelligence/039-constraint-satisfaction-and-optimization/07-simulated-annealing.html"><span>039.07</span><strong>Simulated annealing</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="artificial-intelligence/039-constraint-satisfaction-and-optimization/08-genetic-algorithms.html"><span>039.08</span><strong>Genetic algorithms</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="artificial-intelligence/039-constraint-satisfaction-and-optimization/09-optimization-evaluation.html"><span>039.09</span><strong>Optimization evaluation</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="artificial-intelligence/039-constraint-satisfaction-and-optimization/10-scheduling-project.html"><span>039.10</span><strong>Scheduling project</strong><i class="bi bi-arrow-right"></i></a></p>
 </div>
 </details>
 <details class="curriculum-topic">
-<summary><span class="topic-number">Topic 040</span><strong>Knowledge representation and reasoning</strong></summary>
+<summary>
+<span class="topic-number">Topic 040</span><strong>Knowledge representation and reasoning</strong>
+</summary>
 <div class="topic-lessons">
-<a class="topic-lesson-link" href="artificial-intelligence/040-knowledge-representation-and-reasoning/01-propositional-logic.html"><span>040.01</span><strong>Propositional logic</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="artificial-intelligence/040-knowledge-representation-and-reasoning/02-predicate-logic.html"><span>040.02</span><strong>Predicate logic</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="artificial-intelligence/040-knowledge-representation-and-reasoning/03-inference-rules.html"><span>040.03</span><strong>Inference rules</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="artificial-intelligence/040-knowledge-representation-and-reasoning/04-knowledge-graphs.html"><span>040.04</span><strong>Knowledge graphs</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="artificial-intelligence/040-knowledge-representation-and-reasoning/05-semantic-networks.html"><span>040.05</span><strong>Semantic networks</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="artificial-intelligence/040-knowledge-representation-and-reasoning/06-ontologies.html"><span>040.06</span><strong>Ontologies</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="artificial-intelligence/040-knowledge-representation-and-reasoning/07-rule-based-systems.html"><span>040.07</span><strong>Rule-based systems</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="artificial-intelligence/040-knowledge-representation-and-reasoning/08-forward-chaining.html"><span>040.08</span><strong>Forward chaining</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="artificial-intelligence/040-knowledge-representation-and-reasoning/09-backward-chaining.html"><span>040.09</span><strong>Backward chaining</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="artificial-intelligence/040-knowledge-representation-and-reasoning/10-expert-system-project.html"><span>040.10</span><strong>Expert-system project</strong><i class="bi bi-arrow-right"></i></a>
+<p><a class="topic-lesson-link" href="artificial-intelligence/040-knowledge-representation-and-reasoning/01-propositional-logic.html"><span>040.01</span><strong>Propositional logic</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="artificial-intelligence/040-knowledge-representation-and-reasoning/02-predicate-logic.html"><span>040.02</span><strong>Predicate logic</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="artificial-intelligence/040-knowledge-representation-and-reasoning/03-inference-rules.html"><span>040.03</span><strong>Inference rules</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="artificial-intelligence/040-knowledge-representation-and-reasoning/04-knowledge-graphs.html"><span>040.04</span><strong>Knowledge graphs</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="artificial-intelligence/040-knowledge-representation-and-reasoning/05-semantic-networks.html"><span>040.05</span><strong>Semantic networks</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="artificial-intelligence/040-knowledge-representation-and-reasoning/06-ontologies.html"><span>040.06</span><strong>Ontologies</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="artificial-intelligence/040-knowledge-representation-and-reasoning/07-rule-based-systems.html"><span>040.07</span><strong>Rule-based systems</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="artificial-intelligence/040-knowledge-representation-and-reasoning/08-forward-chaining.html"><span>040.08</span><strong>Forward chaining</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="artificial-intelligence/040-knowledge-representation-and-reasoning/09-backward-chaining.html"><span>040.09</span><strong>Backward chaining</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="artificial-intelligence/040-knowledge-representation-and-reasoning/10-expert-system-project.html"><span>040.10</span><strong>Expert-system project</strong><i class="bi bi-arrow-right"></i></a></p>
 </div>
 </details>
 <details class="curriculum-topic">
-<summary><span class="topic-number">Topic 041</span><strong>Planning and decision-making</strong></summary>
+<summary>
+<span class="topic-number">Topic 041</span><strong>Planning and decision-making</strong>
+</summary>
 <div class="topic-lessons">
-<a class="topic-lesson-link" href="artificial-intelligence/041-planning-and-decision-making/01-planning-problems.html"><span>041.01</span><strong>Planning problems</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="artificial-intelligence/041-planning-and-decision-making/02-strips-representation.html"><span>041.02</span><strong>STRIPS representation</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="artificial-intelligence/041-planning-and-decision-making/03-forward-planning.html"><span>041.03</span><strong>Forward planning</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="artificial-intelligence/041-planning-and-decision-making/04-backward-planning.html"><span>041.04</span><strong>Backward planning</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="artificial-intelligence/041-planning-and-decision-making/05-partial-order-planning.html"><span>041.05</span><strong>Partial-order planning</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="artificial-intelligence/041-planning-and-decision-making/06-utility-theory.html"><span>041.06</span><strong>Utility theory</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="artificial-intelligence/041-planning-and-decision-making/07-decision-trees.html"><span>041.07</span><strong>Decision trees</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="artificial-intelligence/041-planning-and-decision-making/08-markov-decision-processes.html"><span>041.08</span><strong>Markov decision processes</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="artificial-intelligence/041-planning-and-decision-making/09-policy-evaluation.html"><span>041.09</span><strong>Policy evaluation</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="artificial-intelligence/041-planning-and-decision-making/10-planning-agent-project.html"><span>041.10</span><strong>Planning-agent project</strong><i class="bi bi-arrow-right"></i></a>
+<p><a class="topic-lesson-link" href="artificial-intelligence/041-planning-and-decision-making/01-planning-problems.html"><span>041.01</span><strong>Planning problems</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="artificial-intelligence/041-planning-and-decision-making/02-strips-representation.html"><span>041.02</span><strong>STRIPS representation</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="artificial-intelligence/041-planning-and-decision-making/03-forward-planning.html"><span>041.03</span><strong>Forward planning</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="artificial-intelligence/041-planning-and-decision-making/04-backward-planning.html"><span>041.04</span><strong>Backward planning</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="artificial-intelligence/041-planning-and-decision-making/05-partial-order-planning.html"><span>041.05</span><strong>Partial-order planning</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="artificial-intelligence/041-planning-and-decision-making/06-utility-theory.html"><span>041.06</span><strong>Utility theory</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="artificial-intelligence/041-planning-and-decision-making/07-decision-trees.html"><span>041.07</span><strong>Decision trees</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="artificial-intelligence/041-planning-and-decision-making/08-markov-decision-processes.html"><span>041.08</span><strong>Markov decision processes</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="artificial-intelligence/041-planning-and-decision-making/09-policy-evaluation.html"><span>041.09</span><strong>Policy evaluation</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="artificial-intelligence/041-planning-and-decision-making/10-planning-agent-project.html"><span>041.10</span><strong>Planning-agent project</strong><i class="bi bi-arrow-right"></i></a></p>
 </div>
 </details>
 <details class="curriculum-topic">
-<summary><span class="topic-number">Topic 042</span><strong>Probabilistic AI and reinforcement learning</strong></summary>
+<summary>
+<span class="topic-number">Topic 042</span><strong>Probabilistic AI and reinforcement learning</strong>
+</summary>
 <div class="topic-lessons">
-<a class="topic-lesson-link" href="artificial-intelligence/042-probabilistic-ai-and-reinforcement-learning/01-uncertainty-in-ai.html"><span>042.01</span><strong>Uncertainty in AI</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="artificial-intelligence/042-probabilistic-ai-and-reinforcement-learning/02-bayesian-networks.html"><span>042.02</span><strong>Bayesian networks</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="artificial-intelligence/042-probabilistic-ai-and-reinforcement-learning/03-hidden-markov-models.html"><span>042.03</span><strong>Hidden Markov models</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="artificial-intelligence/042-probabilistic-ai-and-reinforcement-learning/04-maximum-likelihood.html"><span>042.04</span><strong>Maximum likelihood</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="artificial-intelligence/042-probabilistic-ai-and-reinforcement-learning/05-reinforcement-learning-foundations.html"><span>042.05</span><strong>Reinforcement-learning foundations</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="artificial-intelligence/042-probabilistic-ai-and-reinforcement-learning/06-multi-armed-bandits.html"><span>042.06</span><strong>Multi-armed bandits</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="artificial-intelligence/042-probabilistic-ai-and-reinforcement-learning/07-q-learning.html"><span>042.07</span><strong>Q-learning</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="artificial-intelligence/042-probabilistic-ai-and-reinforcement-learning/08-policy-learning.html"><span>042.08</span><strong>Policy learning</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="artificial-intelligence/042-probabilistic-ai-and-reinforcement-learning/09-exploration-versus-exploitation.html"><span>042.09</span><strong>Exploration versus exploitation</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="artificial-intelligence/042-probabilistic-ai-and-reinforcement-learning/10-rl-project.html"><span>042.10</span><strong>RL project</strong><i class="bi bi-arrow-right"></i></a>
+<p><a class="topic-lesson-link" href="artificial-intelligence/042-probabilistic-ai-and-reinforcement-learning/01-uncertainty-in-ai.html"><span>042.01</span><strong>Uncertainty in AI</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="artificial-intelligence/042-probabilistic-ai-and-reinforcement-learning/02-bayesian-networks.html"><span>042.02</span><strong>Bayesian networks</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="artificial-intelligence/042-probabilistic-ai-and-reinforcement-learning/03-hidden-markov-models.html"><span>042.03</span><strong>Hidden Markov models</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="artificial-intelligence/042-probabilistic-ai-and-reinforcement-learning/04-maximum-likelihood.html"><span>042.04</span><strong>Maximum likelihood</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="artificial-intelligence/042-probabilistic-ai-and-reinforcement-learning/05-reinforcement-learning-foundations.html"><span>042.05</span><strong>Reinforcement-learning foundations</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="artificial-intelligence/042-probabilistic-ai-and-reinforcement-learning/06-multi-armed-bandits.html"><span>042.06</span><strong>Multi-armed bandits</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="artificial-intelligence/042-probabilistic-ai-and-reinforcement-learning/07-q-learning.html"><span>042.07</span><strong>Q-learning</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="artificial-intelligence/042-probabilistic-ai-and-reinforcement-learning/08-policy-learning.html"><span>042.08</span><strong>Policy learning</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="artificial-intelligence/042-probabilistic-ai-and-reinforcement-learning/09-exploration-versus-exploitation.html"><span>042.09</span><strong>Exploration versus exploitation</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="artificial-intelligence/042-probabilistic-ai-and-reinforcement-learning/10-rl-project.html"><span>042.10</span><strong>RL project</strong><i class="bi bi-arrow-right"></i></a></p>
 </div>
 </details>
 <details class="curriculum-topic">
-<summary><span class="topic-number">Topic 043</span><strong>Responsible and applied AI</strong></summary>
+<summary>
+<span class="topic-number">Topic 043</span><strong>Responsible and applied AI</strong>
+</summary>
 <div class="topic-lessons">
-<a class="topic-lesson-link" href="artificial-intelligence/043-responsible-and-applied-ai/01-ai-fairness.html"><span>043.01</span><strong>AI fairness</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="artificial-intelligence/043-responsible-and-applied-ai/02-explainability.html"><span>043.02</span><strong>Explainability</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="artificial-intelligence/043-responsible-and-applied-ai/03-privacy.html"><span>043.03</span><strong>Privacy</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="artificial-intelligence/043-responsible-and-applied-ai/04-robustness.html"><span>043.04</span><strong>Robustness</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="artificial-intelligence/043-responsible-and-applied-ai/05-human-oversight.html"><span>043.05</span><strong>Human oversight</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="artificial-intelligence/043-responsible-and-applied-ai/06-ai-security.html"><span>043.06</span><strong>AI security</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="artificial-intelligence/043-responsible-and-applied-ai/07-ai-governance.html"><span>043.07</span><strong>AI governance</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="artificial-intelligence/043-responsible-and-applied-ai/08-impact-assessment.html"><span>043.08</span><strong>Impact assessment</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="artificial-intelligence/043-responsible-and-applied-ai/09-applied-ai-architecture.html"><span>043.09</span><strong>Applied AI architecture</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="artificial-intelligence/043-responsible-and-applied-ai/10-responsible-ai-capstone.html"><span>043.10</span><strong>Responsible-AI capstone</strong><i class="bi bi-arrow-right"></i></a>
+<p><a class="topic-lesson-link" href="artificial-intelligence/043-responsible-and-applied-ai/01-ai-fairness.html"><span>043.01</span><strong>AI fairness</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="artificial-intelligence/043-responsible-and-applied-ai/02-explainability.html"><span>043.02</span><strong>Explainability</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="artificial-intelligence/043-responsible-and-applied-ai/03-privacy.html"><span>043.03</span><strong>Privacy</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="artificial-intelligence/043-responsible-and-applied-ai/04-robustness.html"><span>043.04</span><strong>Robustness</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="artificial-intelligence/043-responsible-and-applied-ai/05-human-oversight.html"><span>043.05</span><strong>Human oversight</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="artificial-intelligence/043-responsible-and-applied-ai/06-ai-security.html"><span>043.06</span><strong>AI security</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="artificial-intelligence/043-responsible-and-applied-ai/07-ai-governance.html"><span>043.07</span><strong>AI governance</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="artificial-intelligence/043-responsible-and-applied-ai/08-impact-assessment.html"><span>043.08</span><strong>Impact assessment</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="artificial-intelligence/043-responsible-and-applied-ai/09-applied-ai-architecture.html"><span>043.09</span><strong>Applied AI architecture</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="artificial-intelligence/043-responsible-and-applied-ai/10-responsible-ai-capstone.html"><span>043.10</span><strong>Responsible-AI capstone</strong><i class="bi bi-arrow-right"></i></a></p>
 </div>
 </details>
 </div>
-<p class="syllabus-empty" hidden="" id="full-stack-ai-artificial-intelligence-catalog-empty"><i class="bi bi-search"></i> No matching lessons were found.</p>
+<p class="syllabus-empty" id="full-stack-ai-artificial-intelligence-catalog-empty" hidden="">
+<i class="bi bi-search"></i> No matching lessons were found.
+</p>
 <script>
 document.addEventListener("DOMContentLoaded", () => {
   const catalog = document.getElementById("full-stack-ai-artificial-intelligence-catalog");
@@ -604,10 +729,14 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 </script>
-<section class="level2" id="completion-standard">
+</section>
+<section id="completion-standard" class="level2">
 <h2 class="anchored" data-anchor-id="completion-standard">Completion standard</h2>
 <p>You have completed <strong>Artificial Intelligence</strong> when you can explain each topic, reproduce its core workflow, pass the notebook checks, defend the main tradeoffs, and combine the lessons into one reviewable portfolio project. Use the practice tasks as evidence rather than treating page reading alone as completion.</p>
+
+
 </section>
+
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
@@ -1011,17 +1140,21 @@ document.addEventListener("DOMContentLoaded", () => {
   </script>
 </div> <!-- /content -->
 <footer class="footer">
-<div class="nav-footer">
-<div class="nav-footer-left">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
 <p>© 2026 Edukron Notes</p>
-</div>
-<div class="nav-footer-center">
-       
+</div>   
+    <div class="nav-footer-center">
+      &nbsp;
     </div>
-<div class="nav-footer-right">
+    <div class="nav-footer-right">
 <p>Notebook courses for AI, data engineering, and DevOps</p>
 </div>
-</div>
+  </div>
 </footer>
+
+
+
+
 <script src="../../site_libs/quarto-html/zenscroll-min.js"></script>
 </body></html>

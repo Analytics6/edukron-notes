@@ -1,12 +1,13 @@
 <!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
-<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml"><head>
-<meta charset="utf-8"/>
-<meta content="quarto-1.10.18" name="generator"/>
-<meta content="width=device-width, initial-scale=1.0, user-scalable=yes" name="viewport"/>
-<meta content="Edukron Notes" name="author"/>
-<meta content="2026-09-14" name="dcterms.date"/>
-<meta content="Complete notebook syllabus for Full Stack AI in Project Flows." name="description"/>
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.10.18">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="description" content="Complete notebook syllabus for Full Stack AI in Project Flows.">
+
 <title>Full Stack AI – Edukron Notes</title>
 <style>
 /* Default styles provided by pandoc.
@@ -27,23 +28,25 @@ ul.task-list li input[type="checkbox"] {
   vertical-align: middle;
 }
 </style>
+
+
 <script src="../site_libs/quarto-nav/quarto-nav.js"></script>
 <script src="../site_libs/quarto-nav/headroom.min.js"></script>
 <script src="../site_libs/clipboard/clipboard.min.js"></script>
 <script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
-<meta content="../" name="quarto:offset"/>
+<meta name="quarto:offset" content="../">
 <script src="../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet"/>
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" id="quarto-text-highlighting-styles" rel="stylesheet"/>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet"/>
-<link append-hash="true" data-mode="light" href="../site_libs/bootstrap/bootstrap-f0f4b58164ec92a07fcd2db94b0e5cbd.min.css" id="quarto-bootstrap" rel="stylesheet"/>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-0f70c849674a990122300108587fb581.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -71,485 +74,600 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 <style>html{ scroll-behavior: smooth; }</style>
-<link href="../styles.css" rel="stylesheet"/>
+
+
+<link rel="stylesheet" href="../styles.css">
 </head>
+
 <body class="nav-fixed quarto-light">
+
 <div id="quarto-search-results"></div>
-<header class="headroom fixed-top" id="quarto-header">
-<nav class="navbar navbar-expand-lg" data-bs-theme="dark">
-<div class="navbar-container container-fluid">
-<div class="navbar-brand-container mx-auto">
-<a class="navbar-brand" href="../index.html">
-<span class="navbar-title">Edukron Notes</span>
-</a>
-</div>
-<div class="" id="quarto-search" title="Search"></div>
-<button aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-bs-target="#navbarCollapse" data-bs-toggle="collapse" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }" role="menu" type="button">
-<span class="navbar-toggler-icon"></span>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../index.html">
+    <span class="navbar-title">Edukron Notes</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
 </button>
-<div class="collapse navbar-collapse" id="navbarCollapse">
-<ul class="navbar-nav navbar-nav-scroll me-auto">
-<li class="nav-item">
-<a class="nav-link" href="../index.html">
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../index.html"> 
 <span class="menu-text">Home</span></a>
-</li>
-<li class="nav-item dropdown">
-<a aria-expanded="false" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" id="nav-menu-full-stack-ai" role="link">
-<i class="bi bi-cpu" role="img">
-</i>
-<span class="menu-text">Full Stack AI</span>
-</a>
-<ul aria-labelledby="nav-menu-full-stack-ai" class="dropdown-menu">
-<li>
-<a class="dropdown-item" href="../courses/full-stack-ai/index.html">
-<span class="dropdown-text">Program overview</span></a>
-</li>
-<li>
-<a class="dropdown-item" href="../courses/full-stack-ai/python.html">
-<span class="dropdown-text">Python</span></a>
-</li>
-<li>
-<a class="dropdown-item" href="../courses/full-stack-ai/sql.html">
-<span class="dropdown-text">SQL</span></a>
-</li>
-<li>
-<a class="dropdown-item" href="../courses/full-stack-ai/data-science.html">
-<span class="dropdown-text">Data Science</span></a>
-</li>
-<li>
-<a class="dropdown-item" href="../courses/full-stack-ai/machine-learning.html">
-<span class="dropdown-text">Machine Learning</span></a>
-</li>
-<li>
-<a class="dropdown-item" href="../courses/full-stack-ai/artificial-intelligence.html">
-<span class="dropdown-text">Artificial Intelligence</span></a>
-</li>
-<li>
-<a class="dropdown-item" href="../courses/full-stack-ai/deep-learning.html">
-<span class="dropdown-text">Deep Learning</span></a>
-</li>
-<li>
-<a class="dropdown-item" href="../courses/full-stack-ai/generative-ai.html">
-<span class="dropdown-text">Generative AI</span></a>
-</li>
-<li>
-<a class="dropdown-item" href="../courses/full-stack-ai/large-language-models.html">
-<span class="dropdown-text">Large Language Models (LLMs)</span></a>
-</li>
-<li>
-<a class="dropdown-item" href="../courses/full-stack-ai/rag.html">
-<span class="dropdown-text">Retrieval Augmented Generation (RAG)</span></a>
-</li>
-<li>
-<a class="dropdown-item" href="../courses/full-stack-ai/agentic-ai.html">
-<span class="dropdown-text">Agentic AI</span></a>
-</li>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-full-stack-ai" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+      <i class="bi bi-cpu" role="img">
+</i> 
+ <span class="menu-text">Full Stack AI</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-full-stack-ai">    
+        <li>
+    <a class="dropdown-item" href="../courses/full-stack-ai/index.html">
+ <span class="dropdown-text">Program overview</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../courses/full-stack-ai/python.html">
+ <span class="dropdown-text">Python</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../courses/full-stack-ai/sql.html">
+ <span class="dropdown-text">SQL</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../courses/full-stack-ai/data-science.html">
+ <span class="dropdown-text">Data Science</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../courses/full-stack-ai/machine-learning.html">
+ <span class="dropdown-text">Machine Learning</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../courses/full-stack-ai/artificial-intelligence.html">
+ <span class="dropdown-text">Artificial Intelligence</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../courses/full-stack-ai/deep-learning.html">
+ <span class="dropdown-text">Deep Learning</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../courses/full-stack-ai/generative-ai.html">
+ <span class="dropdown-text">Generative AI</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../courses/full-stack-ai/large-language-models.html">
+ <span class="dropdown-text">Large Language Models (LLMs)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../courses/full-stack-ai/rag.html">
+ <span class="dropdown-text">Retrieval Augmented Generation (RAG)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../courses/full-stack-ai/agentic-ai.html">
+ <span class="dropdown-text">Agentic AI</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-azure-data-engineering" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+      <i class="bi bi-database" role="img">
+</i> 
+ <span class="menu-text">Azure Data Engineering</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-azure-data-engineering">    
+        <li>
+    <a class="dropdown-item" href="../courses/azure-data-engineering/index.html">
+ <span class="dropdown-text">Program overview</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../courses/azure-data-engineering/python.html">
+ <span class="dropdown-text">Python</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../courses/azure-data-engineering/sql.html">
+ <span class="dropdown-text">SQL</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../courses/azure-data-engineering/fundamentals.html">
+ <span class="dropdown-text">Data Engineering Fundamentals</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../courses/azure-data-engineering/azure-data-factory.html">
+ <span class="dropdown-text">Azure Data Factory (ADF)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../courses/azure-data-engineering/adls-gen2.html">
+ <span class="dropdown-text">Azure Data Lake Storage Gen2</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../courses/azure-data-engineering/azure-databricks.html">
+ <span class="dropdown-text">Azure Databricks</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../courses/azure-data-engineering/pyspark.html">
+ <span class="dropdown-text">PySpark</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../courses/azure-data-engineering/azure-synapse.html">
+ <span class="dropdown-text">Azure Synapse Analytics</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../courses/azure-data-engineering/microsoft-fabric.html">
+ <span class="dropdown-text">Microsoft Fabric</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../courses/azure-data-engineering/delta-lake.html">
+ <span class="dropdown-text">Delta Lake</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-azure-devops" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+      <i class="bi bi-infinity" role="img">
+</i> 
+ <span class="menu-text">Azure DevOps</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-azure-devops">    
+        <li>
+    <a class="dropdown-item" href="../courses/azure-devops/index.html">
+ <span class="dropdown-text">Program overview</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../courses/azure-devops/linux-shell-scripting.html">
+ <span class="dropdown-text">Linux &amp; Shell Scripting</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../courses/azure-devops/git-version-control.html">
+ <span class="dropdown-text">Git &amp; Version Control</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../courses/azure-devops/azure-repos.html">
+ <span class="dropdown-text">Azure Repos</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../courses/azure-devops/azure-pipelines.html">
+ <span class="dropdown-text">Azure Pipelines (CI/CD)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../courses/azure-devops/yaml-pipelines.html">
+ <span class="dropdown-text">YAML Pipeline Development</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../courses/azure-devops/docker.html">
+ <span class="dropdown-text">Docker &amp; Containerization</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../courses/azure-devops/kubernetes-aks.html">
+ <span class="dropdown-text">Kubernetes &amp; AKS</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../courses/azure-devops/terraform.html">
+ <span class="dropdown-text">Terraform Infrastructure as Code</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../courses/azure-devops/azure-cloud-services.html">
+ <span class="dropdown-text">Azure Cloud Services</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../courses/azure-devops/devsecops-monitoring.html">
+ <span class="dropdown-text">DevSecOps &amp; Monitoring</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-interview-questions" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+      <i class="bi bi-question-circle" role="img">
+</i> 
+ <span class="menu-text">Interview Questions</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-interview-questions">    
+        <li>
+    <a class="dropdown-item" href="../interview-questions/index.html">
+ <span class="dropdown-text">Section overview</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../interview-questions/full-stack-ai.html">
+ <span class="dropdown-text">Full Stack AI</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../interview-questions/azure-data-engineering.html">
+ <span class="dropdown-text">Azure Data Engineering</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../interview-questions/azure-devops.html">
+ <span class="dropdown-text">Azure DevOps</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-project-flows" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+      <i class="bi bi-kanban" role="img">
+</i> 
+ <span class="menu-text">Project Flows</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-project-flows">    
+        <li>
+    <a class="dropdown-item" href="../project-flows/index.html">
+ <span class="dropdown-text">Section overview</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../project-flows/full-stack-ai.html">
+ <span class="dropdown-text">Full Stack AI</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../project-flows/azure-data-engineering.html">
+ <span class="dropdown-text">Azure Data Engineering</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../project-flows/azure-devops.html">
+ <span class="dropdown-text">Azure DevOps</span></a>
+  </li>  
+    </ul>
+  </li>
 </ul>
-</li>
-<li class="nav-item dropdown">
-<a aria-expanded="false" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" id="nav-menu-azure-data-engineering" role="link">
-<i class="bi bi-database" role="img">
-</i>
-<span class="menu-text">Azure Data Engineering</span>
-</a>
-<ul aria-labelledby="nav-menu-azure-data-engineering" class="dropdown-menu">
-<li>
-<a class="dropdown-item" href="../courses/azure-data-engineering/index.html">
-<span class="dropdown-text">Program overview</span></a>
-</li>
-<li>
-<a class="dropdown-item" href="../courses/azure-data-engineering/python.html">
-<span class="dropdown-text">Python</span></a>
-</li>
-<li>
-<a class="dropdown-item" href="../courses/azure-data-engineering/sql.html">
-<span class="dropdown-text">SQL</span></a>
-</li>
-<li>
-<a class="dropdown-item" href="../courses/azure-data-engineering/fundamentals.html">
-<span class="dropdown-text">Data Engineering Fundamentals</span></a>
-</li>
-<li>
-<a class="dropdown-item" href="../courses/azure-data-engineering/azure-data-factory.html">
-<span class="dropdown-text">Azure Data Factory (ADF)</span></a>
-</li>
-<li>
-<a class="dropdown-item" href="../courses/azure-data-engineering/adls-gen2.html">
-<span class="dropdown-text">Azure Data Lake Storage Gen2</span></a>
-</li>
-<li>
-<a class="dropdown-item" href="../courses/azure-data-engineering/azure-databricks.html">
-<span class="dropdown-text">Azure Databricks</span></a>
-</li>
-<li>
-<a class="dropdown-item" href="../courses/azure-data-engineering/pyspark.html">
-<span class="dropdown-text">PySpark</span></a>
-</li>
-<li>
-<a class="dropdown-item" href="../courses/azure-data-engineering/azure-synapse.html">
-<span class="dropdown-text">Azure Synapse Analytics</span></a>
-</li>
-<li>
-<a class="dropdown-item" href="../courses/azure-data-engineering/microsoft-fabric.html">
-<span class="dropdown-text">Microsoft Fabric</span></a>
-</li>
-<li>
-<a class="dropdown-item" href="../courses/azure-data-engineering/delta-lake.html">
-<span class="dropdown-text">Delta Lake</span></a>
-</li>
-</ul>
-</li>
-<li class="nav-item dropdown">
-<a aria-expanded="false" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" id="nav-menu-azure-devops" role="link">
-<i class="bi bi-infinity" role="img">
-</i>
-<span class="menu-text">Azure DevOps</span>
-</a>
-<ul aria-labelledby="nav-menu-azure-devops" class="dropdown-menu">
-<li>
-<a class="dropdown-item" href="../courses/azure-devops/index.html">
-<span class="dropdown-text">Program overview</span></a>
-</li>
-<li>
-<a class="dropdown-item" href="../courses/azure-devops/linux-shell-scripting.html">
-<span class="dropdown-text">Linux &amp; Shell Scripting</span></a>
-</li>
-<li>
-<a class="dropdown-item" href="../courses/azure-devops/git-version-control.html">
-<span class="dropdown-text">Git &amp; Version Control</span></a>
-</li>
-<li>
-<a class="dropdown-item" href="../courses/azure-devops/azure-repos.html">
-<span class="dropdown-text">Azure Repos</span></a>
-</li>
-<li>
-<a class="dropdown-item" href="../courses/azure-devops/azure-pipelines.html">
-<span class="dropdown-text">Azure Pipelines (CI/CD)</span></a>
-</li>
-<li>
-<a class="dropdown-item" href="../courses/azure-devops/yaml-pipelines.html">
-<span class="dropdown-text">YAML Pipeline Development</span></a>
-</li>
-<li>
-<a class="dropdown-item" href="../courses/azure-devops/docker.html">
-<span class="dropdown-text">Docker &amp; Containerization</span></a>
-</li>
-<li>
-<a class="dropdown-item" href="../courses/azure-devops/kubernetes-aks.html">
-<span class="dropdown-text">Kubernetes &amp; AKS</span></a>
-</li>
-<li>
-<a class="dropdown-item" href="../courses/azure-devops/terraform.html">
-<span class="dropdown-text">Terraform Infrastructure as Code</span></a>
-</li>
-<li>
-<a class="dropdown-item" href="../courses/azure-devops/azure-cloud-services.html">
-<span class="dropdown-text">Azure Cloud Services</span></a>
-</li>
-<li>
-<a class="dropdown-item" href="../courses/azure-devops/devsecops-monitoring.html">
-<span class="dropdown-text">DevSecOps &amp; Monitoring</span></a>
-</li>
-</ul>
-</li>
-<li class="nav-item dropdown">
-<a aria-expanded="false" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" id="nav-menu-interview-questions" role="link">
-<i class="bi bi-question-circle" role="img">
-</i>
-<span class="menu-text">Interview Questions</span>
-</a>
-<ul aria-labelledby="nav-menu-interview-questions" class="dropdown-menu">
-<li>
-<a class="dropdown-item" href="../interview-questions/index.html">
-<span class="dropdown-text">Section overview</span></a>
-</li>
-<li>
-<a class="dropdown-item" href="../interview-questions/full-stack-ai.html">
-<span class="dropdown-text">Full Stack AI</span></a>
-</li>
-<li>
-<a class="dropdown-item" href="../interview-questions/azure-data-engineering.html">
-<span class="dropdown-text">Azure Data Engineering</span></a>
-</li>
-<li>
-<a class="dropdown-item" href="../interview-questions/azure-devops.html">
-<span class="dropdown-text">Azure DevOps</span></a>
-</li>
-</ul>
-</li>
-<li class="nav-item dropdown">
-<a aria-expanded="false" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" id="nav-menu-project-flows" role="link">
-<i class="bi bi-kanban" role="img">
-</i>
-<span class="menu-text">Project Flows</span>
-</a>
-<ul aria-labelledby="nav-menu-project-flows" class="dropdown-menu">
-<li>
-<a class="dropdown-item" href="../project-flows/index.html">
-<span class="dropdown-text">Section overview</span></a>
-</li>
-<li>
-<a class="dropdown-item" href="../project-flows/full-stack-ai.html">
-<span class="dropdown-text">Full Stack AI</span></a>
-</li>
-<li>
-<a class="dropdown-item" href="../project-flows/azure-data-engineering.html">
-<span class="dropdown-text">Azure Data Engineering</span></a>
-</li>
-<li>
-<a class="dropdown-item" href="../project-flows/azure-devops.html">
-<span class="dropdown-text">Azure DevOps</span></a>
-</li>
-</ul>
-</li>
-</ul>
-</div> <!-- /navcollapse -->
-<div class="quarto-navbar-tools">
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
 </div>
-</div> <!-- /container-fluid -->
-</nav>
+      </div> <!-- /container-fluid -->
+    </nav>
 </header>
 <!-- content -->
-<div class="quarto-container page-columns page-rows-contents page-layout-full page-navbar" id="quarto-content">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
+    
 <!-- main -->
 <main class="content column-page" id="quarto-document-content">
-<header class="quarto-title-block default" id="title-block-header">
+
+<header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
 <h1 class="title">Full Stack AI</h1>
 </div>
+
 <div>
-<div class="description">
+  <div class="description">
     Complete notebook syllabus for Full Stack AI in Project Flows.
   </div>
 </div>
-<div class="quarto-title-meta">
-<div>
-<div class="quarto-title-meta-heading">Author</div>
-<div class="quarto-title-meta-contents">
-<p>Edukron Notes </p>
-</div>
-</div>
-<div>
-<div class="quarto-title-meta-heading">Published</div>
-<div class="quarto-title-meta-contents">
-<p class="date">September 14, 2026</p>
-</div>
-</div>
-</div>
+
+
+<div class="quarto-title-meta column-page">
+
+    
+  
+    
+  </div>
+  
+
+
 </header>
+
+
 <div class="course-workspace notebook-chrome">
 <div class="notebook-toolbar">
-<span class="notebook-file"><i aria-hidden="true" class="bi bi-journal-code"></i><strong>full-stack-ai.ipynb</strong></span>
-<span class="notebook-status"><i aria-hidden="true" class="bi bi-check-circle-fill"></i> Trusted</span>
-<span class="notebook-kernel"><i aria-hidden="true" class="bi bi-diagram-3"></i> Learning path</span>
+<p><span class="notebook-file"><i class="bi bi-journal-code" aria-hidden="true"></i><strong>full-stack-ai.ipynb</strong></span> <span class="notebook-status"><i class="bi bi-check-circle-fill" aria-hidden="true"></i> Trusted</span> <span class="notebook-kernel"><i class="bi bi-diagram-3" aria-hidden="true"></i> Learning path</span></p>
 </div>
 <div class="course-workspace-hero">
 <span class="overview-kicker">Project Flows</span>
-<h1>Full Stack AI</h1>
-<p>A complete notebook-first syllabus organized from foundations to applied delivery. Every lesson combines clear notes, a worked pattern, executable validation, a guided lab, a solution blueprint, practice, and knowledge checks.</p>
-<div class="course-tags"><span><i class="bi bi-signpost-split"></i> Foundation to advanced</span><span><i class="bi bi-code-square"></i> Hands-on practice</span><span><i class="bi bi-patch-check"></i> Review ready</span></div>
-<p class="course-start"><a class="btn btn-primary" href="full-stack-ai/186-ai-product-discovery-and-architecture-flow/01-business-problem.html"><i class="bi bi-play-fill"></i> Start the first notebook</a></p>
+<h1>
+Full Stack AI
+</h1>
+<p>
+A complete notebook-first syllabus organized from foundations to applied delivery. Every lesson combines clear notes, a worked pattern, executable validation, a guided lab, a solution blueprint, practice, and knowledge checks.
+</p>
+<div class="course-tags">
+<span><i class="bi bi-signpost-split"></i> Foundation to advanced</span><span><i class="bi bi-code-square"></i> Hands-on practice</span><span><i class="bi bi-patch-check"></i> Review ready</span>
+</div>
+<p class="course-start">
+<a class="btn btn-primary" href="full-stack-ai/186-ai-product-discovery-and-architecture-flow/01-business-problem.html"><i class="bi bi-play-fill"></i> Start the first notebook</a>
+</p>
 </div>
 </div>
-<section class="level2" id="how-to-use-this-course">
+<section id="how-to-use-this-course" class="level2">
 <h2 class="anchored" data-anchor-id="how-to-use-this-course">How to use this course</h2>
 <p>Work through lessons in order for a complete pathway, or open a topic for focused reference. Type or adapt the examples, complete the guided lab before reading its blueprint, and preserve your test evidence as a portfolio artifact. Cloud and infrastructure examples are safe, copy-ready teaching patterns; execute them in your own sandbox only after substituting approved identities, names, and policies.</p>
-</section>
 <section class="learning-plan-section" id="learning-plan">
-<div class="path-section-heading"><div><span class="overview-kicker">Recommended schedule</span><h2>Learning plan</h2><p>A practical schedule for completing Full Stack AI with retained evidence, not passive reading.</p></div></div>
-<div class="plan-metrics">
-<div><i class="bi bi-calendar3"></i><span>Standard path</span><strong>7 weeks</strong><small>One topic each week, then integration</small></div>
-<div><i class="bi bi-lightning-charge"></i><span>Intensive path</span><strong>4 weeks</strong><small>Two topics each week, then integration</small></div>
-<div><i class="bi bi-clock"></i><span>Weekly commitment</span><strong>6–8 hours</strong><small>Study, code, practice, and reflection</small></div>
-<div><i class="bi bi-folder-check"></i><span>Finish line</span><strong>Portfolio evidence</strong><small>Tests, decisions, notes, and a capstone</small></div>
+<div class="path-section-heading">
+<div>
+<span class="overview-kicker">Recommended schedule</span>
+<h2 class="anchored">
+Learning plan
+</h2>
+<p>
+A practical schedule for completing Full Stack AI with retained evidence, not passive reading.
+</p>
 </div>
-<div aria-label="Weekly study loop" class="study-loop">
-<div><span>01</span><i class="bi bi-book"></i><strong>Understand</strong><small>Read the notes and explain the mental model.</small></div>
-<i aria-hidden="true" class="bi bi-arrow-right study-loop-arrow"></i>
-<div><span>02</span><i class="bi bi-play-circle"></i><strong>Run</strong><small>Execute the example and inspect every result.</small></div>
-<i aria-hidden="true" class="bi bi-arrow-right study-loop-arrow"></i>
-<div><span>03</span><i class="bi bi-tools"></i><strong>Adapt</strong><small>Change the inputs and complete the guided lab.</small></div>
-<i aria-hidden="true" class="bi bi-arrow-right study-loop-arrow"></i>
-<div><span>04</span><i class="bi bi-patch-check"></i><strong>Prove</strong><small>Pass checks and retain reviewable evidence.</small></div>
+</div>
+<div class="plan-metrics">
+<div>
+<i class="bi bi-calendar3"></i><span>Standard path</span><strong>7 weeks</strong><small>One topic each week, then integration</small>
+</div>
+<div>
+<i class="bi bi-lightning-charge"></i><span>Intensive path</span><strong>4 weeks</strong><small>Two topics each week, then integration</small>
+</div>
+<div>
+<i class="bi bi-clock"></i><span>Weekly commitment</span><strong>6–8 hours</strong><small>Study, code, practice, and reflection</small>
+</div>
+<div>
+<i class="bi bi-folder-check"></i><span>Finish line</span><strong>Portfolio evidence</strong><small>Tests, decisions, notes, and a capstone</small>
+</div>
+</div>
+<div class="study-loop" aria-label="Weekly study loop">
+<div>
+<span>01</span><i class="bi bi-book"></i><strong>Understand</strong><small>Read the notes and explain the mental model.</small>
+</div>
+<i class="bi bi-arrow-right study-loop-arrow" aria-hidden="true"></i>
+<div>
+<span>02</span><i class="bi bi-play-circle"></i><strong>Run</strong><small>Execute the example and inspect every result.</small>
+</div>
+<i class="bi bi-arrow-right study-loop-arrow" aria-hidden="true"></i>
+<div>
+<span>03</span><i class="bi bi-tools"></i><strong>Adapt</strong><small>Change the inputs and complete the guided lab.</small>
+</div>
+<i class="bi bi-arrow-right study-loop-arrow" aria-hidden="true"></i>
+<div>
+<span>04</span><i class="bi bi-patch-check"></i><strong>Prove</strong><small>Pass checks and retain reviewable evidence.</small>
+</div>
 </div>
 <div class="plan-weeks">
 <details class="plan-week plan-topic-week" open="">
-<summary><span class="plan-week-number">Week 01</span><strong>AI product discovery and architecture flow</strong><span class="plan-stage">Foundation</span></summary>
+<summary>
+<span class="plan-week-number">Week 01</span><strong>AI product discovery and architecture flow</strong><span class="plan-stage">Foundation</span>
+</summary>
 <div class="plan-week-body">
-<div><span>Learn</span><p>Begin with <a href="full-stack-ai/186-ai-product-discovery-and-architecture-flow/01-business-problem.html">Business problem</a> and write the core mental model in your own words.</p></div>
-<div><span>Practice</span><p>Run, change, and explain the worked patterns across the middle lessons. Keep test evidence and questions.</p></div>
-<div><span>Demonstrate</span><p>Complete <a href="full-stack-ai/186-ai-product-discovery-and-architecture-flow/10-discovery-deliverable.html">Discovery deliverable</a> without copying the solution blueprint first.</p></div>
+<div>
+<span>Learn</span>
+<p>
+Begin with <a href="full-stack-ai/186-ai-product-discovery-and-architecture-flow/01-business-problem.html">Business problem</a> and write the core mental model in your own words.
+</p>
 </div>
-</details><details class="plan-week plan-topic-week">
-<summary><span class="plan-week-number">Week 02</span><strong>Data and feature delivery flow</strong><span class="plan-stage">Core skills</span></summary>
+<div>
+<span>Practice</span>
+<p>
+Run, change, and explain the worked patterns across the middle lessons. Keep test evidence and questions.
+</p>
+</div>
+<div>
+<span>Demonstrate</span>
+<p>
+Complete <a href="full-stack-ai/186-ai-product-discovery-and-architecture-flow/10-discovery-deliverable.html">Discovery deliverable</a> without copying the solution blueprint first.
+</p>
+</div>
+</div>
+</details>
+<details class="plan-week plan-topic-week">
+<summary>
+<span class="plan-week-number">Week 02</span><strong>Data and feature delivery flow</strong><span class="plan-stage">Core skills</span>
+</summary>
 <div class="plan-week-body">
-<div><span>Learn</span><p>Begin with <a href="full-stack-ai/187-data-and-feature-delivery-flow/01-source-contracts.html">Source contracts</a> and write the core mental model in your own words.</p></div>
-<div><span>Practice</span><p>Run, change, and explain the worked patterns across the middle lessons. Keep test evidence and questions.</p></div>
-<div><span>Demonstrate</span><p>Complete <a href="full-stack-ai/187-data-and-feature-delivery-flow/10-reusable-data-product.html">Reusable data product</a> without copying the solution blueprint first.</p></div>
+<div>
+<span>Learn</span>
+<p>
+Begin with <a href="full-stack-ai/187-data-and-feature-delivery-flow/01-source-contracts.html">Source contracts</a> and write the core mental model in your own words.
+</p>
 </div>
-</details><details class="plan-week plan-topic-week">
-<summary><span class="plan-week-number">Week 03</span><strong>Machine-learning product flow</strong><span class="plan-stage">Core skills</span></summary>
+<div>
+<span>Practice</span>
+<p>
+Run, change, and explain the worked patterns across the middle lessons. Keep test evidence and questions.
+</p>
+</div>
+<div>
+<span>Demonstrate</span>
+<p>
+Complete <a href="full-stack-ai/187-data-and-feature-delivery-flow/10-reusable-data-product.html">Reusable data product</a> without copying the solution blueprint first.
+</p>
+</div>
+</div>
+</details>
+<details class="plan-week plan-topic-week">
+<summary>
+<span class="plan-week-number">Week 03</span><strong>Machine-learning product flow</strong><span class="plan-stage">Core skills</span>
+</summary>
 <div class="plan-week-body">
-<div><span>Learn</span><p>Begin with <a href="full-stack-ai/188-machine-learning-product-flow/01-baseline-model.html">Baseline model</a> and write the core mental model in your own words.</p></div>
-<div><span>Practice</span><p>Run, change, and explain the worked patterns across the middle lessons. Keep test evidence and questions.</p></div>
-<div><span>Demonstrate</span><p>Complete <a href="full-stack-ai/188-machine-learning-product-flow/10-ml-product-release.html">ML product release</a> without copying the solution blueprint first.</p></div>
+<div>
+<span>Learn</span>
+<p>
+Begin with <a href="full-stack-ai/188-machine-learning-product-flow/01-baseline-model.html">Baseline model</a> and write the core mental model in your own words.
+</p>
 </div>
-</details><details class="plan-week plan-topic-week">
-<summary><span class="plan-week-number">Week 04</span><strong>Generative-AI application flow</strong><span class="plan-stage">Applied delivery</span></summary>
+<div>
+<span>Practice</span>
+<p>
+Run, change, and explain the worked patterns across the middle lessons. Keep test evidence and questions.
+</p>
+</div>
+<div>
+<span>Demonstrate</span>
+<p>
+Complete <a href="full-stack-ai/188-machine-learning-product-flow/10-ml-product-release.html">ML product release</a> without copying the solution blueprint first.
+</p>
+</div>
+</div>
+</details>
+<details class="plan-week plan-topic-week">
+<summary>
+<span class="plan-week-number">Week 04</span><strong>Generative-AI application flow</strong><span class="plan-stage">Applied delivery</span>
+</summary>
 <div class="plan-week-body">
-<div><span>Learn</span><p>Begin with <a href="full-stack-ai/189-generative-ai-application-flow/01-use-case-boundaries.html">Use-case boundaries</a> and write the core mental model in your own words.</p></div>
-<div><span>Practice</span><p>Run, change, and explain the worked patterns across the middle lessons. Keep test evidence and questions.</p></div>
-<div><span>Demonstrate</span><p>Complete <a href="full-stack-ai/189-generative-ai-application-flow/10-genai-product-release.html">GenAI product release</a> without copying the solution blueprint first.</p></div>
+<div>
+<span>Learn</span>
+<p>
+Begin with <a href="full-stack-ai/189-generative-ai-application-flow/01-use-case-boundaries.html">Use-case boundaries</a> and write the core mental model in your own words.
+</p>
 </div>
-</details><details class="plan-week plan-topic-week">
-<summary><span class="plan-week-number">Week 05</span><strong>Production RAG flow</strong><span class="plan-stage">Applied delivery</span></summary>
+<div>
+<span>Practice</span>
+<p>
+Run, change, and explain the worked patterns across the middle lessons. Keep test evidence and questions.
+</p>
+</div>
+<div>
+<span>Demonstrate</span>
+<p>
+Complete <a href="full-stack-ai/189-generative-ai-application-flow/10-genai-product-release.html">GenAI product release</a> without copying the solution blueprint first.
+</p>
+</div>
+</div>
+</details>
+<details class="plan-week plan-topic-week">
+<summary>
+<span class="plan-week-number">Week 05</span><strong>Production RAG flow</strong><span class="plan-stage">Applied delivery</span>
+</summary>
 <div class="plan-week-body">
-<div><span>Learn</span><p>Begin with <a href="full-stack-ai/190-production-rag-flow/01-knowledge-source-inventory.html">Knowledge-source inventory</a> and write the core mental model in your own words.</p></div>
-<div><span>Practice</span><p>Run, change, and explain the worked patterns across the middle lessons. Keep test evidence and questions.</p></div>
-<div><span>Demonstrate</span><p>Complete <a href="full-stack-ai/190-production-rag-flow/10-production-rag-release.html">Production RAG release</a> without copying the solution blueprint first.</p></div>
+<div>
+<span>Learn</span>
+<p>
+Begin with <a href="full-stack-ai/190-production-rag-flow/01-knowledge-source-inventory.html">Knowledge-source inventory</a> and write the core mental model in your own words.
+</p>
 </div>
-</details><details class="plan-week plan-topic-week">
-<summary><span class="plan-week-number">Week 06</span><strong>Agentic-AI delivery flow</strong><span class="plan-stage">Integration &amp; capstone</span></summary>
+<div>
+<span>Practice</span>
+<p>
+Run, change, and explain the worked patterns across the middle lessons. Keep test evidence and questions.
+</p>
+</div>
+<div>
+<span>Demonstrate</span>
+<p>
+Complete <a href="full-stack-ai/190-production-rag-flow/10-production-rag-release.html">Production RAG release</a> without copying the solution blueprint first.
+</p>
+</div>
+</div>
+</details>
+<details class="plan-week plan-topic-week">
+<summary>
+<span class="plan-week-number">Week 06</span><strong>Agentic-AI delivery flow</strong><span class="plan-stage">Integration &amp; capstone</span>
+</summary>
 <div class="plan-week-body">
-<div><span>Learn</span><p>Begin with <a href="full-stack-ai/191-agentic-ai-delivery-flow/01-workflow-selection.html">Workflow selection</a> and write the core mental model in your own words.</p></div>
-<div><span>Practice</span><p>Run, change, and explain the worked patterns across the middle lessons. Keep test evidence and questions.</p></div>
-<div><span>Demonstrate</span><p>Complete <a href="full-stack-ai/191-agentic-ai-delivery-flow/10-agentic-ai-capstone.html">Agentic-AI capstone</a> without copying the solution blueprint first.</p></div>
+<div>
+<span>Learn</span>
+<p>
+Begin with <a href="full-stack-ai/191-agentic-ai-delivery-flow/01-workflow-selection.html">Workflow selection</a> and write the core mental model in your own words.
+</p>
 </div>
-</details><div class="plan-integration-week">
+<div>
+<span>Practice</span>
+<p>
+Run, change, and explain the worked patterns across the middle lessons. Keep test evidence and questions.
+</p>
+</div>
+<div>
+<span>Demonstrate</span>
+<p>
+Complete <a href="full-stack-ai/191-agentic-ai-delivery-flow/10-agentic-ai-capstone.html">Agentic-AI capstone</a> without copying the solution blueprint first.
+</p>
+</div>
+</div>
+</details>
+<div class="plan-integration-week">
 <span class="plan-week-number">Week 07</span>
-<div><strong>Integration, review, and portfolio evidence</strong><p>Connect the topic artifacts, close weak areas, and publish one reviewable Full Stack AI outcome. Use <a href="full-stack-ai/191-agentic-ai-delivery-flow/10-agentic-ai-capstone.html">Agentic-AI capstone</a> as the final checkpoint.</p></div>
-<i aria-hidden="true" class="bi bi-trophy"></i>
+<div>
+<strong>Integration, review, and portfolio evidence</strong>
+<p>
+Connect the topic artifacts, close weak areas, and publish one reviewable Full Stack AI outcome. Use <a href="full-stack-ai/191-agentic-ai-delivery-flow/10-agentic-ai-capstone.html">Agentic-AI capstone</a> as the final checkpoint.
+</p>
+</div>
+<p><i class="bi bi-trophy" aria-hidden="true"></i></p>
 </div>
 </div>
-</section><section class="learning-path-section" id="full-learning-path">
-<div class="path-section-heading"><div><span class="overview-kicker">Ordered progression</span><h2>Full learning path</h2><p>Follow every stage in sequence. Each stage links directly to its first notebook and ends with a concrete mastery checkpoint.</p></div><span class="path-route"><i class="bi bi-signpost-2"></i> Project Flows → Full Stack AI</span></div>
+</section>
+<section class="learning-path-section" id="full-learning-path">
+<div class="path-section-heading">
+<div>
+<span class="overview-kicker">Ordered progression</span>
+<h2 class="anchored">
+Full learning path
+</h2>
+<p>
+Follow every stage in sequence. Each stage links directly to its first notebook and ends with a concrete mastery checkpoint.
+</p>
+</div>
+<span class="path-route"><i class="bi bi-signpost-2"></i> Project Flows → Full Stack AI</span>
+</div>
 <div class="learning-path">
-<a class="learning-path-step" data-topic="186" href="full-stack-ai/186-ai-product-discovery-and-architecture-flow/01-business-problem.html">
-<span class="path-index">01</span>
-<span class="path-step-copy"><span class="path-phase">Foundation · Topic 186</span><strong>AI product discovery and architecture flow</strong><small>Enter with Business problem. Demonstrate mastery through Discovery deliverable.</small></span>
-<i aria-hidden="true" class="bi bi-arrow-right"></i>
-</a><a class="learning-path-step" data-topic="187" href="full-stack-ai/187-data-and-feature-delivery-flow/01-source-contracts.html">
-<span class="path-index">02</span>
-<span class="path-step-copy"><span class="path-phase">Core skills · Topic 187</span><strong>Data and feature delivery flow</strong><small>Enter with Source contracts. Demonstrate mastery through Reusable data product.</small></span>
-<i aria-hidden="true" class="bi bi-arrow-right"></i>
-</a><a class="learning-path-step" data-topic="188" href="full-stack-ai/188-machine-learning-product-flow/01-baseline-model.html">
-<span class="path-index">03</span>
-<span class="path-step-copy"><span class="path-phase">Core skills · Topic 188</span><strong>Machine-learning product flow</strong><small>Enter with Baseline model. Demonstrate mastery through ML product release.</small></span>
-<i aria-hidden="true" class="bi bi-arrow-right"></i>
-</a><a class="learning-path-step" data-topic="189" href="full-stack-ai/189-generative-ai-application-flow/01-use-case-boundaries.html">
-<span class="path-index">04</span>
-<span class="path-step-copy"><span class="path-phase">Applied delivery · Topic 189</span><strong>Generative-AI application flow</strong><small>Enter with Use-case boundaries. Demonstrate mastery through GenAI product release.</small></span>
-<i aria-hidden="true" class="bi bi-arrow-right"></i>
-</a><a class="learning-path-step" data-topic="190" href="full-stack-ai/190-production-rag-flow/01-knowledge-source-inventory.html">
-<span class="path-index">05</span>
-<span class="path-step-copy"><span class="path-phase">Applied delivery · Topic 190</span><strong>Production RAG flow</strong><small>Enter with Knowledge-source inventory. Demonstrate mastery through Production RAG release.</small></span>
-<i aria-hidden="true" class="bi bi-arrow-right"></i>
-</a><a class="learning-path-step" data-topic="191" href="full-stack-ai/191-agentic-ai-delivery-flow/01-workflow-selection.html">
-<span class="path-index">06</span>
-<span class="path-step-copy"><span class="path-phase">Integration &amp; capstone · Topic 191</span><strong>Agentic-AI delivery flow</strong><small>Enter with Workflow selection. Demonstrate mastery through Agentic-AI capstone.</small></span>
-<i aria-hidden="true" class="bi bi-arrow-right"></i>
-</a>
+<p><a class="learning-path-step" data-topic="186" href="full-stack-ai/186-ai-product-discovery-and-architecture-flow/01-business-problem.html"> <span class="path-index">01</span> <span class="path-step-copy"><span class="path-phase">Foundation · Topic 186</span><strong>AI product discovery and architecture flow</strong><small>Enter with Business problem. Demonstrate mastery through Discovery deliverable.</small></span> <i class="bi bi-arrow-right" aria-hidden="true"></i> </a><a class="learning-path-step" data-topic="187" href="full-stack-ai/187-data-and-feature-delivery-flow/01-source-contracts.html"> <span class="path-index">02</span> <span class="path-step-copy"><span class="path-phase">Core skills · Topic 187</span><strong>Data and feature delivery flow</strong><small>Enter with Source contracts. Demonstrate mastery through Reusable data product.</small></span> <i class="bi bi-arrow-right" aria-hidden="true"></i> </a><a class="learning-path-step" data-topic="188" href="full-stack-ai/188-machine-learning-product-flow/01-baseline-model.html"> <span class="path-index">03</span> <span class="path-step-copy"><span class="path-phase">Core skills · Topic 188</span><strong>Machine-learning product flow</strong><small>Enter with Baseline model. Demonstrate mastery through ML product release.</small></span> <i class="bi bi-arrow-right" aria-hidden="true"></i> </a><a class="learning-path-step" data-topic="189" href="full-stack-ai/189-generative-ai-application-flow/01-use-case-boundaries.html"> <span class="path-index">04</span> <span class="path-step-copy"><span class="path-phase">Applied delivery · Topic 189</span><strong>Generative-AI application flow</strong><small>Enter with Use-case boundaries. Demonstrate mastery through GenAI product release.</small></span> <i class="bi bi-arrow-right" aria-hidden="true"></i> </a><a class="learning-path-step" data-topic="190" href="full-stack-ai/190-production-rag-flow/01-knowledge-source-inventory.html"> <span class="path-index">05</span> <span class="path-step-copy"><span class="path-phase">Applied delivery · Topic 190</span><strong>Production RAG flow</strong><small>Enter with Knowledge-source inventory. Demonstrate mastery through Production RAG release.</small></span> <i class="bi bi-arrow-right" aria-hidden="true"></i> </a><a class="learning-path-step" data-topic="191" href="full-stack-ai/191-agentic-ai-delivery-flow/01-workflow-selection.html"> <span class="path-index">06</span> <span class="path-step-copy"><span class="path-phase">Integration &amp; capstone · Topic 191</span><strong>Agentic-AI delivery flow</strong><small>Enter with Workflow selection. Demonstrate mastery through Agentic-AI capstone.</small></span> <i class="bi bi-arrow-right" aria-hidden="true"></i> </a></p>
 </div>
-<div class="path-finish"><span><i class="bi bi-trophy-fill"></i></span><div><small>Completion milestone</small><strong>Connect the complete Full Stack AI workflow</strong><p>Combine evidence from every stage and finish with Agentic-AI capstone. You should be able to explain the architecture, reproduce the core workflow, diagnose failure, and defend the main tradeoffs.</p></div></div>
-</section><div class="syllabus-heading" id="notebook-syllabus">
-<div><span class="overview-kicker">Course contents</span><h2>Notebook syllabus</h2><p>Open a topic to browse its lessons, or search the complete course by concept.</p></div>
-<label class="syllabus-search" for="project-flows-full-stack-ai-catalog-search"><i aria-hidden="true" class="bi bi-search"></i><input aria-label="Search the Full Stack AI syllabus" autocomplete="off" id="project-flows-full-stack-ai-catalog-search" placeholder="Find a topic or lesson" type="search"/></label>
+<div class="path-finish">
+<span><i class="bi bi-trophy-fill"></i></span>
+<div>
+<small>Completion milestone</small><strong>Connect the complete Full Stack AI workflow</strong>
+<p>
+Combine evidence from every stage and finish with Agentic-AI capstone. You should be able to explain the architecture, reproduce the core workflow, diagnose failure, and defend the main tradeoffs.
+</p>
 </div>
-<div class="curriculum-catalog" id="project-flows-full-stack-ai-catalog">
+</div>
+</section>
+<div id="notebook-syllabus" class="syllabus-heading">
+<div>
+<span class="overview-kicker">Course contents</span>
+<h2 class="anchored">
+Notebook syllabus
+</h2>
+<p>
+Open a topic to browse its lessons, or search the complete course by concept.
+</p>
+</div>
+<p><label class="syllabus-search" for="project-flows-full-stack-ai-catalog-search"><i class="bi bi-search" aria-hidden="true"></i><input id="project-flows-full-stack-ai-catalog-search" type="search" placeholder="Find a topic or lesson" autocomplete="off" aria-label="Search the Full Stack AI syllabus"></label></p>
+</div>
+<div id="project-flows-full-stack-ai-catalog" class="curriculum-catalog">
 <details class="curriculum-topic" open="">
-<summary><span class="topic-number">Topic 186</span><strong>AI product discovery and architecture flow</strong></summary>
+<summary>
+<span class="topic-number">Topic 186</span><strong>AI product discovery and architecture flow</strong>
+</summary>
 <div class="topic-lessons">
-<a class="topic-lesson-link" href="full-stack-ai/186-ai-product-discovery-and-architecture-flow/01-business-problem.html"><span>186.01</span><strong>Business problem</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="full-stack-ai/186-ai-product-discovery-and-architecture-flow/02-user-journeys.html"><span>186.02</span><strong>User journeys</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="full-stack-ai/186-ai-product-discovery-and-architecture-flow/03-success-metrics.html"><span>186.03</span><strong>Success metrics</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="full-stack-ai/186-ai-product-discovery-and-architecture-flow/04-data-feasibility.html"><span>186.04</span><strong>Data feasibility</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="full-stack-ai/186-ai-product-discovery-and-architecture-flow/05-model-feasibility.html"><span>186.05</span><strong>Model feasibility</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="full-stack-ai/186-ai-product-discovery-and-architecture-flow/06-risk-assessment.html"><span>186.06</span><strong>Risk assessment</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="full-stack-ai/186-ai-product-discovery-and-architecture-flow/07-architecture-options.html"><span>186.07</span><strong>Architecture options</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="full-stack-ai/186-ai-product-discovery-and-architecture-flow/08-delivery-roadmap.html"><span>186.08</span><strong>Delivery roadmap</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="full-stack-ai/186-ai-product-discovery-and-architecture-flow/09-experiment-plan.html"><span>186.09</span><strong>Experiment plan</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="full-stack-ai/186-ai-product-discovery-and-architecture-flow/10-discovery-deliverable.html"><span>186.10</span><strong>Discovery deliverable</strong><i class="bi bi-arrow-right"></i></a>
+<p><a class="topic-lesson-link" href="full-stack-ai/186-ai-product-discovery-and-architecture-flow/01-business-problem.html"><span>186.01</span><strong>Business problem</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="full-stack-ai/186-ai-product-discovery-and-architecture-flow/02-user-journeys.html"><span>186.02</span><strong>User journeys</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="full-stack-ai/186-ai-product-discovery-and-architecture-flow/03-success-metrics.html"><span>186.03</span><strong>Success metrics</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="full-stack-ai/186-ai-product-discovery-and-architecture-flow/04-data-feasibility.html"><span>186.04</span><strong>Data feasibility</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="full-stack-ai/186-ai-product-discovery-and-architecture-flow/05-model-feasibility.html"><span>186.05</span><strong>Model feasibility</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="full-stack-ai/186-ai-product-discovery-and-architecture-flow/06-risk-assessment.html"><span>186.06</span><strong>Risk assessment</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="full-stack-ai/186-ai-product-discovery-and-architecture-flow/07-architecture-options.html"><span>186.07</span><strong>Architecture options</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="full-stack-ai/186-ai-product-discovery-and-architecture-flow/08-delivery-roadmap.html"><span>186.08</span><strong>Delivery roadmap</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="full-stack-ai/186-ai-product-discovery-and-architecture-flow/09-experiment-plan.html"><span>186.09</span><strong>Experiment plan</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="full-stack-ai/186-ai-product-discovery-and-architecture-flow/10-discovery-deliverable.html"><span>186.10</span><strong>Discovery deliverable</strong><i class="bi bi-arrow-right"></i></a></p>
 </div>
 </details>
 <details class="curriculum-topic">
-<summary><span class="topic-number">Topic 187</span><strong>Data and feature delivery flow</strong></summary>
+<summary>
+<span class="topic-number">Topic 187</span><strong>Data and feature delivery flow</strong>
+</summary>
 <div class="topic-lessons">
-<a class="topic-lesson-link" href="full-stack-ai/187-data-and-feature-delivery-flow/01-source-contracts.html"><span>187.01</span><strong>Source contracts</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="full-stack-ai/187-data-and-feature-delivery-flow/02-ingestion.html"><span>187.02</span><strong>Ingestion</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="full-stack-ai/187-data-and-feature-delivery-flow/03-validation.html"><span>187.03</span><strong>Validation</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="full-stack-ai/187-data-and-feature-delivery-flow/04-cleaning.html"><span>187.04</span><strong>Cleaning</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="full-stack-ai/187-data-and-feature-delivery-flow/05-exploration.html"><span>187.05</span><strong>Exploration</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="full-stack-ai/187-data-and-feature-delivery-flow/06-feature-design.html"><span>187.06</span><strong>Feature design</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="full-stack-ai/187-data-and-feature-delivery-flow/07-feature-pipelines.html"><span>187.07</span><strong>Feature pipelines</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="full-stack-ai/187-data-and-feature-delivery-flow/08-versioning.html"><span>187.08</span><strong>Versioning</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="full-stack-ai/187-data-and-feature-delivery-flow/09-quality-monitoring.html"><span>187.09</span><strong>Quality monitoring</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="full-stack-ai/187-data-and-feature-delivery-flow/10-reusable-data-product.html"><span>187.10</span><strong>Reusable data product</strong><i class="bi bi-arrow-right"></i></a>
+<p><a class="topic-lesson-link" href="full-stack-ai/187-data-and-feature-delivery-flow/01-source-contracts.html"><span>187.01</span><strong>Source contracts</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="full-stack-ai/187-data-and-feature-delivery-flow/02-ingestion.html"><span>187.02</span><strong>Ingestion</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="full-stack-ai/187-data-and-feature-delivery-flow/03-validation.html"><span>187.03</span><strong>Validation</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="full-stack-ai/187-data-and-feature-delivery-flow/04-cleaning.html"><span>187.04</span><strong>Cleaning</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="full-stack-ai/187-data-and-feature-delivery-flow/05-exploration.html"><span>187.05</span><strong>Exploration</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="full-stack-ai/187-data-and-feature-delivery-flow/06-feature-design.html"><span>187.06</span><strong>Feature design</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="full-stack-ai/187-data-and-feature-delivery-flow/07-feature-pipelines.html"><span>187.07</span><strong>Feature pipelines</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="full-stack-ai/187-data-and-feature-delivery-flow/08-versioning.html"><span>187.08</span><strong>Versioning</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="full-stack-ai/187-data-and-feature-delivery-flow/09-quality-monitoring.html"><span>187.09</span><strong>Quality monitoring</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="full-stack-ai/187-data-and-feature-delivery-flow/10-reusable-data-product.html"><span>187.10</span><strong>Reusable data product</strong><i class="bi bi-arrow-right"></i></a></p>
 </div>
 </details>
 <details class="curriculum-topic">
-<summary><span class="topic-number">Topic 188</span><strong>Machine-learning product flow</strong></summary>
+<summary>
+<span class="topic-number">Topic 188</span><strong>Machine-learning product flow</strong>
+</summary>
 <div class="topic-lessons">
-<a class="topic-lesson-link" href="full-stack-ai/188-machine-learning-product-flow/01-baseline-model.html"><span>188.01</span><strong>Baseline model</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="full-stack-ai/188-machine-learning-product-flow/02-training-pipeline.html"><span>188.02</span><strong>Training pipeline</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="full-stack-ai/188-machine-learning-product-flow/03-experiment-tracking.html"><span>188.03</span><strong>Experiment tracking</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="full-stack-ai/188-machine-learning-product-flow/04-evaluation.html"><span>188.04</span><strong>Evaluation</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="full-stack-ai/188-machine-learning-product-flow/05-error-analysis.html"><span>188.05</span><strong>Error analysis</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="full-stack-ai/188-machine-learning-product-flow/06-model-packaging.html"><span>188.06</span><strong>Model packaging</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="full-stack-ai/188-machine-learning-product-flow/07-serving-api.html"><span>188.07</span><strong>Serving API</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="full-stack-ai/188-machine-learning-product-flow/08-deployment.html"><span>188.08</span><strong>Deployment</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="full-stack-ai/188-machine-learning-product-flow/09-monitoring.html"><span>188.09</span><strong>Monitoring</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="full-stack-ai/188-machine-learning-product-flow/10-ml-product-release.html"><span>188.10</span><strong>ML product release</strong><i class="bi bi-arrow-right"></i></a>
+<p><a class="topic-lesson-link" href="full-stack-ai/188-machine-learning-product-flow/01-baseline-model.html"><span>188.01</span><strong>Baseline model</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="full-stack-ai/188-machine-learning-product-flow/02-training-pipeline.html"><span>188.02</span><strong>Training pipeline</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="full-stack-ai/188-machine-learning-product-flow/03-experiment-tracking.html"><span>188.03</span><strong>Experiment tracking</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="full-stack-ai/188-machine-learning-product-flow/04-evaluation.html"><span>188.04</span><strong>Evaluation</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="full-stack-ai/188-machine-learning-product-flow/05-error-analysis.html"><span>188.05</span><strong>Error analysis</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="full-stack-ai/188-machine-learning-product-flow/06-model-packaging.html"><span>188.06</span><strong>Model packaging</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="full-stack-ai/188-machine-learning-product-flow/07-serving-api.html"><span>188.07</span><strong>Serving API</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="full-stack-ai/188-machine-learning-product-flow/08-deployment.html"><span>188.08</span><strong>Deployment</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="full-stack-ai/188-machine-learning-product-flow/09-monitoring.html"><span>188.09</span><strong>Monitoring</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="full-stack-ai/188-machine-learning-product-flow/10-ml-product-release.html"><span>188.10</span><strong>ML product release</strong><i class="bi bi-arrow-right"></i></a></p>
 </div>
 </details>
 <details class="curriculum-topic">
-<summary><span class="topic-number">Topic 189</span><strong>Generative-AI application flow</strong></summary>
+<summary>
+<span class="topic-number">Topic 189</span><strong>Generative-AI application flow</strong>
+</summary>
 <div class="topic-lessons">
-<a class="topic-lesson-link" href="full-stack-ai/189-generative-ai-application-flow/01-use-case-boundaries.html"><span>189.01</span><strong>Use-case boundaries</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="full-stack-ai/189-generative-ai-application-flow/02-model-selection.html"><span>189.02</span><strong>Model selection</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="full-stack-ai/189-generative-ai-application-flow/03-prompt-design.html"><span>189.03</span><strong>Prompt design</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="full-stack-ai/189-generative-ai-application-flow/04-structured-outputs.html"><span>189.04</span><strong>Structured outputs</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="full-stack-ai/189-generative-ai-application-flow/05-tool-integration.html"><span>189.05</span><strong>Tool integration</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="full-stack-ai/189-generative-ai-application-flow/06-guardrails.html"><span>189.06</span><strong>Guardrails</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="full-stack-ai/189-generative-ai-application-flow/07-evaluation-suite.html"><span>189.07</span><strong>Evaluation suite</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="full-stack-ai/189-generative-ai-application-flow/08-application-deployment.html"><span>189.08</span><strong>Application deployment</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="full-stack-ai/189-generative-ai-application-flow/09-observability.html"><span>189.09</span><strong>Observability</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="full-stack-ai/189-generative-ai-application-flow/10-genai-product-release.html"><span>189.10</span><strong>GenAI product release</strong><i class="bi bi-arrow-right"></i></a>
+<p><a class="topic-lesson-link" href="full-stack-ai/189-generative-ai-application-flow/01-use-case-boundaries.html"><span>189.01</span><strong>Use-case boundaries</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="full-stack-ai/189-generative-ai-application-flow/02-model-selection.html"><span>189.02</span><strong>Model selection</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="full-stack-ai/189-generative-ai-application-flow/03-prompt-design.html"><span>189.03</span><strong>Prompt design</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="full-stack-ai/189-generative-ai-application-flow/04-structured-outputs.html"><span>189.04</span><strong>Structured outputs</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="full-stack-ai/189-generative-ai-application-flow/05-tool-integration.html"><span>189.05</span><strong>Tool integration</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="full-stack-ai/189-generative-ai-application-flow/06-guardrails.html"><span>189.06</span><strong>Guardrails</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="full-stack-ai/189-generative-ai-application-flow/07-evaluation-suite.html"><span>189.07</span><strong>Evaluation suite</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="full-stack-ai/189-generative-ai-application-flow/08-application-deployment.html"><span>189.08</span><strong>Application deployment</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="full-stack-ai/189-generative-ai-application-flow/09-observability.html"><span>189.09</span><strong>Observability</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="full-stack-ai/189-generative-ai-application-flow/10-genai-product-release.html"><span>189.10</span><strong>GenAI product release</strong><i class="bi bi-arrow-right"></i></a></p>
 </div>
 </details>
 <details class="curriculum-topic">
-<summary><span class="topic-number">Topic 190</span><strong>Production RAG flow</strong></summary>
+<summary>
+<span class="topic-number">Topic 190</span><strong>Production RAG flow</strong>
+</summary>
 <div class="topic-lessons">
-<a class="topic-lesson-link" href="full-stack-ai/190-production-rag-flow/01-knowledge-source-inventory.html"><span>190.01</span><strong>Knowledge-source inventory</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="full-stack-ai/190-production-rag-flow/02-document-ingestion.html"><span>190.02</span><strong>Document ingestion</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="full-stack-ai/190-production-rag-flow/03-chunking.html"><span>190.03</span><strong>Chunking</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="full-stack-ai/190-production-rag-flow/04-embedding-selection.html"><span>190.04</span><strong>Embedding selection</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="full-stack-ai/190-production-rag-flow/05-index-construction.html"><span>190.05</span><strong>Index construction</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="full-stack-ai/190-production-rag-flow/06-retrieval-design.html"><span>190.06</span><strong>Retrieval design</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="full-stack-ai/190-production-rag-flow/07-grounded-generation.html"><span>190.07</span><strong>Grounded generation</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="full-stack-ai/190-production-rag-flow/08-rag-evaluation.html"><span>190.08</span><strong>RAG evaluation</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="full-stack-ai/190-production-rag-flow/09-access-control.html"><span>190.09</span><strong>Access control</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="full-stack-ai/190-production-rag-flow/10-production-rag-release.html"><span>190.10</span><strong>Production RAG release</strong><i class="bi bi-arrow-right"></i></a>
+<p><a class="topic-lesson-link" href="full-stack-ai/190-production-rag-flow/01-knowledge-source-inventory.html"><span>190.01</span><strong>Knowledge-source inventory</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="full-stack-ai/190-production-rag-flow/02-document-ingestion.html"><span>190.02</span><strong>Document ingestion</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="full-stack-ai/190-production-rag-flow/03-chunking.html"><span>190.03</span><strong>Chunking</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="full-stack-ai/190-production-rag-flow/04-embedding-selection.html"><span>190.04</span><strong>Embedding selection</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="full-stack-ai/190-production-rag-flow/05-index-construction.html"><span>190.05</span><strong>Index construction</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="full-stack-ai/190-production-rag-flow/06-retrieval-design.html"><span>190.06</span><strong>Retrieval design</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="full-stack-ai/190-production-rag-flow/07-grounded-generation.html"><span>190.07</span><strong>Grounded generation</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="full-stack-ai/190-production-rag-flow/08-rag-evaluation.html"><span>190.08</span><strong>RAG evaluation</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="full-stack-ai/190-production-rag-flow/09-access-control.html"><span>190.09</span><strong>Access control</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="full-stack-ai/190-production-rag-flow/10-production-rag-release.html"><span>190.10</span><strong>Production RAG release</strong><i class="bi bi-arrow-right"></i></a></p>
 </div>
 </details>
 <details class="curriculum-topic">
-<summary><span class="topic-number">Topic 191</span><strong>Agentic-AI delivery flow</strong></summary>
+<summary>
+<span class="topic-number">Topic 191</span><strong>Agentic-AI delivery flow</strong>
+</summary>
 <div class="topic-lessons">
-<a class="topic-lesson-link" href="full-stack-ai/191-agentic-ai-delivery-flow/01-workflow-selection.html"><span>191.01</span><strong>Workflow selection</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="full-stack-ai/191-agentic-ai-delivery-flow/02-tool-contracts.html"><span>191.02</span><strong>Tool contracts</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="full-stack-ai/191-agentic-ai-delivery-flow/03-planning-design.html"><span>191.03</span><strong>Planning design</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="full-stack-ai/191-agentic-ai-delivery-flow/04-memory-design.html"><span>191.04</span><strong>Memory design</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="full-stack-ai/191-agentic-ai-delivery-flow/05-permission-model.html"><span>191.05</span><strong>Permission model</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="full-stack-ai/191-agentic-ai-delivery-flow/06-agent-evaluation.html"><span>191.06</span><strong>Agent evaluation</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="full-stack-ai/191-agentic-ai-delivery-flow/07-human-oversight.html"><span>191.07</span><strong>Human oversight</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="full-stack-ai/191-agentic-ai-delivery-flow/08-durable-execution.html"><span>191.08</span><strong>Durable execution</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="full-stack-ai/191-agentic-ai-delivery-flow/09-monitoring.html"><span>191.09</span><strong>Monitoring</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="full-stack-ai/191-agentic-ai-delivery-flow/10-agentic-ai-capstone.html"><span>191.10</span><strong>Agentic-AI capstone</strong><i class="bi bi-arrow-right"></i></a>
+<p><a class="topic-lesson-link" href="full-stack-ai/191-agentic-ai-delivery-flow/01-workflow-selection.html"><span>191.01</span><strong>Workflow selection</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="full-stack-ai/191-agentic-ai-delivery-flow/02-tool-contracts.html"><span>191.02</span><strong>Tool contracts</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="full-stack-ai/191-agentic-ai-delivery-flow/03-planning-design.html"><span>191.03</span><strong>Planning design</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="full-stack-ai/191-agentic-ai-delivery-flow/04-memory-design.html"><span>191.04</span><strong>Memory design</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="full-stack-ai/191-agentic-ai-delivery-flow/05-permission-model.html"><span>191.05</span><strong>Permission model</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="full-stack-ai/191-agentic-ai-delivery-flow/06-agent-evaluation.html"><span>191.06</span><strong>Agent evaluation</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="full-stack-ai/191-agentic-ai-delivery-flow/07-human-oversight.html"><span>191.07</span><strong>Human oversight</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="full-stack-ai/191-agentic-ai-delivery-flow/08-durable-execution.html"><span>191.08</span><strong>Durable execution</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="full-stack-ai/191-agentic-ai-delivery-flow/09-monitoring.html"><span>191.09</span><strong>Monitoring</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="full-stack-ai/191-agentic-ai-delivery-flow/10-agentic-ai-capstone.html"><span>191.10</span><strong>Agentic-AI capstone</strong><i class="bi bi-arrow-right"></i></a></p>
 </div>
 </details>
 </div>
-<p class="syllabus-empty" hidden="" id="project-flows-full-stack-ai-catalog-empty"><i class="bi bi-search"></i> No matching lessons were found.</p>
+<p class="syllabus-empty" id="project-flows-full-stack-ai-catalog-empty" hidden="">
+<i class="bi bi-search"></i> No matching lessons were found.
+</p>
 <script>
 document.addEventListener("DOMContentLoaded", () => {
   const catalog = document.getElementById("project-flows-full-stack-ai-catalog");
@@ -578,10 +696,14 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 </script>
-<section class="level2" id="completion-standard">
+</section>
+<section id="completion-standard" class="level2">
 <h2 class="anchored" data-anchor-id="completion-standard">Completion standard</h2>
 <p>You have completed <strong>Full Stack AI</strong> when you can explain each topic, reproduce its core workflow, pass the notebook checks, defend the main tradeoffs, and combine the lessons into one reviewable portfolio project. Use the practice tasks as evidence rather than treating page reading alone as completion.</p>
+
+
 </section>
+
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
@@ -985,17 +1107,21 @@ document.addEventListener("DOMContentLoaded", () => {
   </script>
 </div> <!-- /content -->
 <footer class="footer">
-<div class="nav-footer">
-<div class="nav-footer-left">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
 <p>© 2026 Edukron Notes</p>
-</div>
-<div class="nav-footer-center">
-       
+</div>   
+    <div class="nav-footer-center">
+      &nbsp;
     </div>
-<div class="nav-footer-right">
+    <div class="nav-footer-right">
 <p>Notebook courses for AI, data engineering, and DevOps</p>
 </div>
-</div>
+  </div>
 </footer>
+
+
+
+
 <script src="../site_libs/quarto-html/zenscroll-min.js"></script>
 </body></html>

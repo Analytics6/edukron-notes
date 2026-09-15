@@ -1,12 +1,13 @@
 <!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
-<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml"><head>
-<meta charset="utf-8"/>
-<meta content="quarto-1.10.18" name="generator"/>
-<meta content="width=device-width, initial-scale=1.0, user-scalable=yes" name="viewport"/>
-<meta content="Edukron Notes" name="author"/>
-<meta content="2026-09-14" name="dcterms.date"/>
-<meta content="Complete notebook syllabus for Azure Repos in Azure DevOps." name="description"/>
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.10.18">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="description" content="Complete notebook syllabus for Azure Repos in Azure DevOps.">
+
 <title>Azure Repos – Edukron Notes</title>
 <style>
 /* Default styles provided by pandoc.
@@ -27,23 +28,25 @@ ul.task-list li input[type="checkbox"] {
   vertical-align: middle;
 }
 </style>
+
+
 <script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
 <script src="../../site_libs/quarto-nav/headroom.min.js"></script>
 <script src="../../site_libs/clipboard/clipboard.min.js"></script>
 <script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
 <script src="../../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../../site_libs/quarto-search/quarto-search.js"></script>
-<meta content="../../" name="quarto:offset"/>
+<meta name="quarto:offset" content="../../">
 <script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="../../site_libs/quarto-html/popper.min.js"></script>
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet"/>
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" id="quarto-text-highlighting-styles" rel="stylesheet"/>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet"/>
-<link append-hash="true" data-mode="light" href="../../site_libs/bootstrap/bootstrap-f0f4b58164ec92a07fcd2db94b0e5cbd.min.css" id="quarto-bootstrap" rel="stylesheet"/>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-0f70c849674a990122300108587fb581.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -71,381 +74,468 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 <style>html{ scroll-behavior: smooth; }</style>
-<link href="../../styles.css" rel="stylesheet"/>
+
+
+<link rel="stylesheet" href="../../styles.css">
 </head>
+
 <body class="nav-fixed quarto-light">
+
 <div id="quarto-search-results"></div>
-<header class="headroom fixed-top" id="quarto-header">
-<nav class="navbar navbar-expand-lg" data-bs-theme="dark">
-<div class="navbar-container container-fluid">
-<div class="navbar-brand-container mx-auto">
-<a class="navbar-brand" href="../../index.html">
-<span class="navbar-title">Edukron Notes</span>
-</a>
-</div>
-<div class="" id="quarto-search" title="Search"></div>
-<button aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-bs-target="#navbarCollapse" data-bs-toggle="collapse" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }" role="menu" type="button">
-<span class="navbar-toggler-icon"></span>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../../index.html">
+    <span class="navbar-title">Edukron Notes</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
 </button>
-<div class="collapse navbar-collapse" id="navbarCollapse">
-<ul class="navbar-nav navbar-nav-scroll me-auto">
-<li class="nav-item">
-<a class="nav-link" href="../../index.html">
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../index.html"> 
 <span class="menu-text">Home</span></a>
-</li>
-<li class="nav-item dropdown">
-<a aria-expanded="false" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" id="nav-menu-full-stack-ai" role="link">
-<i class="bi bi-cpu" role="img">
-</i>
-<span class="menu-text">Full Stack AI</span>
-</a>
-<ul aria-labelledby="nav-menu-full-stack-ai" class="dropdown-menu">
-<li>
-<a class="dropdown-item" href="../../courses/full-stack-ai/index.html">
-<span class="dropdown-text">Program overview</span></a>
-</li>
-<li>
-<a class="dropdown-item" href="../../courses/full-stack-ai/python.html">
-<span class="dropdown-text">Python</span></a>
-</li>
-<li>
-<a class="dropdown-item" href="../../courses/full-stack-ai/sql.html">
-<span class="dropdown-text">SQL</span></a>
-</li>
-<li>
-<a class="dropdown-item" href="../../courses/full-stack-ai/data-science.html">
-<span class="dropdown-text">Data Science</span></a>
-</li>
-<li>
-<a class="dropdown-item" href="../../courses/full-stack-ai/machine-learning.html">
-<span class="dropdown-text">Machine Learning</span></a>
-</li>
-<li>
-<a class="dropdown-item" href="../../courses/full-stack-ai/artificial-intelligence.html">
-<span class="dropdown-text">Artificial Intelligence</span></a>
-</li>
-<li>
-<a class="dropdown-item" href="../../courses/full-stack-ai/deep-learning.html">
-<span class="dropdown-text">Deep Learning</span></a>
-</li>
-<li>
-<a class="dropdown-item" href="../../courses/full-stack-ai/generative-ai.html">
-<span class="dropdown-text">Generative AI</span></a>
-</li>
-<li>
-<a class="dropdown-item" href="../../courses/full-stack-ai/large-language-models.html">
-<span class="dropdown-text">Large Language Models (LLMs)</span></a>
-</li>
-<li>
-<a class="dropdown-item" href="../../courses/full-stack-ai/rag.html">
-<span class="dropdown-text">Retrieval Augmented Generation (RAG)</span></a>
-</li>
-<li>
-<a class="dropdown-item" href="../../courses/full-stack-ai/agentic-ai.html">
-<span class="dropdown-text">Agentic AI</span></a>
-</li>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-full-stack-ai" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+      <i class="bi bi-cpu" role="img">
+</i> 
+ <span class="menu-text">Full Stack AI</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-full-stack-ai">    
+        <li>
+    <a class="dropdown-item" href="../../courses/full-stack-ai/index.html">
+ <span class="dropdown-text">Program overview</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../courses/full-stack-ai/python.html">
+ <span class="dropdown-text">Python</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../courses/full-stack-ai/sql.html">
+ <span class="dropdown-text">SQL</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../courses/full-stack-ai/data-science.html">
+ <span class="dropdown-text">Data Science</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../courses/full-stack-ai/machine-learning.html">
+ <span class="dropdown-text">Machine Learning</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../courses/full-stack-ai/artificial-intelligence.html">
+ <span class="dropdown-text">Artificial Intelligence</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../courses/full-stack-ai/deep-learning.html">
+ <span class="dropdown-text">Deep Learning</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../courses/full-stack-ai/generative-ai.html">
+ <span class="dropdown-text">Generative AI</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../courses/full-stack-ai/large-language-models.html">
+ <span class="dropdown-text">Large Language Models (LLMs)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../courses/full-stack-ai/rag.html">
+ <span class="dropdown-text">Retrieval Augmented Generation (RAG)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../courses/full-stack-ai/agentic-ai.html">
+ <span class="dropdown-text">Agentic AI</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-azure-data-engineering" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+      <i class="bi bi-database" role="img">
+</i> 
+ <span class="menu-text">Azure Data Engineering</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-azure-data-engineering">    
+        <li>
+    <a class="dropdown-item" href="../../courses/azure-data-engineering/index.html">
+ <span class="dropdown-text">Program overview</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../courses/azure-data-engineering/python.html">
+ <span class="dropdown-text">Python</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../courses/azure-data-engineering/sql.html">
+ <span class="dropdown-text">SQL</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../courses/azure-data-engineering/fundamentals.html">
+ <span class="dropdown-text">Data Engineering Fundamentals</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../courses/azure-data-engineering/azure-data-factory.html">
+ <span class="dropdown-text">Azure Data Factory (ADF)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../courses/azure-data-engineering/adls-gen2.html">
+ <span class="dropdown-text">Azure Data Lake Storage Gen2</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../courses/azure-data-engineering/azure-databricks.html">
+ <span class="dropdown-text">Azure Databricks</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../courses/azure-data-engineering/pyspark.html">
+ <span class="dropdown-text">PySpark</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../courses/azure-data-engineering/azure-synapse.html">
+ <span class="dropdown-text">Azure Synapse Analytics</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../courses/azure-data-engineering/microsoft-fabric.html">
+ <span class="dropdown-text">Microsoft Fabric</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../courses/azure-data-engineering/delta-lake.html">
+ <span class="dropdown-text">Delta Lake</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-azure-devops" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+      <i class="bi bi-infinity" role="img">
+</i> 
+ <span class="menu-text">Azure DevOps</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-azure-devops">    
+        <li>
+    <a class="dropdown-item" href="../../courses/azure-devops/index.html">
+ <span class="dropdown-text">Program overview</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../courses/azure-devops/linux-shell-scripting.html">
+ <span class="dropdown-text">Linux &amp; Shell Scripting</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../courses/azure-devops/git-version-control.html">
+ <span class="dropdown-text">Git &amp; Version Control</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../courses/azure-devops/azure-repos.html">
+ <span class="dropdown-text">Azure Repos</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../courses/azure-devops/azure-pipelines.html">
+ <span class="dropdown-text">Azure Pipelines (CI/CD)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../courses/azure-devops/yaml-pipelines.html">
+ <span class="dropdown-text">YAML Pipeline Development</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../courses/azure-devops/docker.html">
+ <span class="dropdown-text">Docker &amp; Containerization</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../courses/azure-devops/kubernetes-aks.html">
+ <span class="dropdown-text">Kubernetes &amp; AKS</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../courses/azure-devops/terraform.html">
+ <span class="dropdown-text">Terraform Infrastructure as Code</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../courses/azure-devops/azure-cloud-services.html">
+ <span class="dropdown-text">Azure Cloud Services</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../courses/azure-devops/devsecops-monitoring.html">
+ <span class="dropdown-text">DevSecOps &amp; Monitoring</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-interview-questions" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+      <i class="bi bi-question-circle" role="img">
+</i> 
+ <span class="menu-text">Interview Questions</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-interview-questions">    
+        <li>
+    <a class="dropdown-item" href="../../interview-questions/index.html">
+ <span class="dropdown-text">Section overview</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../interview-questions/full-stack-ai.html">
+ <span class="dropdown-text">Full Stack AI</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../interview-questions/azure-data-engineering.html">
+ <span class="dropdown-text">Azure Data Engineering</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../interview-questions/azure-devops.html">
+ <span class="dropdown-text">Azure DevOps</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-project-flows" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+      <i class="bi bi-kanban" role="img">
+</i> 
+ <span class="menu-text">Project Flows</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-project-flows">    
+        <li>
+    <a class="dropdown-item" href="../../project-flows/index.html">
+ <span class="dropdown-text">Section overview</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../project-flows/full-stack-ai.html">
+ <span class="dropdown-text">Full Stack AI</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../project-flows/azure-data-engineering.html">
+ <span class="dropdown-text">Azure Data Engineering</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../project-flows/azure-devops.html">
+ <span class="dropdown-text">Azure DevOps</span></a>
+  </li>  
+    </ul>
+  </li>
 </ul>
-</li>
-<li class="nav-item dropdown">
-<a aria-expanded="false" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" id="nav-menu-azure-data-engineering" role="link">
-<i class="bi bi-database" role="img">
-</i>
-<span class="menu-text">Azure Data Engineering</span>
-</a>
-<ul aria-labelledby="nav-menu-azure-data-engineering" class="dropdown-menu">
-<li>
-<a class="dropdown-item" href="../../courses/azure-data-engineering/index.html">
-<span class="dropdown-text">Program overview</span></a>
-</li>
-<li>
-<a class="dropdown-item" href="../../courses/azure-data-engineering/python.html">
-<span class="dropdown-text">Python</span></a>
-</li>
-<li>
-<a class="dropdown-item" href="../../courses/azure-data-engineering/sql.html">
-<span class="dropdown-text">SQL</span></a>
-</li>
-<li>
-<a class="dropdown-item" href="../../courses/azure-data-engineering/fundamentals.html">
-<span class="dropdown-text">Data Engineering Fundamentals</span></a>
-</li>
-<li>
-<a class="dropdown-item" href="../../courses/azure-data-engineering/azure-data-factory.html">
-<span class="dropdown-text">Azure Data Factory (ADF)</span></a>
-</li>
-<li>
-<a class="dropdown-item" href="../../courses/azure-data-engineering/adls-gen2.html">
-<span class="dropdown-text">Azure Data Lake Storage Gen2</span></a>
-</li>
-<li>
-<a class="dropdown-item" href="../../courses/azure-data-engineering/azure-databricks.html">
-<span class="dropdown-text">Azure Databricks</span></a>
-</li>
-<li>
-<a class="dropdown-item" href="../../courses/azure-data-engineering/pyspark.html">
-<span class="dropdown-text">PySpark</span></a>
-</li>
-<li>
-<a class="dropdown-item" href="../../courses/azure-data-engineering/azure-synapse.html">
-<span class="dropdown-text">Azure Synapse Analytics</span></a>
-</li>
-<li>
-<a class="dropdown-item" href="../../courses/azure-data-engineering/microsoft-fabric.html">
-<span class="dropdown-text">Microsoft Fabric</span></a>
-</li>
-<li>
-<a class="dropdown-item" href="../../courses/azure-data-engineering/delta-lake.html">
-<span class="dropdown-text">Delta Lake</span></a>
-</li>
-</ul>
-</li>
-<li class="nav-item dropdown">
-<a aria-expanded="false" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" id="nav-menu-azure-devops" role="link">
-<i class="bi bi-infinity" role="img">
-</i>
-<span class="menu-text">Azure DevOps</span>
-</a>
-<ul aria-labelledby="nav-menu-azure-devops" class="dropdown-menu">
-<li>
-<a class="dropdown-item" href="../../courses/azure-devops/index.html">
-<span class="dropdown-text">Program overview</span></a>
-</li>
-<li>
-<a class="dropdown-item" href="../../courses/azure-devops/linux-shell-scripting.html">
-<span class="dropdown-text">Linux &amp; Shell Scripting</span></a>
-</li>
-<li>
-<a class="dropdown-item" href="../../courses/azure-devops/git-version-control.html">
-<span class="dropdown-text">Git &amp; Version Control</span></a>
-</li>
-<li>
-<a class="dropdown-item" href="../../courses/azure-devops/azure-repos.html">
-<span class="dropdown-text">Azure Repos</span></a>
-</li>
-<li>
-<a class="dropdown-item" href="../../courses/azure-devops/azure-pipelines.html">
-<span class="dropdown-text">Azure Pipelines (CI/CD)</span></a>
-</li>
-<li>
-<a class="dropdown-item" href="../../courses/azure-devops/yaml-pipelines.html">
-<span class="dropdown-text">YAML Pipeline Development</span></a>
-</li>
-<li>
-<a class="dropdown-item" href="../../courses/azure-devops/docker.html">
-<span class="dropdown-text">Docker &amp; Containerization</span></a>
-</li>
-<li>
-<a class="dropdown-item" href="../../courses/azure-devops/kubernetes-aks.html">
-<span class="dropdown-text">Kubernetes &amp; AKS</span></a>
-</li>
-<li>
-<a class="dropdown-item" href="../../courses/azure-devops/terraform.html">
-<span class="dropdown-text">Terraform Infrastructure as Code</span></a>
-</li>
-<li>
-<a class="dropdown-item" href="../../courses/azure-devops/azure-cloud-services.html">
-<span class="dropdown-text">Azure Cloud Services</span></a>
-</li>
-<li>
-<a class="dropdown-item" href="../../courses/azure-devops/devsecops-monitoring.html">
-<span class="dropdown-text">DevSecOps &amp; Monitoring</span></a>
-</li>
-</ul>
-</li>
-<li class="nav-item dropdown">
-<a aria-expanded="false" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" id="nav-menu-interview-questions" role="link">
-<i class="bi bi-question-circle" role="img">
-</i>
-<span class="menu-text">Interview Questions</span>
-</a>
-<ul aria-labelledby="nav-menu-interview-questions" class="dropdown-menu">
-<li>
-<a class="dropdown-item" href="../../interview-questions/index.html">
-<span class="dropdown-text">Section overview</span></a>
-</li>
-<li>
-<a class="dropdown-item" href="../../interview-questions/full-stack-ai.html">
-<span class="dropdown-text">Full Stack AI</span></a>
-</li>
-<li>
-<a class="dropdown-item" href="../../interview-questions/azure-data-engineering.html">
-<span class="dropdown-text">Azure Data Engineering</span></a>
-</li>
-<li>
-<a class="dropdown-item" href="../../interview-questions/azure-devops.html">
-<span class="dropdown-text">Azure DevOps</span></a>
-</li>
-</ul>
-</li>
-<li class="nav-item dropdown">
-<a aria-expanded="false" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" id="nav-menu-project-flows" role="link">
-<i class="bi bi-kanban" role="img">
-</i>
-<span class="menu-text">Project Flows</span>
-</a>
-<ul aria-labelledby="nav-menu-project-flows" class="dropdown-menu">
-<li>
-<a class="dropdown-item" href="../../project-flows/index.html">
-<span class="dropdown-text">Section overview</span></a>
-</li>
-<li>
-<a class="dropdown-item" href="../../project-flows/full-stack-ai.html">
-<span class="dropdown-text">Full Stack AI</span></a>
-</li>
-<li>
-<a class="dropdown-item" href="../../project-flows/azure-data-engineering.html">
-<span class="dropdown-text">Azure Data Engineering</span></a>
-</li>
-<li>
-<a class="dropdown-item" href="../../project-flows/azure-devops.html">
-<span class="dropdown-text">Azure DevOps</span></a>
-</li>
-</ul>
-</li>
-</ul>
-</div> <!-- /navcollapse -->
-<div class="quarto-navbar-tools">
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
 </div>
-</div> <!-- /container-fluid -->
-</nav>
+      </div> <!-- /container-fluid -->
+    </nav>
 </header>
 <!-- content -->
-<div class="quarto-container page-columns page-rows-contents page-layout-full page-navbar" id="quarto-content">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
+    
 <!-- main -->
 <main class="content column-page" id="quarto-document-content">
-<header class="quarto-title-block default" id="title-block-header">
+
+<header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
 <h1 class="title">Azure Repos</h1>
 </div>
+
 <div>
-<div class="description">
+  <div class="description">
     Complete notebook syllabus for Azure Repos in Azure DevOps.
   </div>
 </div>
-<div class="quarto-title-meta">
-<div>
-<div class="quarto-title-meta-heading">Author</div>
-<div class="quarto-title-meta-contents">
-<p>Edukron Notes </p>
-</div>
-</div>
-<div>
-<div class="quarto-title-meta-heading">Published</div>
-<div class="quarto-title-meta-contents">
-<p class="date">September 14, 2026</p>
-</div>
-</div>
-</div>
+
+
+<div class="quarto-title-meta column-page">
+
+    
+  
+    
+  </div>
+  
+
+
 </header>
+
+
 <div class="course-workspace notebook-chrome">
 <div class="notebook-toolbar">
-<span class="notebook-file"><i aria-hidden="true" class="bi bi-journal-code"></i><strong>azure-repos.ipynb</strong></span>
-<span class="notebook-status"><i aria-hidden="true" class="bi bi-check-circle-fill"></i> Trusted</span>
-<span class="notebook-kernel"><i aria-hidden="true" class="bi bi-diagram-3"></i> Learning path</span>
+<p><span class="notebook-file"><i class="bi bi-journal-code" aria-hidden="true"></i><strong>azure-repos.ipynb</strong></span> <span class="notebook-status"><i class="bi bi-check-circle-fill" aria-hidden="true"></i> Trusted</span> <span class="notebook-kernel"><i class="bi bi-diagram-3" aria-hidden="true"></i> Learning path</span></p>
 </div>
 <div class="course-workspace-hero">
 <span class="overview-kicker">Azure DevOps</span>
-<h1>Azure Repos</h1>
-<p>A complete notebook-first syllabus organized from foundations to applied delivery. Every lesson combines clear notes, a worked pattern, executable validation, a guided lab, a solution blueprint, practice, and knowledge checks.</p>
-<div class="course-tags"><span><i class="bi bi-signpost-split"></i> Foundation to advanced</span><span><i class="bi bi-code-square"></i> Hands-on practice</span><span><i class="bi bi-patch-check"></i> Review ready</span></div>
-<p class="course-start"><a class="btn btn-primary" href="azure-repos/139-azure-repos-foundations/01-azure-devops-organizations.html"><i class="bi bi-play-fill"></i> Start the first notebook</a></p>
+<h1>
+Azure Repos
+</h1>
+<p>
+A complete notebook-first syllabus organized from foundations to applied delivery. Every lesson combines clear notes, a worked pattern, executable validation, a guided lab, a solution blueprint, practice, and knowledge checks.
+</p>
+<div class="course-tags">
+<span><i class="bi bi-signpost-split"></i> Foundation to advanced</span><span><i class="bi bi-code-square"></i> Hands-on practice</span><span><i class="bi bi-patch-check"></i> Review ready</span>
+</div>
+<p class="course-start">
+<a class="btn btn-primary" href="azure-repos/139-azure-repos-foundations/01-azure-devops-organizations.html"><i class="bi bi-play-fill"></i> Start the first notebook</a>
+</p>
 </div>
 </div>
-<section class="level2" id="how-to-use-this-course">
+<section id="how-to-use-this-course" class="level2">
 <h2 class="anchored" data-anchor-id="how-to-use-this-course">How to use this course</h2>
 <p>Work through lessons in order for a complete pathway, or open a topic for focused reference. Type or adapt the examples, complete the guided lab before reading its blueprint, and preserve your test evidence as a portfolio artifact. Cloud and infrastructure examples are safe, copy-ready teaching patterns; execute them in your own sandbox only after substituting approved identities, names, and policies.</p>
-</section>
 <section class="learning-plan-section" id="learning-plan">
-<div class="path-section-heading"><div><span class="overview-kicker">Recommended schedule</span><h2>Learning plan</h2><p>A practical schedule for completing Azure Repos with retained evidence, not passive reading.</p></div></div>
-<div class="plan-metrics">
-<div><i class="bi bi-calendar3"></i><span>Standard path</span><strong>3 weeks</strong><small>One topic each week, then integration</small></div>
-<div><i class="bi bi-lightning-charge"></i><span>Intensive path</span><strong>2 weeks</strong><small>Two topics each week, then integration</small></div>
-<div><i class="bi bi-clock"></i><span>Weekly commitment</span><strong>6–8 hours</strong><small>Study, code, practice, and reflection</small></div>
-<div><i class="bi bi-folder-check"></i><span>Finish line</span><strong>Portfolio evidence</strong><small>Tests, decisions, notes, and a capstone</small></div>
+<div class="path-section-heading">
+<div>
+<span class="overview-kicker">Recommended schedule</span>
+<h2 class="anchored">
+Learning plan
+</h2>
+<p>
+A practical schedule for completing Azure Repos with retained evidence, not passive reading.
+</p>
 </div>
-<div aria-label="Weekly study loop" class="study-loop">
-<div><span>01</span><i class="bi bi-book"></i><strong>Understand</strong><small>Read the notes and explain the mental model.</small></div>
-<i aria-hidden="true" class="bi bi-arrow-right study-loop-arrow"></i>
-<div><span>02</span><i class="bi bi-play-circle"></i><strong>Run</strong><small>Execute the example and inspect every result.</small></div>
-<i aria-hidden="true" class="bi bi-arrow-right study-loop-arrow"></i>
-<div><span>03</span><i class="bi bi-tools"></i><strong>Adapt</strong><small>Change the inputs and complete the guided lab.</small></div>
-<i aria-hidden="true" class="bi bi-arrow-right study-loop-arrow"></i>
-<div><span>04</span><i class="bi bi-patch-check"></i><strong>Prove</strong><small>Pass checks and retain reviewable evidence.</small></div>
+</div>
+<div class="plan-metrics">
+<div>
+<i class="bi bi-calendar3"></i><span>Standard path</span><strong>3 weeks</strong><small>One topic each week, then integration</small>
+</div>
+<div>
+<i class="bi bi-lightning-charge"></i><span>Intensive path</span><strong>2 weeks</strong><small>Two topics each week, then integration</small>
+</div>
+<div>
+<i class="bi bi-clock"></i><span>Weekly commitment</span><strong>6–8 hours</strong><small>Study, code, practice, and reflection</small>
+</div>
+<div>
+<i class="bi bi-folder-check"></i><span>Finish line</span><strong>Portfolio evidence</strong><small>Tests, decisions, notes, and a capstone</small>
+</div>
+</div>
+<div class="study-loop" aria-label="Weekly study loop">
+<div>
+<span>01</span><i class="bi bi-book"></i><strong>Understand</strong><small>Read the notes and explain the mental model.</small>
+</div>
+<i class="bi bi-arrow-right study-loop-arrow" aria-hidden="true"></i>
+<div>
+<span>02</span><i class="bi bi-play-circle"></i><strong>Run</strong><small>Execute the example and inspect every result.</small>
+</div>
+<i class="bi bi-arrow-right study-loop-arrow" aria-hidden="true"></i>
+<div>
+<span>03</span><i class="bi bi-tools"></i><strong>Adapt</strong><small>Change the inputs and complete the guided lab.</small>
+</div>
+<i class="bi bi-arrow-right study-loop-arrow" aria-hidden="true"></i>
+<div>
+<span>04</span><i class="bi bi-patch-check"></i><strong>Prove</strong><small>Pass checks and retain reviewable evidence.</small>
+</div>
 </div>
 <div class="plan-weeks">
 <details class="plan-week plan-topic-week" open="">
-<summary><span class="plan-week-number">Week 01</span><strong>Azure Repos foundations</strong><span class="plan-stage">Foundation</span></summary>
+<summary>
+<span class="plan-week-number">Week 01</span><strong>Azure Repos foundations</strong><span class="plan-stage">Foundation</span>
+</summary>
 <div class="plan-week-body">
-<div><span>Learn</span><p>Begin with <a href="azure-repos/139-azure-repos-foundations/01-azure-devops-organizations.html">Azure DevOps organizations</a> and write the core mental model in your own words.</p></div>
-<div><span>Practice</span><p>Run, change, and explain the worked patterns across the middle lessons. Keep test evidence and questions.</p></div>
-<div><span>Demonstrate</span><p>Complete <a href="azure-repos/139-azure-repos-foundations/10-azure-repos-project.html">Azure Repos project</a> without copying the solution blueprint first.</p></div>
+<div>
+<span>Learn</span>
+<p>
+Begin with <a href="azure-repos/139-azure-repos-foundations/01-azure-devops-organizations.html">Azure DevOps organizations</a> and write the core mental model in your own words.
+</p>
 </div>
-</details><details class="plan-week plan-topic-week">
-<summary><span class="plan-week-number">Week 02</span><strong>Policies security and integrations</strong><span class="plan-stage">Integration &amp; capstone</span></summary>
+<div>
+<span>Practice</span>
+<p>
+Run, change, and explain the worked patterns across the middle lessons. Keep test evidence and questions.
+</p>
+</div>
+<div>
+<span>Demonstrate</span>
+<p>
+Complete <a href="azure-repos/139-azure-repos-foundations/10-azure-repos-project.html">Azure Repos project</a> without copying the solution blueprint first.
+</p>
+</div>
+</div>
+</details>
+<details class="plan-week plan-topic-week">
+<summary>
+<span class="plan-week-number">Week 02</span><strong>Policies security and integrations</strong><span class="plan-stage">Integration &amp; capstone</span>
+</summary>
 <div class="plan-week-body">
-<div><span>Learn</span><p>Begin with <a href="azure-repos/140-policies-security-and-integrations/01-branch-policies.html">Branch policies</a> and write the core mental model in your own words.</p></div>
-<div><span>Practice</span><p>Run, change, and explain the worked patterns across the middle lessons. Keep test evidence and questions.</p></div>
-<div><span>Demonstrate</span><p>Complete <a href="azure-repos/140-policies-security-and-integrations/10-governed-repository-capstone.html">Governed-repository capstone</a> without copying the solution blueprint first.</p></div>
+<div>
+<span>Learn</span>
+<p>
+Begin with <a href="azure-repos/140-policies-security-and-integrations/01-branch-policies.html">Branch policies</a> and write the core mental model in your own words.
+</p>
 </div>
-</details><div class="plan-integration-week">
+<div>
+<span>Practice</span>
+<p>
+Run, change, and explain the worked patterns across the middle lessons. Keep test evidence and questions.
+</p>
+</div>
+<div>
+<span>Demonstrate</span>
+<p>
+Complete <a href="azure-repos/140-policies-security-and-integrations/10-governed-repository-capstone.html">Governed-repository capstone</a> without copying the solution blueprint first.
+</p>
+</div>
+</div>
+</details>
+<div class="plan-integration-week">
 <span class="plan-week-number">Week 03</span>
-<div><strong>Integration, review, and portfolio evidence</strong><p>Connect the topic artifacts, close weak areas, and publish one reviewable Azure Repos outcome. Use <a href="azure-repos/140-policies-security-and-integrations/10-governed-repository-capstone.html">Governed-repository capstone</a> as the final checkpoint.</p></div>
-<i aria-hidden="true" class="bi bi-trophy"></i>
+<div>
+<strong>Integration, review, and portfolio evidence</strong>
+<p>
+Connect the topic artifacts, close weak areas, and publish one reviewable Azure Repos outcome. Use <a href="azure-repos/140-policies-security-and-integrations/10-governed-repository-capstone.html">Governed-repository capstone</a> as the final checkpoint.
+</p>
+</div>
+<p><i class="bi bi-trophy" aria-hidden="true"></i></p>
 </div>
 </div>
-</section><section class="learning-path-section" id="full-learning-path">
-<div class="path-section-heading"><div><span class="overview-kicker">Ordered progression</span><h2>Full learning path</h2><p>Follow every stage in sequence. Each stage links directly to its first notebook and ends with a concrete mastery checkpoint.</p></div><span class="path-route"><i class="bi bi-signpost-2"></i> Azure DevOps → Azure Repos</span></div>
+</section>
+<section class="learning-path-section" id="full-learning-path">
+<div class="path-section-heading">
+<div>
+<span class="overview-kicker">Ordered progression</span>
+<h2 class="anchored">
+Full learning path
+</h2>
+<p>
+Follow every stage in sequence. Each stage links directly to its first notebook and ends with a concrete mastery checkpoint.
+</p>
+</div>
+<span class="path-route"><i class="bi bi-signpost-2"></i> Azure DevOps → Azure Repos</span>
+</div>
 <div class="learning-path">
-<a class="learning-path-step" data-topic="139" href="azure-repos/139-azure-repos-foundations/01-azure-devops-organizations.html">
-<span class="path-index">01</span>
-<span class="path-step-copy"><span class="path-phase">Foundation · Topic 139</span><strong>Azure Repos foundations</strong><small>Enter with Azure DevOps organizations. Demonstrate mastery through Azure Repos project.</small></span>
-<i aria-hidden="true" class="bi bi-arrow-right"></i>
-</a><a class="learning-path-step" data-topic="140" href="azure-repos/140-policies-security-and-integrations/01-branch-policies.html">
-<span class="path-index">02</span>
-<span class="path-step-copy"><span class="path-phase">Integration &amp; capstone · Topic 140</span><strong>Policies security and integrations</strong><small>Enter with Branch policies. Demonstrate mastery through Governed-repository capstone.</small></span>
-<i aria-hidden="true" class="bi bi-arrow-right"></i>
-</a>
+<p><a class="learning-path-step" data-topic="139" href="azure-repos/139-azure-repos-foundations/01-azure-devops-organizations.html"> <span class="path-index">01</span> <span class="path-step-copy"><span class="path-phase">Foundation · Topic 139</span><strong>Azure Repos foundations</strong><small>Enter with Azure DevOps organizations. Demonstrate mastery through Azure Repos project.</small></span> <i class="bi bi-arrow-right" aria-hidden="true"></i> </a><a class="learning-path-step" data-topic="140" href="azure-repos/140-policies-security-and-integrations/01-branch-policies.html"> <span class="path-index">02</span> <span class="path-step-copy"><span class="path-phase">Integration &amp; capstone · Topic 140</span><strong>Policies security and integrations</strong><small>Enter with Branch policies. Demonstrate mastery through Governed-repository capstone.</small></span> <i class="bi bi-arrow-right" aria-hidden="true"></i> </a></p>
 </div>
-<div class="path-finish"><span><i class="bi bi-trophy-fill"></i></span><div><small>Completion milestone</small><strong>Connect the complete Azure Repos workflow</strong><p>Combine evidence from every stage and finish with Governed-repository capstone. You should be able to explain the architecture, reproduce the core workflow, diagnose failure, and defend the main tradeoffs.</p></div></div>
-</section><div class="syllabus-heading" id="notebook-syllabus">
-<div><span class="overview-kicker">Course contents</span><h2>Notebook syllabus</h2><p>Open a topic to browse its lessons, or search the complete course by concept.</p></div>
-<label class="syllabus-search" for="azure-devops-azure-repos-catalog-search"><i aria-hidden="true" class="bi bi-search"></i><input aria-label="Search the Azure Repos syllabus" autocomplete="off" id="azure-devops-azure-repos-catalog-search" placeholder="Find a topic or lesson" type="search"/></label>
+<div class="path-finish">
+<span><i class="bi bi-trophy-fill"></i></span>
+<div>
+<small>Completion milestone</small><strong>Connect the complete Azure Repos workflow</strong>
+<p>
+Combine evidence from every stage and finish with Governed-repository capstone. You should be able to explain the architecture, reproduce the core workflow, diagnose failure, and defend the main tradeoffs.
+</p>
 </div>
-<div class="curriculum-catalog" id="azure-devops-azure-repos-catalog">
+</div>
+</section>
+<div id="notebook-syllabus" class="syllabus-heading">
+<div>
+<span class="overview-kicker">Course contents</span>
+<h2 class="anchored">
+Notebook syllabus
+</h2>
+<p>
+Open a topic to browse its lessons, or search the complete course by concept.
+</p>
+</div>
+<p><label class="syllabus-search" for="azure-devops-azure-repos-catalog-search"><i class="bi bi-search" aria-hidden="true"></i><input id="azure-devops-azure-repos-catalog-search" type="search" placeholder="Find a topic or lesson" autocomplete="off" aria-label="Search the Azure Repos syllabus"></label></p>
+</div>
+<div id="azure-devops-azure-repos-catalog" class="curriculum-catalog">
 <details class="curriculum-topic" open="">
-<summary><span class="topic-number">Topic 139</span><strong>Azure Repos foundations</strong></summary>
+<summary>
+<span class="topic-number">Topic 139</span><strong>Azure Repos foundations</strong>
+</summary>
 <div class="topic-lessons">
-<a class="topic-lesson-link" href="azure-repos/139-azure-repos-foundations/01-azure-devops-organizations.html"><span>139.01</span><strong>Azure DevOps organizations</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="azure-repos/139-azure-repos-foundations/02-projects-and-repositories.html"><span>139.02</span><strong>Projects and repositories</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="azure-repos/139-azure-repos-foundations/03-repository-creation.html"><span>139.03</span><strong>Repository creation</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="azure-repos/139-azure-repos-foundations/04-clone-authentication.html"><span>139.04</span><strong>Clone authentication</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="azure-repos/139-azure-repos-foundations/05-branch-management.html"><span>139.05</span><strong>Branch management</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="azure-repos/139-azure-repos-foundations/06-pull-requests.html"><span>139.06</span><strong>Pull requests</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="azure-repos/139-azure-repos-foundations/07-reviewer-workflows.html"><span>139.07</span><strong>Reviewer workflows</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="azure-repos/139-azure-repos-foundations/08-repository-permissions.html"><span>139.08</span><strong>Repository permissions</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="azure-repos/139-azure-repos-foundations/09-search-and-history.html"><span>139.09</span><strong>Search and history</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="azure-repos/139-azure-repos-foundations/10-azure-repos-project.html"><span>139.10</span><strong>Azure Repos project</strong><i class="bi bi-arrow-right"></i></a>
+<p><a class="topic-lesson-link" href="azure-repos/139-azure-repos-foundations/01-azure-devops-organizations.html"><span>139.01</span><strong>Azure DevOps organizations</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="azure-repos/139-azure-repos-foundations/02-projects-and-repositories.html"><span>139.02</span><strong>Projects and repositories</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="azure-repos/139-azure-repos-foundations/03-repository-creation.html"><span>139.03</span><strong>Repository creation</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="azure-repos/139-azure-repos-foundations/04-clone-authentication.html"><span>139.04</span><strong>Clone authentication</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="azure-repos/139-azure-repos-foundations/05-branch-management.html"><span>139.05</span><strong>Branch management</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="azure-repos/139-azure-repos-foundations/06-pull-requests.html"><span>139.06</span><strong>Pull requests</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="azure-repos/139-azure-repos-foundations/07-reviewer-workflows.html"><span>139.07</span><strong>Reviewer workflows</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="azure-repos/139-azure-repos-foundations/08-repository-permissions.html"><span>139.08</span><strong>Repository permissions</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="azure-repos/139-azure-repos-foundations/09-search-and-history.html"><span>139.09</span><strong>Search and history</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="azure-repos/139-azure-repos-foundations/10-azure-repos-project.html"><span>139.10</span><strong>Azure Repos project</strong><i class="bi bi-arrow-right"></i></a></p>
 </div>
 </details>
 <details class="curriculum-topic">
-<summary><span class="topic-number">Topic 140</span><strong>Policies security and integrations</strong></summary>
+<summary>
+<span class="topic-number">Topic 140</span><strong>Policies security and integrations</strong>
+</summary>
 <div class="topic-lessons">
-<a class="topic-lesson-link" href="azure-repos/140-policies-security-and-integrations/01-branch-policies.html"><span>140.01</span><strong>Branch policies</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="azure-repos/140-policies-security-and-integrations/02-build-validation.html"><span>140.02</span><strong>Build validation</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="azure-repos/140-policies-security-and-integrations/03-required-reviewers.html"><span>140.03</span><strong>Required reviewers</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="azure-repos/140-policies-security-and-integrations/04-status-checks.html"><span>140.04</span><strong>Status checks</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="azure-repos/140-policies-security-and-integrations/05-path-filters.html"><span>140.05</span><strong>Path filters</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="azure-repos/140-policies-security-and-integrations/06-service-connections.html"><span>140.06</span><strong>Service connections</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="azure-repos/140-policies-security-and-integrations/07-ssh-and-tokens.html"><span>140.07</span><strong>SSH and tokens</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="azure-repos/140-policies-security-and-integrations/08-audit-logs.html"><span>140.08</span><strong>Audit logs</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="azure-repos/140-policies-security-and-integrations/09-github-interoperability.html"><span>140.09</span><strong>GitHub interoperability</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="azure-repos/140-policies-security-and-integrations/10-governed-repository-capstone.html"><span>140.10</span><strong>Governed-repository capstone</strong><i class="bi bi-arrow-right"></i></a>
+<p><a class="topic-lesson-link" href="azure-repos/140-policies-security-and-integrations/01-branch-policies.html"><span>140.01</span><strong>Branch policies</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="azure-repos/140-policies-security-and-integrations/02-build-validation.html"><span>140.02</span><strong>Build validation</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="azure-repos/140-policies-security-and-integrations/03-required-reviewers.html"><span>140.03</span><strong>Required reviewers</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="azure-repos/140-policies-security-and-integrations/04-status-checks.html"><span>140.04</span><strong>Status checks</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="azure-repos/140-policies-security-and-integrations/05-path-filters.html"><span>140.05</span><strong>Path filters</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="azure-repos/140-policies-security-and-integrations/06-service-connections.html"><span>140.06</span><strong>Service connections</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="azure-repos/140-policies-security-and-integrations/07-ssh-and-tokens.html"><span>140.07</span><strong>SSH and tokens</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="azure-repos/140-policies-security-and-integrations/08-audit-logs.html"><span>140.08</span><strong>Audit logs</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="azure-repos/140-policies-security-and-integrations/09-github-interoperability.html"><span>140.09</span><strong>GitHub interoperability</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="azure-repos/140-policies-security-and-integrations/10-governed-repository-capstone.html"><span>140.10</span><strong>Governed-repository capstone</strong><i class="bi bi-arrow-right"></i></a></p>
 </div>
 </details>
 </div>
-<p class="syllabus-empty" hidden="" id="azure-devops-azure-repos-catalog-empty"><i class="bi bi-search"></i> No matching lessons were found.</p>
+<p class="syllabus-empty" id="azure-devops-azure-repos-catalog-empty" hidden="">
+<i class="bi bi-search"></i> No matching lessons were found.
+</p>
 <script>
 document.addEventListener("DOMContentLoaded", () => {
   const catalog = document.getElementById("azure-devops-azure-repos-catalog");
@@ -474,10 +564,14 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 </script>
-<section class="level2" id="completion-standard">
+</section>
+<section id="completion-standard" class="level2">
 <h2 class="anchored" data-anchor-id="completion-standard">Completion standard</h2>
 <p>You have completed <strong>Azure Repos</strong> when you can explain each topic, reproduce its core workflow, pass the notebook checks, defend the main tradeoffs, and combine the lessons into one reviewable portfolio project. Use the practice tasks as evidence rather than treating page reading alone as completion.</p>
+
+
 </section>
+
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
@@ -881,17 +975,21 @@ document.addEventListener("DOMContentLoaded", () => {
   </script>
 </div> <!-- /content -->
 <footer class="footer">
-<div class="nav-footer">
-<div class="nav-footer-left">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
 <p>© 2026 Edukron Notes</p>
-</div>
-<div class="nav-footer-center">
-       
+</div>   
+    <div class="nav-footer-center">
+      &nbsp;
     </div>
-<div class="nav-footer-right">
+    <div class="nav-footer-right">
 <p>Notebook courses for AI, data engineering, and DevOps</p>
 </div>
-</div>
+  </div>
 </footer>
+
+
+
+
 <script src="../../site_libs/quarto-html/zenscroll-min.js"></script>
 </body></html>

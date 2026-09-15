@@ -1,12 +1,13 @@
 <!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
-<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml"><head>
-<meta charset="utf-8"/>
-<meta content="quarto-1.10.18" name="generator"/>
-<meta content="width=device-width, initial-scale=1.0, user-scalable=yes" name="viewport"/>
-<meta content="Edukron Notes" name="author"/>
-<meta content="2026-09-14" name="dcterms.date"/>
-<meta content="Complete notebook syllabus for Azure Data Engineering in Interview Questions." name="description"/>
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.10.18">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="description" content="Complete notebook syllabus for Azure Data Engineering in Interview Questions.">
+
 <title>Azure Data Engineering – Edukron Notes</title>
 <style>
 /* Default styles provided by pandoc.
@@ -27,23 +28,25 @@ ul.task-list li input[type="checkbox"] {
   vertical-align: middle;
 }
 </style>
+
+
 <script src="../site_libs/quarto-nav/quarto-nav.js"></script>
 <script src="../site_libs/quarto-nav/headroom.min.js"></script>
 <script src="../site_libs/clipboard/clipboard.min.js"></script>
 <script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
-<meta content="../" name="quarto:offset"/>
+<meta name="quarto:offset" content="../">
 <script src="../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet"/>
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" id="quarto-text-highlighting-styles" rel="stylesheet"/>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet"/>
-<link append-hash="true" data-mode="light" href="../site_libs/bootstrap/bootstrap-f0f4b58164ec92a07fcd2db94b0e5cbd.min.css" id="quarto-bootstrap" rel="stylesheet"/>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-0f70c849674a990122300108587fb581.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -71,459 +74,567 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 <style>html{ scroll-behavior: smooth; }</style>
-<link href="../styles.css" rel="stylesheet"/>
+
+
+<link rel="stylesheet" href="../styles.css">
 </head>
+
 <body class="nav-fixed quarto-light">
+
 <div id="quarto-search-results"></div>
-<header class="headroom fixed-top" id="quarto-header">
-<nav class="navbar navbar-expand-lg" data-bs-theme="dark">
-<div class="navbar-container container-fluid">
-<div class="navbar-brand-container mx-auto">
-<a class="navbar-brand" href="../index.html">
-<span class="navbar-title">Edukron Notes</span>
-</a>
-</div>
-<div class="" id="quarto-search" title="Search"></div>
-<button aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-bs-target="#navbarCollapse" data-bs-toggle="collapse" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }" role="menu" type="button">
-<span class="navbar-toggler-icon"></span>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../index.html">
+    <span class="navbar-title">Edukron Notes</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
 </button>
-<div class="collapse navbar-collapse" id="navbarCollapse">
-<ul class="navbar-nav navbar-nav-scroll me-auto">
-<li class="nav-item">
-<a class="nav-link" href="../index.html">
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../index.html"> 
 <span class="menu-text">Home</span></a>
-</li>
-<li class="nav-item dropdown">
-<a aria-expanded="false" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" id="nav-menu-full-stack-ai" role="link">
-<i class="bi bi-cpu" role="img">
-</i>
-<span class="menu-text">Full Stack AI</span>
-</a>
-<ul aria-labelledby="nav-menu-full-stack-ai" class="dropdown-menu">
-<li>
-<a class="dropdown-item" href="../courses/full-stack-ai/index.html">
-<span class="dropdown-text">Program overview</span></a>
-</li>
-<li>
-<a class="dropdown-item" href="../courses/full-stack-ai/python.html">
-<span class="dropdown-text">Python</span></a>
-</li>
-<li>
-<a class="dropdown-item" href="../courses/full-stack-ai/sql.html">
-<span class="dropdown-text">SQL</span></a>
-</li>
-<li>
-<a class="dropdown-item" href="../courses/full-stack-ai/data-science.html">
-<span class="dropdown-text">Data Science</span></a>
-</li>
-<li>
-<a class="dropdown-item" href="../courses/full-stack-ai/machine-learning.html">
-<span class="dropdown-text">Machine Learning</span></a>
-</li>
-<li>
-<a class="dropdown-item" href="../courses/full-stack-ai/artificial-intelligence.html">
-<span class="dropdown-text">Artificial Intelligence</span></a>
-</li>
-<li>
-<a class="dropdown-item" href="../courses/full-stack-ai/deep-learning.html">
-<span class="dropdown-text">Deep Learning</span></a>
-</li>
-<li>
-<a class="dropdown-item" href="../courses/full-stack-ai/generative-ai.html">
-<span class="dropdown-text">Generative AI</span></a>
-</li>
-<li>
-<a class="dropdown-item" href="../courses/full-stack-ai/large-language-models.html">
-<span class="dropdown-text">Large Language Models (LLMs)</span></a>
-</li>
-<li>
-<a class="dropdown-item" href="../courses/full-stack-ai/rag.html">
-<span class="dropdown-text">Retrieval Augmented Generation (RAG)</span></a>
-</li>
-<li>
-<a class="dropdown-item" href="../courses/full-stack-ai/agentic-ai.html">
-<span class="dropdown-text">Agentic AI</span></a>
-</li>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-full-stack-ai" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+      <i class="bi bi-cpu" role="img">
+</i> 
+ <span class="menu-text">Full Stack AI</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-full-stack-ai">    
+        <li>
+    <a class="dropdown-item" href="../courses/full-stack-ai/index.html">
+ <span class="dropdown-text">Program overview</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../courses/full-stack-ai/python.html">
+ <span class="dropdown-text">Python</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../courses/full-stack-ai/sql.html">
+ <span class="dropdown-text">SQL</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../courses/full-stack-ai/data-science.html">
+ <span class="dropdown-text">Data Science</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../courses/full-stack-ai/machine-learning.html">
+ <span class="dropdown-text">Machine Learning</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../courses/full-stack-ai/artificial-intelligence.html">
+ <span class="dropdown-text">Artificial Intelligence</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../courses/full-stack-ai/deep-learning.html">
+ <span class="dropdown-text">Deep Learning</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../courses/full-stack-ai/generative-ai.html">
+ <span class="dropdown-text">Generative AI</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../courses/full-stack-ai/large-language-models.html">
+ <span class="dropdown-text">Large Language Models (LLMs)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../courses/full-stack-ai/rag.html">
+ <span class="dropdown-text">Retrieval Augmented Generation (RAG)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../courses/full-stack-ai/agentic-ai.html">
+ <span class="dropdown-text">Agentic AI</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-azure-data-engineering" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+      <i class="bi bi-database" role="img">
+</i> 
+ <span class="menu-text">Azure Data Engineering</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-azure-data-engineering">    
+        <li>
+    <a class="dropdown-item" href="../courses/azure-data-engineering/index.html">
+ <span class="dropdown-text">Program overview</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../courses/azure-data-engineering/python.html">
+ <span class="dropdown-text">Python</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../courses/azure-data-engineering/sql.html">
+ <span class="dropdown-text">SQL</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../courses/azure-data-engineering/fundamentals.html">
+ <span class="dropdown-text">Data Engineering Fundamentals</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../courses/azure-data-engineering/azure-data-factory.html">
+ <span class="dropdown-text">Azure Data Factory (ADF)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../courses/azure-data-engineering/adls-gen2.html">
+ <span class="dropdown-text">Azure Data Lake Storage Gen2</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../courses/azure-data-engineering/azure-databricks.html">
+ <span class="dropdown-text">Azure Databricks</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../courses/azure-data-engineering/pyspark.html">
+ <span class="dropdown-text">PySpark</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../courses/azure-data-engineering/azure-synapse.html">
+ <span class="dropdown-text">Azure Synapse Analytics</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../courses/azure-data-engineering/microsoft-fabric.html">
+ <span class="dropdown-text">Microsoft Fabric</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../courses/azure-data-engineering/delta-lake.html">
+ <span class="dropdown-text">Delta Lake</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-azure-devops" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+      <i class="bi bi-infinity" role="img">
+</i> 
+ <span class="menu-text">Azure DevOps</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-azure-devops">    
+        <li>
+    <a class="dropdown-item" href="../courses/azure-devops/index.html">
+ <span class="dropdown-text">Program overview</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../courses/azure-devops/linux-shell-scripting.html">
+ <span class="dropdown-text">Linux &amp; Shell Scripting</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../courses/azure-devops/git-version-control.html">
+ <span class="dropdown-text">Git &amp; Version Control</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../courses/azure-devops/azure-repos.html">
+ <span class="dropdown-text">Azure Repos</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../courses/azure-devops/azure-pipelines.html">
+ <span class="dropdown-text">Azure Pipelines (CI/CD)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../courses/azure-devops/yaml-pipelines.html">
+ <span class="dropdown-text">YAML Pipeline Development</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../courses/azure-devops/docker.html">
+ <span class="dropdown-text">Docker &amp; Containerization</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../courses/azure-devops/kubernetes-aks.html">
+ <span class="dropdown-text">Kubernetes &amp; AKS</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../courses/azure-devops/terraform.html">
+ <span class="dropdown-text">Terraform Infrastructure as Code</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../courses/azure-devops/azure-cloud-services.html">
+ <span class="dropdown-text">Azure Cloud Services</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../courses/azure-devops/devsecops-monitoring.html">
+ <span class="dropdown-text">DevSecOps &amp; Monitoring</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-interview-questions" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+      <i class="bi bi-question-circle" role="img">
+</i> 
+ <span class="menu-text">Interview Questions</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-interview-questions">    
+        <li>
+    <a class="dropdown-item" href="../interview-questions/index.html">
+ <span class="dropdown-text">Section overview</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../interview-questions/full-stack-ai.html">
+ <span class="dropdown-text">Full Stack AI</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../interview-questions/azure-data-engineering.html">
+ <span class="dropdown-text">Azure Data Engineering</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../interview-questions/azure-devops.html">
+ <span class="dropdown-text">Azure DevOps</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-project-flows" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+      <i class="bi bi-kanban" role="img">
+</i> 
+ <span class="menu-text">Project Flows</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-project-flows">    
+        <li>
+    <a class="dropdown-item" href="../project-flows/index.html">
+ <span class="dropdown-text">Section overview</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../project-flows/full-stack-ai.html">
+ <span class="dropdown-text">Full Stack AI</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../project-flows/azure-data-engineering.html">
+ <span class="dropdown-text">Azure Data Engineering</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../project-flows/azure-devops.html">
+ <span class="dropdown-text">Azure DevOps</span></a>
+  </li>  
+    </ul>
+  </li>
 </ul>
-</li>
-<li class="nav-item dropdown">
-<a aria-expanded="false" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" id="nav-menu-azure-data-engineering" role="link">
-<i class="bi bi-database" role="img">
-</i>
-<span class="menu-text">Azure Data Engineering</span>
-</a>
-<ul aria-labelledby="nav-menu-azure-data-engineering" class="dropdown-menu">
-<li>
-<a class="dropdown-item" href="../courses/azure-data-engineering/index.html">
-<span class="dropdown-text">Program overview</span></a>
-</li>
-<li>
-<a class="dropdown-item" href="../courses/azure-data-engineering/python.html">
-<span class="dropdown-text">Python</span></a>
-</li>
-<li>
-<a class="dropdown-item" href="../courses/azure-data-engineering/sql.html">
-<span class="dropdown-text">SQL</span></a>
-</li>
-<li>
-<a class="dropdown-item" href="../courses/azure-data-engineering/fundamentals.html">
-<span class="dropdown-text">Data Engineering Fundamentals</span></a>
-</li>
-<li>
-<a class="dropdown-item" href="../courses/azure-data-engineering/azure-data-factory.html">
-<span class="dropdown-text">Azure Data Factory (ADF)</span></a>
-</li>
-<li>
-<a class="dropdown-item" href="../courses/azure-data-engineering/adls-gen2.html">
-<span class="dropdown-text">Azure Data Lake Storage Gen2</span></a>
-</li>
-<li>
-<a class="dropdown-item" href="../courses/azure-data-engineering/azure-databricks.html">
-<span class="dropdown-text">Azure Databricks</span></a>
-</li>
-<li>
-<a class="dropdown-item" href="../courses/azure-data-engineering/pyspark.html">
-<span class="dropdown-text">PySpark</span></a>
-</li>
-<li>
-<a class="dropdown-item" href="../courses/azure-data-engineering/azure-synapse.html">
-<span class="dropdown-text">Azure Synapse Analytics</span></a>
-</li>
-<li>
-<a class="dropdown-item" href="../courses/azure-data-engineering/microsoft-fabric.html">
-<span class="dropdown-text">Microsoft Fabric</span></a>
-</li>
-<li>
-<a class="dropdown-item" href="../courses/azure-data-engineering/delta-lake.html">
-<span class="dropdown-text">Delta Lake</span></a>
-</li>
-</ul>
-</li>
-<li class="nav-item dropdown">
-<a aria-expanded="false" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" id="nav-menu-azure-devops" role="link">
-<i class="bi bi-infinity" role="img">
-</i>
-<span class="menu-text">Azure DevOps</span>
-</a>
-<ul aria-labelledby="nav-menu-azure-devops" class="dropdown-menu">
-<li>
-<a class="dropdown-item" href="../courses/azure-devops/index.html">
-<span class="dropdown-text">Program overview</span></a>
-</li>
-<li>
-<a class="dropdown-item" href="../courses/azure-devops/linux-shell-scripting.html">
-<span class="dropdown-text">Linux &amp; Shell Scripting</span></a>
-</li>
-<li>
-<a class="dropdown-item" href="../courses/azure-devops/git-version-control.html">
-<span class="dropdown-text">Git &amp; Version Control</span></a>
-</li>
-<li>
-<a class="dropdown-item" href="../courses/azure-devops/azure-repos.html">
-<span class="dropdown-text">Azure Repos</span></a>
-</li>
-<li>
-<a class="dropdown-item" href="../courses/azure-devops/azure-pipelines.html">
-<span class="dropdown-text">Azure Pipelines (CI/CD)</span></a>
-</li>
-<li>
-<a class="dropdown-item" href="../courses/azure-devops/yaml-pipelines.html">
-<span class="dropdown-text">YAML Pipeline Development</span></a>
-</li>
-<li>
-<a class="dropdown-item" href="../courses/azure-devops/docker.html">
-<span class="dropdown-text">Docker &amp; Containerization</span></a>
-</li>
-<li>
-<a class="dropdown-item" href="../courses/azure-devops/kubernetes-aks.html">
-<span class="dropdown-text">Kubernetes &amp; AKS</span></a>
-</li>
-<li>
-<a class="dropdown-item" href="../courses/azure-devops/terraform.html">
-<span class="dropdown-text">Terraform Infrastructure as Code</span></a>
-</li>
-<li>
-<a class="dropdown-item" href="../courses/azure-devops/azure-cloud-services.html">
-<span class="dropdown-text">Azure Cloud Services</span></a>
-</li>
-<li>
-<a class="dropdown-item" href="../courses/azure-devops/devsecops-monitoring.html">
-<span class="dropdown-text">DevSecOps &amp; Monitoring</span></a>
-</li>
-</ul>
-</li>
-<li class="nav-item dropdown">
-<a aria-expanded="false" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" id="nav-menu-interview-questions" role="link">
-<i class="bi bi-question-circle" role="img">
-</i>
-<span class="menu-text">Interview Questions</span>
-</a>
-<ul aria-labelledby="nav-menu-interview-questions" class="dropdown-menu">
-<li>
-<a class="dropdown-item" href="../interview-questions/index.html">
-<span class="dropdown-text">Section overview</span></a>
-</li>
-<li>
-<a class="dropdown-item" href="../interview-questions/full-stack-ai.html">
-<span class="dropdown-text">Full Stack AI</span></a>
-</li>
-<li>
-<a class="dropdown-item" href="../interview-questions/azure-data-engineering.html">
-<span class="dropdown-text">Azure Data Engineering</span></a>
-</li>
-<li>
-<a class="dropdown-item" href="../interview-questions/azure-devops.html">
-<span class="dropdown-text">Azure DevOps</span></a>
-</li>
-</ul>
-</li>
-<li class="nav-item dropdown">
-<a aria-expanded="false" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" id="nav-menu-project-flows" role="link">
-<i class="bi bi-kanban" role="img">
-</i>
-<span class="menu-text">Project Flows</span>
-</a>
-<ul aria-labelledby="nav-menu-project-flows" class="dropdown-menu">
-<li>
-<a class="dropdown-item" href="../project-flows/index.html">
-<span class="dropdown-text">Section overview</span></a>
-</li>
-<li>
-<a class="dropdown-item" href="../project-flows/full-stack-ai.html">
-<span class="dropdown-text">Full Stack AI</span></a>
-</li>
-<li>
-<a class="dropdown-item" href="../project-flows/azure-data-engineering.html">
-<span class="dropdown-text">Azure Data Engineering</span></a>
-</li>
-<li>
-<a class="dropdown-item" href="../project-flows/azure-devops.html">
-<span class="dropdown-text">Azure DevOps</span></a>
-</li>
-</ul>
-</li>
-</ul>
-</div> <!-- /navcollapse -->
-<div class="quarto-navbar-tools">
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
 </div>
-</div> <!-- /container-fluid -->
-</nav>
+      </div> <!-- /container-fluid -->
+    </nav>
 </header>
 <!-- content -->
-<div class="quarto-container page-columns page-rows-contents page-layout-full page-navbar" id="quarto-content">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
+    
 <!-- main -->
 <main class="content column-page" id="quarto-document-content">
-<header class="quarto-title-block default" id="title-block-header">
+
+<header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
 <h1 class="title">Azure Data Engineering</h1>
 </div>
+
 <div>
-<div class="description">
+  <div class="description">
     Complete notebook syllabus for Azure Data Engineering in Interview Questions.
   </div>
 </div>
-<div class="quarto-title-meta">
-<div>
-<div class="quarto-title-meta-heading">Author</div>
-<div class="quarto-title-meta-contents">
-<p>Edukron Notes </p>
-</div>
-</div>
-<div>
-<div class="quarto-title-meta-heading">Published</div>
-<div class="quarto-title-meta-contents">
-<p class="date">September 14, 2026</p>
-</div>
-</div>
-</div>
+
+
+<div class="quarto-title-meta column-page">
+
+    
+  
+    
+  </div>
+  
+
+
 </header>
+
+
 <div class="course-workspace notebook-chrome">
 <div class="notebook-toolbar">
-<span class="notebook-file"><i aria-hidden="true" class="bi bi-journal-code"></i><strong>azure-data-engineering.ipynb</strong></span>
-<span class="notebook-status"><i aria-hidden="true" class="bi bi-check-circle-fill"></i> Trusted</span>
-<span class="notebook-kernel"><i aria-hidden="true" class="bi bi-diagram-3"></i> Learning path</span>
+<p><span class="notebook-file"><i class="bi bi-journal-code" aria-hidden="true"></i><strong>azure-data-engineering.ipynb</strong></span> <span class="notebook-status"><i class="bi bi-check-circle-fill" aria-hidden="true"></i> Trusted</span> <span class="notebook-kernel"><i class="bi bi-diagram-3" aria-hidden="true"></i> Learning path</span></p>
 </div>
 <div class="course-workspace-hero">
 <span class="overview-kicker">Interview Questions</span>
-<h1>Azure Data Engineering</h1>
-<p>A complete notebook-first syllabus organized from foundations to applied delivery. Every lesson combines clear notes, a worked pattern, executable validation, a guided lab, a solution blueprint, practice, and knowledge checks.</p>
-<div class="course-tags"><span><i class="bi bi-signpost-split"></i> Foundation to advanced</span><span><i class="bi bi-code-square"></i> Hands-on practice</span><span><i class="bi bi-patch-check"></i> Review ready</span></div>
-<p class="course-start"><a class="btn btn-primary" href="azure-data-engineering/177-data-engineering-and-sql-interviews/01-data-architecture.html"><i class="bi bi-play-fill"></i> Start the first notebook</a></p>
+<h1>
+Azure Data Engineering
+</h1>
+<p>
+A complete notebook-first syllabus organized from foundations to applied delivery. Every lesson combines clear notes, a worked pattern, executable validation, a guided lab, a solution blueprint, practice, and knowledge checks.
+</p>
+<div class="course-tags">
+<span><i class="bi bi-signpost-split"></i> Foundation to advanced</span><span><i class="bi bi-code-square"></i> Hands-on practice</span><span><i class="bi bi-patch-check"></i> Review ready</span>
+</div>
+<p class="course-start">
+<a class="btn btn-primary" href="azure-data-engineering/177-data-engineering-and-sql-interviews/01-data-architecture.html"><i class="bi bi-play-fill"></i> Start the first notebook</a>
+</p>
 </div>
 </div>
-<section class="level2" id="how-to-use-this-course">
+<section id="how-to-use-this-course" class="level2">
 <h2 class="anchored" data-anchor-id="how-to-use-this-course">How to use this course</h2>
 <p>Work through lessons in order for a complete pathway, or open a topic for focused reference. Type or adapt the examples, complete the guided lab before reading its blueprint, and preserve your test evidence as a portfolio artifact. Cloud and infrastructure examples are safe, copy-ready teaching patterns; execute them in your own sandbox only after substituting approved identities, names, and policies.</p>
-</section>
 <section class="learning-plan-section" id="learning-plan">
-<div class="path-section-heading"><div><span class="overview-kicker">Recommended schedule</span><h2>Learning plan</h2><p>A practical schedule for completing Azure Data Engineering with retained evidence, not passive reading.</p></div></div>
-<div class="plan-metrics">
-<div><i class="bi bi-calendar3"></i><span>Standard path</span><strong>6 weeks</strong><small>One topic each week, then integration</small></div>
-<div><i class="bi bi-lightning-charge"></i><span>Intensive path</span><strong>4 weeks</strong><small>Two topics each week, then integration</small></div>
-<div><i class="bi bi-clock"></i><span>Weekly commitment</span><strong>6–8 hours</strong><small>Study, code, practice, and reflection</small></div>
-<div><i class="bi bi-folder-check"></i><span>Finish line</span><strong>Portfolio evidence</strong><small>Tests, decisions, notes, and a capstone</small></div>
+<div class="path-section-heading">
+<div>
+<span class="overview-kicker">Recommended schedule</span>
+<h2 class="anchored">
+Learning plan
+</h2>
+<p>
+A practical schedule for completing Azure Data Engineering with retained evidence, not passive reading.
+</p>
 </div>
-<div aria-label="Weekly study loop" class="study-loop">
-<div><span>01</span><i class="bi bi-book"></i><strong>Understand</strong><small>Read the notes and explain the mental model.</small></div>
-<i aria-hidden="true" class="bi bi-arrow-right study-loop-arrow"></i>
-<div><span>02</span><i class="bi bi-play-circle"></i><strong>Run</strong><small>Execute the example and inspect every result.</small></div>
-<i aria-hidden="true" class="bi bi-arrow-right study-loop-arrow"></i>
-<div><span>03</span><i class="bi bi-tools"></i><strong>Adapt</strong><small>Change the inputs and complete the guided lab.</small></div>
-<i aria-hidden="true" class="bi bi-arrow-right study-loop-arrow"></i>
-<div><span>04</span><i class="bi bi-patch-check"></i><strong>Prove</strong><small>Pass checks and retain reviewable evidence.</small></div>
+</div>
+<div class="plan-metrics">
+<div>
+<i class="bi bi-calendar3"></i><span>Standard path</span><strong>6 weeks</strong><small>One topic each week, then integration</small>
+</div>
+<div>
+<i class="bi bi-lightning-charge"></i><span>Intensive path</span><strong>4 weeks</strong><small>Two topics each week, then integration</small>
+</div>
+<div>
+<i class="bi bi-clock"></i><span>Weekly commitment</span><strong>6–8 hours</strong><small>Study, code, practice, and reflection</small>
+</div>
+<div>
+<i class="bi bi-folder-check"></i><span>Finish line</span><strong>Portfolio evidence</strong><small>Tests, decisions, notes, and a capstone</small>
+</div>
+</div>
+<div class="study-loop" aria-label="Weekly study loop">
+<div>
+<span>01</span><i class="bi bi-book"></i><strong>Understand</strong><small>Read the notes and explain the mental model.</small>
+</div>
+<i class="bi bi-arrow-right study-loop-arrow" aria-hidden="true"></i>
+<div>
+<span>02</span><i class="bi bi-play-circle"></i><strong>Run</strong><small>Execute the example and inspect every result.</small>
+</div>
+<i class="bi bi-arrow-right study-loop-arrow" aria-hidden="true"></i>
+<div>
+<span>03</span><i class="bi bi-tools"></i><strong>Adapt</strong><small>Change the inputs and complete the guided lab.</small>
+</div>
+<i class="bi bi-arrow-right study-loop-arrow" aria-hidden="true"></i>
+<div>
+<span>04</span><i class="bi bi-patch-check"></i><strong>Prove</strong><small>Pass checks and retain reviewable evidence.</small>
+</div>
 </div>
 <div class="plan-weeks">
 <details class="plan-week plan-topic-week" open="">
-<summary><span class="plan-week-number">Week 01</span><strong>Data engineering and SQL interviews</strong><span class="plan-stage">Foundation</span></summary>
+<summary>
+<span class="plan-week-number">Week 01</span><strong>Data engineering and SQL interviews</strong><span class="plan-stage">Foundation</span>
+</summary>
 <div class="plan-week-body">
-<div><span>Learn</span><p>Begin with <a href="azure-data-engineering/177-data-engineering-and-sql-interviews/01-data-architecture.html">Data architecture</a> and write the core mental model in your own words.</p></div>
-<div><span>Practice</span><p>Run, change, and explain the worked patterns across the middle lessons. Keep test evidence and questions.</p></div>
-<div><span>Demonstrate</span><p>Complete <a href="azure-data-engineering/177-data-engineering-and-sql-interviews/10-mock-data-engineering-interview.html">Mock data-engineering interview</a> without copying the solution blueprint first.</p></div>
+<div>
+<span>Learn</span>
+<p>
+Begin with <a href="azure-data-engineering/177-data-engineering-and-sql-interviews/01-data-architecture.html">Data architecture</a> and write the core mental model in your own words.
+</p>
 </div>
-</details><details class="plan-week plan-topic-week">
-<summary><span class="plan-week-number">Week 02</span><strong>Azure storage and orchestration interviews</strong><span class="plan-stage">Core skills</span></summary>
+<div>
+<span>Practice</span>
+<p>
+Run, change, and explain the worked patterns across the middle lessons. Keep test evidence and questions.
+</p>
+</div>
+<div>
+<span>Demonstrate</span>
+<p>
+Complete <a href="azure-data-engineering/177-data-engineering-and-sql-interviews/10-mock-data-engineering-interview.html">Mock data-engineering interview</a> without copying the solution blueprint first.
+</p>
+</div>
+</div>
+</details>
+<details class="plan-week plan-topic-week">
+<summary>
+<span class="plan-week-number">Week 02</span><strong>Azure storage and orchestration interviews</strong><span class="plan-stage">Core skills</span>
+</summary>
 <div class="plan-week-body">
-<div><span>Learn</span><p>Begin with <a href="azure-data-engineering/178-azure-storage-and-orchestration-interviews/01-adls-architecture.html">ADLS architecture</a> and write the core mental model in your own words.</p></div>
-<div><span>Practice</span><p>Run, change, and explain the worked patterns across the middle lessons. Keep test evidence and questions.</p></div>
-<div><span>Demonstrate</span><p>Complete <a href="azure-data-engineering/178-azure-storage-and-orchestration-interviews/10-mock-adf-and-adls-interview.html">Mock ADF-and-ADLS interview</a> without copying the solution blueprint first.</p></div>
+<div>
+<span>Learn</span>
+<p>
+Begin with <a href="azure-data-engineering/178-azure-storage-and-orchestration-interviews/01-adls-architecture.html">ADLS architecture</a> and write the core mental model in your own words.
+</p>
 </div>
-</details><details class="plan-week plan-topic-week">
-<summary><span class="plan-week-number">Week 03</span><strong>Spark Databricks and Delta interviews</strong><span class="plan-stage">Core skills</span></summary>
+<div>
+<span>Practice</span>
+<p>
+Run, change, and explain the worked patterns across the middle lessons. Keep test evidence and questions.
+</p>
+</div>
+<div>
+<span>Demonstrate</span>
+<p>
+Complete <a href="azure-data-engineering/178-azure-storage-and-orchestration-interviews/10-mock-adf-and-adls-interview.html">Mock ADF-and-ADLS interview</a> without copying the solution blueprint first.
+</p>
+</div>
+</div>
+</details>
+<details class="plan-week plan-topic-week">
+<summary>
+<span class="plan-week-number">Week 03</span><strong>Spark Databricks and Delta interviews</strong><span class="plan-stage">Core skills</span>
+</summary>
 <div class="plan-week-body">
-<div><span>Learn</span><p>Begin with <a href="azure-data-engineering/179-spark-databricks-and-delta-interviews/01-spark-architecture.html">Spark architecture</a> and write the core mental model in your own words.</p></div>
-<div><span>Practice</span><p>Run, change, and explain the worked patterns across the middle lessons. Keep test evidence and questions.</p></div>
-<div><span>Demonstrate</span><p>Complete <a href="azure-data-engineering/179-spark-databricks-and-delta-interviews/10-mock-lakehouse-interview.html">Mock lakehouse interview</a> without copying the solution blueprint first.</p></div>
+<div>
+<span>Learn</span>
+<p>
+Begin with <a href="azure-data-engineering/179-spark-databricks-and-delta-interviews/01-spark-architecture.html">Spark architecture</a> and write the core mental model in your own words.
+</p>
 </div>
-</details><details class="plan-week plan-topic-week">
-<summary><span class="plan-week-number">Week 04</span><strong>Synapse and Fabric interviews</strong><span class="plan-stage">Applied delivery</span></summary>
+<div>
+<span>Practice</span>
+<p>
+Run, change, and explain the worked patterns across the middle lessons. Keep test evidence and questions.
+</p>
+</div>
+<div>
+<span>Demonstrate</span>
+<p>
+Complete <a href="azure-data-engineering/179-spark-databricks-and-delta-interviews/10-mock-lakehouse-interview.html">Mock lakehouse interview</a> without copying the solution blueprint first.
+</p>
+</div>
+</div>
+</details>
+<details class="plan-week plan-topic-week">
+<summary>
+<span class="plan-week-number">Week 04</span><strong>Synapse and Fabric interviews</strong><span class="plan-stage">Applied delivery</span>
+</summary>
 <div class="plan-week-body">
-<div><span>Learn</span><p>Begin with <a href="azure-data-engineering/180-synapse-and-fabric-interviews/01-synapse-architecture.html">Synapse architecture</a> and write the core mental model in your own words.</p></div>
-<div><span>Practice</span><p>Run, change, and explain the worked patterns across the middle lessons. Keep test evidence and questions.</p></div>
-<div><span>Demonstrate</span><p>Complete <a href="azure-data-engineering/180-synapse-and-fabric-interviews/10-mock-analytics-platform-interview.html">Mock analytics-platform interview</a> without copying the solution blueprint first.</p></div>
+<div>
+<span>Learn</span>
+<p>
+Begin with <a href="azure-data-engineering/180-synapse-and-fabric-interviews/01-synapse-architecture.html">Synapse architecture</a> and write the core mental model in your own words.
+</p>
 </div>
-</details><details class="plan-week plan-topic-week">
-<summary><span class="plan-week-number">Week 05</span><strong>Azure data-platform system design</strong><span class="plan-stage">Integration &amp; capstone</span></summary>
+<div>
+<span>Practice</span>
+<p>
+Run, change, and explain the worked patterns across the middle lessons. Keep test evidence and questions.
+</p>
+</div>
+<div>
+<span>Demonstrate</span>
+<p>
+Complete <a href="azure-data-engineering/180-synapse-and-fabric-interviews/10-mock-analytics-platform-interview.html">Mock analytics-platform interview</a> without copying the solution blueprint first.
+</p>
+</div>
+</div>
+</details>
+<details class="plan-week plan-topic-week">
+<summary>
+<span class="plan-week-number">Week 05</span><strong>Azure data-platform system design</strong><span class="plan-stage">Integration &amp; capstone</span>
+</summary>
 <div class="plan-week-body">
-<div><span>Learn</span><p>Begin with <a href="azure-data-engineering/181-azure-data-platform-system-design/01-requirement-discovery.html">Requirement discovery</a> and write the core mental model in your own words.</p></div>
-<div><span>Practice</span><p>Run, change, and explain the worked patterns across the middle lessons. Keep test evidence and questions.</p></div>
-<div><span>Demonstrate</span><p>Complete <a href="azure-data-engineering/181-azure-data-platform-system-design/10-azure-data-interview-capstone.html">Azure data interview capstone</a> without copying the solution blueprint first.</p></div>
+<div>
+<span>Learn</span>
+<p>
+Begin with <a href="azure-data-engineering/181-azure-data-platform-system-design/01-requirement-discovery.html">Requirement discovery</a> and write the core mental model in your own words.
+</p>
 </div>
-</details><div class="plan-integration-week">
+<div>
+<span>Practice</span>
+<p>
+Run, change, and explain the worked patterns across the middle lessons. Keep test evidence and questions.
+</p>
+</div>
+<div>
+<span>Demonstrate</span>
+<p>
+Complete <a href="azure-data-engineering/181-azure-data-platform-system-design/10-azure-data-interview-capstone.html">Azure data interview capstone</a> without copying the solution blueprint first.
+</p>
+</div>
+</div>
+</details>
+<div class="plan-integration-week">
 <span class="plan-week-number">Week 06</span>
-<div><strong>Integration, review, and portfolio evidence</strong><p>Connect the topic artifacts, close weak areas, and publish one reviewable Azure Data Engineering outcome. Use <a href="azure-data-engineering/181-azure-data-platform-system-design/10-azure-data-interview-capstone.html">Azure data interview capstone</a> as the final checkpoint.</p></div>
-<i aria-hidden="true" class="bi bi-trophy"></i>
+<div>
+<strong>Integration, review, and portfolio evidence</strong>
+<p>
+Connect the topic artifacts, close weak areas, and publish one reviewable Azure Data Engineering outcome. Use <a href="azure-data-engineering/181-azure-data-platform-system-design/10-azure-data-interview-capstone.html">Azure data interview capstone</a> as the final checkpoint.
+</p>
+</div>
+<p><i class="bi bi-trophy" aria-hidden="true"></i></p>
 </div>
 </div>
-</section><section class="learning-path-section" id="full-learning-path">
-<div class="path-section-heading"><div><span class="overview-kicker">Ordered progression</span><h2>Full learning path</h2><p>Follow every stage in sequence. Each stage links directly to its first notebook and ends with a concrete mastery checkpoint.</p></div><span class="path-route"><i class="bi bi-signpost-2"></i> Interview Questions → Azure Data Engineering</span></div>
+</section>
+<section class="learning-path-section" id="full-learning-path">
+<div class="path-section-heading">
+<div>
+<span class="overview-kicker">Ordered progression</span>
+<h2 class="anchored">
+Full learning path
+</h2>
+<p>
+Follow every stage in sequence. Each stage links directly to its first notebook and ends with a concrete mastery checkpoint.
+</p>
+</div>
+<span class="path-route"><i class="bi bi-signpost-2"></i> Interview Questions → Azure Data Engineering</span>
+</div>
 <div class="learning-path">
-<a class="learning-path-step" data-topic="177" href="azure-data-engineering/177-data-engineering-and-sql-interviews/01-data-architecture.html">
-<span class="path-index">01</span>
-<span class="path-step-copy"><span class="path-phase">Foundation · Topic 177</span><strong>Data engineering and SQL interviews</strong><small>Enter with Data architecture. Demonstrate mastery through Mock data-engineering interview.</small></span>
-<i aria-hidden="true" class="bi bi-arrow-right"></i>
-</a><a class="learning-path-step" data-topic="178" href="azure-data-engineering/178-azure-storage-and-orchestration-interviews/01-adls-architecture.html">
-<span class="path-index">02</span>
-<span class="path-step-copy"><span class="path-phase">Core skills · Topic 178</span><strong>Azure storage and orchestration interviews</strong><small>Enter with ADLS architecture. Demonstrate mastery through Mock ADF-and-ADLS interview.</small></span>
-<i aria-hidden="true" class="bi bi-arrow-right"></i>
-</a><a class="learning-path-step" data-topic="179" href="azure-data-engineering/179-spark-databricks-and-delta-interviews/01-spark-architecture.html">
-<span class="path-index">03</span>
-<span class="path-step-copy"><span class="path-phase">Core skills · Topic 179</span><strong>Spark Databricks and Delta interviews</strong><small>Enter with Spark architecture. Demonstrate mastery through Mock lakehouse interview.</small></span>
-<i aria-hidden="true" class="bi bi-arrow-right"></i>
-</a><a class="learning-path-step" data-topic="180" href="azure-data-engineering/180-synapse-and-fabric-interviews/01-synapse-architecture.html">
-<span class="path-index">04</span>
-<span class="path-step-copy"><span class="path-phase">Applied delivery · Topic 180</span><strong>Synapse and Fabric interviews</strong><small>Enter with Synapse architecture. Demonstrate mastery through Mock analytics-platform interview.</small></span>
-<i aria-hidden="true" class="bi bi-arrow-right"></i>
-</a><a class="learning-path-step" data-topic="181" href="azure-data-engineering/181-azure-data-platform-system-design/01-requirement-discovery.html">
-<span class="path-index">05</span>
-<span class="path-step-copy"><span class="path-phase">Integration &amp; capstone · Topic 181</span><strong>Azure data-platform system design</strong><small>Enter with Requirement discovery. Demonstrate mastery through Azure data interview capstone.</small></span>
-<i aria-hidden="true" class="bi bi-arrow-right"></i>
-</a>
+<p><a class="learning-path-step" data-topic="177" href="azure-data-engineering/177-data-engineering-and-sql-interviews/01-data-architecture.html"> <span class="path-index">01</span> <span class="path-step-copy"><span class="path-phase">Foundation · Topic 177</span><strong>Data engineering and SQL interviews</strong><small>Enter with Data architecture. Demonstrate mastery through Mock data-engineering interview.</small></span> <i class="bi bi-arrow-right" aria-hidden="true"></i> </a><a class="learning-path-step" data-topic="178" href="azure-data-engineering/178-azure-storage-and-orchestration-interviews/01-adls-architecture.html"> <span class="path-index">02</span> <span class="path-step-copy"><span class="path-phase">Core skills · Topic 178</span><strong>Azure storage and orchestration interviews</strong><small>Enter with ADLS architecture. Demonstrate mastery through Mock ADF-and-ADLS interview.</small></span> <i class="bi bi-arrow-right" aria-hidden="true"></i> </a><a class="learning-path-step" data-topic="179" href="azure-data-engineering/179-spark-databricks-and-delta-interviews/01-spark-architecture.html"> <span class="path-index">03</span> <span class="path-step-copy"><span class="path-phase">Core skills · Topic 179</span><strong>Spark Databricks and Delta interviews</strong><small>Enter with Spark architecture. Demonstrate mastery through Mock lakehouse interview.</small></span> <i class="bi bi-arrow-right" aria-hidden="true"></i> </a><a class="learning-path-step" data-topic="180" href="azure-data-engineering/180-synapse-and-fabric-interviews/01-synapse-architecture.html"> <span class="path-index">04</span> <span class="path-step-copy"><span class="path-phase">Applied delivery · Topic 180</span><strong>Synapse and Fabric interviews</strong><small>Enter with Synapse architecture. Demonstrate mastery through Mock analytics-platform interview.</small></span> <i class="bi bi-arrow-right" aria-hidden="true"></i> </a><a class="learning-path-step" data-topic="181" href="azure-data-engineering/181-azure-data-platform-system-design/01-requirement-discovery.html"> <span class="path-index">05</span> <span class="path-step-copy"><span class="path-phase">Integration &amp; capstone · Topic 181</span><strong>Azure data-platform system design</strong><small>Enter with Requirement discovery. Demonstrate mastery through Azure data interview capstone.</small></span> <i class="bi bi-arrow-right" aria-hidden="true"></i> </a></p>
 </div>
-<div class="path-finish"><span><i class="bi bi-trophy-fill"></i></span><div><small>Completion milestone</small><strong>Connect the complete Azure Data Engineering workflow</strong><p>Combine evidence from every stage and finish with Azure data interview capstone. You should be able to explain the architecture, reproduce the core workflow, diagnose failure, and defend the main tradeoffs.</p></div></div>
-</section><div class="syllabus-heading" id="notebook-syllabus">
-<div><span class="overview-kicker">Course contents</span><h2>Notebook syllabus</h2><p>Open a topic to browse its lessons, or search the complete course by concept.</p></div>
-<label class="syllabus-search" for="interview-questions-azure-data-engineering-catalog-search"><i aria-hidden="true" class="bi bi-search"></i><input aria-label="Search the Azure Data Engineering syllabus" autocomplete="off" id="interview-questions-azure-data-engineering-catalog-search" placeholder="Find a topic or lesson" type="search"/></label>
+<div class="path-finish">
+<span><i class="bi bi-trophy-fill"></i></span>
+<div>
+<small>Completion milestone</small><strong>Connect the complete Azure Data Engineering workflow</strong>
+<p>
+Combine evidence from every stage and finish with Azure data interview capstone. You should be able to explain the architecture, reproduce the core workflow, diagnose failure, and defend the main tradeoffs.
+</p>
 </div>
-<div class="curriculum-catalog" id="interview-questions-azure-data-engineering-catalog">
+</div>
+</section>
+<div id="notebook-syllabus" class="syllabus-heading">
+<div>
+<span class="overview-kicker">Course contents</span>
+<h2 class="anchored">
+Notebook syllabus
+</h2>
+<p>
+Open a topic to browse its lessons, or search the complete course by concept.
+</p>
+</div>
+<p><label class="syllabus-search" for="interview-questions-azure-data-engineering-catalog-search"><i class="bi bi-search" aria-hidden="true"></i><input id="interview-questions-azure-data-engineering-catalog-search" type="search" placeholder="Find a topic or lesson" autocomplete="off" aria-label="Search the Azure Data Engineering syllabus"></label></p>
+</div>
+<div id="interview-questions-azure-data-engineering-catalog" class="curriculum-catalog">
 <details class="curriculum-topic" open="">
-<summary><span class="topic-number">Topic 177</span><strong>Data engineering and SQL interviews</strong></summary>
+<summary>
+<span class="topic-number">Topic 177</span><strong>Data engineering and SQL interviews</strong>
+</summary>
 <div class="topic-lessons">
-<a class="topic-lesson-link" href="azure-data-engineering/177-data-engineering-and-sql-interviews/01-data-architecture.html"><span>177.01</span><strong>Data architecture</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="azure-data-engineering/177-data-engineering-and-sql-interviews/02-etl-versus-elt.html"><span>177.02</span><strong>ETL versus ELT</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="azure-data-engineering/177-data-engineering-and-sql-interviews/03-batch-and-streaming.html"><span>177.03</span><strong>Batch and streaming</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="azure-data-engineering/177-data-engineering-and-sql-interviews/04-dimensional-modeling.html"><span>177.04</span><strong>Dimensional modeling</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="azure-data-engineering/177-data-engineering-and-sql-interviews/05-sql-transformations.html"><span>177.05</span><strong>SQL transformations</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="azure-data-engineering/177-data-engineering-and-sql-interviews/06-data-quality.html"><span>177.06</span><strong>Data quality</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="azure-data-engineering/177-data-engineering-and-sql-interviews/07-incremental-loading.html"><span>177.07</span><strong>Incremental loading</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="azure-data-engineering/177-data-engineering-and-sql-interviews/08-reliability-scenarios.html"><span>177.08</span><strong>Reliability scenarios</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="azure-data-engineering/177-data-engineering-and-sql-interviews/09-performance-tuning.html"><span>177.09</span><strong>Performance tuning</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="azure-data-engineering/177-data-engineering-and-sql-interviews/10-mock-data-engineering-interview.html"><span>177.10</span><strong>Mock data-engineering interview</strong><i class="bi bi-arrow-right"></i></a>
+<p><a class="topic-lesson-link" href="azure-data-engineering/177-data-engineering-and-sql-interviews/01-data-architecture.html"><span>177.01</span><strong>Data architecture</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="azure-data-engineering/177-data-engineering-and-sql-interviews/02-etl-versus-elt.html"><span>177.02</span><strong>ETL versus ELT</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="azure-data-engineering/177-data-engineering-and-sql-interviews/03-batch-and-streaming.html"><span>177.03</span><strong>Batch and streaming</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="azure-data-engineering/177-data-engineering-and-sql-interviews/04-dimensional-modeling.html"><span>177.04</span><strong>Dimensional modeling</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="azure-data-engineering/177-data-engineering-and-sql-interviews/05-sql-transformations.html"><span>177.05</span><strong>SQL transformations</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="azure-data-engineering/177-data-engineering-and-sql-interviews/06-data-quality.html"><span>177.06</span><strong>Data quality</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="azure-data-engineering/177-data-engineering-and-sql-interviews/07-incremental-loading.html"><span>177.07</span><strong>Incremental loading</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="azure-data-engineering/177-data-engineering-and-sql-interviews/08-reliability-scenarios.html"><span>177.08</span><strong>Reliability scenarios</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="azure-data-engineering/177-data-engineering-and-sql-interviews/09-performance-tuning.html"><span>177.09</span><strong>Performance tuning</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="azure-data-engineering/177-data-engineering-and-sql-interviews/10-mock-data-engineering-interview.html"><span>177.10</span><strong>Mock data-engineering interview</strong><i class="bi bi-arrow-right"></i></a></p>
 </div>
 </details>
 <details class="curriculum-topic">
-<summary><span class="topic-number">Topic 178</span><strong>Azure storage and orchestration interviews</strong></summary>
+<summary>
+<span class="topic-number">Topic 178</span><strong>Azure storage and orchestration interviews</strong>
+</summary>
 <div class="topic-lessons">
-<a class="topic-lesson-link" href="azure-data-engineering/178-azure-storage-and-orchestration-interviews/01-adls-architecture.html"><span>178.01</span><strong>ADLS architecture</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="azure-data-engineering/178-azure-storage-and-orchestration-interviews/02-storage-security.html"><span>178.02</span><strong>Storage security</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="azure-data-engineering/178-azure-storage-and-orchestration-interviews/03-adf-components.html"><span>178.03</span><strong>ADF components</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="azure-data-engineering/178-azure-storage-and-orchestration-interviews/04-copy-activity.html"><span>178.04</span><strong>Copy Activity</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="azure-data-engineering/178-azure-storage-and-orchestration-interviews/05-metadata-driven-pipelines.html"><span>178.05</span><strong>Metadata-driven pipelines</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="azure-data-engineering/178-azure-storage-and-orchestration-interviews/06-triggers.html"><span>178.06</span><strong>Triggers</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="azure-data-engineering/178-azure-storage-and-orchestration-interviews/07-integration-runtime.html"><span>178.07</span><strong>Integration Runtime</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="azure-data-engineering/178-azure-storage-and-orchestration-interviews/08-managed-identity.html"><span>178.08</span><strong>Managed identity</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="azure-data-engineering/178-azure-storage-and-orchestration-interviews/09-monitoring-scenarios.html"><span>178.09</span><strong>Monitoring scenarios</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="azure-data-engineering/178-azure-storage-and-orchestration-interviews/10-mock-adf-and-adls-interview.html"><span>178.10</span><strong>Mock ADF-and-ADLS interview</strong><i class="bi bi-arrow-right"></i></a>
+<p><a class="topic-lesson-link" href="azure-data-engineering/178-azure-storage-and-orchestration-interviews/01-adls-architecture.html"><span>178.01</span><strong>ADLS architecture</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="azure-data-engineering/178-azure-storage-and-orchestration-interviews/02-storage-security.html"><span>178.02</span><strong>Storage security</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="azure-data-engineering/178-azure-storage-and-orchestration-interviews/03-adf-components.html"><span>178.03</span><strong>ADF components</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="azure-data-engineering/178-azure-storage-and-orchestration-interviews/04-copy-activity.html"><span>178.04</span><strong>Copy Activity</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="azure-data-engineering/178-azure-storage-and-orchestration-interviews/05-metadata-driven-pipelines.html"><span>178.05</span><strong>Metadata-driven pipelines</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="azure-data-engineering/178-azure-storage-and-orchestration-interviews/06-triggers.html"><span>178.06</span><strong>Triggers</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="azure-data-engineering/178-azure-storage-and-orchestration-interviews/07-integration-runtime.html"><span>178.07</span><strong>Integration Runtime</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="azure-data-engineering/178-azure-storage-and-orchestration-interviews/08-managed-identity.html"><span>178.08</span><strong>Managed identity</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="azure-data-engineering/178-azure-storage-and-orchestration-interviews/09-monitoring-scenarios.html"><span>178.09</span><strong>Monitoring scenarios</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="azure-data-engineering/178-azure-storage-and-orchestration-interviews/10-mock-adf-and-adls-interview.html"><span>178.10</span><strong>Mock ADF-and-ADLS interview</strong><i class="bi bi-arrow-right"></i></a></p>
 </div>
 </details>
 <details class="curriculum-topic">
-<summary><span class="topic-number">Topic 179</span><strong>Spark Databricks and Delta interviews</strong></summary>
+<summary>
+<span class="topic-number">Topic 179</span><strong>Spark Databricks and Delta interviews</strong>
+</summary>
 <div class="topic-lessons">
-<a class="topic-lesson-link" href="azure-data-engineering/179-spark-databricks-and-delta-interviews/01-spark-architecture.html"><span>179.01</span><strong>Spark architecture</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="azure-data-engineering/179-spark-databricks-and-delta-interviews/02-dataframe-operations.html"><span>179.02</span><strong>DataFrame operations</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="azure-data-engineering/179-spark-databricks-and-delta-interviews/03-joins-and-shuffles.html"><span>179.03</span><strong>Joins and shuffles</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="azure-data-engineering/179-spark-databricks-and-delta-interviews/04-partition-tuning.html"><span>179.04</span><strong>Partition tuning</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="azure-data-engineering/179-spark-databricks-and-delta-interviews/05-structured-streaming.html"><span>179.05</span><strong>Structured Streaming</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="azure-data-engineering/179-spark-databricks-and-delta-interviews/06-databricks-workflows.html"><span>179.06</span><strong>Databricks workflows</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="azure-data-engineering/179-spark-databricks-and-delta-interviews/07-delta-transactions.html"><span>179.07</span><strong>Delta transactions</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="azure-data-engineering/179-spark-databricks-and-delta-interviews/08-unity-catalog.html"><span>179.08</span><strong>Unity Catalog</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="azure-data-engineering/179-spark-databricks-and-delta-interviews/09-performance-scenarios.html"><span>179.09</span><strong>Performance scenarios</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="azure-data-engineering/179-spark-databricks-and-delta-interviews/10-mock-lakehouse-interview.html"><span>179.10</span><strong>Mock lakehouse interview</strong><i class="bi bi-arrow-right"></i></a>
+<p><a class="topic-lesson-link" href="azure-data-engineering/179-spark-databricks-and-delta-interviews/01-spark-architecture.html"><span>179.01</span><strong>Spark architecture</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="azure-data-engineering/179-spark-databricks-and-delta-interviews/02-dataframe-operations.html"><span>179.02</span><strong>DataFrame operations</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="azure-data-engineering/179-spark-databricks-and-delta-interviews/03-joins-and-shuffles.html"><span>179.03</span><strong>Joins and shuffles</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="azure-data-engineering/179-spark-databricks-and-delta-interviews/04-partition-tuning.html"><span>179.04</span><strong>Partition tuning</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="azure-data-engineering/179-spark-databricks-and-delta-interviews/05-structured-streaming.html"><span>179.05</span><strong>Structured Streaming</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="azure-data-engineering/179-spark-databricks-and-delta-interviews/06-databricks-workflows.html"><span>179.06</span><strong>Databricks workflows</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="azure-data-engineering/179-spark-databricks-and-delta-interviews/07-delta-transactions.html"><span>179.07</span><strong>Delta transactions</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="azure-data-engineering/179-spark-databricks-and-delta-interviews/08-unity-catalog.html"><span>179.08</span><strong>Unity Catalog</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="azure-data-engineering/179-spark-databricks-and-delta-interviews/09-performance-scenarios.html"><span>179.09</span><strong>Performance scenarios</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="azure-data-engineering/179-spark-databricks-and-delta-interviews/10-mock-lakehouse-interview.html"><span>179.10</span><strong>Mock lakehouse interview</strong><i class="bi bi-arrow-right"></i></a></p>
 </div>
 </details>
 <details class="curriculum-topic">
-<summary><span class="topic-number">Topic 180</span><strong>Synapse and Fabric interviews</strong></summary>
+<summary>
+<span class="topic-number">Topic 180</span><strong>Synapse and Fabric interviews</strong>
+</summary>
 <div class="topic-lessons">
-<a class="topic-lesson-link" href="azure-data-engineering/180-synapse-and-fabric-interviews/01-synapse-architecture.html"><span>180.01</span><strong>Synapse architecture</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="azure-data-engineering/180-synapse-and-fabric-interviews/02-serverless-sql.html"><span>180.02</span><strong>Serverless SQL</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="azure-data-engineering/180-synapse-and-fabric-interviews/03-dedicated-pools.html"><span>180.03</span><strong>Dedicated pools</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="azure-data-engineering/180-synapse-and-fabric-interviews/04-synapse-spark.html"><span>180.04</span><strong>Synapse Spark</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="azure-data-engineering/180-synapse-and-fabric-interviews/05-fabric-architecture.html"><span>180.05</span><strong>Fabric architecture</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="azure-data-engineering/180-synapse-and-fabric-interviews/06-onelake.html"><span>180.06</span><strong>OneLake</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="azure-data-engineering/180-synapse-and-fabric-interviews/07-fabric-pipelines.html"><span>180.07</span><strong>Fabric pipelines</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="azure-data-engineering/180-synapse-and-fabric-interviews/08-direct-lake.html"><span>180.08</span><strong>Direct Lake</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="azure-data-engineering/180-synapse-and-fabric-interviews/09-governance-scenarios.html"><span>180.09</span><strong>Governance scenarios</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="azure-data-engineering/180-synapse-and-fabric-interviews/10-mock-analytics-platform-interview.html"><span>180.10</span><strong>Mock analytics-platform interview</strong><i class="bi bi-arrow-right"></i></a>
+<p><a class="topic-lesson-link" href="azure-data-engineering/180-synapse-and-fabric-interviews/01-synapse-architecture.html"><span>180.01</span><strong>Synapse architecture</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="azure-data-engineering/180-synapse-and-fabric-interviews/02-serverless-sql.html"><span>180.02</span><strong>Serverless SQL</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="azure-data-engineering/180-synapse-and-fabric-interviews/03-dedicated-pools.html"><span>180.03</span><strong>Dedicated pools</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="azure-data-engineering/180-synapse-and-fabric-interviews/04-synapse-spark.html"><span>180.04</span><strong>Synapse Spark</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="azure-data-engineering/180-synapse-and-fabric-interviews/05-fabric-architecture.html"><span>180.05</span><strong>Fabric architecture</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="azure-data-engineering/180-synapse-and-fabric-interviews/06-onelake.html"><span>180.06</span><strong>OneLake</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="azure-data-engineering/180-synapse-and-fabric-interviews/07-fabric-pipelines.html"><span>180.07</span><strong>Fabric pipelines</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="azure-data-engineering/180-synapse-and-fabric-interviews/08-direct-lake.html"><span>180.08</span><strong>Direct Lake</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="azure-data-engineering/180-synapse-and-fabric-interviews/09-governance-scenarios.html"><span>180.09</span><strong>Governance scenarios</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="azure-data-engineering/180-synapse-and-fabric-interviews/10-mock-analytics-platform-interview.html"><span>180.10</span><strong>Mock analytics-platform interview</strong><i class="bi bi-arrow-right"></i></a></p>
 </div>
 </details>
 <details class="curriculum-topic">
-<summary><span class="topic-number">Topic 181</span><strong>Azure data-platform system design</strong></summary>
+<summary>
+<span class="topic-number">Topic 181</span><strong>Azure data-platform system design</strong>
+</summary>
 <div class="topic-lessons">
-<a class="topic-lesson-link" href="azure-data-engineering/181-azure-data-platform-system-design/01-requirement-discovery.html"><span>181.01</span><strong>Requirement discovery</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="azure-data-engineering/181-azure-data-platform-system-design/02-source-assessment.html"><span>181.02</span><strong>Source assessment</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="azure-data-engineering/181-azure-data-platform-system-design/03-ingestion-design.html"><span>181.03</span><strong>Ingestion design</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="azure-data-engineering/181-azure-data-platform-system-design/04-storage-zones.html"><span>181.04</span><strong>Storage zones</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="azure-data-engineering/181-azure-data-platform-system-design/05-transformation-design.html"><span>181.05</span><strong>Transformation design</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="azure-data-engineering/181-azure-data-platform-system-design/06-serving-patterns.html"><span>181.06</span><strong>Serving patterns</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="azure-data-engineering/181-azure-data-platform-system-design/07-governance.html"><span>181.07</span><strong>Governance</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="azure-data-engineering/181-azure-data-platform-system-design/08-observability.html"><span>181.08</span><strong>Observability</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="azure-data-engineering/181-azure-data-platform-system-design/09-cost-and-resilience.html"><span>181.09</span><strong>Cost and resilience</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="azure-data-engineering/181-azure-data-platform-system-design/10-azure-data-interview-capstone.html"><span>181.10</span><strong>Azure data interview capstone</strong><i class="bi bi-arrow-right"></i></a>
+<p><a class="topic-lesson-link" href="azure-data-engineering/181-azure-data-platform-system-design/01-requirement-discovery.html"><span>181.01</span><strong>Requirement discovery</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="azure-data-engineering/181-azure-data-platform-system-design/02-source-assessment.html"><span>181.02</span><strong>Source assessment</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="azure-data-engineering/181-azure-data-platform-system-design/03-ingestion-design.html"><span>181.03</span><strong>Ingestion design</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="azure-data-engineering/181-azure-data-platform-system-design/04-storage-zones.html"><span>181.04</span><strong>Storage zones</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="azure-data-engineering/181-azure-data-platform-system-design/05-transformation-design.html"><span>181.05</span><strong>Transformation design</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="azure-data-engineering/181-azure-data-platform-system-design/06-serving-patterns.html"><span>181.06</span><strong>Serving patterns</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="azure-data-engineering/181-azure-data-platform-system-design/07-governance.html"><span>181.07</span><strong>Governance</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="azure-data-engineering/181-azure-data-platform-system-design/08-observability.html"><span>181.08</span><strong>Observability</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="azure-data-engineering/181-azure-data-platform-system-design/09-cost-and-resilience.html"><span>181.09</span><strong>Cost and resilience</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="azure-data-engineering/181-azure-data-platform-system-design/10-azure-data-interview-capstone.html"><span>181.10</span><strong>Azure data interview capstone</strong><i class="bi bi-arrow-right"></i></a></p>
 </div>
 </details>
 </div>
-<p class="syllabus-empty" hidden="" id="interview-questions-azure-data-engineering-catalog-empty"><i class="bi bi-search"></i> No matching lessons were found.</p>
+<p class="syllabus-empty" id="interview-questions-azure-data-engineering-catalog-empty" hidden="">
+<i class="bi bi-search"></i> No matching lessons were found.
+</p>
 <script>
 document.addEventListener("DOMContentLoaded", () => {
   const catalog = document.getElementById("interview-questions-azure-data-engineering-catalog");
@@ -552,10 +663,14 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 </script>
-<section class="level2" id="completion-standard">
+</section>
+<section id="completion-standard" class="level2">
 <h2 class="anchored" data-anchor-id="completion-standard">Completion standard</h2>
 <p>You have completed <strong>Azure Data Engineering</strong> when you can explain each topic, reproduce its core workflow, pass the notebook checks, defend the main tradeoffs, and combine the lessons into one reviewable portfolio project. Use the practice tasks as evidence rather than treating page reading alone as completion.</p>
+
+
 </section>
+
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
@@ -959,17 +1074,21 @@ document.addEventListener("DOMContentLoaded", () => {
   </script>
 </div> <!-- /content -->
 <footer class="footer">
-<div class="nav-footer">
-<div class="nav-footer-left">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
 <p>© 2026 Edukron Notes</p>
-</div>
-<div class="nav-footer-center">
-       
+</div>   
+    <div class="nav-footer-center">
+      &nbsp;
     </div>
-<div class="nav-footer-right">
+    <div class="nav-footer-right">
 <p>Notebook courses for AI, data engineering, and DevOps</p>
 </div>
-</div>
+  </div>
 </footer>
+
+
+
+
 <script src="../site_libs/quarto-html/zenscroll-min.js"></script>
 </body></html>

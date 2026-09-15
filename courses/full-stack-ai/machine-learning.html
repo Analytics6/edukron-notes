@@ -1,12 +1,13 @@
 <!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
-<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml"><head>
-<meta charset="utf-8"/>
-<meta content="quarto-1.10.18" name="generator"/>
-<meta content="width=device-width, initial-scale=1.0, user-scalable=yes" name="viewport"/>
-<meta content="Edukron Notes" name="author"/>
-<meta content="2026-09-14" name="dcterms.date"/>
-<meta content="Complete notebook syllabus for Machine Learning in Full Stack AI." name="description"/>
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.10.18">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="description" content="Complete notebook syllabus for Machine Learning in Full Stack AI.">
+
 <title>Machine Learning – Edukron Notes</title>
 <style>
 /* Default styles provided by pandoc.
@@ -27,23 +28,25 @@ ul.task-list li input[type="checkbox"] {
   vertical-align: middle;
 }
 </style>
+
+
 <script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
 <script src="../../site_libs/quarto-nav/headroom.min.js"></script>
 <script src="../../site_libs/clipboard/clipboard.min.js"></script>
 <script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
 <script src="../../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../../site_libs/quarto-search/quarto-search.js"></script>
-<meta content="../../" name="quarto:offset"/>
+<meta name="quarto:offset" content="../../">
 <script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="../../site_libs/quarto-html/popper.min.js"></script>
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet"/>
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" id="quarto-text-highlighting-styles" rel="stylesheet"/>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet"/>
-<link append-hash="true" data-mode="light" href="../../site_libs/bootstrap/bootstrap-f0f4b58164ec92a07fcd2db94b0e5cbd.min.css" id="quarto-bootstrap" rel="stylesheet"/>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-0f70c849674a990122300108587fb581.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -71,589 +74,732 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 <style>html{ scroll-behavior: smooth; }</style>
-<link href="../../styles.css" rel="stylesheet"/>
+
+
+<link rel="stylesheet" href="../../styles.css">
 </head>
+
 <body class="nav-fixed quarto-light">
+
 <div id="quarto-search-results"></div>
-<header class="headroom fixed-top" id="quarto-header">
-<nav class="navbar navbar-expand-lg" data-bs-theme="dark">
-<div class="navbar-container container-fluid">
-<div class="navbar-brand-container mx-auto">
-<a class="navbar-brand" href="../../index.html">
-<span class="navbar-title">Edukron Notes</span>
-</a>
-</div>
-<div class="" id="quarto-search" title="Search"></div>
-<button aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-bs-target="#navbarCollapse" data-bs-toggle="collapse" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }" role="menu" type="button">
-<span class="navbar-toggler-icon"></span>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../../index.html">
+    <span class="navbar-title">Edukron Notes</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
 </button>
-<div class="collapse navbar-collapse" id="navbarCollapse">
-<ul class="navbar-nav navbar-nav-scroll me-auto">
-<li class="nav-item">
-<a class="nav-link" href="../../index.html">
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../index.html"> 
 <span class="menu-text">Home</span></a>
-</li>
-<li class="nav-item dropdown">
-<a aria-expanded="false" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" id="nav-menu-full-stack-ai" role="link">
-<i class="bi bi-cpu" role="img">
-</i>
-<span class="menu-text">Full Stack AI</span>
-</a>
-<ul aria-labelledby="nav-menu-full-stack-ai" class="dropdown-menu">
-<li>
-<a class="dropdown-item" href="../../courses/full-stack-ai/index.html">
-<span class="dropdown-text">Program overview</span></a>
-</li>
-<li>
-<a class="dropdown-item" href="../../courses/full-stack-ai/python.html">
-<span class="dropdown-text">Python</span></a>
-</li>
-<li>
-<a class="dropdown-item" href="../../courses/full-stack-ai/sql.html">
-<span class="dropdown-text">SQL</span></a>
-</li>
-<li>
-<a class="dropdown-item" href="../../courses/full-stack-ai/data-science.html">
-<span class="dropdown-text">Data Science</span></a>
-</li>
-<li>
-<a class="dropdown-item" href="../../courses/full-stack-ai/machine-learning.html">
-<span class="dropdown-text">Machine Learning</span></a>
-</li>
-<li>
-<a class="dropdown-item" href="../../courses/full-stack-ai/artificial-intelligence.html">
-<span class="dropdown-text">Artificial Intelligence</span></a>
-</li>
-<li>
-<a class="dropdown-item" href="../../courses/full-stack-ai/deep-learning.html">
-<span class="dropdown-text">Deep Learning</span></a>
-</li>
-<li>
-<a class="dropdown-item" href="../../courses/full-stack-ai/generative-ai.html">
-<span class="dropdown-text">Generative AI</span></a>
-</li>
-<li>
-<a class="dropdown-item" href="../../courses/full-stack-ai/large-language-models.html">
-<span class="dropdown-text">Large Language Models (LLMs)</span></a>
-</li>
-<li>
-<a class="dropdown-item" href="../../courses/full-stack-ai/rag.html">
-<span class="dropdown-text">Retrieval Augmented Generation (RAG)</span></a>
-</li>
-<li>
-<a class="dropdown-item" href="../../courses/full-stack-ai/agentic-ai.html">
-<span class="dropdown-text">Agentic AI</span></a>
-</li>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-full-stack-ai" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+      <i class="bi bi-cpu" role="img">
+</i> 
+ <span class="menu-text">Full Stack AI</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-full-stack-ai">    
+        <li>
+    <a class="dropdown-item" href="../../courses/full-stack-ai/index.html">
+ <span class="dropdown-text">Program overview</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../courses/full-stack-ai/python.html">
+ <span class="dropdown-text">Python</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../courses/full-stack-ai/sql.html">
+ <span class="dropdown-text">SQL</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../courses/full-stack-ai/data-science.html">
+ <span class="dropdown-text">Data Science</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../courses/full-stack-ai/machine-learning.html">
+ <span class="dropdown-text">Machine Learning</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../courses/full-stack-ai/artificial-intelligence.html">
+ <span class="dropdown-text">Artificial Intelligence</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../courses/full-stack-ai/deep-learning.html">
+ <span class="dropdown-text">Deep Learning</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../courses/full-stack-ai/generative-ai.html">
+ <span class="dropdown-text">Generative AI</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../courses/full-stack-ai/large-language-models.html">
+ <span class="dropdown-text">Large Language Models (LLMs)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../courses/full-stack-ai/rag.html">
+ <span class="dropdown-text">Retrieval Augmented Generation (RAG)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../courses/full-stack-ai/agentic-ai.html">
+ <span class="dropdown-text">Agentic AI</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-azure-data-engineering" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+      <i class="bi bi-database" role="img">
+</i> 
+ <span class="menu-text">Azure Data Engineering</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-azure-data-engineering">    
+        <li>
+    <a class="dropdown-item" href="../../courses/azure-data-engineering/index.html">
+ <span class="dropdown-text">Program overview</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../courses/azure-data-engineering/python.html">
+ <span class="dropdown-text">Python</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../courses/azure-data-engineering/sql.html">
+ <span class="dropdown-text">SQL</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../courses/azure-data-engineering/fundamentals.html">
+ <span class="dropdown-text">Data Engineering Fundamentals</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../courses/azure-data-engineering/azure-data-factory.html">
+ <span class="dropdown-text">Azure Data Factory (ADF)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../courses/azure-data-engineering/adls-gen2.html">
+ <span class="dropdown-text">Azure Data Lake Storage Gen2</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../courses/azure-data-engineering/azure-databricks.html">
+ <span class="dropdown-text">Azure Databricks</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../courses/azure-data-engineering/pyspark.html">
+ <span class="dropdown-text">PySpark</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../courses/azure-data-engineering/azure-synapse.html">
+ <span class="dropdown-text">Azure Synapse Analytics</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../courses/azure-data-engineering/microsoft-fabric.html">
+ <span class="dropdown-text">Microsoft Fabric</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../courses/azure-data-engineering/delta-lake.html">
+ <span class="dropdown-text">Delta Lake</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-azure-devops" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+      <i class="bi bi-infinity" role="img">
+</i> 
+ <span class="menu-text">Azure DevOps</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-azure-devops">    
+        <li>
+    <a class="dropdown-item" href="../../courses/azure-devops/index.html">
+ <span class="dropdown-text">Program overview</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../courses/azure-devops/linux-shell-scripting.html">
+ <span class="dropdown-text">Linux &amp; Shell Scripting</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../courses/azure-devops/git-version-control.html">
+ <span class="dropdown-text">Git &amp; Version Control</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../courses/azure-devops/azure-repos.html">
+ <span class="dropdown-text">Azure Repos</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../courses/azure-devops/azure-pipelines.html">
+ <span class="dropdown-text">Azure Pipelines (CI/CD)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../courses/azure-devops/yaml-pipelines.html">
+ <span class="dropdown-text">YAML Pipeline Development</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../courses/azure-devops/docker.html">
+ <span class="dropdown-text">Docker &amp; Containerization</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../courses/azure-devops/kubernetes-aks.html">
+ <span class="dropdown-text">Kubernetes &amp; AKS</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../courses/azure-devops/terraform.html">
+ <span class="dropdown-text">Terraform Infrastructure as Code</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../courses/azure-devops/azure-cloud-services.html">
+ <span class="dropdown-text">Azure Cloud Services</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../courses/azure-devops/devsecops-monitoring.html">
+ <span class="dropdown-text">DevSecOps &amp; Monitoring</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-interview-questions" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+      <i class="bi bi-question-circle" role="img">
+</i> 
+ <span class="menu-text">Interview Questions</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-interview-questions">    
+        <li>
+    <a class="dropdown-item" href="../../interview-questions/index.html">
+ <span class="dropdown-text">Section overview</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../interview-questions/full-stack-ai.html">
+ <span class="dropdown-text">Full Stack AI</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../interview-questions/azure-data-engineering.html">
+ <span class="dropdown-text">Azure Data Engineering</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../interview-questions/azure-devops.html">
+ <span class="dropdown-text">Azure DevOps</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-project-flows" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+      <i class="bi bi-kanban" role="img">
+</i> 
+ <span class="menu-text">Project Flows</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-project-flows">    
+        <li>
+    <a class="dropdown-item" href="../../project-flows/index.html">
+ <span class="dropdown-text">Section overview</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../project-flows/full-stack-ai.html">
+ <span class="dropdown-text">Full Stack AI</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../project-flows/azure-data-engineering.html">
+ <span class="dropdown-text">Azure Data Engineering</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../project-flows/azure-devops.html">
+ <span class="dropdown-text">Azure DevOps</span></a>
+  </li>  
+    </ul>
+  </li>
 </ul>
-</li>
-<li class="nav-item dropdown">
-<a aria-expanded="false" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" id="nav-menu-azure-data-engineering" role="link">
-<i class="bi bi-database" role="img">
-</i>
-<span class="menu-text">Azure Data Engineering</span>
-</a>
-<ul aria-labelledby="nav-menu-azure-data-engineering" class="dropdown-menu">
-<li>
-<a class="dropdown-item" href="../../courses/azure-data-engineering/index.html">
-<span class="dropdown-text">Program overview</span></a>
-</li>
-<li>
-<a class="dropdown-item" href="../../courses/azure-data-engineering/python.html">
-<span class="dropdown-text">Python</span></a>
-</li>
-<li>
-<a class="dropdown-item" href="../../courses/azure-data-engineering/sql.html">
-<span class="dropdown-text">SQL</span></a>
-</li>
-<li>
-<a class="dropdown-item" href="../../courses/azure-data-engineering/fundamentals.html">
-<span class="dropdown-text">Data Engineering Fundamentals</span></a>
-</li>
-<li>
-<a class="dropdown-item" href="../../courses/azure-data-engineering/azure-data-factory.html">
-<span class="dropdown-text">Azure Data Factory (ADF)</span></a>
-</li>
-<li>
-<a class="dropdown-item" href="../../courses/azure-data-engineering/adls-gen2.html">
-<span class="dropdown-text">Azure Data Lake Storage Gen2</span></a>
-</li>
-<li>
-<a class="dropdown-item" href="../../courses/azure-data-engineering/azure-databricks.html">
-<span class="dropdown-text">Azure Databricks</span></a>
-</li>
-<li>
-<a class="dropdown-item" href="../../courses/azure-data-engineering/pyspark.html">
-<span class="dropdown-text">PySpark</span></a>
-</li>
-<li>
-<a class="dropdown-item" href="../../courses/azure-data-engineering/azure-synapse.html">
-<span class="dropdown-text">Azure Synapse Analytics</span></a>
-</li>
-<li>
-<a class="dropdown-item" href="../../courses/azure-data-engineering/microsoft-fabric.html">
-<span class="dropdown-text">Microsoft Fabric</span></a>
-</li>
-<li>
-<a class="dropdown-item" href="../../courses/azure-data-engineering/delta-lake.html">
-<span class="dropdown-text">Delta Lake</span></a>
-</li>
-</ul>
-</li>
-<li class="nav-item dropdown">
-<a aria-expanded="false" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" id="nav-menu-azure-devops" role="link">
-<i class="bi bi-infinity" role="img">
-</i>
-<span class="menu-text">Azure DevOps</span>
-</a>
-<ul aria-labelledby="nav-menu-azure-devops" class="dropdown-menu">
-<li>
-<a class="dropdown-item" href="../../courses/azure-devops/index.html">
-<span class="dropdown-text">Program overview</span></a>
-</li>
-<li>
-<a class="dropdown-item" href="../../courses/azure-devops/linux-shell-scripting.html">
-<span class="dropdown-text">Linux &amp; Shell Scripting</span></a>
-</li>
-<li>
-<a class="dropdown-item" href="../../courses/azure-devops/git-version-control.html">
-<span class="dropdown-text">Git &amp; Version Control</span></a>
-</li>
-<li>
-<a class="dropdown-item" href="../../courses/azure-devops/azure-repos.html">
-<span class="dropdown-text">Azure Repos</span></a>
-</li>
-<li>
-<a class="dropdown-item" href="../../courses/azure-devops/azure-pipelines.html">
-<span class="dropdown-text">Azure Pipelines (CI/CD)</span></a>
-</li>
-<li>
-<a class="dropdown-item" href="../../courses/azure-devops/yaml-pipelines.html">
-<span class="dropdown-text">YAML Pipeline Development</span></a>
-</li>
-<li>
-<a class="dropdown-item" href="../../courses/azure-devops/docker.html">
-<span class="dropdown-text">Docker &amp; Containerization</span></a>
-</li>
-<li>
-<a class="dropdown-item" href="../../courses/azure-devops/kubernetes-aks.html">
-<span class="dropdown-text">Kubernetes &amp; AKS</span></a>
-</li>
-<li>
-<a class="dropdown-item" href="../../courses/azure-devops/terraform.html">
-<span class="dropdown-text">Terraform Infrastructure as Code</span></a>
-</li>
-<li>
-<a class="dropdown-item" href="../../courses/azure-devops/azure-cloud-services.html">
-<span class="dropdown-text">Azure Cloud Services</span></a>
-</li>
-<li>
-<a class="dropdown-item" href="../../courses/azure-devops/devsecops-monitoring.html">
-<span class="dropdown-text">DevSecOps &amp; Monitoring</span></a>
-</li>
-</ul>
-</li>
-<li class="nav-item dropdown">
-<a aria-expanded="false" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" id="nav-menu-interview-questions" role="link">
-<i class="bi bi-question-circle" role="img">
-</i>
-<span class="menu-text">Interview Questions</span>
-</a>
-<ul aria-labelledby="nav-menu-interview-questions" class="dropdown-menu">
-<li>
-<a class="dropdown-item" href="../../interview-questions/index.html">
-<span class="dropdown-text">Section overview</span></a>
-</li>
-<li>
-<a class="dropdown-item" href="../../interview-questions/full-stack-ai.html">
-<span class="dropdown-text">Full Stack AI</span></a>
-</li>
-<li>
-<a class="dropdown-item" href="../../interview-questions/azure-data-engineering.html">
-<span class="dropdown-text">Azure Data Engineering</span></a>
-</li>
-<li>
-<a class="dropdown-item" href="../../interview-questions/azure-devops.html">
-<span class="dropdown-text">Azure DevOps</span></a>
-</li>
-</ul>
-</li>
-<li class="nav-item dropdown">
-<a aria-expanded="false" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" id="nav-menu-project-flows" role="link">
-<i class="bi bi-kanban" role="img">
-</i>
-<span class="menu-text">Project Flows</span>
-</a>
-<ul aria-labelledby="nav-menu-project-flows" class="dropdown-menu">
-<li>
-<a class="dropdown-item" href="../../project-flows/index.html">
-<span class="dropdown-text">Section overview</span></a>
-</li>
-<li>
-<a class="dropdown-item" href="../../project-flows/full-stack-ai.html">
-<span class="dropdown-text">Full Stack AI</span></a>
-</li>
-<li>
-<a class="dropdown-item" href="../../project-flows/azure-data-engineering.html">
-<span class="dropdown-text">Azure Data Engineering</span></a>
-</li>
-<li>
-<a class="dropdown-item" href="../../project-flows/azure-devops.html">
-<span class="dropdown-text">Azure DevOps</span></a>
-</li>
-</ul>
-</li>
-</ul>
-</div> <!-- /navcollapse -->
-<div class="quarto-navbar-tools">
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
 </div>
-</div> <!-- /container-fluid -->
-</nav>
+      </div> <!-- /container-fluid -->
+    </nav>
 </header>
 <!-- content -->
-<div class="quarto-container page-columns page-rows-contents page-layout-full page-navbar" id="quarto-content">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
+    
 <!-- main -->
 <main class="content column-page" id="quarto-document-content">
-<header class="quarto-title-block default" id="title-block-header">
+
+<header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
 <h1 class="title">Machine Learning</h1>
 </div>
+
 <div>
-<div class="description">
+  <div class="description">
     Complete notebook syllabus for Machine Learning in Full Stack AI.
   </div>
 </div>
-<div class="quarto-title-meta">
-<div>
-<div class="quarto-title-meta-heading">Author</div>
-<div class="quarto-title-meta-contents">
-<p>Edukron Notes </p>
-</div>
-</div>
-<div>
-<div class="quarto-title-meta-heading">Published</div>
-<div class="quarto-title-meta-contents">
-<p class="date">September 14, 2026</p>
-</div>
-</div>
-</div>
+
+
+<div class="quarto-title-meta column-page">
+
+    
+  
+    
+  </div>
+  
+
+
 </header>
+
+
 <div class="course-workspace notebook-chrome">
 <div class="notebook-toolbar">
-<span class="notebook-file"><i aria-hidden="true" class="bi bi-journal-code"></i><strong>machine-learning.ipynb</strong></span>
-<span class="notebook-status"><i aria-hidden="true" class="bi bi-check-circle-fill"></i> Trusted</span>
-<span class="notebook-kernel"><i aria-hidden="true" class="bi bi-diagram-3"></i> Learning path</span>
+<p><span class="notebook-file"><i class="bi bi-journal-code" aria-hidden="true"></i><strong>machine-learning.ipynb</strong></span> <span class="notebook-status"><i class="bi bi-check-circle-fill" aria-hidden="true"></i> Trusted</span> <span class="notebook-kernel"><i class="bi bi-diagram-3" aria-hidden="true"></i> Learning path</span></p>
 </div>
 <div class="course-workspace-hero">
 <span class="overview-kicker">Full Stack AI</span>
-<h1>Machine Learning</h1>
-<p>A complete notebook-first syllabus organized from foundations to applied delivery. Every lesson combines clear notes, a worked pattern, executable validation, a guided lab, a solution blueprint, practice, and knowledge checks.</p>
-<div class="course-tags"><span><i class="bi bi-signpost-split"></i> Foundation to advanced</span><span><i class="bi bi-code-square"></i> Hands-on practice</span><span><i class="bi bi-patch-check"></i> Review ready</span></div>
-<p class="course-start"><a class="btn btn-primary" href="machine-learning/027-machine-learning-foundations/01-ml-problem-types.html"><i class="bi bi-play-fill"></i> Start the first notebook</a></p>
+<h1>
+Machine Learning
+</h1>
+<p>
+A complete notebook-first syllabus organized from foundations to applied delivery. Every lesson combines clear notes, a worked pattern, executable validation, a guided lab, a solution blueprint, practice, and knowledge checks.
+</p>
+<div class="course-tags">
+<span><i class="bi bi-signpost-split"></i> Foundation to advanced</span><span><i class="bi bi-code-square"></i> Hands-on practice</span><span><i class="bi bi-patch-check"></i> Review ready</span>
+</div>
+<p class="course-start">
+<a class="btn btn-primary" href="machine-learning/027-machine-learning-foundations/01-ml-problem-types.html"><i class="bi bi-play-fill"></i> Start the first notebook</a>
+</p>
 </div>
 </div>
-<section class="level2" id="how-to-use-this-course">
+<section id="how-to-use-this-course" class="level2">
 <h2 class="anchored" data-anchor-id="how-to-use-this-course">How to use this course</h2>
 <p>Work through lessons in order for a complete pathway, or open a topic for focused reference. Type or adapt the examples, complete the guided lab before reading its blueprint, and preserve your test evidence as a portfolio artifact. Cloud and infrastructure examples are safe, copy-ready teaching patterns; execute them in your own sandbox only after substituting approved identities, names, and policies.</p>
-</section>
 <section class="learning-plan-section" id="learning-plan">
-<div class="path-section-heading"><div><span class="overview-kicker">Recommended schedule</span><h2>Learning plan</h2><p>A practical schedule for completing Machine Learning with retained evidence, not passive reading.</p></div></div>
-<div class="plan-metrics">
-<div><i class="bi bi-calendar3"></i><span>Standard path</span><strong>11 weeks</strong><small>One topic each week, then integration</small></div>
-<div><i class="bi bi-lightning-charge"></i><span>Intensive path</span><strong>6 weeks</strong><small>Two topics each week, then integration</small></div>
-<div><i class="bi bi-clock"></i><span>Weekly commitment</span><strong>6–8 hours</strong><small>Study, code, practice, and reflection</small></div>
-<div><i class="bi bi-folder-check"></i><span>Finish line</span><strong>Portfolio evidence</strong><small>Tests, decisions, notes, and a capstone</small></div>
+<div class="path-section-heading">
+<div>
+<span class="overview-kicker">Recommended schedule</span>
+<h2 class="anchored">
+Learning plan
+</h2>
+<p>
+A practical schedule for completing Machine Learning with retained evidence, not passive reading.
+</p>
 </div>
-<div aria-label="Weekly study loop" class="study-loop">
-<div><span>01</span><i class="bi bi-book"></i><strong>Understand</strong><small>Read the notes and explain the mental model.</small></div>
-<i aria-hidden="true" class="bi bi-arrow-right study-loop-arrow"></i>
-<div><span>02</span><i class="bi bi-play-circle"></i><strong>Run</strong><small>Execute the example and inspect every result.</small></div>
-<i aria-hidden="true" class="bi bi-arrow-right study-loop-arrow"></i>
-<div><span>03</span><i class="bi bi-tools"></i><strong>Adapt</strong><small>Change the inputs and complete the guided lab.</small></div>
-<i aria-hidden="true" class="bi bi-arrow-right study-loop-arrow"></i>
-<div><span>04</span><i class="bi bi-patch-check"></i><strong>Prove</strong><small>Pass checks and retain reviewable evidence.</small></div>
+</div>
+<div class="plan-metrics">
+<div>
+<i class="bi bi-calendar3"></i><span>Standard path</span><strong>11 weeks</strong><small>One topic each week, then integration</small>
+</div>
+<div>
+<i class="bi bi-lightning-charge"></i><span>Intensive path</span><strong>6 weeks</strong><small>Two topics each week, then integration</small>
+</div>
+<div>
+<i class="bi bi-clock"></i><span>Weekly commitment</span><strong>6–8 hours</strong><small>Study, code, practice, and reflection</small>
+</div>
+<div>
+<i class="bi bi-folder-check"></i><span>Finish line</span><strong>Portfolio evidence</strong><small>Tests, decisions, notes, and a capstone</small>
+</div>
+</div>
+<div class="study-loop" aria-label="Weekly study loop">
+<div>
+<span>01</span><i class="bi bi-book"></i><strong>Understand</strong><small>Read the notes and explain the mental model.</small>
+</div>
+<i class="bi bi-arrow-right study-loop-arrow" aria-hidden="true"></i>
+<div>
+<span>02</span><i class="bi bi-play-circle"></i><strong>Run</strong><small>Execute the example and inspect every result.</small>
+</div>
+<i class="bi bi-arrow-right study-loop-arrow" aria-hidden="true"></i>
+<div>
+<span>03</span><i class="bi bi-tools"></i><strong>Adapt</strong><small>Change the inputs and complete the guided lab.</small>
+</div>
+<i class="bi bi-arrow-right study-loop-arrow" aria-hidden="true"></i>
+<div>
+<span>04</span><i class="bi bi-patch-check"></i><strong>Prove</strong><small>Pass checks and retain reviewable evidence.</small>
+</div>
 </div>
 <div class="plan-weeks">
 <details class="plan-week plan-topic-week" open="">
-<summary><span class="plan-week-number">Week 01</span><strong>Machine-learning foundations</strong><span class="plan-stage">Foundation</span></summary>
+<summary>
+<span class="plan-week-number">Week 01</span><strong>Machine-learning foundations</strong><span class="plan-stage">Foundation</span>
+</summary>
 <div class="plan-week-body">
-<div><span>Learn</span><p>Begin with <a href="machine-learning/027-machine-learning-foundations/01-ml-problem-types.html">ML problem types</a> and write the core mental model in your own words.</p></div>
-<div><span>Practice</span><p>Run, change, and explain the worked patterns across the middle lessons. Keep test evidence and questions.</p></div>
-<div><span>Demonstrate</span><p>Complete <a href="machine-learning/027-machine-learning-foundations/10-first-ml-project.html">First ML project</a> without copying the solution blueprint first.</p></div>
+<div>
+<span>Learn</span>
+<p>
+Begin with <a href="machine-learning/027-machine-learning-foundations/01-ml-problem-types.html">ML problem types</a> and write the core mental model in your own words.
+</p>
 </div>
-</details><details class="plan-week plan-topic-week">
-<summary><span class="plan-week-number">Week 02</span><strong>Preprocessing and pipelines</strong><span class="plan-stage">Core skills</span></summary>
+<div>
+<span>Practice</span>
+<p>
+Run, change, and explain the worked patterns across the middle lessons. Keep test evidence and questions.
+</p>
+</div>
+<div>
+<span>Demonstrate</span>
+<p>
+Complete <a href="machine-learning/027-machine-learning-foundations/10-first-ml-project.html">First ML project</a> without copying the solution blueprint first.
+</p>
+</div>
+</div>
+</details>
+<details class="plan-week plan-topic-week">
+<summary>
+<span class="plan-week-number">Week 02</span><strong>Preprocessing and pipelines</strong><span class="plan-stage">Core skills</span>
+</summary>
 <div class="plan-week-body">
-<div><span>Learn</span><p>Begin with <a href="machine-learning/028-preprocessing-and-pipelines/01-train-validation-test-splits.html">Train-validation-test splits</a> and write the core mental model in your own words.</p></div>
-<div><span>Practice</span><p>Run, change, and explain the worked patterns across the middle lessons. Keep test evidence and questions.</p></div>
-<div><span>Demonstrate</span><p>Complete <a href="machine-learning/028-preprocessing-and-pipelines/10-pipeline-project.html">Pipeline project</a> without copying the solution blueprint first.</p></div>
+<div>
+<span>Learn</span>
+<p>
+Begin with <a href="machine-learning/028-preprocessing-and-pipelines/01-train-validation-test-splits.html">Train-validation-test splits</a> and write the core mental model in your own words.
+</p>
 </div>
-</details><details class="plan-week plan-topic-week">
-<summary><span class="plan-week-number">Week 03</span><strong>Linear regression</strong><span class="plan-stage">Core skills</span></summary>
+<div>
+<span>Practice</span>
+<p>
+Run, change, and explain the worked patterns across the middle lessons. Keep test evidence and questions.
+</p>
+</div>
+<div>
+<span>Demonstrate</span>
+<p>
+Complete <a href="machine-learning/028-preprocessing-and-pipelines/10-pipeline-project.html">Pipeline project</a> without copying the solution blueprint first.
+</p>
+</div>
+</div>
+</details>
+<details class="plan-week plan-topic-week">
+<summary>
+<span class="plan-week-number">Week 03</span><strong>Linear regression</strong><span class="plan-stage">Core skills</span>
+</summary>
 <div class="plan-week-body">
-<div><span>Learn</span><p>Begin with <a href="machine-learning/029-linear-regression/01-regression-intuition.html">Regression intuition</a> and write the core mental model in your own words.</p></div>
-<div><span>Practice</span><p>Run, change, and explain the worked patterns across the middle lessons. Keep test evidence and questions.</p></div>
-<div><span>Demonstrate</span><p>Complete <a href="machine-learning/029-linear-regression/10-regression-project.html">Regression project</a> without copying the solution blueprint first.</p></div>
+<div>
+<span>Learn</span>
+<p>
+Begin with <a href="machine-learning/029-linear-regression/01-regression-intuition.html">Regression intuition</a> and write the core mental model in your own words.
+</p>
 </div>
-</details><details class="plan-week plan-topic-week">
-<summary><span class="plan-week-number">Week 04</span><strong>Classification foundations</strong><span class="plan-stage">Core skills</span></summary>
+<div>
+<span>Practice</span>
+<p>
+Run, change, and explain the worked patterns across the middle lessons. Keep test evidence and questions.
+</p>
+</div>
+<div>
+<span>Demonstrate</span>
+<p>
+Complete <a href="machine-learning/029-linear-regression/10-regression-project.html">Regression project</a> without copying the solution blueprint first.
+</p>
+</div>
+</div>
+</details>
+<details class="plan-week plan-topic-week">
+<summary>
+<span class="plan-week-number">Week 04</span><strong>Classification foundations</strong><span class="plan-stage">Core skills</span>
+</summary>
 <div class="plan-week-body">
-<div><span>Learn</span><p>Begin with <a href="machine-learning/030-classification-foundations/01-classification-problems.html">Classification problems</a> and write the core mental model in your own words.</p></div>
-<div><span>Practice</span><p>Run, change, and explain the worked patterns across the middle lessons. Keep test evidence and questions.</p></div>
-<div><span>Demonstrate</span><p>Complete <a href="machine-learning/030-classification-foundations/10-classification-project.html">Classification project</a> without copying the solution blueprint first.</p></div>
+<div>
+<span>Learn</span>
+<p>
+Begin with <a href="machine-learning/030-classification-foundations/01-classification-problems.html">Classification problems</a> and write the core mental model in your own words.
+</p>
 </div>
-</details><details class="plan-week plan-topic-week">
-<summary><span class="plan-week-number">Week 05</span><strong>Trees and ensemble learning</strong><span class="plan-stage">Core skills</span></summary>
+<div>
+<span>Practice</span>
+<p>
+Run, change, and explain the worked patterns across the middle lessons. Keep test evidence and questions.
+</p>
+</div>
+<div>
+<span>Demonstrate</span>
+<p>
+Complete <a href="machine-learning/030-classification-foundations/10-classification-project.html">Classification project</a> without copying the solution blueprint first.
+</p>
+</div>
+</div>
+</details>
+<details class="plan-week plan-topic-week">
+<summary>
+<span class="plan-week-number">Week 05</span><strong>Trees and ensemble learning</strong><span class="plan-stage">Core skills</span>
+</summary>
 <div class="plan-week-body">
-<div><span>Learn</span><p>Begin with <a href="machine-learning/031-trees-and-ensemble-learning/01-decision-trees.html">Decision trees</a> and write the core mental model in your own words.</p></div>
-<div><span>Practice</span><p>Run, change, and explain the worked patterns across the middle lessons. Keep test evidence and questions.</p></div>
-<div><span>Demonstrate</span><p>Complete <a href="machine-learning/031-trees-and-ensemble-learning/10-ensemble-project.html">Ensemble project</a> without copying the solution blueprint first.</p></div>
+<div>
+<span>Learn</span>
+<p>
+Begin with <a href="machine-learning/031-trees-and-ensemble-learning/01-decision-trees.html">Decision trees</a> and write the core mental model in your own words.
+</p>
 </div>
-</details><details class="plan-week plan-topic-week">
-<summary><span class="plan-week-number">Week 06</span><strong>Classical machine-learning algorithms</strong><span class="plan-stage">Applied delivery</span></summary>
+<div>
+<span>Practice</span>
+<p>
+Run, change, and explain the worked patterns across the middle lessons. Keep test evidence and questions.
+</p>
+</div>
+<div>
+<span>Demonstrate</span>
+<p>
+Complete <a href="machine-learning/031-trees-and-ensemble-learning/10-ensemble-project.html">Ensemble project</a> without copying the solution blueprint first.
+</p>
+</div>
+</div>
+</details>
+<details class="plan-week plan-topic-week">
+<summary>
+<span class="plan-week-number">Week 06</span><strong>Classical machine-learning algorithms</strong><span class="plan-stage">Applied delivery</span>
+</summary>
 <div class="plan-week-body">
-<div><span>Learn</span><p>Begin with <a href="machine-learning/032-classical-machine-learning-algorithms/01-k-nearest-neighbours.html">K-nearest neighbours</a> and write the core mental model in your own words.</p></div>
-<div><span>Practice</span><p>Run, change, and explain the worked patterns across the middle lessons. Keep test evidence and questions.</p></div>
-<div><span>Demonstrate</span><p>Complete <a href="machine-learning/032-classical-machine-learning-algorithms/10-algorithm-comparison-project.html">Algorithm comparison project</a> without copying the solution blueprint first.</p></div>
+<div>
+<span>Learn</span>
+<p>
+Begin with <a href="machine-learning/032-classical-machine-learning-algorithms/01-k-nearest-neighbours.html">K-nearest neighbours</a> and write the core mental model in your own words.
+</p>
 </div>
-</details><details class="plan-week plan-topic-week">
-<summary><span class="plan-week-number">Week 07</span><strong>Clustering</strong><span class="plan-stage">Applied delivery</span></summary>
+<div>
+<span>Practice</span>
+<p>
+Run, change, and explain the worked patterns across the middle lessons. Keep test evidence and questions.
+</p>
+</div>
+<div>
+<span>Demonstrate</span>
+<p>
+Complete <a href="machine-learning/032-classical-machine-learning-algorithms/10-algorithm-comparison-project.html">Algorithm comparison project</a> without copying the solution blueprint first.
+</p>
+</div>
+</div>
+</details>
+<details class="plan-week plan-topic-week">
+<summary>
+<span class="plan-week-number">Week 07</span><strong>Clustering</strong><span class="plan-stage">Applied delivery</span>
+</summary>
 <div class="plan-week-body">
-<div><span>Learn</span><p>Begin with <a href="machine-learning/033-clustering/01-clustering-foundations.html">Clustering foundations</a> and write the core mental model in your own words.</p></div>
-<div><span>Practice</span><p>Run, change, and explain the worked patterns across the middle lessons. Keep test evidence and questions.</p></div>
-<div><span>Demonstrate</span><p>Complete <a href="machine-learning/033-clustering/10-segmentation-project.html">Segmentation project</a> without copying the solution blueprint first.</p></div>
+<div>
+<span>Learn</span>
+<p>
+Begin with <a href="machine-learning/033-clustering/01-clustering-foundations.html">Clustering foundations</a> and write the core mental model in your own words.
+</p>
 </div>
-</details><details class="plan-week plan-topic-week">
-<summary><span class="plan-week-number">Week 08</span><strong>Dimensionality reduction and anomaly detection</strong><span class="plan-stage">Applied delivery</span></summary>
+<div>
+<span>Practice</span>
+<p>
+Run, change, and explain the worked patterns across the middle lessons. Keep test evidence and questions.
+</p>
+</div>
+<div>
+<span>Demonstrate</span>
+<p>
+Complete <a href="machine-learning/033-clustering/10-segmentation-project.html">Segmentation project</a> without copying the solution blueprint first.
+</p>
+</div>
+</div>
+</details>
+<details class="plan-week plan-topic-week">
+<summary>
+<span class="plan-week-number">Week 08</span><strong>Dimensionality reduction and anomaly detection</strong><span class="plan-stage">Applied delivery</span>
+</summary>
 <div class="plan-week-body">
-<div><span>Learn</span><p>Begin with <a href="machine-learning/034-dimensionality-reduction-and-anomaly-detection/01-curse-of-dimensionality.html">Curse of dimensionality</a> and write the core mental model in your own words.</p></div>
-<div><span>Practice</span><p>Run, change, and explain the worked patterns across the middle lessons. Keep test evidence and questions.</p></div>
-<div><span>Demonstrate</span><p>Complete <a href="machine-learning/034-dimensionality-reduction-and-anomaly-detection/10-anomaly-project.html">Anomaly project</a> without copying the solution blueprint first.</p></div>
+<div>
+<span>Learn</span>
+<p>
+Begin with <a href="machine-learning/034-dimensionality-reduction-and-anomaly-detection/01-curse-of-dimensionality.html">Curse of dimensionality</a> and write the core mental model in your own words.
+</p>
 </div>
-</details><details class="plan-week plan-topic-week">
-<summary><span class="plan-week-number">Week 09</span><strong>Evaluation tuning and explainability</strong><span class="plan-stage">Applied delivery</span></summary>
+<div>
+<span>Practice</span>
+<p>
+Run, change, and explain the worked patterns across the middle lessons. Keep test evidence and questions.
+</p>
+</div>
+<div>
+<span>Demonstrate</span>
+<p>
+Complete <a href="machine-learning/034-dimensionality-reduction-and-anomaly-detection/10-anomaly-project.html">Anomaly project</a> without copying the solution blueprint first.
+</p>
+</div>
+</div>
+</details>
+<details class="plan-week plan-topic-week">
+<summary>
+<span class="plan-week-number">Week 09</span><strong>Evaluation tuning and explainability</strong><span class="plan-stage">Applied delivery</span>
+</summary>
 <div class="plan-week-body">
-<div><span>Learn</span><p>Begin with <a href="machine-learning/035-evaluation-tuning-and-explainability/01-cross-validation.html">Cross-validation</a> and write the core mental model in your own words.</p></div>
-<div><span>Practice</span><p>Run, change, and explain the worked patterns across the middle lessons. Keep test evidence and questions.</p></div>
-<div><span>Demonstrate</span><p>Complete <a href="machine-learning/035-evaluation-tuning-and-explainability/10-model-review-report.html">Model-review report</a> without copying the solution blueprint first.</p></div>
+<div>
+<span>Learn</span>
+<p>
+Begin with <a href="machine-learning/035-evaluation-tuning-and-explainability/01-cross-validation.html">Cross-validation</a> and write the core mental model in your own words.
+</p>
 </div>
-</details><details class="plan-week plan-topic-week">
-<summary><span class="plan-week-number">Week 10</span><strong>Production machine learning</strong><span class="plan-stage">Integration &amp; capstone</span></summary>
+<div>
+<span>Practice</span>
+<p>
+Run, change, and explain the worked patterns across the middle lessons. Keep test evidence and questions.
+</p>
+</div>
+<div>
+<span>Demonstrate</span>
+<p>
+Complete <a href="machine-learning/035-evaluation-tuning-and-explainability/10-model-review-report.html">Model-review report</a> without copying the solution blueprint first.
+</p>
+</div>
+</div>
+</details>
+<details class="plan-week plan-topic-week">
+<summary>
+<span class="plan-week-number">Week 10</span><strong>Production machine learning</strong><span class="plan-stage">Integration &amp; capstone</span>
+</summary>
 <div class="plan-week-body">
-<div><span>Learn</span><p>Begin with <a href="machine-learning/036-production-machine-learning/01-model-packaging.html">Model packaging</a> and write the core mental model in your own words.</p></div>
-<div><span>Practice</span><p>Run, change, and explain the worked patterns across the middle lessons. Keep test evidence and questions.</p></div>
-<div><span>Demonstrate</span><p>Complete <a href="machine-learning/036-production-machine-learning/10-production-ml-capstone.html">Production ML capstone</a> without copying the solution blueprint first.</p></div>
+<div>
+<span>Learn</span>
+<p>
+Begin with <a href="machine-learning/036-production-machine-learning/01-model-packaging.html">Model packaging</a> and write the core mental model in your own words.
+</p>
 </div>
-</details><div class="plan-integration-week">
+<div>
+<span>Practice</span>
+<p>
+Run, change, and explain the worked patterns across the middle lessons. Keep test evidence and questions.
+</p>
+</div>
+<div>
+<span>Demonstrate</span>
+<p>
+Complete <a href="machine-learning/036-production-machine-learning/10-production-ml-capstone.html">Production ML capstone</a> without copying the solution blueprint first.
+</p>
+</div>
+</div>
+</details>
+<div class="plan-integration-week">
 <span class="plan-week-number">Week 11</span>
-<div><strong>Integration, review, and portfolio evidence</strong><p>Connect the topic artifacts, close weak areas, and publish one reviewable Machine Learning outcome. Use <a href="machine-learning/036-production-machine-learning/10-production-ml-capstone.html">Production ML capstone</a> as the final checkpoint.</p></div>
-<i aria-hidden="true" class="bi bi-trophy"></i>
+<div>
+<strong>Integration, review, and portfolio evidence</strong>
+<p>
+Connect the topic artifacts, close weak areas, and publish one reviewable Machine Learning outcome. Use <a href="machine-learning/036-production-machine-learning/10-production-ml-capstone.html">Production ML capstone</a> as the final checkpoint.
+</p>
+</div>
+<p><i class="bi bi-trophy" aria-hidden="true"></i></p>
 </div>
 </div>
-</section><section class="learning-path-section" id="full-learning-path">
-<div class="path-section-heading"><div><span class="overview-kicker">Ordered progression</span><h2>Full learning path</h2><p>Follow every stage in sequence. Each stage links directly to its first notebook and ends with a concrete mastery checkpoint.</p></div><span class="path-route"><i class="bi bi-signpost-2"></i> Full Stack AI → Machine Learning</span></div>
+</section>
+<section class="learning-path-section" id="full-learning-path">
+<div class="path-section-heading">
+<div>
+<span class="overview-kicker">Ordered progression</span>
+<h2 class="anchored">
+Full learning path
+</h2>
+<p>
+Follow every stage in sequence. Each stage links directly to its first notebook and ends with a concrete mastery checkpoint.
+</p>
+</div>
+<span class="path-route"><i class="bi bi-signpost-2"></i> Full Stack AI → Machine Learning</span>
+</div>
 <div class="learning-path">
-<a class="learning-path-step" data-topic="027" href="machine-learning/027-machine-learning-foundations/01-ml-problem-types.html">
-<span class="path-index">01</span>
-<span class="path-step-copy"><span class="path-phase">Foundation · Topic 027</span><strong>Machine-learning foundations</strong><small>Enter with ML problem types. Demonstrate mastery through First ML project.</small></span>
-<i aria-hidden="true" class="bi bi-arrow-right"></i>
-</a><a class="learning-path-step" data-topic="028" href="machine-learning/028-preprocessing-and-pipelines/01-train-validation-test-splits.html">
-<span class="path-index">02</span>
-<span class="path-step-copy"><span class="path-phase">Core skills · Topic 028</span><strong>Preprocessing and pipelines</strong><small>Enter with Train-validation-test splits. Demonstrate mastery through Pipeline project.</small></span>
-<i aria-hidden="true" class="bi bi-arrow-right"></i>
-</a><a class="learning-path-step" data-topic="029" href="machine-learning/029-linear-regression/01-regression-intuition.html">
-<span class="path-index">03</span>
-<span class="path-step-copy"><span class="path-phase">Core skills · Topic 029</span><strong>Linear regression</strong><small>Enter with Regression intuition. Demonstrate mastery through Regression project.</small></span>
-<i aria-hidden="true" class="bi bi-arrow-right"></i>
-</a><a class="learning-path-step" data-topic="030" href="machine-learning/030-classification-foundations/01-classification-problems.html">
-<span class="path-index">04</span>
-<span class="path-step-copy"><span class="path-phase">Core skills · Topic 030</span><strong>Classification foundations</strong><small>Enter with Classification problems. Demonstrate mastery through Classification project.</small></span>
-<i aria-hidden="true" class="bi bi-arrow-right"></i>
-</a><a class="learning-path-step" data-topic="031" href="machine-learning/031-trees-and-ensemble-learning/01-decision-trees.html">
-<span class="path-index">05</span>
-<span class="path-step-copy"><span class="path-phase">Core skills · Topic 031</span><strong>Trees and ensemble learning</strong><small>Enter with Decision trees. Demonstrate mastery through Ensemble project.</small></span>
-<i aria-hidden="true" class="bi bi-arrow-right"></i>
-</a><a class="learning-path-step" data-topic="032" href="machine-learning/032-classical-machine-learning-algorithms/01-k-nearest-neighbours.html">
-<span class="path-index">06</span>
-<span class="path-step-copy"><span class="path-phase">Applied delivery · Topic 032</span><strong>Classical machine-learning algorithms</strong><small>Enter with K-nearest neighbours. Demonstrate mastery through Algorithm comparison project.</small></span>
-<i aria-hidden="true" class="bi bi-arrow-right"></i>
-</a><a class="learning-path-step" data-topic="033" href="machine-learning/033-clustering/01-clustering-foundations.html">
-<span class="path-index">07</span>
-<span class="path-step-copy"><span class="path-phase">Applied delivery · Topic 033</span><strong>Clustering</strong><small>Enter with Clustering foundations. Demonstrate mastery through Segmentation project.</small></span>
-<i aria-hidden="true" class="bi bi-arrow-right"></i>
-</a><a class="learning-path-step" data-topic="034" href="machine-learning/034-dimensionality-reduction-and-anomaly-detection/01-curse-of-dimensionality.html">
-<span class="path-index">08</span>
-<span class="path-step-copy"><span class="path-phase">Applied delivery · Topic 034</span><strong>Dimensionality reduction and anomaly detection</strong><small>Enter with Curse of dimensionality. Demonstrate mastery through Anomaly project.</small></span>
-<i aria-hidden="true" class="bi bi-arrow-right"></i>
-</a><a class="learning-path-step" data-topic="035" href="machine-learning/035-evaluation-tuning-and-explainability/01-cross-validation.html">
-<span class="path-index">09</span>
-<span class="path-step-copy"><span class="path-phase">Applied delivery · Topic 035</span><strong>Evaluation tuning and explainability</strong><small>Enter with Cross-validation. Demonstrate mastery through Model-review report.</small></span>
-<i aria-hidden="true" class="bi bi-arrow-right"></i>
-</a><a class="learning-path-step" data-topic="036" href="machine-learning/036-production-machine-learning/01-model-packaging.html">
-<span class="path-index">10</span>
-<span class="path-step-copy"><span class="path-phase">Integration &amp; capstone · Topic 036</span><strong>Production machine learning</strong><small>Enter with Model packaging. Demonstrate mastery through Production ML capstone.</small></span>
-<i aria-hidden="true" class="bi bi-arrow-right"></i>
-</a>
+<p><a class="learning-path-step" data-topic="027" href="machine-learning/027-machine-learning-foundations/01-ml-problem-types.html"> <span class="path-index">01</span> <span class="path-step-copy"><span class="path-phase">Foundation · Topic 027</span><strong>Machine-learning foundations</strong><small>Enter with ML problem types. Demonstrate mastery through First ML project.</small></span> <i class="bi bi-arrow-right" aria-hidden="true"></i> </a><a class="learning-path-step" data-topic="028" href="machine-learning/028-preprocessing-and-pipelines/01-train-validation-test-splits.html"> <span class="path-index">02</span> <span class="path-step-copy"><span class="path-phase">Core skills · Topic 028</span><strong>Preprocessing and pipelines</strong><small>Enter with Train-validation-test splits. Demonstrate mastery through Pipeline project.</small></span> <i class="bi bi-arrow-right" aria-hidden="true"></i> </a><a class="learning-path-step" data-topic="029" href="machine-learning/029-linear-regression/01-regression-intuition.html"> <span class="path-index">03</span> <span class="path-step-copy"><span class="path-phase">Core skills · Topic 029</span><strong>Linear regression</strong><small>Enter with Regression intuition. Demonstrate mastery through Regression project.</small></span> <i class="bi bi-arrow-right" aria-hidden="true"></i> </a><a class="learning-path-step" data-topic="030" href="machine-learning/030-classification-foundations/01-classification-problems.html"> <span class="path-index">04</span> <span class="path-step-copy"><span class="path-phase">Core skills · Topic 030</span><strong>Classification foundations</strong><small>Enter with Classification problems. Demonstrate mastery through Classification project.</small></span> <i class="bi bi-arrow-right" aria-hidden="true"></i> </a><a class="learning-path-step" data-topic="031" href="machine-learning/031-trees-and-ensemble-learning/01-decision-trees.html"> <span class="path-index">05</span> <span class="path-step-copy"><span class="path-phase">Core skills · Topic 031</span><strong>Trees and ensemble learning</strong><small>Enter with Decision trees. Demonstrate mastery through Ensemble project.</small></span> <i class="bi bi-arrow-right" aria-hidden="true"></i> </a><a class="learning-path-step" data-topic="032" href="machine-learning/032-classical-machine-learning-algorithms/01-k-nearest-neighbours.html"> <span class="path-index">06</span> <span class="path-step-copy"><span class="path-phase">Applied delivery · Topic 032</span><strong>Classical machine-learning algorithms</strong><small>Enter with K-nearest neighbours. Demonstrate mastery through Algorithm comparison project.</small></span> <i class="bi bi-arrow-right" aria-hidden="true"></i> </a><a class="learning-path-step" data-topic="033" href="machine-learning/033-clustering/01-clustering-foundations.html"> <span class="path-index">07</span> <span class="path-step-copy"><span class="path-phase">Applied delivery · Topic 033</span><strong>Clustering</strong><small>Enter with Clustering foundations. Demonstrate mastery through Segmentation project.</small></span> <i class="bi bi-arrow-right" aria-hidden="true"></i> </a><a class="learning-path-step" data-topic="034" href="machine-learning/034-dimensionality-reduction-and-anomaly-detection/01-curse-of-dimensionality.html"> <span class="path-index">08</span> <span class="path-step-copy"><span class="path-phase">Applied delivery · Topic 034</span><strong>Dimensionality reduction and anomaly detection</strong><small>Enter with Curse of dimensionality. Demonstrate mastery through Anomaly project.</small></span> <i class="bi bi-arrow-right" aria-hidden="true"></i> </a><a class="learning-path-step" data-topic="035" href="machine-learning/035-evaluation-tuning-and-explainability/01-cross-validation.html"> <span class="path-index">09</span> <span class="path-step-copy"><span class="path-phase">Applied delivery · Topic 035</span><strong>Evaluation tuning and explainability</strong><small>Enter with Cross-validation. Demonstrate mastery through Model-review report.</small></span> <i class="bi bi-arrow-right" aria-hidden="true"></i> </a><a class="learning-path-step" data-topic="036" href="machine-learning/036-production-machine-learning/01-model-packaging.html"> <span class="path-index">10</span> <span class="path-step-copy"><span class="path-phase">Integration &amp; capstone · Topic 036</span><strong>Production machine learning</strong><small>Enter with Model packaging. Demonstrate mastery through Production ML capstone.</small></span> <i class="bi bi-arrow-right" aria-hidden="true"></i> </a></p>
 </div>
-<div class="path-finish"><span><i class="bi bi-trophy-fill"></i></span><div><small>Completion milestone</small><strong>Connect the complete Machine Learning workflow</strong><p>Combine evidence from every stage and finish with Production ML capstone. You should be able to explain the architecture, reproduce the core workflow, diagnose failure, and defend the main tradeoffs.</p></div></div>
-</section><div class="syllabus-heading" id="notebook-syllabus">
-<div><span class="overview-kicker">Course contents</span><h2>Notebook syllabus</h2><p>Open a topic to browse its lessons, or search the complete course by concept.</p></div>
-<label class="syllabus-search" for="full-stack-ai-machine-learning-catalog-search"><i aria-hidden="true" class="bi bi-search"></i><input aria-label="Search the Machine Learning syllabus" autocomplete="off" id="full-stack-ai-machine-learning-catalog-search" placeholder="Find a topic or lesson" type="search"/></label>
+<div class="path-finish">
+<span><i class="bi bi-trophy-fill"></i></span>
+<div>
+<small>Completion milestone</small><strong>Connect the complete Machine Learning workflow</strong>
+<p>
+Combine evidence from every stage and finish with Production ML capstone. You should be able to explain the architecture, reproduce the core workflow, diagnose failure, and defend the main tradeoffs.
+</p>
 </div>
-<div class="curriculum-catalog" id="full-stack-ai-machine-learning-catalog">
+</div>
+</section>
+<div id="notebook-syllabus" class="syllabus-heading">
+<div>
+<span class="overview-kicker">Course contents</span>
+<h2 class="anchored">
+Notebook syllabus
+</h2>
+<p>
+Open a topic to browse its lessons, or search the complete course by concept.
+</p>
+</div>
+<p><label class="syllabus-search" for="full-stack-ai-machine-learning-catalog-search"><i class="bi bi-search" aria-hidden="true"></i><input id="full-stack-ai-machine-learning-catalog-search" type="search" placeholder="Find a topic or lesson" autocomplete="off" aria-label="Search the Machine Learning syllabus"></label></p>
+</div>
+<div id="full-stack-ai-machine-learning-catalog" class="curriculum-catalog">
 <details class="curriculum-topic" open="">
-<summary><span class="topic-number">Topic 027</span><strong>Machine-learning foundations</strong></summary>
+<summary>
+<span class="topic-number">Topic 027</span><strong>Machine-learning foundations</strong>
+</summary>
 <div class="topic-lessons">
-<a class="topic-lesson-link" href="machine-learning/027-machine-learning-foundations/01-ml-problem-types.html"><span>027.01</span><strong>ML problem types</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="machine-learning/027-machine-learning-foundations/02-supervised-learning.html"><span>027.02</span><strong>Supervised learning</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="machine-learning/027-machine-learning-foundations/03-unsupervised-learning.html"><span>027.03</span><strong>Unsupervised learning</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="machine-learning/027-machine-learning-foundations/04-features-and-targets.html"><span>027.04</span><strong>Features and targets</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="machine-learning/027-machine-learning-foundations/05-training-and-inference.html"><span>027.05</span><strong>Training and inference</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="machine-learning/027-machine-learning-foundations/06-generalization.html"><span>027.06</span><strong>Generalization</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="machine-learning/027-machine-learning-foundations/07-bias-and-variance.html"><span>027.07</span><strong>Bias and variance</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="machine-learning/027-machine-learning-foundations/08-underfitting-and-overfitting.html"><span>027.08</span><strong>Underfitting and overfitting</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="machine-learning/027-machine-learning-foundations/09-baselines.html"><span>027.09</span><strong>Baselines</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="machine-learning/027-machine-learning-foundations/10-first-ml-project.html"><span>027.10</span><strong>First ML project</strong><i class="bi bi-arrow-right"></i></a>
+<p><a class="topic-lesson-link" href="machine-learning/027-machine-learning-foundations/01-ml-problem-types.html"><span>027.01</span><strong>ML problem types</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="machine-learning/027-machine-learning-foundations/02-supervised-learning.html"><span>027.02</span><strong>Supervised learning</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="machine-learning/027-machine-learning-foundations/03-unsupervised-learning.html"><span>027.03</span><strong>Unsupervised learning</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="machine-learning/027-machine-learning-foundations/04-features-and-targets.html"><span>027.04</span><strong>Features and targets</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="machine-learning/027-machine-learning-foundations/05-training-and-inference.html"><span>027.05</span><strong>Training and inference</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="machine-learning/027-machine-learning-foundations/06-generalization.html"><span>027.06</span><strong>Generalization</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="machine-learning/027-machine-learning-foundations/07-bias-and-variance.html"><span>027.07</span><strong>Bias and variance</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="machine-learning/027-machine-learning-foundations/08-underfitting-and-overfitting.html"><span>027.08</span><strong>Underfitting and overfitting</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="machine-learning/027-machine-learning-foundations/09-baselines.html"><span>027.09</span><strong>Baselines</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="machine-learning/027-machine-learning-foundations/10-first-ml-project.html"><span>027.10</span><strong>First ML project</strong><i class="bi bi-arrow-right"></i></a></p>
 </div>
 </details>
 <details class="curriculum-topic">
-<summary><span class="topic-number">Topic 028</span><strong>Preprocessing and pipelines</strong></summary>
+<summary>
+<span class="topic-number">Topic 028</span><strong>Preprocessing and pipelines</strong>
+</summary>
 <div class="topic-lessons">
-<a class="topic-lesson-link" href="machine-learning/028-preprocessing-and-pipelines/01-train-validation-test-splits.html"><span>028.01</span><strong>Train-validation-test splits</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="machine-learning/028-preprocessing-and-pipelines/02-missing-value-imputation.html"><span>028.02</span><strong>Missing-value imputation</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="machine-learning/028-preprocessing-and-pipelines/03-categorical-encoding.html"><span>028.03</span><strong>Categorical encoding</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="machine-learning/028-preprocessing-and-pipelines/04-feature-scaling.html"><span>028.04</span><strong>Feature scaling</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="machine-learning/028-preprocessing-and-pipelines/05-transformation-pipelines.html"><span>028.05</span><strong>Transformation pipelines</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="machine-learning/028-preprocessing-and-pipelines/06-columntransformer.html"><span>028.06</span><strong>ColumnTransformer</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="machine-learning/028-preprocessing-and-pipelines/07-class-imbalance.html"><span>028.07</span><strong>Class imbalance</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="machine-learning/028-preprocessing-and-pipelines/08-data-leakage.html"><span>028.08</span><strong>Data leakage</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="machine-learning/028-preprocessing-and-pipelines/09-reproducible-preprocessing.html"><span>028.09</span><strong>Reproducible preprocessing</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="machine-learning/028-preprocessing-and-pipelines/10-pipeline-project.html"><span>028.10</span><strong>Pipeline project</strong><i class="bi bi-arrow-right"></i></a>
+<p><a class="topic-lesson-link" href="machine-learning/028-preprocessing-and-pipelines/01-train-validation-test-splits.html"><span>028.01</span><strong>Train-validation-test splits</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="machine-learning/028-preprocessing-and-pipelines/02-missing-value-imputation.html"><span>028.02</span><strong>Missing-value imputation</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="machine-learning/028-preprocessing-and-pipelines/03-categorical-encoding.html"><span>028.03</span><strong>Categorical encoding</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="machine-learning/028-preprocessing-and-pipelines/04-feature-scaling.html"><span>028.04</span><strong>Feature scaling</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="machine-learning/028-preprocessing-and-pipelines/05-transformation-pipelines.html"><span>028.05</span><strong>Transformation pipelines</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="machine-learning/028-preprocessing-and-pipelines/06-columntransformer.html"><span>028.06</span><strong>ColumnTransformer</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="machine-learning/028-preprocessing-and-pipelines/07-class-imbalance.html"><span>028.07</span><strong>Class imbalance</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="machine-learning/028-preprocessing-and-pipelines/08-data-leakage.html"><span>028.08</span><strong>Data leakage</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="machine-learning/028-preprocessing-and-pipelines/09-reproducible-preprocessing.html"><span>028.09</span><strong>Reproducible preprocessing</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="machine-learning/028-preprocessing-and-pipelines/10-pipeline-project.html"><span>028.10</span><strong>Pipeline project</strong><i class="bi bi-arrow-right"></i></a></p>
 </div>
 </details>
 <details class="curriculum-topic">
-<summary><span class="topic-number">Topic 029</span><strong>Linear regression</strong></summary>
+<summary>
+<span class="topic-number">Topic 029</span><strong>Linear regression</strong>
+</summary>
 <div class="topic-lessons">
-<a class="topic-lesson-link" href="machine-learning/029-linear-regression/01-regression-intuition.html"><span>029.01</span><strong>Regression intuition</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="machine-learning/029-linear-regression/02-simple-linear-regression.html"><span>029.02</span><strong>Simple linear regression</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="machine-learning/029-linear-regression/03-multiple-regression.html"><span>029.03</span><strong>Multiple regression</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="machine-learning/029-linear-regression/04-loss-functions.html"><span>029.04</span><strong>Loss functions</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="machine-learning/029-linear-regression/05-gradient-descent.html"><span>029.05</span><strong>Gradient descent</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="machine-learning/029-linear-regression/06-regression-assumptions.html"><span>029.06</span><strong>Regression assumptions</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="machine-learning/029-linear-regression/07-regularization.html"><span>029.07</span><strong>Regularization</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="machine-learning/029-linear-regression/08-regression-metrics.html"><span>029.08</span><strong>Regression metrics</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="machine-learning/029-linear-regression/09-residual-analysis.html"><span>029.09</span><strong>Residual analysis</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="machine-learning/029-linear-regression/10-regression-project.html"><span>029.10</span><strong>Regression project</strong><i class="bi bi-arrow-right"></i></a>
+<p><a class="topic-lesson-link" href="machine-learning/029-linear-regression/01-regression-intuition.html"><span>029.01</span><strong>Regression intuition</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="machine-learning/029-linear-regression/02-simple-linear-regression.html"><span>029.02</span><strong>Simple linear regression</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="machine-learning/029-linear-regression/03-multiple-regression.html"><span>029.03</span><strong>Multiple regression</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="machine-learning/029-linear-regression/04-loss-functions.html"><span>029.04</span><strong>Loss functions</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="machine-learning/029-linear-regression/05-gradient-descent.html"><span>029.05</span><strong>Gradient descent</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="machine-learning/029-linear-regression/06-regression-assumptions.html"><span>029.06</span><strong>Regression assumptions</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="machine-learning/029-linear-regression/07-regularization.html"><span>029.07</span><strong>Regularization</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="machine-learning/029-linear-regression/08-regression-metrics.html"><span>029.08</span><strong>Regression metrics</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="machine-learning/029-linear-regression/09-residual-analysis.html"><span>029.09</span><strong>Residual analysis</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="machine-learning/029-linear-regression/10-regression-project.html"><span>029.10</span><strong>Regression project</strong><i class="bi bi-arrow-right"></i></a></p>
 </div>
 </details>
 <details class="curriculum-topic">
-<summary><span class="topic-number">Topic 030</span><strong>Classification foundations</strong></summary>
+<summary>
+<span class="topic-number">Topic 030</span><strong>Classification foundations</strong>
+</summary>
 <div class="topic-lessons">
-<a class="topic-lesson-link" href="machine-learning/030-classification-foundations/01-classification-problems.html"><span>030.01</span><strong>Classification problems</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="machine-learning/030-classification-foundations/02-logistic-regression.html"><span>030.02</span><strong>Logistic regression</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="machine-learning/030-classification-foundations/03-probabilities-and-logits.html"><span>030.03</span><strong>Probabilities and logits</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="machine-learning/030-classification-foundations/04-decision-thresholds.html"><span>030.04</span><strong>Decision thresholds</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="machine-learning/030-classification-foundations/05-confusion-matrix.html"><span>030.05</span><strong>Confusion matrix</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="machine-learning/030-classification-foundations/06-precision-and-recall.html"><span>030.06</span><strong>Precision and recall</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="machine-learning/030-classification-foundations/07-roc-and-pr-curves.html"><span>030.07</span><strong>ROC and PR curves</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="machine-learning/030-classification-foundations/08-multiclass-classification.html"><span>030.08</span><strong>Multiclass classification</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="machine-learning/030-classification-foundations/09-calibration.html"><span>030.09</span><strong>Calibration</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="machine-learning/030-classification-foundations/10-classification-project.html"><span>030.10</span><strong>Classification project</strong><i class="bi bi-arrow-right"></i></a>
+<p><a class="topic-lesson-link" href="machine-learning/030-classification-foundations/01-classification-problems.html"><span>030.01</span><strong>Classification problems</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="machine-learning/030-classification-foundations/02-logistic-regression.html"><span>030.02</span><strong>Logistic regression</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="machine-learning/030-classification-foundations/03-probabilities-and-logits.html"><span>030.03</span><strong>Probabilities and logits</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="machine-learning/030-classification-foundations/04-decision-thresholds.html"><span>030.04</span><strong>Decision thresholds</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="machine-learning/030-classification-foundations/05-confusion-matrix.html"><span>030.05</span><strong>Confusion matrix</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="machine-learning/030-classification-foundations/06-precision-and-recall.html"><span>030.06</span><strong>Precision and recall</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="machine-learning/030-classification-foundations/07-roc-and-pr-curves.html"><span>030.07</span><strong>ROC and PR curves</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="machine-learning/030-classification-foundations/08-multiclass-classification.html"><span>030.08</span><strong>Multiclass classification</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="machine-learning/030-classification-foundations/09-calibration.html"><span>030.09</span><strong>Calibration</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="machine-learning/030-classification-foundations/10-classification-project.html"><span>030.10</span><strong>Classification project</strong><i class="bi bi-arrow-right"></i></a></p>
 </div>
 </details>
 <details class="curriculum-topic">
-<summary><span class="topic-number">Topic 031</span><strong>Trees and ensemble learning</strong></summary>
+<summary>
+<span class="topic-number">Topic 031</span><strong>Trees and ensemble learning</strong>
+</summary>
 <div class="topic-lessons">
-<a class="topic-lesson-link" href="machine-learning/031-trees-and-ensemble-learning/01-decision-trees.html"><span>031.01</span><strong>Decision trees</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="machine-learning/031-trees-and-ensemble-learning/02-split-criteria.html"><span>031.02</span><strong>Split criteria</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="machine-learning/031-trees-and-ensemble-learning/03-tree-pruning.html"><span>031.03</span><strong>Tree pruning</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="machine-learning/031-trees-and-ensemble-learning/04-random-forests.html"><span>031.04</span><strong>Random forests</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="machine-learning/031-trees-and-ensemble-learning/05-bagging.html"><span>031.05</span><strong>Bagging</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="machine-learning/031-trees-and-ensemble-learning/06-gradient-boosting.html"><span>031.06</span><strong>Gradient boosting</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="machine-learning/031-trees-and-ensemble-learning/07-xgboost-concepts.html"><span>031.07</span><strong>XGBoost concepts</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="machine-learning/031-trees-and-ensemble-learning/08-feature-importance.html"><span>031.08</span><strong>Feature importance</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="machine-learning/031-trees-and-ensemble-learning/09-ensemble-tuning.html"><span>031.09</span><strong>Ensemble tuning</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="machine-learning/031-trees-and-ensemble-learning/10-ensemble-project.html"><span>031.10</span><strong>Ensemble project</strong><i class="bi bi-arrow-right"></i></a>
+<p><a class="topic-lesson-link" href="machine-learning/031-trees-and-ensemble-learning/01-decision-trees.html"><span>031.01</span><strong>Decision trees</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="machine-learning/031-trees-and-ensemble-learning/02-split-criteria.html"><span>031.02</span><strong>Split criteria</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="machine-learning/031-trees-and-ensemble-learning/03-tree-pruning.html"><span>031.03</span><strong>Tree pruning</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="machine-learning/031-trees-and-ensemble-learning/04-random-forests.html"><span>031.04</span><strong>Random forests</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="machine-learning/031-trees-and-ensemble-learning/05-bagging.html"><span>031.05</span><strong>Bagging</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="machine-learning/031-trees-and-ensemble-learning/06-gradient-boosting.html"><span>031.06</span><strong>Gradient boosting</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="machine-learning/031-trees-and-ensemble-learning/07-xgboost-concepts.html"><span>031.07</span><strong>XGBoost concepts</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="machine-learning/031-trees-and-ensemble-learning/08-feature-importance.html"><span>031.08</span><strong>Feature importance</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="machine-learning/031-trees-and-ensemble-learning/09-ensemble-tuning.html"><span>031.09</span><strong>Ensemble tuning</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="machine-learning/031-trees-and-ensemble-learning/10-ensemble-project.html"><span>031.10</span><strong>Ensemble project</strong><i class="bi bi-arrow-right"></i></a></p>
 </div>
 </details>
 <details class="curriculum-topic">
-<summary><span class="topic-number">Topic 032</span><strong>Classical machine-learning algorithms</strong></summary>
+<summary>
+<span class="topic-number">Topic 032</span><strong>Classical machine-learning algorithms</strong>
+</summary>
 <div class="topic-lessons">
-<a class="topic-lesson-link" href="machine-learning/032-classical-machine-learning-algorithms/01-k-nearest-neighbours.html"><span>032.01</span><strong>K-nearest neighbours</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="machine-learning/032-classical-machine-learning-algorithms/02-support-vector-machines.html"><span>032.02</span><strong>Support-vector machines</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="machine-learning/032-classical-machine-learning-algorithms/03-naive-bayes.html"><span>032.03</span><strong>Naive Bayes</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="machine-learning/032-classical-machine-learning-algorithms/04-linear-discriminant-analysis.html"><span>032.04</span><strong>Linear discriminant analysis</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="machine-learning/032-classical-machine-learning-algorithms/05-nearest-centroid-models.html"><span>032.05</span><strong>Nearest-centroid models</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="machine-learning/032-classical-machine-learning-algorithms/06-algorithm-assumptions.html"><span>032.06</span><strong>Algorithm assumptions</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="machine-learning/032-classical-machine-learning-algorithms/07-scaling-requirements.html"><span>032.07</span><strong>Scaling requirements</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="machine-learning/032-classical-machine-learning-algorithms/08-complexity-comparison.html"><span>032.08</span><strong>Complexity comparison</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="machine-learning/032-classical-machine-learning-algorithms/09-model-selection.html"><span>032.09</span><strong>Model selection</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="machine-learning/032-classical-machine-learning-algorithms/10-algorithm-comparison-project.html"><span>032.10</span><strong>Algorithm comparison project</strong><i class="bi bi-arrow-right"></i></a>
+<p><a class="topic-lesson-link" href="machine-learning/032-classical-machine-learning-algorithms/01-k-nearest-neighbours.html"><span>032.01</span><strong>K-nearest neighbours</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="machine-learning/032-classical-machine-learning-algorithms/02-support-vector-machines.html"><span>032.02</span><strong>Support-vector machines</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="machine-learning/032-classical-machine-learning-algorithms/03-naive-bayes.html"><span>032.03</span><strong>Naive Bayes</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="machine-learning/032-classical-machine-learning-algorithms/04-linear-discriminant-analysis.html"><span>032.04</span><strong>Linear discriminant analysis</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="machine-learning/032-classical-machine-learning-algorithms/05-nearest-centroid-models.html"><span>032.05</span><strong>Nearest-centroid models</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="machine-learning/032-classical-machine-learning-algorithms/06-algorithm-assumptions.html"><span>032.06</span><strong>Algorithm assumptions</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="machine-learning/032-classical-machine-learning-algorithms/07-scaling-requirements.html"><span>032.07</span><strong>Scaling requirements</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="machine-learning/032-classical-machine-learning-algorithms/08-complexity-comparison.html"><span>032.08</span><strong>Complexity comparison</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="machine-learning/032-classical-machine-learning-algorithms/09-model-selection.html"><span>032.09</span><strong>Model selection</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="machine-learning/032-classical-machine-learning-algorithms/10-algorithm-comparison-project.html"><span>032.10</span><strong>Algorithm comparison project</strong><i class="bi bi-arrow-right"></i></a></p>
 </div>
 </details>
 <details class="curriculum-topic">
-<summary><span class="topic-number">Topic 033</span><strong>Clustering</strong></summary>
+<summary>
+<span class="topic-number">Topic 033</span><strong>Clustering</strong>
+</summary>
 <div class="topic-lessons">
-<a class="topic-lesson-link" href="machine-learning/033-clustering/01-clustering-foundations.html"><span>033.01</span><strong>Clustering foundations</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="machine-learning/033-clustering/02-k-means.html"><span>033.02</span><strong>K-means</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="machine-learning/033-clustering/03-k-means-initialization.html"><span>033.03</span><strong>K-means initialization</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="machine-learning/033-clustering/04-hierarchical-clustering.html"><span>033.04</span><strong>Hierarchical clustering</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="machine-learning/033-clustering/05-dbscan.html"><span>033.05</span><strong>DBSCAN</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="machine-learning/033-clustering/06-gaussian-mixtures.html"><span>033.06</span><strong>Gaussian mixtures</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="machine-learning/033-clustering/07-cluster-evaluation.html"><span>033.07</span><strong>Cluster evaluation</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="machine-learning/033-clustering/08-choosing-cluster-count.html"><span>033.08</span><strong>Choosing cluster count</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="machine-learning/033-clustering/09-cluster-interpretation.html"><span>033.09</span><strong>Cluster interpretation</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="machine-learning/033-clustering/10-segmentation-project.html"><span>033.10</span><strong>Segmentation project</strong><i class="bi bi-arrow-right"></i></a>
+<p><a class="topic-lesson-link" href="machine-learning/033-clustering/01-clustering-foundations.html"><span>033.01</span><strong>Clustering foundations</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="machine-learning/033-clustering/02-k-means.html"><span>033.02</span><strong>K-means</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="machine-learning/033-clustering/03-k-means-initialization.html"><span>033.03</span><strong>K-means initialization</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="machine-learning/033-clustering/04-hierarchical-clustering.html"><span>033.04</span><strong>Hierarchical clustering</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="machine-learning/033-clustering/05-dbscan.html"><span>033.05</span><strong>DBSCAN</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="machine-learning/033-clustering/06-gaussian-mixtures.html"><span>033.06</span><strong>Gaussian mixtures</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="machine-learning/033-clustering/07-cluster-evaluation.html"><span>033.07</span><strong>Cluster evaluation</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="machine-learning/033-clustering/08-choosing-cluster-count.html"><span>033.08</span><strong>Choosing cluster count</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="machine-learning/033-clustering/09-cluster-interpretation.html"><span>033.09</span><strong>Cluster interpretation</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="machine-learning/033-clustering/10-segmentation-project.html"><span>033.10</span><strong>Segmentation project</strong><i class="bi bi-arrow-right"></i></a></p>
 </div>
 </details>
 <details class="curriculum-topic">
-<summary><span class="topic-number">Topic 034</span><strong>Dimensionality reduction and anomaly detection</strong></summary>
+<summary>
+<span class="topic-number">Topic 034</span><strong>Dimensionality reduction and anomaly detection</strong>
+</summary>
 <div class="topic-lessons">
-<a class="topic-lesson-link" href="machine-learning/034-dimensionality-reduction-and-anomaly-detection/01-curse-of-dimensionality.html"><span>034.01</span><strong>Curse of dimensionality</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="machine-learning/034-dimensionality-reduction-and-anomaly-detection/02-principal-component-analysis.html"><span>034.02</span><strong>Principal component analysis</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="machine-learning/034-dimensionality-reduction-and-anomaly-detection/03-explained-variance.html"><span>034.03</span><strong>Explained variance</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="machine-learning/034-dimensionality-reduction-and-anomaly-detection/04-t-sne-concepts.html"><span>034.04</span><strong>t-SNE concepts</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="machine-learning/034-dimensionality-reduction-and-anomaly-detection/05-umap-concepts.html"><span>034.05</span><strong>UMAP concepts</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="machine-learning/034-dimensionality-reduction-and-anomaly-detection/06-isolation-forest.html"><span>034.06</span><strong>Isolation Forest</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="machine-learning/034-dimensionality-reduction-and-anomaly-detection/07-local-outlier-factor.html"><span>034.07</span><strong>Local Outlier Factor</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="machine-learning/034-dimensionality-reduction-and-anomaly-detection/08-one-class-svm.html"><span>034.08</span><strong>One-class SVM</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="machine-learning/034-dimensionality-reduction-and-anomaly-detection/09-anomaly-evaluation.html"><span>034.09</span><strong>Anomaly evaluation</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="machine-learning/034-dimensionality-reduction-and-anomaly-detection/10-anomaly-project.html"><span>034.10</span><strong>Anomaly project</strong><i class="bi bi-arrow-right"></i></a>
+<p><a class="topic-lesson-link" href="machine-learning/034-dimensionality-reduction-and-anomaly-detection/01-curse-of-dimensionality.html"><span>034.01</span><strong>Curse of dimensionality</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="machine-learning/034-dimensionality-reduction-and-anomaly-detection/02-principal-component-analysis.html"><span>034.02</span><strong>Principal component analysis</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="machine-learning/034-dimensionality-reduction-and-anomaly-detection/03-explained-variance.html"><span>034.03</span><strong>Explained variance</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="machine-learning/034-dimensionality-reduction-and-anomaly-detection/04-t-sne-concepts.html"><span>034.04</span><strong>t-SNE concepts</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="machine-learning/034-dimensionality-reduction-and-anomaly-detection/05-umap-concepts.html"><span>034.05</span><strong>UMAP concepts</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="machine-learning/034-dimensionality-reduction-and-anomaly-detection/06-isolation-forest.html"><span>034.06</span><strong>Isolation Forest</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="machine-learning/034-dimensionality-reduction-and-anomaly-detection/07-local-outlier-factor.html"><span>034.07</span><strong>Local Outlier Factor</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="machine-learning/034-dimensionality-reduction-and-anomaly-detection/08-one-class-svm.html"><span>034.08</span><strong>One-class SVM</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="machine-learning/034-dimensionality-reduction-and-anomaly-detection/09-anomaly-evaluation.html"><span>034.09</span><strong>Anomaly evaluation</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="machine-learning/034-dimensionality-reduction-and-anomaly-detection/10-anomaly-project.html"><span>034.10</span><strong>Anomaly project</strong><i class="bi bi-arrow-right"></i></a></p>
 </div>
 </details>
 <details class="curriculum-topic">
-<summary><span class="topic-number">Topic 035</span><strong>Evaluation tuning and explainability</strong></summary>
+<summary>
+<span class="topic-number">Topic 035</span><strong>Evaluation tuning and explainability</strong>
+</summary>
 <div class="topic-lessons">
-<a class="topic-lesson-link" href="machine-learning/035-evaluation-tuning-and-explainability/01-cross-validation.html"><span>035.01</span><strong>Cross-validation</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="machine-learning/035-evaluation-tuning-and-explainability/02-metric-selection.html"><span>035.02</span><strong>Metric selection</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="machine-learning/035-evaluation-tuning-and-explainability/03-grid-search.html"><span>035.03</span><strong>Grid search</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="machine-learning/035-evaluation-tuning-and-explainability/04-random-search.html"><span>035.04</span><strong>Random search</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="machine-learning/035-evaluation-tuning-and-explainability/05-bayesian-tuning-concepts.html"><span>035.05</span><strong>Bayesian-tuning concepts</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="machine-learning/035-evaluation-tuning-and-explainability/06-learning-curves.html"><span>035.06</span><strong>Learning curves</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="machine-learning/035-evaluation-tuning-and-explainability/07-validation-curves.html"><span>035.07</span><strong>Validation curves</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="machine-learning/035-evaluation-tuning-and-explainability/08-permutation-importance.html"><span>035.08</span><strong>Permutation importance</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="machine-learning/035-evaluation-tuning-and-explainability/09-shap-concepts.html"><span>035.09</span><strong>SHAP concepts</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="machine-learning/035-evaluation-tuning-and-explainability/10-model-review-report.html"><span>035.10</span><strong>Model-review report</strong><i class="bi bi-arrow-right"></i></a>
+<p><a class="topic-lesson-link" href="machine-learning/035-evaluation-tuning-and-explainability/01-cross-validation.html"><span>035.01</span><strong>Cross-validation</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="machine-learning/035-evaluation-tuning-and-explainability/02-metric-selection.html"><span>035.02</span><strong>Metric selection</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="machine-learning/035-evaluation-tuning-and-explainability/03-grid-search.html"><span>035.03</span><strong>Grid search</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="machine-learning/035-evaluation-tuning-and-explainability/04-random-search.html"><span>035.04</span><strong>Random search</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="machine-learning/035-evaluation-tuning-and-explainability/05-bayesian-tuning-concepts.html"><span>035.05</span><strong>Bayesian-tuning concepts</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="machine-learning/035-evaluation-tuning-and-explainability/06-learning-curves.html"><span>035.06</span><strong>Learning curves</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="machine-learning/035-evaluation-tuning-and-explainability/07-validation-curves.html"><span>035.07</span><strong>Validation curves</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="machine-learning/035-evaluation-tuning-and-explainability/08-permutation-importance.html"><span>035.08</span><strong>Permutation importance</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="machine-learning/035-evaluation-tuning-and-explainability/09-shap-concepts.html"><span>035.09</span><strong>SHAP concepts</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="machine-learning/035-evaluation-tuning-and-explainability/10-model-review-report.html"><span>035.10</span><strong>Model-review report</strong><i class="bi bi-arrow-right"></i></a></p>
 </div>
 </details>
 <details class="curriculum-topic">
-<summary><span class="topic-number">Topic 036</span><strong>Production machine learning</strong></summary>
+<summary>
+<span class="topic-number">Topic 036</span><strong>Production machine learning</strong>
+</summary>
 <div class="topic-lessons">
-<a class="topic-lesson-link" href="machine-learning/036-production-machine-learning/01-model-packaging.html"><span>036.01</span><strong>Model packaging</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="machine-learning/036-production-machine-learning/02-batch-inference.html"><span>036.02</span><strong>Batch inference</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="machine-learning/036-production-machine-learning/03-online-inference.html"><span>036.03</span><strong>Online inference</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="machine-learning/036-production-machine-learning/04-model-apis.html"><span>036.04</span><strong>Model APIs</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="machine-learning/036-production-machine-learning/05-input-validation.html"><span>036.05</span><strong>Input validation</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="machine-learning/036-production-machine-learning/06-drift-detection.html"><span>036.06</span><strong>Drift detection</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="machine-learning/036-production-machine-learning/07-monitoring.html"><span>036.07</span><strong>Monitoring</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="machine-learning/036-production-machine-learning/08-retraining-workflows.html"><span>036.08</span><strong>Retraining workflows</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="machine-learning/036-production-machine-learning/09-responsible-deployment.html"><span>036.09</span><strong>Responsible deployment</strong><i class="bi bi-arrow-right"></i></a>
-<a class="topic-lesson-link" href="machine-learning/036-production-machine-learning/10-production-ml-capstone.html"><span>036.10</span><strong>Production ML capstone</strong><i class="bi bi-arrow-right"></i></a>
+<p><a class="topic-lesson-link" href="machine-learning/036-production-machine-learning/01-model-packaging.html"><span>036.01</span><strong>Model packaging</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="machine-learning/036-production-machine-learning/02-batch-inference.html"><span>036.02</span><strong>Batch inference</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="machine-learning/036-production-machine-learning/03-online-inference.html"><span>036.03</span><strong>Online inference</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="machine-learning/036-production-machine-learning/04-model-apis.html"><span>036.04</span><strong>Model APIs</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="machine-learning/036-production-machine-learning/05-input-validation.html"><span>036.05</span><strong>Input validation</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="machine-learning/036-production-machine-learning/06-drift-detection.html"><span>036.06</span><strong>Drift detection</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="machine-learning/036-production-machine-learning/07-monitoring.html"><span>036.07</span><strong>Monitoring</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="machine-learning/036-production-machine-learning/08-retraining-workflows.html"><span>036.08</span><strong>Retraining workflows</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="machine-learning/036-production-machine-learning/09-responsible-deployment.html"><span>036.09</span><strong>Responsible deployment</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="machine-learning/036-production-machine-learning/10-production-ml-capstone.html"><span>036.10</span><strong>Production ML capstone</strong><i class="bi bi-arrow-right"></i></a></p>
 </div>
 </details>
 </div>
-<p class="syllabus-empty" hidden="" id="full-stack-ai-machine-learning-catalog-empty"><i class="bi bi-search"></i> No matching lessons were found.</p>
+<p class="syllabus-empty" id="full-stack-ai-machine-learning-catalog-empty" hidden="">
+<i class="bi bi-search"></i> No matching lessons were found.
+</p>
 <script>
 document.addEventListener("DOMContentLoaded", () => {
   const catalog = document.getElementById("full-stack-ai-machine-learning-catalog");
@@ -682,10 +828,14 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 </script>
-<section class="level2" id="completion-standard">
+</section>
+<section id="completion-standard" class="level2">
 <h2 class="anchored" data-anchor-id="completion-standard">Completion standard</h2>
 <p>You have completed <strong>Machine Learning</strong> when you can explain each topic, reproduce its core workflow, pass the notebook checks, defend the main tradeoffs, and combine the lessons into one reviewable portfolio project. Use the practice tasks as evidence rather than treating page reading alone as completion.</p>
+
+
 </section>
+
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
@@ -1089,17 +1239,21 @@ document.addEventListener("DOMContentLoaded", () => {
   </script>
 </div> <!-- /content -->
 <footer class="footer">
-<div class="nav-footer">
-<div class="nav-footer-left">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
 <p>© 2026 Edukron Notes</p>
-</div>
-<div class="nav-footer-center">
-       
+</div>   
+    <div class="nav-footer-center">
+      &nbsp;
     </div>
-<div class="nav-footer-right">
+    <div class="nav-footer-right">
 <p>Notebook courses for AI, data engineering, and DevOps</p>
 </div>
-</div>
+  </div>
 </footer>
+
+
+
+
 <script src="../../site_libs/quarto-html/zenscroll-min.js"></script>
 </body></html>
