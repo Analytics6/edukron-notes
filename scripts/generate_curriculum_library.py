@@ -277,10 +277,10 @@ def lesson_cells(topic: Topic, lesson_number: int, lesson: str, previous: Path |
     frontmatter = f'''---
 title: "{topic.number:03d}.{lesson_number:02d} {lesson.replace('"', "'")}"
 description: "Notebook tutorial for {lesson.replace('"', "'")} in {topic.title.replace('"', "'")}."
-author: "Edukron Notes"
-date: "{DATE}"
 categories: ["{topic.section}", "{topic.course}", "{topic.title}"]
 toc: true
+title-block-banner: false
+code-fold: false
 execute: false
 ---'''
     nav_parts = []
@@ -292,14 +292,21 @@ execute: false
 
     cells = [
         raw_cell("front-matter", frontmatter),
-        markdown_cell("lesson-banner", f'''<div class="lesson-banner">
-<span class="lesson-kicker">Topic {topic.number:03d} · Lesson {lesson_number:02d} of 10</span>
-<h2>{lesson}</h2>
+        markdown_cell("lesson-banner", f'''<div class="notebook-chrome lesson-notebook">
+<div class="notebook-toolbar">
+<span class="notebook-file"><i class="bi bi-journal-code" aria-hidden="true"></i><strong>{path.name}</strong></span>
+<span class="notebook-status"><i class="bi bi-check-circle-fill" aria-hidden="true"></i> Trusted</span>
+<span class="notebook-kernel"><i class="bi bi-cpu" aria-hidden="true"></i> Python 3</span>
+</div>
+<div class="notebook-cover">
+<span class="lesson-kicker">Topic {topic.number:03d} · Lesson {lesson_number:02d}</span>
+<h1>{lesson}</h1>
 <p>{context}. Learn the concept, apply a repeatable workflow, and produce evidence that the result is correct.</p>
+</div>
 </div>'''),
         markdown_cell("placement", f'''## Placement and prerequisites
 
-This notebook develops **{lesson}**, one of ten focused lessons in **{topic.title}**. It assumes familiarity with **{prereq}**. No cloud credentials are required: platform examples are copy-ready patterns, and the executable checks use only Python's standard library.
+This notebook develops **{lesson}** as a focused lesson in **{topic.title}**. It assumes familiarity with **{prereq}**. No cloud credentials are required: platform examples are copy-ready patterns, and the executable checks use only Python's standard library.
 
 ### Learning objectives
 
@@ -476,7 +483,6 @@ Official reference: [{reference_title}]({reference_url})'''),
 
 def overview_cells(section: str, course: str, topics: list[Topic]) -> list[dict]:
     overview = course_path(topics[0])
-    lesson_count = sum(len(topic.lessons) for topic in topics)
     topic_blocks = []
     for topic in topics:
         links = "\n".join(
@@ -484,40 +490,78 @@ def overview_cells(section: str, course: str, topics: list[Topic]) -> list[dict]
             for number, lesson in enumerate(topic.lessons, 1)
         )
         topic_blocks.append(f'''<details class="curriculum-topic"{' open' if topic == topics[0] else ''}>
-<summary><span class="topic-number">Topic {topic.number:03d}</span><strong>{topic.title}</strong><span>10 notebooks</span></summary>
+<summary><span class="topic-number">Topic {topic.number:03d}</span><strong>{topic.title}</strong></summary>
 <div class="topic-lessons">
 {links}
 </div>
 </details>''')
     topic_html = "\n".join(topic_blocks)
     first = lesson_path(topics[0], 1, topics[0].lessons[0])
+    catalog_id = f"{slugify(section)}-{slugify(course)}-catalog"
     return [
         raw_cell("front-matter", f'''---
 title: "{course}"
 description: "Complete notebook syllabus for {course} in {section}."
-author: "Edukron Notes"
-date: "{DATE}"
-toc: true
+toc: false
+page-layout: full
+title-block-banner: false
 execute: false
 ---'''),
-        markdown_cell("course-hero", f'''<div class="overview-lead curriculum-summary">
-<div class="overview-icon"><i class="bi bi-journal-code" aria-hidden="true"></i></div>
-<div><span class="overview-kicker">{section}</span><h2>{course}</h2><p>A complete notebook-first syllabus organized from foundations to applied delivery. Every lesson contains notes, a worked pattern, executable validation, a guided lab, solution blueprint, practice, and knowledge checks.</p></div>
+        markdown_cell("course-hero", f'''<div class="course-workspace notebook-chrome">
+<div class="notebook-toolbar">
+<span class="notebook-file"><i class="bi bi-journal-code" aria-hidden="true"></i><strong>{overview.name}</strong></span>
+<span class="notebook-status"><i class="bi bi-check-circle-fill" aria-hidden="true"></i> Trusted</span>
+<span class="notebook-kernel"><i class="bi bi-diagram-3" aria-hidden="true"></i> Learning path</span>
 </div>
-
-<div class="course-stat-grid">
-<div><strong>{len(topics)}</strong><span>Syllabus topics</span></div>
-<div><strong>{lesson_count}</strong><span>Notebook lessons</span></div>
-<div><strong>Practice</strong><span>Labs and solutions</span></div>
+<div class="course-workspace-hero">
+<span class="overview-kicker">{section}</span>
+<h1>{course}</h1>
+<p>A complete notebook-first syllabus organized from foundations to applied delivery. Every lesson combines clear notes, a worked pattern, executable validation, a guided lab, a solution blueprint, practice, and knowledge checks.</p>
+<div class="course-tags"><span><i class="bi bi-signpost-split"></i> Foundation to advanced</span><span><i class="bi bi-code-square"></i> Hands-on practice</span><span><i class="bi bi-patch-check"></i> Review ready</span></div>
+<p class="course-start"><a class="btn btn-primary" href="{html_link(overview, first)}"><i class="bi bi-play-fill"></i> Start the first notebook</a></p>
 </div>
-
-<p class="course-start"><a class="btn btn-primary" href="{html_link(overview, first)}">Start the first notebook <i class="bi bi-arrow-right"></i></a></p>'''),
+</div>'''),
         markdown_cell("how-to-use", '''## How to use this course
 
 Work through lessons in order for a complete pathway, or open a topic for focused reference. Type or adapt the examples, complete the guided lab before reading its blueprint, and preserve your test evidence as a portfolio artifact. Cloud and infrastructure examples are safe, copy-ready teaching patterns; execute them in your own sandbox only after substituting approved identities, names, and policies.'''),
-        markdown_cell("full-syllabus", f'''## Full syllabus
+        markdown_cell("full-syllabus", f'''<div class="syllabus-heading" id="notebook-syllabus">
+<div><span class="overview-kicker">Course contents</span><h2>Notebook syllabus</h2><p>Open a topic to browse its lessons, or search the complete course by concept.</p></div>
+<label class="syllabus-search" for="{catalog_id}-search"><i class="bi bi-search" aria-hidden="true"></i><input id="{catalog_id}-search" type="search" placeholder="Find a topic or lesson" autocomplete="off" aria-label="Search the {course} syllabus"></label>
+</div>
 
-{topic_html}'''),
+<div class="curriculum-catalog" id="{catalog_id}">
+{topic_html}
+</div>
+<p class="syllabus-empty" id="{catalog_id}-empty" hidden><i class="bi bi-search"></i> No matching lessons were found.</p>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {{
+  const catalog = document.getElementById("{catalog_id}");
+  const search = document.getElementById("{catalog_id}-search");
+  const empty = document.getElementById("{catalog_id}-empty");
+  if (!catalog || !search || !empty) return;
+
+  search.addEventListener("input", () => {{
+    const query = search.value.trim().toLowerCase();
+    let visibleTopics = 0;
+    catalog.querySelectorAll(".curriculum-topic").forEach((topic) => {{
+      const summary = topic.querySelector("summary");
+      const topicMatches = !query || summary.textContent.toLowerCase().includes(query);
+      let visibleLessons = 0;
+      topic.querySelectorAll(".topic-lesson-link").forEach((lesson) => {{
+        const matches = topicMatches || lesson.textContent.toLowerCase().includes(query);
+        lesson.hidden = !matches;
+        if (matches) visibleLessons += 1;
+      }});
+      const showTopic = topicMatches || visibleLessons > 0;
+      topic.hidden = !showTopic;
+      if (showTopic) visibleTopics += 1;
+      if (query && showTopic) topic.open = true;
+    }});
+    empty.hidden = visibleTopics > 0;
+  }});
+}});
+</script>'''),
         markdown_cell("completion-standard", f'''## Completion standard
 
 You have completed **{course}** when you can explain each topic, reproduce its core workflow, pass the notebook checks, defend the main tradeoffs, and combine the lessons into one reviewable portfolio project. Use the practice tasks as evidence rather than treating page reading alone as completion.'''),

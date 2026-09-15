@@ -1034,3 +1034,593 @@ div.sourceCode {
     text-align: left;
   }
 }
+
+/* Notebook workspace redesign */
+body:has(.notebook-chrome),
+body:has(.lesson-banner) {
+  background: #f4f6f9;
+}
+
+body:has(.notebook-chrome) #title-block-header {
+  display: none;
+}
+
+body:has(.course-workspace) main.content,
+body:has(.lesson-notebook) main.content,
+body:has(.lesson-banner) main.content {
+  width: min(100%, 1120px);
+  max-width: 1120px;
+}
+
+.notebook-chrome {
+  margin: 1rem 0 1.5rem;
+  overflow: hidden;
+  border: 1px solid #d9dee8;
+  border-radius: 0.85rem;
+  background: #fff;
+  box-shadow: 0 18px 44px rgba(20, 31, 55, 0.08);
+}
+
+.notebook-toolbar {
+  display: flex;
+  min-height: 3.15rem;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.7rem 1rem;
+  border-bottom: 1px solid #dfe3ea;
+  background: #f8f9fb;
+  color: #596274;
+  font-size: 0.8rem;
+}
+
+.notebook-file {
+  display: inline-flex;
+  min-width: 0;
+  flex: 1 1 auto;
+  align-items: center;
+  gap: 0.55rem;
+}
+
+.notebook-file i {
+  color: #f37726;
+  font-size: 1.08rem;
+}
+
+.notebook-file strong {
+  overflow: hidden;
+  color: #303846;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-size: 0.79rem;
+  font-weight: 650;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.notebook-status,
+.notebook-kernel {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.38rem;
+  white-space: nowrap;
+}
+
+.notebook-status i {
+  color: #16a36a;
+}
+
+.notebook-kernel i {
+  color: var(--violet);
+}
+
+.notebook-cover,
+.course-workspace-hero {
+  padding: clamp(1.65rem, 5vw, 3.4rem);
+  background:
+    radial-gradient(circle at 92% 12%, rgba(49, 87, 213, 0.11), transparent 31%),
+    linear-gradient(145deg, #fff 55%, #f7f9ff);
+}
+
+.notebook-cover h1,
+.course-workspace-hero h1 {
+  max-width: 18ch;
+  margin: 0.35rem 0 0.75rem;
+  color: var(--navy);
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  font-weight: 780;
+  letter-spacing: -0.045em;
+  line-height: 1.06;
+}
+
+.notebook-cover p,
+.course-workspace-hero > p {
+  max-width: 54rem;
+  margin: 0;
+  color: #4f5b6f;
+  font-size: 1.02rem;
+}
+
+.course-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+  margin: 1.35rem 0 1.45rem;
+}
+
+.course-tags span {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.42rem 0.7rem;
+  border: 1px solid #dfe4ee;
+  border-radius: 999px;
+  color: #46536a;
+  background: rgba(255, 255, 255, 0.88);
+  font-size: 0.78rem;
+  font-weight: 700;
+}
+
+.course-tags i {
+  color: var(--violet);
+}
+
+.course-start .btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  border: 0;
+  border-radius: 0.65rem;
+  background: var(--violet);
+  box-shadow: 0 8px 20px rgba(49, 87, 213, 0.2);
+}
+
+.syllabus-heading {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 1.5rem;
+  margin: 2.75rem 0 1rem;
+}
+
+.syllabus-heading h2 {
+  margin: 0.15rem 0 0.15rem;
+  color: var(--navy);
+  font-size: clamp(1.7rem, 3vw, 2.3rem);
+  letter-spacing: -0.035em;
+}
+
+.syllabus-heading p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.92rem;
+}
+
+.syllabus-search {
+  display: flex;
+  min-width: min(100%, 20rem);
+  align-items: center;
+  gap: 0.55rem;
+  padding: 0.72rem 0.9rem;
+  border: 1px solid #ccd3df;
+  border-radius: 0.7rem;
+  background: #fff;
+  box-shadow: 0 5px 18px rgba(20, 31, 55, 0.04);
+}
+
+.syllabus-search:focus-within {
+  border-color: var(--violet);
+  box-shadow: 0 0 0 3px rgba(49, 87, 213, 0.1);
+}
+
+.syllabus-search i {
+  color: #7b8494;
+}
+
+.syllabus-search input {
+  min-width: 0;
+  width: 100%;
+  border: 0;
+  outline: 0;
+  color: var(--ink);
+  background: transparent;
+  font: inherit;
+  font-size: 0.88rem;
+}
+
+.curriculum-catalog {
+  padding: 0.55rem;
+  border: 1px solid #d9dee8;
+  border-radius: 0.9rem;
+  background: #e9edf3;
+}
+
+.curriculum-topic {
+  margin: 0 0 0.55rem;
+  border: 1px solid #dfe3eb;
+  border-radius: 0.62rem;
+  box-shadow: none;
+}
+
+.curriculum-topic:last-child {
+  margin-bottom: 0;
+}
+
+.curriculum-topic summary {
+  grid-template-columns: auto minmax(0, 1fr) auto;
+  min-height: 3.65rem;
+  padding: 0.85rem 1rem;
+}
+
+.curriculum-topic summary::after {
+  grid-column: 3;
+  content: "＋";
+  color: #667085;
+  font-size: 1rem;
+}
+
+.curriculum-topic[open] summary::after {
+  content: "−";
+}
+
+.curriculum-topic[open] summary {
+  border-bottom: 1px solid #e1e5ec;
+  background: #fbfcfe;
+}
+
+.topic-number {
+  border-radius: 0.42rem;
+  background: #eef2ff;
+  color: #3157d5;
+}
+
+.topic-lessons {
+  padding: 0.3rem 0.75rem 0.75rem;
+  border-top: 0;
+  background: #f7f8fb;
+}
+
+.topic-lesson-link {
+  min-height: 3.5rem;
+  border-radius: 0.5rem;
+}
+
+.topic-lesson-link[hidden],
+.curriculum-topic[hidden] {
+  display: none !important;
+}
+
+.syllabus-empty {
+  padding: 2rem;
+  border: 1px dashed #cbd2df;
+  border-radius: 0.75rem;
+  color: var(--muted);
+  background: #fff;
+  text-align: center;
+}
+
+/* Markdown and code cells on lesson pages */
+body:has(.lesson-notebook) main.content > section.level2,
+body:has(.lesson-banner) main.content > section.level2 {
+  position: relative;
+  margin: 1rem 0 1rem 4.8rem;
+  padding: 1.25rem 1.45rem 1.4rem;
+  border: 1px solid #dfe3e9;
+  border-radius: 0.55rem;
+  background: #fff;
+  box-shadow: 0 5px 16px rgba(20, 31, 55, 0.035);
+}
+
+body:has(.lesson-notebook) main.content > section.level2::before,
+body:has(.lesson-banner) main.content > section.level2::before {
+  position: absolute;
+  top: 1.25rem;
+  right: calc(100% + 0.7rem);
+  content: "Markdown";
+  color: #7b8493;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-size: 0.67rem;
+  font-weight: 600;
+}
+
+body:has(.lesson-notebook) main.content > section.level2 > h2:first-child,
+body:has(.lesson-banner) main.content > section.level2 > h2:first-child {
+  margin-top: 0;
+  color: #202a3b;
+  font-size: 1.4rem;
+  letter-spacing: -0.02em;
+}
+
+body:has(.lesson-notebook) .cell,
+body:has(.lesson-banner) .cell {
+  position: relative;
+  margin: 1.35rem 0 1.35rem 3.9rem;
+}
+
+body:has(.lesson-notebook) .cell::before,
+body:has(.lesson-banner) .cell::before {
+  position: absolute;
+  top: 0.6rem;
+  right: calc(100% + 0.55rem);
+  content: "In [ ]:";
+  color: #246fb5;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-size: 0.74rem;
+  white-space: nowrap;
+}
+
+body:has(.lesson-notebook) .code-fold > summary,
+body:has(.lesson-banner) .code-fold > summary {
+  display: none;
+}
+
+body:has(.lesson-notebook) div.sourceCode,
+body:has(.lesson-banner) div.sourceCode {
+  margin: 0;
+  border: 1px solid #d9dee7;
+  border-left: 3px solid #f37726;
+  border-radius: 0.42rem;
+  background: #f8f9fb;
+}
+
+body:has(.lesson-notebook) .cell-output,
+body:has(.lesson-banner) .cell-output {
+  position: relative;
+  margin-top: 0.6rem;
+  padding: 0.75rem 0 0 0;
+  border-left: 0;
+}
+
+body:has(.lesson-notebook) .cell-output::before,
+body:has(.lesson-banner) .cell-output::before {
+  position: absolute;
+  top: 0.9rem;
+  right: calc(100% + 0.55rem);
+  content: "Out[ ]:";
+  color: #b54708;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-size: 0.74rem;
+  white-space: nowrap;
+}
+
+/* Legacy authored tutorials use the same notebook language. */
+body:has(.lesson-banner) #title-block-header {
+  position: relative;
+  margin: 1rem 0 0;
+  padding: 4.4rem clamp(1.5rem, 4vw, 2.5rem) 1.6rem;
+  border: 1px solid #d9dee8;
+  border-bottom: 0;
+  border-radius: 0.85rem 0.85rem 0 0;
+  background: #fff;
+}
+
+body:has(.lesson-banner) #title-block-header::before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  padding: 0.8rem 1rem;
+  border-bottom: 1px solid #dfe3ea;
+  content: "▣  edukron-lesson.ipynb                         ● Trusted     Python 3";
+  color: #596274;
+  background: #f8f9fb;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-size: 0.72rem;
+  white-space: pre;
+}
+
+body:has(.lesson-banner) .lesson-banner {
+  margin: 0 0 1.5rem;
+  padding: 0 2.5rem 1.7rem;
+  border: 1px solid #d9dee8;
+  border-top: 0;
+  border-left-width: 1px;
+  border-radius: 0 0 0.85rem 0.85rem;
+  background: #fff;
+  box-shadow: 0 18px 44px rgba(20, 31, 55, 0.08);
+}
+
+/* Homepage notebook preview */
+.blog-masthead {
+  display: grid;
+  grid-template-columns: minmax(0, 1.05fr) minmax(22rem, 0.95fr);
+  align-items: center;
+  gap: clamp(2rem, 6vw, 5rem);
+  padding: clamp(2.2rem, 6vw, 4.6rem) 0;
+}
+
+.masthead-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.7rem;
+  margin-top: 1.5rem;
+}
+
+.masthead-actions a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.66rem 0.9rem;
+  border: 1px solid #d6dce6;
+  border-radius: 0.6rem;
+  color: var(--ink);
+  background: #fff;
+  font-size: 0.88rem;
+  font-weight: 750;
+  text-decoration: none;
+}
+
+.masthead-actions .masthead-primary {
+  border-color: var(--violet);
+  color: #fff;
+  background: var(--violet);
+  box-shadow: 0 8px 22px rgba(49, 87, 213, 0.2);
+}
+
+.masthead-notebook {
+  overflow: hidden;
+  border: 1px solid #d9dee7;
+  border-radius: 0.78rem;
+  background: #fff;
+  box-shadow: 0 22px 56px rgba(20, 31, 55, 0.13);
+  transform: rotate(1deg);
+}
+
+.mini-toolbar {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 0.7rem;
+  padding: 0.72rem 0.85rem;
+  border-bottom: 1px solid #e0e4eb;
+  color: #4c5668;
+  background: #f7f8fa;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-size: 0.67rem;
+}
+
+.window-dots {
+  display: flex;
+  gap: 0.25rem;
+}
+
+.window-dots i {
+  width: 0.48rem;
+  height: 0.48rem;
+  border-radius: 50%;
+  background: #ff6b62;
+}
+
+.window-dots i:nth-child(2) { background: #f7c948; }
+.window-dots i:nth-child(3) { background: #43c46b; }
+.mini-trusted { color: #16875b; }
+
+.mini-cell {
+  display: grid;
+  grid-template-columns: 4rem minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 0.75rem;
+  margin: 1rem;
+  color: #566174;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-size: 0.68rem;
+}
+
+.mini-cell > div,
+.mini-code code {
+  display: flex;
+  min-height: 4.3rem;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0.9rem;
+  border: 1px solid #dfe3e9;
+  border-left: 3px solid var(--violet);
+  border-radius: 0.4rem;
+  color: #243047;
+  background: #fbfcfe;
+}
+
+.mini-cell small {
+  margin-top: 0.4rem;
+  color: #7a8495;
+}
+
+.mini-code code {
+  min-height: auto;
+  border-left-color: #f37726;
+  color: #7b3f00;
+}
+
+.mini-code > i {
+  display: grid;
+  width: 1.7rem;
+  height: 1.7rem;
+  place-items: center;
+  border-radius: 50%;
+  color: #fff;
+  background: var(--violet);
+}
+
+.blog-card {
+  border-radius: 0.9rem;
+  box-shadow: 0 6px 22px rgba(20, 31, 55, 0.035);
+}
+
+.blog-card .course-number {
+  color: var(--violet);
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+}
+
+@media (max-width: 900px) {
+  .blog-masthead {
+    grid-template-columns: 1fr;
+  }
+
+  .masthead-notebook {
+    transform: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .notebook-toolbar {
+    flex-wrap: wrap;
+  }
+
+  .notebook-file {
+    flex-basis: 100%;
+  }
+
+  .syllabus-heading {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .syllabus-search {
+    min-width: 0;
+    width: 100%;
+  }
+
+  .curriculum-topic summary > span:last-of-type {
+    display: inline-flex;
+  }
+
+  body:has(.lesson-notebook) main.content > section.level2,
+  body:has(.lesson-banner) main.content > section.level2 {
+    margin-left: 0;
+    padding: 1.1rem;
+  }
+
+  body:has(.lesson-notebook) main.content > section.level2::before,
+  body:has(.lesson-banner) main.content > section.level2::before {
+    display: none;
+  }
+
+  body:has(.lesson-notebook) .cell,
+  body:has(.lesson-banner) .cell {
+    margin-left: 0;
+    padding-top: 1.45rem;
+  }
+
+  body:has(.lesson-notebook) .cell::before,
+  body:has(.lesson-banner) .cell::before {
+    top: 0;
+    right: auto;
+    left: 0;
+  }
+
+  body:has(.lesson-banner) #title-block-header::before {
+    content: "▣  edukron-lesson.ipynb    ● Trusted";
+  }
+
+  body:has(.lesson-banner) .lesson-banner {
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+  }
+
+  .mini-trusted {
+    display: none;
+  }
+
+  .mini-toolbar {
+    grid-template-columns: auto minmax(0, 1fr);
+  }
+}

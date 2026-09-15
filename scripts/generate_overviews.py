@@ -368,11 +368,14 @@ All material in this section will remain notebook-first: white reading surfaces,
 
 def home_page() -> list[dict]:
     def track_card(track: dict) -> str:
-        item_count = len(track["items"])
-        item_label = "subjects" if track["kind"] == "course" else "collections"
+        card_label = {
+            "course": "Learning path",
+            "interview": "Interview practice",
+            "project": "Project playbook",
+        }[track["kind"]]
         return f'''  <a class="blog-card" href="{track["directory"]}/index.html">
     <span class="card-icon"><i class="bi bi-{track["icon"]}" aria-hidden="true"></i></span>
-    <span class="blog-card-copy"><span class="course-number">{item_count} {item_label}</span><strong>{track["title"]}</strong><span>{track["description"]}</span></span>
+    <span class="blog-card-copy"><span class="course-number">{card_label}</span><strong>{track["title"]}</strong><span>{track["description"]}</span></span>
     <i class="bi bi-arrow-up-right" aria-hidden="true"></i>
   </a>'''
 
@@ -392,12 +395,20 @@ execute: false
         markdown_cell(
             "masthead",
             '''<div class="blog-masthead">
-<div>
+<div class="masthead-copy">
 <span class="blog-kicker">Technical notebook library</span>
 <h1>Edukron Notes</h1>
-<p>Course maps, executable tutorials, interview preparation, and implementation flows for AI, data engineering, and DevOps.</p>
+<p>Learn by reading, running, changing, and explaining. Every course is organized as a focused notebook path for AI, data engineering, and DevOps.</p>
+<div class="masthead-actions">
+<a class="masthead-primary" href="courses/full-stack-ai/index.html"><i class="bi bi-play-fill"></i> Start learning</a>
+<a href="courses/full-stack-ai/python.html"><i class="bi bi-journal-code"></i> Open Python</a>
 </div>
-<div class="masthead-mark" aria-hidden="true"><i class="bi bi-journal-code"></i></div>
+</div>
+<div class="masthead-notebook" aria-hidden="true">
+  <div class="mini-toolbar"><span class="window-dots"><i></i><i></i><i></i></span><span><i class="bi bi-journal-code"></i> edukron-notes.ipynb</span><span class="mini-trusted"><i class="bi bi-check-circle-fill"></i> Trusted</span></div>
+  <div class="mini-cell mini-markdown"><span>Markdown</span><div><b># Learn by doing</b><small>Notes, examples, labs, and review.</small></div></div>
+  <div class="mini-cell mini-code"><span>In [ ]:</span><code>learn → practice → build</code><i class="bi bi-play-fill"></i></div>
+</div>
 </div>''',
         ),
         markdown_cell(
