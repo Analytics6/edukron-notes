@@ -481,6 +481,86 @@ Official reference: [{reference_title}]({reference_url})'''),
     return cells
 
 
+def learning_stage(position: int, total: int) -> str:
+    """Return a stable progression label for a topic inside a course."""
+    if position == 0:
+        return "Foundation"
+    if position == total - 1:
+        return "Integration & capstone"
+    if position < total / 2:
+        return "Core skills"
+    return "Applied delivery"
+
+
+def learning_plan_html(section: str, course: str, topics: list[Topic], overview: Path) -> str:
+    standard_weeks = len(topics) + 1
+    intensive_weeks = (len(topics) + 1) // 2 + 1
+    weeks = []
+    for position, topic in enumerate(topics):
+        first_lesson = lesson_path(topic, 1, topic.lessons[0])
+        mastery_lesson = lesson_path(topic, len(topic.lessons), topic.lessons[-1])
+        weeks.append(f'''<details class="plan-week plan-topic-week"{' open' if position == 0 else ''}>
+<summary><span class="plan-week-number">Week {position + 1:02d}</span><strong>{topic.title}</strong><span class="plan-stage">{learning_stage(position, len(topics))}</span></summary>
+<div class="plan-week-body">
+<div><span>Learn</span><p>Begin with <a href="{html_link(overview, first_lesson)}">{topic.lessons[0]}</a> and write the core mental model in your own words.</p></div>
+<div><span>Practice</span><p>Run, change, and explain the worked patterns across the middle lessons. Keep test evidence and questions.</p></div>
+<div><span>Demonstrate</span><p>Complete <a href="{html_link(overview, mastery_lesson)}">{topic.lessons[-1]}</a> without copying the solution blueprint first.</p></div>
+</div>
+</details>''')
+    final_topic = topics[-1]
+    final_lesson = lesson_path(final_topic, len(final_topic.lessons), final_topic.lessons[-1])
+    weeks.append(f'''<div class="plan-integration-week">
+<span class="plan-week-number">Week {standard_weeks:02d}</span>
+<div><strong>Integration, review, and portfolio evidence</strong><p>Connect the topic artifacts, close weak areas, and publish one reviewable {course} outcome. Use <a href="{html_link(overview, final_lesson)}">{final_topic.lessons[-1]}</a> as the final checkpoint.</p></div>
+<i class="bi bi-trophy" aria-hidden="true"></i>
+</div>''')
+    return f'''<section class="learning-plan-section" id="learning-plan">
+<div class="path-section-heading"><div><span class="overview-kicker">Recommended schedule</span><h2>Learning plan</h2><p>A practical schedule for completing {course} with retained evidence, not passive reading.</p></div></div>
+
+<div class="plan-metrics">
+<div><i class="bi bi-calendar3"></i><span>Standard path</span><strong>{standard_weeks} weeks</strong><small>One topic each week, then integration</small></div>
+<div><i class="bi bi-lightning-charge"></i><span>Intensive path</span><strong>{intensive_weeks} weeks</strong><small>Two topics each week, then integration</small></div>
+<div><i class="bi bi-clock"></i><span>Weekly commitment</span><strong>6–8 hours</strong><small>Study, code, practice, and reflection</small></div>
+<div><i class="bi bi-folder-check"></i><span>Finish line</span><strong>Portfolio evidence</strong><small>Tests, decisions, notes, and a capstone</small></div>
+</div>
+
+<div class="study-loop" aria-label="Weekly study loop">
+<div><span>01</span><i class="bi bi-book"></i><strong>Understand</strong><small>Read the notes and explain the mental model.</small></div>
+<i class="bi bi-arrow-right study-loop-arrow" aria-hidden="true"></i>
+<div><span>02</span><i class="bi bi-play-circle"></i><strong>Run</strong><small>Execute the example and inspect every result.</small></div>
+<i class="bi bi-arrow-right study-loop-arrow" aria-hidden="true"></i>
+<div><span>03</span><i class="bi bi-tools"></i><strong>Adapt</strong><small>Change the inputs and complete the guided lab.</small></div>
+<i class="bi bi-arrow-right study-loop-arrow" aria-hidden="true"></i>
+<div><span>04</span><i class="bi bi-patch-check"></i><strong>Prove</strong><small>Pass checks and retain reviewable evidence.</small></div>
+</div>
+
+<div class="plan-weeks">
+{''.join(weeks)}
+</div>
+</section>'''
+
+
+def learning_path_html(section: str, course: str, topics: list[Topic], overview: Path) -> str:
+    steps = []
+    for position, topic in enumerate(topics):
+        first_lesson = lesson_path(topic, 1, topic.lessons[0])
+        steps.append(f'''<a class="learning-path-step" data-topic="{topic.number:03d}" href="{html_link(overview, first_lesson)}">
+<span class="path-index">{position + 1:02d}</span>
+<span class="path-step-copy"><span class="path-phase">{learning_stage(position, len(topics))} · Topic {topic.number:03d}</span><strong>{topic.title}</strong><small>Enter with {topic.lessons[0]}. Demonstrate mastery through {topic.lessons[-1]}.</small></span>
+<i class="bi bi-arrow-right" aria-hidden="true"></i>
+</a>''')
+    final_topic = topics[-1]
+    return f'''<section class="learning-path-section" id="full-learning-path">
+<div class="path-section-heading"><div><span class="overview-kicker">Ordered progression</span><h2>Full learning path</h2><p>Follow every stage in sequence. Each stage links directly to its first notebook and ends with a concrete mastery checkpoint.</p></div><span class="path-route"><i class="bi bi-signpost-2"></i> {section} → {course}</span></div>
+
+<div class="learning-path">
+{''.join(steps)}
+</div>
+
+<div class="path-finish"><span><i class="bi bi-trophy-fill"></i></span><div><small>Completion milestone</small><strong>Connect the complete {course} workflow</strong><p>Combine evidence from every stage and finish with {final_topic.lessons[-1]}. You should be able to explain the architecture, reproduce the core workflow, diagnose failure, and defend the main tradeoffs.</p></div></div>
+</section>'''
+
+
 def overview_cells(section: str, course: str, topics: list[Topic]) -> list[dict]:
     overview = course_path(topics[0])
     topic_blocks = []
@@ -524,6 +604,8 @@ execute: false
         markdown_cell("how-to-use", '''## How to use this course
 
 Work through lessons in order for a complete pathway, or open a topic for focused reference. Type or adapt the examples, complete the guided lab before reading its blueprint, and preserve your test evidence as a portfolio artifact. Cloud and infrastructure examples are safe, copy-ready teaching patterns; execute them in your own sandbox only after substituting approved identities, names, and policies.'''),
+        markdown_cell("learning-plan", learning_plan_html(section, course, topics, overview)),
+        markdown_cell("full-learning-path", learning_path_html(section, course, topics, overview)),
         markdown_cell("full-syllabus", f'''<div class="syllabus-heading" id="notebook-syllabus">
 <div><span class="overview-kicker">Course contents</span><h2>Notebook syllabus</h2><p>Open a topic to browse its lessons, or search the complete course by concept.</p></div>
 <label class="syllabus-search" for="{catalog_id}-search"><i class="bi bi-search" aria-hidden="true"></i><input id="{catalog_id}-search" type="search" placeholder="Find a topic or lesson" autocomplete="off" aria-label="Search the {course} syllabus"></label>

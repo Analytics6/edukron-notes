@@ -35,6 +35,12 @@ def replace_tag_with_html(tag, html: str) -> None:
     tag.extract()
 
 
+def insert_html_before(tag, html: str) -> None:
+    fragment = BeautifulSoup(html, "html.parser")
+    for node in list(fragment.contents):
+        tag.insert_before(node)
+
+
 def load_page(path: Path) -> BeautifulSoup:
     if not path.is_file():
         raise FileNotFoundError(f"Rendered page is missing: {path}")
@@ -91,6 +97,16 @@ def refresh_course_overviews() -> int:
             replace_tag_with_html(old_syllabus, cell_source(notebook, "full-syllabus"))
         elif soup.select_one(".syllabus-search") is None:
             raise ValueError(f"Full syllabus UI was not found in {page}")
+
+        for selector in ("#learning-plan", "#full-learning-path"):
+            existing = soup.select_one(selector)
+            if existing is not None:
+                existing.extract()
+        syllabus_anchor = soup.select_one("#notebook-syllabus")
+        if syllabus_anchor is None:
+            raise ValueError(f"Syllabus insertion point was not found in {page}")
+        insert_html_before(syllabus_anchor, cell_source(notebook, "learning-plan"))
+        insert_html_before(syllabus_anchor, cell_source(notebook, "full-learning-path"))
 
         layout = soup.select_one("#quarto-content")
         if layout is not None:
@@ -158,7 +174,13 @@ def validate_rendered_site(course_count: int, lesson_count: int) -> None:
 
     for relative in COURSE_PATHS.values():
         html = (SITE / f"{relative}.html").read_text(encoding="utf-8")
-        required = ("course-workspace", "syllabus-search", "curriculum-catalog")
+        required = (
+            "course-workspace",
+            "learning-plan-section",
+            "learning-path-section",
+            "syllabus-search",
+            "curriculum-catalog",
+        )
         if "10 notebooks" in html or not all(marker in html for marker in required):
             raise ValueError(f"Course UI validation failed for {relative}")
 

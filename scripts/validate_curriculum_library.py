@@ -91,10 +91,38 @@ def main() -> None:
         if not overview.exists():
             errors.append(f"Missing course overview: {overview.relative_to(ROOT)}")
             continue
-        document = overview.read_text(encoding="utf-8")
+        overview_notebook = json.loads(overview.read_text(encoding="utf-8"))
+        overview_cells = {cell.get("id"): source(cell) for cell in overview_notebook.get("cells", [])}
+        document = "\n".join(overview_cells.values())
         course_topics = [topic for topic in topics if topic.section == section and topic.course == course]
-        if document.count('class=\\"topic-lesson-link\\"') != len(course_topics) * 10:
+        if document.count('class="topic-lesson-link"') != len(course_topics) * 10:
             errors.append(f"Wrong lesson-link count in {overview.relative_to(ROOT)}")
+        for required_cell in ("learning-plan", "full-learning-path"):
+            if required_cell not in overview_cells:
+                errors.append(f"Missing {required_cell} cell in {overview.relative_to(ROOT)}")
+        learning_plan = overview_cells.get("learning-plan", "")
+        learning_path = overview_cells.get("full-learning-path", "")
+        if learning_plan.count('class="plan-week plan-topic-week"') != len(course_topics):
+            errors.append(f"Learning plan does not schedule every topic in {overview.relative_to(ROOT)}")
+        if learning_path.count('class="learning-path-step"') != len(course_topics):
+            errors.append(f"Learning path does not include every topic in {overview.relative_to(ROOT)}")
+        for topic in course_topics:
+            topic_marker = f'data-topic="{topic.number:03d}"'
+            if topic.title not in learning_plan or topic_marker not in learning_path:
+                errors.append(f"Topic {topic.number:03d} is missing from the learning plan/path in {overview.relative_to(ROOT)}")
+
+    workflow = ROOT / ".github" / "workflows" / "publish.yml"
+    if not workflow.exists():
+        errors.append("Active publishing workflow is missing")
+    else:
+        workflow_text = workflow.read_text(encoding="utf-8")
+        pipeline_requirements = (
+            "python scripts/generate_curriculum_library.py",
+            "python scripts/validate_curriculum_library.py",
+            "quarto-dev/quarto-actions/publish@v2",
+        )
+        if not all(requirement in workflow_text for requirement in pipeline_requirements):
+            errors.append("Publishing workflow does not generate, validate, and publish the curriculum")
 
     if len(expected_paths) != 2_000 or len(set(expected_paths)) != 2_000:
         errors.append("Generated-path set is not exactly 2,000 unique paths")
@@ -113,7 +141,7 @@ def main() -> None:
             print(f"... plus {len(errors) - 100} more errors")
         raise SystemExit(1)
 
-    print(f"Validated {len(topics)} topics, {len(expected_paths):,} notebooks, and {len(course_keys)} course overviews.")
+    print(f"Validated {len(topics)} topics, {len(expected_paths):,} notebooks, and {len(course_keys)} course learning plans and paths.")
     print(f"Compiled and executed {executed_cells:,}/{code_cells:,} code cells; approximately {word_count:,} words checked.")
 
 
