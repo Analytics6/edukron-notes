@@ -1,15 +1,12 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
-<meta charset="utf-8">
-<meta name="generator" content="quarto-1.10.18">
-
-<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-
-<meta name="author" content="Edukron Notes">
-<meta name="dcterms.date" content="2026-09-14">
-<meta name="description" content="Complete notebook syllabus for Delta Lake in Azure Data Engineering.">
-
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta charset="utf-8"/>
+<meta content="quarto-1.10.18" name="generator"/>
+<meta content="width=device-width, initial-scale=1.0, user-scalable=yes" name="viewport"/>
+<meta content="Edukron Notes" name="author"/>
+<meta content="2026-09-14" name="dcterms.date"/>
+<meta content="Complete notebook syllabus for Delta Lake in Azure Data Engineering." name="description"/>
 <title>Delta Lake – Edukron Notes</title>
 <style>
 /* Default styles provided by pandoc.
@@ -30,25 +27,23 @@ ul.task-list li input[type="checkbox"] {
   vertical-align: middle;
 }
 </style>
-
-
 <script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
 <script src="../../site_libs/quarto-nav/headroom.min.js"></script>
 <script src="../../site_libs/clipboard/clipboard.min.js"></script>
 <script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
 <script src="../../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../../">
+<meta content="../../" name="quarto:offset"/>
 <script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="../../site_libs/quarto-html/popper.min.js"></script>
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet"/>
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" id="quarto-text-highlighting-styles" rel="stylesheet"/>
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-f0f4b58164ec92a07fcd2db94b0e5cbd.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet"/>
+<link append-hash="true" data-mode="light" href="../../site_libs/bootstrap/bootstrap-f0f4b58164ec92a07fcd2db94b0e5cbd.min.css" id="quarto-bootstrap" rel="stylesheet"/>
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -76,376 +71,391 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 <style>html{ scroll-behavior: smooth; }</style>
-
-
-<link rel="stylesheet" href="../../styles.css">
+<link href="../../styles.css" rel="stylesheet"/>
 </head>
-
 <body class="nav-fixed quarto-light">
-
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top">
-    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
-      <div class="navbar-container container-fluid">
-      <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="../../index.html">
-    <span class="navbar-title">Edukron Notes</span>
-    </a>
-  </div>
-            <div id="quarto-search" class="" title="Search"></div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
-  <span class="navbar-toggler-icon"></span>
-</button>
-          <div class="collapse navbar-collapse" id="navbarCollapse">
-            <ul class="navbar-nav navbar-nav-scroll me-auto">
-  <li class="nav-item">
-    <a class="nav-link" href="../../index.html"> 
-<span class="menu-text">Home</span></a>
-  </li>  
-  <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-full-stack-ai" role="link" data-bs-toggle="dropdown" aria-expanded="false">
-      <i class="bi bi-cpu" role="img">
-</i> 
- <span class="menu-text">Full Stack AI</span>
-    </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-full-stack-ai">    
-        <li>
-    <a class="dropdown-item" href="../../courses/full-stack-ai/index.html">
- <span class="dropdown-text">Program overview</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/full-stack-ai/python.html">
- <span class="dropdown-text">Python</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/full-stack-ai/sql.html">
- <span class="dropdown-text">SQL</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/full-stack-ai/data-science.html">
- <span class="dropdown-text">Data Science</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/full-stack-ai/machine-learning.html">
- <span class="dropdown-text">Machine Learning</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/full-stack-ai/artificial-intelligence.html">
- <span class="dropdown-text">Artificial Intelligence</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/full-stack-ai/deep-learning.html">
- <span class="dropdown-text">Deep Learning</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/full-stack-ai/generative-ai.html">
- <span class="dropdown-text">Generative AI</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/full-stack-ai/large-language-models.html">
- <span class="dropdown-text">Large Language Models (LLMs)</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/full-stack-ai/rag.html">
- <span class="dropdown-text">Retrieval Augmented Generation (RAG)</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/full-stack-ai/agentic-ai.html">
- <span class="dropdown-text">Agentic AI</span></a>
-  </li>  
-    </ul>
-  </li>
-  <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-azure-data-engineering" role="link" data-bs-toggle="dropdown" aria-expanded="false">
-      <i class="bi bi-database" role="img">
-</i> 
- <span class="menu-text">Azure Data Engineering</span>
-    </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-azure-data-engineering">    
-        <li>
-    <a class="dropdown-item" href="../../courses/azure-data-engineering/index.html">
- <span class="dropdown-text">Program overview</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/azure-data-engineering/python.html">
- <span class="dropdown-text">Python</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/azure-data-engineering/sql.html">
- <span class="dropdown-text">SQL</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/azure-data-engineering/fundamentals.html">
- <span class="dropdown-text">Data Engineering Fundamentals</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/azure-data-engineering/azure-data-factory.html">
- <span class="dropdown-text">Azure Data Factory (ADF)</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/azure-data-engineering/adls-gen2.html">
- <span class="dropdown-text">Azure Data Lake Storage Gen2</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/azure-data-engineering/azure-databricks.html">
- <span class="dropdown-text">Azure Databricks</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/azure-data-engineering/pyspark.html">
- <span class="dropdown-text">PySpark</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/azure-data-engineering/azure-synapse.html">
- <span class="dropdown-text">Azure Synapse Analytics</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/azure-data-engineering/microsoft-fabric.html">
- <span class="dropdown-text">Microsoft Fabric</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/azure-data-engineering/delta-lake.html">
- <span class="dropdown-text">Delta Lake</span></a>
-  </li>  
-    </ul>
-  </li>
-  <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-azure-devops" role="link" data-bs-toggle="dropdown" aria-expanded="false">
-      <i class="bi bi-infinity" role="img">
-</i> 
- <span class="menu-text">Azure DevOps</span>
-    </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-azure-devops">    
-        <li>
-    <a class="dropdown-item" href="../../courses/azure-devops/index.html">
- <span class="dropdown-text">Program overview</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/azure-devops/linux-shell-scripting.html">
- <span class="dropdown-text">Linux &amp; Shell Scripting</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/azure-devops/git-version-control.html">
- <span class="dropdown-text">Git &amp; Version Control</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/azure-devops/azure-repos.html">
- <span class="dropdown-text">Azure Repos</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/azure-devops/azure-pipelines.html">
- <span class="dropdown-text">Azure Pipelines (CI/CD)</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/azure-devops/yaml-pipelines.html">
- <span class="dropdown-text">YAML Pipeline Development</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/azure-devops/docker.html">
- <span class="dropdown-text">Docker &amp; Containerization</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/azure-devops/kubernetes-aks.html">
- <span class="dropdown-text">Kubernetes &amp; AKS</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/azure-devops/terraform.html">
- <span class="dropdown-text">Terraform Infrastructure as Code</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/azure-devops/azure-cloud-services.html">
- <span class="dropdown-text">Azure Cloud Services</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/azure-devops/devsecops-monitoring.html">
- <span class="dropdown-text">DevSecOps &amp; Monitoring</span></a>
-  </li>  
-    </ul>
-  </li>
-  <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-interview-questions" role="link" data-bs-toggle="dropdown" aria-expanded="false">
-      <i class="bi bi-question-circle" role="img">
-</i> 
- <span class="menu-text">Interview Questions</span>
-    </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-interview-questions">    
-        <li>
-    <a class="dropdown-item" href="../../interview-questions/index.html">
- <span class="dropdown-text">Section overview</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../interview-questions/full-stack-ai.html">
- <span class="dropdown-text">Full Stack AI</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../interview-questions/azure-data-engineering.html">
- <span class="dropdown-text">Azure Data Engineering</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../interview-questions/azure-devops.html">
- <span class="dropdown-text">Azure DevOps</span></a>
-  </li>  
-    </ul>
-  </li>
-  <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-project-flows" role="link" data-bs-toggle="dropdown" aria-expanded="false">
-      <i class="bi bi-kanban" role="img">
-</i> 
- <span class="menu-text">Project Flows</span>
-    </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-project-flows">    
-        <li>
-    <a class="dropdown-item" href="../../project-flows/index.html">
- <span class="dropdown-text">Section overview</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../project-flows/full-stack-ai.html">
- <span class="dropdown-text">Full Stack AI</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../project-flows/azure-data-engineering.html">
- <span class="dropdown-text">Azure Data Engineering</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../project-flows/azure-devops.html">
- <span class="dropdown-text">Azure DevOps</span></a>
-  </li>  
-    </ul>
-  </li>
-</ul>
-          </div> <!-- /navcollapse -->
-            <div class="quarto-navbar-tools">
+<header class="headroom fixed-top" id="quarto-header">
+<nav class="navbar navbar-expand-lg" data-bs-theme="dark">
+<div class="navbar-container container-fluid">
+<div class="navbar-brand-container mx-auto">
+<a class="navbar-brand" href="../../index.html">
+<span class="navbar-title">Edukron Notes</span>
+</a>
 </div>
-      </div> <!-- /container-fluid -->
-    </nav>
+<div class="" id="quarto-search" title="Search"></div>
+<button aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-bs-target="#navbarCollapse" data-bs-toggle="collapse" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }" role="menu" type="button">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" id="navbarCollapse">
+<ul class="navbar-nav navbar-nav-scroll me-auto">
+<li class="nav-item">
+<a class="nav-link" href="../../index.html">
+<span class="menu-text">Home</span></a>
+</li>
+<li class="nav-item dropdown">
+<a aria-expanded="false" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" id="nav-menu-full-stack-ai" role="link">
+<i class="bi bi-cpu" role="img">
+</i>
+<span class="menu-text">Full Stack AI</span>
+</a>
+<ul aria-labelledby="nav-menu-full-stack-ai" class="dropdown-menu">
+<li>
+<a class="dropdown-item" href="../../courses/full-stack-ai/index.html">
+<span class="dropdown-text">Program overview</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/full-stack-ai/python.html">
+<span class="dropdown-text">Python</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/full-stack-ai/sql.html">
+<span class="dropdown-text">SQL</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/full-stack-ai/data-science.html">
+<span class="dropdown-text">Data Science</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/full-stack-ai/machine-learning.html">
+<span class="dropdown-text">Machine Learning</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/full-stack-ai/artificial-intelligence.html">
+<span class="dropdown-text">Artificial Intelligence</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/full-stack-ai/deep-learning.html">
+<span class="dropdown-text">Deep Learning</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/full-stack-ai/generative-ai.html">
+<span class="dropdown-text">Generative AI</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/full-stack-ai/large-language-models.html">
+<span class="dropdown-text">Large Language Models (LLMs)</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/full-stack-ai/rag.html">
+<span class="dropdown-text">Retrieval Augmented Generation (RAG)</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/full-stack-ai/agentic-ai.html">
+<span class="dropdown-text">Agentic AI</span></a>
+</li>
+</ul>
+</li>
+<li class="nav-item dropdown">
+<a aria-expanded="false" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" id="nav-menu-azure-data-engineering" role="link">
+<i class="bi bi-database" role="img">
+</i>
+<span class="menu-text">Azure Data Engineering</span>
+</a>
+<ul aria-labelledby="nav-menu-azure-data-engineering" class="dropdown-menu">
+<li>
+<a class="dropdown-item" href="../../courses/azure-data-engineering/index.html">
+<span class="dropdown-text">Program overview</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/azure-data-engineering/python.html">
+<span class="dropdown-text">Python</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/azure-data-engineering/sql.html">
+<span class="dropdown-text">SQL</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/azure-data-engineering/fundamentals.html">
+<span class="dropdown-text">Data Engineering Fundamentals</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/azure-data-engineering/azure-data-factory.html">
+<span class="dropdown-text">Azure Data Factory (ADF)</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/azure-data-engineering/adls-gen2.html">
+<span class="dropdown-text">Azure Data Lake Storage Gen2</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/azure-data-engineering/azure-databricks.html">
+<span class="dropdown-text">Azure Databricks</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/azure-data-engineering/pyspark.html">
+<span class="dropdown-text">PySpark</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/azure-data-engineering/azure-synapse.html">
+<span class="dropdown-text">Azure Synapse Analytics</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/azure-data-engineering/microsoft-fabric.html">
+<span class="dropdown-text">Microsoft Fabric</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/azure-data-engineering/delta-lake.html">
+<span class="dropdown-text">Delta Lake</span></a>
+</li>
+</ul>
+</li>
+<li class="nav-item dropdown">
+<a aria-expanded="false" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" id="nav-menu-azure-devops" role="link">
+<i class="bi bi-infinity" role="img">
+</i>
+<span class="menu-text">Azure DevOps</span>
+</a>
+<ul aria-labelledby="nav-menu-azure-devops" class="dropdown-menu">
+<li>
+<a class="dropdown-item" href="../../courses/azure-devops/index.html">
+<span class="dropdown-text">Program overview</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/azure-devops/linux-shell-scripting.html">
+<span class="dropdown-text">Linux &amp; Shell Scripting</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/azure-devops/git-version-control.html">
+<span class="dropdown-text">Git &amp; Version Control</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/azure-devops/azure-repos.html">
+<span class="dropdown-text">Azure Repos</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/azure-devops/azure-pipelines.html">
+<span class="dropdown-text">Azure Pipelines (CI/CD)</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/azure-devops/yaml-pipelines.html">
+<span class="dropdown-text">YAML Pipeline Development</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/azure-devops/docker.html">
+<span class="dropdown-text">Docker &amp; Containerization</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/azure-devops/kubernetes-aks.html">
+<span class="dropdown-text">Kubernetes &amp; AKS</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/azure-devops/terraform.html">
+<span class="dropdown-text">Terraform Infrastructure as Code</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/azure-devops/azure-cloud-services.html">
+<span class="dropdown-text">Azure Cloud Services</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/azure-devops/devsecops-monitoring.html">
+<span class="dropdown-text">DevSecOps &amp; Monitoring</span></a>
+</li>
+</ul>
+</li>
+<li class="nav-item dropdown">
+<a aria-expanded="false" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" id="nav-menu-interview-questions" role="link">
+<i class="bi bi-question-circle" role="img">
+</i>
+<span class="menu-text">Interview Questions</span>
+</a>
+<ul aria-labelledby="nav-menu-interview-questions" class="dropdown-menu">
+<li>
+<a class="dropdown-item" href="../../interview-questions/index.html">
+<span class="dropdown-text">Section overview</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../interview-questions/full-stack-ai.html">
+<span class="dropdown-text">Full Stack AI</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../interview-questions/azure-data-engineering.html">
+<span class="dropdown-text">Azure Data Engineering</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../interview-questions/azure-devops.html">
+<span class="dropdown-text">Azure DevOps</span></a>
+</li>
+</ul>
+</li>
+<li class="nav-item dropdown">
+<a aria-expanded="false" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" id="nav-menu-project-flows" role="link">
+<i class="bi bi-kanban" role="img">
+</i>
+<span class="menu-text">Project Flows</span>
+</a>
+<ul aria-labelledby="nav-menu-project-flows" class="dropdown-menu">
+<li>
+<a class="dropdown-item" href="../../project-flows/index.html">
+<span class="dropdown-text">Section overview</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../project-flows/full-stack-ai.html">
+<span class="dropdown-text">Full Stack AI</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../project-flows/azure-data-engineering.html">
+<span class="dropdown-text">Azure Data Engineering</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../project-flows/azure-devops.html">
+<span class="dropdown-text">Azure DevOps</span></a>
+</li>
+</ul>
+</li>
+</ul>
+</div> <!-- /navcollapse -->
+<div class="quarto-navbar-tools">
+</div>
+</div> <!-- /container-fluid -->
+</nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<div class="quarto-container page-columns page-rows-contents page-layout-full page-navbar" id="quarto-content">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
-   
-  <ul>
-  <li><a href="#how-to-use-this-course" id="toc-how-to-use-this-course" class="nav-link active" data-scroll-target="#how-to-use-this-course">How to use this course</a></li>
-  <li><a href="#full-syllabus" id="toc-full-syllabus" class="nav-link" data-scroll-target="#full-syllabus">Full syllabus</a></li>
-  <li><a href="#completion-standard" id="toc-completion-standard" class="nav-link" data-scroll-target="#completion-standard">Completion standard</a></li>
-  </ul>
-</nav>
-    </div>
 <!-- main -->
-<main class="content" id="quarto-document-content">
-
-<header id="title-block-header" class="quarto-title-block default">
+<main class="content column-page" id="quarto-document-content">
+<header class="quarto-title-block default" id="title-block-header">
 <div class="quarto-title">
 <h1 class="title">Delta Lake</h1>
 </div>
-
 <div>
-  <div class="description">
+<div class="description">
     Complete notebook syllabus for Delta Lake in Azure Data Engineering.
   </div>
 </div>
-
-
 <div class="quarto-title-meta">
-
-    <div>
-    <div class="quarto-title-meta-heading">Author</div>
-    <div class="quarto-title-meta-contents">
-             <p>Edukron Notes </p>
-          </div>
-  </div>
-    
-    <div>
-    <div class="quarto-title-meta-heading">Published</div>
-    <div class="quarto-title-meta-contents">
-      <p class="date">September 14, 2026</p>
-    </div>
-  </div>
-  
-    
-  </div>
-  
-
-
+<div>
+<div class="quarto-title-meta-heading">Author</div>
+<div class="quarto-title-meta-contents">
+<p>Edukron Notes </p>
+</div>
+</div>
+<div>
+<div class="quarto-title-meta-heading">Published</div>
+<div class="quarto-title-meta-contents">
+<p class="date">September 14, 2026</p>
+</div>
+</div>
+</div>
 </header>
-
-
-<div class="overview-lead curriculum-summary">
-<div class="overview-icon">
-<i class="bi bi-journal-code" aria-hidden="true"></i>
+<div class="course-workspace notebook-chrome">
+<div class="notebook-toolbar">
+<span class="notebook-file"><i aria-hidden="true" class="bi bi-journal-code"></i><strong>delta-lake.ipynb</strong></span>
+<span class="notebook-status"><i aria-hidden="true" class="bi bi-check-circle-fill"></i> Trusted</span>
+<span class="notebook-kernel"><i aria-hidden="true" class="bi bi-diagram-3"></i> Learning path</span>
 </div>
-<div>
+<div class="course-workspace-hero">
 <span class="overview-kicker">Azure Data Engineering</span>
-<h2 class="anchored">
-Delta Lake
-</h2>
-<p>
-A complete notebook-first syllabus organized from foundations to applied delivery. Every lesson contains notes, a worked pattern, executable validation, a guided lab, solution blueprint, practice, and knowledge checks.
-</p>
+<h1>Delta Lake</h1>
+<p>A complete notebook-first syllabus organized from foundations to applied delivery. Every lesson combines clear notes, a worked pattern, executable validation, a guided lab, a solution blueprint, practice, and knowledge checks.</p>
+<div class="course-tags"><span><i class="bi bi-signpost-split"></i> Foundation to advanced</span><span><i class="bi bi-code-square"></i> Hands-on practice</span><span><i class="bi bi-patch-check"></i> Review ready</span></div>
+<p class="course-start"><a class="btn btn-primary" href="delta-lake/127-delta-table-foundations/01-delta-architecture.html"><i class="bi bi-play-fill"></i> Start the first notebook</a></p>
 </div>
 </div>
-<div class="course-stat-grid">
-<div>
-<strong>4</strong><span>Syllabus topics</span>
-</div>
-<div>
-<strong>40</strong><span>Notebook lessons</span>
-</div>
-<div>
-<strong>Practice</strong><span>Labs and solutions</span>
-</div>
-</div>
-<p class="course-start">
-<a class="btn btn-primary" href="delta-lake/127-delta-table-foundations/01-delta-architecture.html">Start the first notebook <i class="bi bi-arrow-right"></i></a>
-</p>
-<section id="how-to-use-this-course" class="level2">
+<section class="level2" id="how-to-use-this-course">
 <h2 class="anchored" data-anchor-id="how-to-use-this-course">How to use this course</h2>
 <p>Work through lessons in order for a complete pathway, or open a topic for focused reference. Type or adapt the examples, complete the guided lab before reading its blueprint, and preserve your test evidence as a portfolio artifact. Cloud and infrastructure examples are safe, copy-ready teaching patterns; execute them in your own sandbox only after substituting approved identities, names, and policies.</p>
 </section>
-<section id="full-syllabus" class="level2">
-<h2 class="anchored" data-anchor-id="full-syllabus">Full syllabus</h2>
+<div class="syllabus-heading" id="notebook-syllabus">
+<div><span class="overview-kicker">Course contents</span><h2>Notebook syllabus</h2><p>Open a topic to browse its lessons, or search the complete course by concept.</p></div>
+<label class="syllabus-search" for="azure-data-engineering-delta-lake-catalog-search"><i aria-hidden="true" class="bi bi-search"></i><input aria-label="Search the Delta Lake syllabus" autocomplete="off" id="azure-data-engineering-delta-lake-catalog-search" placeholder="Find a topic or lesson" type="search"/></label>
+</div>
+<div class="curriculum-catalog" id="azure-data-engineering-delta-lake-catalog">
 <details class="curriculum-topic" open="">
-<summary>
-<span class="topic-number">Topic 127</span><strong>Delta-table foundations</strong><span>10 notebooks</span>
-</summary>
+<summary><span class="topic-number">Topic 127</span><strong>Delta-table foundations</strong></summary>
 <div class="topic-lessons">
-<p><a class="topic-lesson-link" href="delta-lake/127-delta-table-foundations/01-delta-architecture.html"><span>127.01</span><strong>Delta architecture</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="delta-lake/127-delta-table-foundations/02-transaction-log.html"><span>127.02</span><strong>Transaction log</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="delta-lake/127-delta-table-foundations/03-creating-tables.html"><span>127.03</span><strong>Creating tables</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="delta-lake/127-delta-table-foundations/04-reading-and-writing.html"><span>127.04</span><strong>Reading and writing</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="delta-lake/127-delta-table-foundations/05-acid-properties.html"><span>127.05</span><strong>ACID properties</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="delta-lake/127-delta-table-foundations/06-table-history.html"><span>127.06</span><strong>Table history</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="delta-lake/127-delta-table-foundations/07-time-travel.html"><span>127.07</span><strong>Time travel</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="delta-lake/127-delta-table-foundations/08-constraints.html"><span>127.08</span><strong>Constraints</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="delta-lake/127-delta-table-foundations/09-table-inspection.html"><span>127.09</span><strong>Table inspection</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="delta-lake/127-delta-table-foundations/10-delta-foundations-project.html"><span>127.10</span><strong>Delta foundations project</strong><i class="bi bi-arrow-right"></i></a></p>
+<a class="topic-lesson-link" href="delta-lake/127-delta-table-foundations/01-delta-architecture.html"><span>127.01</span><strong>Delta architecture</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="delta-lake/127-delta-table-foundations/02-transaction-log.html"><span>127.02</span><strong>Transaction log</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="delta-lake/127-delta-table-foundations/03-creating-tables.html"><span>127.03</span><strong>Creating tables</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="delta-lake/127-delta-table-foundations/04-reading-and-writing.html"><span>127.04</span><strong>Reading and writing</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="delta-lake/127-delta-table-foundations/05-acid-properties.html"><span>127.05</span><strong>ACID properties</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="delta-lake/127-delta-table-foundations/06-table-history.html"><span>127.06</span><strong>Table history</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="delta-lake/127-delta-table-foundations/07-time-travel.html"><span>127.07</span><strong>Time travel</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="delta-lake/127-delta-table-foundations/08-constraints.html"><span>127.08</span><strong>Constraints</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="delta-lake/127-delta-table-foundations/09-table-inspection.html"><span>127.09</span><strong>Table inspection</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="delta-lake/127-delta-table-foundations/10-delta-foundations-project.html"><span>127.10</span><strong>Delta foundations project</strong><i class="bi bi-arrow-right"></i></a>
 </div>
 </details>
 <details class="curriculum-topic">
-<summary>
-<span class="topic-number">Topic 128</span><strong>Schema and change processing</strong><span>10 notebooks</span>
-</summary>
+<summary><span class="topic-number">Topic 128</span><strong>Schema and change processing</strong></summary>
 <div class="topic-lessons">
-<p><a class="topic-lesson-link" href="delta-lake/128-schema-and-change-processing/01-schema-enforcement.html"><span>128.01</span><strong>Schema enforcement</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="delta-lake/128-schema-and-change-processing/02-schema-evolution.html"><span>128.02</span><strong>Schema evolution</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="delta-lake/128-schema-and-change-processing/03-merge.html"><span>128.03</span><strong>MERGE</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="delta-lake/128-schema-and-change-processing/04-upserts.html"><span>128.04</span><strong>Upserts</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="delta-lake/128-schema-and-change-processing/05-deletes.html"><span>128.05</span><strong>Deletes</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="delta-lake/128-schema-and-change-processing/06-change-data-feed.html"><span>128.06</span><strong>Change Data Feed</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="delta-lake/128-schema-and-change-processing/07-slowly-changing-dimensions.html"><span>128.07</span><strong>Slowly changing dimensions</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="delta-lake/128-schema-and-change-processing/08-deduplication.html"><span>128.08</span><strong>Deduplication</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="delta-lake/128-schema-and-change-processing/09-incremental-processing.html"><span>128.09</span><strong>Incremental processing</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="delta-lake/128-schema-and-change-processing/10-change-processing-project.html"><span>128.10</span><strong>Change-processing project</strong><i class="bi bi-arrow-right"></i></a></p>
+<a class="topic-lesson-link" href="delta-lake/128-schema-and-change-processing/01-schema-enforcement.html"><span>128.01</span><strong>Schema enforcement</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="delta-lake/128-schema-and-change-processing/02-schema-evolution.html"><span>128.02</span><strong>Schema evolution</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="delta-lake/128-schema-and-change-processing/03-merge.html"><span>128.03</span><strong>MERGE</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="delta-lake/128-schema-and-change-processing/04-upserts.html"><span>128.04</span><strong>Upserts</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="delta-lake/128-schema-and-change-processing/05-deletes.html"><span>128.05</span><strong>Deletes</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="delta-lake/128-schema-and-change-processing/06-change-data-feed.html"><span>128.06</span><strong>Change Data Feed</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="delta-lake/128-schema-and-change-processing/07-slowly-changing-dimensions.html"><span>128.07</span><strong>Slowly changing dimensions</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="delta-lake/128-schema-and-change-processing/08-deduplication.html"><span>128.08</span><strong>Deduplication</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="delta-lake/128-schema-and-change-processing/09-incremental-processing.html"><span>128.09</span><strong>Incremental processing</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="delta-lake/128-schema-and-change-processing/10-change-processing-project.html"><span>128.10</span><strong>Change-processing project</strong><i class="bi bi-arrow-right"></i></a>
 </div>
 </details>
 <details class="curriculum-topic">
-<summary>
-<span class="topic-number">Topic 129</span><strong>Delta performance and reliability</strong><span>10 notebooks</span>
-</summary>
+<summary><span class="topic-number">Topic 129</span><strong>Delta performance and reliability</strong></summary>
 <div class="topic-lessons">
-<p><a class="topic-lesson-link" href="delta-lake/129-delta-performance-and-reliability/01-partitioning.html"><span>129.01</span><strong>Partitioning</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="delta-lake/129-delta-performance-and-reliability/02-compaction.html"><span>129.02</span><strong>Compaction</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="delta-lake/129-delta-performance-and-reliability/03-optimize-operations.html"><span>129.03</span><strong>Optimize operations</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="delta-lake/129-delta-performance-and-reliability/04-data-skipping.html"><span>129.04</span><strong>Data skipping</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="delta-lake/129-delta-performance-and-reliability/05-clustering-concepts.html"><span>129.05</span><strong>Clustering concepts</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="delta-lake/129-delta-performance-and-reliability/06-vacuum.html"><span>129.06</span><strong>Vacuum</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="delta-lake/129-delta-performance-and-reliability/07-retention.html"><span>129.07</span><strong>Retention</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="delta-lake/129-delta-performance-and-reliability/08-concurrent-writes.html"><span>129.08</span><strong>Concurrent writes</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="delta-lake/129-delta-performance-and-reliability/09-recovery.html"><span>129.09</span><strong>Recovery</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="delta-lake/129-delta-performance-and-reliability/10-performance-project.html"><span>129.10</span><strong>Performance project</strong><i class="bi bi-arrow-right"></i></a></p>
+<a class="topic-lesson-link" href="delta-lake/129-delta-performance-and-reliability/01-partitioning.html"><span>129.01</span><strong>Partitioning</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="delta-lake/129-delta-performance-and-reliability/02-compaction.html"><span>129.02</span><strong>Compaction</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="delta-lake/129-delta-performance-and-reliability/03-optimize-operations.html"><span>129.03</span><strong>Optimize operations</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="delta-lake/129-delta-performance-and-reliability/04-data-skipping.html"><span>129.04</span><strong>Data skipping</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="delta-lake/129-delta-performance-and-reliability/05-clustering-concepts.html"><span>129.05</span><strong>Clustering concepts</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="delta-lake/129-delta-performance-and-reliability/06-vacuum.html"><span>129.06</span><strong>Vacuum</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="delta-lake/129-delta-performance-and-reliability/07-retention.html"><span>129.07</span><strong>Retention</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="delta-lake/129-delta-performance-and-reliability/08-concurrent-writes.html"><span>129.08</span><strong>Concurrent writes</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="delta-lake/129-delta-performance-and-reliability/09-recovery.html"><span>129.09</span><strong>Recovery</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="delta-lake/129-delta-performance-and-reliability/10-performance-project.html"><span>129.10</span><strong>Performance project</strong><i class="bi bi-arrow-right"></i></a>
 </div>
 </details>
 <details class="curriculum-topic">
-<summary>
-<span class="topic-number">Topic 130</span><strong>Streaming and governed Delta Lake</strong><span>10 notebooks</span>
-</summary>
+<summary><span class="topic-number">Topic 130</span><strong>Streaming and governed Delta Lake</strong></summary>
 <div class="topic-lessons">
-<p><a class="topic-lesson-link" href="delta-lake/130-streaming-and-governed-delta-lake/01-streaming-reads.html"><span>130.01</span><strong>Streaming reads</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="delta-lake/130-streaming-and-governed-delta-lake/02-streaming-writes.html"><span>130.02</span><strong>Streaming writes</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="delta-lake/130-streaming-and-governed-delta-lake/03-checkpoints.html"><span>130.03</span><strong>Checkpoints</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="delta-lake/130-streaming-and-governed-delta-lake/04-exactly-once-concepts.html"><span>130.04</span><strong>Exactly-once concepts</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="delta-lake/130-streaming-and-governed-delta-lake/05-medallion-pipelines.html"><span>130.05</span><strong>Medallion pipelines</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="delta-lake/130-streaming-and-governed-delta-lake/06-table-permissions.html"><span>130.06</span><strong>Table permissions</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="delta-lake/130-streaming-and-governed-delta-lake/07-lineage.html"><span>130.07</span><strong>Lineage</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="delta-lake/130-streaming-and-governed-delta-lake/08-quality-expectations.html"><span>130.08</span><strong>Quality expectations</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="delta-lake/130-streaming-and-governed-delta-lake/09-operational-monitoring.html"><span>130.09</span><strong>Operational monitoring</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="delta-lake/130-streaming-and-governed-delta-lake/10-delta-lake-capstone.html"><span>130.10</span><strong>Delta Lake capstone</strong><i class="bi bi-arrow-right"></i></a></p>
+<a class="topic-lesson-link" href="delta-lake/130-streaming-and-governed-delta-lake/01-streaming-reads.html"><span>130.01</span><strong>Streaming reads</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="delta-lake/130-streaming-and-governed-delta-lake/02-streaming-writes.html"><span>130.02</span><strong>Streaming writes</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="delta-lake/130-streaming-and-governed-delta-lake/03-checkpoints.html"><span>130.03</span><strong>Checkpoints</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="delta-lake/130-streaming-and-governed-delta-lake/04-exactly-once-concepts.html"><span>130.04</span><strong>Exactly-once concepts</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="delta-lake/130-streaming-and-governed-delta-lake/05-medallion-pipelines.html"><span>130.05</span><strong>Medallion pipelines</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="delta-lake/130-streaming-and-governed-delta-lake/06-table-permissions.html"><span>130.06</span><strong>Table permissions</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="delta-lake/130-streaming-and-governed-delta-lake/07-lineage.html"><span>130.07</span><strong>Lineage</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="delta-lake/130-streaming-and-governed-delta-lake/08-quality-expectations.html"><span>130.08</span><strong>Quality expectations</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="delta-lake/130-streaming-and-governed-delta-lake/09-operational-monitoring.html"><span>130.09</span><strong>Operational monitoring</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="delta-lake/130-streaming-and-governed-delta-lake/10-delta-lake-capstone.html"><span>130.10</span><strong>Delta Lake capstone</strong><i class="bi bi-arrow-right"></i></a>
 </div>
 </details>
-</section>
-<section id="completion-standard" class="level2">
+</div>
+<p class="syllabus-empty" hidden="" id="azure-data-engineering-delta-lake-catalog-empty"><i class="bi bi-search"></i> No matching lessons were found.</p>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const catalog = document.getElementById("azure-data-engineering-delta-lake-catalog");
+  const search = document.getElementById("azure-data-engineering-delta-lake-catalog-search");
+  const empty = document.getElementById("azure-data-engineering-delta-lake-catalog-empty");
+  if (!catalog || !search || !empty) return;
+
+  search.addEventListener("input", () => {
+    const query = search.value.trim().toLowerCase();
+    let visibleTopics = 0;
+    catalog.querySelectorAll(".curriculum-topic").forEach((topic) => {
+      const summary = topic.querySelector("summary");
+      const topicMatches = !query || summary.textContent.toLowerCase().includes(query);
+      let visibleLessons = 0;
+      topic.querySelectorAll(".topic-lesson-link").forEach((lesson) => {
+        const matches = topicMatches || lesson.textContent.toLowerCase().includes(query);
+        lesson.hidden = !matches;
+        if (matches) visibleLessons += 1;
+      });
+      const showTopic = topicMatches || visibleLessons > 0;
+      topic.hidden = !showTopic;
+      if (showTopic) visibleTopics += 1;
+      if (query && showTopic) topic.open = true;
+    });
+    empty.hidden = visibleTopics > 0;
+  });
+});
+</script>
+<section class="level2" id="completion-standard">
 <h2 class="anchored" data-anchor-id="completion-standard">Completion standard</h2>
 <p>You have completed <strong>Delta Lake</strong> when you can explain each topic, reproduce its core workflow, pass the notebook checks, defend the main tradeoffs, and combine the lessons into one reviewable portfolio project. Use the practice tasks as evidence rather than treating page reading alone as completion.</p>
-
-
 </section>
-
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
@@ -849,21 +859,17 @@ A complete notebook-first syllabus organized from foundations to applied deliver
   </script>
 </div> <!-- /content -->
 <footer class="footer">
-  <div class="nav-footer">
-    <div class="nav-footer-left">
+<div class="nav-footer">
+<div class="nav-footer-left">
 <p>© 2026 Edukron Notes</p>
-</div>   
-    <div class="nav-footer-center">
-      &nbsp;
+</div>
+<div class="nav-footer-center">
+       
     </div>
-    <div class="nav-footer-right">
+<div class="nav-footer-right">
 <p>Notebook courses for AI, data engineering, and DevOps</p>
 </div>
-  </div>
+</div>
 </footer>
-
-
-
-
 <script src="../../site_libs/quarto-html/zenscroll-min.js"></script>
 </body></html>

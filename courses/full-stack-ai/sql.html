@@ -1,15 +1,12 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
-<meta charset="utf-8">
-<meta name="generator" content="quarto-1.10.18">
-
-<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-
-<meta name="author" content="Edukron Notes">
-<meta name="dcterms.date" content="2026-09-14">
-<meta name="description" content="Complete notebook syllabus for SQL in Full Stack AI.">
-
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta charset="utf-8"/>
+<meta content="quarto-1.10.18" name="generator"/>
+<meta content="width=device-width, initial-scale=1.0, user-scalable=yes" name="viewport"/>
+<meta content="Edukron Notes" name="author"/>
+<meta content="2026-09-14" name="dcterms.date"/>
+<meta content="Complete notebook syllabus for SQL in Full Stack AI." name="description"/>
 <title>SQL – Edukron Notes</title>
 <style>
 /* Default styles provided by pandoc.
@@ -30,25 +27,23 @@ ul.task-list li input[type="checkbox"] {
   vertical-align: middle;
 }
 </style>
-
-
 <script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
 <script src="../../site_libs/quarto-nav/headroom.min.js"></script>
 <script src="../../site_libs/clipboard/clipboard.min.js"></script>
 <script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
 <script src="../../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../../">
+<meta content="../../" name="quarto:offset"/>
 <script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="../../site_libs/quarto-html/popper.min.js"></script>
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet"/>
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" id="quarto-text-highlighting-styles" rel="stylesheet"/>
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-f0f4b58164ec92a07fcd2db94b0e5cbd.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet"/>
+<link append-hash="true" data-mode="light" href="../../site_libs/bootstrap/bootstrap-f0f4b58164ec92a07fcd2db94b0e5cbd.min.css" id="quarto-bootstrap" rel="stylesheet"/>
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -76,400 +71,436 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 <style>html{ scroll-behavior: smooth; }</style>
-
-
-<link rel="stylesheet" href="../../styles.css">
+<link href="../../styles.css" rel="stylesheet"/>
 </head>
-
 <body class="nav-fixed quarto-light">
-
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top">
-    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
-      <div class="navbar-container container-fluid">
-      <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="../../index.html">
-    <span class="navbar-title">Edukron Notes</span>
-    </a>
-  </div>
-            <div id="quarto-search" class="" title="Search"></div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
-  <span class="navbar-toggler-icon"></span>
-</button>
-          <div class="collapse navbar-collapse" id="navbarCollapse">
-            <ul class="navbar-nav navbar-nav-scroll me-auto">
-  <li class="nav-item">
-    <a class="nav-link" href="../../index.html"> 
-<span class="menu-text">Home</span></a>
-  </li>  
-  <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-full-stack-ai" role="link" data-bs-toggle="dropdown" aria-expanded="false">
-      <i class="bi bi-cpu" role="img">
-</i> 
- <span class="menu-text">Full Stack AI</span>
-    </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-full-stack-ai">    
-        <li>
-    <a class="dropdown-item" href="../../courses/full-stack-ai/index.html">
- <span class="dropdown-text">Program overview</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/full-stack-ai/python.html">
- <span class="dropdown-text">Python</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/full-stack-ai/sql.html">
- <span class="dropdown-text">SQL</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/full-stack-ai/data-science.html">
- <span class="dropdown-text">Data Science</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/full-stack-ai/machine-learning.html">
- <span class="dropdown-text">Machine Learning</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/full-stack-ai/artificial-intelligence.html">
- <span class="dropdown-text">Artificial Intelligence</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/full-stack-ai/deep-learning.html">
- <span class="dropdown-text">Deep Learning</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/full-stack-ai/generative-ai.html">
- <span class="dropdown-text">Generative AI</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/full-stack-ai/large-language-models.html">
- <span class="dropdown-text">Large Language Models (LLMs)</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/full-stack-ai/rag.html">
- <span class="dropdown-text">Retrieval Augmented Generation (RAG)</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/full-stack-ai/agentic-ai.html">
- <span class="dropdown-text">Agentic AI</span></a>
-  </li>  
-    </ul>
-  </li>
-  <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-azure-data-engineering" role="link" data-bs-toggle="dropdown" aria-expanded="false">
-      <i class="bi bi-database" role="img">
-</i> 
- <span class="menu-text">Azure Data Engineering</span>
-    </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-azure-data-engineering">    
-        <li>
-    <a class="dropdown-item" href="../../courses/azure-data-engineering/index.html">
- <span class="dropdown-text">Program overview</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/azure-data-engineering/python.html">
- <span class="dropdown-text">Python</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/azure-data-engineering/sql.html">
- <span class="dropdown-text">SQL</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/azure-data-engineering/fundamentals.html">
- <span class="dropdown-text">Data Engineering Fundamentals</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/azure-data-engineering/azure-data-factory.html">
- <span class="dropdown-text">Azure Data Factory (ADF)</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/azure-data-engineering/adls-gen2.html">
- <span class="dropdown-text">Azure Data Lake Storage Gen2</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/azure-data-engineering/azure-databricks.html">
- <span class="dropdown-text">Azure Databricks</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/azure-data-engineering/pyspark.html">
- <span class="dropdown-text">PySpark</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/azure-data-engineering/azure-synapse.html">
- <span class="dropdown-text">Azure Synapse Analytics</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/azure-data-engineering/microsoft-fabric.html">
- <span class="dropdown-text">Microsoft Fabric</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/azure-data-engineering/delta-lake.html">
- <span class="dropdown-text">Delta Lake</span></a>
-  </li>  
-    </ul>
-  </li>
-  <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-azure-devops" role="link" data-bs-toggle="dropdown" aria-expanded="false">
-      <i class="bi bi-infinity" role="img">
-</i> 
- <span class="menu-text">Azure DevOps</span>
-    </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-azure-devops">    
-        <li>
-    <a class="dropdown-item" href="../../courses/azure-devops/index.html">
- <span class="dropdown-text">Program overview</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/azure-devops/linux-shell-scripting.html">
- <span class="dropdown-text">Linux &amp; Shell Scripting</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/azure-devops/git-version-control.html">
- <span class="dropdown-text">Git &amp; Version Control</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/azure-devops/azure-repos.html">
- <span class="dropdown-text">Azure Repos</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/azure-devops/azure-pipelines.html">
- <span class="dropdown-text">Azure Pipelines (CI/CD)</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/azure-devops/yaml-pipelines.html">
- <span class="dropdown-text">YAML Pipeline Development</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/azure-devops/docker.html">
- <span class="dropdown-text">Docker &amp; Containerization</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/azure-devops/kubernetes-aks.html">
- <span class="dropdown-text">Kubernetes &amp; AKS</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/azure-devops/terraform.html">
- <span class="dropdown-text">Terraform Infrastructure as Code</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/azure-devops/azure-cloud-services.html">
- <span class="dropdown-text">Azure Cloud Services</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/azure-devops/devsecops-monitoring.html">
- <span class="dropdown-text">DevSecOps &amp; Monitoring</span></a>
-  </li>  
-    </ul>
-  </li>
-  <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-interview-questions" role="link" data-bs-toggle="dropdown" aria-expanded="false">
-      <i class="bi bi-question-circle" role="img">
-</i> 
- <span class="menu-text">Interview Questions</span>
-    </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-interview-questions">    
-        <li>
-    <a class="dropdown-item" href="../../interview-questions/index.html">
- <span class="dropdown-text">Section overview</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../interview-questions/full-stack-ai.html">
- <span class="dropdown-text">Full Stack AI</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../interview-questions/azure-data-engineering.html">
- <span class="dropdown-text">Azure Data Engineering</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../interview-questions/azure-devops.html">
- <span class="dropdown-text">Azure DevOps</span></a>
-  </li>  
-    </ul>
-  </li>
-  <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-project-flows" role="link" data-bs-toggle="dropdown" aria-expanded="false">
-      <i class="bi bi-kanban" role="img">
-</i> 
- <span class="menu-text">Project Flows</span>
-    </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-project-flows">    
-        <li>
-    <a class="dropdown-item" href="../../project-flows/index.html">
- <span class="dropdown-text">Section overview</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../project-flows/full-stack-ai.html">
- <span class="dropdown-text">Full Stack AI</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../project-flows/azure-data-engineering.html">
- <span class="dropdown-text">Azure Data Engineering</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../project-flows/azure-devops.html">
- <span class="dropdown-text">Azure DevOps</span></a>
-  </li>  
-    </ul>
-  </li>
-</ul>
-          </div> <!-- /navcollapse -->
-            <div class="quarto-navbar-tools">
+<header class="headroom fixed-top" id="quarto-header">
+<nav class="navbar navbar-expand-lg" data-bs-theme="dark">
+<div class="navbar-container container-fluid">
+<div class="navbar-brand-container mx-auto">
+<a class="navbar-brand" href="../../index.html">
+<span class="navbar-title">Edukron Notes</span>
+</a>
 </div>
-      </div> <!-- /container-fluid -->
-    </nav>
+<div class="" id="quarto-search" title="Search"></div>
+<button aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-bs-target="#navbarCollapse" data-bs-toggle="collapse" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }" role="menu" type="button">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" id="navbarCollapse">
+<ul class="navbar-nav navbar-nav-scroll me-auto">
+<li class="nav-item">
+<a class="nav-link" href="../../index.html">
+<span class="menu-text">Home</span></a>
+</li>
+<li class="nav-item dropdown">
+<a aria-expanded="false" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" id="nav-menu-full-stack-ai" role="link">
+<i class="bi bi-cpu" role="img">
+</i>
+<span class="menu-text">Full Stack AI</span>
+</a>
+<ul aria-labelledby="nav-menu-full-stack-ai" class="dropdown-menu">
+<li>
+<a class="dropdown-item" href="../../courses/full-stack-ai/index.html">
+<span class="dropdown-text">Program overview</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/full-stack-ai/python.html">
+<span class="dropdown-text">Python</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/full-stack-ai/sql.html">
+<span class="dropdown-text">SQL</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/full-stack-ai/data-science.html">
+<span class="dropdown-text">Data Science</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/full-stack-ai/machine-learning.html">
+<span class="dropdown-text">Machine Learning</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/full-stack-ai/artificial-intelligence.html">
+<span class="dropdown-text">Artificial Intelligence</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/full-stack-ai/deep-learning.html">
+<span class="dropdown-text">Deep Learning</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/full-stack-ai/generative-ai.html">
+<span class="dropdown-text">Generative AI</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/full-stack-ai/large-language-models.html">
+<span class="dropdown-text">Large Language Models (LLMs)</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/full-stack-ai/rag.html">
+<span class="dropdown-text">Retrieval Augmented Generation (RAG)</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/full-stack-ai/agentic-ai.html">
+<span class="dropdown-text">Agentic AI</span></a>
+</li>
+</ul>
+</li>
+<li class="nav-item dropdown">
+<a aria-expanded="false" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" id="nav-menu-azure-data-engineering" role="link">
+<i class="bi bi-database" role="img">
+</i>
+<span class="menu-text">Azure Data Engineering</span>
+</a>
+<ul aria-labelledby="nav-menu-azure-data-engineering" class="dropdown-menu">
+<li>
+<a class="dropdown-item" href="../../courses/azure-data-engineering/index.html">
+<span class="dropdown-text">Program overview</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/azure-data-engineering/python.html">
+<span class="dropdown-text">Python</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/azure-data-engineering/sql.html">
+<span class="dropdown-text">SQL</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/azure-data-engineering/fundamentals.html">
+<span class="dropdown-text">Data Engineering Fundamentals</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/azure-data-engineering/azure-data-factory.html">
+<span class="dropdown-text">Azure Data Factory (ADF)</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/azure-data-engineering/adls-gen2.html">
+<span class="dropdown-text">Azure Data Lake Storage Gen2</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/azure-data-engineering/azure-databricks.html">
+<span class="dropdown-text">Azure Databricks</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/azure-data-engineering/pyspark.html">
+<span class="dropdown-text">PySpark</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/azure-data-engineering/azure-synapse.html">
+<span class="dropdown-text">Azure Synapse Analytics</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/azure-data-engineering/microsoft-fabric.html">
+<span class="dropdown-text">Microsoft Fabric</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/azure-data-engineering/delta-lake.html">
+<span class="dropdown-text">Delta Lake</span></a>
+</li>
+</ul>
+</li>
+<li class="nav-item dropdown">
+<a aria-expanded="false" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" id="nav-menu-azure-devops" role="link">
+<i class="bi bi-infinity" role="img">
+</i>
+<span class="menu-text">Azure DevOps</span>
+</a>
+<ul aria-labelledby="nav-menu-azure-devops" class="dropdown-menu">
+<li>
+<a class="dropdown-item" href="../../courses/azure-devops/index.html">
+<span class="dropdown-text">Program overview</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/azure-devops/linux-shell-scripting.html">
+<span class="dropdown-text">Linux &amp; Shell Scripting</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/azure-devops/git-version-control.html">
+<span class="dropdown-text">Git &amp; Version Control</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/azure-devops/azure-repos.html">
+<span class="dropdown-text">Azure Repos</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/azure-devops/azure-pipelines.html">
+<span class="dropdown-text">Azure Pipelines (CI/CD)</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/azure-devops/yaml-pipelines.html">
+<span class="dropdown-text">YAML Pipeline Development</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/azure-devops/docker.html">
+<span class="dropdown-text">Docker &amp; Containerization</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/azure-devops/kubernetes-aks.html">
+<span class="dropdown-text">Kubernetes &amp; AKS</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/azure-devops/terraform.html">
+<span class="dropdown-text">Terraform Infrastructure as Code</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/azure-devops/azure-cloud-services.html">
+<span class="dropdown-text">Azure Cloud Services</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/azure-devops/devsecops-monitoring.html">
+<span class="dropdown-text">DevSecOps &amp; Monitoring</span></a>
+</li>
+</ul>
+</li>
+<li class="nav-item dropdown">
+<a aria-expanded="false" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" id="nav-menu-interview-questions" role="link">
+<i class="bi bi-question-circle" role="img">
+</i>
+<span class="menu-text">Interview Questions</span>
+</a>
+<ul aria-labelledby="nav-menu-interview-questions" class="dropdown-menu">
+<li>
+<a class="dropdown-item" href="../../interview-questions/index.html">
+<span class="dropdown-text">Section overview</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../interview-questions/full-stack-ai.html">
+<span class="dropdown-text">Full Stack AI</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../interview-questions/azure-data-engineering.html">
+<span class="dropdown-text">Azure Data Engineering</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../interview-questions/azure-devops.html">
+<span class="dropdown-text">Azure DevOps</span></a>
+</li>
+</ul>
+</li>
+<li class="nav-item dropdown">
+<a aria-expanded="false" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" id="nav-menu-project-flows" role="link">
+<i class="bi bi-kanban" role="img">
+</i>
+<span class="menu-text">Project Flows</span>
+</a>
+<ul aria-labelledby="nav-menu-project-flows" class="dropdown-menu">
+<li>
+<a class="dropdown-item" href="../../project-flows/index.html">
+<span class="dropdown-text">Section overview</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../project-flows/full-stack-ai.html">
+<span class="dropdown-text">Full Stack AI</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../project-flows/azure-data-engineering.html">
+<span class="dropdown-text">Azure Data Engineering</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../project-flows/azure-devops.html">
+<span class="dropdown-text">Azure DevOps</span></a>
+</li>
+</ul>
+</li>
+</ul>
+</div> <!-- /navcollapse -->
+<div class="quarto-navbar-tools">
+</div>
+</div> <!-- /container-fluid -->
+</nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<div class="quarto-container page-columns page-rows-contents page-layout-full page-navbar" id="quarto-content">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
-   
-  <ul>
-  <li><a href="#how-to-use-this-course" id="toc-how-to-use-this-course" class="nav-link active" data-scroll-target="#how-to-use-this-course">How to use this course</a></li>
-  <li><a href="#full-syllabus" id="toc-full-syllabus" class="nav-link" data-scroll-target="#full-syllabus">Full syllabus</a></li>
-  <li><a href="#completion-standard" id="toc-completion-standard" class="nav-link" data-scroll-target="#completion-standard">Completion standard</a></li>
-  </ul>
-</nav>
-    </div>
 <!-- main -->
-<main class="content" id="quarto-document-content">
-
-<header id="title-block-header" class="quarto-title-block default">
+<main class="content column-page" id="quarto-document-content">
+<header class="quarto-title-block default" id="title-block-header">
 <div class="quarto-title">
 <h1 class="title">SQL</h1>
 </div>
-
 <div>
-  <div class="description">
+<div class="description">
     Complete notebook syllabus for SQL in Full Stack AI.
   </div>
 </div>
-
-
 <div class="quarto-title-meta">
-
-    <div>
-    <div class="quarto-title-meta-heading">Author</div>
-    <div class="quarto-title-meta-contents">
-             <p>Edukron Notes </p>
-          </div>
-  </div>
-    
-    <div>
-    <div class="quarto-title-meta-heading">Published</div>
-    <div class="quarto-title-meta-contents">
-      <p class="date">September 14, 2026</p>
-    </div>
-  </div>
-  
-    
-  </div>
-  
-
-
+<div>
+<div class="quarto-title-meta-heading">Author</div>
+<div class="quarto-title-meta-contents">
+<p>Edukron Notes </p>
+</div>
+</div>
+<div>
+<div class="quarto-title-meta-heading">Published</div>
+<div class="quarto-title-meta-contents">
+<p class="date">September 14, 2026</p>
+</div>
+</div>
+</div>
 </header>
-
-
-<div class="overview-lead curriculum-summary">
-<div class="overview-icon">
-<i class="bi bi-journal-code" aria-hidden="true"></i>
+<div class="course-workspace notebook-chrome">
+<div class="notebook-toolbar">
+<span class="notebook-file"><i aria-hidden="true" class="bi bi-journal-code"></i><strong>sql.ipynb</strong></span>
+<span class="notebook-status"><i aria-hidden="true" class="bi bi-check-circle-fill"></i> Trusted</span>
+<span class="notebook-kernel"><i aria-hidden="true" class="bi bi-diagram-3"></i> Learning path</span>
 </div>
-<div>
+<div class="course-workspace-hero">
 <span class="overview-kicker">Full Stack AI</span>
-<h2 class="anchored">
-SQL
-</h2>
-<p>
-A complete notebook-first syllabus organized from foundations to applied delivery. Every lesson contains notes, a worked pattern, executable validation, a guided lab, solution blueprint, practice, and knowledge checks.
-</p>
+<h1>SQL</h1>
+<p>A complete notebook-first syllabus organized from foundations to applied delivery. Every lesson combines clear notes, a worked pattern, executable validation, a guided lab, a solution blueprint, practice, and knowledge checks.</p>
+<div class="course-tags"><span><i class="bi bi-signpost-split"></i> Foundation to advanced</span><span><i class="bi bi-code-square"></i> Hands-on practice</span><span><i class="bi bi-patch-check"></i> Review ready</span></div>
+<p class="course-start"><a class="btn btn-primary" href="sql/011-relational-database-foundations/01-databases-and-rdbms-concepts.html"><i class="bi bi-play-fill"></i> Start the first notebook</a></p>
 </div>
 </div>
-<div class="course-stat-grid">
-<div>
-<strong>7</strong><span>Syllabus topics</span>
-</div>
-<div>
-<strong>70</strong><span>Notebook lessons</span>
-</div>
-<div>
-<strong>Practice</strong><span>Labs and solutions</span>
-</div>
-</div>
-<p class="course-start">
-<a class="btn btn-primary" href="sql/011-relational-database-foundations/01-databases-and-rdbms-concepts.html">Start the first notebook <i class="bi bi-arrow-right"></i></a>
-</p>
-<section id="how-to-use-this-course" class="level2">
+<section class="level2" id="how-to-use-this-course">
 <h2 class="anchored" data-anchor-id="how-to-use-this-course">How to use this course</h2>
 <p>Work through lessons in order for a complete pathway, or open a topic for focused reference. Type or adapt the examples, complete the guided lab before reading its blueprint, and preserve your test evidence as a portfolio artifact. Cloud and infrastructure examples are safe, copy-ready teaching patterns; execute them in your own sandbox only after substituting approved identities, names, and policies.</p>
 </section>
-<section id="full-syllabus" class="level2">
-<h2 class="anchored" data-anchor-id="full-syllabus">Full syllabus</h2>
+<div class="syllabus-heading" id="notebook-syllabus">
+<div><span class="overview-kicker">Course contents</span><h2>Notebook syllabus</h2><p>Open a topic to browse its lessons, or search the complete course by concept.</p></div>
+<label class="syllabus-search" for="full-stack-ai-sql-catalog-search"><i aria-hidden="true" class="bi bi-search"></i><input aria-label="Search the SQL syllabus" autocomplete="off" id="full-stack-ai-sql-catalog-search" placeholder="Find a topic or lesson" type="search"/></label>
+</div>
+<div class="curriculum-catalog" id="full-stack-ai-sql-catalog">
 <details class="curriculum-topic" open="">
-<summary>
-<span class="topic-number">Topic 011</span><strong>Relational database foundations</strong><span>10 notebooks</span>
-</summary>
+<summary><span class="topic-number">Topic 011</span><strong>Relational database foundations</strong></summary>
 <div class="topic-lessons">
-<p><a class="topic-lesson-link" href="sql/011-relational-database-foundations/01-databases-and-rdbms-concepts.html"><span>011.01</span><strong>Databases and RDBMS concepts</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="sql/011-relational-database-foundations/02-tables-rows-and-columns.html"><span>011.02</span><strong>Tables rows and columns</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="sql/011-relational-database-foundations/03-keys-and-relationships.html"><span>011.03</span><strong>Keys and relationships</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="sql/011-relational-database-foundations/04-sql-data-types.html"><span>011.04</span><strong>SQL data types</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="sql/011-relational-database-foundations/05-creating-databases.html"><span>011.05</span><strong>Creating databases</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="sql/011-relational-database-foundations/06-creating-tables.html"><span>011.06</span><strong>Creating tables</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="sql/011-relational-database-foundations/07-altering-tables.html"><span>011.07</span><strong>Altering tables</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="sql/011-relational-database-foundations/08-inserting-data.html"><span>011.08</span><strong>Inserting data</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="sql/011-relational-database-foundations/09-updating-and-deleting.html"><span>011.09</span><strong>Updating and deleting</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="sql/011-relational-database-foundations/10-database-foundations-lab.html"><span>011.10</span><strong>Database foundations lab</strong><i class="bi bi-arrow-right"></i></a></p>
+<a class="topic-lesson-link" href="sql/011-relational-database-foundations/01-databases-and-rdbms-concepts.html"><span>011.01</span><strong>Databases and RDBMS concepts</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="sql/011-relational-database-foundations/02-tables-rows-and-columns.html"><span>011.02</span><strong>Tables rows and columns</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="sql/011-relational-database-foundations/03-keys-and-relationships.html"><span>011.03</span><strong>Keys and relationships</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="sql/011-relational-database-foundations/04-sql-data-types.html"><span>011.04</span><strong>SQL data types</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="sql/011-relational-database-foundations/05-creating-databases.html"><span>011.05</span><strong>Creating databases</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="sql/011-relational-database-foundations/06-creating-tables.html"><span>011.06</span><strong>Creating tables</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="sql/011-relational-database-foundations/07-altering-tables.html"><span>011.07</span><strong>Altering tables</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="sql/011-relational-database-foundations/08-inserting-data.html"><span>011.08</span><strong>Inserting data</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="sql/011-relational-database-foundations/09-updating-and-deleting.html"><span>011.09</span><strong>Updating and deleting</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="sql/011-relational-database-foundations/10-database-foundations-lab.html"><span>011.10</span><strong>Database foundations lab</strong><i class="bi bi-arrow-right"></i></a>
 </div>
 </details>
 <details class="curriculum-topic">
-<summary>
-<span class="topic-number">Topic 012</span><strong>SQL querying fundamentals</strong><span>10 notebooks</span>
-</summary>
+<summary><span class="topic-number">Topic 012</span><strong>SQL querying fundamentals</strong></summary>
 <div class="topic-lessons">
-<p><a class="topic-lesson-link" href="sql/012-sql-querying-fundamentals/01-select-statements.html"><span>012.01</span><strong>SELECT statements</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="sql/012-sql-querying-fundamentals/02-column-aliases.html"><span>012.02</span><strong>Column aliases</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="sql/012-sql-querying-fundamentals/03-distinct.html"><span>012.03</span><strong>DISTINCT</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="sql/012-sql-querying-fundamentals/04-where-filtering.html"><span>012.04</span><strong>WHERE filtering</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="sql/012-sql-querying-fundamentals/05-comparison-operators.html"><span>012.05</span><strong>Comparison operators</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="sql/012-sql-querying-fundamentals/06-logical-operators.html"><span>012.06</span><strong>Logical operators</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="sql/012-sql-querying-fundamentals/07-null-handling.html"><span>012.07</span><strong>NULL handling</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="sql/012-sql-querying-fundamentals/08-sorting-results.html"><span>012.08</span><strong>Sorting results</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="sql/012-sql-querying-fundamentals/09-limiting-results.html"><span>012.09</span><strong>Limiting results</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="sql/012-sql-querying-fundamentals/10-querying-practice-set.html"><span>012.10</span><strong>Querying practice set</strong><i class="bi bi-arrow-right"></i></a></p>
+<a class="topic-lesson-link" href="sql/012-sql-querying-fundamentals/01-select-statements.html"><span>012.01</span><strong>SELECT statements</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="sql/012-sql-querying-fundamentals/02-column-aliases.html"><span>012.02</span><strong>Column aliases</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="sql/012-sql-querying-fundamentals/03-distinct.html"><span>012.03</span><strong>DISTINCT</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="sql/012-sql-querying-fundamentals/04-where-filtering.html"><span>012.04</span><strong>WHERE filtering</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="sql/012-sql-querying-fundamentals/05-comparison-operators.html"><span>012.05</span><strong>Comparison operators</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="sql/012-sql-querying-fundamentals/06-logical-operators.html"><span>012.06</span><strong>Logical operators</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="sql/012-sql-querying-fundamentals/07-null-handling.html"><span>012.07</span><strong>NULL handling</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="sql/012-sql-querying-fundamentals/08-sorting-results.html"><span>012.08</span><strong>Sorting results</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="sql/012-sql-querying-fundamentals/09-limiting-results.html"><span>012.09</span><strong>Limiting results</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="sql/012-sql-querying-fundamentals/10-querying-practice-set.html"><span>012.10</span><strong>Querying practice set</strong><i class="bi bi-arrow-right"></i></a>
 </div>
 </details>
 <details class="curriculum-topic">
-<summary>
-<span class="topic-number">Topic 013</span><strong>Joins and set operations</strong><span>10 notebooks</span>
-</summary>
+<summary><span class="topic-number">Topic 013</span><strong>Joins and set operations</strong></summary>
 <div class="topic-lessons">
-<p><a class="topic-lesson-link" href="sql/013-joins-and-set-operations/01-inner-join.html"><span>013.01</span><strong>INNER JOIN</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="sql/013-joins-and-set-operations/02-left-join.html"><span>013.02</span><strong>LEFT JOIN</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="sql/013-joins-and-set-operations/03-right-and-full-join.html"><span>013.03</span><strong>RIGHT and FULL JOIN</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="sql/013-joins-and-set-operations/04-self-joins.html"><span>013.04</span><strong>Self joins</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="sql/013-joins-and-set-operations/05-cross-joins.html"><span>013.05</span><strong>Cross joins</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="sql/013-joins-and-set-operations/06-multi-table-joins.html"><span>013.06</span><strong>Multi-table joins</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="sql/013-joins-and-set-operations/07-union-and-union-all.html"><span>013.07</span><strong>UNION and UNION ALL</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="sql/013-joins-and-set-operations/08-intersect-and-except.html"><span>013.08</span><strong>INTERSECT and EXCEPT</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="sql/013-joins-and-set-operations/09-join-troubleshooting.html"><span>013.09</span><strong>Join troubleshooting</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="sql/013-joins-and-set-operations/10-multi-table-project.html"><span>013.10</span><strong>Multi-table project</strong><i class="bi bi-arrow-right"></i></a></p>
+<a class="topic-lesson-link" href="sql/013-joins-and-set-operations/01-inner-join.html"><span>013.01</span><strong>INNER JOIN</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="sql/013-joins-and-set-operations/02-left-join.html"><span>013.02</span><strong>LEFT JOIN</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="sql/013-joins-and-set-operations/03-right-and-full-join.html"><span>013.03</span><strong>RIGHT and FULL JOIN</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="sql/013-joins-and-set-operations/04-self-joins.html"><span>013.04</span><strong>Self joins</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="sql/013-joins-and-set-operations/05-cross-joins.html"><span>013.05</span><strong>Cross joins</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="sql/013-joins-and-set-operations/06-multi-table-joins.html"><span>013.06</span><strong>Multi-table joins</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="sql/013-joins-and-set-operations/07-union-and-union-all.html"><span>013.07</span><strong>UNION and UNION ALL</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="sql/013-joins-and-set-operations/08-intersect-and-except.html"><span>013.08</span><strong>INTERSECT and EXCEPT</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="sql/013-joins-and-set-operations/09-join-troubleshooting.html"><span>013.09</span><strong>Join troubleshooting</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="sql/013-joins-and-set-operations/10-multi-table-project.html"><span>013.10</span><strong>Multi-table project</strong><i class="bi bi-arrow-right"></i></a>
 </div>
 </details>
 <details class="curriculum-topic">
-<summary>
-<span class="topic-number">Topic 014</span><strong>Aggregations and analytical SQL</strong><span>10 notebooks</span>
-</summary>
+<summary><span class="topic-number">Topic 014</span><strong>Aggregations and analytical SQL</strong></summary>
 <div class="topic-lessons">
-<p><a class="topic-lesson-link" href="sql/014-aggregations-and-analytical-sql/01-aggregate-functions.html"><span>014.01</span><strong>Aggregate functions</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="sql/014-aggregations-and-analytical-sql/02-group-by.html"><span>014.02</span><strong>GROUP BY</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="sql/014-aggregations-and-analytical-sql/03-having.html"><span>014.03</span><strong>HAVING</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="sql/014-aggregations-and-analytical-sql/04-conditional-aggregation.html"><span>014.04</span><strong>Conditional aggregation</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="sql/014-aggregations-and-analytical-sql/05-case-expressions.html"><span>014.05</span><strong>CASE expressions</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="sql/014-aggregations-and-analytical-sql/06-window-function-foundations.html"><span>014.06</span><strong>Window-function foundations</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="sql/014-aggregations-and-analytical-sql/07-ranking-functions.html"><span>014.07</span><strong>Ranking functions</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="sql/014-aggregations-and-analytical-sql/08-running-totals.html"><span>014.08</span><strong>Running totals</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="sql/014-aggregations-and-analytical-sql/09-lag-and-lead.html"><span>014.09</span><strong>Lag and lead</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="sql/014-aggregations-and-analytical-sql/10-analytics-project.html"><span>014.10</span><strong>Analytics project</strong><i class="bi bi-arrow-right"></i></a></p>
+<a class="topic-lesson-link" href="sql/014-aggregations-and-analytical-sql/01-aggregate-functions.html"><span>014.01</span><strong>Aggregate functions</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="sql/014-aggregations-and-analytical-sql/02-group-by.html"><span>014.02</span><strong>GROUP BY</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="sql/014-aggregations-and-analytical-sql/03-having.html"><span>014.03</span><strong>HAVING</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="sql/014-aggregations-and-analytical-sql/04-conditional-aggregation.html"><span>014.04</span><strong>Conditional aggregation</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="sql/014-aggregations-and-analytical-sql/05-case-expressions.html"><span>014.05</span><strong>CASE expressions</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="sql/014-aggregations-and-analytical-sql/06-window-function-foundations.html"><span>014.06</span><strong>Window-function foundations</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="sql/014-aggregations-and-analytical-sql/07-ranking-functions.html"><span>014.07</span><strong>Ranking functions</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="sql/014-aggregations-and-analytical-sql/08-running-totals.html"><span>014.08</span><strong>Running totals</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="sql/014-aggregations-and-analytical-sql/09-lag-and-lead.html"><span>014.09</span><strong>Lag and lead</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="sql/014-aggregations-and-analytical-sql/10-analytics-project.html"><span>014.10</span><strong>Analytics project</strong><i class="bi bi-arrow-right"></i></a>
 </div>
 </details>
 <details class="curriculum-topic">
-<summary>
-<span class="topic-number">Topic 015</span><strong>Database design and integrity</strong><span>10 notebooks</span>
-</summary>
+<summary><span class="topic-number">Topic 015</span><strong>Database design and integrity</strong></summary>
 <div class="topic-lessons">
-<p><a class="topic-lesson-link" href="sql/015-database-design-and-integrity/01-data-modeling.html"><span>015.01</span><strong>Data modeling</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="sql/015-database-design-and-integrity/02-normalization.html"><span>015.02</span><strong>Normalization</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="sql/015-database-design-and-integrity/03-denormalization.html"><span>015.03</span><strong>Denormalization</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="sql/015-database-design-and-integrity/04-primary-and-foreign-keys.html"><span>015.04</span><strong>Primary and foreign keys</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="sql/015-database-design-and-integrity/05-unique-constraints.html"><span>015.05</span><strong>Unique constraints</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="sql/015-database-design-and-integrity/06-check-constraints.html"><span>015.06</span><strong>Check constraints</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="sql/015-database-design-and-integrity/07-index-foundations.html"><span>015.07</span><strong>Index foundations</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="sql/015-database-design-and-integrity/08-views.html"><span>015.08</span><strong>Views</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="sql/015-database-design-and-integrity/09-stored-procedures-and-functions.html"><span>015.09</span><strong>Stored procedures and functions</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="sql/015-database-design-and-integrity/10-database-design-project.html"><span>015.10</span><strong>Database-design project</strong><i class="bi bi-arrow-right"></i></a></p>
+<a class="topic-lesson-link" href="sql/015-database-design-and-integrity/01-data-modeling.html"><span>015.01</span><strong>Data modeling</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="sql/015-database-design-and-integrity/02-normalization.html"><span>015.02</span><strong>Normalization</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="sql/015-database-design-and-integrity/03-denormalization.html"><span>015.03</span><strong>Denormalization</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="sql/015-database-design-and-integrity/04-primary-and-foreign-keys.html"><span>015.04</span><strong>Primary and foreign keys</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="sql/015-database-design-and-integrity/05-unique-constraints.html"><span>015.05</span><strong>Unique constraints</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="sql/015-database-design-and-integrity/06-check-constraints.html"><span>015.06</span><strong>Check constraints</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="sql/015-database-design-and-integrity/07-index-foundations.html"><span>015.07</span><strong>Index foundations</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="sql/015-database-design-and-integrity/08-views.html"><span>015.08</span><strong>Views</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="sql/015-database-design-and-integrity/09-stored-procedures-and-functions.html"><span>015.09</span><strong>Stored procedures and functions</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="sql/015-database-design-and-integrity/10-database-design-project.html"><span>015.10</span><strong>Database-design project</strong><i class="bi bi-arrow-right"></i></a>
 </div>
 </details>
 <details class="curriculum-topic">
-<summary>
-<span class="topic-number">Topic 016</span><strong>SQL performance and transactions</strong><span>10 notebooks</span>
-</summary>
+<summary><span class="topic-number">Topic 016</span><strong>SQL performance and transactions</strong></summary>
 <div class="topic-lessons">
-<p><a class="topic-lesson-link" href="sql/016-sql-performance-and-transactions/01-execution-plans.html"><span>016.01</span><strong>Execution plans</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="sql/016-sql-performance-and-transactions/02-index-selection.html"><span>016.02</span><strong>Index selection</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="sql/016-sql-performance-and-transactions/03-sargable-predicates.html"><span>016.03</span><strong>Sargable predicates</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="sql/016-sql-performance-and-transactions/04-join-performance.html"><span>016.04</span><strong>Join performance</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="sql/016-sql-performance-and-transactions/05-query-refactoring.html"><span>016.05</span><strong>Query refactoring</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="sql/016-sql-performance-and-transactions/06-transactions.html"><span>016.06</span><strong>Transactions</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="sql/016-sql-performance-and-transactions/07-acid-properties.html"><span>016.07</span><strong>ACID properties</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="sql/016-sql-performance-and-transactions/08-locks-and-isolation.html"><span>016.08</span><strong>Locks and isolation</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="sql/016-sql-performance-and-transactions/09-deadlocks-and-recovery.html"><span>016.09</span><strong>Deadlocks and recovery</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="sql/016-sql-performance-and-transactions/10-performance-lab.html"><span>016.10</span><strong>Performance lab</strong><i class="bi bi-arrow-right"></i></a></p>
+<a class="topic-lesson-link" href="sql/016-sql-performance-and-transactions/01-execution-plans.html"><span>016.01</span><strong>Execution plans</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="sql/016-sql-performance-and-transactions/02-index-selection.html"><span>016.02</span><strong>Index selection</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="sql/016-sql-performance-and-transactions/03-sargable-predicates.html"><span>016.03</span><strong>Sargable predicates</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="sql/016-sql-performance-and-transactions/04-join-performance.html"><span>016.04</span><strong>Join performance</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="sql/016-sql-performance-and-transactions/05-query-refactoring.html"><span>016.05</span><strong>Query refactoring</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="sql/016-sql-performance-and-transactions/06-transactions.html"><span>016.06</span><strong>Transactions</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="sql/016-sql-performance-and-transactions/07-acid-properties.html"><span>016.07</span><strong>ACID properties</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="sql/016-sql-performance-and-transactions/08-locks-and-isolation.html"><span>016.08</span><strong>Locks and isolation</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="sql/016-sql-performance-and-transactions/09-deadlocks-and-recovery.html"><span>016.09</span><strong>Deadlocks and recovery</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="sql/016-sql-performance-and-transactions/10-performance-lab.html"><span>016.10</span><strong>Performance lab</strong><i class="bi bi-arrow-right"></i></a>
 </div>
 </details>
 <details class="curriculum-topic">
-<summary>
-<span class="topic-number">Topic 017</span><strong>SQL for analytics and AI</strong><span>10 notebooks</span>
-</summary>
+<summary><span class="topic-number">Topic 017</span><strong>SQL for analytics and AI</strong></summary>
 <div class="topic-lessons">
-<p><a class="topic-lesson-link" href="sql/017-sql-for-analytics-and-ai/01-data-cleaning-sql.html"><span>017.01</span><strong>Data-cleaning SQL</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="sql/017-sql-for-analytics-and-ai/02-feature-table-creation.html"><span>017.02</span><strong>Feature-table creation</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="sql/017-sql-for-analytics-and-ai/03-time-series-sql.html"><span>017.03</span><strong>Time-series SQL</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="sql/017-sql-for-analytics-and-ai/04-cohort-analysis.html"><span>017.04</span><strong>Cohort analysis</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="sql/017-sql-for-analytics-and-ai/05-funnel-analysis.html"><span>017.05</span><strong>Funnel analysis</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="sql/017-sql-for-analytics-and-ai/06-customer-segmentation.html"><span>017.06</span><strong>Customer segmentation</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="sql/017-sql-for-analytics-and-ai/07-data-quality-checks.html"><span>017.07</span><strong>Data-quality checks</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="sql/017-sql-for-analytics-and-ai/08-incremental-transformations.html"><span>017.08</span><strong>Incremental transformations</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="sql/017-sql-for-analytics-and-ai/09-sql-testing.html"><span>017.09</span><strong>SQL testing</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="sql/017-sql-for-analytics-and-ai/10-analytics-capstone.html"><span>017.10</span><strong>Analytics capstone</strong><i class="bi bi-arrow-right"></i></a></p>
+<a class="topic-lesson-link" href="sql/017-sql-for-analytics-and-ai/01-data-cleaning-sql.html"><span>017.01</span><strong>Data-cleaning SQL</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="sql/017-sql-for-analytics-and-ai/02-feature-table-creation.html"><span>017.02</span><strong>Feature-table creation</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="sql/017-sql-for-analytics-and-ai/03-time-series-sql.html"><span>017.03</span><strong>Time-series SQL</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="sql/017-sql-for-analytics-and-ai/04-cohort-analysis.html"><span>017.04</span><strong>Cohort analysis</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="sql/017-sql-for-analytics-and-ai/05-funnel-analysis.html"><span>017.05</span><strong>Funnel analysis</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="sql/017-sql-for-analytics-and-ai/06-customer-segmentation.html"><span>017.06</span><strong>Customer segmentation</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="sql/017-sql-for-analytics-and-ai/07-data-quality-checks.html"><span>017.07</span><strong>Data-quality checks</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="sql/017-sql-for-analytics-and-ai/08-incremental-transformations.html"><span>017.08</span><strong>Incremental transformations</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="sql/017-sql-for-analytics-and-ai/09-sql-testing.html"><span>017.09</span><strong>SQL testing</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="sql/017-sql-for-analytics-and-ai/10-analytics-capstone.html"><span>017.10</span><strong>Analytics capstone</strong><i class="bi bi-arrow-right"></i></a>
 </div>
 </details>
-</section>
-<section id="completion-standard" class="level2">
+</div>
+<p class="syllabus-empty" hidden="" id="full-stack-ai-sql-catalog-empty"><i class="bi bi-search"></i> No matching lessons were found.</p>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const catalog = document.getElementById("full-stack-ai-sql-catalog");
+  const search = document.getElementById("full-stack-ai-sql-catalog-search");
+  const empty = document.getElementById("full-stack-ai-sql-catalog-empty");
+  if (!catalog || !search || !empty) return;
+
+  search.addEventListener("input", () => {
+    const query = search.value.trim().toLowerCase();
+    let visibleTopics = 0;
+    catalog.querySelectorAll(".curriculum-topic").forEach((topic) => {
+      const summary = topic.querySelector("summary");
+      const topicMatches = !query || summary.textContent.toLowerCase().includes(query);
+      let visibleLessons = 0;
+      topic.querySelectorAll(".topic-lesson-link").forEach((lesson) => {
+        const matches = topicMatches || lesson.textContent.toLowerCase().includes(query);
+        lesson.hidden = !matches;
+        if (matches) visibleLessons += 1;
+      });
+      const showTopic = topicMatches || visibleLessons > 0;
+      topic.hidden = !showTopic;
+      if (showTopic) visibleTopics += 1;
+      if (query && showTopic) topic.open = true;
+    });
+    empty.hidden = visibleTopics > 0;
+  });
+});
+</script>
+<section class="level2" id="completion-standard">
 <h2 class="anchored" data-anchor-id="completion-standard">Completion standard</h2>
 <p>You have completed <strong>SQL</strong> when you can explain each topic, reproduce its core workflow, pass the notebook checks, defend the main tradeoffs, and combine the lessons into one reviewable portfolio project. Use the practice tasks as evidence rather than treating page reading alone as completion.</p>
-
-
 </section>
-
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
@@ -873,21 +904,17 @@ A complete notebook-first syllabus organized from foundations to applied deliver
   </script>
 </div> <!-- /content -->
 <footer class="footer">
-  <div class="nav-footer">
-    <div class="nav-footer-left">
+<div class="nav-footer">
+<div class="nav-footer-left">
 <p>© 2026 Edukron Notes</p>
-</div>   
-    <div class="nav-footer-center">
-      &nbsp;
+</div>
+<div class="nav-footer-center">
+       
     </div>
-    <div class="nav-footer-right">
+<div class="nav-footer-right">
 <p>Notebook courses for AI, data engineering, and DevOps</p>
 </div>
-  </div>
+</div>
 </footer>
-
-
-
-
 <script src="../../site_libs/quarto-html/zenscroll-min.js"></script>
 </body></html>

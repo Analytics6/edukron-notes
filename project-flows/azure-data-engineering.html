@@ -1,15 +1,12 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
-<meta charset="utf-8">
-<meta name="generator" content="quarto-1.10.18">
-
-<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-
-<meta name="author" content="Edukron Notes">
-<meta name="dcterms.date" content="2026-09-14">
-<meta name="description" content="Complete notebook syllabus for Azure Data Engineering in Project Flows.">
-
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta charset="utf-8"/>
+<meta content="quarto-1.10.18" name="generator"/>
+<meta content="width=device-width, initial-scale=1.0, user-scalable=yes" name="viewport"/>
+<meta content="Edukron Notes" name="author"/>
+<meta content="2026-09-14" name="dcterms.date"/>
+<meta content="Complete notebook syllabus for Azure Data Engineering in Project Flows." name="description"/>
 <title>Azure Data Engineering – Edukron Notes</title>
 <style>
 /* Default styles provided by pandoc.
@@ -30,25 +27,23 @@ ul.task-list li input[type="checkbox"] {
   vertical-align: middle;
 }
 </style>
-
-
 <script src="../site_libs/quarto-nav/quarto-nav.js"></script>
 <script src="../site_libs/quarto-nav/headroom.min.js"></script>
 <script src="../site_libs/clipboard/clipboard.min.js"></script>
 <script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../">
+<meta content="../" name="quarto:offset"/>
 <script src="../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet"/>
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" id="quarto-text-highlighting-styles" rel="stylesheet"/>
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-f0f4b58164ec92a07fcd2db94b0e5cbd.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet"/>
+<link append-hash="true" data-mode="light" href="../site_libs/bootstrap/bootstrap-f0f4b58164ec92a07fcd2db94b0e5cbd.min.css" id="quarto-bootstrap" rel="stylesheet"/>
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -76,384 +71,406 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 <style>html{ scroll-behavior: smooth; }</style>
-
-
-<link rel="stylesheet" href="../styles.css">
+<link href="../styles.css" rel="stylesheet"/>
 </head>
-
 <body class="nav-fixed quarto-light">
-
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top">
-    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
-      <div class="navbar-container container-fluid">
-      <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="../index.html">
-    <span class="navbar-title">Edukron Notes</span>
-    </a>
-  </div>
-            <div id="quarto-search" class="" title="Search"></div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
-  <span class="navbar-toggler-icon"></span>
-</button>
-          <div class="collapse navbar-collapse" id="navbarCollapse">
-            <ul class="navbar-nav navbar-nav-scroll me-auto">
-  <li class="nav-item">
-    <a class="nav-link" href="../index.html"> 
-<span class="menu-text">Home</span></a>
-  </li>  
-  <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-full-stack-ai" role="link" data-bs-toggle="dropdown" aria-expanded="false">
-      <i class="bi bi-cpu" role="img">
-</i> 
- <span class="menu-text">Full Stack AI</span>
-    </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-full-stack-ai">    
-        <li>
-    <a class="dropdown-item" href="../courses/full-stack-ai/index.html">
- <span class="dropdown-text">Program overview</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../courses/full-stack-ai/python.html">
- <span class="dropdown-text">Python</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../courses/full-stack-ai/sql.html">
- <span class="dropdown-text">SQL</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../courses/full-stack-ai/data-science.html">
- <span class="dropdown-text">Data Science</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../courses/full-stack-ai/machine-learning.html">
- <span class="dropdown-text">Machine Learning</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../courses/full-stack-ai/artificial-intelligence.html">
- <span class="dropdown-text">Artificial Intelligence</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../courses/full-stack-ai/deep-learning.html">
- <span class="dropdown-text">Deep Learning</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../courses/full-stack-ai/generative-ai.html">
- <span class="dropdown-text">Generative AI</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../courses/full-stack-ai/large-language-models.html">
- <span class="dropdown-text">Large Language Models (LLMs)</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../courses/full-stack-ai/rag.html">
- <span class="dropdown-text">Retrieval Augmented Generation (RAG)</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../courses/full-stack-ai/agentic-ai.html">
- <span class="dropdown-text">Agentic AI</span></a>
-  </li>  
-    </ul>
-  </li>
-  <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-azure-data-engineering" role="link" data-bs-toggle="dropdown" aria-expanded="false">
-      <i class="bi bi-database" role="img">
-</i> 
- <span class="menu-text">Azure Data Engineering</span>
-    </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-azure-data-engineering">    
-        <li>
-    <a class="dropdown-item" href="../courses/azure-data-engineering/index.html">
- <span class="dropdown-text">Program overview</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../courses/azure-data-engineering/python.html">
- <span class="dropdown-text">Python</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../courses/azure-data-engineering/sql.html">
- <span class="dropdown-text">SQL</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../courses/azure-data-engineering/fundamentals.html">
- <span class="dropdown-text">Data Engineering Fundamentals</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../courses/azure-data-engineering/azure-data-factory.html">
- <span class="dropdown-text">Azure Data Factory (ADF)</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../courses/azure-data-engineering/adls-gen2.html">
- <span class="dropdown-text">Azure Data Lake Storage Gen2</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../courses/azure-data-engineering/azure-databricks.html">
- <span class="dropdown-text">Azure Databricks</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../courses/azure-data-engineering/pyspark.html">
- <span class="dropdown-text">PySpark</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../courses/azure-data-engineering/azure-synapse.html">
- <span class="dropdown-text">Azure Synapse Analytics</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../courses/azure-data-engineering/microsoft-fabric.html">
- <span class="dropdown-text">Microsoft Fabric</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../courses/azure-data-engineering/delta-lake.html">
- <span class="dropdown-text">Delta Lake</span></a>
-  </li>  
-    </ul>
-  </li>
-  <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-azure-devops" role="link" data-bs-toggle="dropdown" aria-expanded="false">
-      <i class="bi bi-infinity" role="img">
-</i> 
- <span class="menu-text">Azure DevOps</span>
-    </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-azure-devops">    
-        <li>
-    <a class="dropdown-item" href="../courses/azure-devops/index.html">
- <span class="dropdown-text">Program overview</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../courses/azure-devops/linux-shell-scripting.html">
- <span class="dropdown-text">Linux &amp; Shell Scripting</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../courses/azure-devops/git-version-control.html">
- <span class="dropdown-text">Git &amp; Version Control</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../courses/azure-devops/azure-repos.html">
- <span class="dropdown-text">Azure Repos</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../courses/azure-devops/azure-pipelines.html">
- <span class="dropdown-text">Azure Pipelines (CI/CD)</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../courses/azure-devops/yaml-pipelines.html">
- <span class="dropdown-text">YAML Pipeline Development</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../courses/azure-devops/docker.html">
- <span class="dropdown-text">Docker &amp; Containerization</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../courses/azure-devops/kubernetes-aks.html">
- <span class="dropdown-text">Kubernetes &amp; AKS</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../courses/azure-devops/terraform.html">
- <span class="dropdown-text">Terraform Infrastructure as Code</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../courses/azure-devops/azure-cloud-services.html">
- <span class="dropdown-text">Azure Cloud Services</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../courses/azure-devops/devsecops-monitoring.html">
- <span class="dropdown-text">DevSecOps &amp; Monitoring</span></a>
-  </li>  
-    </ul>
-  </li>
-  <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-interview-questions" role="link" data-bs-toggle="dropdown" aria-expanded="false">
-      <i class="bi bi-question-circle" role="img">
-</i> 
- <span class="menu-text">Interview Questions</span>
-    </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-interview-questions">    
-        <li>
-    <a class="dropdown-item" href="../interview-questions/index.html">
- <span class="dropdown-text">Section overview</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../interview-questions/full-stack-ai.html">
- <span class="dropdown-text">Full Stack AI</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../interview-questions/azure-data-engineering.html">
- <span class="dropdown-text">Azure Data Engineering</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../interview-questions/azure-devops.html">
- <span class="dropdown-text">Azure DevOps</span></a>
-  </li>  
-    </ul>
-  </li>
-  <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-project-flows" role="link" data-bs-toggle="dropdown" aria-expanded="false">
-      <i class="bi bi-kanban" role="img">
-</i> 
- <span class="menu-text">Project Flows</span>
-    </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-project-flows">    
-        <li>
-    <a class="dropdown-item" href="../project-flows/index.html">
- <span class="dropdown-text">Section overview</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../project-flows/full-stack-ai.html">
- <span class="dropdown-text">Full Stack AI</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../project-flows/azure-data-engineering.html">
- <span class="dropdown-text">Azure Data Engineering</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../project-flows/azure-devops.html">
- <span class="dropdown-text">Azure DevOps</span></a>
-  </li>  
-    </ul>
-  </li>
-</ul>
-          </div> <!-- /navcollapse -->
-            <div class="quarto-navbar-tools">
+<header class="headroom fixed-top" id="quarto-header">
+<nav class="navbar navbar-expand-lg" data-bs-theme="dark">
+<div class="navbar-container container-fluid">
+<div class="navbar-brand-container mx-auto">
+<a class="navbar-brand" href="../index.html">
+<span class="navbar-title">Edukron Notes</span>
+</a>
 </div>
-      </div> <!-- /container-fluid -->
-    </nav>
+<div class="" id="quarto-search" title="Search"></div>
+<button aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-bs-target="#navbarCollapse" data-bs-toggle="collapse" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }" role="menu" type="button">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" id="navbarCollapse">
+<ul class="navbar-nav navbar-nav-scroll me-auto">
+<li class="nav-item">
+<a class="nav-link" href="../index.html">
+<span class="menu-text">Home</span></a>
+</li>
+<li class="nav-item dropdown">
+<a aria-expanded="false" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" id="nav-menu-full-stack-ai" role="link">
+<i class="bi bi-cpu" role="img">
+</i>
+<span class="menu-text">Full Stack AI</span>
+</a>
+<ul aria-labelledby="nav-menu-full-stack-ai" class="dropdown-menu">
+<li>
+<a class="dropdown-item" href="../courses/full-stack-ai/index.html">
+<span class="dropdown-text">Program overview</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../courses/full-stack-ai/python.html">
+<span class="dropdown-text">Python</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../courses/full-stack-ai/sql.html">
+<span class="dropdown-text">SQL</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../courses/full-stack-ai/data-science.html">
+<span class="dropdown-text">Data Science</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../courses/full-stack-ai/machine-learning.html">
+<span class="dropdown-text">Machine Learning</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../courses/full-stack-ai/artificial-intelligence.html">
+<span class="dropdown-text">Artificial Intelligence</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../courses/full-stack-ai/deep-learning.html">
+<span class="dropdown-text">Deep Learning</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../courses/full-stack-ai/generative-ai.html">
+<span class="dropdown-text">Generative AI</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../courses/full-stack-ai/large-language-models.html">
+<span class="dropdown-text">Large Language Models (LLMs)</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../courses/full-stack-ai/rag.html">
+<span class="dropdown-text">Retrieval Augmented Generation (RAG)</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../courses/full-stack-ai/agentic-ai.html">
+<span class="dropdown-text">Agentic AI</span></a>
+</li>
+</ul>
+</li>
+<li class="nav-item dropdown">
+<a aria-expanded="false" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" id="nav-menu-azure-data-engineering" role="link">
+<i class="bi bi-database" role="img">
+</i>
+<span class="menu-text">Azure Data Engineering</span>
+</a>
+<ul aria-labelledby="nav-menu-azure-data-engineering" class="dropdown-menu">
+<li>
+<a class="dropdown-item" href="../courses/azure-data-engineering/index.html">
+<span class="dropdown-text">Program overview</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../courses/azure-data-engineering/python.html">
+<span class="dropdown-text">Python</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../courses/azure-data-engineering/sql.html">
+<span class="dropdown-text">SQL</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../courses/azure-data-engineering/fundamentals.html">
+<span class="dropdown-text">Data Engineering Fundamentals</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../courses/azure-data-engineering/azure-data-factory.html">
+<span class="dropdown-text">Azure Data Factory (ADF)</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../courses/azure-data-engineering/adls-gen2.html">
+<span class="dropdown-text">Azure Data Lake Storage Gen2</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../courses/azure-data-engineering/azure-databricks.html">
+<span class="dropdown-text">Azure Databricks</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../courses/azure-data-engineering/pyspark.html">
+<span class="dropdown-text">PySpark</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../courses/azure-data-engineering/azure-synapse.html">
+<span class="dropdown-text">Azure Synapse Analytics</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../courses/azure-data-engineering/microsoft-fabric.html">
+<span class="dropdown-text">Microsoft Fabric</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../courses/azure-data-engineering/delta-lake.html">
+<span class="dropdown-text">Delta Lake</span></a>
+</li>
+</ul>
+</li>
+<li class="nav-item dropdown">
+<a aria-expanded="false" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" id="nav-menu-azure-devops" role="link">
+<i class="bi bi-infinity" role="img">
+</i>
+<span class="menu-text">Azure DevOps</span>
+</a>
+<ul aria-labelledby="nav-menu-azure-devops" class="dropdown-menu">
+<li>
+<a class="dropdown-item" href="../courses/azure-devops/index.html">
+<span class="dropdown-text">Program overview</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../courses/azure-devops/linux-shell-scripting.html">
+<span class="dropdown-text">Linux &amp; Shell Scripting</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../courses/azure-devops/git-version-control.html">
+<span class="dropdown-text">Git &amp; Version Control</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../courses/azure-devops/azure-repos.html">
+<span class="dropdown-text">Azure Repos</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../courses/azure-devops/azure-pipelines.html">
+<span class="dropdown-text">Azure Pipelines (CI/CD)</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../courses/azure-devops/yaml-pipelines.html">
+<span class="dropdown-text">YAML Pipeline Development</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../courses/azure-devops/docker.html">
+<span class="dropdown-text">Docker &amp; Containerization</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../courses/azure-devops/kubernetes-aks.html">
+<span class="dropdown-text">Kubernetes &amp; AKS</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../courses/azure-devops/terraform.html">
+<span class="dropdown-text">Terraform Infrastructure as Code</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../courses/azure-devops/azure-cloud-services.html">
+<span class="dropdown-text">Azure Cloud Services</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../courses/azure-devops/devsecops-monitoring.html">
+<span class="dropdown-text">DevSecOps &amp; Monitoring</span></a>
+</li>
+</ul>
+</li>
+<li class="nav-item dropdown">
+<a aria-expanded="false" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" id="nav-menu-interview-questions" role="link">
+<i class="bi bi-question-circle" role="img">
+</i>
+<span class="menu-text">Interview Questions</span>
+</a>
+<ul aria-labelledby="nav-menu-interview-questions" class="dropdown-menu">
+<li>
+<a class="dropdown-item" href="../interview-questions/index.html">
+<span class="dropdown-text">Section overview</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../interview-questions/full-stack-ai.html">
+<span class="dropdown-text">Full Stack AI</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../interview-questions/azure-data-engineering.html">
+<span class="dropdown-text">Azure Data Engineering</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../interview-questions/azure-devops.html">
+<span class="dropdown-text">Azure DevOps</span></a>
+</li>
+</ul>
+</li>
+<li class="nav-item dropdown">
+<a aria-expanded="false" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" id="nav-menu-project-flows" role="link">
+<i class="bi bi-kanban" role="img">
+</i>
+<span class="menu-text">Project Flows</span>
+</a>
+<ul aria-labelledby="nav-menu-project-flows" class="dropdown-menu">
+<li>
+<a class="dropdown-item" href="../project-flows/index.html">
+<span class="dropdown-text">Section overview</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../project-flows/full-stack-ai.html">
+<span class="dropdown-text">Full Stack AI</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../project-flows/azure-data-engineering.html">
+<span class="dropdown-text">Azure Data Engineering</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../project-flows/azure-devops.html">
+<span class="dropdown-text">Azure DevOps</span></a>
+</li>
+</ul>
+</li>
+</ul>
+</div> <!-- /navcollapse -->
+<div class="quarto-navbar-tools">
+</div>
+</div> <!-- /container-fluid -->
+</nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<div class="quarto-container page-columns page-rows-contents page-layout-full page-navbar" id="quarto-content">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
-   
-  <ul>
-  <li><a href="#how-to-use-this-course" id="toc-how-to-use-this-course" class="nav-link active" data-scroll-target="#how-to-use-this-course">How to use this course</a></li>
-  <li><a href="#full-syllabus" id="toc-full-syllabus" class="nav-link" data-scroll-target="#full-syllabus">Full syllabus</a></li>
-  <li><a href="#completion-standard" id="toc-completion-standard" class="nav-link" data-scroll-target="#completion-standard">Completion standard</a></li>
-  </ul>
-</nav>
-    </div>
 <!-- main -->
-<main class="content" id="quarto-document-content">
-
-<header id="title-block-header" class="quarto-title-block default">
+<main class="content column-page" id="quarto-document-content">
+<header class="quarto-title-block default" id="title-block-header">
 <div class="quarto-title">
 <h1 class="title">Azure Data Engineering</h1>
 </div>
-
 <div>
-  <div class="description">
+<div class="description">
     Complete notebook syllabus for Azure Data Engineering in Project Flows.
   </div>
 </div>
-
-
 <div class="quarto-title-meta">
-
-    <div>
-    <div class="quarto-title-meta-heading">Author</div>
-    <div class="quarto-title-meta-contents">
-             <p>Edukron Notes </p>
-          </div>
-  </div>
-    
-    <div>
-    <div class="quarto-title-meta-heading">Published</div>
-    <div class="quarto-title-meta-contents">
-      <p class="date">September 14, 2026</p>
-    </div>
-  </div>
-  
-    
-  </div>
-  
-
-
+<div>
+<div class="quarto-title-meta-heading">Author</div>
+<div class="quarto-title-meta-contents">
+<p>Edukron Notes </p>
+</div>
+</div>
+<div>
+<div class="quarto-title-meta-heading">Published</div>
+<div class="quarto-title-meta-contents">
+<p class="date">September 14, 2026</p>
+</div>
+</div>
+</div>
 </header>
-
-
-<div class="overview-lead curriculum-summary">
-<div class="overview-icon">
-<i class="bi bi-journal-code" aria-hidden="true"></i>
+<div class="course-workspace notebook-chrome">
+<div class="notebook-toolbar">
+<span class="notebook-file"><i aria-hidden="true" class="bi bi-journal-code"></i><strong>azure-data-engineering.ipynb</strong></span>
+<span class="notebook-status"><i aria-hidden="true" class="bi bi-check-circle-fill"></i> Trusted</span>
+<span class="notebook-kernel"><i aria-hidden="true" class="bi bi-diagram-3"></i> Learning path</span>
 </div>
-<div>
+<div class="course-workspace-hero">
 <span class="overview-kicker">Project Flows</span>
-<h2 class="anchored">
-Azure Data Engineering
-</h2>
-<p>
-A complete notebook-first syllabus organized from foundations to applied delivery. Every lesson contains notes, a worked pattern, executable validation, a guided lab, solution blueprint, practice, and knowledge checks.
-</p>
+<h1>Azure Data Engineering</h1>
+<p>A complete notebook-first syllabus organized from foundations to applied delivery. Every lesson combines clear notes, a worked pattern, executable validation, a guided lab, a solution blueprint, practice, and knowledge checks.</p>
+<div class="course-tags"><span><i class="bi bi-signpost-split"></i> Foundation to advanced</span><span><i class="bi bi-code-square"></i> Hands-on practice</span><span><i class="bi bi-patch-check"></i> Review ready</span></div>
+<p class="course-start"><a class="btn btn-primary" href="azure-data-engineering/192-azure-data-platform-discovery-flow/01-business-outcomes.html"><i class="bi bi-play-fill"></i> Start the first notebook</a></p>
 </div>
 </div>
-<div class="course-stat-grid">
-<div>
-<strong>5</strong><span>Syllabus topics</span>
-</div>
-<div>
-<strong>50</strong><span>Notebook lessons</span>
-</div>
-<div>
-<strong>Practice</strong><span>Labs and solutions</span>
-</div>
-</div>
-<p class="course-start">
-<a class="btn btn-primary" href="azure-data-engineering/192-azure-data-platform-discovery-flow/01-business-outcomes.html">Start the first notebook <i class="bi bi-arrow-right"></i></a>
-</p>
-<section id="how-to-use-this-course" class="level2">
+<section class="level2" id="how-to-use-this-course">
 <h2 class="anchored" data-anchor-id="how-to-use-this-course">How to use this course</h2>
 <p>Work through lessons in order for a complete pathway, or open a topic for focused reference. Type or adapt the examples, complete the guided lab before reading its blueprint, and preserve your test evidence as a portfolio artifact. Cloud and infrastructure examples are safe, copy-ready teaching patterns; execute them in your own sandbox only after substituting approved identities, names, and policies.</p>
 </section>
-<section id="full-syllabus" class="level2">
-<h2 class="anchored" data-anchor-id="full-syllabus">Full syllabus</h2>
+<div class="syllabus-heading" id="notebook-syllabus">
+<div><span class="overview-kicker">Course contents</span><h2>Notebook syllabus</h2><p>Open a topic to browse its lessons, or search the complete course by concept.</p></div>
+<label class="syllabus-search" for="project-flows-azure-data-engineering-catalog-search"><i aria-hidden="true" class="bi bi-search"></i><input aria-label="Search the Azure Data Engineering syllabus" autocomplete="off" id="project-flows-azure-data-engineering-catalog-search" placeholder="Find a topic or lesson" type="search"/></label>
+</div>
+<div class="curriculum-catalog" id="project-flows-azure-data-engineering-catalog">
 <details class="curriculum-topic" open="">
-<summary>
-<span class="topic-number">Topic 192</span><strong>Azure data-platform discovery flow</strong><span>10 notebooks</span>
-</summary>
+<summary><span class="topic-number">Topic 192</span><strong>Azure data-platform discovery flow</strong></summary>
 <div class="topic-lessons">
-<p><a class="topic-lesson-link" href="azure-data-engineering/192-azure-data-platform-discovery-flow/01-business-outcomes.html"><span>192.01</span><strong>Business outcomes</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="azure-data-engineering/192-azure-data-platform-discovery-flow/02-source-inventory.html"><span>192.02</span><strong>Source inventory</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="azure-data-engineering/192-azure-data-platform-discovery-flow/03-volume-and-velocity.html"><span>192.03</span><strong>Volume and velocity</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="azure-data-engineering/192-azure-data-platform-discovery-flow/04-data-classification.html"><span>192.04</span><strong>Data classification</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="azure-data-engineering/192-azure-data-platform-discovery-flow/05-consumer-needs.html"><span>192.05</span><strong>Consumer needs</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="azure-data-engineering/192-azure-data-platform-discovery-flow/06-service-selection.html"><span>192.06</span><strong>Service selection</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="azure-data-engineering/192-azure-data-platform-discovery-flow/07-security-baseline.html"><span>192.07</span><strong>Security baseline</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="azure-data-engineering/192-azure-data-platform-discovery-flow/08-cost-model.html"><span>192.08</span><strong>Cost model</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="azure-data-engineering/192-azure-data-platform-discovery-flow/09-delivery-roadmap.html"><span>192.09</span><strong>Delivery roadmap</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="azure-data-engineering/192-azure-data-platform-discovery-flow/10-architecture-decision-record.html"><span>192.10</span><strong>Architecture decision record</strong><i class="bi bi-arrow-right"></i></a></p>
+<a class="topic-lesson-link" href="azure-data-engineering/192-azure-data-platform-discovery-flow/01-business-outcomes.html"><span>192.01</span><strong>Business outcomes</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="azure-data-engineering/192-azure-data-platform-discovery-flow/02-source-inventory.html"><span>192.02</span><strong>Source inventory</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="azure-data-engineering/192-azure-data-platform-discovery-flow/03-volume-and-velocity.html"><span>192.03</span><strong>Volume and velocity</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="azure-data-engineering/192-azure-data-platform-discovery-flow/04-data-classification.html"><span>192.04</span><strong>Data classification</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="azure-data-engineering/192-azure-data-platform-discovery-flow/05-consumer-needs.html"><span>192.05</span><strong>Consumer needs</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="azure-data-engineering/192-azure-data-platform-discovery-flow/06-service-selection.html"><span>192.06</span><strong>Service selection</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="azure-data-engineering/192-azure-data-platform-discovery-flow/07-security-baseline.html"><span>192.07</span><strong>Security baseline</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="azure-data-engineering/192-azure-data-platform-discovery-flow/08-cost-model.html"><span>192.08</span><strong>Cost model</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="azure-data-engineering/192-azure-data-platform-discovery-flow/09-delivery-roadmap.html"><span>192.09</span><strong>Delivery roadmap</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="azure-data-engineering/192-azure-data-platform-discovery-flow/10-architecture-decision-record.html"><span>192.10</span><strong>Architecture decision record</strong><i class="bi bi-arrow-right"></i></a>
 </div>
 </details>
 <details class="curriculum-topic">
-<summary>
-<span class="topic-number">Topic 193</span><strong>Ingestion and lake foundation flow</strong><span>10 notebooks</span>
-</summary>
+<summary><span class="topic-number">Topic 193</span><strong>Ingestion and lake foundation flow</strong></summary>
 <div class="topic-lessons">
-<p><a class="topic-lesson-link" href="azure-data-engineering/193-ingestion-and-lake-foundation-flow/01-landing-zone-setup.html"><span>193.01</span><strong>Landing-zone setup</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="azure-data-engineering/193-ingestion-and-lake-foundation-flow/02-adls-zones.html"><span>193.02</span><strong>ADLS zones</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="azure-data-engineering/193-ingestion-and-lake-foundation-flow/03-identity-and-networking.html"><span>193.03</span><strong>Identity and networking</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="azure-data-engineering/193-ingestion-and-lake-foundation-flow/04-adf-connections.html"><span>193.04</span><strong>ADF connections</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="azure-data-engineering/193-ingestion-and-lake-foundation-flow/05-batch-ingestion.html"><span>193.05</span><strong>Batch ingestion</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="azure-data-engineering/193-ingestion-and-lake-foundation-flow/06-streaming-ingestion.html"><span>193.06</span><strong>Streaming ingestion</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="azure-data-engineering/193-ingestion-and-lake-foundation-flow/07-metadata-framework.html"><span>193.07</span><strong>Metadata framework</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="azure-data-engineering/193-ingestion-and-lake-foundation-flow/08-data-validation.html"><span>193.08</span><strong>Data validation</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="azure-data-engineering/193-ingestion-and-lake-foundation-flow/09-operational-logging.html"><span>193.09</span><strong>Operational logging</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="azure-data-engineering/193-ingestion-and-lake-foundation-flow/10-ingestion-release.html"><span>193.10</span><strong>Ingestion release</strong><i class="bi bi-arrow-right"></i></a></p>
+<a class="topic-lesson-link" href="azure-data-engineering/193-ingestion-and-lake-foundation-flow/01-landing-zone-setup.html"><span>193.01</span><strong>Landing-zone setup</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="azure-data-engineering/193-ingestion-and-lake-foundation-flow/02-adls-zones.html"><span>193.02</span><strong>ADLS zones</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="azure-data-engineering/193-ingestion-and-lake-foundation-flow/03-identity-and-networking.html"><span>193.03</span><strong>Identity and networking</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="azure-data-engineering/193-ingestion-and-lake-foundation-flow/04-adf-connections.html"><span>193.04</span><strong>ADF connections</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="azure-data-engineering/193-ingestion-and-lake-foundation-flow/05-batch-ingestion.html"><span>193.05</span><strong>Batch ingestion</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="azure-data-engineering/193-ingestion-and-lake-foundation-flow/06-streaming-ingestion.html"><span>193.06</span><strong>Streaming ingestion</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="azure-data-engineering/193-ingestion-and-lake-foundation-flow/07-metadata-framework.html"><span>193.07</span><strong>Metadata framework</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="azure-data-engineering/193-ingestion-and-lake-foundation-flow/08-data-validation.html"><span>193.08</span><strong>Data validation</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="azure-data-engineering/193-ingestion-and-lake-foundation-flow/09-operational-logging.html"><span>193.09</span><strong>Operational logging</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="azure-data-engineering/193-ingestion-and-lake-foundation-flow/10-ingestion-release.html"><span>193.10</span><strong>Ingestion release</strong><i class="bi bi-arrow-right"></i></a>
 </div>
 </details>
 <details class="curriculum-topic">
-<summary>
-<span class="topic-number">Topic 194</span><strong>Lakehouse transformation flow</strong><span>10 notebooks</span>
-</summary>
+<summary><span class="topic-number">Topic 194</span><strong>Lakehouse transformation flow</strong></summary>
 <div class="topic-lessons">
-<p><a class="topic-lesson-link" href="azure-data-engineering/194-lakehouse-transformation-flow/01-bronze-design.html"><span>194.01</span><strong>Bronze design</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="azure-data-engineering/194-lakehouse-transformation-flow/02-silver-transformations.html"><span>194.02</span><strong>Silver transformations</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="azure-data-engineering/194-lakehouse-transformation-flow/03-gold-models.html"><span>194.03</span><strong>Gold models</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="azure-data-engineering/194-lakehouse-transformation-flow/04-spark-engineering.html"><span>194.04</span><strong>Spark engineering</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="azure-data-engineering/194-lakehouse-transformation-flow/05-delta-tables.html"><span>194.05</span><strong>Delta tables</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="azure-data-engineering/194-lakehouse-transformation-flow/06-incremental-processing.html"><span>194.06</span><strong>Incremental processing</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="azure-data-engineering/194-lakehouse-transformation-flow/07-workflow-orchestration.html"><span>194.07</span><strong>Workflow orchestration</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="azure-data-engineering/194-lakehouse-transformation-flow/08-data-quality-expectations.html"><span>194.08</span><strong>Data-quality expectations</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="azure-data-engineering/194-lakehouse-transformation-flow/09-performance-optimization.html"><span>194.09</span><strong>Performance optimization</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="azure-data-engineering/194-lakehouse-transformation-flow/10-lakehouse-release.html"><span>194.10</span><strong>Lakehouse release</strong><i class="bi bi-arrow-right"></i></a></p>
+<a class="topic-lesson-link" href="azure-data-engineering/194-lakehouse-transformation-flow/01-bronze-design.html"><span>194.01</span><strong>Bronze design</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="azure-data-engineering/194-lakehouse-transformation-flow/02-silver-transformations.html"><span>194.02</span><strong>Silver transformations</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="azure-data-engineering/194-lakehouse-transformation-flow/03-gold-models.html"><span>194.03</span><strong>Gold models</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="azure-data-engineering/194-lakehouse-transformation-flow/04-spark-engineering.html"><span>194.04</span><strong>Spark engineering</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="azure-data-engineering/194-lakehouse-transformation-flow/05-delta-tables.html"><span>194.05</span><strong>Delta tables</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="azure-data-engineering/194-lakehouse-transformation-flow/06-incremental-processing.html"><span>194.06</span><strong>Incremental processing</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="azure-data-engineering/194-lakehouse-transformation-flow/07-workflow-orchestration.html"><span>194.07</span><strong>Workflow orchestration</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="azure-data-engineering/194-lakehouse-transformation-flow/08-data-quality-expectations.html"><span>194.08</span><strong>Data-quality expectations</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="azure-data-engineering/194-lakehouse-transformation-flow/09-performance-optimization.html"><span>194.09</span><strong>Performance optimization</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="azure-data-engineering/194-lakehouse-transformation-flow/10-lakehouse-release.html"><span>194.10</span><strong>Lakehouse release</strong><i class="bi bi-arrow-right"></i></a>
 </div>
 </details>
 <details class="curriculum-topic">
-<summary>
-<span class="topic-number">Topic 195</span><strong>Analytics serving and governance flow</strong><span>10 notebooks</span>
-</summary>
+<summary><span class="topic-number">Topic 195</span><strong>Analytics serving and governance flow</strong></summary>
 <div class="topic-lessons">
-<p><a class="topic-lesson-link" href="azure-data-engineering/195-analytics-serving-and-governance-flow/01-warehouse-design.html"><span>195.01</span><strong>Warehouse design</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="azure-data-engineering/195-analytics-serving-and-governance-flow/02-synapse-serving.html"><span>195.02</span><strong>Synapse serving</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="azure-data-engineering/195-analytics-serving-and-governance-flow/03-fabric-serving.html"><span>195.03</span><strong>Fabric serving</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="azure-data-engineering/195-analytics-serving-and-governance-flow/04-semantic-models.html"><span>195.04</span><strong>Semantic models</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="azure-data-engineering/195-analytics-serving-and-governance-flow/05-access-controls.html"><span>195.05</span><strong>Access controls</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="azure-data-engineering/195-analytics-serving-and-governance-flow/06-catalogue-and-lineage.html"><span>195.06</span><strong>Catalogue and lineage</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="azure-data-engineering/195-analytics-serving-and-governance-flow/07-privacy-controls.html"><span>195.07</span><strong>Privacy controls</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="azure-data-engineering/195-analytics-serving-and-governance-flow/08-consumer-testing.html"><span>195.08</span><strong>Consumer testing</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="azure-data-engineering/195-analytics-serving-and-governance-flow/09-service-objectives.html"><span>195.09</span><strong>Service objectives</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="azure-data-engineering/195-analytics-serving-and-governance-flow/10-governed-analytics-release.html"><span>195.10</span><strong>Governed analytics release</strong><i class="bi bi-arrow-right"></i></a></p>
+<a class="topic-lesson-link" href="azure-data-engineering/195-analytics-serving-and-governance-flow/01-warehouse-design.html"><span>195.01</span><strong>Warehouse design</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="azure-data-engineering/195-analytics-serving-and-governance-flow/02-synapse-serving.html"><span>195.02</span><strong>Synapse serving</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="azure-data-engineering/195-analytics-serving-and-governance-flow/03-fabric-serving.html"><span>195.03</span><strong>Fabric serving</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="azure-data-engineering/195-analytics-serving-and-governance-flow/04-semantic-models.html"><span>195.04</span><strong>Semantic models</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="azure-data-engineering/195-analytics-serving-and-governance-flow/05-access-controls.html"><span>195.05</span><strong>Access controls</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="azure-data-engineering/195-analytics-serving-and-governance-flow/06-catalogue-and-lineage.html"><span>195.06</span><strong>Catalogue and lineage</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="azure-data-engineering/195-analytics-serving-and-governance-flow/07-privacy-controls.html"><span>195.07</span><strong>Privacy controls</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="azure-data-engineering/195-analytics-serving-and-governance-flow/08-consumer-testing.html"><span>195.08</span><strong>Consumer testing</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="azure-data-engineering/195-analytics-serving-and-governance-flow/09-service-objectives.html"><span>195.09</span><strong>Service objectives</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="azure-data-engineering/195-analytics-serving-and-governance-flow/10-governed-analytics-release.html"><span>195.10</span><strong>Governed analytics release</strong><i class="bi bi-arrow-right"></i></a>
 </div>
 </details>
 <details class="curriculum-topic">
-<summary>
-<span class="topic-number">Topic 196</span><strong>Data-platform deployment and operations flow</strong><span>10 notebooks</span>
-</summary>
+<summary><span class="topic-number">Topic 196</span><strong>Data-platform deployment and operations flow</strong></summary>
 <div class="topic-lessons">
-<p><a class="topic-lesson-link" href="azure-data-engineering/196-data-platform-deployment-and-operations-flow/01-source-control.html"><span>196.01</span><strong>Source control</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="azure-data-engineering/196-data-platform-deployment-and-operations-flow/02-environment-strategy.html"><span>196.02</span><strong>Environment strategy</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="azure-data-engineering/196-data-platform-deployment-and-operations-flow/03-infrastructure-automation.html"><span>196.03</span><strong>Infrastructure automation</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="azure-data-engineering/196-data-platform-deployment-and-operations-flow/04-pipeline-ci-cd.html"><span>196.04</span><strong>Pipeline CI/CD</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="azure-data-engineering/196-data-platform-deployment-and-operations-flow/05-testing-gates.html"><span>196.05</span><strong>Testing gates</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="azure-data-engineering/196-data-platform-deployment-and-operations-flow/06-monitoring.html"><span>196.06</span><strong>Monitoring</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="azure-data-engineering/196-data-platform-deployment-and-operations-flow/07-incident-response.html"><span>196.07</span><strong>Incident response</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="azure-data-engineering/196-data-platform-deployment-and-operations-flow/08-disaster-recovery.html"><span>196.08</span><strong>Disaster recovery</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="azure-data-engineering/196-data-platform-deployment-and-operations-flow/09-cost-optimization.html"><span>196.09</span><strong>Cost optimization</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="azure-data-engineering/196-data-platform-deployment-and-operations-flow/10-azure-data-platform-capstone.html"><span>196.10</span><strong>Azure data-platform capstone</strong><i class="bi bi-arrow-right"></i></a></p>
+<a class="topic-lesson-link" href="azure-data-engineering/196-data-platform-deployment-and-operations-flow/01-source-control.html"><span>196.01</span><strong>Source control</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="azure-data-engineering/196-data-platform-deployment-and-operations-flow/02-environment-strategy.html"><span>196.02</span><strong>Environment strategy</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="azure-data-engineering/196-data-platform-deployment-and-operations-flow/03-infrastructure-automation.html"><span>196.03</span><strong>Infrastructure automation</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="azure-data-engineering/196-data-platform-deployment-and-operations-flow/04-pipeline-ci-cd.html"><span>196.04</span><strong>Pipeline CI/CD</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="azure-data-engineering/196-data-platform-deployment-and-operations-flow/05-testing-gates.html"><span>196.05</span><strong>Testing gates</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="azure-data-engineering/196-data-platform-deployment-and-operations-flow/06-monitoring.html"><span>196.06</span><strong>Monitoring</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="azure-data-engineering/196-data-platform-deployment-and-operations-flow/07-incident-response.html"><span>196.07</span><strong>Incident response</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="azure-data-engineering/196-data-platform-deployment-and-operations-flow/08-disaster-recovery.html"><span>196.08</span><strong>Disaster recovery</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="azure-data-engineering/196-data-platform-deployment-and-operations-flow/09-cost-optimization.html"><span>196.09</span><strong>Cost optimization</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="azure-data-engineering/196-data-platform-deployment-and-operations-flow/10-azure-data-platform-capstone.html"><span>196.10</span><strong>Azure data-platform capstone</strong><i class="bi bi-arrow-right"></i></a>
 </div>
 </details>
-</section>
-<section id="completion-standard" class="level2">
+</div>
+<p class="syllabus-empty" hidden="" id="project-flows-azure-data-engineering-catalog-empty"><i class="bi bi-search"></i> No matching lessons were found.</p>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const catalog = document.getElementById("project-flows-azure-data-engineering-catalog");
+  const search = document.getElementById("project-flows-azure-data-engineering-catalog-search");
+  const empty = document.getElementById("project-flows-azure-data-engineering-catalog-empty");
+  if (!catalog || !search || !empty) return;
+
+  search.addEventListener("input", () => {
+    const query = search.value.trim().toLowerCase();
+    let visibleTopics = 0;
+    catalog.querySelectorAll(".curriculum-topic").forEach((topic) => {
+      const summary = topic.querySelector("summary");
+      const topicMatches = !query || summary.textContent.toLowerCase().includes(query);
+      let visibleLessons = 0;
+      topic.querySelectorAll(".topic-lesson-link").forEach((lesson) => {
+        const matches = topicMatches || lesson.textContent.toLowerCase().includes(query);
+        lesson.hidden = !matches;
+        if (matches) visibleLessons += 1;
+      });
+      const showTopic = topicMatches || visibleLessons > 0;
+      topic.hidden = !showTopic;
+      if (showTopic) visibleTopics += 1;
+      if (query && showTopic) topic.open = true;
+    });
+    empty.hidden = visibleTopics > 0;
+  });
+});
+</script>
+<section class="level2" id="completion-standard">
 <h2 class="anchored" data-anchor-id="completion-standard">Completion standard</h2>
 <p>You have completed <strong>Azure Data Engineering</strong> when you can explain each topic, reproduce its core workflow, pass the notebook checks, defend the main tradeoffs, and combine the lessons into one reviewable portfolio project. Use the practice tasks as evidence rather than treating page reading alone as completion.</p>
-
-
 </section>
-
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
@@ -857,21 +874,17 @@ A complete notebook-first syllabus organized from foundations to applied deliver
   </script>
 </div> <!-- /content -->
 <footer class="footer">
-  <div class="nav-footer">
-    <div class="nav-footer-left">
+<div class="nav-footer">
+<div class="nav-footer-left">
 <p>© 2026 Edukron Notes</p>
-</div>   
-    <div class="nav-footer-center">
-      &nbsp;
+</div>
+<div class="nav-footer-center">
+       
     </div>
-    <div class="nav-footer-right">
+<div class="nav-footer-right">
 <p>Notebook courses for AI, data engineering, and DevOps</p>
 </div>
-  </div>
+</div>
 </footer>
-
-
-
-
 <script src="../site_libs/quarto-html/zenscroll-min.js"></script>
 </body></html>

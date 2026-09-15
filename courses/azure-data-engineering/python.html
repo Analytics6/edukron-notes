@@ -1,15 +1,12 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
-<meta charset="utf-8">
-<meta name="generator" content="quarto-1.10.18">
-
-<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-
-<meta name="author" content="Edukron Notes">
-<meta name="dcterms.date" content="2026-09-14">
-<meta name="description" content="Complete notebook syllabus for Python in Azure Data Engineering.">
-
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta charset="utf-8"/>
+<meta content="quarto-1.10.18" name="generator"/>
+<meta content="width=device-width, initial-scale=1.0, user-scalable=yes" name="viewport"/>
+<meta content="Edukron Notes" name="author"/>
+<meta content="2026-09-14" name="dcterms.date"/>
+<meta content="Complete notebook syllabus for Python in Azure Data Engineering." name="description"/>
 <title>Python – Edukron Notes</title>
 <style>
 /* Default styles provided by pandoc.
@@ -30,25 +27,23 @@ ul.task-list li input[type="checkbox"] {
   vertical-align: middle;
 }
 </style>
-
-
 <script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
 <script src="../../site_libs/quarto-nav/headroom.min.js"></script>
 <script src="../../site_libs/clipboard/clipboard.min.js"></script>
 <script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
 <script src="../../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../../">
+<meta content="../../" name="quarto:offset"/>
 <script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="../../site_libs/quarto-html/popper.min.js"></script>
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet"/>
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" id="quarto-text-highlighting-styles" rel="stylesheet"/>
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-f0f4b58164ec92a07fcd2db94b0e5cbd.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet"/>
+<link append-hash="true" data-mode="light" href="../../site_libs/bootstrap/bootstrap-f0f4b58164ec92a07fcd2db94b0e5cbd.min.css" id="quarto-bootstrap" rel="stylesheet"/>
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -76,384 +71,406 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 <style>html{ scroll-behavior: smooth; }</style>
-
-
-<link rel="stylesheet" href="../../styles.css">
+<link href="../../styles.css" rel="stylesheet"/>
 </head>
-
 <body class="nav-fixed quarto-light">
-
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top">
-    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
-      <div class="navbar-container container-fluid">
-      <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="../../index.html">
-    <span class="navbar-title">Edukron Notes</span>
-    </a>
-  </div>
-            <div id="quarto-search" class="" title="Search"></div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
-  <span class="navbar-toggler-icon"></span>
-</button>
-          <div class="collapse navbar-collapse" id="navbarCollapse">
-            <ul class="navbar-nav navbar-nav-scroll me-auto">
-  <li class="nav-item">
-    <a class="nav-link" href="../../index.html"> 
-<span class="menu-text">Home</span></a>
-  </li>  
-  <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-full-stack-ai" role="link" data-bs-toggle="dropdown" aria-expanded="false">
-      <i class="bi bi-cpu" role="img">
-</i> 
- <span class="menu-text">Full Stack AI</span>
-    </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-full-stack-ai">    
-        <li>
-    <a class="dropdown-item" href="../../courses/full-stack-ai/index.html">
- <span class="dropdown-text">Program overview</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/full-stack-ai/python.html">
- <span class="dropdown-text">Python</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/full-stack-ai/sql.html">
- <span class="dropdown-text">SQL</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/full-stack-ai/data-science.html">
- <span class="dropdown-text">Data Science</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/full-stack-ai/machine-learning.html">
- <span class="dropdown-text">Machine Learning</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/full-stack-ai/artificial-intelligence.html">
- <span class="dropdown-text">Artificial Intelligence</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/full-stack-ai/deep-learning.html">
- <span class="dropdown-text">Deep Learning</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/full-stack-ai/generative-ai.html">
- <span class="dropdown-text">Generative AI</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/full-stack-ai/large-language-models.html">
- <span class="dropdown-text">Large Language Models (LLMs)</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/full-stack-ai/rag.html">
- <span class="dropdown-text">Retrieval Augmented Generation (RAG)</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/full-stack-ai/agentic-ai.html">
- <span class="dropdown-text">Agentic AI</span></a>
-  </li>  
-    </ul>
-  </li>
-  <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-azure-data-engineering" role="link" data-bs-toggle="dropdown" aria-expanded="false">
-      <i class="bi bi-database" role="img">
-</i> 
- <span class="menu-text">Azure Data Engineering</span>
-    </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-azure-data-engineering">    
-        <li>
-    <a class="dropdown-item" href="../../courses/azure-data-engineering/index.html">
- <span class="dropdown-text">Program overview</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/azure-data-engineering/python.html">
- <span class="dropdown-text">Python</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/azure-data-engineering/sql.html">
- <span class="dropdown-text">SQL</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/azure-data-engineering/fundamentals.html">
- <span class="dropdown-text">Data Engineering Fundamentals</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/azure-data-engineering/azure-data-factory.html">
- <span class="dropdown-text">Azure Data Factory (ADF)</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/azure-data-engineering/adls-gen2.html">
- <span class="dropdown-text">Azure Data Lake Storage Gen2</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/azure-data-engineering/azure-databricks.html">
- <span class="dropdown-text">Azure Databricks</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/azure-data-engineering/pyspark.html">
- <span class="dropdown-text">PySpark</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/azure-data-engineering/azure-synapse.html">
- <span class="dropdown-text">Azure Synapse Analytics</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/azure-data-engineering/microsoft-fabric.html">
- <span class="dropdown-text">Microsoft Fabric</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/azure-data-engineering/delta-lake.html">
- <span class="dropdown-text">Delta Lake</span></a>
-  </li>  
-    </ul>
-  </li>
-  <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-azure-devops" role="link" data-bs-toggle="dropdown" aria-expanded="false">
-      <i class="bi bi-infinity" role="img">
-</i> 
- <span class="menu-text">Azure DevOps</span>
-    </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-azure-devops">    
-        <li>
-    <a class="dropdown-item" href="../../courses/azure-devops/index.html">
- <span class="dropdown-text">Program overview</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/azure-devops/linux-shell-scripting.html">
- <span class="dropdown-text">Linux &amp; Shell Scripting</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/azure-devops/git-version-control.html">
- <span class="dropdown-text">Git &amp; Version Control</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/azure-devops/azure-repos.html">
- <span class="dropdown-text">Azure Repos</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/azure-devops/azure-pipelines.html">
- <span class="dropdown-text">Azure Pipelines (CI/CD)</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/azure-devops/yaml-pipelines.html">
- <span class="dropdown-text">YAML Pipeline Development</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/azure-devops/docker.html">
- <span class="dropdown-text">Docker &amp; Containerization</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/azure-devops/kubernetes-aks.html">
- <span class="dropdown-text">Kubernetes &amp; AKS</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/azure-devops/terraform.html">
- <span class="dropdown-text">Terraform Infrastructure as Code</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/azure-devops/azure-cloud-services.html">
- <span class="dropdown-text">Azure Cloud Services</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/azure-devops/devsecops-monitoring.html">
- <span class="dropdown-text">DevSecOps &amp; Monitoring</span></a>
-  </li>  
-    </ul>
-  </li>
-  <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-interview-questions" role="link" data-bs-toggle="dropdown" aria-expanded="false">
-      <i class="bi bi-question-circle" role="img">
-</i> 
- <span class="menu-text">Interview Questions</span>
-    </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-interview-questions">    
-        <li>
-    <a class="dropdown-item" href="../../interview-questions/index.html">
- <span class="dropdown-text">Section overview</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../interview-questions/full-stack-ai.html">
- <span class="dropdown-text">Full Stack AI</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../interview-questions/azure-data-engineering.html">
- <span class="dropdown-text">Azure Data Engineering</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../interview-questions/azure-devops.html">
- <span class="dropdown-text">Azure DevOps</span></a>
-  </li>  
-    </ul>
-  </li>
-  <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-project-flows" role="link" data-bs-toggle="dropdown" aria-expanded="false">
-      <i class="bi bi-kanban" role="img">
-</i> 
- <span class="menu-text">Project Flows</span>
-    </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-project-flows">    
-        <li>
-    <a class="dropdown-item" href="../../project-flows/index.html">
- <span class="dropdown-text">Section overview</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../project-flows/full-stack-ai.html">
- <span class="dropdown-text">Full Stack AI</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../project-flows/azure-data-engineering.html">
- <span class="dropdown-text">Azure Data Engineering</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../project-flows/azure-devops.html">
- <span class="dropdown-text">Azure DevOps</span></a>
-  </li>  
-    </ul>
-  </li>
-</ul>
-          </div> <!-- /navcollapse -->
-            <div class="quarto-navbar-tools">
+<header class="headroom fixed-top" id="quarto-header">
+<nav class="navbar navbar-expand-lg" data-bs-theme="dark">
+<div class="navbar-container container-fluid">
+<div class="navbar-brand-container mx-auto">
+<a class="navbar-brand" href="../../index.html">
+<span class="navbar-title">Edukron Notes</span>
+</a>
 </div>
-      </div> <!-- /container-fluid -->
-    </nav>
+<div class="" id="quarto-search" title="Search"></div>
+<button aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-bs-target="#navbarCollapse" data-bs-toggle="collapse" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }" role="menu" type="button">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" id="navbarCollapse">
+<ul class="navbar-nav navbar-nav-scroll me-auto">
+<li class="nav-item">
+<a class="nav-link" href="../../index.html">
+<span class="menu-text">Home</span></a>
+</li>
+<li class="nav-item dropdown">
+<a aria-expanded="false" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" id="nav-menu-full-stack-ai" role="link">
+<i class="bi bi-cpu" role="img">
+</i>
+<span class="menu-text">Full Stack AI</span>
+</a>
+<ul aria-labelledby="nav-menu-full-stack-ai" class="dropdown-menu">
+<li>
+<a class="dropdown-item" href="../../courses/full-stack-ai/index.html">
+<span class="dropdown-text">Program overview</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/full-stack-ai/python.html">
+<span class="dropdown-text">Python</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/full-stack-ai/sql.html">
+<span class="dropdown-text">SQL</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/full-stack-ai/data-science.html">
+<span class="dropdown-text">Data Science</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/full-stack-ai/machine-learning.html">
+<span class="dropdown-text">Machine Learning</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/full-stack-ai/artificial-intelligence.html">
+<span class="dropdown-text">Artificial Intelligence</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/full-stack-ai/deep-learning.html">
+<span class="dropdown-text">Deep Learning</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/full-stack-ai/generative-ai.html">
+<span class="dropdown-text">Generative AI</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/full-stack-ai/large-language-models.html">
+<span class="dropdown-text">Large Language Models (LLMs)</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/full-stack-ai/rag.html">
+<span class="dropdown-text">Retrieval Augmented Generation (RAG)</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/full-stack-ai/agentic-ai.html">
+<span class="dropdown-text">Agentic AI</span></a>
+</li>
+</ul>
+</li>
+<li class="nav-item dropdown">
+<a aria-expanded="false" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" id="nav-menu-azure-data-engineering" role="link">
+<i class="bi bi-database" role="img">
+</i>
+<span class="menu-text">Azure Data Engineering</span>
+</a>
+<ul aria-labelledby="nav-menu-azure-data-engineering" class="dropdown-menu">
+<li>
+<a class="dropdown-item" href="../../courses/azure-data-engineering/index.html">
+<span class="dropdown-text">Program overview</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/azure-data-engineering/python.html">
+<span class="dropdown-text">Python</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/azure-data-engineering/sql.html">
+<span class="dropdown-text">SQL</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/azure-data-engineering/fundamentals.html">
+<span class="dropdown-text">Data Engineering Fundamentals</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/azure-data-engineering/azure-data-factory.html">
+<span class="dropdown-text">Azure Data Factory (ADF)</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/azure-data-engineering/adls-gen2.html">
+<span class="dropdown-text">Azure Data Lake Storage Gen2</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/azure-data-engineering/azure-databricks.html">
+<span class="dropdown-text">Azure Databricks</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/azure-data-engineering/pyspark.html">
+<span class="dropdown-text">PySpark</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/azure-data-engineering/azure-synapse.html">
+<span class="dropdown-text">Azure Synapse Analytics</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/azure-data-engineering/microsoft-fabric.html">
+<span class="dropdown-text">Microsoft Fabric</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/azure-data-engineering/delta-lake.html">
+<span class="dropdown-text">Delta Lake</span></a>
+</li>
+</ul>
+</li>
+<li class="nav-item dropdown">
+<a aria-expanded="false" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" id="nav-menu-azure-devops" role="link">
+<i class="bi bi-infinity" role="img">
+</i>
+<span class="menu-text">Azure DevOps</span>
+</a>
+<ul aria-labelledby="nav-menu-azure-devops" class="dropdown-menu">
+<li>
+<a class="dropdown-item" href="../../courses/azure-devops/index.html">
+<span class="dropdown-text">Program overview</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/azure-devops/linux-shell-scripting.html">
+<span class="dropdown-text">Linux &amp; Shell Scripting</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/azure-devops/git-version-control.html">
+<span class="dropdown-text">Git &amp; Version Control</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/azure-devops/azure-repos.html">
+<span class="dropdown-text">Azure Repos</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/azure-devops/azure-pipelines.html">
+<span class="dropdown-text">Azure Pipelines (CI/CD)</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/azure-devops/yaml-pipelines.html">
+<span class="dropdown-text">YAML Pipeline Development</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/azure-devops/docker.html">
+<span class="dropdown-text">Docker &amp; Containerization</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/azure-devops/kubernetes-aks.html">
+<span class="dropdown-text">Kubernetes &amp; AKS</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/azure-devops/terraform.html">
+<span class="dropdown-text">Terraform Infrastructure as Code</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/azure-devops/azure-cloud-services.html">
+<span class="dropdown-text">Azure Cloud Services</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/azure-devops/devsecops-monitoring.html">
+<span class="dropdown-text">DevSecOps &amp; Monitoring</span></a>
+</li>
+</ul>
+</li>
+<li class="nav-item dropdown">
+<a aria-expanded="false" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" id="nav-menu-interview-questions" role="link">
+<i class="bi bi-question-circle" role="img">
+</i>
+<span class="menu-text">Interview Questions</span>
+</a>
+<ul aria-labelledby="nav-menu-interview-questions" class="dropdown-menu">
+<li>
+<a class="dropdown-item" href="../../interview-questions/index.html">
+<span class="dropdown-text">Section overview</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../interview-questions/full-stack-ai.html">
+<span class="dropdown-text">Full Stack AI</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../interview-questions/azure-data-engineering.html">
+<span class="dropdown-text">Azure Data Engineering</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../interview-questions/azure-devops.html">
+<span class="dropdown-text">Azure DevOps</span></a>
+</li>
+</ul>
+</li>
+<li class="nav-item dropdown">
+<a aria-expanded="false" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" id="nav-menu-project-flows" role="link">
+<i class="bi bi-kanban" role="img">
+</i>
+<span class="menu-text">Project Flows</span>
+</a>
+<ul aria-labelledby="nav-menu-project-flows" class="dropdown-menu">
+<li>
+<a class="dropdown-item" href="../../project-flows/index.html">
+<span class="dropdown-text">Section overview</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../project-flows/full-stack-ai.html">
+<span class="dropdown-text">Full Stack AI</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../project-flows/azure-data-engineering.html">
+<span class="dropdown-text">Azure Data Engineering</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../project-flows/azure-devops.html">
+<span class="dropdown-text">Azure DevOps</span></a>
+</li>
+</ul>
+</li>
+</ul>
+</div> <!-- /navcollapse -->
+<div class="quarto-navbar-tools">
+</div>
+</div> <!-- /container-fluid -->
+</nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<div class="quarto-container page-columns page-rows-contents page-layout-full page-navbar" id="quarto-content">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
-   
-  <ul>
-  <li><a href="#how-to-use-this-course" id="toc-how-to-use-this-course" class="nav-link active" data-scroll-target="#how-to-use-this-course">How to use this course</a></li>
-  <li><a href="#full-syllabus" id="toc-full-syllabus" class="nav-link" data-scroll-target="#full-syllabus">Full syllabus</a></li>
-  <li><a href="#completion-standard" id="toc-completion-standard" class="nav-link" data-scroll-target="#completion-standard">Completion standard</a></li>
-  </ul>
-</nav>
-    </div>
 <!-- main -->
-<main class="content" id="quarto-document-content">
-
-<header id="title-block-header" class="quarto-title-block default">
+<main class="content column-page" id="quarto-document-content">
+<header class="quarto-title-block default" id="title-block-header">
 <div class="quarto-title">
 <h1 class="title">Python</h1>
 </div>
-
 <div>
-  <div class="description">
+<div class="description">
     Complete notebook syllabus for Python in Azure Data Engineering.
   </div>
 </div>
-
-
 <div class="quarto-title-meta">
-
-    <div>
-    <div class="quarto-title-meta-heading">Author</div>
-    <div class="quarto-title-meta-contents">
-             <p>Edukron Notes </p>
-          </div>
-  </div>
-    
-    <div>
-    <div class="quarto-title-meta-heading">Published</div>
-    <div class="quarto-title-meta-contents">
-      <p class="date">September 14, 2026</p>
-    </div>
-  </div>
-  
-    
-  </div>
-  
-
-
+<div>
+<div class="quarto-title-meta-heading">Author</div>
+<div class="quarto-title-meta-contents">
+<p>Edukron Notes </p>
+</div>
+</div>
+<div>
+<div class="quarto-title-meta-heading">Published</div>
+<div class="quarto-title-meta-contents">
+<p class="date">September 14, 2026</p>
+</div>
+</div>
+</div>
 </header>
-
-
-<div class="overview-lead curriculum-summary">
-<div class="overview-icon">
-<i class="bi bi-journal-code" aria-hidden="true"></i>
+<div class="course-workspace notebook-chrome">
+<div class="notebook-toolbar">
+<span class="notebook-file"><i aria-hidden="true" class="bi bi-journal-code"></i><strong>python.ipynb</strong></span>
+<span class="notebook-status"><i aria-hidden="true" class="bi bi-check-circle-fill"></i> Trusted</span>
+<span class="notebook-kernel"><i aria-hidden="true" class="bi bi-diagram-3"></i> Learning path</span>
 </div>
-<div>
+<div class="course-workspace-hero">
 <span class="overview-kicker">Azure Data Engineering</span>
-<h2 class="anchored">
-Python
-</h2>
-<p>
-A complete notebook-first syllabus organized from foundations to applied delivery. Every lesson contains notes, a worked pattern, executable validation, a guided lab, solution blueprint, practice, and knowledge checks.
-</p>
+<h1>Python</h1>
+<p>A complete notebook-first syllabus organized from foundations to applied delivery. Every lesson combines clear notes, a worked pattern, executable validation, a guided lab, a solution blueprint, practice, and knowledge checks.</p>
+<div class="course-tags"><span><i class="bi bi-signpost-split"></i> Foundation to advanced</span><span><i class="bi bi-code-square"></i> Hands-on practice</span><span><i class="bi bi-patch-check"></i> Review ready</span></div>
+<p class="course-start"><a class="btn btn-primary" href="python/081-python-pipeline-foundations/01-pipeline-architecture.html"><i class="bi bi-play-fill"></i> Start the first notebook</a></p>
 </div>
 </div>
-<div class="course-stat-grid">
-<div>
-<strong>5</strong><span>Syllabus topics</span>
-</div>
-<div>
-<strong>50</strong><span>Notebook lessons</span>
-</div>
-<div>
-<strong>Practice</strong><span>Labs and solutions</span>
-</div>
-</div>
-<p class="course-start">
-<a class="btn btn-primary" href="python/081-python-pipeline-foundations/01-pipeline-architecture.html">Start the first notebook <i class="bi bi-arrow-right"></i></a>
-</p>
-<section id="how-to-use-this-course" class="level2">
+<section class="level2" id="how-to-use-this-course">
 <h2 class="anchored" data-anchor-id="how-to-use-this-course">How to use this course</h2>
 <p>Work through lessons in order for a complete pathway, or open a topic for focused reference. Type or adapt the examples, complete the guided lab before reading its blueprint, and preserve your test evidence as a portfolio artifact. Cloud and infrastructure examples are safe, copy-ready teaching patterns; execute them in your own sandbox only after substituting approved identities, names, and policies.</p>
 </section>
-<section id="full-syllabus" class="level2">
-<h2 class="anchored" data-anchor-id="full-syllabus">Full syllabus</h2>
+<div class="syllabus-heading" id="notebook-syllabus">
+<div><span class="overview-kicker">Course contents</span><h2>Notebook syllabus</h2><p>Open a topic to browse its lessons, or search the complete course by concept.</p></div>
+<label class="syllabus-search" for="azure-data-engineering-python-catalog-search"><i aria-hidden="true" class="bi bi-search"></i><input aria-label="Search the Python syllabus" autocomplete="off" id="azure-data-engineering-python-catalog-search" placeholder="Find a topic or lesson" type="search"/></label>
+</div>
+<div class="curriculum-catalog" id="azure-data-engineering-python-catalog">
 <details class="curriculum-topic" open="">
-<summary>
-<span class="topic-number">Topic 081</span><strong>Python pipeline foundations</strong><span>10 notebooks</span>
-</summary>
+<summary><span class="topic-number">Topic 081</span><strong>Python pipeline foundations</strong></summary>
 <div class="topic-lessons">
-<p><a class="topic-lesson-link" href="python/081-python-pipeline-foundations/01-pipeline-architecture.html"><span>081.01</span><strong>Pipeline architecture</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="python/081-python-pipeline-foundations/02-extract-transform-and-load.html"><span>081.02</span><strong>Extract transform and load</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="python/081-python-pipeline-foundations/03-pure-transformations.html"><span>081.03</span><strong>Pure transformations</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="python/081-python-pipeline-foundations/04-pipeline-configuration.html"><span>081.04</span><strong>Pipeline configuration</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="python/081-python-pipeline-foundations/05-environment-variables.html"><span>081.05</span><strong>Environment variables</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="python/081-python-pipeline-foundations/06-command-line-parameters.html"><span>081.06</span><strong>Command-line parameters</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="python/081-python-pipeline-foundations/07-checkpointing.html"><span>081.07</span><strong>Checkpointing</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="python/081-python-pipeline-foundations/08-idempotency.html"><span>081.08</span><strong>Idempotency</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="python/081-python-pipeline-foundations/09-pipeline-metadata.html"><span>081.09</span><strong>Pipeline metadata</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="python/081-python-pipeline-foundations/10-batch-pipeline-project.html"><span>081.10</span><strong>Batch-pipeline project</strong><i class="bi bi-arrow-right"></i></a></p>
+<a class="topic-lesson-link" href="python/081-python-pipeline-foundations/01-pipeline-architecture.html"><span>081.01</span><strong>Pipeline architecture</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="python/081-python-pipeline-foundations/02-extract-transform-and-load.html"><span>081.02</span><strong>Extract transform and load</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="python/081-python-pipeline-foundations/03-pure-transformations.html"><span>081.03</span><strong>Pure transformations</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="python/081-python-pipeline-foundations/04-pipeline-configuration.html"><span>081.04</span><strong>Pipeline configuration</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="python/081-python-pipeline-foundations/05-environment-variables.html"><span>081.05</span><strong>Environment variables</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="python/081-python-pipeline-foundations/06-command-line-parameters.html"><span>081.06</span><strong>Command-line parameters</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="python/081-python-pipeline-foundations/07-checkpointing.html"><span>081.07</span><strong>Checkpointing</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="python/081-python-pipeline-foundations/08-idempotency.html"><span>081.08</span><strong>Idempotency</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="python/081-python-pipeline-foundations/09-pipeline-metadata.html"><span>081.09</span><strong>Pipeline metadata</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="python/081-python-pipeline-foundations/10-batch-pipeline-project.html"><span>081.10</span><strong>Batch-pipeline project</strong><i class="bi bi-arrow-right"></i></a>
 </div>
 </details>
 <details class="curriculum-topic">
-<summary>
-<span class="topic-number">Topic 082</span><strong>Files and serialization</strong><span>10 notebooks</span>
-</summary>
+<summary><span class="topic-number">Topic 082</span><strong>Files and serialization</strong></summary>
 <div class="topic-lessons">
-<p><a class="topic-lesson-link" href="python/082-files-and-serialization/01-filesystem-ingestion.html"><span>082.01</span><strong>Filesystem ingestion</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="python/082-files-and-serialization/02-csv-pipelines.html"><span>082.02</span><strong>CSV pipelines</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="python/082-files-and-serialization/03-json-pipelines.html"><span>082.03</span><strong>JSON pipelines</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="python/082-files-and-serialization/04-json-lines.html"><span>082.04</span><strong>JSON Lines</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="python/082-files-and-serialization/05-parquet-concepts.html"><span>082.05</span><strong>Parquet concepts</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="python/082-files-and-serialization/06-avro-concepts.html"><span>082.06</span><strong>Avro concepts</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="python/082-files-and-serialization/07-compression.html"><span>082.07</span><strong>Compression</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="python/082-files-and-serialization/08-schema-validation.html"><span>082.08</span><strong>Schema validation</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="python/082-files-and-serialization/09-file-partitioning.html"><span>082.09</span><strong>File partitioning</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="python/082-files-and-serialization/10-multi-format-project.html"><span>082.10</span><strong>Multi-format project</strong><i class="bi bi-arrow-right"></i></a></p>
+<a class="topic-lesson-link" href="python/082-files-and-serialization/01-filesystem-ingestion.html"><span>082.01</span><strong>Filesystem ingestion</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="python/082-files-and-serialization/02-csv-pipelines.html"><span>082.02</span><strong>CSV pipelines</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="python/082-files-and-serialization/03-json-pipelines.html"><span>082.03</span><strong>JSON pipelines</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="python/082-files-and-serialization/04-json-lines.html"><span>082.04</span><strong>JSON Lines</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="python/082-files-and-serialization/05-parquet-concepts.html"><span>082.05</span><strong>Parquet concepts</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="python/082-files-and-serialization/06-avro-concepts.html"><span>082.06</span><strong>Avro concepts</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="python/082-files-and-serialization/07-compression.html"><span>082.07</span><strong>Compression</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="python/082-files-and-serialization/08-schema-validation.html"><span>082.08</span><strong>Schema validation</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="python/082-files-and-serialization/09-file-partitioning.html"><span>082.09</span><strong>File partitioning</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="python/082-files-and-serialization/10-multi-format-project.html"><span>082.10</span><strong>Multi-format project</strong><i class="bi bi-arrow-right"></i></a>
 </div>
 </details>
 <details class="curriculum-topic">
-<summary>
-<span class="topic-number">Topic 083</span><strong>API data ingestion</strong><span>10 notebooks</span>
-</summary>
+<summary><span class="topic-number">Topic 083</span><strong>API data ingestion</strong></summary>
 <div class="topic-lessons">
-<p><a class="topic-lesson-link" href="python/083-api-data-ingestion/01-api-source-design.html"><span>083.01</span><strong>API-source design</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="python/083-api-data-ingestion/02-authentication.html"><span>083.02</span><strong>Authentication</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="python/083-api-data-ingestion/03-pagination.html"><span>083.03</span><strong>Pagination</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="python/083-api-data-ingestion/04-rate-limits.html"><span>083.04</span><strong>Rate limits</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="python/083-api-data-ingestion/05-retries.html"><span>083.05</span><strong>Retries</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="python/083-api-data-ingestion/06-incremental-extraction.html"><span>083.06</span><strong>Incremental extraction</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="python/083-api-data-ingestion/07-watermarks.html"><span>083.07</span><strong>Watermarks</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="python/083-api-data-ingestion/08-response-validation.html"><span>083.08</span><strong>Response validation</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="python/083-api-data-ingestion/09-raw-data-preservation.html"><span>083.09</span><strong>Raw-data preservation</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="python/083-api-data-ingestion/10-api-ingestion-project.html"><span>083.10</span><strong>API-ingestion project</strong><i class="bi bi-arrow-right"></i></a></p>
+<a class="topic-lesson-link" href="python/083-api-data-ingestion/01-api-source-design.html"><span>083.01</span><strong>API-source design</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="python/083-api-data-ingestion/02-authentication.html"><span>083.02</span><strong>Authentication</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="python/083-api-data-ingestion/03-pagination.html"><span>083.03</span><strong>Pagination</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="python/083-api-data-ingestion/04-rate-limits.html"><span>083.04</span><strong>Rate limits</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="python/083-api-data-ingestion/05-retries.html"><span>083.05</span><strong>Retries</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="python/083-api-data-ingestion/06-incremental-extraction.html"><span>083.06</span><strong>Incremental extraction</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="python/083-api-data-ingestion/07-watermarks.html"><span>083.07</span><strong>Watermarks</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="python/083-api-data-ingestion/08-response-validation.html"><span>083.08</span><strong>Response validation</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="python/083-api-data-ingestion/09-raw-data-preservation.html"><span>083.09</span><strong>Raw-data preservation</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="python/083-api-data-ingestion/10-api-ingestion-project.html"><span>083.10</span><strong>API-ingestion project</strong><i class="bi bi-arrow-right"></i></a>
 </div>
 </details>
 <details class="curriculum-topic">
-<summary>
-<span class="topic-number">Topic 084</span><strong>Reliable data-engineering Python</strong><span>10 notebooks</span>
-</summary>
+<summary><span class="topic-number">Topic 084</span><strong>Reliable data-engineering Python</strong></summary>
 <div class="topic-lessons">
-<p><a class="topic-lesson-link" href="python/084-reliable-data-engineering-python/01-exception-strategy.html"><span>084.01</span><strong>Exception strategy</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="python/084-reliable-data-engineering-python/02-structured-logging.html"><span>084.02</span><strong>Structured logging</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="python/084-reliable-data-engineering-python/03-metrics.html"><span>084.03</span><strong>Metrics</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="python/084-reliable-data-engineering-python/04-unit-testing.html"><span>084.04</span><strong>Unit testing</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="python/084-reliable-data-engineering-python/05-integration-testing.html"><span>084.05</span><strong>Integration testing</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="python/084-reliable-data-engineering-python/06-test-fixtures.html"><span>084.06</span><strong>Test fixtures</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="python/084-reliable-data-engineering-python/07-data-quality-tests.html"><span>084.07</span><strong>Data-quality tests</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="python/084-reliable-data-engineering-python/08-secrets-management.html"><span>084.08</span><strong>Secrets management</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="python/084-reliable-data-engineering-python/09-packaging.html"><span>084.09</span><strong>Packaging</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="python/084-reliable-data-engineering-python/10-tested-pipeline-project.html"><span>084.10</span><strong>Tested-pipeline project</strong><i class="bi bi-arrow-right"></i></a></p>
+<a class="topic-lesson-link" href="python/084-reliable-data-engineering-python/01-exception-strategy.html"><span>084.01</span><strong>Exception strategy</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="python/084-reliable-data-engineering-python/02-structured-logging.html"><span>084.02</span><strong>Structured logging</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="python/084-reliable-data-engineering-python/03-metrics.html"><span>084.03</span><strong>Metrics</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="python/084-reliable-data-engineering-python/04-unit-testing.html"><span>084.04</span><strong>Unit testing</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="python/084-reliable-data-engineering-python/05-integration-testing.html"><span>084.05</span><strong>Integration testing</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="python/084-reliable-data-engineering-python/06-test-fixtures.html"><span>084.06</span><strong>Test fixtures</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="python/084-reliable-data-engineering-python/07-data-quality-tests.html"><span>084.07</span><strong>Data-quality tests</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="python/084-reliable-data-engineering-python/08-secrets-management.html"><span>084.08</span><strong>Secrets management</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="python/084-reliable-data-engineering-python/09-packaging.html"><span>084.09</span><strong>Packaging</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="python/084-reliable-data-engineering-python/10-tested-pipeline-project.html"><span>084.10</span><strong>Tested-pipeline project</strong><i class="bi bi-arrow-right"></i></a>
 </div>
 </details>
 <details class="curriculum-topic">
-<summary>
-<span class="topic-number">Topic 085</span><strong>Python performance and orchestration</strong><span>10 notebooks</span>
-</summary>
+<summary><span class="topic-number">Topic 085</span><strong>Python performance and orchestration</strong></summary>
 <div class="topic-lessons">
-<p><a class="topic-lesson-link" href="python/085-python-performance-and-orchestration/01-profiling.html"><span>085.01</span><strong>Profiling</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="python/085-python-performance-and-orchestration/02-memory-efficient-iteration.html"><span>085.02</span><strong>Memory-efficient iteration</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="python/085-python-performance-and-orchestration/03-chunk-processing.html"><span>085.03</span><strong>Chunk processing</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="python/085-python-performance-and-orchestration/04-threaded-i-o.html"><span>085.04</span><strong>Threaded I/O</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="python/085-python-performance-and-orchestration/05-process-parallelism.html"><span>085.05</span><strong>Process parallelism</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="python/085-python-performance-and-orchestration/06-async-ingestion.html"><span>085.06</span><strong>Async ingestion</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="python/085-python-performance-and-orchestration/07-scheduling.html"><span>085.07</span><strong>Scheduling</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="python/085-python-performance-and-orchestration/08-backfills.html"><span>085.08</span><strong>Backfills</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="python/085-python-performance-and-orchestration/09-recovery-workflows.html"><span>085.09</span><strong>Recovery workflows</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="python/085-python-performance-and-orchestration/10-python-data-engineering-capstone.html"><span>085.10</span><strong>Python data-engineering capstone</strong><i class="bi bi-arrow-right"></i></a></p>
+<a class="topic-lesson-link" href="python/085-python-performance-and-orchestration/01-profiling.html"><span>085.01</span><strong>Profiling</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="python/085-python-performance-and-orchestration/02-memory-efficient-iteration.html"><span>085.02</span><strong>Memory-efficient iteration</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="python/085-python-performance-and-orchestration/03-chunk-processing.html"><span>085.03</span><strong>Chunk processing</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="python/085-python-performance-and-orchestration/04-threaded-i-o.html"><span>085.04</span><strong>Threaded I/O</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="python/085-python-performance-and-orchestration/05-process-parallelism.html"><span>085.05</span><strong>Process parallelism</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="python/085-python-performance-and-orchestration/06-async-ingestion.html"><span>085.06</span><strong>Async ingestion</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="python/085-python-performance-and-orchestration/07-scheduling.html"><span>085.07</span><strong>Scheduling</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="python/085-python-performance-and-orchestration/08-backfills.html"><span>085.08</span><strong>Backfills</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="python/085-python-performance-and-orchestration/09-recovery-workflows.html"><span>085.09</span><strong>Recovery workflows</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="python/085-python-performance-and-orchestration/10-python-data-engineering-capstone.html"><span>085.10</span><strong>Python data-engineering capstone</strong><i class="bi bi-arrow-right"></i></a>
 </div>
 </details>
-</section>
-<section id="completion-standard" class="level2">
+</div>
+<p class="syllabus-empty" hidden="" id="azure-data-engineering-python-catalog-empty"><i class="bi bi-search"></i> No matching lessons were found.</p>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const catalog = document.getElementById("azure-data-engineering-python-catalog");
+  const search = document.getElementById("azure-data-engineering-python-catalog-search");
+  const empty = document.getElementById("azure-data-engineering-python-catalog-empty");
+  if (!catalog || !search || !empty) return;
+
+  search.addEventListener("input", () => {
+    const query = search.value.trim().toLowerCase();
+    let visibleTopics = 0;
+    catalog.querySelectorAll(".curriculum-topic").forEach((topic) => {
+      const summary = topic.querySelector("summary");
+      const topicMatches = !query || summary.textContent.toLowerCase().includes(query);
+      let visibleLessons = 0;
+      topic.querySelectorAll(".topic-lesson-link").forEach((lesson) => {
+        const matches = topicMatches || lesson.textContent.toLowerCase().includes(query);
+        lesson.hidden = !matches;
+        if (matches) visibleLessons += 1;
+      });
+      const showTopic = topicMatches || visibleLessons > 0;
+      topic.hidden = !showTopic;
+      if (showTopic) visibleTopics += 1;
+      if (query && showTopic) topic.open = true;
+    });
+    empty.hidden = visibleTopics > 0;
+  });
+});
+</script>
+<section class="level2" id="completion-standard">
 <h2 class="anchored" data-anchor-id="completion-standard">Completion standard</h2>
 <p>You have completed <strong>Python</strong> when you can explain each topic, reproduce its core workflow, pass the notebook checks, defend the main tradeoffs, and combine the lessons into one reviewable portfolio project. Use the practice tasks as evidence rather than treating page reading alone as completion.</p>
-
-
 </section>
-
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
@@ -857,21 +874,17 @@ A complete notebook-first syllabus organized from foundations to applied deliver
   </script>
 </div> <!-- /content -->
 <footer class="footer">
-  <div class="nav-footer">
-    <div class="nav-footer-left">
+<div class="nav-footer">
+<div class="nav-footer-left">
 <p>© 2026 Edukron Notes</p>
-</div>   
-    <div class="nav-footer-center">
-      &nbsp;
+</div>
+<div class="nav-footer-center">
+       
     </div>
-    <div class="nav-footer-right">
+<div class="nav-footer-right">
 <p>Notebook courses for AI, data engineering, and DevOps</p>
 </div>
-  </div>
+</div>
 </footer>
-
-
-
-
 <script src="../../site_libs/quarto-html/zenscroll-min.js"></script>
 </body></html>

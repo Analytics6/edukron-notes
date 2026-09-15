@@ -1,15 +1,12 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
-<meta charset="utf-8">
-<meta name="generator" content="quarto-1.10.18">
-
-<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-
-<meta name="author" content="Edukron Notes">
-<meta name="dcterms.date" content="2026-09-14">
-<meta name="description" content="Notebook tutorial for Experiment tracking in Reproducible and responsible data science.">
-
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta charset="utf-8"/>
+<meta content="quarto-1.10.18" name="generator"/>
+<meta content="width=device-width, initial-scale=1.0, user-scalable=yes" name="viewport"/>
+<meta content="Edukron Notes" name="author"/>
+<meta content="2026-09-14" name="dcterms.date"/>
+<meta content="Notebook tutorial for Experiment tracking in Reproducible and responsible data science." name="description"/>
 <title>026.03 Experiment tracking – Edukron Notes</title>
 <style>
 /* Default styles provided by pandoc.
@@ -65,25 +62,23 @@ div.sourceCode
 pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
-
-
 <script src="../../../../site_libs/quarto-nav/quarto-nav.js"></script>
 <script src="../../../../site_libs/quarto-nav/headroom.min.js"></script>
 <script src="../../../../site_libs/clipboard/clipboard.min.js"></script>
 <script src="../../../../site_libs/quarto-search/autocomplete.umd.js"></script>
 <script src="../../../../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../../../../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../../../../">
+<meta content="../../../../" name="quarto:offset"/>
 <script src="../../../../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../../../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="../../../../site_libs/quarto-html/popper.min.js"></script>
 <script src="../../../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../../../../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../../../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../../../../site_libs/quarto-html/tippy.css" rel="stylesheet"/>
+<link href="../../../../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" id="quarto-text-highlighting-styles" rel="stylesheet"/>
 <script src="../../../../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../../../site_libs/bootstrap/bootstrap-f0f4b58164ec92a07fcd2db94b0e5cbd.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet"/>
+<link append-hash="true" data-mode="light" href="../../../../site_libs/bootstrap/bootstrap-f0f4b58164ec92a07fcd2db94b0e5cbd.min.css" id="quarto-bootstrap" rel="stylesheet"/>
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -111,338 +106,323 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   }
 }</script>
 <style>html{ scroll-behavior: smooth; }</style>
-
-
-<link rel="stylesheet" href="../../../../styles.css">
+<link href="../../../../styles.css" rel="stylesheet"/>
 </head>
-
 <body class="nav-fixed quarto-light">
-
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top">
-    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
-      <div class="navbar-container container-fluid">
-      <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="../../../../index.html">
-    <span class="navbar-title">Edukron Notes</span>
-    </a>
-  </div>
-            <div id="quarto-search" class="" title="Search"></div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
-  <span class="navbar-toggler-icon"></span>
-</button>
-          <div class="collapse navbar-collapse" id="navbarCollapse">
-            <ul class="navbar-nav navbar-nav-scroll me-auto">
-  <li class="nav-item">
-    <a class="nav-link" href="../../../../index.html"> 
-<span class="menu-text">Home</span></a>
-  </li>  
-  <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-full-stack-ai" role="link" data-bs-toggle="dropdown" aria-expanded="false">
-      <i class="bi bi-cpu" role="img">
-</i> 
- <span class="menu-text">Full Stack AI</span>
-    </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-full-stack-ai">    
-        <li>
-    <a class="dropdown-item" href="../../../../courses/full-stack-ai/index.html">
- <span class="dropdown-text">Program overview</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../../../courses/full-stack-ai/python.html">
- <span class="dropdown-text">Python</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../../../courses/full-stack-ai/sql.html">
- <span class="dropdown-text">SQL</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../../../courses/full-stack-ai/data-science.html">
- <span class="dropdown-text">Data Science</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../../../courses/full-stack-ai/machine-learning.html">
- <span class="dropdown-text">Machine Learning</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../../../courses/full-stack-ai/artificial-intelligence.html">
- <span class="dropdown-text">Artificial Intelligence</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../../../courses/full-stack-ai/deep-learning.html">
- <span class="dropdown-text">Deep Learning</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../../../courses/full-stack-ai/generative-ai.html">
- <span class="dropdown-text">Generative AI</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../../../courses/full-stack-ai/large-language-models.html">
- <span class="dropdown-text">Large Language Models (LLMs)</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../../../courses/full-stack-ai/rag.html">
- <span class="dropdown-text">Retrieval Augmented Generation (RAG)</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../../../courses/full-stack-ai/agentic-ai.html">
- <span class="dropdown-text">Agentic AI</span></a>
-  </li>  
-    </ul>
-  </li>
-  <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-azure-data-engineering" role="link" data-bs-toggle="dropdown" aria-expanded="false">
-      <i class="bi bi-database" role="img">
-</i> 
- <span class="menu-text">Azure Data Engineering</span>
-    </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-azure-data-engineering">    
-        <li>
-    <a class="dropdown-item" href="../../../../courses/azure-data-engineering/index.html">
- <span class="dropdown-text">Program overview</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../../../courses/azure-data-engineering/python.html">
- <span class="dropdown-text">Python</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../../../courses/azure-data-engineering/sql.html">
- <span class="dropdown-text">SQL</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../../../courses/azure-data-engineering/fundamentals.html">
- <span class="dropdown-text">Data Engineering Fundamentals</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../../../courses/azure-data-engineering/azure-data-factory.html">
- <span class="dropdown-text">Azure Data Factory (ADF)</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../../../courses/azure-data-engineering/adls-gen2.html">
- <span class="dropdown-text">Azure Data Lake Storage Gen2</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../../../courses/azure-data-engineering/azure-databricks.html">
- <span class="dropdown-text">Azure Databricks</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../../../courses/azure-data-engineering/pyspark.html">
- <span class="dropdown-text">PySpark</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../../../courses/azure-data-engineering/azure-synapse.html">
- <span class="dropdown-text">Azure Synapse Analytics</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../../../courses/azure-data-engineering/microsoft-fabric.html">
- <span class="dropdown-text">Microsoft Fabric</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../../../courses/azure-data-engineering/delta-lake.html">
- <span class="dropdown-text">Delta Lake</span></a>
-  </li>  
-    </ul>
-  </li>
-  <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-azure-devops" role="link" data-bs-toggle="dropdown" aria-expanded="false">
-      <i class="bi bi-infinity" role="img">
-</i> 
- <span class="menu-text">Azure DevOps</span>
-    </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-azure-devops">    
-        <li>
-    <a class="dropdown-item" href="../../../../courses/azure-devops/index.html">
- <span class="dropdown-text">Program overview</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../../../courses/azure-devops/linux-shell-scripting.html">
- <span class="dropdown-text">Linux &amp; Shell Scripting</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../../../courses/azure-devops/git-version-control.html">
- <span class="dropdown-text">Git &amp; Version Control</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../../../courses/azure-devops/azure-repos.html">
- <span class="dropdown-text">Azure Repos</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../../../courses/azure-devops/azure-pipelines.html">
- <span class="dropdown-text">Azure Pipelines (CI/CD)</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../../../courses/azure-devops/yaml-pipelines.html">
- <span class="dropdown-text">YAML Pipeline Development</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../../../courses/azure-devops/docker.html">
- <span class="dropdown-text">Docker &amp; Containerization</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../../../courses/azure-devops/kubernetes-aks.html">
- <span class="dropdown-text">Kubernetes &amp; AKS</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../../../courses/azure-devops/terraform.html">
- <span class="dropdown-text">Terraform Infrastructure as Code</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../../../courses/azure-devops/azure-cloud-services.html">
- <span class="dropdown-text">Azure Cloud Services</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../../../courses/azure-devops/devsecops-monitoring.html">
- <span class="dropdown-text">DevSecOps &amp; Monitoring</span></a>
-  </li>  
-    </ul>
-  </li>
-  <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-interview-questions" role="link" data-bs-toggle="dropdown" aria-expanded="false">
-      <i class="bi bi-question-circle" role="img">
-</i> 
- <span class="menu-text">Interview Questions</span>
-    </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-interview-questions">    
-        <li>
-    <a class="dropdown-item" href="../../../../interview-questions/index.html">
- <span class="dropdown-text">Section overview</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../../../interview-questions/full-stack-ai.html">
- <span class="dropdown-text">Full Stack AI</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../../../interview-questions/azure-data-engineering.html">
- <span class="dropdown-text">Azure Data Engineering</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../../../interview-questions/azure-devops.html">
- <span class="dropdown-text">Azure DevOps</span></a>
-  </li>  
-    </ul>
-  </li>
-  <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-project-flows" role="link" data-bs-toggle="dropdown" aria-expanded="false">
-      <i class="bi bi-kanban" role="img">
-</i> 
- <span class="menu-text">Project Flows</span>
-    </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-project-flows">    
-        <li>
-    <a class="dropdown-item" href="../../../../project-flows/index.html">
- <span class="dropdown-text">Section overview</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../../../project-flows/full-stack-ai.html">
- <span class="dropdown-text">Full Stack AI</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../../../project-flows/azure-data-engineering.html">
- <span class="dropdown-text">Azure Data Engineering</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../../../project-flows/azure-devops.html">
- <span class="dropdown-text">Azure DevOps</span></a>
-  </li>  
-    </ul>
-  </li>
-</ul>
-          </div> <!-- /navcollapse -->
-            <div class="quarto-navbar-tools">
+<header class="headroom fixed-top" id="quarto-header">
+<nav class="navbar navbar-expand-lg" data-bs-theme="dark">
+<div class="navbar-container container-fluid">
+<div class="navbar-brand-container mx-auto">
+<a class="navbar-brand" href="../../../../index.html">
+<span class="navbar-title">Edukron Notes</span>
+</a>
 </div>
-      </div> <!-- /container-fluid -->
-    </nav>
+<div class="" id="quarto-search" title="Search"></div>
+<button aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-bs-target="#navbarCollapse" data-bs-toggle="collapse" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }" role="menu" type="button">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" id="navbarCollapse">
+<ul class="navbar-nav navbar-nav-scroll me-auto">
+<li class="nav-item">
+<a class="nav-link" href="../../../../index.html">
+<span class="menu-text">Home</span></a>
+</li>
+<li class="nav-item dropdown">
+<a aria-expanded="false" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" id="nav-menu-full-stack-ai" role="link">
+<i class="bi bi-cpu" role="img">
+</i>
+<span class="menu-text">Full Stack AI</span>
+</a>
+<ul aria-labelledby="nav-menu-full-stack-ai" class="dropdown-menu">
+<li>
+<a class="dropdown-item" href="../../../../courses/full-stack-ai/index.html">
+<span class="dropdown-text">Program overview</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../../../courses/full-stack-ai/python.html">
+<span class="dropdown-text">Python</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../../../courses/full-stack-ai/sql.html">
+<span class="dropdown-text">SQL</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../../../courses/full-stack-ai/data-science.html">
+<span class="dropdown-text">Data Science</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../../../courses/full-stack-ai/machine-learning.html">
+<span class="dropdown-text">Machine Learning</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../../../courses/full-stack-ai/artificial-intelligence.html">
+<span class="dropdown-text">Artificial Intelligence</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../../../courses/full-stack-ai/deep-learning.html">
+<span class="dropdown-text">Deep Learning</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../../../courses/full-stack-ai/generative-ai.html">
+<span class="dropdown-text">Generative AI</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../../../courses/full-stack-ai/large-language-models.html">
+<span class="dropdown-text">Large Language Models (LLMs)</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../../../courses/full-stack-ai/rag.html">
+<span class="dropdown-text">Retrieval Augmented Generation (RAG)</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../../../courses/full-stack-ai/agentic-ai.html">
+<span class="dropdown-text">Agentic AI</span></a>
+</li>
+</ul>
+</li>
+<li class="nav-item dropdown">
+<a aria-expanded="false" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" id="nav-menu-azure-data-engineering" role="link">
+<i class="bi bi-database" role="img">
+</i>
+<span class="menu-text">Azure Data Engineering</span>
+</a>
+<ul aria-labelledby="nav-menu-azure-data-engineering" class="dropdown-menu">
+<li>
+<a class="dropdown-item" href="../../../../courses/azure-data-engineering/index.html">
+<span class="dropdown-text">Program overview</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../../../courses/azure-data-engineering/python.html">
+<span class="dropdown-text">Python</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../../../courses/azure-data-engineering/sql.html">
+<span class="dropdown-text">SQL</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../../../courses/azure-data-engineering/fundamentals.html">
+<span class="dropdown-text">Data Engineering Fundamentals</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../../../courses/azure-data-engineering/azure-data-factory.html">
+<span class="dropdown-text">Azure Data Factory (ADF)</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../../../courses/azure-data-engineering/adls-gen2.html">
+<span class="dropdown-text">Azure Data Lake Storage Gen2</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../../../courses/azure-data-engineering/azure-databricks.html">
+<span class="dropdown-text">Azure Databricks</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../../../courses/azure-data-engineering/pyspark.html">
+<span class="dropdown-text">PySpark</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../../../courses/azure-data-engineering/azure-synapse.html">
+<span class="dropdown-text">Azure Synapse Analytics</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../../../courses/azure-data-engineering/microsoft-fabric.html">
+<span class="dropdown-text">Microsoft Fabric</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../../../courses/azure-data-engineering/delta-lake.html">
+<span class="dropdown-text">Delta Lake</span></a>
+</li>
+</ul>
+</li>
+<li class="nav-item dropdown">
+<a aria-expanded="false" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" id="nav-menu-azure-devops" role="link">
+<i class="bi bi-infinity" role="img">
+</i>
+<span class="menu-text">Azure DevOps</span>
+</a>
+<ul aria-labelledby="nav-menu-azure-devops" class="dropdown-menu">
+<li>
+<a class="dropdown-item" href="../../../../courses/azure-devops/index.html">
+<span class="dropdown-text">Program overview</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../../../courses/azure-devops/linux-shell-scripting.html">
+<span class="dropdown-text">Linux &amp; Shell Scripting</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../../../courses/azure-devops/git-version-control.html">
+<span class="dropdown-text">Git &amp; Version Control</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../../../courses/azure-devops/azure-repos.html">
+<span class="dropdown-text">Azure Repos</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../../../courses/azure-devops/azure-pipelines.html">
+<span class="dropdown-text">Azure Pipelines (CI/CD)</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../../../courses/azure-devops/yaml-pipelines.html">
+<span class="dropdown-text">YAML Pipeline Development</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../../../courses/azure-devops/docker.html">
+<span class="dropdown-text">Docker &amp; Containerization</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../../../courses/azure-devops/kubernetes-aks.html">
+<span class="dropdown-text">Kubernetes &amp; AKS</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../../../courses/azure-devops/terraform.html">
+<span class="dropdown-text">Terraform Infrastructure as Code</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../../../courses/azure-devops/azure-cloud-services.html">
+<span class="dropdown-text">Azure Cloud Services</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../../../courses/azure-devops/devsecops-monitoring.html">
+<span class="dropdown-text">DevSecOps &amp; Monitoring</span></a>
+</li>
+</ul>
+</li>
+<li class="nav-item dropdown">
+<a aria-expanded="false" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" id="nav-menu-interview-questions" role="link">
+<i class="bi bi-question-circle" role="img">
+</i>
+<span class="menu-text">Interview Questions</span>
+</a>
+<ul aria-labelledby="nav-menu-interview-questions" class="dropdown-menu">
+<li>
+<a class="dropdown-item" href="../../../../interview-questions/index.html">
+<span class="dropdown-text">Section overview</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../../../interview-questions/full-stack-ai.html">
+<span class="dropdown-text">Full Stack AI</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../../../interview-questions/azure-data-engineering.html">
+<span class="dropdown-text">Azure Data Engineering</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../../../interview-questions/azure-devops.html">
+<span class="dropdown-text">Azure DevOps</span></a>
+</li>
+</ul>
+</li>
+<li class="nav-item dropdown">
+<a aria-expanded="false" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" id="nav-menu-project-flows" role="link">
+<i class="bi bi-kanban" role="img">
+</i>
+<span class="menu-text">Project Flows</span>
+</a>
+<ul aria-labelledby="nav-menu-project-flows" class="dropdown-menu">
+<li>
+<a class="dropdown-item" href="../../../../project-flows/index.html">
+<span class="dropdown-text">Section overview</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../../../project-flows/full-stack-ai.html">
+<span class="dropdown-text">Full Stack AI</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../../../project-flows/azure-data-engineering.html">
+<span class="dropdown-text">Azure Data Engineering</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../../../project-flows/azure-devops.html">
+<span class="dropdown-text">Azure DevOps</span></a>
+</li>
+</ul>
+</li>
+</ul>
+</div> <!-- /navcollapse -->
+<div class="quarto-navbar-tools">
+</div>
+</div> <!-- /container-fluid -->
+</nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<div class="quarto-container page-columns page-rows-contents page-layout-article page-navbar" id="quarto-content">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
-   
-  <ul>
-  <li><a href="#placement-and-prerequisites" id="toc-placement-and-prerequisites" class="nav-link active" data-scroll-target="#placement-and-prerequisites">Placement and prerequisites</a>
-  <ul class="collapse">
-  <li><a href="#learning-objectives" id="toc-learning-objectives" class="nav-link" data-scroll-target="#learning-objectives">Learning objectives</a></li>
-  </ul></li>
-  <li><a href="#concept-foundations" id="toc-concept-foundations" class="nav-link" data-scroll-target="#concept-foundations">Concept foundations</a></li>
-  <li><a href="#mental-model" id="toc-mental-model" class="nav-link" data-scroll-target="#mental-model">Mental model</a></li>
-  <li><a href="#a-repeatable-workflow" id="toc-a-repeatable-workflow" class="nav-link" data-scroll-target="#a-repeatable-workflow">A repeatable workflow</a></li>
-  <li><a href="#annotated-example" id="toc-annotated-example" class="nav-link" data-scroll-target="#annotated-example">Annotated example</a>
-  <ul class="collapse">
-  <li><a href="#how-to-read-it" id="toc-how-to-read-it" class="nav-link" data-scroll-target="#how-to-read-it">How to read it</a></li>
-  </ul></li>
-  <li><a href="#walkthrough-and-design-decisions" id="toc-walkthrough-and-design-decisions" class="nav-link" data-scroll-target="#walkthrough-and-design-decisions">Walkthrough and design decisions</a></li>
-  <li><a href="#guided-lab" id="toc-guided-lab" class="nav-link" data-scroll-target="#guided-lab">Guided lab</a>
-  <ul class="collapse">
-  <li><a href="#acceptance-criteria" id="toc-acceptance-criteria" class="nav-link" data-scroll-target="#acceptance-criteria">Acceptance criteria</a></li>
-  </ul></li>
-  <li><a href="#solution-blueprint" id="toc-solution-blueprint" class="nav-link" data-scroll-target="#solution-blueprint">Solution blueprint</a></li>
-  <li><a href="#common-mistakes-and-fixes" id="toc-common-mistakes-and-fixes" class="nav-link" data-scroll-target="#common-mistakes-and-fixes">Common mistakes and fixes</a></li>
-  <li><a href="#practice-tasks" id="toc-practice-tasks" class="nav-link" data-scroll-target="#practice-tasks">Practice tasks</a></li>
-  <li><a href="#knowledge-check" id="toc-knowledge-check" class="nav-link" data-scroll-target="#knowledge-check">Knowledge check</a></li>
-  <li><a href="#recap-and-reference" id="toc-recap-and-reference" class="nav-link" data-scroll-target="#recap-and-reference">Recap and reference</a></li>
-  </ul>
+<div class="sidebar margin-sidebar" id="quarto-margin-sidebar">
+<nav class="toc-active" id="TOC" role="doc-toc">
+<h2 id="toc-title">On this page</h2>
+<ul>
+<li><a class="nav-link active" data-scroll-target="#placement-and-prerequisites" href="#placement-and-prerequisites" id="toc-placement-and-prerequisites">Placement and prerequisites</a>
+<ul class="collapse">
+<li><a class="nav-link" data-scroll-target="#learning-objectives" href="#learning-objectives" id="toc-learning-objectives">Learning objectives</a></li>
+</ul></li>
+<li><a class="nav-link" data-scroll-target="#concept-foundations" href="#concept-foundations" id="toc-concept-foundations">Concept foundations</a></li>
+<li><a class="nav-link" data-scroll-target="#mental-model" href="#mental-model" id="toc-mental-model">Mental model</a></li>
+<li><a class="nav-link" data-scroll-target="#a-repeatable-workflow" href="#a-repeatable-workflow" id="toc-a-repeatable-workflow">A repeatable workflow</a></li>
+<li><a class="nav-link" data-scroll-target="#annotated-example" href="#annotated-example" id="toc-annotated-example">Annotated example</a>
+<ul class="collapse">
+<li><a class="nav-link" data-scroll-target="#how-to-read-it" href="#how-to-read-it" id="toc-how-to-read-it">How to read it</a></li>
+</ul></li>
+<li><a class="nav-link" data-scroll-target="#walkthrough-and-design-decisions" href="#walkthrough-and-design-decisions" id="toc-walkthrough-and-design-decisions">Walkthrough and design decisions</a></li>
+<li><a class="nav-link" data-scroll-target="#guided-lab" href="#guided-lab" id="toc-guided-lab">Guided lab</a>
+<ul class="collapse">
+<li><a class="nav-link" data-scroll-target="#acceptance-criteria" href="#acceptance-criteria" id="toc-acceptance-criteria">Acceptance criteria</a></li>
+</ul></li>
+<li><a class="nav-link" data-scroll-target="#solution-blueprint" href="#solution-blueprint" id="toc-solution-blueprint">Solution blueprint</a></li>
+<li><a class="nav-link" data-scroll-target="#common-mistakes-and-fixes" href="#common-mistakes-and-fixes" id="toc-common-mistakes-and-fixes">Common mistakes and fixes</a></li>
+<li><a class="nav-link" data-scroll-target="#practice-tasks" href="#practice-tasks" id="toc-practice-tasks">Practice tasks</a></li>
+<li><a class="nav-link" data-scroll-target="#knowledge-check" href="#knowledge-check" id="toc-knowledge-check">Knowledge check</a></li>
+<li><a class="nav-link" data-scroll-target="#recap-and-reference" href="#recap-and-reference" id="toc-recap-and-reference">Recap and reference</a></li>
+</ul>
 </nav>
-    </div>
+</div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
-
-<header id="title-block-header" class="quarto-title-block default">
+<header class="quarto-title-block default" id="title-block-header">
 <div class="quarto-title">
 <h1 class="title">026.03 Experiment tracking</h1>
-  <div class="quarto-categories">
-    <div class="quarto-category">Full Stack AI</div>
-    <div class="quarto-category">Data Science</div>
-    <div class="quarto-category">Reproducible and responsible data science</div>
-  </div>
-  </div>
-
+<div class="quarto-categories">
+<div class="quarto-category">Full Stack AI</div>
+<div class="quarto-category">Data Science</div>
+<div class="quarto-category">Reproducible and responsible data science</div>
+</div>
+</div>
 <div>
-  <div class="description">
+<div class="description">
     Notebook tutorial for Experiment tracking in Reproducible and responsible data science.
   </div>
 </div>
-
-
 <div class="quarto-title-meta">
-
-    <div>
-    <div class="quarto-title-meta-heading">Author</div>
-    <div class="quarto-title-meta-contents">
-             <p>Edukron Notes </p>
-          </div>
-  </div>
-    
-    <div>
-    <div class="quarto-title-meta-heading">Published</div>
-    <div class="quarto-title-meta-contents">
-      <p class="date">September 14, 2026</p>
-    </div>
-  </div>
-  
-    
-  </div>
-  
-
-
-</header>
-
-
-<div class="lesson-banner">
-<span class="lesson-kicker">Topic 026 · Lesson 03 of 10</span>
-<h2 class="anchored">
-Experiment tracking
-</h2>
-<p>
-Full Stack AI → Data Science → Reproducible and responsible data science. Learn the concept, apply a repeatable workflow, and produce evidence that the result is correct.
-</p>
+<div>
+<div class="quarto-title-meta-heading">Author</div>
+<div class="quarto-title-meta-contents">
+<p>Edukron Notes </p>
 </div>
-<section id="placement-and-prerequisites" class="level2">
+</div>
+<div>
+<div class="quarto-title-meta-heading">Published</div>
+<div class="quarto-title-meta-contents">
+<p class="date">September 14, 2026</p>
+</div>
+</div>
+</div>
+</header>
+<div class="notebook-chrome lesson-notebook">
+<div class="notebook-toolbar">
+<span class="notebook-file"><i aria-hidden="true" class="bi bi-journal-code"></i><strong>03-experiment-tracking.ipynb</strong></span>
+<span class="notebook-status"><i aria-hidden="true" class="bi bi-check-circle-fill"></i> Trusted</span>
+<span class="notebook-kernel"><i aria-hidden="true" class="bi bi-cpu"></i> Python 3</span>
+</div>
+<div class="notebook-cover">
+<span class="lesson-kicker">Topic 026 · Lesson 03</span>
+<h1>Experiment tracking</h1>
+<p>Full Stack AI → Data Science → Reproducible and responsible data science. Learn the concept, apply a repeatable workflow, and produce evidence that the result is correct.</p>
+</div>
+</div>
+<section class="level2" id="placement-and-prerequisites">
 <h2 class="anchored" data-anchor-id="placement-and-prerequisites">Placement and prerequisites</h2>
-<p>This notebook develops <strong>Experiment tracking</strong>, one of ten focused lessons in <strong>Reproducible and responsible data science</strong>. It assumes familiarity with <strong>Data versioning</strong>. No cloud credentials are required: platform examples are copy-ready patterns, and the executable checks use only Python’s standard library.</p>
-<section id="learning-objectives" class="level3">
+<p>This notebook develops <strong>Experiment tracking</strong>, a focused lesson in <strong>Reproducible and responsible data science</strong>. It assumes familiarity with <strong>Data versioning</strong>. No cloud credentials are required: platform examples are copy-ready patterns, and the executable checks use only Python’s standard library.</p>
+<section class="level3" id="learning-objectives">
 <h3 class="anchored" data-anchor-id="learning-objectives">Learning objectives</h3>
 <p>By the end, you will be able to:</p>
 <ol type="1">
@@ -453,7 +433,7 @@ Full Stack AI → Data Science → Reproducible and responsible data science. Le
 </ol>
 </section>
 </section>
-<section id="concept-foundations" class="level2">
+<section class="level2" id="concept-foundations">
 <h2 class="anchored" data-anchor-id="concept-foundations">Concept foundations</h2>
 <p><strong>Experiment tracking</strong> is useful when it converts intent into a result that another person or system can inspect. In this topic, the essential chain is <strong>typed input → reproducible computation → tested result</strong>. Skipping any link creates ambiguity: an undefined input makes results untrustworthy, an implicit process is difficult to repeat, and an outcome without evidence is difficult to operate.</p>
 <p>Treat the lesson as a contract, not a one-time command. State what enters the boundary, which assumptions are valid, what changes, and how success is measured. This framing works for code, data, cloud resources, interview answers, and project delivery because it separates the goal from the implementation detail.</p>
@@ -465,13 +445,13 @@ Full Stack AI → Data Science → Reproducible and responsible data science. Le
 </ul>
 <p>The first implementation should be intentionally small. Add scale, abstraction, or automation only after a baseline works and its evidence is visible. This keeps failure analysis local and makes every later optimization measurable.</p>
 </section>
-<section id="mental-model" class="level2">
+<section class="level2" id="mental-model">
 <h2 class="anchored" data-anchor-id="mental-model">Mental model</h2>
 <table class="caption-top table">
 <colgroup>
-<col style="width: 33%">
-<col style="width: 33%">
-<col style="width: 33%">
+<col style="width: 33%"/>
+<col style="width: 33%"/>
+<col style="width: 33%"/>
 </colgroup>
 <thead>
 <tr class="header">
@@ -510,7 +490,7 @@ Full Stack AI → Data Science → Reproducible and responsible data science. Le
 </table>
 <p>The table is a compact design review. If a row cannot be answered, record it as an assumption or risk before implementation.</p>
 </section>
-<section id="a-repeatable-workflow" class="level2">
+<section class="level2" id="a-repeatable-workflow">
 <h2 class="anchored" data-anchor-id="a-repeatable-workflow">A repeatable workflow</h2>
 <ol type="1">
 <li><strong>Frame the outcome.</strong> Write one sentence describing the user or system value of experiment tracking.</li>
@@ -522,51 +502,51 @@ Full Stack AI → Data Science → Reproducible and responsible data science. Le
 </ol>
 <p>This order prevents tool selection from replacing problem definition. A production design may loop through the steps several times as evidence changes.</p>
 </section>
-<section id="annotated-example" class="level2">
+<section class="level2" id="annotated-example">
 <h2 class="anchored" data-anchor-id="annotated-example">Annotated example</h2>
 <p>The following pattern is intentionally compact. Adapt names and platform-specific properties, but retain the explicit input, transformation, output, and verification boundary.</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> dataclasses <span class="im">import</span> dataclass</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="at">@dataclass</span>(frozen<span class="op">=</span><span class="va">True</span>)</span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="kw">class</span> ExperimentTrackingPlan:</span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>    input_contract: <span class="bu">str</span> <span class="op">=</span> <span class="st">"typed input"</span></span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>    operation: <span class="bu">str</span> <span class="op">=</span> <span class="st">"reproducible computation"</span></span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>    acceptance_evidence: <span class="bu">str</span> <span class="op">=</span> <span class="st">"tested result"</span></span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>plan <span class="op">=</span> ExperimentTrackingPlan()</span>
-<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="cf">assert</span> <span class="bu">all</span>(<span class="bu">vars</span>(plan).values())</span>
-<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>plan</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<section id="how-to-read-it" class="level3">
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a aria-hidden="true" href="#cb1-1" tabindex="-1"></a><span class="im">from</span> dataclasses <span class="im">import</span> dataclass</span>
+<span id="cb1-2"><a aria-hidden="true" href="#cb1-2" tabindex="-1"></a></span>
+<span id="cb1-3"><a aria-hidden="true" href="#cb1-3" tabindex="-1"></a><span class="at">@dataclass</span>(frozen<span class="op">=</span><span class="va">True</span>)</span>
+<span id="cb1-4"><a aria-hidden="true" href="#cb1-4" tabindex="-1"></a><span class="kw">class</span> ExperimentTrackingPlan:</span>
+<span id="cb1-5"><a aria-hidden="true" href="#cb1-5" tabindex="-1"></a>    input_contract: <span class="bu">str</span> <span class="op">=</span> <span class="st">"typed input"</span></span>
+<span id="cb1-6"><a aria-hidden="true" href="#cb1-6" tabindex="-1"></a>    operation: <span class="bu">str</span> <span class="op">=</span> <span class="st">"reproducible computation"</span></span>
+<span id="cb1-7"><a aria-hidden="true" href="#cb1-7" tabindex="-1"></a>    acceptance_evidence: <span class="bu">str</span> <span class="op">=</span> <span class="st">"tested result"</span></span>
+<span id="cb1-8"><a aria-hidden="true" href="#cb1-8" tabindex="-1"></a></span>
+<span id="cb1-9"><a aria-hidden="true" href="#cb1-9" tabindex="-1"></a>plan <span class="op">=</span> ExperimentTrackingPlan()</span>
+<span id="cb1-10"><a aria-hidden="true" href="#cb1-10" tabindex="-1"></a><span class="cf">assert</span> <span class="bu">all</span>(<span class="bu">vars</span>(plan).values())</span>
+<span id="cb1-11"><a aria-hidden="true" href="#cb1-11" tabindex="-1"></a>plan</span></code></pre></div><button class="code-copy-button" title="Copy to Clipboard"><i class="bi"></i></button></div>
+<section class="level3" id="how-to-read-it">
 <h3 class="anchored" data-anchor-id="how-to-read-it">How to read it</h3>
 <p>The example names the unit of work, exposes inputs, and makes success inspectable. It avoids embedded secrets and hidden environment assumptions. In a real repository, pair it with automated validation, pinned dependencies, and a short operational note.</p>
-<div id="executable-model" class="cell">
-<details open="" class="code-fold">
+<div class="cell" id="executable-model">
+<details class="code-fold" open="">
 <summary>Code</summary>
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> dataclasses <span class="im">import</span> dataclass, asdict</span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="at">@dataclass</span>(frozen<span class="op">=</span><span class="va">True</span>)</span>
-<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="kw">class</span> LessonContract:</span>
-<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>    lesson: <span class="bu">str</span></span>
-<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>    source: <span class="bu">str</span></span>
-<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>    process: <span class="bu">str</span></span>
-<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>    outcome: <span class="bu">str</span></span>
-<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>    evidence: <span class="bu">tuple</span>[<span class="bu">str</span>, ...]</span>
-<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a>contract <span class="op">=</span> LessonContract(</span>
-<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a>    lesson<span class="op">=</span><span class="st">'Experiment tracking'</span>,</span>
-<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a>    source<span class="op">=</span><span class="st">'typed input'</span>,</span>
-<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a>    process<span class="op">=</span><span class="st">'reproducible computation'</span>,</span>
-<span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a>    outcome<span class="op">=</span><span class="st">'tested result'</span>,</span>
-<span id="cb2-16"><a href="#cb2-16" aria-hidden="true" tabindex="-1"></a>    evidence<span class="op">=</span>(<span class="st">"automated check"</span>, <span class="st">"review record"</span>, <span class="st">"operational signal"</span>),</span>
-<span id="cb2-17"><a href="#cb2-17" aria-hidden="true" tabindex="-1"></a>)</span>
-<span id="cb2-18"><a href="#cb2-18" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-19"><a href="#cb2-19" aria-hidden="true" tabindex="-1"></a><span class="cf">assert</span> contract.lesson <span class="kw">and</span> <span class="bu">len</span>(contract.evidence) <span class="op">&gt;=</span> <span class="dv">3</span></span>
-<span id="cb2-20"><a href="#cb2-20" aria-hidden="true" tabindex="-1"></a>asdict(contract)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a aria-hidden="true" href="#cb2-1" tabindex="-1"></a><span class="im">from</span> dataclasses <span class="im">import</span> dataclass, asdict</span>
+<span id="cb2-2"><a aria-hidden="true" href="#cb2-2" tabindex="-1"></a></span>
+<span id="cb2-3"><a aria-hidden="true" href="#cb2-3" tabindex="-1"></a><span class="at">@dataclass</span>(frozen<span class="op">=</span><span class="va">True</span>)</span>
+<span id="cb2-4"><a aria-hidden="true" href="#cb2-4" tabindex="-1"></a><span class="kw">class</span> LessonContract:</span>
+<span id="cb2-5"><a aria-hidden="true" href="#cb2-5" tabindex="-1"></a>    lesson: <span class="bu">str</span></span>
+<span id="cb2-6"><a aria-hidden="true" href="#cb2-6" tabindex="-1"></a>    source: <span class="bu">str</span></span>
+<span id="cb2-7"><a aria-hidden="true" href="#cb2-7" tabindex="-1"></a>    process: <span class="bu">str</span></span>
+<span id="cb2-8"><a aria-hidden="true" href="#cb2-8" tabindex="-1"></a>    outcome: <span class="bu">str</span></span>
+<span id="cb2-9"><a aria-hidden="true" href="#cb2-9" tabindex="-1"></a>    evidence: <span class="bu">tuple</span>[<span class="bu">str</span>, ...]</span>
+<span id="cb2-10"><a aria-hidden="true" href="#cb2-10" tabindex="-1"></a></span>
+<span id="cb2-11"><a aria-hidden="true" href="#cb2-11" tabindex="-1"></a>contract <span class="op">=</span> LessonContract(</span>
+<span id="cb2-12"><a aria-hidden="true" href="#cb2-12" tabindex="-1"></a>    lesson<span class="op">=</span><span class="st">'Experiment tracking'</span>,</span>
+<span id="cb2-13"><a aria-hidden="true" href="#cb2-13" tabindex="-1"></a>    source<span class="op">=</span><span class="st">'typed input'</span>,</span>
+<span id="cb2-14"><a aria-hidden="true" href="#cb2-14" tabindex="-1"></a>    process<span class="op">=</span><span class="st">'reproducible computation'</span>,</span>
+<span id="cb2-15"><a aria-hidden="true" href="#cb2-15" tabindex="-1"></a>    outcome<span class="op">=</span><span class="st">'tested result'</span>,</span>
+<span id="cb2-16"><a aria-hidden="true" href="#cb2-16" tabindex="-1"></a>    evidence<span class="op">=</span>(<span class="st">"automated check"</span>, <span class="st">"review record"</span>, <span class="st">"operational signal"</span>),</span>
+<span id="cb2-17"><a aria-hidden="true" href="#cb2-17" tabindex="-1"></a>)</span>
+<span id="cb2-18"><a aria-hidden="true" href="#cb2-18" tabindex="-1"></a></span>
+<span id="cb2-19"><a aria-hidden="true" href="#cb2-19" tabindex="-1"></a><span class="cf">assert</span> contract.lesson <span class="kw">and</span> <span class="bu">len</span>(contract.evidence) <span class="op">&gt;=</span> <span class="dv">3</span></span>
+<span id="cb2-20"><a aria-hidden="true" href="#cb2-20" tabindex="-1"></a>asdict(contract)</span></code></pre></div><button class="code-copy-button" title="Copy to Clipboard"><i class="bi"></i></button></div>
 </details>
 </div>
 </section>
 </section>
-<section id="walkthrough-and-design-decisions" class="level2">
+<section class="level2" id="walkthrough-and-design-decisions">
 <h2 class="anchored" data-anchor-id="walkthrough-and-design-decisions">Walkthrough and design decisions</h2>
 <p>The executable contract above is a small design artifact. Immutability prevents accidental mutation during the lesson, while named fields make assumptions reviewable. The assertion is deliberately simple: it shows that a notebook should verify its own essential invariant rather than depend on visual inspection alone.</p>
 <p>For <strong>Experiment tracking</strong>, enrich the contract with domain-specific limits. Examples include data schemas, model thresholds, deployment health checks, access policies, response-time budgets, or answer-scoring rubrics. Keep the core contract stable while implementation details evolve.</p>
@@ -574,7 +554,7 @@ Full Stack AI → Data Science → Reproducible and responsible data science. Le
 <p><strong>Decision rule:</strong> prefer a design that makes failure visible and recovery routine over one that succeeds only under ideal conditions.</p>
 </blockquote>
 </section>
-<section id="guided-lab" class="level2">
+<section class="level2" id="guided-lab">
 <h2 class="anchored" data-anchor-id="guided-lab">Guided lab</h2>
 <p><strong>Scenario:</strong> Your team must introduce experiment tracking as part of Reproducible and responsible data science. The first release serves one controlled environment, but it must be safe to repeat and simple to audit.</p>
 <ol type="1">
@@ -585,7 +565,7 @@ Full Stack AI → Data Science → Reproducible and responsible data science. Le
 <li>Choose a telemetry signal and a threshold that should alert an owner.</li>
 <li>Describe a rollback, replay, or correction procedure.</li>
 </ol>
-<section id="acceptance-criteria" class="level3">
+<section class="level3" id="acceptance-criteria">
 <h3 class="anchored" data-anchor-id="acceptance-criteria">Acceptance criteria</h3>
 <ul>
 <li>Inputs and outputs have named owners and contracts.</li>
@@ -595,13 +575,13 @@ Full Stack AI → Data Science → Reproducible and responsible data science. Le
 </ul>
 </section>
 </section>
-<section id="solution-blueprint" class="level2">
+<section class="level2" id="solution-blueprint">
 <h2 class="anchored" data-anchor-id="solution-blueprint">Solution blueprint</h2>
 <p>A strong solution might use the following structure:</p>
 <table class="caption-top table">
 <colgroup>
-<col style="width: 50%">
-<col style="width: 50%">
+<col style="width: 50%"/>
+<col style="width: 50%"/>
 </colgroup>
 <thead>
 <tr class="header">
@@ -641,25 +621,25 @@ Full Stack AI → Data Science → Reproducible and responsible data science. Le
 </tbody>
 </table>
 <p>The exact technology can vary. The important part is traceability from requirement to implementation, test evidence, and operational ownership.</p>
-<div id="quality-check" class="cell">
-<details open="" class="code-fold">
+<div class="cell" id="quality-check">
+<details class="code-fold" open="">
 <summary>Code</summary>
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>required_controls <span class="op">=</span> {</span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>    <span class="st">"contract"</span>: <span class="va">True</span>,</span>
-<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>    <span class="st">"automated_check"</span>: <span class="va">True</span>,</span>
-<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>    <span class="st">"least_privilege"</span>: <span class="va">True</span>,</span>
-<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>    <span class="st">"telemetry"</span>: <span class="va">True</span>,</span>
-<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>    <span class="st">"recovery_path"</span>: <span class="va">True</span>,</span>
-<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>}</span>
-<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>missing <span class="op">=</span> [name <span class="cf">for</span> name, present <span class="kw">in</span> required_controls.items() <span class="cf">if</span> <span class="kw">not</span> present]</span>
-<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a>readiness_score <span class="op">=</span> <span class="dv">100</span> <span class="op">*</span> (<span class="bu">len</span>(required_controls) <span class="op">-</span> <span class="bu">len</span>(missing)) <span class="op">/</span> <span class="bu">len</span>(required_controls)</span>
-<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a><span class="cf">assert</span> <span class="kw">not</span> missing, <span class="ss">f"Missing controls: </span><span class="sc">{</span>missing<span class="sc">}</span><span class="ss">"</span></span>
-<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a>{<span class="st">"lesson"</span>: <span class="st">'Experiment tracking'</span>, <span class="st">"readiness_score"</span>: readiness_score, <span class="st">"status"</span>: <span class="st">"ready for review"</span>}</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a aria-hidden="true" href="#cb3-1" tabindex="-1"></a>required_controls <span class="op">=</span> {</span>
+<span id="cb3-2"><a aria-hidden="true" href="#cb3-2" tabindex="-1"></a>    <span class="st">"contract"</span>: <span class="va">True</span>,</span>
+<span id="cb3-3"><a aria-hidden="true" href="#cb3-3" tabindex="-1"></a>    <span class="st">"automated_check"</span>: <span class="va">True</span>,</span>
+<span id="cb3-4"><a aria-hidden="true" href="#cb3-4" tabindex="-1"></a>    <span class="st">"least_privilege"</span>: <span class="va">True</span>,</span>
+<span id="cb3-5"><a aria-hidden="true" href="#cb3-5" tabindex="-1"></a>    <span class="st">"telemetry"</span>: <span class="va">True</span>,</span>
+<span id="cb3-6"><a aria-hidden="true" href="#cb3-6" tabindex="-1"></a>    <span class="st">"recovery_path"</span>: <span class="va">True</span>,</span>
+<span id="cb3-7"><a aria-hidden="true" href="#cb3-7" tabindex="-1"></a>}</span>
+<span id="cb3-8"><a aria-hidden="true" href="#cb3-8" tabindex="-1"></a></span>
+<span id="cb3-9"><a aria-hidden="true" href="#cb3-9" tabindex="-1"></a>missing <span class="op">=</span> [name <span class="cf">for</span> name, present <span class="kw">in</span> required_controls.items() <span class="cf">if</span> <span class="kw">not</span> present]</span>
+<span id="cb3-10"><a aria-hidden="true" href="#cb3-10" tabindex="-1"></a>readiness_score <span class="op">=</span> <span class="dv">100</span> <span class="op">*</span> (<span class="bu">len</span>(required_controls) <span class="op">-</span> <span class="bu">len</span>(missing)) <span class="op">/</span> <span class="bu">len</span>(required_controls)</span>
+<span id="cb3-11"><a aria-hidden="true" href="#cb3-11" tabindex="-1"></a><span class="cf">assert</span> <span class="kw">not</span> missing, <span class="ss">f"Missing controls: </span><span class="sc">{</span>missing<span class="sc">}</span><span class="ss">"</span></span>
+<span id="cb3-12"><a aria-hidden="true" href="#cb3-12" tabindex="-1"></a>{<span class="st">"lesson"</span>: <span class="st">'Experiment tracking'</span>, <span class="st">"readiness_score"</span>: readiness_score, <span class="st">"status"</span>: <span class="st">"ready for review"</span>}</span></code></pre></div><button class="code-copy-button" title="Copy to Clipboard"><i class="bi"></i></button></div>
 </details>
 </div>
 </section>
-<section id="common-mistakes-and-fixes" class="level2">
+<section class="level2" id="common-mistakes-and-fixes">
 <h2 class="anchored" data-anchor-id="common-mistakes-and-fixes">Common mistakes and fixes</h2>
 <ul>
 <li><strong>Starting with the tool.</strong> Restate the outcome and constraints before choosing syntax or a service.</li>
@@ -671,7 +651,7 @@ Full Stack AI → Data Science → Reproducible and responsible data science. Le
 <li><strong>No recovery owner.</strong> Document who responds and how to roll back, replay, or correct the result.</li>
 </ul>
 </section>
-<section id="practice-tasks" class="level2">
+<section class="level2" id="practice-tasks">
 <h2 class="anchored" data-anchor-id="practice-tasks">Practice tasks</h2>
 <ol type="1">
 <li><strong>Explain:</strong> describe experiment tracking to a new teammate without naming a vendor product.</li>
@@ -682,7 +662,7 @@ Full Stack AI → Data Science → Reproducible and responsible data science. Le
 <li><strong>Extend:</strong> connect this lesson to <strong>Documentation</strong> and identify the new contract between them.</li>
 </ol>
 </section>
-<section id="knowledge-check" class="level2">
+<section class="level2" id="knowledge-check">
 <h2 class="anchored" data-anchor-id="knowledge-check">Knowledge check</h2>
 <ol type="1">
 <li>Why should experiment tracking begin with an outcome rather than a tool choice?</li>
@@ -704,7 +684,7 @@ Full Stack AI → Data Science → Reproducible and responsible data science. Le
 </ol>
 </details>
 </section>
-<section id="recap-and-reference" class="level2">
+<section class="level2" id="recap-and-reference">
 <h2 class="anchored" data-anchor-id="recap-and-reference">Recap and reference</h2>
 <p>You can now place <strong>Experiment tracking</strong> inside <strong>Reproducible and responsible data science</strong>, define its contract, implement a small verifiable slice, and attach security, reliability, and operational evidence. The durable mental model is:</p>
 <blockquote class="blockquote">
@@ -712,13 +692,10 @@ Full Stack AI → Data Science → Reproducible and responsible data science. Le
 </blockquote>
 <p>Continue with <strong>Documentation</strong> or strengthen this notebook by replacing the sample contract with an artifact from your own portfolio.</p>
 <p>Official reference: <a href="https://pandas.pydata.org/docs/user_guide/">pandas user guide</a></p>
-<nav class="lesson-nav" aria-label="Lesson navigation">
+<nav aria-label="Lesson navigation" class="lesson-nav">
 <a class="lesson-nav-link" href="02-data-versioning.html"><span>← Previous</span><strong>Data Versioning</strong></a><a class="lesson-nav-home" href="../../data-science.html"><span>Course overview</span><strong>Data Science</strong></a><a class="lesson-nav-link lesson-nav-next" href="04-documentation.html"><span>Next →</span><strong>Documentation</strong></a>
 </nav>
-
-
 </section>
-
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
@@ -1122,21 +1099,17 @@ Full Stack AI → Data Science → Reproducible and responsible data science. Le
   </script>
 </div> <!-- /content -->
 <footer class="footer">
-  <div class="nav-footer">
-    <div class="nav-footer-left">
+<div class="nav-footer">
+<div class="nav-footer-left">
 <p>© 2026 Edukron Notes</p>
-</div>   
-    <div class="nav-footer-center">
-      &nbsp;
+</div>
+<div class="nav-footer-center">
+       
     </div>
-    <div class="nav-footer-right">
+<div class="nav-footer-right">
 <p>Notebook courses for AI, data engineering, and DevOps</p>
 </div>
-  </div>
+</div>
 </footer>
-
-
-
-
 <script src="../../../../site_libs/quarto-html/zenscroll-min.js"></script>
 </body></html>

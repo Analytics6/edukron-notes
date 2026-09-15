@@ -1,15 +1,12 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
-<meta charset="utf-8">
-<meta name="generator" content="quarto-1.10.18">
-
-<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-
-<meta name="author" content="Edukron Notes">
-<meta name="dcterms.date" content="2026-09-14">
-<meta name="description" content="Complete notebook syllabus for RAG in Full Stack AI.">
-
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta charset="utf-8"/>
+<meta content="quarto-1.10.18" name="generator"/>
+<meta content="width=device-width, initial-scale=1.0, user-scalable=yes" name="viewport"/>
+<meta content="Edukron Notes" name="author"/>
+<meta content="2026-09-14" name="dcterms.date"/>
+<meta content="Complete notebook syllabus for RAG in Full Stack AI." name="description"/>
 <title>RAG – Edukron Notes</title>
 <style>
 /* Default styles provided by pandoc.
@@ -30,25 +27,23 @@ ul.task-list li input[type="checkbox"] {
   vertical-align: middle;
 }
 </style>
-
-
 <script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
 <script src="../../site_libs/quarto-nav/headroom.min.js"></script>
 <script src="../../site_libs/clipboard/clipboard.min.js"></script>
 <script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
 <script src="../../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../../">
+<meta content="../../" name="quarto:offset"/>
 <script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="../../site_libs/quarto-html/popper.min.js"></script>
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet"/>
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" id="quarto-text-highlighting-styles" rel="stylesheet"/>
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-f0f4b58164ec92a07fcd2db94b0e5cbd.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet"/>
+<link append-hash="true" data-mode="light" href="../../site_libs/bootstrap/bootstrap-f0f4b58164ec92a07fcd2db94b0e5cbd.min.css" id="quarto-bootstrap" rel="stylesheet"/>
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -76,392 +71,421 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 <style>html{ scroll-behavior: smooth; }</style>
-
-
-<link rel="stylesheet" href="../../styles.css">
+<link href="../../styles.css" rel="stylesheet"/>
 </head>
-
 <body class="nav-fixed quarto-light">
-
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top">
-    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
-      <div class="navbar-container container-fluid">
-      <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="../../index.html">
-    <span class="navbar-title">Edukron Notes</span>
-    </a>
-  </div>
-            <div id="quarto-search" class="" title="Search"></div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
-  <span class="navbar-toggler-icon"></span>
-</button>
-          <div class="collapse navbar-collapse" id="navbarCollapse">
-            <ul class="navbar-nav navbar-nav-scroll me-auto">
-  <li class="nav-item">
-    <a class="nav-link" href="../../index.html"> 
-<span class="menu-text">Home</span></a>
-  </li>  
-  <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-full-stack-ai" role="link" data-bs-toggle="dropdown" aria-expanded="false">
-      <i class="bi bi-cpu" role="img">
-</i> 
- <span class="menu-text">Full Stack AI</span>
-    </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-full-stack-ai">    
-        <li>
-    <a class="dropdown-item" href="../../courses/full-stack-ai/index.html">
- <span class="dropdown-text">Program overview</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/full-stack-ai/python.html">
- <span class="dropdown-text">Python</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/full-stack-ai/sql.html">
- <span class="dropdown-text">SQL</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/full-stack-ai/data-science.html">
- <span class="dropdown-text">Data Science</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/full-stack-ai/machine-learning.html">
- <span class="dropdown-text">Machine Learning</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/full-stack-ai/artificial-intelligence.html">
- <span class="dropdown-text">Artificial Intelligence</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/full-stack-ai/deep-learning.html">
- <span class="dropdown-text">Deep Learning</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/full-stack-ai/generative-ai.html">
- <span class="dropdown-text">Generative AI</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/full-stack-ai/large-language-models.html">
- <span class="dropdown-text">Large Language Models (LLMs)</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/full-stack-ai/rag.html">
- <span class="dropdown-text">Retrieval Augmented Generation (RAG)</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/full-stack-ai/agentic-ai.html">
- <span class="dropdown-text">Agentic AI</span></a>
-  </li>  
-    </ul>
-  </li>
-  <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-azure-data-engineering" role="link" data-bs-toggle="dropdown" aria-expanded="false">
-      <i class="bi bi-database" role="img">
-</i> 
- <span class="menu-text">Azure Data Engineering</span>
-    </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-azure-data-engineering">    
-        <li>
-    <a class="dropdown-item" href="../../courses/azure-data-engineering/index.html">
- <span class="dropdown-text">Program overview</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/azure-data-engineering/python.html">
- <span class="dropdown-text">Python</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/azure-data-engineering/sql.html">
- <span class="dropdown-text">SQL</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/azure-data-engineering/fundamentals.html">
- <span class="dropdown-text">Data Engineering Fundamentals</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/azure-data-engineering/azure-data-factory.html">
- <span class="dropdown-text">Azure Data Factory (ADF)</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/azure-data-engineering/adls-gen2.html">
- <span class="dropdown-text">Azure Data Lake Storage Gen2</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/azure-data-engineering/azure-databricks.html">
- <span class="dropdown-text">Azure Databricks</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/azure-data-engineering/pyspark.html">
- <span class="dropdown-text">PySpark</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/azure-data-engineering/azure-synapse.html">
- <span class="dropdown-text">Azure Synapse Analytics</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/azure-data-engineering/microsoft-fabric.html">
- <span class="dropdown-text">Microsoft Fabric</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/azure-data-engineering/delta-lake.html">
- <span class="dropdown-text">Delta Lake</span></a>
-  </li>  
-    </ul>
-  </li>
-  <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-azure-devops" role="link" data-bs-toggle="dropdown" aria-expanded="false">
-      <i class="bi bi-infinity" role="img">
-</i> 
- <span class="menu-text">Azure DevOps</span>
-    </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-azure-devops">    
-        <li>
-    <a class="dropdown-item" href="../../courses/azure-devops/index.html">
- <span class="dropdown-text">Program overview</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/azure-devops/linux-shell-scripting.html">
- <span class="dropdown-text">Linux &amp; Shell Scripting</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/azure-devops/git-version-control.html">
- <span class="dropdown-text">Git &amp; Version Control</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/azure-devops/azure-repos.html">
- <span class="dropdown-text">Azure Repos</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/azure-devops/azure-pipelines.html">
- <span class="dropdown-text">Azure Pipelines (CI/CD)</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/azure-devops/yaml-pipelines.html">
- <span class="dropdown-text">YAML Pipeline Development</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/azure-devops/docker.html">
- <span class="dropdown-text">Docker &amp; Containerization</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/azure-devops/kubernetes-aks.html">
- <span class="dropdown-text">Kubernetes &amp; AKS</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/azure-devops/terraform.html">
- <span class="dropdown-text">Terraform Infrastructure as Code</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/azure-devops/azure-cloud-services.html">
- <span class="dropdown-text">Azure Cloud Services</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/azure-devops/devsecops-monitoring.html">
- <span class="dropdown-text">DevSecOps &amp; Monitoring</span></a>
-  </li>  
-    </ul>
-  </li>
-  <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-interview-questions" role="link" data-bs-toggle="dropdown" aria-expanded="false">
-      <i class="bi bi-question-circle" role="img">
-</i> 
- <span class="menu-text">Interview Questions</span>
-    </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-interview-questions">    
-        <li>
-    <a class="dropdown-item" href="../../interview-questions/index.html">
- <span class="dropdown-text">Section overview</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../interview-questions/full-stack-ai.html">
- <span class="dropdown-text">Full Stack AI</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../interview-questions/azure-data-engineering.html">
- <span class="dropdown-text">Azure Data Engineering</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../interview-questions/azure-devops.html">
- <span class="dropdown-text">Azure DevOps</span></a>
-  </li>  
-    </ul>
-  </li>
-  <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-project-flows" role="link" data-bs-toggle="dropdown" aria-expanded="false">
-      <i class="bi bi-kanban" role="img">
-</i> 
- <span class="menu-text">Project Flows</span>
-    </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-project-flows">    
-        <li>
-    <a class="dropdown-item" href="../../project-flows/index.html">
- <span class="dropdown-text">Section overview</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../project-flows/full-stack-ai.html">
- <span class="dropdown-text">Full Stack AI</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../project-flows/azure-data-engineering.html">
- <span class="dropdown-text">Azure Data Engineering</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../project-flows/azure-devops.html">
- <span class="dropdown-text">Azure DevOps</span></a>
-  </li>  
-    </ul>
-  </li>
-</ul>
-          </div> <!-- /navcollapse -->
-            <div class="quarto-navbar-tools">
+<header class="headroom fixed-top" id="quarto-header">
+<nav class="navbar navbar-expand-lg" data-bs-theme="dark">
+<div class="navbar-container container-fluid">
+<div class="navbar-brand-container mx-auto">
+<a class="navbar-brand" href="../../index.html">
+<span class="navbar-title">Edukron Notes</span>
+</a>
 </div>
-      </div> <!-- /container-fluid -->
-    </nav>
+<div class="" id="quarto-search" title="Search"></div>
+<button aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-bs-target="#navbarCollapse" data-bs-toggle="collapse" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }" role="menu" type="button">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" id="navbarCollapse">
+<ul class="navbar-nav navbar-nav-scroll me-auto">
+<li class="nav-item">
+<a class="nav-link" href="../../index.html">
+<span class="menu-text">Home</span></a>
+</li>
+<li class="nav-item dropdown">
+<a aria-expanded="false" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" id="nav-menu-full-stack-ai" role="link">
+<i class="bi bi-cpu" role="img">
+</i>
+<span class="menu-text">Full Stack AI</span>
+</a>
+<ul aria-labelledby="nav-menu-full-stack-ai" class="dropdown-menu">
+<li>
+<a class="dropdown-item" href="../../courses/full-stack-ai/index.html">
+<span class="dropdown-text">Program overview</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/full-stack-ai/python.html">
+<span class="dropdown-text">Python</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/full-stack-ai/sql.html">
+<span class="dropdown-text">SQL</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/full-stack-ai/data-science.html">
+<span class="dropdown-text">Data Science</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/full-stack-ai/machine-learning.html">
+<span class="dropdown-text">Machine Learning</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/full-stack-ai/artificial-intelligence.html">
+<span class="dropdown-text">Artificial Intelligence</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/full-stack-ai/deep-learning.html">
+<span class="dropdown-text">Deep Learning</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/full-stack-ai/generative-ai.html">
+<span class="dropdown-text">Generative AI</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/full-stack-ai/large-language-models.html">
+<span class="dropdown-text">Large Language Models (LLMs)</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/full-stack-ai/rag.html">
+<span class="dropdown-text">Retrieval Augmented Generation (RAG)</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/full-stack-ai/agentic-ai.html">
+<span class="dropdown-text">Agentic AI</span></a>
+</li>
+</ul>
+</li>
+<li class="nav-item dropdown">
+<a aria-expanded="false" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" id="nav-menu-azure-data-engineering" role="link">
+<i class="bi bi-database" role="img">
+</i>
+<span class="menu-text">Azure Data Engineering</span>
+</a>
+<ul aria-labelledby="nav-menu-azure-data-engineering" class="dropdown-menu">
+<li>
+<a class="dropdown-item" href="../../courses/azure-data-engineering/index.html">
+<span class="dropdown-text">Program overview</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/azure-data-engineering/python.html">
+<span class="dropdown-text">Python</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/azure-data-engineering/sql.html">
+<span class="dropdown-text">SQL</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/azure-data-engineering/fundamentals.html">
+<span class="dropdown-text">Data Engineering Fundamentals</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/azure-data-engineering/azure-data-factory.html">
+<span class="dropdown-text">Azure Data Factory (ADF)</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/azure-data-engineering/adls-gen2.html">
+<span class="dropdown-text">Azure Data Lake Storage Gen2</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/azure-data-engineering/azure-databricks.html">
+<span class="dropdown-text">Azure Databricks</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/azure-data-engineering/pyspark.html">
+<span class="dropdown-text">PySpark</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/azure-data-engineering/azure-synapse.html">
+<span class="dropdown-text">Azure Synapse Analytics</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/azure-data-engineering/microsoft-fabric.html">
+<span class="dropdown-text">Microsoft Fabric</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/azure-data-engineering/delta-lake.html">
+<span class="dropdown-text">Delta Lake</span></a>
+</li>
+</ul>
+</li>
+<li class="nav-item dropdown">
+<a aria-expanded="false" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" id="nav-menu-azure-devops" role="link">
+<i class="bi bi-infinity" role="img">
+</i>
+<span class="menu-text">Azure DevOps</span>
+</a>
+<ul aria-labelledby="nav-menu-azure-devops" class="dropdown-menu">
+<li>
+<a class="dropdown-item" href="../../courses/azure-devops/index.html">
+<span class="dropdown-text">Program overview</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/azure-devops/linux-shell-scripting.html">
+<span class="dropdown-text">Linux &amp; Shell Scripting</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/azure-devops/git-version-control.html">
+<span class="dropdown-text">Git &amp; Version Control</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/azure-devops/azure-repos.html">
+<span class="dropdown-text">Azure Repos</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/azure-devops/azure-pipelines.html">
+<span class="dropdown-text">Azure Pipelines (CI/CD)</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/azure-devops/yaml-pipelines.html">
+<span class="dropdown-text">YAML Pipeline Development</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/azure-devops/docker.html">
+<span class="dropdown-text">Docker &amp; Containerization</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/azure-devops/kubernetes-aks.html">
+<span class="dropdown-text">Kubernetes &amp; AKS</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/azure-devops/terraform.html">
+<span class="dropdown-text">Terraform Infrastructure as Code</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/azure-devops/azure-cloud-services.html">
+<span class="dropdown-text">Azure Cloud Services</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/azure-devops/devsecops-monitoring.html">
+<span class="dropdown-text">DevSecOps &amp; Monitoring</span></a>
+</li>
+</ul>
+</li>
+<li class="nav-item dropdown">
+<a aria-expanded="false" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" id="nav-menu-interview-questions" role="link">
+<i class="bi bi-question-circle" role="img">
+</i>
+<span class="menu-text">Interview Questions</span>
+</a>
+<ul aria-labelledby="nav-menu-interview-questions" class="dropdown-menu">
+<li>
+<a class="dropdown-item" href="../../interview-questions/index.html">
+<span class="dropdown-text">Section overview</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../interview-questions/full-stack-ai.html">
+<span class="dropdown-text">Full Stack AI</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../interview-questions/azure-data-engineering.html">
+<span class="dropdown-text">Azure Data Engineering</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../interview-questions/azure-devops.html">
+<span class="dropdown-text">Azure DevOps</span></a>
+</li>
+</ul>
+</li>
+<li class="nav-item dropdown">
+<a aria-expanded="false" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" id="nav-menu-project-flows" role="link">
+<i class="bi bi-kanban" role="img">
+</i>
+<span class="menu-text">Project Flows</span>
+</a>
+<ul aria-labelledby="nav-menu-project-flows" class="dropdown-menu">
+<li>
+<a class="dropdown-item" href="../../project-flows/index.html">
+<span class="dropdown-text">Section overview</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../project-flows/full-stack-ai.html">
+<span class="dropdown-text">Full Stack AI</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../project-flows/azure-data-engineering.html">
+<span class="dropdown-text">Azure Data Engineering</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../project-flows/azure-devops.html">
+<span class="dropdown-text">Azure DevOps</span></a>
+</li>
+</ul>
+</li>
+</ul>
+</div> <!-- /navcollapse -->
+<div class="quarto-navbar-tools">
+</div>
+</div> <!-- /container-fluid -->
+</nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<div class="quarto-container page-columns page-rows-contents page-layout-full page-navbar" id="quarto-content">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
-   
-  <ul>
-  <li><a href="#how-to-use-this-course" id="toc-how-to-use-this-course" class="nav-link active" data-scroll-target="#how-to-use-this-course">How to use this course</a></li>
-  <li><a href="#full-syllabus" id="toc-full-syllabus" class="nav-link" data-scroll-target="#full-syllabus">Full syllabus</a></li>
-  <li><a href="#completion-standard" id="toc-completion-standard" class="nav-link" data-scroll-target="#completion-standard">Completion standard</a></li>
-  </ul>
-</nav>
-    </div>
 <!-- main -->
-<main class="content" id="quarto-document-content">
-
-<header id="title-block-header" class="quarto-title-block default">
+<main class="content column-page" id="quarto-document-content">
+<header class="quarto-title-block default" id="title-block-header">
 <div class="quarto-title">
 <h1 class="title">RAG</h1>
 </div>
-
 <div>
-  <div class="description">
+<div class="description">
     Complete notebook syllabus for RAG in Full Stack AI.
   </div>
 </div>
-
-
 <div class="quarto-title-meta">
-
-    <div>
-    <div class="quarto-title-meta-heading">Author</div>
-    <div class="quarto-title-meta-contents">
-             <p>Edukron Notes </p>
-          </div>
-  </div>
-    
-    <div>
-    <div class="quarto-title-meta-heading">Published</div>
-    <div class="quarto-title-meta-contents">
-      <p class="date">September 14, 2026</p>
-    </div>
-  </div>
-  
-    
-  </div>
-  
-
-
+<div>
+<div class="quarto-title-meta-heading">Author</div>
+<div class="quarto-title-meta-contents">
+<p>Edukron Notes </p>
+</div>
+</div>
+<div>
+<div class="quarto-title-meta-heading">Published</div>
+<div class="quarto-title-meta-contents">
+<p class="date">September 14, 2026</p>
+</div>
+</div>
+</div>
 </header>
-
-
-<div class="overview-lead curriculum-summary">
-<div class="overview-icon">
-<i class="bi bi-journal-code" aria-hidden="true"></i>
+<div class="course-workspace notebook-chrome">
+<div class="notebook-toolbar">
+<span class="notebook-file"><i aria-hidden="true" class="bi bi-journal-code"></i><strong>rag.ipynb</strong></span>
+<span class="notebook-status"><i aria-hidden="true" class="bi bi-check-circle-fill"></i> Trusted</span>
+<span class="notebook-kernel"><i aria-hidden="true" class="bi bi-diagram-3"></i> Learning path</span>
 </div>
-<div>
+<div class="course-workspace-hero">
 <span class="overview-kicker">Full Stack AI</span>
-<h2 class="anchored">
-RAG
-</h2>
-<p>
-A complete notebook-first syllabus organized from foundations to applied delivery. Every lesson contains notes, a worked pattern, executable validation, a guided lab, solution blueprint, practice, and knowledge checks.
-</p>
+<h1>RAG</h1>
+<p>A complete notebook-first syllabus organized from foundations to applied delivery. Every lesson combines clear notes, a worked pattern, executable validation, a guided lab, a solution blueprint, practice, and knowledge checks.</p>
+<div class="course-tags"><span><i class="bi bi-signpost-split"></i> Foundation to advanced</span><span><i class="bi bi-code-square"></i> Hands-on practice</span><span><i class="bi bi-patch-check"></i> Review ready</span></div>
+<p class="course-start"><a class="btn btn-primary" href="rag/067-rag-foundations/01-why-retrieval-is-needed.html"><i class="bi bi-play-fill"></i> Start the first notebook</a></p>
 </div>
 </div>
-<div class="course-stat-grid">
-<div>
-<strong>6</strong><span>Syllabus topics</span>
-</div>
-<div>
-<strong>60</strong><span>Notebook lessons</span>
-</div>
-<div>
-<strong>Practice</strong><span>Labs and solutions</span>
-</div>
-</div>
-<p class="course-start">
-<a class="btn btn-primary" href="rag/067-rag-foundations/01-why-retrieval-is-needed.html">Start the first notebook <i class="bi bi-arrow-right"></i></a>
-</p>
-<section id="how-to-use-this-course" class="level2">
+<section class="level2" id="how-to-use-this-course">
 <h2 class="anchored" data-anchor-id="how-to-use-this-course">How to use this course</h2>
 <p>Work through lessons in order for a complete pathway, or open a topic for focused reference. Type or adapt the examples, complete the guided lab before reading its blueprint, and preserve your test evidence as a portfolio artifact. Cloud and infrastructure examples are safe, copy-ready teaching patterns; execute them in your own sandbox only after substituting approved identities, names, and policies.</p>
 </section>
-<section id="full-syllabus" class="level2">
-<h2 class="anchored" data-anchor-id="full-syllabus">Full syllabus</h2>
+<div class="syllabus-heading" id="notebook-syllabus">
+<div><span class="overview-kicker">Course contents</span><h2>Notebook syllabus</h2><p>Open a topic to browse its lessons, or search the complete course by concept.</p></div>
+<label class="syllabus-search" for="full-stack-ai-rag-catalog-search"><i aria-hidden="true" class="bi bi-search"></i><input aria-label="Search the RAG syllabus" autocomplete="off" id="full-stack-ai-rag-catalog-search" placeholder="Find a topic or lesson" type="search"/></label>
+</div>
+<div class="curriculum-catalog" id="full-stack-ai-rag-catalog">
 <details class="curriculum-topic" open="">
-<summary>
-<span class="topic-number">Topic 067</span><strong>RAG foundations</strong><span>10 notebooks</span>
-</summary>
+<summary><span class="topic-number">Topic 067</span><strong>RAG foundations</strong></summary>
 <div class="topic-lessons">
-<p><a class="topic-lesson-link" href="rag/067-rag-foundations/01-why-retrieval-is-needed.html"><span>067.01</span><strong>Why retrieval is needed</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="rag/067-rag-foundations/02-rag-architecture.html"><span>067.02</span><strong>RAG architecture</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="rag/067-rag-foundations/03-knowledge-sources.html"><span>067.03</span><strong>Knowledge sources</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="rag/067-rag-foundations/04-indexing-lifecycle.html"><span>067.04</span><strong>Indexing lifecycle</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="rag/067-rag-foundations/05-query-lifecycle.html"><span>067.05</span><strong>Query lifecycle</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="rag/067-rag-foundations/06-retrieval-versus-fine-tuning.html"><span>067.06</span><strong>Retrieval versus fine-tuning</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="rag/067-rag-foundations/07-grounded-generation.html"><span>067.07</span><strong>Grounded generation</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="rag/067-rag-foundations/08-citations.html"><span>067.08</span><strong>Citations</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="rag/067-rag-foundations/09-rag-failure-modes.html"><span>067.09</span><strong>RAG failure modes</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="rag/067-rag-foundations/10-first-rag-system.html"><span>067.10</span><strong>First RAG system</strong><i class="bi bi-arrow-right"></i></a></p>
+<a class="topic-lesson-link" href="rag/067-rag-foundations/01-why-retrieval-is-needed.html"><span>067.01</span><strong>Why retrieval is needed</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="rag/067-rag-foundations/02-rag-architecture.html"><span>067.02</span><strong>RAG architecture</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="rag/067-rag-foundations/03-knowledge-sources.html"><span>067.03</span><strong>Knowledge sources</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="rag/067-rag-foundations/04-indexing-lifecycle.html"><span>067.04</span><strong>Indexing lifecycle</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="rag/067-rag-foundations/05-query-lifecycle.html"><span>067.05</span><strong>Query lifecycle</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="rag/067-rag-foundations/06-retrieval-versus-fine-tuning.html"><span>067.06</span><strong>Retrieval versus fine-tuning</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="rag/067-rag-foundations/07-grounded-generation.html"><span>067.07</span><strong>Grounded generation</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="rag/067-rag-foundations/08-citations.html"><span>067.08</span><strong>Citations</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="rag/067-rag-foundations/09-rag-failure-modes.html"><span>067.09</span><strong>RAG failure modes</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="rag/067-rag-foundations/10-first-rag-system.html"><span>067.10</span><strong>First RAG system</strong><i class="bi bi-arrow-right"></i></a>
 </div>
 </details>
 <details class="curriculum-topic">
-<summary>
-<span class="topic-number">Topic 068</span><strong>Document ingestion and chunking</strong><span>10 notebooks</span>
-</summary>
+<summary><span class="topic-number">Topic 068</span><strong>Document ingestion and chunking</strong></summary>
 <div class="topic-lessons">
-<p><a class="topic-lesson-link" href="rag/068-document-ingestion-and-chunking/01-document-loaders.html"><span>068.01</span><strong>Document loaders</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="rag/068-document-ingestion-and-chunking/02-pdf-extraction.html"><span>068.02</span><strong>PDF extraction</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="rag/068-document-ingestion-and-chunking/03-html-extraction.html"><span>068.03</span><strong>HTML extraction</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="rag/068-document-ingestion-and-chunking/04-metadata-design.html"><span>068.04</span><strong>Metadata design</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="rag/068-document-ingestion-and-chunking/05-text-cleaning.html"><span>068.05</span><strong>Text cleaning</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="rag/068-document-ingestion-and-chunking/06-fixed-size-chunking.html"><span>068.06</span><strong>Fixed-size chunking</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="rag/068-document-ingestion-and-chunking/07-semantic-chunking.html"><span>068.07</span><strong>Semantic chunking</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="rag/068-document-ingestion-and-chunking/08-parent-child-chunking.html"><span>068.08</span><strong>Parent-child chunking</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="rag/068-document-ingestion-and-chunking/09-ingestion-validation.html"><span>068.09</span><strong>Ingestion validation</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="rag/068-document-ingestion-and-chunking/10-ingestion-pipeline-project.html"><span>068.10</span><strong>Ingestion pipeline project</strong><i class="bi bi-arrow-right"></i></a></p>
+<a class="topic-lesson-link" href="rag/068-document-ingestion-and-chunking/01-document-loaders.html"><span>068.01</span><strong>Document loaders</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="rag/068-document-ingestion-and-chunking/02-pdf-extraction.html"><span>068.02</span><strong>PDF extraction</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="rag/068-document-ingestion-and-chunking/03-html-extraction.html"><span>068.03</span><strong>HTML extraction</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="rag/068-document-ingestion-and-chunking/04-metadata-design.html"><span>068.04</span><strong>Metadata design</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="rag/068-document-ingestion-and-chunking/05-text-cleaning.html"><span>068.05</span><strong>Text cleaning</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="rag/068-document-ingestion-and-chunking/06-fixed-size-chunking.html"><span>068.06</span><strong>Fixed-size chunking</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="rag/068-document-ingestion-and-chunking/07-semantic-chunking.html"><span>068.07</span><strong>Semantic chunking</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="rag/068-document-ingestion-and-chunking/08-parent-child-chunking.html"><span>068.08</span><strong>Parent-child chunking</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="rag/068-document-ingestion-and-chunking/09-ingestion-validation.html"><span>068.09</span><strong>Ingestion validation</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="rag/068-document-ingestion-and-chunking/10-ingestion-pipeline-project.html"><span>068.10</span><strong>Ingestion pipeline project</strong><i class="bi bi-arrow-right"></i></a>
 </div>
 </details>
 <details class="curriculum-topic">
-<summary>
-<span class="topic-number">Topic 069</span><strong>Embeddings and vector stores</strong><span>10 notebooks</span>
-</summary>
+<summary><span class="topic-number">Topic 069</span><strong>Embeddings and vector stores</strong></summary>
 <div class="topic-lessons">
-<p><a class="topic-lesson-link" href="rag/069-embeddings-and-vector-stores/01-embedding-models.html"><span>069.01</span><strong>Embedding models</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="rag/069-embeddings-and-vector-stores/02-dense-vectors.html"><span>069.02</span><strong>Dense vectors</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="rag/069-embeddings-and-vector-stores/03-similarity-search.html"><span>069.03</span><strong>Similarity search</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="rag/069-embeddings-and-vector-stores/04-vector-indexing.html"><span>069.04</span><strong>Vector indexing</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="rag/069-embeddings-and-vector-stores/05-vector-databases.html"><span>069.05</span><strong>Vector databases</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="rag/069-embeddings-and-vector-stores/06-metadata-filtering.html"><span>069.06</span><strong>Metadata filtering</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="rag/069-embeddings-and-vector-stores/07-namespace-design.html"><span>069.07</span><strong>Namespace design</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="rag/069-embeddings-and-vector-stores/08-index-updates.html"><span>069.08</span><strong>Index updates</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="rag/069-embeddings-and-vector-stores/09-embedding-evaluation.html"><span>069.09</span><strong>Embedding evaluation</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="rag/069-embeddings-and-vector-stores/10-vector-store-project.html"><span>069.10</span><strong>Vector-store project</strong><i class="bi bi-arrow-right"></i></a></p>
+<a class="topic-lesson-link" href="rag/069-embeddings-and-vector-stores/01-embedding-models.html"><span>069.01</span><strong>Embedding models</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="rag/069-embeddings-and-vector-stores/02-dense-vectors.html"><span>069.02</span><strong>Dense vectors</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="rag/069-embeddings-and-vector-stores/03-similarity-search.html"><span>069.03</span><strong>Similarity search</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="rag/069-embeddings-and-vector-stores/04-vector-indexing.html"><span>069.04</span><strong>Vector indexing</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="rag/069-embeddings-and-vector-stores/05-vector-databases.html"><span>069.05</span><strong>Vector databases</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="rag/069-embeddings-and-vector-stores/06-metadata-filtering.html"><span>069.06</span><strong>Metadata filtering</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="rag/069-embeddings-and-vector-stores/07-namespace-design.html"><span>069.07</span><strong>Namespace design</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="rag/069-embeddings-and-vector-stores/08-index-updates.html"><span>069.08</span><strong>Index updates</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="rag/069-embeddings-and-vector-stores/09-embedding-evaluation.html"><span>069.09</span><strong>Embedding evaluation</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="rag/069-embeddings-and-vector-stores/10-vector-store-project.html"><span>069.10</span><strong>Vector-store project</strong><i class="bi bi-arrow-right"></i></a>
 </div>
 </details>
 <details class="curriculum-topic">
-<summary>
-<span class="topic-number">Topic 070</span><strong>Retrieval and reranking</strong><span>10 notebooks</span>
-</summary>
+<summary><span class="topic-number">Topic 070</span><strong>Retrieval and reranking</strong></summary>
 <div class="topic-lessons">
-<p><a class="topic-lesson-link" href="rag/070-retrieval-and-reranking/01-dense-retrieval.html"><span>070.01</span><strong>Dense retrieval</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="rag/070-retrieval-and-reranking/02-sparse-retrieval.html"><span>070.02</span><strong>Sparse retrieval</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="rag/070-retrieval-and-reranking/03-bm25.html"><span>070.03</span><strong>BM25</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="rag/070-retrieval-and-reranking/04-hybrid-search.html"><span>070.04</span><strong>Hybrid search</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="rag/070-retrieval-and-reranking/05-query-rewriting.html"><span>070.05</span><strong>Query rewriting</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="rag/070-retrieval-and-reranking/06-multi-query-retrieval.html"><span>070.06</span><strong>Multi-query retrieval</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="rag/070-retrieval-and-reranking/07-reranking.html"><span>070.07</span><strong>Reranking</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="rag/070-retrieval-and-reranking/08-context-compression.html"><span>070.08</span><strong>Context compression</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="rag/070-retrieval-and-reranking/09-retrieval-metrics.html"><span>070.09</span><strong>Retrieval metrics</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="rag/070-retrieval-and-reranking/10-retrieval-benchmark.html"><span>070.10</span><strong>Retrieval benchmark</strong><i class="bi bi-arrow-right"></i></a></p>
+<a class="topic-lesson-link" href="rag/070-retrieval-and-reranking/01-dense-retrieval.html"><span>070.01</span><strong>Dense retrieval</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="rag/070-retrieval-and-reranking/02-sparse-retrieval.html"><span>070.02</span><strong>Sparse retrieval</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="rag/070-retrieval-and-reranking/03-bm25.html"><span>070.03</span><strong>BM25</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="rag/070-retrieval-and-reranking/04-hybrid-search.html"><span>070.04</span><strong>Hybrid search</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="rag/070-retrieval-and-reranking/05-query-rewriting.html"><span>070.05</span><strong>Query rewriting</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="rag/070-retrieval-and-reranking/06-multi-query-retrieval.html"><span>070.06</span><strong>Multi-query retrieval</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="rag/070-retrieval-and-reranking/07-reranking.html"><span>070.07</span><strong>Reranking</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="rag/070-retrieval-and-reranking/08-context-compression.html"><span>070.08</span><strong>Context compression</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="rag/070-retrieval-and-reranking/09-retrieval-metrics.html"><span>070.09</span><strong>Retrieval metrics</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="rag/070-retrieval-and-reranking/10-retrieval-benchmark.html"><span>070.10</span><strong>Retrieval benchmark</strong><i class="bi bi-arrow-right"></i></a>
 </div>
 </details>
 <details class="curriculum-topic">
-<summary>
-<span class="topic-number">Topic 071</span><strong>RAG generation and evaluation</strong><span>10 notebooks</span>
-</summary>
+<summary><span class="topic-number">Topic 071</span><strong>RAG generation and evaluation</strong></summary>
 <div class="topic-lessons">
-<p><a class="topic-lesson-link" href="rag/071-rag-generation-and-evaluation/01-context-assembly.html"><span>071.01</span><strong>Context assembly</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="rag/071-rag-generation-and-evaluation/02-grounding-prompts.html"><span>071.02</span><strong>Grounding prompts</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="rag/071-rag-generation-and-evaluation/03-citation-generation.html"><span>071.03</span><strong>Citation generation</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="rag/071-rag-generation-and-evaluation/04-abstention.html"><span>071.04</span><strong>Abstention</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="rag/071-rag-generation-and-evaluation/05-answer-relevance.html"><span>071.05</span><strong>Answer relevance</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="rag/071-rag-generation-and-evaluation/06-context-relevance.html"><span>071.06</span><strong>Context relevance</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="rag/071-rag-generation-and-evaluation/07-faithfulness.html"><span>071.07</span><strong>Faithfulness</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="rag/071-rag-generation-and-evaluation/08-end-to-end-evaluation.html"><span>071.08</span><strong>End-to-end evaluation</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="rag/071-rag-generation-and-evaluation/09-error-analysis.html"><span>071.09</span><strong>Error analysis</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="rag/071-rag-generation-and-evaluation/10-rag-evaluation-project.html"><span>071.10</span><strong>RAG evaluation project</strong><i class="bi bi-arrow-right"></i></a></p>
+<a class="topic-lesson-link" href="rag/071-rag-generation-and-evaluation/01-context-assembly.html"><span>071.01</span><strong>Context assembly</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="rag/071-rag-generation-and-evaluation/02-grounding-prompts.html"><span>071.02</span><strong>Grounding prompts</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="rag/071-rag-generation-and-evaluation/03-citation-generation.html"><span>071.03</span><strong>Citation generation</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="rag/071-rag-generation-and-evaluation/04-abstention.html"><span>071.04</span><strong>Abstention</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="rag/071-rag-generation-and-evaluation/05-answer-relevance.html"><span>071.05</span><strong>Answer relevance</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="rag/071-rag-generation-and-evaluation/06-context-relevance.html"><span>071.06</span><strong>Context relevance</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="rag/071-rag-generation-and-evaluation/07-faithfulness.html"><span>071.07</span><strong>Faithfulness</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="rag/071-rag-generation-and-evaluation/08-end-to-end-evaluation.html"><span>071.08</span><strong>End-to-end evaluation</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="rag/071-rag-generation-and-evaluation/09-error-analysis.html"><span>071.09</span><strong>Error analysis</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="rag/071-rag-generation-and-evaluation/10-rag-evaluation-project.html"><span>071.10</span><strong>RAG evaluation project</strong><i class="bi bi-arrow-right"></i></a>
 </div>
 </details>
 <details class="curriculum-topic">
-<summary>
-<span class="topic-number">Topic 072</span><strong>Advanced production RAG</strong><span>10 notebooks</span>
-</summary>
+<summary><span class="topic-number">Topic 072</span><strong>Advanced production RAG</strong></summary>
 <div class="topic-lessons">
-<p><a class="topic-lesson-link" href="rag/072-advanced-production-rag/01-conversational-rag.html"><span>072.01</span><strong>Conversational RAG</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="rag/072-advanced-production-rag/02-graph-rag.html"><span>072.02</span><strong>Graph RAG</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="rag/072-advanced-production-rag/03-multimodal-rag.html"><span>072.03</span><strong>Multimodal RAG</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="rag/072-advanced-production-rag/04-agentic-retrieval.html"><span>072.04</span><strong>Agentic retrieval</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="rag/072-advanced-production-rag/05-access-controlled-retrieval.html"><span>072.05</span><strong>Access-controlled retrieval</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="rag/072-advanced-production-rag/06-caching.html"><span>072.06</span><strong>Caching</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="rag/072-advanced-production-rag/07-observability.html"><span>072.07</span><strong>Observability</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="rag/072-advanced-production-rag/08-scaling.html"><span>072.08</span><strong>Scaling</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="rag/072-advanced-production-rag/09-security.html"><span>072.09</span><strong>Security</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="rag/072-advanced-production-rag/10-production-rag-capstone.html"><span>072.10</span><strong>Production-RAG capstone</strong><i class="bi bi-arrow-right"></i></a></p>
+<a class="topic-lesson-link" href="rag/072-advanced-production-rag/01-conversational-rag.html"><span>072.01</span><strong>Conversational RAG</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="rag/072-advanced-production-rag/02-graph-rag.html"><span>072.02</span><strong>Graph RAG</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="rag/072-advanced-production-rag/03-multimodal-rag.html"><span>072.03</span><strong>Multimodal RAG</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="rag/072-advanced-production-rag/04-agentic-retrieval.html"><span>072.04</span><strong>Agentic retrieval</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="rag/072-advanced-production-rag/05-access-controlled-retrieval.html"><span>072.05</span><strong>Access-controlled retrieval</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="rag/072-advanced-production-rag/06-caching.html"><span>072.06</span><strong>Caching</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="rag/072-advanced-production-rag/07-observability.html"><span>072.07</span><strong>Observability</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="rag/072-advanced-production-rag/08-scaling.html"><span>072.08</span><strong>Scaling</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="rag/072-advanced-production-rag/09-security.html"><span>072.09</span><strong>Security</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="rag/072-advanced-production-rag/10-production-rag-capstone.html"><span>072.10</span><strong>Production-RAG capstone</strong><i class="bi bi-arrow-right"></i></a>
 </div>
 </details>
-</section>
-<section id="completion-standard" class="level2">
+</div>
+<p class="syllabus-empty" hidden="" id="full-stack-ai-rag-catalog-empty"><i class="bi bi-search"></i> No matching lessons were found.</p>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const catalog = document.getElementById("full-stack-ai-rag-catalog");
+  const search = document.getElementById("full-stack-ai-rag-catalog-search");
+  const empty = document.getElementById("full-stack-ai-rag-catalog-empty");
+  if (!catalog || !search || !empty) return;
+
+  search.addEventListener("input", () => {
+    const query = search.value.trim().toLowerCase();
+    let visibleTopics = 0;
+    catalog.querySelectorAll(".curriculum-topic").forEach((topic) => {
+      const summary = topic.querySelector("summary");
+      const topicMatches = !query || summary.textContent.toLowerCase().includes(query);
+      let visibleLessons = 0;
+      topic.querySelectorAll(".topic-lesson-link").forEach((lesson) => {
+        const matches = topicMatches || lesson.textContent.toLowerCase().includes(query);
+        lesson.hidden = !matches;
+        if (matches) visibleLessons += 1;
+      });
+      const showTopic = topicMatches || visibleLessons > 0;
+      topic.hidden = !showTopic;
+      if (showTopic) visibleTopics += 1;
+      if (query && showTopic) topic.open = true;
+    });
+    empty.hidden = visibleTopics > 0;
+  });
+});
+</script>
+<section class="level2" id="completion-standard">
 <h2 class="anchored" data-anchor-id="completion-standard">Completion standard</h2>
 <p>You have completed <strong>RAG</strong> when you can explain each topic, reproduce its core workflow, pass the notebook checks, defend the main tradeoffs, and combine the lessons into one reviewable portfolio project. Use the practice tasks as evidence rather than treating page reading alone as completion.</p>
-
-
 </section>
-
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
@@ -865,21 +889,17 @@ A complete notebook-first syllabus organized from foundations to applied deliver
   </script>
 </div> <!-- /content -->
 <footer class="footer">
-  <div class="nav-footer">
-    <div class="nav-footer-left">
+<div class="nav-footer">
+<div class="nav-footer-left">
 <p>© 2026 Edukron Notes</p>
-</div>   
-    <div class="nav-footer-center">
-      &nbsp;
+</div>
+<div class="nav-footer-center">
+       
     </div>
-    <div class="nav-footer-right">
+<div class="nav-footer-right">
 <p>Notebook courses for AI, data engineering, and DevOps</p>
 </div>
-  </div>
+</div>
 </footer>
-
-
-
-
 <script src="../../site_libs/quarto-html/zenscroll-min.js"></script>
 </body></html>

@@ -1,15 +1,12 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
-<meta charset="utf-8">
-<meta name="generator" content="quarto-1.10.18">
-
-<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-
-<meta name="author" content="Edukron Notes">
-<meta name="dcterms.date" content="2026-09-14">
-<meta name="description" content="Complete notebook syllabus for Large Language Models in Full Stack AI.">
-
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta charset="utf-8"/>
+<meta content="quarto-1.10.18" name="generator"/>
+<meta content="width=device-width, initial-scale=1.0, user-scalable=yes" name="viewport"/>
+<meta content="Edukron Notes" name="author"/>
+<meta content="2026-09-14" name="dcterms.date"/>
+<meta content="Complete notebook syllabus for Large Language Models in Full Stack AI." name="description"/>
 <title>Large Language Models – Edukron Notes</title>
 <style>
 /* Default styles provided by pandoc.
@@ -30,25 +27,23 @@ ul.task-list li input[type="checkbox"] {
   vertical-align: middle;
 }
 </style>
-
-
 <script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
 <script src="../../site_libs/quarto-nav/headroom.min.js"></script>
 <script src="../../site_libs/clipboard/clipboard.min.js"></script>
 <script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
 <script src="../../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../../">
+<meta content="../../" name="quarto:offset"/>
 <script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="../../site_libs/quarto-html/popper.min.js"></script>
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet"/>
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" id="quarto-text-highlighting-styles" rel="stylesheet"/>
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-f0f4b58164ec92a07fcd2db94b0e5cbd.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet"/>
+<link append-hash="true" data-mode="light" href="../../site_libs/bootstrap/bootstrap-f0f4b58164ec92a07fcd2db94b0e5cbd.min.css" id="quarto-bootstrap" rel="stylesheet"/>
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -76,408 +71,451 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 <style>html{ scroll-behavior: smooth; }</style>
-
-
-<link rel="stylesheet" href="../../styles.css">
+<link href="../../styles.css" rel="stylesheet"/>
 </head>
-
 <body class="nav-fixed quarto-light">
-
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top">
-    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
-      <div class="navbar-container container-fluid">
-      <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="../../index.html">
-    <span class="navbar-title">Edukron Notes</span>
-    </a>
-  </div>
-            <div id="quarto-search" class="" title="Search"></div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
-  <span class="navbar-toggler-icon"></span>
-</button>
-          <div class="collapse navbar-collapse" id="navbarCollapse">
-            <ul class="navbar-nav navbar-nav-scroll me-auto">
-  <li class="nav-item">
-    <a class="nav-link" href="../../index.html"> 
-<span class="menu-text">Home</span></a>
-  </li>  
-  <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-full-stack-ai" role="link" data-bs-toggle="dropdown" aria-expanded="false">
-      <i class="bi bi-cpu" role="img">
-</i> 
- <span class="menu-text">Full Stack AI</span>
-    </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-full-stack-ai">    
-        <li>
-    <a class="dropdown-item" href="../../courses/full-stack-ai/index.html">
- <span class="dropdown-text">Program overview</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/full-stack-ai/python.html">
- <span class="dropdown-text">Python</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/full-stack-ai/sql.html">
- <span class="dropdown-text">SQL</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/full-stack-ai/data-science.html">
- <span class="dropdown-text">Data Science</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/full-stack-ai/machine-learning.html">
- <span class="dropdown-text">Machine Learning</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/full-stack-ai/artificial-intelligence.html">
- <span class="dropdown-text">Artificial Intelligence</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/full-stack-ai/deep-learning.html">
- <span class="dropdown-text">Deep Learning</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/full-stack-ai/generative-ai.html">
- <span class="dropdown-text">Generative AI</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/full-stack-ai/large-language-models.html">
- <span class="dropdown-text">Large Language Models (LLMs)</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/full-stack-ai/rag.html">
- <span class="dropdown-text">Retrieval Augmented Generation (RAG)</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/full-stack-ai/agentic-ai.html">
- <span class="dropdown-text">Agentic AI</span></a>
-  </li>  
-    </ul>
-  </li>
-  <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-azure-data-engineering" role="link" data-bs-toggle="dropdown" aria-expanded="false">
-      <i class="bi bi-database" role="img">
-</i> 
- <span class="menu-text">Azure Data Engineering</span>
-    </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-azure-data-engineering">    
-        <li>
-    <a class="dropdown-item" href="../../courses/azure-data-engineering/index.html">
- <span class="dropdown-text">Program overview</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/azure-data-engineering/python.html">
- <span class="dropdown-text">Python</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/azure-data-engineering/sql.html">
- <span class="dropdown-text">SQL</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/azure-data-engineering/fundamentals.html">
- <span class="dropdown-text">Data Engineering Fundamentals</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/azure-data-engineering/azure-data-factory.html">
- <span class="dropdown-text">Azure Data Factory (ADF)</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/azure-data-engineering/adls-gen2.html">
- <span class="dropdown-text">Azure Data Lake Storage Gen2</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/azure-data-engineering/azure-databricks.html">
- <span class="dropdown-text">Azure Databricks</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/azure-data-engineering/pyspark.html">
- <span class="dropdown-text">PySpark</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/azure-data-engineering/azure-synapse.html">
- <span class="dropdown-text">Azure Synapse Analytics</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/azure-data-engineering/microsoft-fabric.html">
- <span class="dropdown-text">Microsoft Fabric</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/azure-data-engineering/delta-lake.html">
- <span class="dropdown-text">Delta Lake</span></a>
-  </li>  
-    </ul>
-  </li>
-  <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-azure-devops" role="link" data-bs-toggle="dropdown" aria-expanded="false">
-      <i class="bi bi-infinity" role="img">
-</i> 
- <span class="menu-text">Azure DevOps</span>
-    </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-azure-devops">    
-        <li>
-    <a class="dropdown-item" href="../../courses/azure-devops/index.html">
- <span class="dropdown-text">Program overview</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/azure-devops/linux-shell-scripting.html">
- <span class="dropdown-text">Linux &amp; Shell Scripting</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/azure-devops/git-version-control.html">
- <span class="dropdown-text">Git &amp; Version Control</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/azure-devops/azure-repos.html">
- <span class="dropdown-text">Azure Repos</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/azure-devops/azure-pipelines.html">
- <span class="dropdown-text">Azure Pipelines (CI/CD)</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/azure-devops/yaml-pipelines.html">
- <span class="dropdown-text">YAML Pipeline Development</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/azure-devops/docker.html">
- <span class="dropdown-text">Docker &amp; Containerization</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/azure-devops/kubernetes-aks.html">
- <span class="dropdown-text">Kubernetes &amp; AKS</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/azure-devops/terraform.html">
- <span class="dropdown-text">Terraform Infrastructure as Code</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/azure-devops/azure-cloud-services.html">
- <span class="dropdown-text">Azure Cloud Services</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/azure-devops/devsecops-monitoring.html">
- <span class="dropdown-text">DevSecOps &amp; Monitoring</span></a>
-  </li>  
-    </ul>
-  </li>
-  <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-interview-questions" role="link" data-bs-toggle="dropdown" aria-expanded="false">
-      <i class="bi bi-question-circle" role="img">
-</i> 
- <span class="menu-text">Interview Questions</span>
-    </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-interview-questions">    
-        <li>
-    <a class="dropdown-item" href="../../interview-questions/index.html">
- <span class="dropdown-text">Section overview</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../interview-questions/full-stack-ai.html">
- <span class="dropdown-text">Full Stack AI</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../interview-questions/azure-data-engineering.html">
- <span class="dropdown-text">Azure Data Engineering</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../interview-questions/azure-devops.html">
- <span class="dropdown-text">Azure DevOps</span></a>
-  </li>  
-    </ul>
-  </li>
-  <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-project-flows" role="link" data-bs-toggle="dropdown" aria-expanded="false">
-      <i class="bi bi-kanban" role="img">
-</i> 
- <span class="menu-text">Project Flows</span>
-    </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-project-flows">    
-        <li>
-    <a class="dropdown-item" href="../../project-flows/index.html">
- <span class="dropdown-text">Section overview</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../project-flows/full-stack-ai.html">
- <span class="dropdown-text">Full Stack AI</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../project-flows/azure-data-engineering.html">
- <span class="dropdown-text">Azure Data Engineering</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../project-flows/azure-devops.html">
- <span class="dropdown-text">Azure DevOps</span></a>
-  </li>  
-    </ul>
-  </li>
-</ul>
-          </div> <!-- /navcollapse -->
-            <div class="quarto-navbar-tools">
+<header class="headroom fixed-top" id="quarto-header">
+<nav class="navbar navbar-expand-lg" data-bs-theme="dark">
+<div class="navbar-container container-fluid">
+<div class="navbar-brand-container mx-auto">
+<a class="navbar-brand" href="../../index.html">
+<span class="navbar-title">Edukron Notes</span>
+</a>
 </div>
-      </div> <!-- /container-fluid -->
-    </nav>
+<div class="" id="quarto-search" title="Search"></div>
+<button aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-bs-target="#navbarCollapse" data-bs-toggle="collapse" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }" role="menu" type="button">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" id="navbarCollapse">
+<ul class="navbar-nav navbar-nav-scroll me-auto">
+<li class="nav-item">
+<a class="nav-link" href="../../index.html">
+<span class="menu-text">Home</span></a>
+</li>
+<li class="nav-item dropdown">
+<a aria-expanded="false" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" id="nav-menu-full-stack-ai" role="link">
+<i class="bi bi-cpu" role="img">
+</i>
+<span class="menu-text">Full Stack AI</span>
+</a>
+<ul aria-labelledby="nav-menu-full-stack-ai" class="dropdown-menu">
+<li>
+<a class="dropdown-item" href="../../courses/full-stack-ai/index.html">
+<span class="dropdown-text">Program overview</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/full-stack-ai/python.html">
+<span class="dropdown-text">Python</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/full-stack-ai/sql.html">
+<span class="dropdown-text">SQL</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/full-stack-ai/data-science.html">
+<span class="dropdown-text">Data Science</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/full-stack-ai/machine-learning.html">
+<span class="dropdown-text">Machine Learning</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/full-stack-ai/artificial-intelligence.html">
+<span class="dropdown-text">Artificial Intelligence</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/full-stack-ai/deep-learning.html">
+<span class="dropdown-text">Deep Learning</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/full-stack-ai/generative-ai.html">
+<span class="dropdown-text">Generative AI</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/full-stack-ai/large-language-models.html">
+<span class="dropdown-text">Large Language Models (LLMs)</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/full-stack-ai/rag.html">
+<span class="dropdown-text">Retrieval Augmented Generation (RAG)</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/full-stack-ai/agentic-ai.html">
+<span class="dropdown-text">Agentic AI</span></a>
+</li>
+</ul>
+</li>
+<li class="nav-item dropdown">
+<a aria-expanded="false" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" id="nav-menu-azure-data-engineering" role="link">
+<i class="bi bi-database" role="img">
+</i>
+<span class="menu-text">Azure Data Engineering</span>
+</a>
+<ul aria-labelledby="nav-menu-azure-data-engineering" class="dropdown-menu">
+<li>
+<a class="dropdown-item" href="../../courses/azure-data-engineering/index.html">
+<span class="dropdown-text">Program overview</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/azure-data-engineering/python.html">
+<span class="dropdown-text">Python</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/azure-data-engineering/sql.html">
+<span class="dropdown-text">SQL</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/azure-data-engineering/fundamentals.html">
+<span class="dropdown-text">Data Engineering Fundamentals</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/azure-data-engineering/azure-data-factory.html">
+<span class="dropdown-text">Azure Data Factory (ADF)</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/azure-data-engineering/adls-gen2.html">
+<span class="dropdown-text">Azure Data Lake Storage Gen2</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/azure-data-engineering/azure-databricks.html">
+<span class="dropdown-text">Azure Databricks</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/azure-data-engineering/pyspark.html">
+<span class="dropdown-text">PySpark</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/azure-data-engineering/azure-synapse.html">
+<span class="dropdown-text">Azure Synapse Analytics</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/azure-data-engineering/microsoft-fabric.html">
+<span class="dropdown-text">Microsoft Fabric</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/azure-data-engineering/delta-lake.html">
+<span class="dropdown-text">Delta Lake</span></a>
+</li>
+</ul>
+</li>
+<li class="nav-item dropdown">
+<a aria-expanded="false" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" id="nav-menu-azure-devops" role="link">
+<i class="bi bi-infinity" role="img">
+</i>
+<span class="menu-text">Azure DevOps</span>
+</a>
+<ul aria-labelledby="nav-menu-azure-devops" class="dropdown-menu">
+<li>
+<a class="dropdown-item" href="../../courses/azure-devops/index.html">
+<span class="dropdown-text">Program overview</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/azure-devops/linux-shell-scripting.html">
+<span class="dropdown-text">Linux &amp; Shell Scripting</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/azure-devops/git-version-control.html">
+<span class="dropdown-text">Git &amp; Version Control</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/azure-devops/azure-repos.html">
+<span class="dropdown-text">Azure Repos</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/azure-devops/azure-pipelines.html">
+<span class="dropdown-text">Azure Pipelines (CI/CD)</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/azure-devops/yaml-pipelines.html">
+<span class="dropdown-text">YAML Pipeline Development</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/azure-devops/docker.html">
+<span class="dropdown-text">Docker &amp; Containerization</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/azure-devops/kubernetes-aks.html">
+<span class="dropdown-text">Kubernetes &amp; AKS</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/azure-devops/terraform.html">
+<span class="dropdown-text">Terraform Infrastructure as Code</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/azure-devops/azure-cloud-services.html">
+<span class="dropdown-text">Azure Cloud Services</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/azure-devops/devsecops-monitoring.html">
+<span class="dropdown-text">DevSecOps &amp; Monitoring</span></a>
+</li>
+</ul>
+</li>
+<li class="nav-item dropdown">
+<a aria-expanded="false" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" id="nav-menu-interview-questions" role="link">
+<i class="bi bi-question-circle" role="img">
+</i>
+<span class="menu-text">Interview Questions</span>
+</a>
+<ul aria-labelledby="nav-menu-interview-questions" class="dropdown-menu">
+<li>
+<a class="dropdown-item" href="../../interview-questions/index.html">
+<span class="dropdown-text">Section overview</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../interview-questions/full-stack-ai.html">
+<span class="dropdown-text">Full Stack AI</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../interview-questions/azure-data-engineering.html">
+<span class="dropdown-text">Azure Data Engineering</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../interview-questions/azure-devops.html">
+<span class="dropdown-text">Azure DevOps</span></a>
+</li>
+</ul>
+</li>
+<li class="nav-item dropdown">
+<a aria-expanded="false" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" id="nav-menu-project-flows" role="link">
+<i class="bi bi-kanban" role="img">
+</i>
+<span class="menu-text">Project Flows</span>
+</a>
+<ul aria-labelledby="nav-menu-project-flows" class="dropdown-menu">
+<li>
+<a class="dropdown-item" href="../../project-flows/index.html">
+<span class="dropdown-text">Section overview</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../project-flows/full-stack-ai.html">
+<span class="dropdown-text">Full Stack AI</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../project-flows/azure-data-engineering.html">
+<span class="dropdown-text">Azure Data Engineering</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../project-flows/azure-devops.html">
+<span class="dropdown-text">Azure DevOps</span></a>
+</li>
+</ul>
+</li>
+</ul>
+</div> <!-- /navcollapse -->
+<div class="quarto-navbar-tools">
+</div>
+</div> <!-- /container-fluid -->
+</nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<div class="quarto-container page-columns page-rows-contents page-layout-full page-navbar" id="quarto-content">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
-   
-  <ul>
-  <li><a href="#how-to-use-this-course" id="toc-how-to-use-this-course" class="nav-link active" data-scroll-target="#how-to-use-this-course">How to use this course</a></li>
-  <li><a href="#full-syllabus" id="toc-full-syllabus" class="nav-link" data-scroll-target="#full-syllabus">Full syllabus</a></li>
-  <li><a href="#completion-standard" id="toc-completion-standard" class="nav-link" data-scroll-target="#completion-standard">Completion standard</a></li>
-  </ul>
-</nav>
-    </div>
 <!-- main -->
-<main class="content" id="quarto-document-content">
-
-<header id="title-block-header" class="quarto-title-block default">
+<main class="content column-page" id="quarto-document-content">
+<header class="quarto-title-block default" id="title-block-header">
 <div class="quarto-title">
 <h1 class="title">Large Language Models</h1>
 </div>
-
 <div>
-  <div class="description">
+<div class="description">
     Complete notebook syllabus for Large Language Models in Full Stack AI.
   </div>
 </div>
-
-
 <div class="quarto-title-meta">
-
-    <div>
-    <div class="quarto-title-meta-heading">Author</div>
-    <div class="quarto-title-meta-contents">
-             <p>Edukron Notes </p>
-          </div>
-  </div>
-    
-    <div>
-    <div class="quarto-title-meta-heading">Published</div>
-    <div class="quarto-title-meta-contents">
-      <p class="date">September 14, 2026</p>
-    </div>
-  </div>
-  
-    
-  </div>
-  
-
-
+<div>
+<div class="quarto-title-meta-heading">Author</div>
+<div class="quarto-title-meta-contents">
+<p>Edukron Notes </p>
+</div>
+</div>
+<div>
+<div class="quarto-title-meta-heading">Published</div>
+<div class="quarto-title-meta-contents">
+<p class="date">September 14, 2026</p>
+</div>
+</div>
+</div>
 </header>
-
-
-<div class="overview-lead curriculum-summary">
-<div class="overview-icon">
-<i class="bi bi-journal-code" aria-hidden="true"></i>
+<div class="course-workspace notebook-chrome">
+<div class="notebook-toolbar">
+<span class="notebook-file"><i aria-hidden="true" class="bi bi-journal-code"></i><strong>large-language-models.ipynb</strong></span>
+<span class="notebook-status"><i aria-hidden="true" class="bi bi-check-circle-fill"></i> Trusted</span>
+<span class="notebook-kernel"><i aria-hidden="true" class="bi bi-diagram-3"></i> Learning path</span>
 </div>
-<div>
+<div class="course-workspace-hero">
 <span class="overview-kicker">Full Stack AI</span>
-<h2 class="anchored">
-Large Language Models
-</h2>
-<p>
-A complete notebook-first syllabus organized from foundations to applied delivery. Every lesson contains notes, a worked pattern, executable validation, a guided lab, solution blueprint, practice, and knowledge checks.
-</p>
+<h1>Large Language Models</h1>
+<p>A complete notebook-first syllabus organized from foundations to applied delivery. Every lesson combines clear notes, a worked pattern, executable validation, a guided lab, a solution blueprint, practice, and knowledge checks.</p>
+<div class="course-tags"><span><i class="bi bi-signpost-split"></i> Foundation to advanced</span><span><i class="bi bi-code-square"></i> Hands-on practice</span><span><i class="bi bi-patch-check"></i> Review ready</span></div>
+<p class="course-start"><a class="btn btn-primary" href="large-language-models/059-tokenization-and-embeddings/01-text-tokenization.html"><i class="bi bi-play-fill"></i> Start the first notebook</a></p>
 </div>
 </div>
-<div class="course-stat-grid">
-<div>
-<strong>8</strong><span>Syllabus topics</span>
-</div>
-<div>
-<strong>80</strong><span>Notebook lessons</span>
-</div>
-<div>
-<strong>Practice</strong><span>Labs and solutions</span>
-</div>
-</div>
-<p class="course-start">
-<a class="btn btn-primary" href="large-language-models/059-tokenization-and-embeddings/01-text-tokenization.html">Start the first notebook <i class="bi bi-arrow-right"></i></a>
-</p>
-<section id="how-to-use-this-course" class="level2">
+<section class="level2" id="how-to-use-this-course">
 <h2 class="anchored" data-anchor-id="how-to-use-this-course">How to use this course</h2>
 <p>Work through lessons in order for a complete pathway, or open a topic for focused reference. Type or adapt the examples, complete the guided lab before reading its blueprint, and preserve your test evidence as a portfolio artifact. Cloud and infrastructure examples are safe, copy-ready teaching patterns; execute them in your own sandbox only after substituting approved identities, names, and policies.</p>
 </section>
-<section id="full-syllabus" class="level2">
-<h2 class="anchored" data-anchor-id="full-syllabus">Full syllabus</h2>
+<div class="syllabus-heading" id="notebook-syllabus">
+<div><span class="overview-kicker">Course contents</span><h2>Notebook syllabus</h2><p>Open a topic to browse its lessons, or search the complete course by concept.</p></div>
+<label class="syllabus-search" for="full-stack-ai-large-language-models-catalog-search"><i aria-hidden="true" class="bi bi-search"></i><input aria-label="Search the Large Language Models syllabus" autocomplete="off" id="full-stack-ai-large-language-models-catalog-search" placeholder="Find a topic or lesson" type="search"/></label>
+</div>
+<div class="curriculum-catalog" id="full-stack-ai-large-language-models-catalog">
 <details class="curriculum-topic" open="">
-<summary>
-<span class="topic-number">Topic 059</span><strong>Tokenization and embeddings</strong><span>10 notebooks</span>
-</summary>
+<summary><span class="topic-number">Topic 059</span><strong>Tokenization and embeddings</strong></summary>
 <div class="topic-lessons">
-<p><a class="topic-lesson-link" href="large-language-models/059-tokenization-and-embeddings/01-text-tokenization.html"><span>059.01</span><strong>Text tokenization</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="large-language-models/059-tokenization-and-embeddings/02-subword-algorithms.html"><span>059.02</span><strong>Subword algorithms</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="large-language-models/059-tokenization-and-embeddings/03-vocabulary-construction.html"><span>059.03</span><strong>Vocabulary construction</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="large-language-models/059-tokenization-and-embeddings/04-token-ids.html"><span>059.04</span><strong>Token IDs</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="large-language-models/059-tokenization-and-embeddings/05-context-windows.html"><span>059.05</span><strong>Context windows</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="large-language-models/059-tokenization-and-embeddings/06-word-embeddings.html"><span>059.06</span><strong>Word embeddings</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="large-language-models/059-tokenization-and-embeddings/07-sentence-embeddings.html"><span>059.07</span><strong>Sentence embeddings</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="large-language-models/059-tokenization-and-embeddings/08-similarity-metrics.html"><span>059.08</span><strong>Similarity metrics</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="large-language-models/059-tokenization-and-embeddings/09-embedding-evaluation.html"><span>059.09</span><strong>Embedding evaluation</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="large-language-models/059-tokenization-and-embeddings/10-embedding-project.html"><span>059.10</span><strong>Embedding project</strong><i class="bi bi-arrow-right"></i></a></p>
+<a class="topic-lesson-link" href="large-language-models/059-tokenization-and-embeddings/01-text-tokenization.html"><span>059.01</span><strong>Text tokenization</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="large-language-models/059-tokenization-and-embeddings/02-subword-algorithms.html"><span>059.02</span><strong>Subword algorithms</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="large-language-models/059-tokenization-and-embeddings/03-vocabulary-construction.html"><span>059.03</span><strong>Vocabulary construction</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="large-language-models/059-tokenization-and-embeddings/04-token-ids.html"><span>059.04</span><strong>Token IDs</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="large-language-models/059-tokenization-and-embeddings/05-context-windows.html"><span>059.05</span><strong>Context windows</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="large-language-models/059-tokenization-and-embeddings/06-word-embeddings.html"><span>059.06</span><strong>Word embeddings</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="large-language-models/059-tokenization-and-embeddings/07-sentence-embeddings.html"><span>059.07</span><strong>Sentence embeddings</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="large-language-models/059-tokenization-and-embeddings/08-similarity-metrics.html"><span>059.08</span><strong>Similarity metrics</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="large-language-models/059-tokenization-and-embeddings/09-embedding-evaluation.html"><span>059.09</span><strong>Embedding evaluation</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="large-language-models/059-tokenization-and-embeddings/10-embedding-project.html"><span>059.10</span><strong>Embedding project</strong><i class="bi bi-arrow-right"></i></a>
 </div>
 </details>
 <details class="curriculum-topic">
-<summary>
-<span class="topic-number">Topic 060</span><strong>Transformer internals</strong><span>10 notebooks</span>
-</summary>
+<summary><span class="topic-number">Topic 060</span><strong>Transformer internals</strong></summary>
 <div class="topic-lessons">
-<p><a class="topic-lesson-link" href="large-language-models/060-transformer-internals/01-transformer-architecture.html"><span>060.01</span><strong>Transformer architecture</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="large-language-models/060-transformer-internals/02-self-attention-mathematics.html"><span>060.02</span><strong>Self-attention mathematics</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="large-language-models/060-transformer-internals/03-multi-head-attention.html"><span>060.03</span><strong>Multi-head attention</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="large-language-models/060-transformer-internals/04-feed-forward-layers.html"><span>060.04</span><strong>Feed-forward layers</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="large-language-models/060-transformer-internals/05-residual-connections.html"><span>060.05</span><strong>Residual connections</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="large-language-models/060-transformer-internals/06-layer-normalization.html"><span>060.06</span><strong>Layer normalization</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="large-language-models/060-transformer-internals/07-positional-information.html"><span>060.07</span><strong>Positional information</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="large-language-models/060-transformer-internals/08-causal-masking.html"><span>060.08</span><strong>Causal masking</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="large-language-models/060-transformer-internals/09-training-objectives.html"><span>060.09</span><strong>Training objectives</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="large-language-models/060-transformer-internals/10-mini-transformer-implementation.html"><span>060.10</span><strong>Mini-transformer implementation</strong><i class="bi bi-arrow-right"></i></a></p>
+<a class="topic-lesson-link" href="large-language-models/060-transformer-internals/01-transformer-architecture.html"><span>060.01</span><strong>Transformer architecture</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="large-language-models/060-transformer-internals/02-self-attention-mathematics.html"><span>060.02</span><strong>Self-attention mathematics</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="large-language-models/060-transformer-internals/03-multi-head-attention.html"><span>060.03</span><strong>Multi-head attention</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="large-language-models/060-transformer-internals/04-feed-forward-layers.html"><span>060.04</span><strong>Feed-forward layers</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="large-language-models/060-transformer-internals/05-residual-connections.html"><span>060.05</span><strong>Residual connections</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="large-language-models/060-transformer-internals/06-layer-normalization.html"><span>060.06</span><strong>Layer normalization</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="large-language-models/060-transformer-internals/07-positional-information.html"><span>060.07</span><strong>Positional information</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="large-language-models/060-transformer-internals/08-causal-masking.html"><span>060.08</span><strong>Causal masking</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="large-language-models/060-transformer-internals/09-training-objectives.html"><span>060.09</span><strong>Training objectives</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="large-language-models/060-transformer-internals/10-mini-transformer-implementation.html"><span>060.10</span><strong>Mini-transformer implementation</strong><i class="bi bi-arrow-right"></i></a>
 </div>
 </details>
 <details class="curriculum-topic">
-<summary>
-<span class="topic-number">Topic 061</span><strong>Advanced LLM prompting</strong><span>10 notebooks</span>
-</summary>
+<summary><span class="topic-number">Topic 061</span><strong>Advanced LLM prompting</strong></summary>
 <div class="topic-lessons">
-<p><a class="topic-lesson-link" href="large-language-models/061-advanced-llm-prompting/01-system-instructions.html"><span>061.01</span><strong>System instructions</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="large-language-models/061-advanced-llm-prompting/02-context-management.html"><span>061.02</span><strong>Context management</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="large-language-models/061-advanced-llm-prompting/03-few-shot-examples.html"><span>061.03</span><strong>Few-shot examples</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="large-language-models/061-advanced-llm-prompting/04-reasoning-strategies.html"><span>061.04</span><strong>Reasoning strategies</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="large-language-models/061-advanced-llm-prompting/05-decomposition.html"><span>061.05</span><strong>Decomposition</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="large-language-models/061-advanced-llm-prompting/06-self-consistency.html"><span>061.06</span><strong>Self-consistency</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="large-language-models/061-advanced-llm-prompting/07-structured-output.html"><span>061.07</span><strong>Structured output</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="large-language-models/061-advanced-llm-prompting/08-tool-selection-prompts.html"><span>061.08</span><strong>Tool-selection prompts</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="large-language-models/061-advanced-llm-prompting/09-prompt-versioning.html"><span>061.09</span><strong>Prompt versioning</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="large-language-models/061-advanced-llm-prompting/10-prompt-system-project.html"><span>061.10</span><strong>Prompt-system project</strong><i class="bi bi-arrow-right"></i></a></p>
+<a class="topic-lesson-link" href="large-language-models/061-advanced-llm-prompting/01-system-instructions.html"><span>061.01</span><strong>System instructions</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="large-language-models/061-advanced-llm-prompting/02-context-management.html"><span>061.02</span><strong>Context management</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="large-language-models/061-advanced-llm-prompting/03-few-shot-examples.html"><span>061.03</span><strong>Few-shot examples</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="large-language-models/061-advanced-llm-prompting/04-reasoning-strategies.html"><span>061.04</span><strong>Reasoning strategies</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="large-language-models/061-advanced-llm-prompting/05-decomposition.html"><span>061.05</span><strong>Decomposition</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="large-language-models/061-advanced-llm-prompting/06-self-consistency.html"><span>061.06</span><strong>Self-consistency</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="large-language-models/061-advanced-llm-prompting/07-structured-output.html"><span>061.07</span><strong>Structured output</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="large-language-models/061-advanced-llm-prompting/08-tool-selection-prompts.html"><span>061.08</span><strong>Tool-selection prompts</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="large-language-models/061-advanced-llm-prompting/09-prompt-versioning.html"><span>061.09</span><strong>Prompt versioning</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="large-language-models/061-advanced-llm-prompting/10-prompt-system-project.html"><span>061.10</span><strong>Prompt-system project</strong><i class="bi bi-arrow-right"></i></a>
 </div>
 </details>
 <details class="curriculum-topic">
-<summary>
-<span class="topic-number">Topic 062</span><strong>LLM adaptation</strong><span>10 notebooks</span>
-</summary>
+<summary><span class="topic-number">Topic 062</span><strong>LLM adaptation</strong></summary>
 <div class="topic-lessons">
-<p><a class="topic-lesson-link" href="large-language-models/062-llm-adaptation/01-fine-tuning-foundations.html"><span>062.01</span><strong>Fine-tuning foundations</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="large-language-models/062-llm-adaptation/02-dataset-preparation.html"><span>062.02</span><strong>Dataset preparation</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="large-language-models/062-llm-adaptation/03-supervised-fine-tuning.html"><span>062.03</span><strong>Supervised fine-tuning</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="large-language-models/062-llm-adaptation/04-lora.html"><span>062.04</span><strong>LoRA</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="large-language-models/062-llm-adaptation/05-quantized-lora.html"><span>062.05</span><strong>Quantized LoRA</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="large-language-models/062-llm-adaptation/06-preference-datasets.html"><span>062.06</span><strong>Preference datasets</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="large-language-models/062-llm-adaptation/07-dpo-concepts.html"><span>062.07</span><strong>DPO concepts</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="large-language-models/062-llm-adaptation/08-model-merging.html"><span>062.08</span><strong>Model merging</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="large-language-models/062-llm-adaptation/09-adaptation-evaluation.html"><span>062.09</span><strong>Adaptation evaluation</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="large-language-models/062-llm-adaptation/10-fine-tuning-project.html"><span>062.10</span><strong>Fine-tuning project</strong><i class="bi bi-arrow-right"></i></a></p>
+<a class="topic-lesson-link" href="large-language-models/062-llm-adaptation/01-fine-tuning-foundations.html"><span>062.01</span><strong>Fine-tuning foundations</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="large-language-models/062-llm-adaptation/02-dataset-preparation.html"><span>062.02</span><strong>Dataset preparation</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="large-language-models/062-llm-adaptation/03-supervised-fine-tuning.html"><span>062.03</span><strong>Supervised fine-tuning</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="large-language-models/062-llm-adaptation/04-lora.html"><span>062.04</span><strong>LoRA</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="large-language-models/062-llm-adaptation/05-quantized-lora.html"><span>062.05</span><strong>Quantized LoRA</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="large-language-models/062-llm-adaptation/06-preference-datasets.html"><span>062.06</span><strong>Preference datasets</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="large-language-models/062-llm-adaptation/07-dpo-concepts.html"><span>062.07</span><strong>DPO concepts</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="large-language-models/062-llm-adaptation/08-model-merging.html"><span>062.08</span><strong>Model merging</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="large-language-models/062-llm-adaptation/09-adaptation-evaluation.html"><span>062.09</span><strong>Adaptation evaluation</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="large-language-models/062-llm-adaptation/10-fine-tuning-project.html"><span>062.10</span><strong>Fine-tuning project</strong><i class="bi bi-arrow-right"></i></a>
 </div>
 </details>
 <details class="curriculum-topic">
-<summary>
-<span class="topic-number">Topic 063</span><strong>LLM inference and optimization</strong><span>10 notebooks</span>
-</summary>
+<summary><span class="topic-number">Topic 063</span><strong>LLM inference and optimization</strong></summary>
 <div class="topic-lessons">
-<p><a class="topic-lesson-link" href="large-language-models/063-llm-inference-and-optimization/01-decoding-strategies.html"><span>063.01</span><strong>Decoding strategies</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="large-language-models/063-llm-inference-and-optimization/02-kv-cache.html"><span>063.02</span><strong>KV cache</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="large-language-models/063-llm-inference-and-optimization/03-batching.html"><span>063.03</span><strong>Batching</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="large-language-models/063-llm-inference-and-optimization/04-quantization.html"><span>063.04</span><strong>Quantization</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="large-language-models/063-llm-inference-and-optimization/05-distillation.html"><span>063.05</span><strong>Distillation</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="large-language-models/063-llm-inference-and-optimization/06-speculative-decoding.html"><span>063.06</span><strong>Speculative decoding</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="large-language-models/063-llm-inference-and-optimization/07-model-routing.html"><span>063.07</span><strong>Model routing</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="large-language-models/063-llm-inference-and-optimization/08-latency-measurement.html"><span>063.08</span><strong>Latency measurement</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="large-language-models/063-llm-inference-and-optimization/09-cost-optimization.html"><span>063.09</span><strong>Cost optimization</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="large-language-models/063-llm-inference-and-optimization/10-inference-benchmark.html"><span>063.10</span><strong>Inference benchmark</strong><i class="bi bi-arrow-right"></i></a></p>
+<a class="topic-lesson-link" href="large-language-models/063-llm-inference-and-optimization/01-decoding-strategies.html"><span>063.01</span><strong>Decoding strategies</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="large-language-models/063-llm-inference-and-optimization/02-kv-cache.html"><span>063.02</span><strong>KV cache</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="large-language-models/063-llm-inference-and-optimization/03-batching.html"><span>063.03</span><strong>Batching</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="large-language-models/063-llm-inference-and-optimization/04-quantization.html"><span>063.04</span><strong>Quantization</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="large-language-models/063-llm-inference-and-optimization/05-distillation.html"><span>063.05</span><strong>Distillation</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="large-language-models/063-llm-inference-and-optimization/06-speculative-decoding.html"><span>063.06</span><strong>Speculative decoding</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="large-language-models/063-llm-inference-and-optimization/07-model-routing.html"><span>063.07</span><strong>Model routing</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="large-language-models/063-llm-inference-and-optimization/08-latency-measurement.html"><span>063.08</span><strong>Latency measurement</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="large-language-models/063-llm-inference-and-optimization/09-cost-optimization.html"><span>063.09</span><strong>Cost optimization</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="large-language-models/063-llm-inference-and-optimization/10-inference-benchmark.html"><span>063.10</span><strong>Inference benchmark</strong><i class="bi bi-arrow-right"></i></a>
 </div>
 </details>
 <details class="curriculum-topic">
-<summary>
-<span class="topic-number">Topic 064</span><strong>LLM evaluation and safety</strong><span>10 notebooks</span>
-</summary>
+<summary><span class="topic-number">Topic 064</span><strong>LLM evaluation and safety</strong></summary>
 <div class="topic-lessons">
-<p><a class="topic-lesson-link" href="large-language-models/064-llm-evaluation-and-safety/01-evaluation-datasets.html"><span>064.01</span><strong>Evaluation datasets</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="large-language-models/064-llm-evaluation-and-safety/02-task-metrics.html"><span>064.02</span><strong>Task metrics</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="large-language-models/064-llm-evaluation-and-safety/03-factuality.html"><span>064.03</span><strong>Factuality</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="large-language-models/064-llm-evaluation-and-safety/04-relevance.html"><span>064.04</span><strong>Relevance</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="large-language-models/064-llm-evaluation-and-safety/05-groundedness.html"><span>064.05</span><strong>Groundedness</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="large-language-models/064-llm-evaluation-and-safety/06-bias-evaluation.html"><span>064.06</span><strong>Bias evaluation</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="large-language-models/064-llm-evaluation-and-safety/07-toxicity-evaluation.html"><span>064.07</span><strong>Toxicity evaluation</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="large-language-models/064-llm-evaluation-and-safety/08-jailbreak-testing.html"><span>064.08</span><strong>Jailbreak testing</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="large-language-models/064-llm-evaluation-and-safety/09-human-review-design.html"><span>064.09</span><strong>Human-review design</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="large-language-models/064-llm-evaluation-and-safety/10-llm-safety-report.html"><span>064.10</span><strong>LLM safety report</strong><i class="bi bi-arrow-right"></i></a></p>
+<a class="topic-lesson-link" href="large-language-models/064-llm-evaluation-and-safety/01-evaluation-datasets.html"><span>064.01</span><strong>Evaluation datasets</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="large-language-models/064-llm-evaluation-and-safety/02-task-metrics.html"><span>064.02</span><strong>Task metrics</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="large-language-models/064-llm-evaluation-and-safety/03-factuality.html"><span>064.03</span><strong>Factuality</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="large-language-models/064-llm-evaluation-and-safety/04-relevance.html"><span>064.04</span><strong>Relevance</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="large-language-models/064-llm-evaluation-and-safety/05-groundedness.html"><span>064.05</span><strong>Groundedness</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="large-language-models/064-llm-evaluation-and-safety/06-bias-evaluation.html"><span>064.06</span><strong>Bias evaluation</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="large-language-models/064-llm-evaluation-and-safety/07-toxicity-evaluation.html"><span>064.07</span><strong>Toxicity evaluation</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="large-language-models/064-llm-evaluation-and-safety/08-jailbreak-testing.html"><span>064.08</span><strong>Jailbreak testing</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="large-language-models/064-llm-evaluation-and-safety/09-human-review-design.html"><span>064.09</span><strong>Human-review design</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="large-language-models/064-llm-evaluation-and-safety/10-llm-safety-report.html"><span>064.10</span><strong>LLM safety report</strong><i class="bi bi-arrow-right"></i></a>
 </div>
 </details>
 <details class="curriculum-topic">
-<summary>
-<span class="topic-number">Topic 065</span><strong>LLM application engineering</strong><span>10 notebooks</span>
-</summary>
+<summary><span class="topic-number">Topic 065</span><strong>LLM application engineering</strong></summary>
 <div class="topic-lessons">
-<p><a class="topic-lesson-link" href="large-language-models/065-llm-application-engineering/01-chat-architecture.html"><span>065.01</span><strong>Chat architecture</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="large-language-models/065-llm-application-engineering/02-conversation-memory.html"><span>065.02</span><strong>Conversation memory</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="large-language-models/065-llm-application-engineering/03-structured-extraction.html"><span>065.03</span><strong>Structured extraction</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="large-language-models/065-llm-application-engineering/04-tool-calling.html"><span>065.04</span><strong>Tool calling</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="large-language-models/065-llm-application-engineering/05-retrieval-integration.html"><span>065.05</span><strong>Retrieval integration</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="large-language-models/065-llm-application-engineering/06-response-streaming.html"><span>065.06</span><strong>Response streaming</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="large-language-models/065-llm-application-engineering/07-guardrails.html"><span>065.07</span><strong>Guardrails</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="large-language-models/065-llm-application-engineering/08-testing.html"><span>065.08</span><strong>Testing</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="large-language-models/065-llm-application-engineering/09-observability.html"><span>065.09</span><strong>Observability</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="large-language-models/065-llm-application-engineering/10-llm-application-project.html"><span>065.10</span><strong>LLM application project</strong><i class="bi bi-arrow-right"></i></a></p>
+<a class="topic-lesson-link" href="large-language-models/065-llm-application-engineering/01-chat-architecture.html"><span>065.01</span><strong>Chat architecture</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="large-language-models/065-llm-application-engineering/02-conversation-memory.html"><span>065.02</span><strong>Conversation memory</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="large-language-models/065-llm-application-engineering/03-structured-extraction.html"><span>065.03</span><strong>Structured extraction</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="large-language-models/065-llm-application-engineering/04-tool-calling.html"><span>065.04</span><strong>Tool calling</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="large-language-models/065-llm-application-engineering/05-retrieval-integration.html"><span>065.05</span><strong>Retrieval integration</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="large-language-models/065-llm-application-engineering/06-response-streaming.html"><span>065.06</span><strong>Response streaming</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="large-language-models/065-llm-application-engineering/07-guardrails.html"><span>065.07</span><strong>Guardrails</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="large-language-models/065-llm-application-engineering/08-testing.html"><span>065.08</span><strong>Testing</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="large-language-models/065-llm-application-engineering/09-observability.html"><span>065.09</span><strong>Observability</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="large-language-models/065-llm-application-engineering/10-llm-application-project.html"><span>065.10</span><strong>LLM application project</strong><i class="bi bi-arrow-right"></i></a>
 </div>
 </details>
 <details class="curriculum-topic">
-<summary>
-<span class="topic-number">Topic 066</span><strong>LLMOps and production systems</strong><span>10 notebooks</span>
-</summary>
+<summary><span class="topic-number">Topic 066</span><strong>LLMOps and production systems</strong></summary>
 <div class="topic-lessons">
-<p><a class="topic-lesson-link" href="large-language-models/066-llmops-and-production-systems/01-model-gateways.html"><span>066.01</span><strong>Model gateways</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="large-language-models/066-llmops-and-production-systems/02-prompt-registries.html"><span>066.02</span><strong>Prompt registries</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="large-language-models/066-llmops-and-production-systems/03-evaluation-pipelines.html"><span>066.03</span><strong>Evaluation pipelines</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="large-language-models/066-llmops-and-production-systems/04-deployment-strategies.html"><span>066.04</span><strong>Deployment strategies</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="large-language-models/066-llmops-and-production-systems/05-rate-limiting.html"><span>066.05</span><strong>Rate limiting</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="large-language-models/066-llmops-and-production-systems/06-caching.html"><span>066.06</span><strong>Caching</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="large-language-models/066-llmops-and-production-systems/07-tracing.html"><span>066.07</span><strong>Tracing</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="large-language-models/066-llmops-and-production-systems/08-feedback-collection.html"><span>066.08</span><strong>Feedback collection</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="large-language-models/066-llmops-and-production-systems/09-governance.html"><span>066.09</span><strong>Governance</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="large-language-models/066-llmops-and-production-systems/10-production-llm-capstone.html"><span>066.10</span><strong>Production-LLM capstone</strong><i class="bi bi-arrow-right"></i></a></p>
+<a class="topic-lesson-link" href="large-language-models/066-llmops-and-production-systems/01-model-gateways.html"><span>066.01</span><strong>Model gateways</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="large-language-models/066-llmops-and-production-systems/02-prompt-registries.html"><span>066.02</span><strong>Prompt registries</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="large-language-models/066-llmops-and-production-systems/03-evaluation-pipelines.html"><span>066.03</span><strong>Evaluation pipelines</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="large-language-models/066-llmops-and-production-systems/04-deployment-strategies.html"><span>066.04</span><strong>Deployment strategies</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="large-language-models/066-llmops-and-production-systems/05-rate-limiting.html"><span>066.05</span><strong>Rate limiting</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="large-language-models/066-llmops-and-production-systems/06-caching.html"><span>066.06</span><strong>Caching</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="large-language-models/066-llmops-and-production-systems/07-tracing.html"><span>066.07</span><strong>Tracing</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="large-language-models/066-llmops-and-production-systems/08-feedback-collection.html"><span>066.08</span><strong>Feedback collection</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="large-language-models/066-llmops-and-production-systems/09-governance.html"><span>066.09</span><strong>Governance</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="large-language-models/066-llmops-and-production-systems/10-production-llm-capstone.html"><span>066.10</span><strong>Production-LLM capstone</strong><i class="bi bi-arrow-right"></i></a>
 </div>
 </details>
-</section>
-<section id="completion-standard" class="level2">
+</div>
+<p class="syllabus-empty" hidden="" id="full-stack-ai-large-language-models-catalog-empty"><i class="bi bi-search"></i> No matching lessons were found.</p>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const catalog = document.getElementById("full-stack-ai-large-language-models-catalog");
+  const search = document.getElementById("full-stack-ai-large-language-models-catalog-search");
+  const empty = document.getElementById("full-stack-ai-large-language-models-catalog-empty");
+  if (!catalog || !search || !empty) return;
+
+  search.addEventListener("input", () => {
+    const query = search.value.trim().toLowerCase();
+    let visibleTopics = 0;
+    catalog.querySelectorAll(".curriculum-topic").forEach((topic) => {
+      const summary = topic.querySelector("summary");
+      const topicMatches = !query || summary.textContent.toLowerCase().includes(query);
+      let visibleLessons = 0;
+      topic.querySelectorAll(".topic-lesson-link").forEach((lesson) => {
+        const matches = topicMatches || lesson.textContent.toLowerCase().includes(query);
+        lesson.hidden = !matches;
+        if (matches) visibleLessons += 1;
+      });
+      const showTopic = topicMatches || visibleLessons > 0;
+      topic.hidden = !showTopic;
+      if (showTopic) visibleTopics += 1;
+      if (query && showTopic) topic.open = true;
+    });
+    empty.hidden = visibleTopics > 0;
+  });
+});
+</script>
+<section class="level2" id="completion-standard">
 <h2 class="anchored" data-anchor-id="completion-standard">Completion standard</h2>
 <p>You have completed <strong>Large Language Models</strong> when you can explain each topic, reproduce its core workflow, pass the notebook checks, defend the main tradeoffs, and combine the lessons into one reviewable portfolio project. Use the practice tasks as evidence rather than treating page reading alone as completion.</p>
-
-
 </section>
-
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
@@ -881,21 +919,17 @@ A complete notebook-first syllabus organized from foundations to applied deliver
   </script>
 </div> <!-- /content -->
 <footer class="footer">
-  <div class="nav-footer">
-    <div class="nav-footer-left">
+<div class="nav-footer">
+<div class="nav-footer-left">
 <p>© 2026 Edukron Notes</p>
-</div>   
-    <div class="nav-footer-center">
-      &nbsp;
+</div>
+<div class="nav-footer-center">
+       
     </div>
-    <div class="nav-footer-right">
+<div class="nav-footer-right">
 <p>Notebook courses for AI, data engineering, and DevOps</p>
 </div>
-  </div>
+</div>
 </footer>
-
-
-
-
 <script src="../../site_libs/quarto-html/zenscroll-min.js"></script>
 </body></html>

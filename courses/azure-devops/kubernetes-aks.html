@@ -1,15 +1,12 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
-<meta charset="utf-8">
-<meta name="generator" content="quarto-1.10.18">
-
-<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-
-<meta name="author" content="Edukron Notes">
-<meta name="dcterms.date" content="2026-09-14">
-<meta name="description" content="Complete notebook syllabus for Kubernetes &amp; AKS in Azure DevOps.">
-
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta charset="utf-8"/>
+<meta content="quarto-1.10.18" name="generator"/>
+<meta content="width=device-width, initial-scale=1.0, user-scalable=yes" name="viewport"/>
+<meta content="Edukron Notes" name="author"/>
+<meta content="2026-09-14" name="dcterms.date"/>
+<meta content="Complete notebook syllabus for Kubernetes &amp; AKS in Azure DevOps." name="description"/>
 <title>Kubernetes &amp; AKS – Edukron Notes</title>
 <style>
 /* Default styles provided by pandoc.
@@ -30,25 +27,23 @@ ul.task-list li input[type="checkbox"] {
   vertical-align: middle;
 }
 </style>
-
-
 <script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
 <script src="../../site_libs/quarto-nav/headroom.min.js"></script>
 <script src="../../site_libs/clipboard/clipboard.min.js"></script>
 <script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
 <script src="../../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../../">
+<meta content="../../" name="quarto:offset"/>
 <script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="../../site_libs/quarto-html/popper.min.js"></script>
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet"/>
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" id="quarto-text-highlighting-styles" rel="stylesheet"/>
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-f0f4b58164ec92a07fcd2db94b0e5cbd.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet"/>
+<link append-hash="true" data-mode="light" href="../../site_libs/bootstrap/bootstrap-f0f4b58164ec92a07fcd2db94b0e5cbd.min.css" id="quarto-bootstrap" rel="stylesheet"/>
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -76,392 +71,421 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 <style>html{ scroll-behavior: smooth; }</style>
-
-
-<link rel="stylesheet" href="../../styles.css">
+<link href="../../styles.css" rel="stylesheet"/>
 </head>
-
 <body class="nav-fixed quarto-light">
-
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top">
-    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
-      <div class="navbar-container container-fluid">
-      <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="../../index.html">
-    <span class="navbar-title">Edukron Notes</span>
-    </a>
-  </div>
-            <div id="quarto-search" class="" title="Search"></div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
-  <span class="navbar-toggler-icon"></span>
-</button>
-          <div class="collapse navbar-collapse" id="navbarCollapse">
-            <ul class="navbar-nav navbar-nav-scroll me-auto">
-  <li class="nav-item">
-    <a class="nav-link" href="../../index.html"> 
-<span class="menu-text">Home</span></a>
-  </li>  
-  <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-full-stack-ai" role="link" data-bs-toggle="dropdown" aria-expanded="false">
-      <i class="bi bi-cpu" role="img">
-</i> 
- <span class="menu-text">Full Stack AI</span>
-    </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-full-stack-ai">    
-        <li>
-    <a class="dropdown-item" href="../../courses/full-stack-ai/index.html">
- <span class="dropdown-text">Program overview</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/full-stack-ai/python.html">
- <span class="dropdown-text">Python</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/full-stack-ai/sql.html">
- <span class="dropdown-text">SQL</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/full-stack-ai/data-science.html">
- <span class="dropdown-text">Data Science</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/full-stack-ai/machine-learning.html">
- <span class="dropdown-text">Machine Learning</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/full-stack-ai/artificial-intelligence.html">
- <span class="dropdown-text">Artificial Intelligence</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/full-stack-ai/deep-learning.html">
- <span class="dropdown-text">Deep Learning</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/full-stack-ai/generative-ai.html">
- <span class="dropdown-text">Generative AI</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/full-stack-ai/large-language-models.html">
- <span class="dropdown-text">Large Language Models (LLMs)</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/full-stack-ai/rag.html">
- <span class="dropdown-text">Retrieval Augmented Generation (RAG)</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/full-stack-ai/agentic-ai.html">
- <span class="dropdown-text">Agentic AI</span></a>
-  </li>  
-    </ul>
-  </li>
-  <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-azure-data-engineering" role="link" data-bs-toggle="dropdown" aria-expanded="false">
-      <i class="bi bi-database" role="img">
-</i> 
- <span class="menu-text">Azure Data Engineering</span>
-    </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-azure-data-engineering">    
-        <li>
-    <a class="dropdown-item" href="../../courses/azure-data-engineering/index.html">
- <span class="dropdown-text">Program overview</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/azure-data-engineering/python.html">
- <span class="dropdown-text">Python</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/azure-data-engineering/sql.html">
- <span class="dropdown-text">SQL</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/azure-data-engineering/fundamentals.html">
- <span class="dropdown-text">Data Engineering Fundamentals</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/azure-data-engineering/azure-data-factory.html">
- <span class="dropdown-text">Azure Data Factory (ADF)</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/azure-data-engineering/adls-gen2.html">
- <span class="dropdown-text">Azure Data Lake Storage Gen2</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/azure-data-engineering/azure-databricks.html">
- <span class="dropdown-text">Azure Databricks</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/azure-data-engineering/pyspark.html">
- <span class="dropdown-text">PySpark</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/azure-data-engineering/azure-synapse.html">
- <span class="dropdown-text">Azure Synapse Analytics</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/azure-data-engineering/microsoft-fabric.html">
- <span class="dropdown-text">Microsoft Fabric</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/azure-data-engineering/delta-lake.html">
- <span class="dropdown-text">Delta Lake</span></a>
-  </li>  
-    </ul>
-  </li>
-  <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-azure-devops" role="link" data-bs-toggle="dropdown" aria-expanded="false">
-      <i class="bi bi-infinity" role="img">
-</i> 
- <span class="menu-text">Azure DevOps</span>
-    </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-azure-devops">    
-        <li>
-    <a class="dropdown-item" href="../../courses/azure-devops/index.html">
- <span class="dropdown-text">Program overview</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/azure-devops/linux-shell-scripting.html">
- <span class="dropdown-text">Linux &amp; Shell Scripting</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/azure-devops/git-version-control.html">
- <span class="dropdown-text">Git &amp; Version Control</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/azure-devops/azure-repos.html">
- <span class="dropdown-text">Azure Repos</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/azure-devops/azure-pipelines.html">
- <span class="dropdown-text">Azure Pipelines (CI/CD)</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/azure-devops/yaml-pipelines.html">
- <span class="dropdown-text">YAML Pipeline Development</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/azure-devops/docker.html">
- <span class="dropdown-text">Docker &amp; Containerization</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/azure-devops/kubernetes-aks.html">
- <span class="dropdown-text">Kubernetes &amp; AKS</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/azure-devops/terraform.html">
- <span class="dropdown-text">Terraform Infrastructure as Code</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/azure-devops/azure-cloud-services.html">
- <span class="dropdown-text">Azure Cloud Services</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/azure-devops/devsecops-monitoring.html">
- <span class="dropdown-text">DevSecOps &amp; Monitoring</span></a>
-  </li>  
-    </ul>
-  </li>
-  <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-interview-questions" role="link" data-bs-toggle="dropdown" aria-expanded="false">
-      <i class="bi bi-question-circle" role="img">
-</i> 
- <span class="menu-text">Interview Questions</span>
-    </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-interview-questions">    
-        <li>
-    <a class="dropdown-item" href="../../interview-questions/index.html">
- <span class="dropdown-text">Section overview</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../interview-questions/full-stack-ai.html">
- <span class="dropdown-text">Full Stack AI</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../interview-questions/azure-data-engineering.html">
- <span class="dropdown-text">Azure Data Engineering</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../interview-questions/azure-devops.html">
- <span class="dropdown-text">Azure DevOps</span></a>
-  </li>  
-    </ul>
-  </li>
-  <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-project-flows" role="link" data-bs-toggle="dropdown" aria-expanded="false">
-      <i class="bi bi-kanban" role="img">
-</i> 
- <span class="menu-text">Project Flows</span>
-    </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-project-flows">    
-        <li>
-    <a class="dropdown-item" href="../../project-flows/index.html">
- <span class="dropdown-text">Section overview</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../project-flows/full-stack-ai.html">
- <span class="dropdown-text">Full Stack AI</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../project-flows/azure-data-engineering.html">
- <span class="dropdown-text">Azure Data Engineering</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../project-flows/azure-devops.html">
- <span class="dropdown-text">Azure DevOps</span></a>
-  </li>  
-    </ul>
-  </li>
-</ul>
-          </div> <!-- /navcollapse -->
-            <div class="quarto-navbar-tools">
+<header class="headroom fixed-top" id="quarto-header">
+<nav class="navbar navbar-expand-lg" data-bs-theme="dark">
+<div class="navbar-container container-fluid">
+<div class="navbar-brand-container mx-auto">
+<a class="navbar-brand" href="../../index.html">
+<span class="navbar-title">Edukron Notes</span>
+</a>
 </div>
-      </div> <!-- /container-fluid -->
-    </nav>
+<div class="" id="quarto-search" title="Search"></div>
+<button aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-bs-target="#navbarCollapse" data-bs-toggle="collapse" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }" role="menu" type="button">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" id="navbarCollapse">
+<ul class="navbar-nav navbar-nav-scroll me-auto">
+<li class="nav-item">
+<a class="nav-link" href="../../index.html">
+<span class="menu-text">Home</span></a>
+</li>
+<li class="nav-item dropdown">
+<a aria-expanded="false" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" id="nav-menu-full-stack-ai" role="link">
+<i class="bi bi-cpu" role="img">
+</i>
+<span class="menu-text">Full Stack AI</span>
+</a>
+<ul aria-labelledby="nav-menu-full-stack-ai" class="dropdown-menu">
+<li>
+<a class="dropdown-item" href="../../courses/full-stack-ai/index.html">
+<span class="dropdown-text">Program overview</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/full-stack-ai/python.html">
+<span class="dropdown-text">Python</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/full-stack-ai/sql.html">
+<span class="dropdown-text">SQL</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/full-stack-ai/data-science.html">
+<span class="dropdown-text">Data Science</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/full-stack-ai/machine-learning.html">
+<span class="dropdown-text">Machine Learning</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/full-stack-ai/artificial-intelligence.html">
+<span class="dropdown-text">Artificial Intelligence</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/full-stack-ai/deep-learning.html">
+<span class="dropdown-text">Deep Learning</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/full-stack-ai/generative-ai.html">
+<span class="dropdown-text">Generative AI</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/full-stack-ai/large-language-models.html">
+<span class="dropdown-text">Large Language Models (LLMs)</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/full-stack-ai/rag.html">
+<span class="dropdown-text">Retrieval Augmented Generation (RAG)</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/full-stack-ai/agentic-ai.html">
+<span class="dropdown-text">Agentic AI</span></a>
+</li>
+</ul>
+</li>
+<li class="nav-item dropdown">
+<a aria-expanded="false" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" id="nav-menu-azure-data-engineering" role="link">
+<i class="bi bi-database" role="img">
+</i>
+<span class="menu-text">Azure Data Engineering</span>
+</a>
+<ul aria-labelledby="nav-menu-azure-data-engineering" class="dropdown-menu">
+<li>
+<a class="dropdown-item" href="../../courses/azure-data-engineering/index.html">
+<span class="dropdown-text">Program overview</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/azure-data-engineering/python.html">
+<span class="dropdown-text">Python</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/azure-data-engineering/sql.html">
+<span class="dropdown-text">SQL</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/azure-data-engineering/fundamentals.html">
+<span class="dropdown-text">Data Engineering Fundamentals</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/azure-data-engineering/azure-data-factory.html">
+<span class="dropdown-text">Azure Data Factory (ADF)</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/azure-data-engineering/adls-gen2.html">
+<span class="dropdown-text">Azure Data Lake Storage Gen2</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/azure-data-engineering/azure-databricks.html">
+<span class="dropdown-text">Azure Databricks</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/azure-data-engineering/pyspark.html">
+<span class="dropdown-text">PySpark</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/azure-data-engineering/azure-synapse.html">
+<span class="dropdown-text">Azure Synapse Analytics</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/azure-data-engineering/microsoft-fabric.html">
+<span class="dropdown-text">Microsoft Fabric</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/azure-data-engineering/delta-lake.html">
+<span class="dropdown-text">Delta Lake</span></a>
+</li>
+</ul>
+</li>
+<li class="nav-item dropdown">
+<a aria-expanded="false" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" id="nav-menu-azure-devops" role="link">
+<i class="bi bi-infinity" role="img">
+</i>
+<span class="menu-text">Azure DevOps</span>
+</a>
+<ul aria-labelledby="nav-menu-azure-devops" class="dropdown-menu">
+<li>
+<a class="dropdown-item" href="../../courses/azure-devops/index.html">
+<span class="dropdown-text">Program overview</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/azure-devops/linux-shell-scripting.html">
+<span class="dropdown-text">Linux &amp; Shell Scripting</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/azure-devops/git-version-control.html">
+<span class="dropdown-text">Git &amp; Version Control</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/azure-devops/azure-repos.html">
+<span class="dropdown-text">Azure Repos</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/azure-devops/azure-pipelines.html">
+<span class="dropdown-text">Azure Pipelines (CI/CD)</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/azure-devops/yaml-pipelines.html">
+<span class="dropdown-text">YAML Pipeline Development</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/azure-devops/docker.html">
+<span class="dropdown-text">Docker &amp; Containerization</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/azure-devops/kubernetes-aks.html">
+<span class="dropdown-text">Kubernetes &amp; AKS</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/azure-devops/terraform.html">
+<span class="dropdown-text">Terraform Infrastructure as Code</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/azure-devops/azure-cloud-services.html">
+<span class="dropdown-text">Azure Cloud Services</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/azure-devops/devsecops-monitoring.html">
+<span class="dropdown-text">DevSecOps &amp; Monitoring</span></a>
+</li>
+</ul>
+</li>
+<li class="nav-item dropdown">
+<a aria-expanded="false" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" id="nav-menu-interview-questions" role="link">
+<i class="bi bi-question-circle" role="img">
+</i>
+<span class="menu-text">Interview Questions</span>
+</a>
+<ul aria-labelledby="nav-menu-interview-questions" class="dropdown-menu">
+<li>
+<a class="dropdown-item" href="../../interview-questions/index.html">
+<span class="dropdown-text">Section overview</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../interview-questions/full-stack-ai.html">
+<span class="dropdown-text">Full Stack AI</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../interview-questions/azure-data-engineering.html">
+<span class="dropdown-text">Azure Data Engineering</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../interview-questions/azure-devops.html">
+<span class="dropdown-text">Azure DevOps</span></a>
+</li>
+</ul>
+</li>
+<li class="nav-item dropdown">
+<a aria-expanded="false" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" id="nav-menu-project-flows" role="link">
+<i class="bi bi-kanban" role="img">
+</i>
+<span class="menu-text">Project Flows</span>
+</a>
+<ul aria-labelledby="nav-menu-project-flows" class="dropdown-menu">
+<li>
+<a class="dropdown-item" href="../../project-flows/index.html">
+<span class="dropdown-text">Section overview</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../project-flows/full-stack-ai.html">
+<span class="dropdown-text">Full Stack AI</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../project-flows/azure-data-engineering.html">
+<span class="dropdown-text">Azure Data Engineering</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../project-flows/azure-devops.html">
+<span class="dropdown-text">Azure DevOps</span></a>
+</li>
+</ul>
+</li>
+</ul>
+</div> <!-- /navcollapse -->
+<div class="quarto-navbar-tools">
+</div>
+</div> <!-- /container-fluid -->
+</nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<div class="quarto-container page-columns page-rows-contents page-layout-full page-navbar" id="quarto-content">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
-   
-  <ul>
-  <li><a href="#how-to-use-this-course" id="toc-how-to-use-this-course" class="nav-link active" data-scroll-target="#how-to-use-this-course">How to use this course</a></li>
-  <li><a href="#full-syllabus" id="toc-full-syllabus" class="nav-link" data-scroll-target="#full-syllabus">Full syllabus</a></li>
-  <li><a href="#completion-standard" id="toc-completion-standard" class="nav-link" data-scroll-target="#completion-standard">Completion standard</a></li>
-  </ul>
-</nav>
-    </div>
 <!-- main -->
-<main class="content" id="quarto-document-content">
-
-<header id="title-block-header" class="quarto-title-block default">
+<main class="content column-page" id="quarto-document-content">
+<header class="quarto-title-block default" id="title-block-header">
 <div class="quarto-title">
 <h1 class="title">Kubernetes &amp; AKS</h1>
 </div>
-
 <div>
-  <div class="description">
+<div class="description">
     Complete notebook syllabus for Kubernetes &amp; AKS in Azure DevOps.
   </div>
 </div>
-
-
 <div class="quarto-title-meta">
-
-    <div>
-    <div class="quarto-title-meta-heading">Author</div>
-    <div class="quarto-title-meta-contents">
-             <p>Edukron Notes </p>
-          </div>
-  </div>
-    
-    <div>
-    <div class="quarto-title-meta-heading">Published</div>
-    <div class="quarto-title-meta-contents">
-      <p class="date">September 14, 2026</p>
-    </div>
-  </div>
-  
-    
-  </div>
-  
-
-
+<div>
+<div class="quarto-title-meta-heading">Author</div>
+<div class="quarto-title-meta-contents">
+<p>Edukron Notes </p>
+</div>
+</div>
+<div>
+<div class="quarto-title-meta-heading">Published</div>
+<div class="quarto-title-meta-contents">
+<p class="date">September 14, 2026</p>
+</div>
+</div>
+</div>
 </header>
-
-
-<div class="overview-lead curriculum-summary">
-<div class="overview-icon">
-<i class="bi bi-journal-code" aria-hidden="true"></i>
+<div class="course-workspace notebook-chrome">
+<div class="notebook-toolbar">
+<span class="notebook-file"><i aria-hidden="true" class="bi bi-journal-code"></i><strong>kubernetes-aks.ipynb</strong></span>
+<span class="notebook-status"><i aria-hidden="true" class="bi bi-check-circle-fill"></i> Trusted</span>
+<span class="notebook-kernel"><i aria-hidden="true" class="bi bi-diagram-3"></i> Learning path</span>
 </div>
-<div>
+<div class="course-workspace-hero">
 <span class="overview-kicker">Azure DevOps</span>
-<h2 class="anchored">
-Kubernetes &amp; AKS
-</h2>
-<p>
-A complete notebook-first syllabus organized from foundations to applied delivery. Every lesson contains notes, a worked pattern, executable validation, a guided lab, solution blueprint, practice, and knowledge checks.
-</p>
+<h1>Kubernetes &amp; AKS</h1>
+<p>A complete notebook-first syllabus organized from foundations to applied delivery. Every lesson combines clear notes, a worked pattern, executable validation, a guided lab, a solution blueprint, practice, and knowledge checks.</p>
+<div class="course-tags"><span><i class="bi bi-signpost-split"></i> Foundation to advanced</span><span><i class="bi bi-code-square"></i> Hands-on practice</span><span><i class="bi bi-patch-check"></i> Review ready</span></div>
+<p class="course-start"><a class="btn btn-primary" href="kubernetes-aks/155-kubernetes-architecture/01-cluster-components.html"><i class="bi bi-play-fill"></i> Start the first notebook</a></p>
 </div>
 </div>
-<div class="course-stat-grid">
-<div>
-<strong>6</strong><span>Syllabus topics</span>
-</div>
-<div>
-<strong>60</strong><span>Notebook lessons</span>
-</div>
-<div>
-<strong>Practice</strong><span>Labs and solutions</span>
-</div>
-</div>
-<p class="course-start">
-<a class="btn btn-primary" href="kubernetes-aks/155-kubernetes-architecture/01-cluster-components.html">Start the first notebook <i class="bi bi-arrow-right"></i></a>
-</p>
-<section id="how-to-use-this-course" class="level2">
+<section class="level2" id="how-to-use-this-course">
 <h2 class="anchored" data-anchor-id="how-to-use-this-course">How to use this course</h2>
 <p>Work through lessons in order for a complete pathway, or open a topic for focused reference. Type or adapt the examples, complete the guided lab before reading its blueprint, and preserve your test evidence as a portfolio artifact. Cloud and infrastructure examples are safe, copy-ready teaching patterns; execute them in your own sandbox only after substituting approved identities, names, and policies.</p>
 </section>
-<section id="full-syllabus" class="level2">
-<h2 class="anchored" data-anchor-id="full-syllabus">Full syllabus</h2>
+<div class="syllabus-heading" id="notebook-syllabus">
+<div><span class="overview-kicker">Course contents</span><h2>Notebook syllabus</h2><p>Open a topic to browse its lessons, or search the complete course by concept.</p></div>
+<label class="syllabus-search" for="azure-devops-kubernetes-and-aks-catalog-search"><i aria-hidden="true" class="bi bi-search"></i><input aria-label="Search the Kubernetes &amp; AKS syllabus" autocomplete="off" id="azure-devops-kubernetes-and-aks-catalog-search" placeholder="Find a topic or lesson" type="search"/></label>
+</div>
+<div class="curriculum-catalog" id="azure-devops-kubernetes-and-aks-catalog">
 <details class="curriculum-topic" open="">
-<summary>
-<span class="topic-number">Topic 155</span><strong>Kubernetes architecture</strong><span>10 notebooks</span>
-</summary>
+<summary><span class="topic-number">Topic 155</span><strong>Kubernetes architecture</strong></summary>
 <div class="topic-lessons">
-<p><a class="topic-lesson-link" href="kubernetes-aks/155-kubernetes-architecture/01-cluster-components.html"><span>155.01</span><strong>Cluster components</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="kubernetes-aks/155-kubernetes-architecture/02-control-plane.html"><span>155.02</span><strong>Control plane</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="kubernetes-aks/155-kubernetes-architecture/03-worker-nodes.html"><span>155.03</span><strong>Worker nodes</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="kubernetes-aks/155-kubernetes-architecture/04-api-objects.html"><span>155.04</span><strong>API objects</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="kubernetes-aks/155-kubernetes-architecture/05-namespaces.html"><span>155.05</span><strong>Namespaces</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="kubernetes-aks/155-kubernetes-architecture/06-labels-and-selectors.html"><span>155.06</span><strong>Labels and selectors</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="kubernetes-aks/155-kubernetes-architecture/07-kubectl.html"><span>155.07</span><strong>kubectl</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="kubernetes-aks/155-kubernetes-architecture/08-declarative-management.html"><span>155.08</span><strong>Declarative management</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="kubernetes-aks/155-kubernetes-architecture/09-resource-specifications.html"><span>155.09</span><strong>Resource specifications</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="kubernetes-aks/155-kubernetes-architecture/10-architecture-lab.html"><span>155.10</span><strong>Architecture lab</strong><i class="bi bi-arrow-right"></i></a></p>
+<a class="topic-lesson-link" href="kubernetes-aks/155-kubernetes-architecture/01-cluster-components.html"><span>155.01</span><strong>Cluster components</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="kubernetes-aks/155-kubernetes-architecture/02-control-plane.html"><span>155.02</span><strong>Control plane</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="kubernetes-aks/155-kubernetes-architecture/03-worker-nodes.html"><span>155.03</span><strong>Worker nodes</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="kubernetes-aks/155-kubernetes-architecture/04-api-objects.html"><span>155.04</span><strong>API objects</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="kubernetes-aks/155-kubernetes-architecture/05-namespaces.html"><span>155.05</span><strong>Namespaces</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="kubernetes-aks/155-kubernetes-architecture/06-labels-and-selectors.html"><span>155.06</span><strong>Labels and selectors</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="kubernetes-aks/155-kubernetes-architecture/07-kubectl.html"><span>155.07</span><strong>kubectl</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="kubernetes-aks/155-kubernetes-architecture/08-declarative-management.html"><span>155.08</span><strong>Declarative management</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="kubernetes-aks/155-kubernetes-architecture/09-resource-specifications.html"><span>155.09</span><strong>Resource specifications</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="kubernetes-aks/155-kubernetes-architecture/10-architecture-lab.html"><span>155.10</span><strong>Architecture lab</strong><i class="bi bi-arrow-right"></i></a>
 </div>
 </details>
 <details class="curriculum-topic">
-<summary>
-<span class="topic-number">Topic 156</span><strong>Kubernetes workload objects</strong><span>10 notebooks</span>
-</summary>
+<summary><span class="topic-number">Topic 156</span><strong>Kubernetes workload objects</strong></summary>
 <div class="topic-lessons">
-<p><a class="topic-lesson-link" href="kubernetes-aks/156-kubernetes-workload-objects/01-pods.html"><span>156.01</span><strong>Pods</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="kubernetes-aks/156-kubernetes-workload-objects/02-replicasets.html"><span>156.02</span><strong>ReplicaSets</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="kubernetes-aks/156-kubernetes-workload-objects/03-deployments.html"><span>156.03</span><strong>Deployments</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="kubernetes-aks/156-kubernetes-workload-objects/04-statefulsets.html"><span>156.04</span><strong>StatefulSets</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="kubernetes-aks/156-kubernetes-workload-objects/05-daemonsets.html"><span>156.05</span><strong>DaemonSets</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="kubernetes-aks/156-kubernetes-workload-objects/06-jobs.html"><span>156.06</span><strong>Jobs</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="kubernetes-aks/156-kubernetes-workload-objects/07-cronjobs.html"><span>156.07</span><strong>CronJobs</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="kubernetes-aks/156-kubernetes-workload-objects/08-probes.html"><span>156.08</span><strong>Probes</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="kubernetes-aks/156-kubernetes-workload-objects/09-resource-requests-and-limits.html"><span>156.09</span><strong>Resource requests and limits</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="kubernetes-aks/156-kubernetes-workload-objects/10-workload-project.html"><span>156.10</span><strong>Workload project</strong><i class="bi bi-arrow-right"></i></a></p>
+<a class="topic-lesson-link" href="kubernetes-aks/156-kubernetes-workload-objects/01-pods.html"><span>156.01</span><strong>Pods</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="kubernetes-aks/156-kubernetes-workload-objects/02-replicasets.html"><span>156.02</span><strong>ReplicaSets</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="kubernetes-aks/156-kubernetes-workload-objects/03-deployments.html"><span>156.03</span><strong>Deployments</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="kubernetes-aks/156-kubernetes-workload-objects/04-statefulsets.html"><span>156.04</span><strong>StatefulSets</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="kubernetes-aks/156-kubernetes-workload-objects/05-daemonsets.html"><span>156.05</span><strong>DaemonSets</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="kubernetes-aks/156-kubernetes-workload-objects/06-jobs.html"><span>156.06</span><strong>Jobs</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="kubernetes-aks/156-kubernetes-workload-objects/07-cronjobs.html"><span>156.07</span><strong>CronJobs</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="kubernetes-aks/156-kubernetes-workload-objects/08-probes.html"><span>156.08</span><strong>Probes</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="kubernetes-aks/156-kubernetes-workload-objects/09-resource-requests-and-limits.html"><span>156.09</span><strong>Resource requests and limits</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="kubernetes-aks/156-kubernetes-workload-objects/10-workload-project.html"><span>156.10</span><strong>Workload project</strong><i class="bi bi-arrow-right"></i></a>
 </div>
 </details>
 <details class="curriculum-topic">
-<summary>
-<span class="topic-number">Topic 157</span><strong>Configuration and storage</strong><span>10 notebooks</span>
-</summary>
+<summary><span class="topic-number">Topic 157</span><strong>Configuration and storage</strong></summary>
 <div class="topic-lessons">
-<p><a class="topic-lesson-link" href="kubernetes-aks/157-configuration-and-storage/01-configmaps.html"><span>157.01</span><strong>ConfigMaps</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="kubernetes-aks/157-configuration-and-storage/02-secrets.html"><span>157.02</span><strong>Secrets</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="kubernetes-aks/157-configuration-and-storage/03-environment-injection.html"><span>157.03</span><strong>Environment injection</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="kubernetes-aks/157-configuration-and-storage/04-volumes.html"><span>157.04</span><strong>Volumes</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="kubernetes-aks/157-configuration-and-storage/05-persistentvolumes.html"><span>157.05</span><strong>PersistentVolumes</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="kubernetes-aks/157-configuration-and-storage/06-persistentvolumeclaims.html"><span>157.06</span><strong>PersistentVolumeClaims</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="kubernetes-aks/157-configuration-and-storage/07-storageclasses.html"><span>157.07</span><strong>StorageClasses</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="kubernetes-aks/157-configuration-and-storage/08-azure-disk.html"><span>157.08</span><strong>Azure Disk</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="kubernetes-aks/157-configuration-and-storage/09-azure-files.html"><span>157.09</span><strong>Azure Files</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="kubernetes-aks/157-configuration-and-storage/10-stateful-workload-project.html"><span>157.10</span><strong>Stateful-workload project</strong><i class="bi bi-arrow-right"></i></a></p>
+<a class="topic-lesson-link" href="kubernetes-aks/157-configuration-and-storage/01-configmaps.html"><span>157.01</span><strong>ConfigMaps</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="kubernetes-aks/157-configuration-and-storage/02-secrets.html"><span>157.02</span><strong>Secrets</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="kubernetes-aks/157-configuration-and-storage/03-environment-injection.html"><span>157.03</span><strong>Environment injection</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="kubernetes-aks/157-configuration-and-storage/04-volumes.html"><span>157.04</span><strong>Volumes</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="kubernetes-aks/157-configuration-and-storage/05-persistentvolumes.html"><span>157.05</span><strong>PersistentVolumes</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="kubernetes-aks/157-configuration-and-storage/06-persistentvolumeclaims.html"><span>157.06</span><strong>PersistentVolumeClaims</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="kubernetes-aks/157-configuration-and-storage/07-storageclasses.html"><span>157.07</span><strong>StorageClasses</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="kubernetes-aks/157-configuration-and-storage/08-azure-disk.html"><span>157.08</span><strong>Azure Disk</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="kubernetes-aks/157-configuration-and-storage/09-azure-files.html"><span>157.09</span><strong>Azure Files</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="kubernetes-aks/157-configuration-and-storage/10-stateful-workload-project.html"><span>157.10</span><strong>Stateful-workload project</strong><i class="bi bi-arrow-right"></i></a>
 </div>
 </details>
 <details class="curriculum-topic">
-<summary>
-<span class="topic-number">Topic 158</span><strong>Kubernetes networking and ingress</strong><span>10 notebooks</span>
-</summary>
+<summary><span class="topic-number">Topic 158</span><strong>Kubernetes networking and ingress</strong></summary>
 <div class="topic-lessons">
-<p><a class="topic-lesson-link" href="kubernetes-aks/158-kubernetes-networking-and-ingress/01-cluster-networking.html"><span>158.01</span><strong>Cluster networking</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="kubernetes-aks/158-kubernetes-networking-and-ingress/02-services.html"><span>158.02</span><strong>Services</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="kubernetes-aks/158-kubernetes-networking-and-ingress/03-clusterip.html"><span>158.03</span><strong>ClusterIP</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="kubernetes-aks/158-kubernetes-networking-and-ingress/04-nodeport.html"><span>158.04</span><strong>NodePort</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="kubernetes-aks/158-kubernetes-networking-and-ingress/05-loadbalancer.html"><span>158.05</span><strong>LoadBalancer</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="kubernetes-aks/158-kubernetes-networking-and-ingress/06-ingress.html"><span>158.06</span><strong>Ingress</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="kubernetes-aks/158-kubernetes-networking-and-ingress/07-ingress-controllers.html"><span>158.07</span><strong>Ingress controllers</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="kubernetes-aks/158-kubernetes-networking-and-ingress/08-network-policies.html"><span>158.08</span><strong>Network policies</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="kubernetes-aks/158-kubernetes-networking-and-ingress/09-dns-troubleshooting.html"><span>158.09</span><strong>DNS troubleshooting</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="kubernetes-aks/158-kubernetes-networking-and-ingress/10-networking-lab.html"><span>158.10</span><strong>Networking lab</strong><i class="bi bi-arrow-right"></i></a></p>
+<a class="topic-lesson-link" href="kubernetes-aks/158-kubernetes-networking-and-ingress/01-cluster-networking.html"><span>158.01</span><strong>Cluster networking</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="kubernetes-aks/158-kubernetes-networking-and-ingress/02-services.html"><span>158.02</span><strong>Services</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="kubernetes-aks/158-kubernetes-networking-and-ingress/03-clusterip.html"><span>158.03</span><strong>ClusterIP</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="kubernetes-aks/158-kubernetes-networking-and-ingress/04-nodeport.html"><span>158.04</span><strong>NodePort</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="kubernetes-aks/158-kubernetes-networking-and-ingress/05-loadbalancer.html"><span>158.05</span><strong>LoadBalancer</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="kubernetes-aks/158-kubernetes-networking-and-ingress/06-ingress.html"><span>158.06</span><strong>Ingress</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="kubernetes-aks/158-kubernetes-networking-and-ingress/07-ingress-controllers.html"><span>158.07</span><strong>Ingress controllers</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="kubernetes-aks/158-kubernetes-networking-and-ingress/08-network-policies.html"><span>158.08</span><strong>Network policies</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="kubernetes-aks/158-kubernetes-networking-and-ingress/09-dns-troubleshooting.html"><span>158.09</span><strong>DNS troubleshooting</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="kubernetes-aks/158-kubernetes-networking-and-ingress/10-networking-lab.html"><span>158.10</span><strong>Networking lab</strong><i class="bi bi-arrow-right"></i></a>
 </div>
 </details>
 <details class="curriculum-topic">
-<summary>
-<span class="topic-number">Topic 159</span><strong>Scaling upgrades and operations</strong><span>10 notebooks</span>
-</summary>
+<summary><span class="topic-number">Topic 159</span><strong>Scaling upgrades and operations</strong></summary>
 <div class="topic-lessons">
-<p><a class="topic-lesson-link" href="kubernetes-aks/159-scaling-upgrades-and-operations/01-horizontal-pod-autoscaler.html"><span>159.01</span><strong>Horizontal Pod Autoscaler</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="kubernetes-aks/159-scaling-upgrades-and-operations/02-vertical-scaling.html"><span>159.02</span><strong>Vertical scaling</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="kubernetes-aks/159-scaling-upgrades-and-operations/03-cluster-autoscaler.html"><span>159.03</span><strong>Cluster autoscaler</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="kubernetes-aks/159-scaling-upgrades-and-operations/04-pod-disruption-budgets.html"><span>159.04</span><strong>Pod disruption budgets</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="kubernetes-aks/159-scaling-upgrades-and-operations/05-rolling-updates.html"><span>159.05</span><strong>Rolling updates</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="kubernetes-aks/159-scaling-upgrades-and-operations/06-rollbacks.html"><span>159.06</span><strong>Rollbacks</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="kubernetes-aks/159-scaling-upgrades-and-operations/07-helm.html"><span>159.07</span><strong>Helm</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="kubernetes-aks/159-scaling-upgrades-and-operations/08-logging.html"><span>159.08</span><strong>Logging</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="kubernetes-aks/159-scaling-upgrades-and-operations/09-metrics.html"><span>159.09</span><strong>Metrics</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="kubernetes-aks/159-scaling-upgrades-and-operations/10-operations-project.html"><span>159.10</span><strong>Operations project</strong><i class="bi bi-arrow-right"></i></a></p>
+<a class="topic-lesson-link" href="kubernetes-aks/159-scaling-upgrades-and-operations/01-horizontal-pod-autoscaler.html"><span>159.01</span><strong>Horizontal Pod Autoscaler</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="kubernetes-aks/159-scaling-upgrades-and-operations/02-vertical-scaling.html"><span>159.02</span><strong>Vertical scaling</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="kubernetes-aks/159-scaling-upgrades-and-operations/03-cluster-autoscaler.html"><span>159.03</span><strong>Cluster autoscaler</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="kubernetes-aks/159-scaling-upgrades-and-operations/04-pod-disruption-budgets.html"><span>159.04</span><strong>Pod disruption budgets</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="kubernetes-aks/159-scaling-upgrades-and-operations/05-rolling-updates.html"><span>159.05</span><strong>Rolling updates</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="kubernetes-aks/159-scaling-upgrades-and-operations/06-rollbacks.html"><span>159.06</span><strong>Rollbacks</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="kubernetes-aks/159-scaling-upgrades-and-operations/07-helm.html"><span>159.07</span><strong>Helm</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="kubernetes-aks/159-scaling-upgrades-and-operations/08-logging.html"><span>159.08</span><strong>Logging</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="kubernetes-aks/159-scaling-upgrades-and-operations/09-metrics.html"><span>159.09</span><strong>Metrics</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="kubernetes-aks/159-scaling-upgrades-and-operations/10-operations-project.html"><span>159.10</span><strong>Operations project</strong><i class="bi bi-arrow-right"></i></a>
 </div>
 </details>
 <details class="curriculum-topic">
-<summary>
-<span class="topic-number">Topic 160</span><strong>Production Azure Kubernetes Service</strong><span>10 notebooks</span>
-</summary>
+<summary><span class="topic-number">Topic 160</span><strong>Production Azure Kubernetes Service</strong></summary>
 <div class="topic-lessons">
-<p><a class="topic-lesson-link" href="kubernetes-aks/160-production-azure-kubernetes-service/01-aks-architecture.html"><span>160.01</span><strong>AKS architecture</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="kubernetes-aks/160-production-azure-kubernetes-service/02-cluster-creation.html"><span>160.02</span><strong>Cluster creation</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="kubernetes-aks/160-production-azure-kubernetes-service/03-entra-integration.html"><span>160.03</span><strong>Entra integration</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="kubernetes-aks/160-production-azure-kubernetes-service/04-managed-identities.html"><span>160.04</span><strong>Managed identities</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="kubernetes-aks/160-production-azure-kubernetes-service/05-acr-integration.html"><span>160.05</span><strong>ACR integration</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="kubernetes-aks/160-production-azure-kubernetes-service/06-node-pools.html"><span>160.06</span><strong>Node pools</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="kubernetes-aks/160-production-azure-kubernetes-service/07-private-clusters.html"><span>160.07</span><strong>Private clusters</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="kubernetes-aks/160-production-azure-kubernetes-service/08-azure-policy.html"><span>160.08</span><strong>Azure Policy</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="kubernetes-aks/160-production-azure-kubernetes-service/09-upgrade-planning.html"><span>160.09</span><strong>Upgrade planning</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="kubernetes-aks/160-production-azure-kubernetes-service/10-aks-capstone.html"><span>160.10</span><strong>AKS capstone</strong><i class="bi bi-arrow-right"></i></a></p>
+<a class="topic-lesson-link" href="kubernetes-aks/160-production-azure-kubernetes-service/01-aks-architecture.html"><span>160.01</span><strong>AKS architecture</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="kubernetes-aks/160-production-azure-kubernetes-service/02-cluster-creation.html"><span>160.02</span><strong>Cluster creation</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="kubernetes-aks/160-production-azure-kubernetes-service/03-entra-integration.html"><span>160.03</span><strong>Entra integration</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="kubernetes-aks/160-production-azure-kubernetes-service/04-managed-identities.html"><span>160.04</span><strong>Managed identities</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="kubernetes-aks/160-production-azure-kubernetes-service/05-acr-integration.html"><span>160.05</span><strong>ACR integration</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="kubernetes-aks/160-production-azure-kubernetes-service/06-node-pools.html"><span>160.06</span><strong>Node pools</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="kubernetes-aks/160-production-azure-kubernetes-service/07-private-clusters.html"><span>160.07</span><strong>Private clusters</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="kubernetes-aks/160-production-azure-kubernetes-service/08-azure-policy.html"><span>160.08</span><strong>Azure Policy</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="kubernetes-aks/160-production-azure-kubernetes-service/09-upgrade-planning.html"><span>160.09</span><strong>Upgrade planning</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="kubernetes-aks/160-production-azure-kubernetes-service/10-aks-capstone.html"><span>160.10</span><strong>AKS capstone</strong><i class="bi bi-arrow-right"></i></a>
 </div>
 </details>
-</section>
-<section id="completion-standard" class="level2">
+</div>
+<p class="syllabus-empty" hidden="" id="azure-devops-kubernetes-and-aks-catalog-empty"><i class="bi bi-search"></i> No matching lessons were found.</p>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const catalog = document.getElementById("azure-devops-kubernetes-and-aks-catalog");
+  const search = document.getElementById("azure-devops-kubernetes-and-aks-catalog-search");
+  const empty = document.getElementById("azure-devops-kubernetes-and-aks-catalog-empty");
+  if (!catalog || !search || !empty) return;
+
+  search.addEventListener("input", () => {
+    const query = search.value.trim().toLowerCase();
+    let visibleTopics = 0;
+    catalog.querySelectorAll(".curriculum-topic").forEach((topic) => {
+      const summary = topic.querySelector("summary");
+      const topicMatches = !query || summary.textContent.toLowerCase().includes(query);
+      let visibleLessons = 0;
+      topic.querySelectorAll(".topic-lesson-link").forEach((lesson) => {
+        const matches = topicMatches || lesson.textContent.toLowerCase().includes(query);
+        lesson.hidden = !matches;
+        if (matches) visibleLessons += 1;
+      });
+      const showTopic = topicMatches || visibleLessons > 0;
+      topic.hidden = !showTopic;
+      if (showTopic) visibleTopics += 1;
+      if (query && showTopic) topic.open = true;
+    });
+    empty.hidden = visibleTopics > 0;
+  });
+});
+</script>
+<section class="level2" id="completion-standard">
 <h2 class="anchored" data-anchor-id="completion-standard">Completion standard</h2>
 <p>You have completed <strong>Kubernetes &amp; AKS</strong> when you can explain each topic, reproduce its core workflow, pass the notebook checks, defend the main tradeoffs, and combine the lessons into one reviewable portfolio project. Use the practice tasks as evidence rather than treating page reading alone as completion.</p>
-
-
 </section>
-
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
@@ -865,21 +889,17 @@ A complete notebook-first syllabus organized from foundations to applied deliver
   </script>
 </div> <!-- /content -->
 <footer class="footer">
-  <div class="nav-footer">
-    <div class="nav-footer-left">
+<div class="nav-footer">
+<div class="nav-footer-left">
 <p>© 2026 Edukron Notes</p>
-</div>   
-    <div class="nav-footer-center">
-      &nbsp;
+</div>
+<div class="nav-footer-center">
+       
     </div>
-    <div class="nav-footer-right">
+<div class="nav-footer-right">
 <p>Notebook courses for AI, data engineering, and DevOps</p>
 </div>
-  </div>
+</div>
 </footer>
-
-
-
-
 <script src="../../site_libs/quarto-html/zenscroll-min.js"></script>
 </body></html>

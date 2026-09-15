@@ -1,15 +1,12 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
-<meta charset="utf-8">
-<meta name="generator" content="quarto-1.10.18">
-
-<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-
-<meta name="author" content="Edukron Notes">
-<meta name="dcterms.date" content="2026-09-14">
-<meta name="description" content="Complete notebook syllabus for Terraform Infrastructure as Code in Azure DevOps.">
-
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta charset="utf-8"/>
+<meta content="quarto-1.10.18" name="generator"/>
+<meta content="width=device-width, initial-scale=1.0, user-scalable=yes" name="viewport"/>
+<meta content="Edukron Notes" name="author"/>
+<meta content="2026-09-14" name="dcterms.date"/>
+<meta content="Complete notebook syllabus for Terraform Infrastructure as Code in Azure DevOps." name="description"/>
 <title>Terraform Infrastructure as Code – Edukron Notes</title>
 <style>
 /* Default styles provided by pandoc.
@@ -30,25 +27,23 @@ ul.task-list li input[type="checkbox"] {
   vertical-align: middle;
 }
 </style>
-
-
 <script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
 <script src="../../site_libs/quarto-nav/headroom.min.js"></script>
 <script src="../../site_libs/clipboard/clipboard.min.js"></script>
 <script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
 <script src="../../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../../">
+<meta content="../../" name="quarto:offset"/>
 <script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="../../site_libs/quarto-html/popper.min.js"></script>
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet"/>
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" id="quarto-text-highlighting-styles" rel="stylesheet"/>
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-f0f4b58164ec92a07fcd2db94b0e5cbd.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet"/>
+<link append-hash="true" data-mode="light" href="../../site_libs/bootstrap/bootstrap-f0f4b58164ec92a07fcd2db94b0e5cbd.min.css" id="quarto-bootstrap" rel="stylesheet"/>
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -76,384 +71,406 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 <style>html{ scroll-behavior: smooth; }</style>
-
-
-<link rel="stylesheet" href="../../styles.css">
+<link href="../../styles.css" rel="stylesheet"/>
 </head>
-
 <body class="nav-fixed quarto-light">
-
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top">
-    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
-      <div class="navbar-container container-fluid">
-      <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="../../index.html">
-    <span class="navbar-title">Edukron Notes</span>
-    </a>
-  </div>
-            <div id="quarto-search" class="" title="Search"></div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
-  <span class="navbar-toggler-icon"></span>
-</button>
-          <div class="collapse navbar-collapse" id="navbarCollapse">
-            <ul class="navbar-nav navbar-nav-scroll me-auto">
-  <li class="nav-item">
-    <a class="nav-link" href="../../index.html"> 
-<span class="menu-text">Home</span></a>
-  </li>  
-  <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-full-stack-ai" role="link" data-bs-toggle="dropdown" aria-expanded="false">
-      <i class="bi bi-cpu" role="img">
-</i> 
- <span class="menu-text">Full Stack AI</span>
-    </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-full-stack-ai">    
-        <li>
-    <a class="dropdown-item" href="../../courses/full-stack-ai/index.html">
- <span class="dropdown-text">Program overview</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/full-stack-ai/python.html">
- <span class="dropdown-text">Python</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/full-stack-ai/sql.html">
- <span class="dropdown-text">SQL</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/full-stack-ai/data-science.html">
- <span class="dropdown-text">Data Science</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/full-stack-ai/machine-learning.html">
- <span class="dropdown-text">Machine Learning</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/full-stack-ai/artificial-intelligence.html">
- <span class="dropdown-text">Artificial Intelligence</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/full-stack-ai/deep-learning.html">
- <span class="dropdown-text">Deep Learning</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/full-stack-ai/generative-ai.html">
- <span class="dropdown-text">Generative AI</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/full-stack-ai/large-language-models.html">
- <span class="dropdown-text">Large Language Models (LLMs)</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/full-stack-ai/rag.html">
- <span class="dropdown-text">Retrieval Augmented Generation (RAG)</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/full-stack-ai/agentic-ai.html">
- <span class="dropdown-text">Agentic AI</span></a>
-  </li>  
-    </ul>
-  </li>
-  <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-azure-data-engineering" role="link" data-bs-toggle="dropdown" aria-expanded="false">
-      <i class="bi bi-database" role="img">
-</i> 
- <span class="menu-text">Azure Data Engineering</span>
-    </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-azure-data-engineering">    
-        <li>
-    <a class="dropdown-item" href="../../courses/azure-data-engineering/index.html">
- <span class="dropdown-text">Program overview</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/azure-data-engineering/python.html">
- <span class="dropdown-text">Python</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/azure-data-engineering/sql.html">
- <span class="dropdown-text">SQL</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/azure-data-engineering/fundamentals.html">
- <span class="dropdown-text">Data Engineering Fundamentals</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/azure-data-engineering/azure-data-factory.html">
- <span class="dropdown-text">Azure Data Factory (ADF)</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/azure-data-engineering/adls-gen2.html">
- <span class="dropdown-text">Azure Data Lake Storage Gen2</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/azure-data-engineering/azure-databricks.html">
- <span class="dropdown-text">Azure Databricks</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/azure-data-engineering/pyspark.html">
- <span class="dropdown-text">PySpark</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/azure-data-engineering/azure-synapse.html">
- <span class="dropdown-text">Azure Synapse Analytics</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/azure-data-engineering/microsoft-fabric.html">
- <span class="dropdown-text">Microsoft Fabric</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/azure-data-engineering/delta-lake.html">
- <span class="dropdown-text">Delta Lake</span></a>
-  </li>  
-    </ul>
-  </li>
-  <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-azure-devops" role="link" data-bs-toggle="dropdown" aria-expanded="false">
-      <i class="bi bi-infinity" role="img">
-</i> 
- <span class="menu-text">Azure DevOps</span>
-    </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-azure-devops">    
-        <li>
-    <a class="dropdown-item" href="../../courses/azure-devops/index.html">
- <span class="dropdown-text">Program overview</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/azure-devops/linux-shell-scripting.html">
- <span class="dropdown-text">Linux &amp; Shell Scripting</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/azure-devops/git-version-control.html">
- <span class="dropdown-text">Git &amp; Version Control</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/azure-devops/azure-repos.html">
- <span class="dropdown-text">Azure Repos</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/azure-devops/azure-pipelines.html">
- <span class="dropdown-text">Azure Pipelines (CI/CD)</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/azure-devops/yaml-pipelines.html">
- <span class="dropdown-text">YAML Pipeline Development</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/azure-devops/docker.html">
- <span class="dropdown-text">Docker &amp; Containerization</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/azure-devops/kubernetes-aks.html">
- <span class="dropdown-text">Kubernetes &amp; AKS</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/azure-devops/terraform.html">
- <span class="dropdown-text">Terraform Infrastructure as Code</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/azure-devops/azure-cloud-services.html">
- <span class="dropdown-text">Azure Cloud Services</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/azure-devops/devsecops-monitoring.html">
- <span class="dropdown-text">DevSecOps &amp; Monitoring</span></a>
-  </li>  
-    </ul>
-  </li>
-  <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-interview-questions" role="link" data-bs-toggle="dropdown" aria-expanded="false">
-      <i class="bi bi-question-circle" role="img">
-</i> 
- <span class="menu-text">Interview Questions</span>
-    </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-interview-questions">    
-        <li>
-    <a class="dropdown-item" href="../../interview-questions/index.html">
- <span class="dropdown-text">Section overview</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../interview-questions/full-stack-ai.html">
- <span class="dropdown-text">Full Stack AI</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../interview-questions/azure-data-engineering.html">
- <span class="dropdown-text">Azure Data Engineering</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../interview-questions/azure-devops.html">
- <span class="dropdown-text">Azure DevOps</span></a>
-  </li>  
-    </ul>
-  </li>
-  <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-project-flows" role="link" data-bs-toggle="dropdown" aria-expanded="false">
-      <i class="bi bi-kanban" role="img">
-</i> 
- <span class="menu-text">Project Flows</span>
-    </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-project-flows">    
-        <li>
-    <a class="dropdown-item" href="../../project-flows/index.html">
- <span class="dropdown-text">Section overview</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../project-flows/full-stack-ai.html">
- <span class="dropdown-text">Full Stack AI</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../project-flows/azure-data-engineering.html">
- <span class="dropdown-text">Azure Data Engineering</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../project-flows/azure-devops.html">
- <span class="dropdown-text">Azure DevOps</span></a>
-  </li>  
-    </ul>
-  </li>
-</ul>
-          </div> <!-- /navcollapse -->
-            <div class="quarto-navbar-tools">
+<header class="headroom fixed-top" id="quarto-header">
+<nav class="navbar navbar-expand-lg" data-bs-theme="dark">
+<div class="navbar-container container-fluid">
+<div class="navbar-brand-container mx-auto">
+<a class="navbar-brand" href="../../index.html">
+<span class="navbar-title">Edukron Notes</span>
+</a>
 </div>
-      </div> <!-- /container-fluid -->
-    </nav>
+<div class="" id="quarto-search" title="Search"></div>
+<button aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-bs-target="#navbarCollapse" data-bs-toggle="collapse" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }" role="menu" type="button">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" id="navbarCollapse">
+<ul class="navbar-nav navbar-nav-scroll me-auto">
+<li class="nav-item">
+<a class="nav-link" href="../../index.html">
+<span class="menu-text">Home</span></a>
+</li>
+<li class="nav-item dropdown">
+<a aria-expanded="false" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" id="nav-menu-full-stack-ai" role="link">
+<i class="bi bi-cpu" role="img">
+</i>
+<span class="menu-text">Full Stack AI</span>
+</a>
+<ul aria-labelledby="nav-menu-full-stack-ai" class="dropdown-menu">
+<li>
+<a class="dropdown-item" href="../../courses/full-stack-ai/index.html">
+<span class="dropdown-text">Program overview</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/full-stack-ai/python.html">
+<span class="dropdown-text">Python</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/full-stack-ai/sql.html">
+<span class="dropdown-text">SQL</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/full-stack-ai/data-science.html">
+<span class="dropdown-text">Data Science</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/full-stack-ai/machine-learning.html">
+<span class="dropdown-text">Machine Learning</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/full-stack-ai/artificial-intelligence.html">
+<span class="dropdown-text">Artificial Intelligence</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/full-stack-ai/deep-learning.html">
+<span class="dropdown-text">Deep Learning</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/full-stack-ai/generative-ai.html">
+<span class="dropdown-text">Generative AI</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/full-stack-ai/large-language-models.html">
+<span class="dropdown-text">Large Language Models (LLMs)</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/full-stack-ai/rag.html">
+<span class="dropdown-text">Retrieval Augmented Generation (RAG)</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/full-stack-ai/agentic-ai.html">
+<span class="dropdown-text">Agentic AI</span></a>
+</li>
+</ul>
+</li>
+<li class="nav-item dropdown">
+<a aria-expanded="false" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" id="nav-menu-azure-data-engineering" role="link">
+<i class="bi bi-database" role="img">
+</i>
+<span class="menu-text">Azure Data Engineering</span>
+</a>
+<ul aria-labelledby="nav-menu-azure-data-engineering" class="dropdown-menu">
+<li>
+<a class="dropdown-item" href="../../courses/azure-data-engineering/index.html">
+<span class="dropdown-text">Program overview</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/azure-data-engineering/python.html">
+<span class="dropdown-text">Python</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/azure-data-engineering/sql.html">
+<span class="dropdown-text">SQL</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/azure-data-engineering/fundamentals.html">
+<span class="dropdown-text">Data Engineering Fundamentals</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/azure-data-engineering/azure-data-factory.html">
+<span class="dropdown-text">Azure Data Factory (ADF)</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/azure-data-engineering/adls-gen2.html">
+<span class="dropdown-text">Azure Data Lake Storage Gen2</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/azure-data-engineering/azure-databricks.html">
+<span class="dropdown-text">Azure Databricks</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/azure-data-engineering/pyspark.html">
+<span class="dropdown-text">PySpark</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/azure-data-engineering/azure-synapse.html">
+<span class="dropdown-text">Azure Synapse Analytics</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/azure-data-engineering/microsoft-fabric.html">
+<span class="dropdown-text">Microsoft Fabric</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/azure-data-engineering/delta-lake.html">
+<span class="dropdown-text">Delta Lake</span></a>
+</li>
+</ul>
+</li>
+<li class="nav-item dropdown">
+<a aria-expanded="false" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" id="nav-menu-azure-devops" role="link">
+<i class="bi bi-infinity" role="img">
+</i>
+<span class="menu-text">Azure DevOps</span>
+</a>
+<ul aria-labelledby="nav-menu-azure-devops" class="dropdown-menu">
+<li>
+<a class="dropdown-item" href="../../courses/azure-devops/index.html">
+<span class="dropdown-text">Program overview</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/azure-devops/linux-shell-scripting.html">
+<span class="dropdown-text">Linux &amp; Shell Scripting</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/azure-devops/git-version-control.html">
+<span class="dropdown-text">Git &amp; Version Control</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/azure-devops/azure-repos.html">
+<span class="dropdown-text">Azure Repos</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/azure-devops/azure-pipelines.html">
+<span class="dropdown-text">Azure Pipelines (CI/CD)</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/azure-devops/yaml-pipelines.html">
+<span class="dropdown-text">YAML Pipeline Development</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/azure-devops/docker.html">
+<span class="dropdown-text">Docker &amp; Containerization</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/azure-devops/kubernetes-aks.html">
+<span class="dropdown-text">Kubernetes &amp; AKS</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/azure-devops/terraform.html">
+<span class="dropdown-text">Terraform Infrastructure as Code</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/azure-devops/azure-cloud-services.html">
+<span class="dropdown-text">Azure Cloud Services</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/azure-devops/devsecops-monitoring.html">
+<span class="dropdown-text">DevSecOps &amp; Monitoring</span></a>
+</li>
+</ul>
+</li>
+<li class="nav-item dropdown">
+<a aria-expanded="false" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" id="nav-menu-interview-questions" role="link">
+<i class="bi bi-question-circle" role="img">
+</i>
+<span class="menu-text">Interview Questions</span>
+</a>
+<ul aria-labelledby="nav-menu-interview-questions" class="dropdown-menu">
+<li>
+<a class="dropdown-item" href="../../interview-questions/index.html">
+<span class="dropdown-text">Section overview</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../interview-questions/full-stack-ai.html">
+<span class="dropdown-text">Full Stack AI</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../interview-questions/azure-data-engineering.html">
+<span class="dropdown-text">Azure Data Engineering</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../interview-questions/azure-devops.html">
+<span class="dropdown-text">Azure DevOps</span></a>
+</li>
+</ul>
+</li>
+<li class="nav-item dropdown">
+<a aria-expanded="false" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" id="nav-menu-project-flows" role="link">
+<i class="bi bi-kanban" role="img">
+</i>
+<span class="menu-text">Project Flows</span>
+</a>
+<ul aria-labelledby="nav-menu-project-flows" class="dropdown-menu">
+<li>
+<a class="dropdown-item" href="../../project-flows/index.html">
+<span class="dropdown-text">Section overview</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../project-flows/full-stack-ai.html">
+<span class="dropdown-text">Full Stack AI</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../project-flows/azure-data-engineering.html">
+<span class="dropdown-text">Azure Data Engineering</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../project-flows/azure-devops.html">
+<span class="dropdown-text">Azure DevOps</span></a>
+</li>
+</ul>
+</li>
+</ul>
+</div> <!-- /navcollapse -->
+<div class="quarto-navbar-tools">
+</div>
+</div> <!-- /container-fluid -->
+</nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<div class="quarto-container page-columns page-rows-contents page-layout-full page-navbar" id="quarto-content">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
-   
-  <ul>
-  <li><a href="#how-to-use-this-course" id="toc-how-to-use-this-course" class="nav-link active" data-scroll-target="#how-to-use-this-course">How to use this course</a></li>
-  <li><a href="#full-syllabus" id="toc-full-syllabus" class="nav-link" data-scroll-target="#full-syllabus">Full syllabus</a></li>
-  <li><a href="#completion-standard" id="toc-completion-standard" class="nav-link" data-scroll-target="#completion-standard">Completion standard</a></li>
-  </ul>
-</nav>
-    </div>
 <!-- main -->
-<main class="content" id="quarto-document-content">
-
-<header id="title-block-header" class="quarto-title-block default">
+<main class="content column-page" id="quarto-document-content">
+<header class="quarto-title-block default" id="title-block-header">
 <div class="quarto-title">
 <h1 class="title">Terraform Infrastructure as Code</h1>
 </div>
-
 <div>
-  <div class="description">
+<div class="description">
     Complete notebook syllabus for Terraform Infrastructure as Code in Azure DevOps.
   </div>
 </div>
-
-
 <div class="quarto-title-meta">
-
-    <div>
-    <div class="quarto-title-meta-heading">Author</div>
-    <div class="quarto-title-meta-contents">
-             <p>Edukron Notes </p>
-          </div>
-  </div>
-    
-    <div>
-    <div class="quarto-title-meta-heading">Published</div>
-    <div class="quarto-title-meta-contents">
-      <p class="date">September 14, 2026</p>
-    </div>
-  </div>
-  
-    
-  </div>
-  
-
-
+<div>
+<div class="quarto-title-meta-heading">Author</div>
+<div class="quarto-title-meta-contents">
+<p>Edukron Notes </p>
+</div>
+</div>
+<div>
+<div class="quarto-title-meta-heading">Published</div>
+<div class="quarto-title-meta-contents">
+<p class="date">September 14, 2026</p>
+</div>
+</div>
+</div>
 </header>
-
-
-<div class="overview-lead curriculum-summary">
-<div class="overview-icon">
-<i class="bi bi-journal-code" aria-hidden="true"></i>
+<div class="course-workspace notebook-chrome">
+<div class="notebook-toolbar">
+<span class="notebook-file"><i aria-hidden="true" class="bi bi-journal-code"></i><strong>terraform.ipynb</strong></span>
+<span class="notebook-status"><i aria-hidden="true" class="bi bi-check-circle-fill"></i> Trusted</span>
+<span class="notebook-kernel"><i aria-hidden="true" class="bi bi-diagram-3"></i> Learning path</span>
 </div>
-<div>
+<div class="course-workspace-hero">
 <span class="overview-kicker">Azure DevOps</span>
-<h2 class="anchored">
-Terraform Infrastructure as Code
-</h2>
-<p>
-A complete notebook-first syllabus organized from foundations to applied delivery. Every lesson contains notes, a worked pattern, executable validation, a guided lab, solution blueprint, practice, and knowledge checks.
-</p>
+<h1>Terraform Infrastructure as Code</h1>
+<p>A complete notebook-first syllabus organized from foundations to applied delivery. Every lesson combines clear notes, a worked pattern, executable validation, a guided lab, a solution blueprint, practice, and knowledge checks.</p>
+<div class="course-tags"><span><i class="bi bi-signpost-split"></i> Foundation to advanced</span><span><i class="bi bi-code-square"></i> Hands-on practice</span><span><i class="bi bi-patch-check"></i> Review ready</span></div>
+<p class="course-start"><a class="btn btn-primary" href="terraform/161-terraform-foundations/01-infrastructure-as-code.html"><i class="bi bi-play-fill"></i> Start the first notebook</a></p>
 </div>
 </div>
-<div class="course-stat-grid">
-<div>
-<strong>5</strong><span>Syllabus topics</span>
-</div>
-<div>
-<strong>50</strong><span>Notebook lessons</span>
-</div>
-<div>
-<strong>Practice</strong><span>Labs and solutions</span>
-</div>
-</div>
-<p class="course-start">
-<a class="btn btn-primary" href="terraform/161-terraform-foundations/01-infrastructure-as-code.html">Start the first notebook <i class="bi bi-arrow-right"></i></a>
-</p>
-<section id="how-to-use-this-course" class="level2">
+<section class="level2" id="how-to-use-this-course">
 <h2 class="anchored" data-anchor-id="how-to-use-this-course">How to use this course</h2>
 <p>Work through lessons in order for a complete pathway, or open a topic for focused reference. Type or adapt the examples, complete the guided lab before reading its blueprint, and preserve your test evidence as a portfolio artifact. Cloud and infrastructure examples are safe, copy-ready teaching patterns; execute them in your own sandbox only after substituting approved identities, names, and policies.</p>
 </section>
-<section id="full-syllabus" class="level2">
-<h2 class="anchored" data-anchor-id="full-syllabus">Full syllabus</h2>
+<div class="syllabus-heading" id="notebook-syllabus">
+<div><span class="overview-kicker">Course contents</span><h2>Notebook syllabus</h2><p>Open a topic to browse its lessons, or search the complete course by concept.</p></div>
+<label class="syllabus-search" for="azure-devops-terraform-infrastructure-as-code-catalog-search"><i aria-hidden="true" class="bi bi-search"></i><input aria-label="Search the Terraform Infrastructure as Code syllabus" autocomplete="off" id="azure-devops-terraform-infrastructure-as-code-catalog-search" placeholder="Find a topic or lesson" type="search"/></label>
+</div>
+<div class="curriculum-catalog" id="azure-devops-terraform-infrastructure-as-code-catalog">
 <details class="curriculum-topic" open="">
-<summary>
-<span class="topic-number">Topic 161</span><strong>Terraform foundations</strong><span>10 notebooks</span>
-</summary>
+<summary><span class="topic-number">Topic 161</span><strong>Terraform foundations</strong></summary>
 <div class="topic-lessons">
-<p><a class="topic-lesson-link" href="terraform/161-terraform-foundations/01-infrastructure-as-code.html"><span>161.01</span><strong>Infrastructure as Code</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="terraform/161-terraform-foundations/02-terraform-workflow.html"><span>161.02</span><strong>Terraform workflow</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="terraform/161-terraform-foundations/03-hcl-syntax.html"><span>161.03</span><strong>HCL syntax</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="terraform/161-terraform-foundations/04-providers.html"><span>161.04</span><strong>Providers</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="terraform/161-terraform-foundations/05-resources.html"><span>161.05</span><strong>Resources</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="terraform/161-terraform-foundations/06-data-sources.html"><span>161.06</span><strong>Data sources</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="terraform/161-terraform-foundations/07-variables.html"><span>161.07</span><strong>Variables</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="terraform/161-terraform-foundations/08-outputs.html"><span>161.08</span><strong>Outputs</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="terraform/161-terraform-foundations/09-plan-and-apply.html"><span>161.09</span><strong>Plan and apply</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="terraform/161-terraform-foundations/10-foundations-project.html"><span>161.10</span><strong>Foundations project</strong><i class="bi bi-arrow-right"></i></a></p>
+<a class="topic-lesson-link" href="terraform/161-terraform-foundations/01-infrastructure-as-code.html"><span>161.01</span><strong>Infrastructure as Code</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="terraform/161-terraform-foundations/02-terraform-workflow.html"><span>161.02</span><strong>Terraform workflow</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="terraform/161-terraform-foundations/03-hcl-syntax.html"><span>161.03</span><strong>HCL syntax</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="terraform/161-terraform-foundations/04-providers.html"><span>161.04</span><strong>Providers</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="terraform/161-terraform-foundations/05-resources.html"><span>161.05</span><strong>Resources</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="terraform/161-terraform-foundations/06-data-sources.html"><span>161.06</span><strong>Data sources</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="terraform/161-terraform-foundations/07-variables.html"><span>161.07</span><strong>Variables</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="terraform/161-terraform-foundations/08-outputs.html"><span>161.08</span><strong>Outputs</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="terraform/161-terraform-foundations/09-plan-and-apply.html"><span>161.09</span><strong>Plan and apply</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="terraform/161-terraform-foundations/10-foundations-project.html"><span>161.10</span><strong>Foundations project</strong><i class="bi bi-arrow-right"></i></a>
 </div>
 </details>
 <details class="curriculum-topic">
-<summary>
-<span class="topic-number">Topic 162</span><strong>Provisioning Azure with Terraform</strong><span>10 notebooks</span>
-</summary>
+<summary><span class="topic-number">Topic 162</span><strong>Provisioning Azure with Terraform</strong></summary>
 <div class="topic-lessons">
-<p><a class="topic-lesson-link" href="terraform/162-provisioning-azure-with-terraform/01-azure-provider.html"><span>162.01</span><strong>Azure provider</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="terraform/162-provisioning-azure-with-terraform/02-authentication.html"><span>162.02</span><strong>Authentication</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="terraform/162-provisioning-azure-with-terraform/03-resource-groups.html"><span>162.03</span><strong>Resource groups</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="terraform/162-provisioning-azure-with-terraform/04-virtual-networks.html"><span>162.04</span><strong>Virtual networks</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="terraform/162-provisioning-azure-with-terraform/05-storage-accounts.html"><span>162.05</span><strong>Storage accounts</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="terraform/162-provisioning-azure-with-terraform/06-compute-resources.html"><span>162.06</span><strong>Compute resources</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="terraform/162-provisioning-azure-with-terraform/07-dependencies.html"><span>162.07</span><strong>Dependencies</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="terraform/162-provisioning-azure-with-terraform/08-tags.html"><span>162.08</span><strong>Tags</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="terraform/162-provisioning-azure-with-terraform/09-naming-standards.html"><span>162.09</span><strong>Naming standards</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="terraform/162-provisioning-azure-with-terraform/10-azure-provisioning-project.html"><span>162.10</span><strong>Azure provisioning project</strong><i class="bi bi-arrow-right"></i></a></p>
+<a class="topic-lesson-link" href="terraform/162-provisioning-azure-with-terraform/01-azure-provider.html"><span>162.01</span><strong>Azure provider</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="terraform/162-provisioning-azure-with-terraform/02-authentication.html"><span>162.02</span><strong>Authentication</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="terraform/162-provisioning-azure-with-terraform/03-resource-groups.html"><span>162.03</span><strong>Resource groups</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="terraform/162-provisioning-azure-with-terraform/04-virtual-networks.html"><span>162.04</span><strong>Virtual networks</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="terraform/162-provisioning-azure-with-terraform/05-storage-accounts.html"><span>162.05</span><strong>Storage accounts</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="terraform/162-provisioning-azure-with-terraform/06-compute-resources.html"><span>162.06</span><strong>Compute resources</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="terraform/162-provisioning-azure-with-terraform/07-dependencies.html"><span>162.07</span><strong>Dependencies</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="terraform/162-provisioning-azure-with-terraform/08-tags.html"><span>162.08</span><strong>Tags</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="terraform/162-provisioning-azure-with-terraform/09-naming-standards.html"><span>162.09</span><strong>Naming standards</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="terraform/162-provisioning-azure-with-terraform/10-azure-provisioning-project.html"><span>162.10</span><strong>Azure provisioning project</strong><i class="bi bi-arrow-right"></i></a>
 </div>
 </details>
 <details class="curriculum-topic">
-<summary>
-<span class="topic-number">Topic 163</span><strong>Terraform state and lifecycle</strong><span>10 notebooks</span>
-</summary>
+<summary><span class="topic-number">Topic 163</span><strong>Terraform state and lifecycle</strong></summary>
 <div class="topic-lessons">
-<p><a class="topic-lesson-link" href="terraform/163-terraform-state-and-lifecycle/01-state-purpose.html"><span>163.01</span><strong>State purpose</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="terraform/163-terraform-state-and-lifecycle/02-remote-backends.html"><span>163.02</span><strong>Remote backends</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="terraform/163-terraform-state-and-lifecycle/03-state-locking.html"><span>163.03</span><strong>State locking</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="terraform/163-terraform-state-and-lifecycle/04-state-commands.html"><span>163.04</span><strong>State commands</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="terraform/163-terraform-state-and-lifecycle/05-import.html"><span>163.05</span><strong>Import</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="terraform/163-terraform-state-and-lifecycle/06-moved-blocks.html"><span>163.06</span><strong>Moved blocks</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="terraform/163-terraform-state-and-lifecycle/07-lifecycle-meta-arguments.html"><span>163.07</span><strong>Lifecycle meta-arguments</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="terraform/163-terraform-state-and-lifecycle/08-drift-detection.html"><span>163.08</span><strong>Drift detection</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="terraform/163-terraform-state-and-lifecycle/09-state-recovery.html"><span>163.09</span><strong>State recovery</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="terraform/163-terraform-state-and-lifecycle/10-state-management-lab.html"><span>163.10</span><strong>State-management lab</strong><i class="bi bi-arrow-right"></i></a></p>
+<a class="topic-lesson-link" href="terraform/163-terraform-state-and-lifecycle/01-state-purpose.html"><span>163.01</span><strong>State purpose</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="terraform/163-terraform-state-and-lifecycle/02-remote-backends.html"><span>163.02</span><strong>Remote backends</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="terraform/163-terraform-state-and-lifecycle/03-state-locking.html"><span>163.03</span><strong>State locking</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="terraform/163-terraform-state-and-lifecycle/04-state-commands.html"><span>163.04</span><strong>State commands</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="terraform/163-terraform-state-and-lifecycle/05-import.html"><span>163.05</span><strong>Import</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="terraform/163-terraform-state-and-lifecycle/06-moved-blocks.html"><span>163.06</span><strong>Moved blocks</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="terraform/163-terraform-state-and-lifecycle/07-lifecycle-meta-arguments.html"><span>163.07</span><strong>Lifecycle meta-arguments</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="terraform/163-terraform-state-and-lifecycle/08-drift-detection.html"><span>163.08</span><strong>Drift detection</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="terraform/163-terraform-state-and-lifecycle/09-state-recovery.html"><span>163.09</span><strong>State recovery</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="terraform/163-terraform-state-and-lifecycle/10-state-management-lab.html"><span>163.10</span><strong>State-management lab</strong><i class="bi bi-arrow-right"></i></a>
 </div>
 </details>
 <details class="curriculum-topic">
-<summary>
-<span class="topic-number">Topic 164</span><strong>Modules testing and automation</strong><span>10 notebooks</span>
-</summary>
+<summary><span class="topic-number">Topic 164</span><strong>Modules testing and automation</strong></summary>
 <div class="topic-lessons">
-<p><a class="topic-lesson-link" href="terraform/164-modules-testing-and-automation/01-module-design.html"><span>164.01</span><strong>Module design</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="terraform/164-modules-testing-and-automation/02-inputs-and-outputs.html"><span>164.02</span><strong>Inputs and outputs</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="terraform/164-modules-testing-and-automation/03-module-composition.html"><span>164.03</span><strong>Module composition</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="terraform/164-modules-testing-and-automation/04-version-constraints.html"><span>164.04</span><strong>Version constraints</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="terraform/164-modules-testing-and-automation/05-validation-rules.html"><span>164.05</span><strong>Validation rules</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="terraform/164-modules-testing-and-automation/06-formatting-and-validation.html"><span>164.06</span><strong>Formatting and validation</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="terraform/164-modules-testing-and-automation/07-plan-testing.html"><span>164.07</span><strong>Plan testing</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="terraform/164-modules-testing-and-automation/08-policy-checks.html"><span>164.08</span><strong>Policy checks</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="terraform/164-modules-testing-and-automation/09-ci-integration.html"><span>164.09</span><strong>CI integration</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="terraform/164-modules-testing-and-automation/10-reusable-module-project.html"><span>164.10</span><strong>Reusable-module project</strong><i class="bi bi-arrow-right"></i></a></p>
+<a class="topic-lesson-link" href="terraform/164-modules-testing-and-automation/01-module-design.html"><span>164.01</span><strong>Module design</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="terraform/164-modules-testing-and-automation/02-inputs-and-outputs.html"><span>164.02</span><strong>Inputs and outputs</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="terraform/164-modules-testing-and-automation/03-module-composition.html"><span>164.03</span><strong>Module composition</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="terraform/164-modules-testing-and-automation/04-version-constraints.html"><span>164.04</span><strong>Version constraints</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="terraform/164-modules-testing-and-automation/05-validation-rules.html"><span>164.05</span><strong>Validation rules</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="terraform/164-modules-testing-and-automation/06-formatting-and-validation.html"><span>164.06</span><strong>Formatting and validation</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="terraform/164-modules-testing-and-automation/07-plan-testing.html"><span>164.07</span><strong>Plan testing</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="terraform/164-modules-testing-and-automation/08-policy-checks.html"><span>164.08</span><strong>Policy checks</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="terraform/164-modules-testing-and-automation/09-ci-integration.html"><span>164.09</span><strong>CI integration</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="terraform/164-modules-testing-and-automation/10-reusable-module-project.html"><span>164.10</span><strong>Reusable-module project</strong><i class="bi bi-arrow-right"></i></a>
 </div>
 </details>
 <details class="curriculum-topic">
-<summary>
-<span class="topic-number">Topic 165</span><strong>Production Terraform platforms</strong><span>10 notebooks</span>
-</summary>
+<summary><span class="topic-number">Topic 165</span><strong>Production Terraform platforms</strong></summary>
 <div class="topic-lessons">
-<p><a class="topic-lesson-link" href="terraform/165-production-terraform-platforms/01-environment-strategy.html"><span>165.01</span><strong>Environment strategy</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="terraform/165-production-terraform-platforms/02-workspace-tradeoffs.html"><span>165.02</span><strong>Workspace tradeoffs</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="terraform/165-production-terraform-platforms/03-repository-layout.html"><span>165.03</span><strong>Repository layout</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="terraform/165-production-terraform-platforms/04-identity-and-secrets.html"><span>165.04</span><strong>Identity and secrets</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="terraform/165-production-terraform-platforms/05-pipeline-approvals.html"><span>165.05</span><strong>Pipeline approvals</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="terraform/165-production-terraform-platforms/06-safe-apply.html"><span>165.06</span><strong>Safe apply</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="terraform/165-production-terraform-platforms/07-observability.html"><span>165.07</span><strong>Observability</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="terraform/165-production-terraform-platforms/08-cost-estimation.html"><span>165.08</span><strong>Cost estimation</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="terraform/165-production-terraform-platforms/09-disaster-recovery.html"><span>165.09</span><strong>Disaster recovery</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="terraform/165-production-terraform-platforms/10-terraform-capstone.html"><span>165.10</span><strong>Terraform capstone</strong><i class="bi bi-arrow-right"></i></a></p>
+<a class="topic-lesson-link" href="terraform/165-production-terraform-platforms/01-environment-strategy.html"><span>165.01</span><strong>Environment strategy</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="terraform/165-production-terraform-platforms/02-workspace-tradeoffs.html"><span>165.02</span><strong>Workspace tradeoffs</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="terraform/165-production-terraform-platforms/03-repository-layout.html"><span>165.03</span><strong>Repository layout</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="terraform/165-production-terraform-platforms/04-identity-and-secrets.html"><span>165.04</span><strong>Identity and secrets</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="terraform/165-production-terraform-platforms/05-pipeline-approvals.html"><span>165.05</span><strong>Pipeline approvals</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="terraform/165-production-terraform-platforms/06-safe-apply.html"><span>165.06</span><strong>Safe apply</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="terraform/165-production-terraform-platforms/07-observability.html"><span>165.07</span><strong>Observability</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="terraform/165-production-terraform-platforms/08-cost-estimation.html"><span>165.08</span><strong>Cost estimation</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="terraform/165-production-terraform-platforms/09-disaster-recovery.html"><span>165.09</span><strong>Disaster recovery</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="terraform/165-production-terraform-platforms/10-terraform-capstone.html"><span>165.10</span><strong>Terraform capstone</strong><i class="bi bi-arrow-right"></i></a>
 </div>
 </details>
-</section>
-<section id="completion-standard" class="level2">
+</div>
+<p class="syllabus-empty" hidden="" id="azure-devops-terraform-infrastructure-as-code-catalog-empty"><i class="bi bi-search"></i> No matching lessons were found.</p>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const catalog = document.getElementById("azure-devops-terraform-infrastructure-as-code-catalog");
+  const search = document.getElementById("azure-devops-terraform-infrastructure-as-code-catalog-search");
+  const empty = document.getElementById("azure-devops-terraform-infrastructure-as-code-catalog-empty");
+  if (!catalog || !search || !empty) return;
+
+  search.addEventListener("input", () => {
+    const query = search.value.trim().toLowerCase();
+    let visibleTopics = 0;
+    catalog.querySelectorAll(".curriculum-topic").forEach((topic) => {
+      const summary = topic.querySelector("summary");
+      const topicMatches = !query || summary.textContent.toLowerCase().includes(query);
+      let visibleLessons = 0;
+      topic.querySelectorAll(".topic-lesson-link").forEach((lesson) => {
+        const matches = topicMatches || lesson.textContent.toLowerCase().includes(query);
+        lesson.hidden = !matches;
+        if (matches) visibleLessons += 1;
+      });
+      const showTopic = topicMatches || visibleLessons > 0;
+      topic.hidden = !showTopic;
+      if (showTopic) visibleTopics += 1;
+      if (query && showTopic) topic.open = true;
+    });
+    empty.hidden = visibleTopics > 0;
+  });
+});
+</script>
+<section class="level2" id="completion-standard">
 <h2 class="anchored" data-anchor-id="completion-standard">Completion standard</h2>
 <p>You have completed <strong>Terraform Infrastructure as Code</strong> when you can explain each topic, reproduce its core workflow, pass the notebook checks, defend the main tradeoffs, and combine the lessons into one reviewable portfolio project. Use the practice tasks as evidence rather than treating page reading alone as completion.</p>
-
-
 </section>
-
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
@@ -857,21 +874,17 @@ A complete notebook-first syllabus organized from foundations to applied deliver
   </script>
 </div> <!-- /content -->
 <footer class="footer">
-  <div class="nav-footer">
-    <div class="nav-footer-left">
+<div class="nav-footer">
+<div class="nav-footer-left">
 <p>© 2026 Edukron Notes</p>
-</div>   
-    <div class="nav-footer-center">
-      &nbsp;
+</div>
+<div class="nav-footer-center">
+       
     </div>
-    <div class="nav-footer-right">
+<div class="nav-footer-right">
 <p>Notebook courses for AI, data engineering, and DevOps</p>
 </div>
-  </div>
+</div>
 </footer>
-
-
-
-
 <script src="../../site_libs/quarto-html/zenscroll-min.js"></script>
 </body></html>

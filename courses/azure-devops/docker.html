@@ -1,15 +1,12 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
-<meta charset="utf-8">
-<meta name="generator" content="quarto-1.10.18">
-
-<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-
-<meta name="author" content="Edukron Notes">
-<meta name="dcterms.date" content="2026-09-14">
-<meta name="description" content="Complete notebook syllabus for Docker &amp; Containerization in Azure DevOps.">
-
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta charset="utf-8"/>
+<meta content="quarto-1.10.18" name="generator"/>
+<meta content="width=device-width, initial-scale=1.0, user-scalable=yes" name="viewport"/>
+<meta content="Edukron Notes" name="author"/>
+<meta content="2026-09-14" name="dcterms.date"/>
+<meta content="Complete notebook syllabus for Docker &amp; Containerization in Azure DevOps." name="description"/>
 <title>Docker &amp; Containerization – Edukron Notes</title>
 <style>
 /* Default styles provided by pandoc.
@@ -30,25 +27,23 @@ ul.task-list li input[type="checkbox"] {
   vertical-align: middle;
 }
 </style>
-
-
 <script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
 <script src="../../site_libs/quarto-nav/headroom.min.js"></script>
 <script src="../../site_libs/clipboard/clipboard.min.js"></script>
 <script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
 <script src="../../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../../">
+<meta content="../../" name="quarto:offset"/>
 <script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="../../site_libs/quarto-html/popper.min.js"></script>
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet"/>
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" id="quarto-text-highlighting-styles" rel="stylesheet"/>
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-f0f4b58164ec92a07fcd2db94b0e5cbd.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet"/>
+<link append-hash="true" data-mode="light" href="../../site_libs/bootstrap/bootstrap-f0f4b58164ec92a07fcd2db94b0e5cbd.min.css" id="quarto-bootstrap" rel="stylesheet"/>
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -76,384 +71,406 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 <style>html{ scroll-behavior: smooth; }</style>
-
-
-<link rel="stylesheet" href="../../styles.css">
+<link href="../../styles.css" rel="stylesheet"/>
 </head>
-
 <body class="nav-fixed quarto-light">
-
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top">
-    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
-      <div class="navbar-container container-fluid">
-      <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="../../index.html">
-    <span class="navbar-title">Edukron Notes</span>
-    </a>
-  </div>
-            <div id="quarto-search" class="" title="Search"></div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
-  <span class="navbar-toggler-icon"></span>
-</button>
-          <div class="collapse navbar-collapse" id="navbarCollapse">
-            <ul class="navbar-nav navbar-nav-scroll me-auto">
-  <li class="nav-item">
-    <a class="nav-link" href="../../index.html"> 
-<span class="menu-text">Home</span></a>
-  </li>  
-  <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-full-stack-ai" role="link" data-bs-toggle="dropdown" aria-expanded="false">
-      <i class="bi bi-cpu" role="img">
-</i> 
- <span class="menu-text">Full Stack AI</span>
-    </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-full-stack-ai">    
-        <li>
-    <a class="dropdown-item" href="../../courses/full-stack-ai/index.html">
- <span class="dropdown-text">Program overview</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/full-stack-ai/python.html">
- <span class="dropdown-text">Python</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/full-stack-ai/sql.html">
- <span class="dropdown-text">SQL</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/full-stack-ai/data-science.html">
- <span class="dropdown-text">Data Science</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/full-stack-ai/machine-learning.html">
- <span class="dropdown-text">Machine Learning</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/full-stack-ai/artificial-intelligence.html">
- <span class="dropdown-text">Artificial Intelligence</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/full-stack-ai/deep-learning.html">
- <span class="dropdown-text">Deep Learning</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/full-stack-ai/generative-ai.html">
- <span class="dropdown-text">Generative AI</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/full-stack-ai/large-language-models.html">
- <span class="dropdown-text">Large Language Models (LLMs)</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/full-stack-ai/rag.html">
- <span class="dropdown-text">Retrieval Augmented Generation (RAG)</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/full-stack-ai/agentic-ai.html">
- <span class="dropdown-text">Agentic AI</span></a>
-  </li>  
-    </ul>
-  </li>
-  <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-azure-data-engineering" role="link" data-bs-toggle="dropdown" aria-expanded="false">
-      <i class="bi bi-database" role="img">
-</i> 
- <span class="menu-text">Azure Data Engineering</span>
-    </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-azure-data-engineering">    
-        <li>
-    <a class="dropdown-item" href="../../courses/azure-data-engineering/index.html">
- <span class="dropdown-text">Program overview</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/azure-data-engineering/python.html">
- <span class="dropdown-text">Python</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/azure-data-engineering/sql.html">
- <span class="dropdown-text">SQL</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/azure-data-engineering/fundamentals.html">
- <span class="dropdown-text">Data Engineering Fundamentals</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/azure-data-engineering/azure-data-factory.html">
- <span class="dropdown-text">Azure Data Factory (ADF)</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/azure-data-engineering/adls-gen2.html">
- <span class="dropdown-text">Azure Data Lake Storage Gen2</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/azure-data-engineering/azure-databricks.html">
- <span class="dropdown-text">Azure Databricks</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/azure-data-engineering/pyspark.html">
- <span class="dropdown-text">PySpark</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/azure-data-engineering/azure-synapse.html">
- <span class="dropdown-text">Azure Synapse Analytics</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/azure-data-engineering/microsoft-fabric.html">
- <span class="dropdown-text">Microsoft Fabric</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/azure-data-engineering/delta-lake.html">
- <span class="dropdown-text">Delta Lake</span></a>
-  </li>  
-    </ul>
-  </li>
-  <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-azure-devops" role="link" data-bs-toggle="dropdown" aria-expanded="false">
-      <i class="bi bi-infinity" role="img">
-</i> 
- <span class="menu-text">Azure DevOps</span>
-    </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-azure-devops">    
-        <li>
-    <a class="dropdown-item" href="../../courses/azure-devops/index.html">
- <span class="dropdown-text">Program overview</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/azure-devops/linux-shell-scripting.html">
- <span class="dropdown-text">Linux &amp; Shell Scripting</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/azure-devops/git-version-control.html">
- <span class="dropdown-text">Git &amp; Version Control</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/azure-devops/azure-repos.html">
- <span class="dropdown-text">Azure Repos</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/azure-devops/azure-pipelines.html">
- <span class="dropdown-text">Azure Pipelines (CI/CD)</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/azure-devops/yaml-pipelines.html">
- <span class="dropdown-text">YAML Pipeline Development</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/azure-devops/docker.html">
- <span class="dropdown-text">Docker &amp; Containerization</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/azure-devops/kubernetes-aks.html">
- <span class="dropdown-text">Kubernetes &amp; AKS</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/azure-devops/terraform.html">
- <span class="dropdown-text">Terraform Infrastructure as Code</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/azure-devops/azure-cloud-services.html">
- <span class="dropdown-text">Azure Cloud Services</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/azure-devops/devsecops-monitoring.html">
- <span class="dropdown-text">DevSecOps &amp; Monitoring</span></a>
-  </li>  
-    </ul>
-  </li>
-  <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-interview-questions" role="link" data-bs-toggle="dropdown" aria-expanded="false">
-      <i class="bi bi-question-circle" role="img">
-</i> 
- <span class="menu-text">Interview Questions</span>
-    </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-interview-questions">    
-        <li>
-    <a class="dropdown-item" href="../../interview-questions/index.html">
- <span class="dropdown-text">Section overview</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../interview-questions/full-stack-ai.html">
- <span class="dropdown-text">Full Stack AI</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../interview-questions/azure-data-engineering.html">
- <span class="dropdown-text">Azure Data Engineering</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../interview-questions/azure-devops.html">
- <span class="dropdown-text">Azure DevOps</span></a>
-  </li>  
-    </ul>
-  </li>
-  <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-project-flows" role="link" data-bs-toggle="dropdown" aria-expanded="false">
-      <i class="bi bi-kanban" role="img">
-</i> 
- <span class="menu-text">Project Flows</span>
-    </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-project-flows">    
-        <li>
-    <a class="dropdown-item" href="../../project-flows/index.html">
- <span class="dropdown-text">Section overview</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../project-flows/full-stack-ai.html">
- <span class="dropdown-text">Full Stack AI</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../project-flows/azure-data-engineering.html">
- <span class="dropdown-text">Azure Data Engineering</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../project-flows/azure-devops.html">
- <span class="dropdown-text">Azure DevOps</span></a>
-  </li>  
-    </ul>
-  </li>
-</ul>
-          </div> <!-- /navcollapse -->
-            <div class="quarto-navbar-tools">
+<header class="headroom fixed-top" id="quarto-header">
+<nav class="navbar navbar-expand-lg" data-bs-theme="dark">
+<div class="navbar-container container-fluid">
+<div class="navbar-brand-container mx-auto">
+<a class="navbar-brand" href="../../index.html">
+<span class="navbar-title">Edukron Notes</span>
+</a>
 </div>
-      </div> <!-- /container-fluid -->
-    </nav>
+<div class="" id="quarto-search" title="Search"></div>
+<button aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-bs-target="#navbarCollapse" data-bs-toggle="collapse" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }" role="menu" type="button">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" id="navbarCollapse">
+<ul class="navbar-nav navbar-nav-scroll me-auto">
+<li class="nav-item">
+<a class="nav-link" href="../../index.html">
+<span class="menu-text">Home</span></a>
+</li>
+<li class="nav-item dropdown">
+<a aria-expanded="false" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" id="nav-menu-full-stack-ai" role="link">
+<i class="bi bi-cpu" role="img">
+</i>
+<span class="menu-text">Full Stack AI</span>
+</a>
+<ul aria-labelledby="nav-menu-full-stack-ai" class="dropdown-menu">
+<li>
+<a class="dropdown-item" href="../../courses/full-stack-ai/index.html">
+<span class="dropdown-text">Program overview</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/full-stack-ai/python.html">
+<span class="dropdown-text">Python</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/full-stack-ai/sql.html">
+<span class="dropdown-text">SQL</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/full-stack-ai/data-science.html">
+<span class="dropdown-text">Data Science</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/full-stack-ai/machine-learning.html">
+<span class="dropdown-text">Machine Learning</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/full-stack-ai/artificial-intelligence.html">
+<span class="dropdown-text">Artificial Intelligence</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/full-stack-ai/deep-learning.html">
+<span class="dropdown-text">Deep Learning</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/full-stack-ai/generative-ai.html">
+<span class="dropdown-text">Generative AI</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/full-stack-ai/large-language-models.html">
+<span class="dropdown-text">Large Language Models (LLMs)</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/full-stack-ai/rag.html">
+<span class="dropdown-text">Retrieval Augmented Generation (RAG)</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/full-stack-ai/agentic-ai.html">
+<span class="dropdown-text">Agentic AI</span></a>
+</li>
+</ul>
+</li>
+<li class="nav-item dropdown">
+<a aria-expanded="false" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" id="nav-menu-azure-data-engineering" role="link">
+<i class="bi bi-database" role="img">
+</i>
+<span class="menu-text">Azure Data Engineering</span>
+</a>
+<ul aria-labelledby="nav-menu-azure-data-engineering" class="dropdown-menu">
+<li>
+<a class="dropdown-item" href="../../courses/azure-data-engineering/index.html">
+<span class="dropdown-text">Program overview</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/azure-data-engineering/python.html">
+<span class="dropdown-text">Python</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/azure-data-engineering/sql.html">
+<span class="dropdown-text">SQL</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/azure-data-engineering/fundamentals.html">
+<span class="dropdown-text">Data Engineering Fundamentals</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/azure-data-engineering/azure-data-factory.html">
+<span class="dropdown-text">Azure Data Factory (ADF)</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/azure-data-engineering/adls-gen2.html">
+<span class="dropdown-text">Azure Data Lake Storage Gen2</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/azure-data-engineering/azure-databricks.html">
+<span class="dropdown-text">Azure Databricks</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/azure-data-engineering/pyspark.html">
+<span class="dropdown-text">PySpark</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/azure-data-engineering/azure-synapse.html">
+<span class="dropdown-text">Azure Synapse Analytics</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/azure-data-engineering/microsoft-fabric.html">
+<span class="dropdown-text">Microsoft Fabric</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/azure-data-engineering/delta-lake.html">
+<span class="dropdown-text">Delta Lake</span></a>
+</li>
+</ul>
+</li>
+<li class="nav-item dropdown">
+<a aria-expanded="false" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" id="nav-menu-azure-devops" role="link">
+<i class="bi bi-infinity" role="img">
+</i>
+<span class="menu-text">Azure DevOps</span>
+</a>
+<ul aria-labelledby="nav-menu-azure-devops" class="dropdown-menu">
+<li>
+<a class="dropdown-item" href="../../courses/azure-devops/index.html">
+<span class="dropdown-text">Program overview</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/azure-devops/linux-shell-scripting.html">
+<span class="dropdown-text">Linux &amp; Shell Scripting</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/azure-devops/git-version-control.html">
+<span class="dropdown-text">Git &amp; Version Control</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/azure-devops/azure-repos.html">
+<span class="dropdown-text">Azure Repos</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/azure-devops/azure-pipelines.html">
+<span class="dropdown-text">Azure Pipelines (CI/CD)</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/azure-devops/yaml-pipelines.html">
+<span class="dropdown-text">YAML Pipeline Development</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/azure-devops/docker.html">
+<span class="dropdown-text">Docker &amp; Containerization</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/azure-devops/kubernetes-aks.html">
+<span class="dropdown-text">Kubernetes &amp; AKS</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/azure-devops/terraform.html">
+<span class="dropdown-text">Terraform Infrastructure as Code</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/azure-devops/azure-cloud-services.html">
+<span class="dropdown-text">Azure Cloud Services</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/azure-devops/devsecops-monitoring.html">
+<span class="dropdown-text">DevSecOps &amp; Monitoring</span></a>
+</li>
+</ul>
+</li>
+<li class="nav-item dropdown">
+<a aria-expanded="false" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" id="nav-menu-interview-questions" role="link">
+<i class="bi bi-question-circle" role="img">
+</i>
+<span class="menu-text">Interview Questions</span>
+</a>
+<ul aria-labelledby="nav-menu-interview-questions" class="dropdown-menu">
+<li>
+<a class="dropdown-item" href="../../interview-questions/index.html">
+<span class="dropdown-text">Section overview</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../interview-questions/full-stack-ai.html">
+<span class="dropdown-text">Full Stack AI</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../interview-questions/azure-data-engineering.html">
+<span class="dropdown-text">Azure Data Engineering</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../interview-questions/azure-devops.html">
+<span class="dropdown-text">Azure DevOps</span></a>
+</li>
+</ul>
+</li>
+<li class="nav-item dropdown">
+<a aria-expanded="false" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" id="nav-menu-project-flows" role="link">
+<i class="bi bi-kanban" role="img">
+</i>
+<span class="menu-text">Project Flows</span>
+</a>
+<ul aria-labelledby="nav-menu-project-flows" class="dropdown-menu">
+<li>
+<a class="dropdown-item" href="../../project-flows/index.html">
+<span class="dropdown-text">Section overview</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../project-flows/full-stack-ai.html">
+<span class="dropdown-text">Full Stack AI</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../project-flows/azure-data-engineering.html">
+<span class="dropdown-text">Azure Data Engineering</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../project-flows/azure-devops.html">
+<span class="dropdown-text">Azure DevOps</span></a>
+</li>
+</ul>
+</li>
+</ul>
+</div> <!-- /navcollapse -->
+<div class="quarto-navbar-tools">
+</div>
+</div> <!-- /container-fluid -->
+</nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<div class="quarto-container page-columns page-rows-contents page-layout-full page-navbar" id="quarto-content">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
-   
-  <ul>
-  <li><a href="#how-to-use-this-course" id="toc-how-to-use-this-course" class="nav-link active" data-scroll-target="#how-to-use-this-course">How to use this course</a></li>
-  <li><a href="#full-syllabus" id="toc-full-syllabus" class="nav-link" data-scroll-target="#full-syllabus">Full syllabus</a></li>
-  <li><a href="#completion-standard" id="toc-completion-standard" class="nav-link" data-scroll-target="#completion-standard">Completion standard</a></li>
-  </ul>
-</nav>
-    </div>
 <!-- main -->
-<main class="content" id="quarto-document-content">
-
-<header id="title-block-header" class="quarto-title-block default">
+<main class="content column-page" id="quarto-document-content">
+<header class="quarto-title-block default" id="title-block-header">
 <div class="quarto-title">
 <h1 class="title">Docker &amp; Containerization</h1>
 </div>
-
 <div>
-  <div class="description">
+<div class="description">
     Complete notebook syllabus for Docker &amp; Containerization in Azure DevOps.
   </div>
 </div>
-
-
 <div class="quarto-title-meta">
-
-    <div>
-    <div class="quarto-title-meta-heading">Author</div>
-    <div class="quarto-title-meta-contents">
-             <p>Edukron Notes </p>
-          </div>
-  </div>
-    
-    <div>
-    <div class="quarto-title-meta-heading">Published</div>
-    <div class="quarto-title-meta-contents">
-      <p class="date">September 14, 2026</p>
-    </div>
-  </div>
-  
-    
-  </div>
-  
-
-
+<div>
+<div class="quarto-title-meta-heading">Author</div>
+<div class="quarto-title-meta-contents">
+<p>Edukron Notes </p>
+</div>
+</div>
+<div>
+<div class="quarto-title-meta-heading">Published</div>
+<div class="quarto-title-meta-contents">
+<p class="date">September 14, 2026</p>
+</div>
+</div>
+</div>
 </header>
-
-
-<div class="overview-lead curriculum-summary">
-<div class="overview-icon">
-<i class="bi bi-journal-code" aria-hidden="true"></i>
+<div class="course-workspace notebook-chrome">
+<div class="notebook-toolbar">
+<span class="notebook-file"><i aria-hidden="true" class="bi bi-journal-code"></i><strong>docker.ipynb</strong></span>
+<span class="notebook-status"><i aria-hidden="true" class="bi bi-check-circle-fill"></i> Trusted</span>
+<span class="notebook-kernel"><i aria-hidden="true" class="bi bi-diagram-3"></i> Learning path</span>
 </div>
-<div>
+<div class="course-workspace-hero">
 <span class="overview-kicker">Azure DevOps</span>
-<h2 class="anchored">
-Docker &amp; Containerization
-</h2>
-<p>
-A complete notebook-first syllabus organized from foundations to applied delivery. Every lesson contains notes, a worked pattern, executable validation, a guided lab, solution blueprint, practice, and knowledge checks.
-</p>
+<h1>Docker &amp; Containerization</h1>
+<p>A complete notebook-first syllabus organized from foundations to applied delivery. Every lesson combines clear notes, a worked pattern, executable validation, a guided lab, a solution blueprint, practice, and knowledge checks.</p>
+<div class="course-tags"><span><i class="bi bi-signpost-split"></i> Foundation to advanced</span><span><i class="bi bi-code-square"></i> Hands-on practice</span><span><i class="bi bi-patch-check"></i> Review ready</span></div>
+<p class="course-start"><a class="btn btn-primary" href="docker/150-container-foundations/01-containers-versus-virtual-machines.html"><i class="bi bi-play-fill"></i> Start the first notebook</a></p>
 </div>
 </div>
-<div class="course-stat-grid">
-<div>
-<strong>5</strong><span>Syllabus topics</span>
-</div>
-<div>
-<strong>50</strong><span>Notebook lessons</span>
-</div>
-<div>
-<strong>Practice</strong><span>Labs and solutions</span>
-</div>
-</div>
-<p class="course-start">
-<a class="btn btn-primary" href="docker/150-container-foundations/01-containers-versus-virtual-machines.html">Start the first notebook <i class="bi bi-arrow-right"></i></a>
-</p>
-<section id="how-to-use-this-course" class="level2">
+<section class="level2" id="how-to-use-this-course">
 <h2 class="anchored" data-anchor-id="how-to-use-this-course">How to use this course</h2>
 <p>Work through lessons in order for a complete pathway, or open a topic for focused reference. Type or adapt the examples, complete the guided lab before reading its blueprint, and preserve your test evidence as a portfolio artifact. Cloud and infrastructure examples are safe, copy-ready teaching patterns; execute them in your own sandbox only after substituting approved identities, names, and policies.</p>
 </section>
-<section id="full-syllabus" class="level2">
-<h2 class="anchored" data-anchor-id="full-syllabus">Full syllabus</h2>
+<div class="syllabus-heading" id="notebook-syllabus">
+<div><span class="overview-kicker">Course contents</span><h2>Notebook syllabus</h2><p>Open a topic to browse its lessons, or search the complete course by concept.</p></div>
+<label class="syllabus-search" for="azure-devops-docker-and-containerization-catalog-search"><i aria-hidden="true" class="bi bi-search"></i><input aria-label="Search the Docker &amp; Containerization syllabus" autocomplete="off" id="azure-devops-docker-and-containerization-catalog-search" placeholder="Find a topic or lesson" type="search"/></label>
+</div>
+<div class="curriculum-catalog" id="azure-devops-docker-and-containerization-catalog">
 <details class="curriculum-topic" open="">
-<summary>
-<span class="topic-number">Topic 150</span><strong>Container foundations</strong><span>10 notebooks</span>
-</summary>
+<summary><span class="topic-number">Topic 150</span><strong>Container foundations</strong></summary>
 <div class="topic-lessons">
-<p><a class="topic-lesson-link" href="docker/150-container-foundations/01-containers-versus-virtual-machines.html"><span>150.01</span><strong>Containers versus virtual machines</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="docker/150-container-foundations/02-docker-architecture.html"><span>150.02</span><strong>Docker architecture</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="docker/150-container-foundations/03-installing-docker.html"><span>150.03</span><strong>Installing Docker</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="docker/150-container-foundations/04-images-and-containers.html"><span>150.04</span><strong>Images and containers</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="docker/150-container-foundations/05-container-lifecycle.html"><span>150.05</span><strong>Container lifecycle</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="docker/150-container-foundations/06-port-publishing.html"><span>150.06</span><strong>Port publishing</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="docker/150-container-foundations/07-environment-variables.html"><span>150.07</span><strong>Environment variables</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="docker/150-container-foundations/08-logs.html"><span>150.08</span><strong>Logs</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="docker/150-container-foundations/09-resource-limits.html"><span>150.09</span><strong>Resource limits</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="docker/150-container-foundations/10-first-container-project.html"><span>150.10</span><strong>First container project</strong><i class="bi bi-arrow-right"></i></a></p>
+<a class="topic-lesson-link" href="docker/150-container-foundations/01-containers-versus-virtual-machines.html"><span>150.01</span><strong>Containers versus virtual machines</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="docker/150-container-foundations/02-docker-architecture.html"><span>150.02</span><strong>Docker architecture</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="docker/150-container-foundations/03-installing-docker.html"><span>150.03</span><strong>Installing Docker</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="docker/150-container-foundations/04-images-and-containers.html"><span>150.04</span><strong>Images and containers</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="docker/150-container-foundations/05-container-lifecycle.html"><span>150.05</span><strong>Container lifecycle</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="docker/150-container-foundations/06-port-publishing.html"><span>150.06</span><strong>Port publishing</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="docker/150-container-foundations/07-environment-variables.html"><span>150.07</span><strong>Environment variables</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="docker/150-container-foundations/08-logs.html"><span>150.08</span><strong>Logs</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="docker/150-container-foundations/09-resource-limits.html"><span>150.09</span><strong>Resource limits</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="docker/150-container-foundations/10-first-container-project.html"><span>150.10</span><strong>First container project</strong><i class="bi bi-arrow-right"></i></a>
 </div>
 </details>
 <details class="curriculum-topic">
-<summary>
-<span class="topic-number">Topic 151</span><strong>Building Docker images</strong><span>10 notebooks</span>
-</summary>
+<summary><span class="topic-number">Topic 151</span><strong>Building Docker images</strong></summary>
 <div class="topic-lessons">
-<p><a class="topic-lesson-link" href="docker/151-building-docker-images/01-dockerfile-syntax.html"><span>151.01</span><strong>Dockerfile syntax</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="docker/151-building-docker-images/02-base-image-selection.html"><span>151.02</span><strong>Base-image selection</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="docker/151-building-docker-images/03-build-context.html"><span>151.03</span><strong>Build context</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="docker/151-building-docker-images/04-layer-caching.html"><span>151.04</span><strong>Layer caching</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="docker/151-building-docker-images/05-multi-stage-builds.html"><span>151.05</span><strong>Multi-stage builds</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="docker/151-building-docker-images/06-build-arguments.html"><span>151.06</span><strong>Build arguments</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="docker/151-building-docker-images/07-image-metadata.html"><span>151.07</span><strong>Image metadata</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="docker/151-building-docker-images/08-non-root-users.html"><span>151.08</span><strong>Non-root users</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="docker/151-building-docker-images/09-image-testing.html"><span>151.09</span><strong>Image testing</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="docker/151-building-docker-images/10-optimized-image-project.html"><span>151.10</span><strong>Optimized-image project</strong><i class="bi bi-arrow-right"></i></a></p>
+<a class="topic-lesson-link" href="docker/151-building-docker-images/01-dockerfile-syntax.html"><span>151.01</span><strong>Dockerfile syntax</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="docker/151-building-docker-images/02-base-image-selection.html"><span>151.02</span><strong>Base-image selection</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="docker/151-building-docker-images/03-build-context.html"><span>151.03</span><strong>Build context</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="docker/151-building-docker-images/04-layer-caching.html"><span>151.04</span><strong>Layer caching</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="docker/151-building-docker-images/05-multi-stage-builds.html"><span>151.05</span><strong>Multi-stage builds</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="docker/151-building-docker-images/06-build-arguments.html"><span>151.06</span><strong>Build arguments</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="docker/151-building-docker-images/07-image-metadata.html"><span>151.07</span><strong>Image metadata</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="docker/151-building-docker-images/08-non-root-users.html"><span>151.08</span><strong>Non-root users</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="docker/151-building-docker-images/09-image-testing.html"><span>151.09</span><strong>Image testing</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="docker/151-building-docker-images/10-optimized-image-project.html"><span>151.10</span><strong>Optimized-image project</strong><i class="bi bi-arrow-right"></i></a>
 </div>
 </details>
 <details class="curriculum-topic">
-<summary>
-<span class="topic-number">Topic 152</span><strong>Docker networking and storage</strong><span>10 notebooks</span>
-</summary>
+<summary><span class="topic-number">Topic 152</span><strong>Docker networking and storage</strong></summary>
 <div class="topic-lessons">
-<p><a class="topic-lesson-link" href="docker/152-docker-networking-and-storage/01-network-drivers.html"><span>152.01</span><strong>Network drivers</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="docker/152-docker-networking-and-storage/02-bridge-networks.html"><span>152.02</span><strong>Bridge networks</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="docker/152-docker-networking-and-storage/03-dns-and-service-discovery.html"><span>152.03</span><strong>DNS and service discovery</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="docker/152-docker-networking-and-storage/04-port-mapping.html"><span>152.04</span><strong>Port mapping</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="docker/152-docker-networking-and-storage/05-volumes.html"><span>152.05</span><strong>Volumes</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="docker/152-docker-networking-and-storage/06-bind-mounts.html"><span>152.06</span><strong>Bind mounts</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="docker/152-docker-networking-and-storage/07-storage-permissions.html"><span>152.07</span><strong>Storage permissions</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="docker/152-docker-networking-and-storage/08-backup-and-restore.html"><span>152.08</span><strong>Backup and restore</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="docker/152-docker-networking-and-storage/09-network-troubleshooting.html"><span>152.09</span><strong>Network troubleshooting</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="docker/152-docker-networking-and-storage/10-stateful-container-lab.html"><span>152.10</span><strong>Stateful-container lab</strong><i class="bi bi-arrow-right"></i></a></p>
+<a class="topic-lesson-link" href="docker/152-docker-networking-and-storage/01-network-drivers.html"><span>152.01</span><strong>Network drivers</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="docker/152-docker-networking-and-storage/02-bridge-networks.html"><span>152.02</span><strong>Bridge networks</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="docker/152-docker-networking-and-storage/03-dns-and-service-discovery.html"><span>152.03</span><strong>DNS and service discovery</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="docker/152-docker-networking-and-storage/04-port-mapping.html"><span>152.04</span><strong>Port mapping</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="docker/152-docker-networking-and-storage/05-volumes.html"><span>152.05</span><strong>Volumes</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="docker/152-docker-networking-and-storage/06-bind-mounts.html"><span>152.06</span><strong>Bind mounts</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="docker/152-docker-networking-and-storage/07-storage-permissions.html"><span>152.07</span><strong>Storage permissions</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="docker/152-docker-networking-and-storage/08-backup-and-restore.html"><span>152.08</span><strong>Backup and restore</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="docker/152-docker-networking-and-storage/09-network-troubleshooting.html"><span>152.09</span><strong>Network troubleshooting</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="docker/152-docker-networking-and-storage/10-stateful-container-lab.html"><span>152.10</span><strong>Stateful-container lab</strong><i class="bi bi-arrow-right"></i></a>
 </div>
 </details>
 <details class="curriculum-topic">
-<summary>
-<span class="topic-number">Topic 153</span><strong>Compose and container registries</strong><span>10 notebooks</span>
-</summary>
+<summary><span class="topic-number">Topic 153</span><strong>Compose and container registries</strong></summary>
 <div class="topic-lessons">
-<p><a class="topic-lesson-link" href="docker/153-compose-and-container-registries/01-compose-files.html"><span>153.01</span><strong>Compose files</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="docker/153-compose-and-container-registries/02-multi-service-applications.html"><span>153.02</span><strong>Multi-service applications</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="docker/153-compose-and-container-registries/03-dependencies.html"><span>153.03</span><strong>Dependencies</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="docker/153-compose-and-container-registries/04-profiles.html"><span>153.04</span><strong>Profiles</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="docker/153-compose-and-container-registries/05-configuration.html"><span>153.05</span><strong>Configuration</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="docker/153-compose-and-container-registries/06-health-checks.html"><span>153.06</span><strong>Health checks</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="docker/153-compose-and-container-registries/07-registry-concepts.html"><span>153.07</span><strong>Registry concepts</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="docker/153-compose-and-container-registries/08-azure-container-registry.html"><span>153.08</span><strong>Azure Container Registry</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="docker/153-compose-and-container-registries/09-image-tagging.html"><span>153.09</span><strong>Image tagging</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="docker/153-compose-and-container-registries/10-compose-project.html"><span>153.10</span><strong>Compose project</strong><i class="bi bi-arrow-right"></i></a></p>
+<a class="topic-lesson-link" href="docker/153-compose-and-container-registries/01-compose-files.html"><span>153.01</span><strong>Compose files</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="docker/153-compose-and-container-registries/02-multi-service-applications.html"><span>153.02</span><strong>Multi-service applications</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="docker/153-compose-and-container-registries/03-dependencies.html"><span>153.03</span><strong>Dependencies</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="docker/153-compose-and-container-registries/04-profiles.html"><span>153.04</span><strong>Profiles</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="docker/153-compose-and-container-registries/05-configuration.html"><span>153.05</span><strong>Configuration</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="docker/153-compose-and-container-registries/06-health-checks.html"><span>153.06</span><strong>Health checks</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="docker/153-compose-and-container-registries/07-registry-concepts.html"><span>153.07</span><strong>Registry concepts</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="docker/153-compose-and-container-registries/08-azure-container-registry.html"><span>153.08</span><strong>Azure Container Registry</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="docker/153-compose-and-container-registries/09-image-tagging.html"><span>153.09</span><strong>Image tagging</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="docker/153-compose-and-container-registries/10-compose-project.html"><span>153.10</span><strong>Compose project</strong><i class="bi bi-arrow-right"></i></a>
 </div>
 </details>
 <details class="curriculum-topic">
-<summary>
-<span class="topic-number">Topic 154</span><strong>Container security and production practices</strong><span>10 notebooks</span>
-</summary>
+<summary><span class="topic-number">Topic 154</span><strong>Container security and production practices</strong></summary>
 <div class="topic-lessons">
-<p><a class="topic-lesson-link" href="docker/154-container-security-and-production-practices/01-image-scanning.html"><span>154.01</span><strong>Image scanning</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="docker/154-container-security-and-production-practices/02-supply-chain-metadata.html"><span>154.02</span><strong>Supply-chain metadata</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="docker/154-container-security-and-production-practices/03-secrets.html"><span>154.03</span><strong>Secrets</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="docker/154-container-security-and-production-practices/04-capabilities.html"><span>154.04</span><strong>Capabilities</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="docker/154-container-security-and-production-practices/05-read-only-filesystems.html"><span>154.05</span><strong>Read-only filesystems</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="docker/154-container-security-and-production-practices/06-runtime-security.html"><span>154.06</span><strong>Runtime security</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="docker/154-container-security-and-production-practices/07-image-signing.html"><span>154.07</span><strong>Image signing</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="docker/154-container-security-and-production-practices/08-patch-strategy.html"><span>154.08</span><strong>Patch strategy</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="docker/154-container-security-and-production-practices/09-observability.html"><span>154.09</span><strong>Observability</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="docker/154-container-security-and-production-practices/10-docker-capstone.html"><span>154.10</span><strong>Docker capstone</strong><i class="bi bi-arrow-right"></i></a></p>
+<a class="topic-lesson-link" href="docker/154-container-security-and-production-practices/01-image-scanning.html"><span>154.01</span><strong>Image scanning</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="docker/154-container-security-and-production-practices/02-supply-chain-metadata.html"><span>154.02</span><strong>Supply-chain metadata</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="docker/154-container-security-and-production-practices/03-secrets.html"><span>154.03</span><strong>Secrets</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="docker/154-container-security-and-production-practices/04-capabilities.html"><span>154.04</span><strong>Capabilities</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="docker/154-container-security-and-production-practices/05-read-only-filesystems.html"><span>154.05</span><strong>Read-only filesystems</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="docker/154-container-security-and-production-practices/06-runtime-security.html"><span>154.06</span><strong>Runtime security</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="docker/154-container-security-and-production-practices/07-image-signing.html"><span>154.07</span><strong>Image signing</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="docker/154-container-security-and-production-practices/08-patch-strategy.html"><span>154.08</span><strong>Patch strategy</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="docker/154-container-security-and-production-practices/09-observability.html"><span>154.09</span><strong>Observability</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="docker/154-container-security-and-production-practices/10-docker-capstone.html"><span>154.10</span><strong>Docker capstone</strong><i class="bi bi-arrow-right"></i></a>
 </div>
 </details>
-</section>
-<section id="completion-standard" class="level2">
+</div>
+<p class="syllabus-empty" hidden="" id="azure-devops-docker-and-containerization-catalog-empty"><i class="bi bi-search"></i> No matching lessons were found.</p>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const catalog = document.getElementById("azure-devops-docker-and-containerization-catalog");
+  const search = document.getElementById("azure-devops-docker-and-containerization-catalog-search");
+  const empty = document.getElementById("azure-devops-docker-and-containerization-catalog-empty");
+  if (!catalog || !search || !empty) return;
+
+  search.addEventListener("input", () => {
+    const query = search.value.trim().toLowerCase();
+    let visibleTopics = 0;
+    catalog.querySelectorAll(".curriculum-topic").forEach((topic) => {
+      const summary = topic.querySelector("summary");
+      const topicMatches = !query || summary.textContent.toLowerCase().includes(query);
+      let visibleLessons = 0;
+      topic.querySelectorAll(".topic-lesson-link").forEach((lesson) => {
+        const matches = topicMatches || lesson.textContent.toLowerCase().includes(query);
+        lesson.hidden = !matches;
+        if (matches) visibleLessons += 1;
+      });
+      const showTopic = topicMatches || visibleLessons > 0;
+      topic.hidden = !showTopic;
+      if (showTopic) visibleTopics += 1;
+      if (query && showTopic) topic.open = true;
+    });
+    empty.hidden = visibleTopics > 0;
+  });
+});
+</script>
+<section class="level2" id="completion-standard">
 <h2 class="anchored" data-anchor-id="completion-standard">Completion standard</h2>
 <p>You have completed <strong>Docker &amp; Containerization</strong> when you can explain each topic, reproduce its core workflow, pass the notebook checks, defend the main tradeoffs, and combine the lessons into one reviewable portfolio project. Use the practice tasks as evidence rather than treating page reading alone as completion.</p>
-
-
 </section>
-
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
@@ -857,21 +874,17 @@ A complete notebook-first syllabus organized from foundations to applied deliver
   </script>
 </div> <!-- /content -->
 <footer class="footer">
-  <div class="nav-footer">
-    <div class="nav-footer-left">
+<div class="nav-footer">
+<div class="nav-footer-left">
 <p>© 2026 Edukron Notes</p>
-</div>   
-    <div class="nav-footer-center">
-      &nbsp;
+</div>
+<div class="nav-footer-center">
+       
     </div>
-    <div class="nav-footer-right">
+<div class="nav-footer-right">
 <p>Notebook courses for AI, data engineering, and DevOps</p>
 </div>
-  </div>
+</div>
 </footer>
-
-
-
-
 <script src="../../site_libs/quarto-html/zenscroll-min.js"></script>
 </body></html>

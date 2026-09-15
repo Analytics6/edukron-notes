@@ -1,15 +1,12 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
-<meta charset="utf-8">
-<meta name="generator" content="quarto-1.10.18">
-
-<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-
-<meta name="author" content="Edukron Notes">
-<meta name="dcterms.date" content="2026-09-14">
-<meta name="description" content="Complete notebook syllabus for ADLS Gen2 in Azure Data Engineering.">
-
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta charset="utf-8"/>
+<meta content="quarto-1.10.18" name="generator"/>
+<meta content="width=device-width, initial-scale=1.0, user-scalable=yes" name="viewport"/>
+<meta content="Edukron Notes" name="author"/>
+<meta content="2026-09-14" name="dcterms.date"/>
+<meta content="Complete notebook syllabus for ADLS Gen2 in Azure Data Engineering." name="description"/>
 <title>ADLS Gen2 – Edukron Notes</title>
 <style>
 /* Default styles provided by pandoc.
@@ -30,25 +27,23 @@ ul.task-list li input[type="checkbox"] {
   vertical-align: middle;
 }
 </style>
-
-
 <script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
 <script src="../../site_libs/quarto-nav/headroom.min.js"></script>
 <script src="../../site_libs/clipboard/clipboard.min.js"></script>
 <script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
 <script src="../../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../../">
+<meta content="../../" name="quarto:offset"/>
 <script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="../../site_libs/quarto-html/popper.min.js"></script>
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet"/>
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" id="quarto-text-highlighting-styles" rel="stylesheet"/>
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-f0f4b58164ec92a07fcd2db94b0e5cbd.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet"/>
+<link append-hash="true" data-mode="light" href="../../site_libs/bootstrap/bootstrap-f0f4b58164ec92a07fcd2db94b0e5cbd.min.css" id="quarto-bootstrap" rel="stylesheet"/>
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -76,376 +71,391 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 <style>html{ scroll-behavior: smooth; }</style>
-
-
-<link rel="stylesheet" href="../../styles.css">
+<link href="../../styles.css" rel="stylesheet"/>
 </head>
-
 <body class="nav-fixed quarto-light">
-
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top">
-    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
-      <div class="navbar-container container-fluid">
-      <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="../../index.html">
-    <span class="navbar-title">Edukron Notes</span>
-    </a>
-  </div>
-            <div id="quarto-search" class="" title="Search"></div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
-  <span class="navbar-toggler-icon"></span>
-</button>
-          <div class="collapse navbar-collapse" id="navbarCollapse">
-            <ul class="navbar-nav navbar-nav-scroll me-auto">
-  <li class="nav-item">
-    <a class="nav-link" href="../../index.html"> 
-<span class="menu-text">Home</span></a>
-  </li>  
-  <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-full-stack-ai" role="link" data-bs-toggle="dropdown" aria-expanded="false">
-      <i class="bi bi-cpu" role="img">
-</i> 
- <span class="menu-text">Full Stack AI</span>
-    </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-full-stack-ai">    
-        <li>
-    <a class="dropdown-item" href="../../courses/full-stack-ai/index.html">
- <span class="dropdown-text">Program overview</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/full-stack-ai/python.html">
- <span class="dropdown-text">Python</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/full-stack-ai/sql.html">
- <span class="dropdown-text">SQL</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/full-stack-ai/data-science.html">
- <span class="dropdown-text">Data Science</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/full-stack-ai/machine-learning.html">
- <span class="dropdown-text">Machine Learning</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/full-stack-ai/artificial-intelligence.html">
- <span class="dropdown-text">Artificial Intelligence</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/full-stack-ai/deep-learning.html">
- <span class="dropdown-text">Deep Learning</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/full-stack-ai/generative-ai.html">
- <span class="dropdown-text">Generative AI</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/full-stack-ai/large-language-models.html">
- <span class="dropdown-text">Large Language Models (LLMs)</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/full-stack-ai/rag.html">
- <span class="dropdown-text">Retrieval Augmented Generation (RAG)</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/full-stack-ai/agentic-ai.html">
- <span class="dropdown-text">Agentic AI</span></a>
-  </li>  
-    </ul>
-  </li>
-  <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-azure-data-engineering" role="link" data-bs-toggle="dropdown" aria-expanded="false">
-      <i class="bi bi-database" role="img">
-</i> 
- <span class="menu-text">Azure Data Engineering</span>
-    </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-azure-data-engineering">    
-        <li>
-    <a class="dropdown-item" href="../../courses/azure-data-engineering/index.html">
- <span class="dropdown-text">Program overview</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/azure-data-engineering/python.html">
- <span class="dropdown-text">Python</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/azure-data-engineering/sql.html">
- <span class="dropdown-text">SQL</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/azure-data-engineering/fundamentals.html">
- <span class="dropdown-text">Data Engineering Fundamentals</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/azure-data-engineering/azure-data-factory.html">
- <span class="dropdown-text">Azure Data Factory (ADF)</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/azure-data-engineering/adls-gen2.html">
- <span class="dropdown-text">Azure Data Lake Storage Gen2</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/azure-data-engineering/azure-databricks.html">
- <span class="dropdown-text">Azure Databricks</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/azure-data-engineering/pyspark.html">
- <span class="dropdown-text">PySpark</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/azure-data-engineering/azure-synapse.html">
- <span class="dropdown-text">Azure Synapse Analytics</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/azure-data-engineering/microsoft-fabric.html">
- <span class="dropdown-text">Microsoft Fabric</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/azure-data-engineering/delta-lake.html">
- <span class="dropdown-text">Delta Lake</span></a>
-  </li>  
-    </ul>
-  </li>
-  <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-azure-devops" role="link" data-bs-toggle="dropdown" aria-expanded="false">
-      <i class="bi bi-infinity" role="img">
-</i> 
- <span class="menu-text">Azure DevOps</span>
-    </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-azure-devops">    
-        <li>
-    <a class="dropdown-item" href="../../courses/azure-devops/index.html">
- <span class="dropdown-text">Program overview</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/azure-devops/linux-shell-scripting.html">
- <span class="dropdown-text">Linux &amp; Shell Scripting</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/azure-devops/git-version-control.html">
- <span class="dropdown-text">Git &amp; Version Control</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/azure-devops/azure-repos.html">
- <span class="dropdown-text">Azure Repos</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/azure-devops/azure-pipelines.html">
- <span class="dropdown-text">Azure Pipelines (CI/CD)</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/azure-devops/yaml-pipelines.html">
- <span class="dropdown-text">YAML Pipeline Development</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/azure-devops/docker.html">
- <span class="dropdown-text">Docker &amp; Containerization</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/azure-devops/kubernetes-aks.html">
- <span class="dropdown-text">Kubernetes &amp; AKS</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/azure-devops/terraform.html">
- <span class="dropdown-text">Terraform Infrastructure as Code</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/azure-devops/azure-cloud-services.html">
- <span class="dropdown-text">Azure Cloud Services</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/azure-devops/devsecops-monitoring.html">
- <span class="dropdown-text">DevSecOps &amp; Monitoring</span></a>
-  </li>  
-    </ul>
-  </li>
-  <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-interview-questions" role="link" data-bs-toggle="dropdown" aria-expanded="false">
-      <i class="bi bi-question-circle" role="img">
-</i> 
- <span class="menu-text">Interview Questions</span>
-    </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-interview-questions">    
-        <li>
-    <a class="dropdown-item" href="../../interview-questions/index.html">
- <span class="dropdown-text">Section overview</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../interview-questions/full-stack-ai.html">
- <span class="dropdown-text">Full Stack AI</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../interview-questions/azure-data-engineering.html">
- <span class="dropdown-text">Azure Data Engineering</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../interview-questions/azure-devops.html">
- <span class="dropdown-text">Azure DevOps</span></a>
-  </li>  
-    </ul>
-  </li>
-  <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-project-flows" role="link" data-bs-toggle="dropdown" aria-expanded="false">
-      <i class="bi bi-kanban" role="img">
-</i> 
- <span class="menu-text">Project Flows</span>
-    </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-project-flows">    
-        <li>
-    <a class="dropdown-item" href="../../project-flows/index.html">
- <span class="dropdown-text">Section overview</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../project-flows/full-stack-ai.html">
- <span class="dropdown-text">Full Stack AI</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../project-flows/azure-data-engineering.html">
- <span class="dropdown-text">Azure Data Engineering</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../project-flows/azure-devops.html">
- <span class="dropdown-text">Azure DevOps</span></a>
-  </li>  
-    </ul>
-  </li>
-</ul>
-          </div> <!-- /navcollapse -->
-            <div class="quarto-navbar-tools">
+<header class="headroom fixed-top" id="quarto-header">
+<nav class="navbar navbar-expand-lg" data-bs-theme="dark">
+<div class="navbar-container container-fluid">
+<div class="navbar-brand-container mx-auto">
+<a class="navbar-brand" href="../../index.html">
+<span class="navbar-title">Edukron Notes</span>
+</a>
 </div>
-      </div> <!-- /container-fluid -->
-    </nav>
+<div class="" id="quarto-search" title="Search"></div>
+<button aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-bs-target="#navbarCollapse" data-bs-toggle="collapse" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }" role="menu" type="button">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" id="navbarCollapse">
+<ul class="navbar-nav navbar-nav-scroll me-auto">
+<li class="nav-item">
+<a class="nav-link" href="../../index.html">
+<span class="menu-text">Home</span></a>
+</li>
+<li class="nav-item dropdown">
+<a aria-expanded="false" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" id="nav-menu-full-stack-ai" role="link">
+<i class="bi bi-cpu" role="img">
+</i>
+<span class="menu-text">Full Stack AI</span>
+</a>
+<ul aria-labelledby="nav-menu-full-stack-ai" class="dropdown-menu">
+<li>
+<a class="dropdown-item" href="../../courses/full-stack-ai/index.html">
+<span class="dropdown-text">Program overview</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/full-stack-ai/python.html">
+<span class="dropdown-text">Python</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/full-stack-ai/sql.html">
+<span class="dropdown-text">SQL</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/full-stack-ai/data-science.html">
+<span class="dropdown-text">Data Science</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/full-stack-ai/machine-learning.html">
+<span class="dropdown-text">Machine Learning</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/full-stack-ai/artificial-intelligence.html">
+<span class="dropdown-text">Artificial Intelligence</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/full-stack-ai/deep-learning.html">
+<span class="dropdown-text">Deep Learning</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/full-stack-ai/generative-ai.html">
+<span class="dropdown-text">Generative AI</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/full-stack-ai/large-language-models.html">
+<span class="dropdown-text">Large Language Models (LLMs)</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/full-stack-ai/rag.html">
+<span class="dropdown-text">Retrieval Augmented Generation (RAG)</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/full-stack-ai/agentic-ai.html">
+<span class="dropdown-text">Agentic AI</span></a>
+</li>
+</ul>
+</li>
+<li class="nav-item dropdown">
+<a aria-expanded="false" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" id="nav-menu-azure-data-engineering" role="link">
+<i class="bi bi-database" role="img">
+</i>
+<span class="menu-text">Azure Data Engineering</span>
+</a>
+<ul aria-labelledby="nav-menu-azure-data-engineering" class="dropdown-menu">
+<li>
+<a class="dropdown-item" href="../../courses/azure-data-engineering/index.html">
+<span class="dropdown-text">Program overview</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/azure-data-engineering/python.html">
+<span class="dropdown-text">Python</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/azure-data-engineering/sql.html">
+<span class="dropdown-text">SQL</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/azure-data-engineering/fundamentals.html">
+<span class="dropdown-text">Data Engineering Fundamentals</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/azure-data-engineering/azure-data-factory.html">
+<span class="dropdown-text">Azure Data Factory (ADF)</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/azure-data-engineering/adls-gen2.html">
+<span class="dropdown-text">Azure Data Lake Storage Gen2</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/azure-data-engineering/azure-databricks.html">
+<span class="dropdown-text">Azure Databricks</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/azure-data-engineering/pyspark.html">
+<span class="dropdown-text">PySpark</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/azure-data-engineering/azure-synapse.html">
+<span class="dropdown-text">Azure Synapse Analytics</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/azure-data-engineering/microsoft-fabric.html">
+<span class="dropdown-text">Microsoft Fabric</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/azure-data-engineering/delta-lake.html">
+<span class="dropdown-text">Delta Lake</span></a>
+</li>
+</ul>
+</li>
+<li class="nav-item dropdown">
+<a aria-expanded="false" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" id="nav-menu-azure-devops" role="link">
+<i class="bi bi-infinity" role="img">
+</i>
+<span class="menu-text">Azure DevOps</span>
+</a>
+<ul aria-labelledby="nav-menu-azure-devops" class="dropdown-menu">
+<li>
+<a class="dropdown-item" href="../../courses/azure-devops/index.html">
+<span class="dropdown-text">Program overview</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/azure-devops/linux-shell-scripting.html">
+<span class="dropdown-text">Linux &amp; Shell Scripting</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/azure-devops/git-version-control.html">
+<span class="dropdown-text">Git &amp; Version Control</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/azure-devops/azure-repos.html">
+<span class="dropdown-text">Azure Repos</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/azure-devops/azure-pipelines.html">
+<span class="dropdown-text">Azure Pipelines (CI/CD)</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/azure-devops/yaml-pipelines.html">
+<span class="dropdown-text">YAML Pipeline Development</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/azure-devops/docker.html">
+<span class="dropdown-text">Docker &amp; Containerization</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/azure-devops/kubernetes-aks.html">
+<span class="dropdown-text">Kubernetes &amp; AKS</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/azure-devops/terraform.html">
+<span class="dropdown-text">Terraform Infrastructure as Code</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/azure-devops/azure-cloud-services.html">
+<span class="dropdown-text">Azure Cloud Services</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/azure-devops/devsecops-monitoring.html">
+<span class="dropdown-text">DevSecOps &amp; Monitoring</span></a>
+</li>
+</ul>
+</li>
+<li class="nav-item dropdown">
+<a aria-expanded="false" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" id="nav-menu-interview-questions" role="link">
+<i class="bi bi-question-circle" role="img">
+</i>
+<span class="menu-text">Interview Questions</span>
+</a>
+<ul aria-labelledby="nav-menu-interview-questions" class="dropdown-menu">
+<li>
+<a class="dropdown-item" href="../../interview-questions/index.html">
+<span class="dropdown-text">Section overview</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../interview-questions/full-stack-ai.html">
+<span class="dropdown-text">Full Stack AI</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../interview-questions/azure-data-engineering.html">
+<span class="dropdown-text">Azure Data Engineering</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../interview-questions/azure-devops.html">
+<span class="dropdown-text">Azure DevOps</span></a>
+</li>
+</ul>
+</li>
+<li class="nav-item dropdown">
+<a aria-expanded="false" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" id="nav-menu-project-flows" role="link">
+<i class="bi bi-kanban" role="img">
+</i>
+<span class="menu-text">Project Flows</span>
+</a>
+<ul aria-labelledby="nav-menu-project-flows" class="dropdown-menu">
+<li>
+<a class="dropdown-item" href="../../project-flows/index.html">
+<span class="dropdown-text">Section overview</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../project-flows/full-stack-ai.html">
+<span class="dropdown-text">Full Stack AI</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../project-flows/azure-data-engineering.html">
+<span class="dropdown-text">Azure Data Engineering</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../project-flows/azure-devops.html">
+<span class="dropdown-text">Azure DevOps</span></a>
+</li>
+</ul>
+</li>
+</ul>
+</div> <!-- /navcollapse -->
+<div class="quarto-navbar-tools">
+</div>
+</div> <!-- /container-fluid -->
+</nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<div class="quarto-container page-columns page-rows-contents page-layout-full page-navbar" id="quarto-content">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
-   
-  <ul>
-  <li><a href="#how-to-use-this-course" id="toc-how-to-use-this-course" class="nav-link active" data-scroll-target="#how-to-use-this-course">How to use this course</a></li>
-  <li><a href="#full-syllabus" id="toc-full-syllabus" class="nav-link" data-scroll-target="#full-syllabus">Full syllabus</a></li>
-  <li><a href="#completion-standard" id="toc-completion-standard" class="nav-link" data-scroll-target="#completion-standard">Completion standard</a></li>
-  </ul>
-</nav>
-    </div>
 <!-- main -->
-<main class="content" id="quarto-document-content">
-
-<header id="title-block-header" class="quarto-title-block default">
+<main class="content column-page" id="quarto-document-content">
+<header class="quarto-title-block default" id="title-block-header">
 <div class="quarto-title">
 <h1 class="title">ADLS Gen2</h1>
 </div>
-
 <div>
-  <div class="description">
+<div class="description">
     Complete notebook syllabus for ADLS Gen2 in Azure Data Engineering.
   </div>
 </div>
-
-
 <div class="quarto-title-meta">
-
-    <div>
-    <div class="quarto-title-meta-heading">Author</div>
-    <div class="quarto-title-meta-contents">
-             <p>Edukron Notes </p>
-          </div>
-  </div>
-    
-    <div>
-    <div class="quarto-title-meta-heading">Published</div>
-    <div class="quarto-title-meta-contents">
-      <p class="date">September 14, 2026</p>
-    </div>
-  </div>
-  
-    
-  </div>
-  
-
-
+<div>
+<div class="quarto-title-meta-heading">Author</div>
+<div class="quarto-title-meta-contents">
+<p>Edukron Notes </p>
+</div>
+</div>
+<div>
+<div class="quarto-title-meta-heading">Published</div>
+<div class="quarto-title-meta-contents">
+<p class="date">September 14, 2026</p>
+</div>
+</div>
+</div>
 </header>
-
-
-<div class="overview-lead curriculum-summary">
-<div class="overview-icon">
-<i class="bi bi-journal-code" aria-hidden="true"></i>
+<div class="course-workspace notebook-chrome">
+<div class="notebook-toolbar">
+<span class="notebook-file"><i aria-hidden="true" class="bi bi-journal-code"></i><strong>adls-gen2.ipynb</strong></span>
+<span class="notebook-status"><i aria-hidden="true" class="bi bi-check-circle-fill"></i> Trusted</span>
+<span class="notebook-kernel"><i aria-hidden="true" class="bi bi-diagram-3"></i> Learning path</span>
 </div>
-<div>
+<div class="course-workspace-hero">
 <span class="overview-kicker">Azure Data Engineering</span>
-<h2 class="anchored">
-ADLS Gen2
-</h2>
-<p>
-A complete notebook-first syllabus organized from foundations to applied delivery. Every lesson contains notes, a worked pattern, executable validation, a guided lab, solution blueprint, practice, and knowledge checks.
-</p>
+<h1>ADLS Gen2</h1>
+<p>A complete notebook-first syllabus organized from foundations to applied delivery. Every lesson combines clear notes, a worked pattern, executable validation, a guided lab, a solution blueprint, practice, and knowledge checks.</p>
+<div class="course-tags"><span><i class="bi bi-signpost-split"></i> Foundation to advanced</span><span><i class="bi bi-code-square"></i> Hands-on practice</span><span><i class="bi bi-patch-check"></i> Review ready</span></div>
+<p class="course-start"><a class="btn btn-primary" href="adls-gen2/102-adls-gen2-foundations/01-storage-account-architecture.html"><i class="bi bi-play-fill"></i> Start the first notebook</a></p>
 </div>
 </div>
-<div class="course-stat-grid">
-<div>
-<strong>4</strong><span>Syllabus topics</span>
-</div>
-<div>
-<strong>40</strong><span>Notebook lessons</span>
-</div>
-<div>
-<strong>Practice</strong><span>Labs and solutions</span>
-</div>
-</div>
-<p class="course-start">
-<a class="btn btn-primary" href="adls-gen2/102-adls-gen2-foundations/01-storage-account-architecture.html">Start the first notebook <i class="bi bi-arrow-right"></i></a>
-</p>
-<section id="how-to-use-this-course" class="level2">
+<section class="level2" id="how-to-use-this-course">
 <h2 class="anchored" data-anchor-id="how-to-use-this-course">How to use this course</h2>
 <p>Work through lessons in order for a complete pathway, or open a topic for focused reference. Type or adapt the examples, complete the guided lab before reading its blueprint, and preserve your test evidence as a portfolio artifact. Cloud and infrastructure examples are safe, copy-ready teaching patterns; execute them in your own sandbox only after substituting approved identities, names, and policies.</p>
 </section>
-<section id="full-syllabus" class="level2">
-<h2 class="anchored" data-anchor-id="full-syllabus">Full syllabus</h2>
+<div class="syllabus-heading" id="notebook-syllabus">
+<div><span class="overview-kicker">Course contents</span><h2>Notebook syllabus</h2><p>Open a topic to browse its lessons, or search the complete course by concept.</p></div>
+<label class="syllabus-search" for="azure-data-engineering-adls-gen2-catalog-search"><i aria-hidden="true" class="bi bi-search"></i><input aria-label="Search the ADLS Gen2 syllabus" autocomplete="off" id="azure-data-engineering-adls-gen2-catalog-search" placeholder="Find a topic or lesson" type="search"/></label>
+</div>
+<div class="curriculum-catalog" id="azure-data-engineering-adls-gen2-catalog">
 <details class="curriculum-topic" open="">
-<summary>
-<span class="topic-number">Topic 102</span><strong>ADLS Gen2 foundations</strong><span>10 notebooks</span>
-</summary>
+<summary><span class="topic-number">Topic 102</span><strong>ADLS Gen2 foundations</strong></summary>
 <div class="topic-lessons">
-<p><a class="topic-lesson-link" href="adls-gen2/102-adls-gen2-foundations/01-storage-account-architecture.html"><span>102.01</span><strong>Storage-account architecture</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="adls-gen2/102-adls-gen2-foundations/02-hierarchical-namespace.html"><span>102.02</span><strong>Hierarchical namespace</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="adls-gen2/102-adls-gen2-foundations/03-containers-and-directories.html"><span>102.03</span><strong>Containers and directories</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="adls-gen2/102-adls-gen2-foundations/04-blob-types.html"><span>102.04</span><strong>Blob types</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="adls-gen2/102-adls-gen2-foundations/05-naming-standards.html"><span>102.05</span><strong>Naming standards</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="adls-gen2/102-adls-gen2-foundations/06-storage-tiers.html"><span>102.06</span><strong>Storage tiers</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="adls-gen2/102-adls-gen2-foundations/07-redundancy-options.html"><span>102.07</span><strong>Redundancy options</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="adls-gen2/102-adls-gen2-foundations/08-azure-cli-access.html"><span>102.08</span><strong>Azure CLI access</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="adls-gen2/102-adls-gen2-foundations/09-sdk-access.html"><span>102.09</span><strong>SDK access</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="adls-gen2/102-adls-gen2-foundations/10-data-lake-foundations-project.html"><span>102.10</span><strong>Data-lake foundations project</strong><i class="bi bi-arrow-right"></i></a></p>
+<a class="topic-lesson-link" href="adls-gen2/102-adls-gen2-foundations/01-storage-account-architecture.html"><span>102.01</span><strong>Storage-account architecture</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="adls-gen2/102-adls-gen2-foundations/02-hierarchical-namespace.html"><span>102.02</span><strong>Hierarchical namespace</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="adls-gen2/102-adls-gen2-foundations/03-containers-and-directories.html"><span>102.03</span><strong>Containers and directories</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="adls-gen2/102-adls-gen2-foundations/04-blob-types.html"><span>102.04</span><strong>Blob types</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="adls-gen2/102-adls-gen2-foundations/05-naming-standards.html"><span>102.05</span><strong>Naming standards</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="adls-gen2/102-adls-gen2-foundations/06-storage-tiers.html"><span>102.06</span><strong>Storage tiers</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="adls-gen2/102-adls-gen2-foundations/07-redundancy-options.html"><span>102.07</span><strong>Redundancy options</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="adls-gen2/102-adls-gen2-foundations/08-azure-cli-access.html"><span>102.08</span><strong>Azure CLI access</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="adls-gen2/102-adls-gen2-foundations/09-sdk-access.html"><span>102.09</span><strong>SDK access</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="adls-gen2/102-adls-gen2-foundations/10-data-lake-foundations-project.html"><span>102.10</span><strong>Data-lake foundations project</strong><i class="bi bi-arrow-right"></i></a>
 </div>
 </details>
 <details class="curriculum-topic">
-<summary>
-<span class="topic-number">Topic 103</span><strong>ADLS security</strong><span>10 notebooks</span>
-</summary>
+<summary><span class="topic-number">Topic 103</span><strong>ADLS security</strong></summary>
 <div class="topic-lessons">
-<p><a class="topic-lesson-link" href="adls-gen2/103-adls-security/01-entra-id-authentication.html"><span>103.01</span><strong>Entra ID authentication</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="adls-gen2/103-adls-security/02-shared-keys.html"><span>103.02</span><strong>Shared keys</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="adls-gen2/103-adls-security/03-sas-tokens.html"><span>103.03</span><strong>SAS tokens</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="adls-gen2/103-adls-security/04-rbac.html"><span>103.04</span><strong>RBAC</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="adls-gen2/103-adls-security/05-posix-acls.html"><span>103.05</span><strong>POSIX ACLs</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="adls-gen2/103-adls-security/06-default-acls.html"><span>103.06</span><strong>Default ACLs</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="adls-gen2/103-adls-security/07-private-endpoints.html"><span>103.07</span><strong>Private endpoints</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="adls-gen2/103-adls-security/08-firewalls.html"><span>103.08</span><strong>Firewalls</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="adls-gen2/103-adls-security/09-encryption.html"><span>103.09</span><strong>Encryption</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="adls-gen2/103-adls-security/10-secure-lake-project.html"><span>103.10</span><strong>Secure-lake project</strong><i class="bi bi-arrow-right"></i></a></p>
+<a class="topic-lesson-link" href="adls-gen2/103-adls-security/01-entra-id-authentication.html"><span>103.01</span><strong>Entra ID authentication</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="adls-gen2/103-adls-security/02-shared-keys.html"><span>103.02</span><strong>Shared keys</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="adls-gen2/103-adls-security/03-sas-tokens.html"><span>103.03</span><strong>SAS tokens</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="adls-gen2/103-adls-security/04-rbac.html"><span>103.04</span><strong>RBAC</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="adls-gen2/103-adls-security/05-posix-acls.html"><span>103.05</span><strong>POSIX ACLs</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="adls-gen2/103-adls-security/06-default-acls.html"><span>103.06</span><strong>Default ACLs</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="adls-gen2/103-adls-security/07-private-endpoints.html"><span>103.07</span><strong>Private endpoints</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="adls-gen2/103-adls-security/08-firewalls.html"><span>103.08</span><strong>Firewalls</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="adls-gen2/103-adls-security/09-encryption.html"><span>103.09</span><strong>Encryption</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="adls-gen2/103-adls-security/10-secure-lake-project.html"><span>103.10</span><strong>Secure-lake project</strong><i class="bi bi-arrow-right"></i></a>
 </div>
 </details>
 <details class="curriculum-topic">
-<summary>
-<span class="topic-number">Topic 104</span><strong>Lake organization and lifecycle</strong><span>10 notebooks</span>
-</summary>
+<summary><span class="topic-number">Topic 104</span><strong>Lake organization and lifecycle</strong></summary>
 <div class="topic-lessons">
-<p><a class="topic-lesson-link" href="adls-gen2/104-lake-organization-and-lifecycle/01-raw-zone-design.html"><span>104.01</span><strong>Raw-zone design</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="adls-gen2/104-lake-organization-and-lifecycle/02-curated-zone-design.html"><span>104.02</span><strong>Curated-zone design</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="adls-gen2/104-lake-organization-and-lifecycle/03-serving-zone-design.html"><span>104.03</span><strong>Serving-zone design</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="adls-gen2/104-lake-organization-and-lifecycle/04-partitioning.html"><span>104.04</span><strong>Partitioning</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="adls-gen2/104-lake-organization-and-lifecycle/05-file-sizing.html"><span>104.05</span><strong>File sizing</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="adls-gen2/104-lake-organization-and-lifecycle/06-naming-conventions.html"><span>104.06</span><strong>Naming conventions</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="adls-gen2/104-lake-organization-and-lifecycle/07-lifecycle-policies.html"><span>104.07</span><strong>Lifecycle policies</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="adls-gen2/104-lake-organization-and-lifecycle/08-versioning.html"><span>104.08</span><strong>Versioning</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="adls-gen2/104-lake-organization-and-lifecycle/09-soft-delete.html"><span>104.09</span><strong>Soft delete</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="adls-gen2/104-lake-organization-and-lifecycle/10-lake-organization-project.html"><span>104.10</span><strong>Lake-organization project</strong><i class="bi bi-arrow-right"></i></a></p>
+<a class="topic-lesson-link" href="adls-gen2/104-lake-organization-and-lifecycle/01-raw-zone-design.html"><span>104.01</span><strong>Raw-zone design</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="adls-gen2/104-lake-organization-and-lifecycle/02-curated-zone-design.html"><span>104.02</span><strong>Curated-zone design</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="adls-gen2/104-lake-organization-and-lifecycle/03-serving-zone-design.html"><span>104.03</span><strong>Serving-zone design</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="adls-gen2/104-lake-organization-and-lifecycle/04-partitioning.html"><span>104.04</span><strong>Partitioning</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="adls-gen2/104-lake-organization-and-lifecycle/05-file-sizing.html"><span>104.05</span><strong>File sizing</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="adls-gen2/104-lake-organization-and-lifecycle/06-naming-conventions.html"><span>104.06</span><strong>Naming conventions</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="adls-gen2/104-lake-organization-and-lifecycle/07-lifecycle-policies.html"><span>104.07</span><strong>Lifecycle policies</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="adls-gen2/104-lake-organization-and-lifecycle/08-versioning.html"><span>104.08</span><strong>Versioning</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="adls-gen2/104-lake-organization-and-lifecycle/09-soft-delete.html"><span>104.09</span><strong>Soft delete</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="adls-gen2/104-lake-organization-and-lifecycle/10-lake-organization-project.html"><span>104.10</span><strong>Lake-organization project</strong><i class="bi bi-arrow-right"></i></a>
 </div>
 </details>
 <details class="curriculum-topic">
-<summary>
-<span class="topic-number">Topic 105</span><strong>ADLS integrations and operations</strong><span>10 notebooks</span>
-</summary>
+<summary><span class="topic-number">Topic 105</span><strong>ADLS integrations and operations</strong></summary>
 <div class="topic-lessons">
-<p><a class="topic-lesson-link" href="adls-gen2/105-adls-integrations-and-operations/01-adf-integration.html"><span>105.01</span><strong>ADF integration</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="adls-gen2/105-adls-integrations-and-operations/02-databricks-integration.html"><span>105.02</span><strong>Databricks integration</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="adls-gen2/105-adls-integrations-and-operations/03-synapse-integration.html"><span>105.03</span><strong>Synapse integration</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="adls-gen2/105-adls-integrations-and-operations/04-fabric-integration.html"><span>105.04</span><strong>Fabric integration</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="adls-gen2/105-adls-integrations-and-operations/05-event-grid.html"><span>105.05</span><strong>Event Grid</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="adls-gen2/105-adls-integrations-and-operations/06-monitoring-metrics.html"><span>105.06</span><strong>Monitoring metrics</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="adls-gen2/105-adls-integrations-and-operations/07-diagnostic-logs.html"><span>105.07</span><strong>Diagnostic logs</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="adls-gen2/105-adls-integrations-and-operations/08-performance-tuning.html"><span>105.08</span><strong>Performance tuning</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="adls-gen2/105-adls-integrations-and-operations/09-disaster-recovery.html"><span>105.09</span><strong>Disaster recovery</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="adls-gen2/105-adls-integrations-and-operations/10-adls-capstone.html"><span>105.10</span><strong>ADLS capstone</strong><i class="bi bi-arrow-right"></i></a></p>
+<a class="topic-lesson-link" href="adls-gen2/105-adls-integrations-and-operations/01-adf-integration.html"><span>105.01</span><strong>ADF integration</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="adls-gen2/105-adls-integrations-and-operations/02-databricks-integration.html"><span>105.02</span><strong>Databricks integration</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="adls-gen2/105-adls-integrations-and-operations/03-synapse-integration.html"><span>105.03</span><strong>Synapse integration</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="adls-gen2/105-adls-integrations-and-operations/04-fabric-integration.html"><span>105.04</span><strong>Fabric integration</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="adls-gen2/105-adls-integrations-and-operations/05-event-grid.html"><span>105.05</span><strong>Event Grid</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="adls-gen2/105-adls-integrations-and-operations/06-monitoring-metrics.html"><span>105.06</span><strong>Monitoring metrics</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="adls-gen2/105-adls-integrations-and-operations/07-diagnostic-logs.html"><span>105.07</span><strong>Diagnostic logs</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="adls-gen2/105-adls-integrations-and-operations/08-performance-tuning.html"><span>105.08</span><strong>Performance tuning</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="adls-gen2/105-adls-integrations-and-operations/09-disaster-recovery.html"><span>105.09</span><strong>Disaster recovery</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="adls-gen2/105-adls-integrations-and-operations/10-adls-capstone.html"><span>105.10</span><strong>ADLS capstone</strong><i class="bi bi-arrow-right"></i></a>
 </div>
 </details>
-</section>
-<section id="completion-standard" class="level2">
+</div>
+<p class="syllabus-empty" hidden="" id="azure-data-engineering-adls-gen2-catalog-empty"><i class="bi bi-search"></i> No matching lessons were found.</p>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const catalog = document.getElementById("azure-data-engineering-adls-gen2-catalog");
+  const search = document.getElementById("azure-data-engineering-adls-gen2-catalog-search");
+  const empty = document.getElementById("azure-data-engineering-adls-gen2-catalog-empty");
+  if (!catalog || !search || !empty) return;
+
+  search.addEventListener("input", () => {
+    const query = search.value.trim().toLowerCase();
+    let visibleTopics = 0;
+    catalog.querySelectorAll(".curriculum-topic").forEach((topic) => {
+      const summary = topic.querySelector("summary");
+      const topicMatches = !query || summary.textContent.toLowerCase().includes(query);
+      let visibleLessons = 0;
+      topic.querySelectorAll(".topic-lesson-link").forEach((lesson) => {
+        const matches = topicMatches || lesson.textContent.toLowerCase().includes(query);
+        lesson.hidden = !matches;
+        if (matches) visibleLessons += 1;
+      });
+      const showTopic = topicMatches || visibleLessons > 0;
+      topic.hidden = !showTopic;
+      if (showTopic) visibleTopics += 1;
+      if (query && showTopic) topic.open = true;
+    });
+    empty.hidden = visibleTopics > 0;
+  });
+});
+</script>
+<section class="level2" id="completion-standard">
 <h2 class="anchored" data-anchor-id="completion-standard">Completion standard</h2>
 <p>You have completed <strong>ADLS Gen2</strong> when you can explain each topic, reproduce its core workflow, pass the notebook checks, defend the main tradeoffs, and combine the lessons into one reviewable portfolio project. Use the practice tasks as evidence rather than treating page reading alone as completion.</p>
-
-
 </section>
-
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
@@ -849,21 +859,17 @@ A complete notebook-first syllabus organized from foundations to applied deliver
   </script>
 </div> <!-- /content -->
 <footer class="footer">
-  <div class="nav-footer">
-    <div class="nav-footer-left">
+<div class="nav-footer">
+<div class="nav-footer-left">
 <p>© 2026 Edukron Notes</p>
-</div>   
-    <div class="nav-footer-center">
-      &nbsp;
+</div>
+<div class="nav-footer-center">
+       
     </div>
-    <div class="nav-footer-right">
+<div class="nav-footer-right">
 <p>Notebook courses for AI, data engineering, and DevOps</p>
 </div>
-  </div>
+</div>
 </footer>
-
-
-
-
 <script src="../../site_libs/quarto-html/zenscroll-min.js"></script>
 </body></html>

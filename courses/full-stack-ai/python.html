@@ -1,15 +1,12 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
-<meta charset="utf-8">
-<meta name="generator" content="quarto-1.10.18">
-
-<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-
-<meta name="author" content="Edukron Notes">
-<meta name="dcterms.date" content="2026-09-14">
-<meta name="description" content="Complete notebook syllabus for Python in Full Stack AI.">
-
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta charset="utf-8"/>
+<meta content="quarto-1.10.18" name="generator"/>
+<meta content="width=device-width, initial-scale=1.0, user-scalable=yes" name="viewport"/>
+<meta content="Edukron Notes" name="author"/>
+<meta content="2026-09-14" name="dcterms.date"/>
+<meta content="Complete notebook syllabus for Python in Full Stack AI." name="description"/>
 <title>Python – Edukron Notes</title>
 <style>
 /* Default styles provided by pandoc.
@@ -30,25 +27,23 @@ ul.task-list li input[type="checkbox"] {
   vertical-align: middle;
 }
 </style>
-
-
 <script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
 <script src="../../site_libs/quarto-nav/headroom.min.js"></script>
 <script src="../../site_libs/clipboard/clipboard.min.js"></script>
 <script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
 <script src="../../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../../">
+<meta content="../../" name="quarto:offset"/>
 <script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="../../site_libs/quarto-html/popper.min.js"></script>
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet"/>
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" id="quarto-text-highlighting-styles" rel="stylesheet"/>
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-f0f4b58164ec92a07fcd2db94b0e5cbd.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet"/>
+<link append-hash="true" data-mode="light" href="../../site_libs/bootstrap/bootstrap-f0f4b58164ec92a07fcd2db94b0e5cbd.min.css" id="quarto-bootstrap" rel="stylesheet"/>
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -76,424 +71,481 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 <style>html{ scroll-behavior: smooth; }</style>
-
-
-<link rel="stylesheet" href="../../styles.css">
+<link href="../../styles.css" rel="stylesheet"/>
 </head>
-
 <body class="nav-fixed quarto-light">
-
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top">
-    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
-      <div class="navbar-container container-fluid">
-      <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="../../index.html">
-    <span class="navbar-title">Edukron Notes</span>
-    </a>
-  </div>
-            <div id="quarto-search" class="" title="Search"></div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
-  <span class="navbar-toggler-icon"></span>
-</button>
-          <div class="collapse navbar-collapse" id="navbarCollapse">
-            <ul class="navbar-nav navbar-nav-scroll me-auto">
-  <li class="nav-item">
-    <a class="nav-link" href="../../index.html"> 
-<span class="menu-text">Home</span></a>
-  </li>  
-  <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-full-stack-ai" role="link" data-bs-toggle="dropdown" aria-expanded="false">
-      <i class="bi bi-cpu" role="img">
-</i> 
- <span class="menu-text">Full Stack AI</span>
-    </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-full-stack-ai">    
-        <li>
-    <a class="dropdown-item" href="../../courses/full-stack-ai/index.html">
- <span class="dropdown-text">Program overview</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/full-stack-ai/python.html">
- <span class="dropdown-text">Python</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/full-stack-ai/sql.html">
- <span class="dropdown-text">SQL</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/full-stack-ai/data-science.html">
- <span class="dropdown-text">Data Science</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/full-stack-ai/machine-learning.html">
- <span class="dropdown-text">Machine Learning</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/full-stack-ai/artificial-intelligence.html">
- <span class="dropdown-text">Artificial Intelligence</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/full-stack-ai/deep-learning.html">
- <span class="dropdown-text">Deep Learning</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/full-stack-ai/generative-ai.html">
- <span class="dropdown-text">Generative AI</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/full-stack-ai/large-language-models.html">
- <span class="dropdown-text">Large Language Models (LLMs)</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/full-stack-ai/rag.html">
- <span class="dropdown-text">Retrieval Augmented Generation (RAG)</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/full-stack-ai/agentic-ai.html">
- <span class="dropdown-text">Agentic AI</span></a>
-  </li>  
-    </ul>
-  </li>
-  <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-azure-data-engineering" role="link" data-bs-toggle="dropdown" aria-expanded="false">
-      <i class="bi bi-database" role="img">
-</i> 
- <span class="menu-text">Azure Data Engineering</span>
-    </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-azure-data-engineering">    
-        <li>
-    <a class="dropdown-item" href="../../courses/azure-data-engineering/index.html">
- <span class="dropdown-text">Program overview</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/azure-data-engineering/python.html">
- <span class="dropdown-text">Python</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/azure-data-engineering/sql.html">
- <span class="dropdown-text">SQL</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/azure-data-engineering/fundamentals.html">
- <span class="dropdown-text">Data Engineering Fundamentals</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/azure-data-engineering/azure-data-factory.html">
- <span class="dropdown-text">Azure Data Factory (ADF)</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/azure-data-engineering/adls-gen2.html">
- <span class="dropdown-text">Azure Data Lake Storage Gen2</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/azure-data-engineering/azure-databricks.html">
- <span class="dropdown-text">Azure Databricks</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/azure-data-engineering/pyspark.html">
- <span class="dropdown-text">PySpark</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/azure-data-engineering/azure-synapse.html">
- <span class="dropdown-text">Azure Synapse Analytics</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/azure-data-engineering/microsoft-fabric.html">
- <span class="dropdown-text">Microsoft Fabric</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/azure-data-engineering/delta-lake.html">
- <span class="dropdown-text">Delta Lake</span></a>
-  </li>  
-    </ul>
-  </li>
-  <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-azure-devops" role="link" data-bs-toggle="dropdown" aria-expanded="false">
-      <i class="bi bi-infinity" role="img">
-</i> 
- <span class="menu-text">Azure DevOps</span>
-    </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-azure-devops">    
-        <li>
-    <a class="dropdown-item" href="../../courses/azure-devops/index.html">
- <span class="dropdown-text">Program overview</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/azure-devops/linux-shell-scripting.html">
- <span class="dropdown-text">Linux &amp; Shell Scripting</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/azure-devops/git-version-control.html">
- <span class="dropdown-text">Git &amp; Version Control</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/azure-devops/azure-repos.html">
- <span class="dropdown-text">Azure Repos</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/azure-devops/azure-pipelines.html">
- <span class="dropdown-text">Azure Pipelines (CI/CD)</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/azure-devops/yaml-pipelines.html">
- <span class="dropdown-text">YAML Pipeline Development</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/azure-devops/docker.html">
- <span class="dropdown-text">Docker &amp; Containerization</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/azure-devops/kubernetes-aks.html">
- <span class="dropdown-text">Kubernetes &amp; AKS</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/azure-devops/terraform.html">
- <span class="dropdown-text">Terraform Infrastructure as Code</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/azure-devops/azure-cloud-services.html">
- <span class="dropdown-text">Azure Cloud Services</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/azure-devops/devsecops-monitoring.html">
- <span class="dropdown-text">DevSecOps &amp; Monitoring</span></a>
-  </li>  
-    </ul>
-  </li>
-  <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-interview-questions" role="link" data-bs-toggle="dropdown" aria-expanded="false">
-      <i class="bi bi-question-circle" role="img">
-</i> 
- <span class="menu-text">Interview Questions</span>
-    </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-interview-questions">    
-        <li>
-    <a class="dropdown-item" href="../../interview-questions/index.html">
- <span class="dropdown-text">Section overview</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../interview-questions/full-stack-ai.html">
- <span class="dropdown-text">Full Stack AI</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../interview-questions/azure-data-engineering.html">
- <span class="dropdown-text">Azure Data Engineering</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../interview-questions/azure-devops.html">
- <span class="dropdown-text">Azure DevOps</span></a>
-  </li>  
-    </ul>
-  </li>
-  <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-project-flows" role="link" data-bs-toggle="dropdown" aria-expanded="false">
-      <i class="bi bi-kanban" role="img">
-</i> 
- <span class="menu-text">Project Flows</span>
-    </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-project-flows">    
-        <li>
-    <a class="dropdown-item" href="../../project-flows/index.html">
- <span class="dropdown-text">Section overview</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../project-flows/full-stack-ai.html">
- <span class="dropdown-text">Full Stack AI</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../project-flows/azure-data-engineering.html">
- <span class="dropdown-text">Azure Data Engineering</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../project-flows/azure-devops.html">
- <span class="dropdown-text">Azure DevOps</span></a>
-  </li>  
-    </ul>
-  </li>
-</ul>
-          </div> <!-- /navcollapse -->
-            <div class="quarto-navbar-tools">
+<header class="headroom fixed-top" id="quarto-header">
+<nav class="navbar navbar-expand-lg" data-bs-theme="dark">
+<div class="navbar-container container-fluid">
+<div class="navbar-brand-container mx-auto">
+<a class="navbar-brand" href="../../index.html">
+<span class="navbar-title">Edukron Notes</span>
+</a>
 </div>
-      </div> <!-- /container-fluid -->
-    </nav>
+<div class="" id="quarto-search" title="Search"></div>
+<button aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-bs-target="#navbarCollapse" data-bs-toggle="collapse" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }" role="menu" type="button">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" id="navbarCollapse">
+<ul class="navbar-nav navbar-nav-scroll me-auto">
+<li class="nav-item">
+<a class="nav-link" href="../../index.html">
+<span class="menu-text">Home</span></a>
+</li>
+<li class="nav-item dropdown">
+<a aria-expanded="false" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" id="nav-menu-full-stack-ai" role="link">
+<i class="bi bi-cpu" role="img">
+</i>
+<span class="menu-text">Full Stack AI</span>
+</a>
+<ul aria-labelledby="nav-menu-full-stack-ai" class="dropdown-menu">
+<li>
+<a class="dropdown-item" href="../../courses/full-stack-ai/index.html">
+<span class="dropdown-text">Program overview</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/full-stack-ai/python.html">
+<span class="dropdown-text">Python</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/full-stack-ai/sql.html">
+<span class="dropdown-text">SQL</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/full-stack-ai/data-science.html">
+<span class="dropdown-text">Data Science</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/full-stack-ai/machine-learning.html">
+<span class="dropdown-text">Machine Learning</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/full-stack-ai/artificial-intelligence.html">
+<span class="dropdown-text">Artificial Intelligence</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/full-stack-ai/deep-learning.html">
+<span class="dropdown-text">Deep Learning</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/full-stack-ai/generative-ai.html">
+<span class="dropdown-text">Generative AI</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/full-stack-ai/large-language-models.html">
+<span class="dropdown-text">Large Language Models (LLMs)</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/full-stack-ai/rag.html">
+<span class="dropdown-text">Retrieval Augmented Generation (RAG)</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/full-stack-ai/agentic-ai.html">
+<span class="dropdown-text">Agentic AI</span></a>
+</li>
+</ul>
+</li>
+<li class="nav-item dropdown">
+<a aria-expanded="false" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" id="nav-menu-azure-data-engineering" role="link">
+<i class="bi bi-database" role="img">
+</i>
+<span class="menu-text">Azure Data Engineering</span>
+</a>
+<ul aria-labelledby="nav-menu-azure-data-engineering" class="dropdown-menu">
+<li>
+<a class="dropdown-item" href="../../courses/azure-data-engineering/index.html">
+<span class="dropdown-text">Program overview</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/azure-data-engineering/python.html">
+<span class="dropdown-text">Python</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/azure-data-engineering/sql.html">
+<span class="dropdown-text">SQL</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/azure-data-engineering/fundamentals.html">
+<span class="dropdown-text">Data Engineering Fundamentals</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/azure-data-engineering/azure-data-factory.html">
+<span class="dropdown-text">Azure Data Factory (ADF)</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/azure-data-engineering/adls-gen2.html">
+<span class="dropdown-text">Azure Data Lake Storage Gen2</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/azure-data-engineering/azure-databricks.html">
+<span class="dropdown-text">Azure Databricks</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/azure-data-engineering/pyspark.html">
+<span class="dropdown-text">PySpark</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/azure-data-engineering/azure-synapse.html">
+<span class="dropdown-text">Azure Synapse Analytics</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/azure-data-engineering/microsoft-fabric.html">
+<span class="dropdown-text">Microsoft Fabric</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/azure-data-engineering/delta-lake.html">
+<span class="dropdown-text">Delta Lake</span></a>
+</li>
+</ul>
+</li>
+<li class="nav-item dropdown">
+<a aria-expanded="false" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" id="nav-menu-azure-devops" role="link">
+<i class="bi bi-infinity" role="img">
+</i>
+<span class="menu-text">Azure DevOps</span>
+</a>
+<ul aria-labelledby="nav-menu-azure-devops" class="dropdown-menu">
+<li>
+<a class="dropdown-item" href="../../courses/azure-devops/index.html">
+<span class="dropdown-text">Program overview</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/azure-devops/linux-shell-scripting.html">
+<span class="dropdown-text">Linux &amp; Shell Scripting</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/azure-devops/git-version-control.html">
+<span class="dropdown-text">Git &amp; Version Control</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/azure-devops/azure-repos.html">
+<span class="dropdown-text">Azure Repos</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/azure-devops/azure-pipelines.html">
+<span class="dropdown-text">Azure Pipelines (CI/CD)</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/azure-devops/yaml-pipelines.html">
+<span class="dropdown-text">YAML Pipeline Development</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/azure-devops/docker.html">
+<span class="dropdown-text">Docker &amp; Containerization</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/azure-devops/kubernetes-aks.html">
+<span class="dropdown-text">Kubernetes &amp; AKS</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/azure-devops/terraform.html">
+<span class="dropdown-text">Terraform Infrastructure as Code</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/azure-devops/azure-cloud-services.html">
+<span class="dropdown-text">Azure Cloud Services</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/azure-devops/devsecops-monitoring.html">
+<span class="dropdown-text">DevSecOps &amp; Monitoring</span></a>
+</li>
+</ul>
+</li>
+<li class="nav-item dropdown">
+<a aria-expanded="false" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" id="nav-menu-interview-questions" role="link">
+<i class="bi bi-question-circle" role="img">
+</i>
+<span class="menu-text">Interview Questions</span>
+</a>
+<ul aria-labelledby="nav-menu-interview-questions" class="dropdown-menu">
+<li>
+<a class="dropdown-item" href="../../interview-questions/index.html">
+<span class="dropdown-text">Section overview</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../interview-questions/full-stack-ai.html">
+<span class="dropdown-text">Full Stack AI</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../interview-questions/azure-data-engineering.html">
+<span class="dropdown-text">Azure Data Engineering</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../interview-questions/azure-devops.html">
+<span class="dropdown-text">Azure DevOps</span></a>
+</li>
+</ul>
+</li>
+<li class="nav-item dropdown">
+<a aria-expanded="false" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" id="nav-menu-project-flows" role="link">
+<i class="bi bi-kanban" role="img">
+</i>
+<span class="menu-text">Project Flows</span>
+</a>
+<ul aria-labelledby="nav-menu-project-flows" class="dropdown-menu">
+<li>
+<a class="dropdown-item" href="../../project-flows/index.html">
+<span class="dropdown-text">Section overview</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../project-flows/full-stack-ai.html">
+<span class="dropdown-text">Full Stack AI</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../project-flows/azure-data-engineering.html">
+<span class="dropdown-text">Azure Data Engineering</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../project-flows/azure-devops.html">
+<span class="dropdown-text">Azure DevOps</span></a>
+</li>
+</ul>
+</li>
+</ul>
+</div> <!-- /navcollapse -->
+<div class="quarto-navbar-tools">
+</div>
+</div> <!-- /container-fluid -->
+</nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<div class="quarto-container page-columns page-rows-contents page-layout-full page-navbar" id="quarto-content">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
-   
-  <ul>
-  <li><a href="#how-to-use-this-course" id="toc-how-to-use-this-course" class="nav-link active" data-scroll-target="#how-to-use-this-course">How to use this course</a></li>
-  <li><a href="#full-syllabus" id="toc-full-syllabus" class="nav-link" data-scroll-target="#full-syllabus">Full syllabus</a></li>
-  <li><a href="#completion-standard" id="toc-completion-standard" class="nav-link" data-scroll-target="#completion-standard">Completion standard</a></li>
-  </ul>
-</nav>
-    </div>
 <!-- main -->
-<main class="content" id="quarto-document-content">
-
-<header id="title-block-header" class="quarto-title-block default">
+<main class="content column-page" id="quarto-document-content">
+<header class="quarto-title-block default" id="title-block-header">
 <div class="quarto-title">
 <h1 class="title">Python</h1>
 </div>
-
 <div>
-  <div class="description">
+<div class="description">
     Complete notebook syllabus for Python in Full Stack AI.
   </div>
 </div>
-
-
 <div class="quarto-title-meta">
-
-    <div>
-    <div class="quarto-title-meta-heading">Author</div>
-    <div class="quarto-title-meta-contents">
-             <p>Edukron Notes </p>
-          </div>
-  </div>
-    
-    <div>
-    <div class="quarto-title-meta-heading">Published</div>
-    <div class="quarto-title-meta-contents">
-      <p class="date">September 14, 2026</p>
-    </div>
-  </div>
-  
-    
-  </div>
-  
-
-
+<div>
+<div class="quarto-title-meta-heading">Author</div>
+<div class="quarto-title-meta-contents">
+<p>Edukron Notes </p>
+</div>
+</div>
+<div>
+<div class="quarto-title-meta-heading">Published</div>
+<div class="quarto-title-meta-contents">
+<p class="date">September 14, 2026</p>
+</div>
+</div>
+</div>
 </header>
-
-
-<div class="overview-lead curriculum-summary">
-<div class="overview-icon">
-<i class="bi bi-journal-code" aria-hidden="true"></i>
+<div class="course-workspace notebook-chrome">
+<div class="notebook-toolbar">
+<span class="notebook-file"><i aria-hidden="true" class="bi bi-journal-code"></i><strong>python.ipynb</strong></span>
+<span class="notebook-status"><i aria-hidden="true" class="bi bi-check-circle-fill"></i> Trusted</span>
+<span class="notebook-kernel"><i aria-hidden="true" class="bi bi-diagram-3"></i> Learning path</span>
 </div>
-<div>
+<div class="course-workspace-hero">
 <span class="overview-kicker">Full Stack AI</span>
-<h2 class="anchored">
-Python
-</h2>
-<p>
-A complete notebook-first syllabus organized from foundations to applied delivery. Every lesson contains notes, a worked pattern, executable validation, a guided lab, solution blueprint, practice, and knowledge checks.
-</p>
+<h1>Python</h1>
+<p>A complete notebook-first syllabus organized from foundations to applied delivery. Every lesson combines clear notes, a worked pattern, executable validation, a guided lab, a solution blueprint, practice, and knowledge checks.</p>
+<div class="course-tags"><span><i class="bi bi-signpost-split"></i> Foundation to advanced</span><span><i class="bi bi-code-square"></i> Hands-on practice</span><span><i class="bi bi-patch-check"></i> Review ready</span></div>
+<p class="course-start"><a class="btn btn-primary" href="python/001-python-language-foundations/01-python-and-jupyter-introduction.html"><i class="bi bi-play-fill"></i> Start the first notebook</a></p>
 </div>
 </div>
-<div class="course-stat-grid">
-<div>
-<strong>10</strong><span>Syllabus topics</span>
-</div>
-<div>
-<strong>100</strong><span>Notebook lessons</span>
-</div>
-<div>
-<strong>Practice</strong><span>Labs and solutions</span>
-</div>
-</div>
-<p class="course-start">
-<a class="btn btn-primary" href="python/001-python-language-foundations/01-python-and-jupyter-introduction.html">Start the first notebook <i class="bi bi-arrow-right"></i></a>
-</p>
-<section id="how-to-use-this-course" class="level2">
+<section class="level2" id="how-to-use-this-course">
 <h2 class="anchored" data-anchor-id="how-to-use-this-course">How to use this course</h2>
 <p>Work through lessons in order for a complete pathway, or open a topic for focused reference. Type or adapt the examples, complete the guided lab before reading its blueprint, and preserve your test evidence as a portfolio artifact. Cloud and infrastructure examples are safe, copy-ready teaching patterns; execute them in your own sandbox only after substituting approved identities, names, and policies.</p>
 </section>
-<section id="full-syllabus" class="level2">
-<h2 class="anchored" data-anchor-id="full-syllabus">Full syllabus</h2>
+<div class="syllabus-heading" id="notebook-syllabus">
+<div><span class="overview-kicker">Course contents</span><h2>Notebook syllabus</h2><p>Open a topic to browse its lessons, or search the complete course by concept.</p></div>
+<label class="syllabus-search" for="full-stack-ai-python-catalog-search"><i aria-hidden="true" class="bi bi-search"></i><input aria-label="Search the Python syllabus" autocomplete="off" id="full-stack-ai-python-catalog-search" placeholder="Find a topic or lesson" type="search"/></label>
+</div>
+<div class="curriculum-catalog" id="full-stack-ai-python-catalog">
 <details class="curriculum-topic" open="">
-<summary>
-<span class="topic-number">Topic 001</span><strong>Python language foundations</strong><span>10 notebooks</span>
-</summary>
+<summary><span class="topic-number">Topic 001</span><strong>Python language foundations</strong></summary>
 <div class="topic-lessons">
-<p><a class="topic-lesson-link" href="python/001-python-language-foundations/01-python-and-jupyter-introduction.html"><span>001.01</span><strong>Python and Jupyter introduction</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="python/001-python-language-foundations/02-notebook-cells-and-execution-order.html"><span>001.02</span><strong>Notebook cells and execution order</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="python/001-python-language-foundations/03-python-syntax-and-indentation.html"><span>001.03</span><strong>Python syntax and indentation</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="python/001-python-language-foundations/04-variables-and-naming.html"><span>001.04</span><strong>Variables and naming</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="python/001-python-language-foundations/05-numeric-data-types.html"><span>001.05</span><strong>Numeric data types</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="python/001-python-language-foundations/06-strings-and-booleans.html"><span>001.06</span><strong>Strings and booleans</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="python/001-python-language-foundations/07-type-conversion.html"><span>001.07</span><strong>Type conversion</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="python/001-python-language-foundations/08-operators-and-expressions.html"><span>001.08</span><strong>Operators and expressions</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="python/001-python-language-foundations/09-input-and-formatted-output.html"><span>001.09</span><strong>Input and formatted output</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="python/001-python-language-foundations/10-foundations-practice-project.html"><span>001.10</span><strong>Foundations practice project</strong><i class="bi bi-arrow-right"></i></a></p>
+<a class="topic-lesson-link" href="python/001-python-language-foundations/01-python-and-jupyter-introduction.html"><span>001.01</span><strong>Python and Jupyter introduction</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="python/001-python-language-foundations/02-notebook-cells-and-execution-order.html"><span>001.02</span><strong>Notebook cells and execution order</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="python/001-python-language-foundations/03-python-syntax-and-indentation.html"><span>001.03</span><strong>Python syntax and indentation</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="python/001-python-language-foundations/04-variables-and-naming.html"><span>001.04</span><strong>Variables and naming</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="python/001-python-language-foundations/05-numeric-data-types.html"><span>001.05</span><strong>Numeric data types</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="python/001-python-language-foundations/06-strings-and-booleans.html"><span>001.06</span><strong>Strings and booleans</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="python/001-python-language-foundations/07-type-conversion.html"><span>001.07</span><strong>Type conversion</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="python/001-python-language-foundations/08-operators-and-expressions.html"><span>001.08</span><strong>Operators and expressions</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="python/001-python-language-foundations/09-input-and-formatted-output.html"><span>001.09</span><strong>Input and formatted output</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="python/001-python-language-foundations/10-foundations-practice-project.html"><span>001.10</span><strong>Foundations practice project</strong><i class="bi bi-arrow-right"></i></a>
 </div>
 </details>
 <details class="curriculum-topic">
-<summary>
-<span class="topic-number">Topic 002</span><strong>Control flow and problem solving</strong><span>10 notebooks</span>
-</summary>
+<summary><span class="topic-number">Topic 002</span><strong>Control flow and problem solving</strong></summary>
 <div class="topic-lessons">
-<p><a class="topic-lesson-link" href="python/002-control-flow-and-problem-solving/01-boolean-logic.html"><span>002.01</span><strong>Boolean logic</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="python/002-control-flow-and-problem-solving/02-comparison-operators.html"><span>002.02</span><strong>Comparison operators</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="python/002-control-flow-and-problem-solving/03-if-statements.html"><span>002.03</span><strong>If statements</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="python/002-control-flow-and-problem-solving/04-elif-and-nested-conditions.html"><span>002.04</span><strong>Elif and nested conditions</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="python/002-control-flow-and-problem-solving/05-match-case-statements.html"><span>002.05</span><strong>Match-case statements</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="python/002-control-flow-and-problem-solving/06-for-loops.html"><span>002.06</span><strong>For loops</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="python/002-control-flow-and-problem-solving/07-while-loops.html"><span>002.07</span><strong>While loops</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="python/002-control-flow-and-problem-solving/08-break-continue-and-loop-else.html"><span>002.08</span><strong>Break continue and loop else</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="python/002-control-flow-and-problem-solving/09-comprehensions.html"><span>002.09</span><strong>Comprehensions</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="python/002-control-flow-and-problem-solving/10-control-flow-project.html"><span>002.10</span><strong>Control-flow project</strong><i class="bi bi-arrow-right"></i></a></p>
+<a class="topic-lesson-link" href="python/002-control-flow-and-problem-solving/01-boolean-logic.html"><span>002.01</span><strong>Boolean logic</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="python/002-control-flow-and-problem-solving/02-comparison-operators.html"><span>002.02</span><strong>Comparison operators</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="python/002-control-flow-and-problem-solving/03-if-statements.html"><span>002.03</span><strong>If statements</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="python/002-control-flow-and-problem-solving/04-elif-and-nested-conditions.html"><span>002.04</span><strong>Elif and nested conditions</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="python/002-control-flow-and-problem-solving/05-match-case-statements.html"><span>002.05</span><strong>Match-case statements</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="python/002-control-flow-and-problem-solving/06-for-loops.html"><span>002.06</span><strong>For loops</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="python/002-control-flow-and-problem-solving/07-while-loops.html"><span>002.07</span><strong>While loops</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="python/002-control-flow-and-problem-solving/08-break-continue-and-loop-else.html"><span>002.08</span><strong>Break continue and loop else</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="python/002-control-flow-and-problem-solving/09-comprehensions.html"><span>002.09</span><strong>Comprehensions</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="python/002-control-flow-and-problem-solving/10-control-flow-project.html"><span>002.10</span><strong>Control-flow project</strong><i class="bi bi-arrow-right"></i></a>
 </div>
 </details>
 <details class="curriculum-topic">
-<summary>
-<span class="topic-number">Topic 003</span><strong>Python collections</strong><span>10 notebooks</span>
-</summary>
+<summary><span class="topic-number">Topic 003</span><strong>Python collections</strong></summary>
 <div class="topic-lessons">
-<p><a class="topic-lesson-link" href="python/003-python-collections/01-lists.html"><span>003.01</span><strong>Lists</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="python/003-python-collections/02-tuples.html"><span>003.02</span><strong>Tuples</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="python/003-python-collections/03-dictionaries.html"><span>003.03</span><strong>Dictionaries</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="python/003-python-collections/04-sets-and-frozensets.html"><span>003.04</span><strong>Sets and frozensets</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="python/003-python-collections/05-nested-collections.html"><span>003.05</span><strong>Nested collections</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="python/003-python-collections/06-sequence-unpacking.html"><span>003.06</span><strong>Sequence unpacking</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="python/003-python-collections/07-copying-and-mutability.html"><span>003.07</span><strong>Copying and mutability</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="python/003-python-collections/08-sorting-and-searching.html"><span>003.08</span><strong>Sorting and searching</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="python/003-python-collections/09-collection-performance.html"><span>003.09</span><strong>Collection performance</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="python/003-python-collections/10-contact-book-project.html"><span>003.10</span><strong>Contact-book project</strong><i class="bi bi-arrow-right"></i></a></p>
+<a class="topic-lesson-link" href="python/003-python-collections/01-lists.html"><span>003.01</span><strong>Lists</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="python/003-python-collections/02-tuples.html"><span>003.02</span><strong>Tuples</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="python/003-python-collections/03-dictionaries.html"><span>003.03</span><strong>Dictionaries</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="python/003-python-collections/04-sets-and-frozensets.html"><span>003.04</span><strong>Sets and frozensets</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="python/003-python-collections/05-nested-collections.html"><span>003.05</span><strong>Nested collections</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="python/003-python-collections/06-sequence-unpacking.html"><span>003.06</span><strong>Sequence unpacking</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="python/003-python-collections/07-copying-and-mutability.html"><span>003.07</span><strong>Copying and mutability</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="python/003-python-collections/08-sorting-and-searching.html"><span>003.08</span><strong>Sorting and searching</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="python/003-python-collections/09-collection-performance.html"><span>003.09</span><strong>Collection performance</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="python/003-python-collections/10-contact-book-project.html"><span>003.10</span><strong>Contact-book project</strong><i class="bi bi-arrow-right"></i></a>
 </div>
 </details>
 <details class="curriculum-topic">
-<summary>
-<span class="topic-number">Topic 004</span><strong>Functions and reusable programming</strong><span>10 notebooks</span>
-</summary>
+<summary><span class="topic-number">Topic 004</span><strong>Functions and reusable programming</strong></summary>
 <div class="topic-lessons">
-<p><a class="topic-lesson-link" href="python/004-functions-and-reusable-programming/01-function-definitions.html"><span>004.01</span><strong>Function definitions</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="python/004-functions-and-reusable-programming/02-parameters-and-arguments.html"><span>004.02</span><strong>Parameters and arguments</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="python/004-functions-and-reusable-programming/03-default-and-keyword-arguments.html"><span>004.03</span><strong>Default and keyword arguments</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="python/004-functions-and-reusable-programming/04-args-and-kwargs.html"><span>004.04</span><strong>Args and kwargs</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="python/004-functions-and-reusable-programming/05-return-values.html"><span>004.05</span><strong>Return values</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="python/004-functions-and-reusable-programming/06-scope-and-closures.html"><span>004.06</span><strong>Scope and closures</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="python/004-functions-and-reusable-programming/07-lambda-functions.html"><span>004.07</span><strong>Lambda functions</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="python/004-functions-and-reusable-programming/08-higher-order-functions.html"><span>004.08</span><strong>Higher-order functions</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="python/004-functions-and-reusable-programming/09-recursion.html"><span>004.09</span><strong>Recursion</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="python/004-functions-and-reusable-programming/10-functional-application-project.html"><span>004.10</span><strong>Functional application project</strong><i class="bi bi-arrow-right"></i></a></p>
+<a class="topic-lesson-link" href="python/004-functions-and-reusable-programming/01-function-definitions.html"><span>004.01</span><strong>Function definitions</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="python/004-functions-and-reusable-programming/02-parameters-and-arguments.html"><span>004.02</span><strong>Parameters and arguments</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="python/004-functions-and-reusable-programming/03-default-and-keyword-arguments.html"><span>004.03</span><strong>Default and keyword arguments</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="python/004-functions-and-reusable-programming/04-args-and-kwargs.html"><span>004.04</span><strong>Args and kwargs</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="python/004-functions-and-reusable-programming/05-return-values.html"><span>004.05</span><strong>Return values</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="python/004-functions-and-reusable-programming/06-scope-and-closures.html"><span>004.06</span><strong>Scope and closures</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="python/004-functions-and-reusable-programming/07-lambda-functions.html"><span>004.07</span><strong>Lambda functions</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="python/004-functions-and-reusable-programming/08-higher-order-functions.html"><span>004.08</span><strong>Higher-order functions</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="python/004-functions-and-reusable-programming/09-recursion.html"><span>004.09</span><strong>Recursion</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="python/004-functions-and-reusable-programming/10-functional-application-project.html"><span>004.10</span><strong>Functional application project</strong><i class="bi bi-arrow-right"></i></a>
 </div>
 </details>
 <details class="curriculum-topic">
-<summary>
-<span class="topic-number">Topic 005</span><strong>Strings files and data formats</strong><span>10 notebooks</span>
-</summary>
+<summary><span class="topic-number">Topic 005</span><strong>Strings files and data formats</strong></summary>
 <div class="topic-lessons">
-<p><a class="topic-lesson-link" href="python/005-strings-files-and-data-formats/01-advanced-string-methods.html"><span>005.01</span><strong>Advanced string methods</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="python/005-strings-files-and-data-formats/02-unicode-and-text-encoding.html"><span>005.02</span><strong>Unicode and text encoding</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="python/005-strings-files-and-data-formats/03-regular-expressions.html"><span>005.03</span><strong>Regular expressions</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="python/005-strings-files-and-data-formats/04-pathlib-and-filesystem-paths.html"><span>005.04</span><strong>Pathlib and filesystem paths</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="python/005-strings-files-and-data-formats/05-reading-and-writing-text.html"><span>005.05</span><strong>Reading and writing text</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="python/005-strings-files-and-data-formats/06-csv-processing.html"><span>005.06</span><strong>CSV processing</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="python/005-strings-files-and-data-formats/07-json-processing.html"><span>005.07</span><strong>JSON processing</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="python/005-strings-files-and-data-formats/08-dates-and-times.html"><span>005.08</span><strong>Dates and times</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="python/005-strings-files-and-data-formats/09-data-validation.html"><span>005.09</span><strong>Data validation</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="python/005-strings-files-and-data-formats/10-file-processing-project.html"><span>005.10</span><strong>File-processing project</strong><i class="bi bi-arrow-right"></i></a></p>
+<a class="topic-lesson-link" href="python/005-strings-files-and-data-formats/01-advanced-string-methods.html"><span>005.01</span><strong>Advanced string methods</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="python/005-strings-files-and-data-formats/02-unicode-and-text-encoding.html"><span>005.02</span><strong>Unicode and text encoding</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="python/005-strings-files-and-data-formats/03-regular-expressions.html"><span>005.03</span><strong>Regular expressions</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="python/005-strings-files-and-data-formats/04-pathlib-and-filesystem-paths.html"><span>005.04</span><strong>Pathlib and filesystem paths</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="python/005-strings-files-and-data-formats/05-reading-and-writing-text.html"><span>005.05</span><strong>Reading and writing text</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="python/005-strings-files-and-data-formats/06-csv-processing.html"><span>005.06</span><strong>CSV processing</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="python/005-strings-files-and-data-formats/07-json-processing.html"><span>005.07</span><strong>JSON processing</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="python/005-strings-files-and-data-formats/08-dates-and-times.html"><span>005.08</span><strong>Dates and times</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="python/005-strings-files-and-data-formats/09-data-validation.html"><span>005.09</span><strong>Data validation</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="python/005-strings-files-and-data-formats/10-file-processing-project.html"><span>005.10</span><strong>File-processing project</strong><i class="bi bi-arrow-right"></i></a>
 </div>
 </details>
 <details class="curriculum-topic">
-<summary>
-<span class="topic-number">Topic 006</span><strong>Object-oriented Python</strong><span>10 notebooks</span>
-</summary>
+<summary><span class="topic-number">Topic 006</span><strong>Object-oriented Python</strong></summary>
 <div class="topic-lessons">
-<p><a class="topic-lesson-link" href="python/006-object-oriented-python/01-objects-and-classes.html"><span>006.01</span><strong>Objects and classes</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="python/006-object-oriented-python/02-constructors-and-instance-state.html"><span>006.02</span><strong>Constructors and instance state</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="python/006-object-oriented-python/03-encapsulation-and-properties.html"><span>006.03</span><strong>Encapsulation and properties</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="python/006-object-oriented-python/04-class-and-static-methods.html"><span>006.04</span><strong>Class and static methods</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="python/006-object-oriented-python/05-inheritance.html"><span>006.05</span><strong>Inheritance</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="python/006-object-oriented-python/06-polymorphism.html"><span>006.06</span><strong>Polymorphism</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="python/006-object-oriented-python/07-abstract-base-classes.html"><span>006.07</span><strong>Abstract base classes</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="python/006-object-oriented-python/08-composition.html"><span>006.08</span><strong>Composition</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="python/006-object-oriented-python/09-dataclasses.html"><span>006.09</span><strong>Dataclasses</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="python/006-object-oriented-python/10-oop-application-project.html"><span>006.10</span><strong>OOP application project</strong><i class="bi bi-arrow-right"></i></a></p>
+<a class="topic-lesson-link" href="python/006-object-oriented-python/01-objects-and-classes.html"><span>006.01</span><strong>Objects and classes</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="python/006-object-oriented-python/02-constructors-and-instance-state.html"><span>006.02</span><strong>Constructors and instance state</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="python/006-object-oriented-python/03-encapsulation-and-properties.html"><span>006.03</span><strong>Encapsulation and properties</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="python/006-object-oriented-python/04-class-and-static-methods.html"><span>006.04</span><strong>Class and static methods</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="python/006-object-oriented-python/05-inheritance.html"><span>006.05</span><strong>Inheritance</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="python/006-object-oriented-python/06-polymorphism.html"><span>006.06</span><strong>Polymorphism</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="python/006-object-oriented-python/07-abstract-base-classes.html"><span>006.07</span><strong>Abstract base classes</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="python/006-object-oriented-python/08-composition.html"><span>006.08</span><strong>Composition</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="python/006-object-oriented-python/09-dataclasses.html"><span>006.09</span><strong>Dataclasses</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="python/006-object-oriented-python/10-oop-application-project.html"><span>006.10</span><strong>OOP application project</strong><i class="bi bi-arrow-right"></i></a>
 </div>
 </details>
 <details class="curriculum-topic">
-<summary>
-<span class="topic-number">Topic 007</span><strong>Advanced Python</strong><span>10 notebooks</span>
-</summary>
+<summary><span class="topic-number">Topic 007</span><strong>Advanced Python</strong></summary>
 <div class="topic-lessons">
-<p><a class="topic-lesson-link" href="python/007-advanced-python/01-iterables-and-iterators.html"><span>007.01</span><strong>Iterables and iterators</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="python/007-advanced-python/02-generators.html"><span>007.02</span><strong>Generators</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="python/007-advanced-python/03-decorators.html"><span>007.03</span><strong>Decorators</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="python/007-advanced-python/04-context-managers.html"><span>007.04</span><strong>Context managers</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="python/007-advanced-python/05-type-hints.html"><span>007.05</span><strong>Type hints</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="python/007-advanced-python/06-protocols-and-duck-typing.html"><span>007.06</span><strong>Protocols and duck typing</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="python/007-advanced-python/07-descriptors.html"><span>007.07</span><strong>Descriptors</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="python/007-advanced-python/08-asyncio-fundamentals.html"><span>007.08</span><strong>Asyncio fundamentals</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="python/007-advanced-python/09-python-internals-and-memory.html"><span>007.09</span><strong>Python internals and memory</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="python/007-advanced-python/10-advanced-python-project.html"><span>007.10</span><strong>Advanced Python project</strong><i class="bi bi-arrow-right"></i></a></p>
+<a class="topic-lesson-link" href="python/007-advanced-python/01-iterables-and-iterators.html"><span>007.01</span><strong>Iterables and iterators</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="python/007-advanced-python/02-generators.html"><span>007.02</span><strong>Generators</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="python/007-advanced-python/03-decorators.html"><span>007.03</span><strong>Decorators</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="python/007-advanced-python/04-context-managers.html"><span>007.04</span><strong>Context managers</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="python/007-advanced-python/05-type-hints.html"><span>007.05</span><strong>Type hints</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="python/007-advanced-python/06-protocols-and-duck-typing.html"><span>007.06</span><strong>Protocols and duck typing</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="python/007-advanced-python/07-descriptors.html"><span>007.07</span><strong>Descriptors</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="python/007-advanced-python/08-asyncio-fundamentals.html"><span>007.08</span><strong>Asyncio fundamentals</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="python/007-advanced-python/09-python-internals-and-memory.html"><span>007.09</span><strong>Python internals and memory</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="python/007-advanced-python/10-advanced-python-project.html"><span>007.10</span><strong>Advanced Python project</strong><i class="bi bi-arrow-right"></i></a>
 </div>
 </details>
 <details class="curriculum-topic">
-<summary>
-<span class="topic-number">Topic 008</span><strong>Professional Python engineering</strong><span>10 notebooks</span>
-</summary>
+<summary><span class="topic-number">Topic 008</span><strong>Professional Python engineering</strong></summary>
 <div class="topic-lessons">
-<p><a class="topic-lesson-link" href="python/008-professional-python-engineering/01-modules-and-packages.html"><span>008.01</span><strong>Modules and packages</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="python/008-professional-python-engineering/02-virtual-environments.html"><span>008.02</span><strong>Virtual environments</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="python/008-professional-python-engineering/03-dependency-management.html"><span>008.03</span><strong>Dependency management</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="python/008-professional-python-engineering/04-configuration-and-secrets.html"><span>008.04</span><strong>Configuration and secrets</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="python/008-professional-python-engineering/05-exception-design.html"><span>008.05</span><strong>Exception design</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="python/008-professional-python-engineering/06-structured-logging.html"><span>008.06</span><strong>Structured logging</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="python/008-professional-python-engineering/07-pytest-fundamentals.html"><span>008.07</span><strong>Pytest fundamentals</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="python/008-professional-python-engineering/08-mocking-and-fixtures.html"><span>008.08</span><strong>Mocking and fixtures</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="python/008-professional-python-engineering/09-formatting-linting-and-typing.html"><span>008.09</span><strong>Formatting linting and typing</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="python/008-professional-python-engineering/10-package-and-cli-project.html"><span>008.10</span><strong>Package and CLI project</strong><i class="bi bi-arrow-right"></i></a></p>
+<a class="topic-lesson-link" href="python/008-professional-python-engineering/01-modules-and-packages.html"><span>008.01</span><strong>Modules and packages</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="python/008-professional-python-engineering/02-virtual-environments.html"><span>008.02</span><strong>Virtual environments</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="python/008-professional-python-engineering/03-dependency-management.html"><span>008.03</span><strong>Dependency management</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="python/008-professional-python-engineering/04-configuration-and-secrets.html"><span>008.04</span><strong>Configuration and secrets</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="python/008-professional-python-engineering/05-exception-design.html"><span>008.05</span><strong>Exception design</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="python/008-professional-python-engineering/06-structured-logging.html"><span>008.06</span><strong>Structured logging</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="python/008-professional-python-engineering/07-pytest-fundamentals.html"><span>008.07</span><strong>Pytest fundamentals</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="python/008-professional-python-engineering/08-mocking-and-fixtures.html"><span>008.08</span><strong>Mocking and fixtures</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="python/008-professional-python-engineering/09-formatting-linting-and-typing.html"><span>008.09</span><strong>Formatting linting and typing</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="python/008-professional-python-engineering/10-package-and-cli-project.html"><span>008.10</span><strong>Package and CLI project</strong><i class="bi bi-arrow-right"></i></a>
 </div>
 </details>
 <details class="curriculum-topic">
-<summary>
-<span class="topic-number">Topic 009</span><strong>APIs databases and automation</strong><span>10 notebooks</span>
-</summary>
+<summary><span class="topic-number">Topic 009</span><strong>APIs databases and automation</strong></summary>
 <div class="topic-lessons">
-<p><a class="topic-lesson-link" href="python/009-apis-databases-and-automation/01-http-fundamentals.html"><span>009.01</span><strong>HTTP fundamentals</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="python/009-apis-databases-and-automation/02-requests-and-responses.html"><span>009.02</span><strong>Requests and responses</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="python/009-apis-databases-and-automation/03-rest-apis.html"><span>009.03</span><strong>REST APIs</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="python/009-apis-databases-and-automation/04-api-authentication.html"><span>009.04</span><strong>API authentication</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="python/009-apis-databases-and-automation/05-pagination-and-retries.html"><span>009.05</span><strong>Pagination and retries</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="python/009-apis-databases-and-automation/06-web-data-extraction.html"><span>009.06</span><strong>Web-data extraction</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="python/009-apis-databases-and-automation/07-sqlite-with-python.html"><span>009.07</span><strong>SQLite with Python</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="python/009-apis-databases-and-automation/08-sqlalchemy-fundamentals.html"><span>009.08</span><strong>SQLAlchemy fundamentals</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="python/009-apis-databases-and-automation/09-concurrent-automation.html"><span>009.09</span><strong>Concurrent automation</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="python/009-apis-databases-and-automation/10-api-to-database-project.html"><span>009.10</span><strong>API-to-database project</strong><i class="bi bi-arrow-right"></i></a></p>
+<a class="topic-lesson-link" href="python/009-apis-databases-and-automation/01-http-fundamentals.html"><span>009.01</span><strong>HTTP fundamentals</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="python/009-apis-databases-and-automation/02-requests-and-responses.html"><span>009.02</span><strong>Requests and responses</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="python/009-apis-databases-and-automation/03-rest-apis.html"><span>009.03</span><strong>REST APIs</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="python/009-apis-databases-and-automation/04-api-authentication.html"><span>009.04</span><strong>API authentication</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="python/009-apis-databases-and-automation/05-pagination-and-retries.html"><span>009.05</span><strong>Pagination and retries</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="python/009-apis-databases-and-automation/06-web-data-extraction.html"><span>009.06</span><strong>Web-data extraction</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="python/009-apis-databases-and-automation/07-sqlite-with-python.html"><span>009.07</span><strong>SQLite with Python</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="python/009-apis-databases-and-automation/08-sqlalchemy-fundamentals.html"><span>009.08</span><strong>SQLAlchemy fundamentals</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="python/009-apis-databases-and-automation/09-concurrent-automation.html"><span>009.09</span><strong>Concurrent automation</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="python/009-apis-databases-and-automation/10-api-to-database-project.html"><span>009.10</span><strong>API-to-database project</strong><i class="bi bi-arrow-right"></i></a>
 </div>
 </details>
 <details class="curriculum-topic">
-<summary>
-<span class="topic-number">Topic 010</span><strong>Python for data and AI</strong><span>10 notebooks</span>
-</summary>
+<summary><span class="topic-number">Topic 010</span><strong>Python for data and AI</strong></summary>
 <div class="topic-lessons">
-<p><a class="topic-lesson-link" href="python/010-python-for-data-and-ai/01-numpy-introduction.html"><span>010.01</span><strong>NumPy introduction</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="python/010-python-for-data-and-ai/02-pandas-introduction.html"><span>010.02</span><strong>pandas introduction</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="python/010-python-for-data-and-ai/03-matplotlib-introduction.html"><span>010.03</span><strong>Matplotlib introduction</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="python/010-python-for-data-and-ai/04-exploratory-analysis.html"><span>010.04</span><strong>Exploratory analysis</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="python/010-python-for-data-and-ai/05-scikit-learn-interfaces.html"><span>010.05</span><strong>Scikit-learn interfaces</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="python/010-python-for-data-and-ai/06-preprocessing-pipelines.html"><span>010.06</span><strong>Preprocessing pipelines</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="python/010-python-for-data-and-ai/07-model-serialization.html"><span>010.07</span><strong>Model serialization</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="python/010-python-for-data-and-ai/08-inference-applications.html"><span>010.08</span><strong>Inference applications</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="python/010-python-for-data-and-ai/09-ai-api-integration.html"><span>010.09</span><strong>AI API integration</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="python/010-python-for-data-and-ai/10-python-capstone.html"><span>010.10</span><strong>Python capstone</strong><i class="bi bi-arrow-right"></i></a></p>
+<a class="topic-lesson-link" href="python/010-python-for-data-and-ai/01-numpy-introduction.html"><span>010.01</span><strong>NumPy introduction</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="python/010-python-for-data-and-ai/02-pandas-introduction.html"><span>010.02</span><strong>pandas introduction</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="python/010-python-for-data-and-ai/03-matplotlib-introduction.html"><span>010.03</span><strong>Matplotlib introduction</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="python/010-python-for-data-and-ai/04-exploratory-analysis.html"><span>010.04</span><strong>Exploratory analysis</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="python/010-python-for-data-and-ai/05-scikit-learn-interfaces.html"><span>010.05</span><strong>Scikit-learn interfaces</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="python/010-python-for-data-and-ai/06-preprocessing-pipelines.html"><span>010.06</span><strong>Preprocessing pipelines</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="python/010-python-for-data-and-ai/07-model-serialization.html"><span>010.07</span><strong>Model serialization</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="python/010-python-for-data-and-ai/08-inference-applications.html"><span>010.08</span><strong>Inference applications</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="python/010-python-for-data-and-ai/09-ai-api-integration.html"><span>010.09</span><strong>AI API integration</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="python/010-python-for-data-and-ai/10-python-capstone.html"><span>010.10</span><strong>Python capstone</strong><i class="bi bi-arrow-right"></i></a>
 </div>
 </details>
-</section>
-<section id="completion-standard" class="level2">
+</div>
+<p class="syllabus-empty" hidden="" id="full-stack-ai-python-catalog-empty"><i class="bi bi-search"></i> No matching lessons were found.</p>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const catalog = document.getElementById("full-stack-ai-python-catalog");
+  const search = document.getElementById("full-stack-ai-python-catalog-search");
+  const empty = document.getElementById("full-stack-ai-python-catalog-empty");
+  if (!catalog || !search || !empty) return;
+
+  search.addEventListener("input", () => {
+    const query = search.value.trim().toLowerCase();
+    let visibleTopics = 0;
+    catalog.querySelectorAll(".curriculum-topic").forEach((topic) => {
+      const summary = topic.querySelector("summary");
+      const topicMatches = !query || summary.textContent.toLowerCase().includes(query);
+      let visibleLessons = 0;
+      topic.querySelectorAll(".topic-lesson-link").forEach((lesson) => {
+        const matches = topicMatches || lesson.textContent.toLowerCase().includes(query);
+        lesson.hidden = !matches;
+        if (matches) visibleLessons += 1;
+      });
+      const showTopic = topicMatches || visibleLessons > 0;
+      topic.hidden = !showTopic;
+      if (showTopic) visibleTopics += 1;
+      if (query && showTopic) topic.open = true;
+    });
+    empty.hidden = visibleTopics > 0;
+  });
+});
+</script>
+<section class="level2" id="completion-standard">
 <h2 class="anchored" data-anchor-id="completion-standard">Completion standard</h2>
 <p>You have completed <strong>Python</strong> when you can explain each topic, reproduce its core workflow, pass the notebook checks, defend the main tradeoffs, and combine the lessons into one reviewable portfolio project. Use the practice tasks as evidence rather than treating page reading alone as completion.</p>
-
-
 </section>
-
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
@@ -897,21 +949,17 @@ A complete notebook-first syllabus organized from foundations to applied deliver
   </script>
 </div> <!-- /content -->
 <footer class="footer">
-  <div class="nav-footer">
-    <div class="nav-footer-left">
+<div class="nav-footer">
+<div class="nav-footer-left">
 <p>© 2026 Edukron Notes</p>
-</div>   
-    <div class="nav-footer-center">
-      &nbsp;
+</div>
+<div class="nav-footer-center">
+       
     </div>
-    <div class="nav-footer-right">
+<div class="nav-footer-right">
 <p>Notebook courses for AI, data engineering, and DevOps</p>
 </div>
-  </div>
+</div>
 </footer>
-
-
-
-
 <script src="../../site_libs/quarto-html/zenscroll-min.js"></script>
 </body></html>

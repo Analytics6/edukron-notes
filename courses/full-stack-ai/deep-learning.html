@@ -1,15 +1,12 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
-<meta charset="utf-8">
-<meta name="generator" content="quarto-1.10.18">
-
-<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-
-<meta name="author" content="Edukron Notes">
-<meta name="dcterms.date" content="2026-09-14">
-<meta name="description" content="Complete notebook syllabus for Deep Learning in Full Stack AI.">
-
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta charset="utf-8"/>
+<meta content="quarto-1.10.18" name="generator"/>
+<meta content="width=device-width, initial-scale=1.0, user-scalable=yes" name="viewport"/>
+<meta content="Edukron Notes" name="author"/>
+<meta content="2026-09-14" name="dcterms.date"/>
+<meta content="Complete notebook syllabus for Deep Learning in Full Stack AI." name="description"/>
 <title>Deep Learning – Edukron Notes</title>
 <style>
 /* Default styles provided by pandoc.
@@ -30,25 +27,23 @@ ul.task-list li input[type="checkbox"] {
   vertical-align: middle;
 }
 </style>
-
-
 <script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
 <script src="../../site_libs/quarto-nav/headroom.min.js"></script>
 <script src="../../site_libs/clipboard/clipboard.min.js"></script>
 <script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
 <script src="../../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../../">
+<meta content="../../" name="quarto:offset"/>
 <script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="../../site_libs/quarto-html/popper.min.js"></script>
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet"/>
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" id="quarto-text-highlighting-styles" rel="stylesheet"/>
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-f0f4b58164ec92a07fcd2db94b0e5cbd.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet"/>
+<link append-hash="true" data-mode="light" href="../../site_libs/bootstrap/bootstrap-f0f4b58164ec92a07fcd2db94b0e5cbd.min.css" id="quarto-bootstrap" rel="stylesheet"/>
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -76,408 +71,451 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 <style>html{ scroll-behavior: smooth; }</style>
-
-
-<link rel="stylesheet" href="../../styles.css">
+<link href="../../styles.css" rel="stylesheet"/>
 </head>
-
 <body class="nav-fixed quarto-light">
-
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top">
-    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
-      <div class="navbar-container container-fluid">
-      <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="../../index.html">
-    <span class="navbar-title">Edukron Notes</span>
-    </a>
-  </div>
-            <div id="quarto-search" class="" title="Search"></div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
-  <span class="navbar-toggler-icon"></span>
-</button>
-          <div class="collapse navbar-collapse" id="navbarCollapse">
-            <ul class="navbar-nav navbar-nav-scroll me-auto">
-  <li class="nav-item">
-    <a class="nav-link" href="../../index.html"> 
-<span class="menu-text">Home</span></a>
-  </li>  
-  <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-full-stack-ai" role="link" data-bs-toggle="dropdown" aria-expanded="false">
-      <i class="bi bi-cpu" role="img">
-</i> 
- <span class="menu-text">Full Stack AI</span>
-    </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-full-stack-ai">    
-        <li>
-    <a class="dropdown-item" href="../../courses/full-stack-ai/index.html">
- <span class="dropdown-text">Program overview</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/full-stack-ai/python.html">
- <span class="dropdown-text">Python</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/full-stack-ai/sql.html">
- <span class="dropdown-text">SQL</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/full-stack-ai/data-science.html">
- <span class="dropdown-text">Data Science</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/full-stack-ai/machine-learning.html">
- <span class="dropdown-text">Machine Learning</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/full-stack-ai/artificial-intelligence.html">
- <span class="dropdown-text">Artificial Intelligence</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/full-stack-ai/deep-learning.html">
- <span class="dropdown-text">Deep Learning</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/full-stack-ai/generative-ai.html">
- <span class="dropdown-text">Generative AI</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/full-stack-ai/large-language-models.html">
- <span class="dropdown-text">Large Language Models (LLMs)</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/full-stack-ai/rag.html">
- <span class="dropdown-text">Retrieval Augmented Generation (RAG)</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/full-stack-ai/agentic-ai.html">
- <span class="dropdown-text">Agentic AI</span></a>
-  </li>  
-    </ul>
-  </li>
-  <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-azure-data-engineering" role="link" data-bs-toggle="dropdown" aria-expanded="false">
-      <i class="bi bi-database" role="img">
-</i> 
- <span class="menu-text">Azure Data Engineering</span>
-    </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-azure-data-engineering">    
-        <li>
-    <a class="dropdown-item" href="../../courses/azure-data-engineering/index.html">
- <span class="dropdown-text">Program overview</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/azure-data-engineering/python.html">
- <span class="dropdown-text">Python</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/azure-data-engineering/sql.html">
- <span class="dropdown-text">SQL</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/azure-data-engineering/fundamentals.html">
- <span class="dropdown-text">Data Engineering Fundamentals</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/azure-data-engineering/azure-data-factory.html">
- <span class="dropdown-text">Azure Data Factory (ADF)</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/azure-data-engineering/adls-gen2.html">
- <span class="dropdown-text">Azure Data Lake Storage Gen2</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/azure-data-engineering/azure-databricks.html">
- <span class="dropdown-text">Azure Databricks</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/azure-data-engineering/pyspark.html">
- <span class="dropdown-text">PySpark</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/azure-data-engineering/azure-synapse.html">
- <span class="dropdown-text">Azure Synapse Analytics</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/azure-data-engineering/microsoft-fabric.html">
- <span class="dropdown-text">Microsoft Fabric</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/azure-data-engineering/delta-lake.html">
- <span class="dropdown-text">Delta Lake</span></a>
-  </li>  
-    </ul>
-  </li>
-  <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-azure-devops" role="link" data-bs-toggle="dropdown" aria-expanded="false">
-      <i class="bi bi-infinity" role="img">
-</i> 
- <span class="menu-text">Azure DevOps</span>
-    </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-azure-devops">    
-        <li>
-    <a class="dropdown-item" href="../../courses/azure-devops/index.html">
- <span class="dropdown-text">Program overview</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/azure-devops/linux-shell-scripting.html">
- <span class="dropdown-text">Linux &amp; Shell Scripting</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/azure-devops/git-version-control.html">
- <span class="dropdown-text">Git &amp; Version Control</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/azure-devops/azure-repos.html">
- <span class="dropdown-text">Azure Repos</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/azure-devops/azure-pipelines.html">
- <span class="dropdown-text">Azure Pipelines (CI/CD)</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/azure-devops/yaml-pipelines.html">
- <span class="dropdown-text">YAML Pipeline Development</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/azure-devops/docker.html">
- <span class="dropdown-text">Docker &amp; Containerization</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/azure-devops/kubernetes-aks.html">
- <span class="dropdown-text">Kubernetes &amp; AKS</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/azure-devops/terraform.html">
- <span class="dropdown-text">Terraform Infrastructure as Code</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/azure-devops/azure-cloud-services.html">
- <span class="dropdown-text">Azure Cloud Services</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../courses/azure-devops/devsecops-monitoring.html">
- <span class="dropdown-text">DevSecOps &amp; Monitoring</span></a>
-  </li>  
-    </ul>
-  </li>
-  <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-interview-questions" role="link" data-bs-toggle="dropdown" aria-expanded="false">
-      <i class="bi bi-question-circle" role="img">
-</i> 
- <span class="menu-text">Interview Questions</span>
-    </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-interview-questions">    
-        <li>
-    <a class="dropdown-item" href="../../interview-questions/index.html">
- <span class="dropdown-text">Section overview</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../interview-questions/full-stack-ai.html">
- <span class="dropdown-text">Full Stack AI</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../interview-questions/azure-data-engineering.html">
- <span class="dropdown-text">Azure Data Engineering</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../interview-questions/azure-devops.html">
- <span class="dropdown-text">Azure DevOps</span></a>
-  </li>  
-    </ul>
-  </li>
-  <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-project-flows" role="link" data-bs-toggle="dropdown" aria-expanded="false">
-      <i class="bi bi-kanban" role="img">
-</i> 
- <span class="menu-text">Project Flows</span>
-    </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-project-flows">    
-        <li>
-    <a class="dropdown-item" href="../../project-flows/index.html">
- <span class="dropdown-text">Section overview</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../project-flows/full-stack-ai.html">
- <span class="dropdown-text">Full Stack AI</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../project-flows/azure-data-engineering.html">
- <span class="dropdown-text">Azure Data Engineering</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../project-flows/azure-devops.html">
- <span class="dropdown-text">Azure DevOps</span></a>
-  </li>  
-    </ul>
-  </li>
-</ul>
-          </div> <!-- /navcollapse -->
-            <div class="quarto-navbar-tools">
+<header class="headroom fixed-top" id="quarto-header">
+<nav class="navbar navbar-expand-lg" data-bs-theme="dark">
+<div class="navbar-container container-fluid">
+<div class="navbar-brand-container mx-auto">
+<a class="navbar-brand" href="../../index.html">
+<span class="navbar-title">Edukron Notes</span>
+</a>
 </div>
-      </div> <!-- /container-fluid -->
-    </nav>
+<div class="" id="quarto-search" title="Search"></div>
+<button aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-bs-target="#navbarCollapse" data-bs-toggle="collapse" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }" role="menu" type="button">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" id="navbarCollapse">
+<ul class="navbar-nav navbar-nav-scroll me-auto">
+<li class="nav-item">
+<a class="nav-link" href="../../index.html">
+<span class="menu-text">Home</span></a>
+</li>
+<li class="nav-item dropdown">
+<a aria-expanded="false" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" id="nav-menu-full-stack-ai" role="link">
+<i class="bi bi-cpu" role="img">
+</i>
+<span class="menu-text">Full Stack AI</span>
+</a>
+<ul aria-labelledby="nav-menu-full-stack-ai" class="dropdown-menu">
+<li>
+<a class="dropdown-item" href="../../courses/full-stack-ai/index.html">
+<span class="dropdown-text">Program overview</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/full-stack-ai/python.html">
+<span class="dropdown-text">Python</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/full-stack-ai/sql.html">
+<span class="dropdown-text">SQL</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/full-stack-ai/data-science.html">
+<span class="dropdown-text">Data Science</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/full-stack-ai/machine-learning.html">
+<span class="dropdown-text">Machine Learning</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/full-stack-ai/artificial-intelligence.html">
+<span class="dropdown-text">Artificial Intelligence</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/full-stack-ai/deep-learning.html">
+<span class="dropdown-text">Deep Learning</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/full-stack-ai/generative-ai.html">
+<span class="dropdown-text">Generative AI</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/full-stack-ai/large-language-models.html">
+<span class="dropdown-text">Large Language Models (LLMs)</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/full-stack-ai/rag.html">
+<span class="dropdown-text">Retrieval Augmented Generation (RAG)</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/full-stack-ai/agentic-ai.html">
+<span class="dropdown-text">Agentic AI</span></a>
+</li>
+</ul>
+</li>
+<li class="nav-item dropdown">
+<a aria-expanded="false" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" id="nav-menu-azure-data-engineering" role="link">
+<i class="bi bi-database" role="img">
+</i>
+<span class="menu-text">Azure Data Engineering</span>
+</a>
+<ul aria-labelledby="nav-menu-azure-data-engineering" class="dropdown-menu">
+<li>
+<a class="dropdown-item" href="../../courses/azure-data-engineering/index.html">
+<span class="dropdown-text">Program overview</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/azure-data-engineering/python.html">
+<span class="dropdown-text">Python</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/azure-data-engineering/sql.html">
+<span class="dropdown-text">SQL</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/azure-data-engineering/fundamentals.html">
+<span class="dropdown-text">Data Engineering Fundamentals</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/azure-data-engineering/azure-data-factory.html">
+<span class="dropdown-text">Azure Data Factory (ADF)</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/azure-data-engineering/adls-gen2.html">
+<span class="dropdown-text">Azure Data Lake Storage Gen2</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/azure-data-engineering/azure-databricks.html">
+<span class="dropdown-text">Azure Databricks</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/azure-data-engineering/pyspark.html">
+<span class="dropdown-text">PySpark</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/azure-data-engineering/azure-synapse.html">
+<span class="dropdown-text">Azure Synapse Analytics</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/azure-data-engineering/microsoft-fabric.html">
+<span class="dropdown-text">Microsoft Fabric</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/azure-data-engineering/delta-lake.html">
+<span class="dropdown-text">Delta Lake</span></a>
+</li>
+</ul>
+</li>
+<li class="nav-item dropdown">
+<a aria-expanded="false" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" id="nav-menu-azure-devops" role="link">
+<i class="bi bi-infinity" role="img">
+</i>
+<span class="menu-text">Azure DevOps</span>
+</a>
+<ul aria-labelledby="nav-menu-azure-devops" class="dropdown-menu">
+<li>
+<a class="dropdown-item" href="../../courses/azure-devops/index.html">
+<span class="dropdown-text">Program overview</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/azure-devops/linux-shell-scripting.html">
+<span class="dropdown-text">Linux &amp; Shell Scripting</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/azure-devops/git-version-control.html">
+<span class="dropdown-text">Git &amp; Version Control</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/azure-devops/azure-repos.html">
+<span class="dropdown-text">Azure Repos</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/azure-devops/azure-pipelines.html">
+<span class="dropdown-text">Azure Pipelines (CI/CD)</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/azure-devops/yaml-pipelines.html">
+<span class="dropdown-text">YAML Pipeline Development</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/azure-devops/docker.html">
+<span class="dropdown-text">Docker &amp; Containerization</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/azure-devops/kubernetes-aks.html">
+<span class="dropdown-text">Kubernetes &amp; AKS</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/azure-devops/terraform.html">
+<span class="dropdown-text">Terraform Infrastructure as Code</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/azure-devops/azure-cloud-services.html">
+<span class="dropdown-text">Azure Cloud Services</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../courses/azure-devops/devsecops-monitoring.html">
+<span class="dropdown-text">DevSecOps &amp; Monitoring</span></a>
+</li>
+</ul>
+</li>
+<li class="nav-item dropdown">
+<a aria-expanded="false" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" id="nav-menu-interview-questions" role="link">
+<i class="bi bi-question-circle" role="img">
+</i>
+<span class="menu-text">Interview Questions</span>
+</a>
+<ul aria-labelledby="nav-menu-interview-questions" class="dropdown-menu">
+<li>
+<a class="dropdown-item" href="../../interview-questions/index.html">
+<span class="dropdown-text">Section overview</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../interview-questions/full-stack-ai.html">
+<span class="dropdown-text">Full Stack AI</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../interview-questions/azure-data-engineering.html">
+<span class="dropdown-text">Azure Data Engineering</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../interview-questions/azure-devops.html">
+<span class="dropdown-text">Azure DevOps</span></a>
+</li>
+</ul>
+</li>
+<li class="nav-item dropdown">
+<a aria-expanded="false" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" id="nav-menu-project-flows" role="link">
+<i class="bi bi-kanban" role="img">
+</i>
+<span class="menu-text">Project Flows</span>
+</a>
+<ul aria-labelledby="nav-menu-project-flows" class="dropdown-menu">
+<li>
+<a class="dropdown-item" href="../../project-flows/index.html">
+<span class="dropdown-text">Section overview</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../project-flows/full-stack-ai.html">
+<span class="dropdown-text">Full Stack AI</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../project-flows/azure-data-engineering.html">
+<span class="dropdown-text">Azure Data Engineering</span></a>
+</li>
+<li>
+<a class="dropdown-item" href="../../project-flows/azure-devops.html">
+<span class="dropdown-text">Azure DevOps</span></a>
+</li>
+</ul>
+</li>
+</ul>
+</div> <!-- /navcollapse -->
+<div class="quarto-navbar-tools">
+</div>
+</div> <!-- /container-fluid -->
+</nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<div class="quarto-container page-columns page-rows-contents page-layout-full page-navbar" id="quarto-content">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
-   
-  <ul>
-  <li><a href="#how-to-use-this-course" id="toc-how-to-use-this-course" class="nav-link active" data-scroll-target="#how-to-use-this-course">How to use this course</a></li>
-  <li><a href="#full-syllabus" id="toc-full-syllabus" class="nav-link" data-scroll-target="#full-syllabus">Full syllabus</a></li>
-  <li><a href="#completion-standard" id="toc-completion-standard" class="nav-link" data-scroll-target="#completion-standard">Completion standard</a></li>
-  </ul>
-</nav>
-    </div>
 <!-- main -->
-<main class="content" id="quarto-document-content">
-
-<header id="title-block-header" class="quarto-title-block default">
+<main class="content column-page" id="quarto-document-content">
+<header class="quarto-title-block default" id="title-block-header">
 <div class="quarto-title">
 <h1 class="title">Deep Learning</h1>
 </div>
-
 <div>
-  <div class="description">
+<div class="description">
     Complete notebook syllabus for Deep Learning in Full Stack AI.
   </div>
 </div>
-
-
 <div class="quarto-title-meta">
-
-    <div>
-    <div class="quarto-title-meta-heading">Author</div>
-    <div class="quarto-title-meta-contents">
-             <p>Edukron Notes </p>
-          </div>
-  </div>
-    
-    <div>
-    <div class="quarto-title-meta-heading">Published</div>
-    <div class="quarto-title-meta-contents">
-      <p class="date">September 14, 2026</p>
-    </div>
-  </div>
-  
-    
-  </div>
-  
-
-
+<div>
+<div class="quarto-title-meta-heading">Author</div>
+<div class="quarto-title-meta-contents">
+<p>Edukron Notes </p>
+</div>
+</div>
+<div>
+<div class="quarto-title-meta-heading">Published</div>
+<div class="quarto-title-meta-contents">
+<p class="date">September 14, 2026</p>
+</div>
+</div>
+</div>
 </header>
-
-
-<div class="overview-lead curriculum-summary">
-<div class="overview-icon">
-<i class="bi bi-journal-code" aria-hidden="true"></i>
+<div class="course-workspace notebook-chrome">
+<div class="notebook-toolbar">
+<span class="notebook-file"><i aria-hidden="true" class="bi bi-journal-code"></i><strong>deep-learning.ipynb</strong></span>
+<span class="notebook-status"><i aria-hidden="true" class="bi bi-check-circle-fill"></i> Trusted</span>
+<span class="notebook-kernel"><i aria-hidden="true" class="bi bi-diagram-3"></i> Learning path</span>
 </div>
-<div>
+<div class="course-workspace-hero">
 <span class="overview-kicker">Full Stack AI</span>
-<h2 class="anchored">
-Deep Learning
-</h2>
-<p>
-A complete notebook-first syllabus organized from foundations to applied delivery. Every lesson contains notes, a worked pattern, executable validation, a guided lab, solution blueprint, practice, and knowledge checks.
-</p>
+<h1>Deep Learning</h1>
+<p>A complete notebook-first syllabus organized from foundations to applied delivery. Every lesson combines clear notes, a worked pattern, executable validation, a guided lab, a solution blueprint, practice, and knowledge checks.</p>
+<div class="course-tags"><span><i class="bi bi-signpost-split"></i> Foundation to advanced</span><span><i class="bi bi-code-square"></i> Hands-on practice</span><span><i class="bi bi-patch-check"></i> Review ready</span></div>
+<p class="course-start"><a class="btn btn-primary" href="deep-learning/044-neural-network-foundations/01-neurons-and-layers.html"><i class="bi bi-play-fill"></i> Start the first notebook</a></p>
 </div>
 </div>
-<div class="course-stat-grid">
-<div>
-<strong>8</strong><span>Syllabus topics</span>
-</div>
-<div>
-<strong>80</strong><span>Notebook lessons</span>
-</div>
-<div>
-<strong>Practice</strong><span>Labs and solutions</span>
-</div>
-</div>
-<p class="course-start">
-<a class="btn btn-primary" href="deep-learning/044-neural-network-foundations/01-neurons-and-layers.html">Start the first notebook <i class="bi bi-arrow-right"></i></a>
-</p>
-<section id="how-to-use-this-course" class="level2">
+<section class="level2" id="how-to-use-this-course">
 <h2 class="anchored" data-anchor-id="how-to-use-this-course">How to use this course</h2>
 <p>Work through lessons in order for a complete pathway, or open a topic for focused reference. Type or adapt the examples, complete the guided lab before reading its blueprint, and preserve your test evidence as a portfolio artifact. Cloud and infrastructure examples are safe, copy-ready teaching patterns; execute them in your own sandbox only after substituting approved identities, names, and policies.</p>
 </section>
-<section id="full-syllabus" class="level2">
-<h2 class="anchored" data-anchor-id="full-syllabus">Full syllabus</h2>
+<div class="syllabus-heading" id="notebook-syllabus">
+<div><span class="overview-kicker">Course contents</span><h2>Notebook syllabus</h2><p>Open a topic to browse its lessons, or search the complete course by concept.</p></div>
+<label class="syllabus-search" for="full-stack-ai-deep-learning-catalog-search"><i aria-hidden="true" class="bi bi-search"></i><input aria-label="Search the Deep Learning syllabus" autocomplete="off" id="full-stack-ai-deep-learning-catalog-search" placeholder="Find a topic or lesson" type="search"/></label>
+</div>
+<div class="curriculum-catalog" id="full-stack-ai-deep-learning-catalog">
 <details class="curriculum-topic" open="">
-<summary>
-<span class="topic-number">Topic 044</span><strong>Neural-network foundations</strong><span>10 notebooks</span>
-</summary>
+<summary><span class="topic-number">Topic 044</span><strong>Neural-network foundations</strong></summary>
 <div class="topic-lessons">
-<p><a class="topic-lesson-link" href="deep-learning/044-neural-network-foundations/01-neurons-and-layers.html"><span>044.01</span><strong>Neurons and layers</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="deep-learning/044-neural-network-foundations/02-tensors.html"><span>044.02</span><strong>Tensors</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="deep-learning/044-neural-network-foundations/03-forward-propagation.html"><span>044.03</span><strong>Forward propagation</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="deep-learning/044-neural-network-foundations/04-activation-functions.html"><span>044.04</span><strong>Activation functions</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="deep-learning/044-neural-network-foundations/05-loss-functions.html"><span>044.05</span><strong>Loss functions</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="deep-learning/044-neural-network-foundations/06-backpropagation.html"><span>044.06</span><strong>Backpropagation</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="deep-learning/044-neural-network-foundations/07-computational-graphs.html"><span>044.07</span><strong>Computational graphs</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="deep-learning/044-neural-network-foundations/08-weight-initialization.html"><span>044.08</span><strong>Weight initialization</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="deep-learning/044-neural-network-foundations/09-first-network.html"><span>044.09</span><strong>First network</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="deep-learning/044-neural-network-foundations/10-neural-network-project.html"><span>044.10</span><strong>Neural-network project</strong><i class="bi bi-arrow-right"></i></a></p>
+<a class="topic-lesson-link" href="deep-learning/044-neural-network-foundations/01-neurons-and-layers.html"><span>044.01</span><strong>Neurons and layers</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="deep-learning/044-neural-network-foundations/02-tensors.html"><span>044.02</span><strong>Tensors</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="deep-learning/044-neural-network-foundations/03-forward-propagation.html"><span>044.03</span><strong>Forward propagation</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="deep-learning/044-neural-network-foundations/04-activation-functions.html"><span>044.04</span><strong>Activation functions</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="deep-learning/044-neural-network-foundations/05-loss-functions.html"><span>044.05</span><strong>Loss functions</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="deep-learning/044-neural-network-foundations/06-backpropagation.html"><span>044.06</span><strong>Backpropagation</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="deep-learning/044-neural-network-foundations/07-computational-graphs.html"><span>044.07</span><strong>Computational graphs</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="deep-learning/044-neural-network-foundations/08-weight-initialization.html"><span>044.08</span><strong>Weight initialization</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="deep-learning/044-neural-network-foundations/09-first-network.html"><span>044.09</span><strong>First network</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="deep-learning/044-neural-network-foundations/10-neural-network-project.html"><span>044.10</span><strong>Neural-network project</strong><i class="bi bi-arrow-right"></i></a>
 </div>
 </details>
 <details class="curriculum-topic">
-<summary>
-<span class="topic-number">Topic 045</span><strong>Deep-learning optimization</strong><span>10 notebooks</span>
-</summary>
+<summary><span class="topic-number">Topic 045</span><strong>Deep-learning optimization</strong></summary>
 <div class="topic-lessons">
-<p><a class="topic-lesson-link" href="deep-learning/045-deep-learning-optimization/01-gradient-descent-review.html"><span>045.01</span><strong>Gradient-descent review</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="deep-learning/045-deep-learning-optimization/02-stochastic-gradient-descent.html"><span>045.02</span><strong>Stochastic gradient descent</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="deep-learning/045-deep-learning-optimization/03-momentum.html"><span>045.03</span><strong>Momentum</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="deep-learning/045-deep-learning-optimization/04-rmsprop.html"><span>045.04</span><strong>RMSProp</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="deep-learning/045-deep-learning-optimization/05-adam.html"><span>045.05</span><strong>Adam</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="deep-learning/045-deep-learning-optimization/06-learning-rate-schedules.html"><span>045.06</span><strong>Learning-rate schedules</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="deep-learning/045-deep-learning-optimization/07-batch-normalization.html"><span>045.07</span><strong>Batch normalization</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="deep-learning/045-deep-learning-optimization/08-dropout.html"><span>045.08</span><strong>Dropout</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="deep-learning/045-deep-learning-optimization/09-regularization.html"><span>045.09</span><strong>Regularization</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="deep-learning/045-deep-learning-optimization/10-optimization-experiment.html"><span>045.10</span><strong>Optimization experiment</strong><i class="bi bi-arrow-right"></i></a></p>
+<a class="topic-lesson-link" href="deep-learning/045-deep-learning-optimization/01-gradient-descent-review.html"><span>045.01</span><strong>Gradient-descent review</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="deep-learning/045-deep-learning-optimization/02-stochastic-gradient-descent.html"><span>045.02</span><strong>Stochastic gradient descent</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="deep-learning/045-deep-learning-optimization/03-momentum.html"><span>045.03</span><strong>Momentum</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="deep-learning/045-deep-learning-optimization/04-rmsprop.html"><span>045.04</span><strong>RMSProp</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="deep-learning/045-deep-learning-optimization/05-adam.html"><span>045.05</span><strong>Adam</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="deep-learning/045-deep-learning-optimization/06-learning-rate-schedules.html"><span>045.06</span><strong>Learning-rate schedules</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="deep-learning/045-deep-learning-optimization/07-batch-normalization.html"><span>045.07</span><strong>Batch normalization</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="deep-learning/045-deep-learning-optimization/08-dropout.html"><span>045.08</span><strong>Dropout</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="deep-learning/045-deep-learning-optimization/09-regularization.html"><span>045.09</span><strong>Regularization</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="deep-learning/045-deep-learning-optimization/10-optimization-experiment.html"><span>045.10</span><strong>Optimization experiment</strong><i class="bi bi-arrow-right"></i></a>
 </div>
 </details>
 <details class="curriculum-topic">
-<summary>
-<span class="topic-number">Topic 046</span><strong>Convolutional neural networks</strong><span>10 notebooks</span>
-</summary>
+<summary><span class="topic-number">Topic 046</span><strong>Convolutional neural networks</strong></summary>
 <div class="topic-lessons">
-<p><a class="topic-lesson-link" href="deep-learning/046-convolutional-neural-networks/01-image-tensors.html"><span>046.01</span><strong>Image tensors</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="deep-learning/046-convolutional-neural-networks/02-convolution-operation.html"><span>046.02</span><strong>Convolution operation</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="deep-learning/046-convolutional-neural-networks/03-filters-and-feature-maps.html"><span>046.03</span><strong>Filters and feature maps</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="deep-learning/046-convolutional-neural-networks/04-padding-and-stride.html"><span>046.04</span><strong>Padding and stride</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="deep-learning/046-convolutional-neural-networks/05-pooling.html"><span>046.05</span><strong>Pooling</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="deep-learning/046-convolutional-neural-networks/06-cnn-architectures.html"><span>046.06</span><strong>CNN architectures</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="deep-learning/046-convolutional-neural-networks/07-image-augmentation.html"><span>046.07</span><strong>Image augmentation</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="deep-learning/046-convolutional-neural-networks/08-transfer-learning.html"><span>046.08</span><strong>Transfer learning</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="deep-learning/046-convolutional-neural-networks/09-cnn-evaluation.html"><span>046.09</span><strong>CNN evaluation</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="deep-learning/046-convolutional-neural-networks/10-image-classification-project.html"><span>046.10</span><strong>Image-classification project</strong><i class="bi bi-arrow-right"></i></a></p>
+<a class="topic-lesson-link" href="deep-learning/046-convolutional-neural-networks/01-image-tensors.html"><span>046.01</span><strong>Image tensors</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="deep-learning/046-convolutional-neural-networks/02-convolution-operation.html"><span>046.02</span><strong>Convolution operation</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="deep-learning/046-convolutional-neural-networks/03-filters-and-feature-maps.html"><span>046.03</span><strong>Filters and feature maps</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="deep-learning/046-convolutional-neural-networks/04-padding-and-stride.html"><span>046.04</span><strong>Padding and stride</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="deep-learning/046-convolutional-neural-networks/05-pooling.html"><span>046.05</span><strong>Pooling</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="deep-learning/046-convolutional-neural-networks/06-cnn-architectures.html"><span>046.06</span><strong>CNN architectures</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="deep-learning/046-convolutional-neural-networks/07-image-augmentation.html"><span>046.07</span><strong>Image augmentation</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="deep-learning/046-convolutional-neural-networks/08-transfer-learning.html"><span>046.08</span><strong>Transfer learning</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="deep-learning/046-convolutional-neural-networks/09-cnn-evaluation.html"><span>046.09</span><strong>CNN evaluation</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="deep-learning/046-convolutional-neural-networks/10-image-classification-project.html"><span>046.10</span><strong>Image-classification project</strong><i class="bi bi-arrow-right"></i></a>
 </div>
 </details>
 <details class="curriculum-topic">
-<summary>
-<span class="topic-number">Topic 047</span><strong>Sequence models</strong><span>10 notebooks</span>
-</summary>
+<summary><span class="topic-number">Topic 047</span><strong>Sequence models</strong></summary>
 <div class="topic-lessons">
-<p><a class="topic-lesson-link" href="deep-learning/047-sequence-models/01-sequential-data.html"><span>047.01</span><strong>Sequential data</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="deep-learning/047-sequence-models/02-recurrent-neural-networks.html"><span>047.02</span><strong>Recurrent neural networks</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="deep-learning/047-sequence-models/03-vanishing-gradients.html"><span>047.03</span><strong>Vanishing gradients</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="deep-learning/047-sequence-models/04-lstm.html"><span>047.04</span><strong>LSTM</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="deep-learning/047-sequence-models/05-gru.html"><span>047.05</span><strong>GRU</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="deep-learning/047-sequence-models/06-bidirectional-models.html"><span>047.06</span><strong>Bidirectional models</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="deep-learning/047-sequence-models/07-sequence-classification.html"><span>047.07</span><strong>Sequence classification</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="deep-learning/047-sequence-models/08-time-series-forecasting.html"><span>047.08</span><strong>Time-series forecasting</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="deep-learning/047-sequence-models/09-sequence-evaluation.html"><span>047.09</span><strong>Sequence evaluation</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="deep-learning/047-sequence-models/10-sequence-model-project.html"><span>047.10</span><strong>Sequence-model project</strong><i class="bi bi-arrow-right"></i></a></p>
+<a class="topic-lesson-link" href="deep-learning/047-sequence-models/01-sequential-data.html"><span>047.01</span><strong>Sequential data</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="deep-learning/047-sequence-models/02-recurrent-neural-networks.html"><span>047.02</span><strong>Recurrent neural networks</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="deep-learning/047-sequence-models/03-vanishing-gradients.html"><span>047.03</span><strong>Vanishing gradients</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="deep-learning/047-sequence-models/04-lstm.html"><span>047.04</span><strong>LSTM</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="deep-learning/047-sequence-models/05-gru.html"><span>047.05</span><strong>GRU</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="deep-learning/047-sequence-models/06-bidirectional-models.html"><span>047.06</span><strong>Bidirectional models</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="deep-learning/047-sequence-models/07-sequence-classification.html"><span>047.07</span><strong>Sequence classification</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="deep-learning/047-sequence-models/08-time-series-forecasting.html"><span>047.08</span><strong>Time-series forecasting</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="deep-learning/047-sequence-models/09-sequence-evaluation.html"><span>047.09</span><strong>Sequence evaluation</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="deep-learning/047-sequence-models/10-sequence-model-project.html"><span>047.10</span><strong>Sequence-model project</strong><i class="bi bi-arrow-right"></i></a>
 </div>
 </details>
 <details class="curriculum-topic">
-<summary>
-<span class="topic-number">Topic 048</span><strong>Attention and transformers</strong><span>10 notebooks</span>
-</summary>
+<summary><span class="topic-number">Topic 048</span><strong>Attention and transformers</strong></summary>
 <div class="topic-lessons">
-<p><a class="topic-lesson-link" href="deep-learning/048-attention-and-transformers/01-attention-intuition.html"><span>048.01</span><strong>Attention intuition</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="deep-learning/048-attention-and-transformers/02-query-key-and-value.html"><span>048.02</span><strong>Query key and value</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="deep-learning/048-attention-and-transformers/03-scaled-dot-product-attention.html"><span>048.03</span><strong>Scaled dot-product attention</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="deep-learning/048-attention-and-transformers/04-multi-head-attention.html"><span>048.04</span><strong>Multi-head attention</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="deep-learning/048-attention-and-transformers/05-positional-encoding.html"><span>048.05</span><strong>Positional encoding</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="deep-learning/048-attention-and-transformers/06-transformer-encoders.html"><span>048.06</span><strong>Transformer encoders</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="deep-learning/048-attention-and-transformers/07-transformer-decoders.html"><span>048.07</span><strong>Transformer decoders</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="deep-learning/048-attention-and-transformers/08-masked-attention.html"><span>048.08</span><strong>Masked attention</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="deep-learning/048-attention-and-transformers/09-transformer-implementation.html"><span>048.09</span><strong>Transformer implementation</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="deep-learning/048-attention-and-transformers/10-transformer-project.html"><span>048.10</span><strong>Transformer project</strong><i class="bi bi-arrow-right"></i></a></p>
+<a class="topic-lesson-link" href="deep-learning/048-attention-and-transformers/01-attention-intuition.html"><span>048.01</span><strong>Attention intuition</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="deep-learning/048-attention-and-transformers/02-query-key-and-value.html"><span>048.02</span><strong>Query key and value</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="deep-learning/048-attention-and-transformers/03-scaled-dot-product-attention.html"><span>048.03</span><strong>Scaled dot-product attention</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="deep-learning/048-attention-and-transformers/04-multi-head-attention.html"><span>048.04</span><strong>Multi-head attention</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="deep-learning/048-attention-and-transformers/05-positional-encoding.html"><span>048.05</span><strong>Positional encoding</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="deep-learning/048-attention-and-transformers/06-transformer-encoders.html"><span>048.06</span><strong>Transformer encoders</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="deep-learning/048-attention-and-transformers/07-transformer-decoders.html"><span>048.07</span><strong>Transformer decoders</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="deep-learning/048-attention-and-transformers/08-masked-attention.html"><span>048.08</span><strong>Masked attention</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="deep-learning/048-attention-and-transformers/09-transformer-implementation.html"><span>048.09</span><strong>Transformer implementation</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="deep-learning/048-attention-and-transformers/10-transformer-project.html"><span>048.10</span><strong>Transformer project</strong><i class="bi bi-arrow-right"></i></a>
 </div>
 </details>
 <details class="curriculum-topic">
-<summary>
-<span class="topic-number">Topic 049</span><strong>Autoencoders and generative deep learning</strong><span>10 notebooks</span>
-</summary>
+<summary><span class="topic-number">Topic 049</span><strong>Autoencoders and generative deep learning</strong></summary>
 <div class="topic-lessons">
-<p><a class="topic-lesson-link" href="deep-learning/049-autoencoders-and-generative-deep-learning/01-autoencoders.html"><span>049.01</span><strong>Autoencoders</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="deep-learning/049-autoencoders-and-generative-deep-learning/02-latent-representations.html"><span>049.02</span><strong>Latent representations</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="deep-learning/049-autoencoders-and-generative-deep-learning/03-denoising-autoencoders.html"><span>049.03</span><strong>Denoising autoencoders</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="deep-learning/049-autoencoders-and-generative-deep-learning/04-variational-autoencoders.html"><span>049.04</span><strong>Variational autoencoders</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="deep-learning/049-autoencoders-and-generative-deep-learning/05-generative-adversarial-networks.html"><span>049.05</span><strong>Generative adversarial networks</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="deep-learning/049-autoencoders-and-generative-deep-learning/06-gan-training.html"><span>049.06</span><strong>GAN training</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="deep-learning/049-autoencoders-and-generative-deep-learning/07-diffusion-model-intuition.html"><span>049.07</span><strong>Diffusion-model intuition</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="deep-learning/049-autoencoders-and-generative-deep-learning/08-conditional-generation.html"><span>049.08</span><strong>Conditional generation</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="deep-learning/049-autoencoders-and-generative-deep-learning/09-generative-evaluation.html"><span>049.09</span><strong>Generative evaluation</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="deep-learning/049-autoencoders-and-generative-deep-learning/10-generative-project.html"><span>049.10</span><strong>Generative project</strong><i class="bi bi-arrow-right"></i></a></p>
+<a class="topic-lesson-link" href="deep-learning/049-autoencoders-and-generative-deep-learning/01-autoencoders.html"><span>049.01</span><strong>Autoencoders</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="deep-learning/049-autoencoders-and-generative-deep-learning/02-latent-representations.html"><span>049.02</span><strong>Latent representations</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="deep-learning/049-autoencoders-and-generative-deep-learning/03-denoising-autoencoders.html"><span>049.03</span><strong>Denoising autoencoders</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="deep-learning/049-autoencoders-and-generative-deep-learning/04-variational-autoencoders.html"><span>049.04</span><strong>Variational autoencoders</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="deep-learning/049-autoencoders-and-generative-deep-learning/05-generative-adversarial-networks.html"><span>049.05</span><strong>Generative adversarial networks</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="deep-learning/049-autoencoders-and-generative-deep-learning/06-gan-training.html"><span>049.06</span><strong>GAN training</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="deep-learning/049-autoencoders-and-generative-deep-learning/07-diffusion-model-intuition.html"><span>049.07</span><strong>Diffusion-model intuition</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="deep-learning/049-autoencoders-and-generative-deep-learning/08-conditional-generation.html"><span>049.08</span><strong>Conditional generation</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="deep-learning/049-autoencoders-and-generative-deep-learning/09-generative-evaluation.html"><span>049.09</span><strong>Generative evaluation</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="deep-learning/049-autoencoders-and-generative-deep-learning/10-generative-project.html"><span>049.10</span><strong>Generative project</strong><i class="bi bi-arrow-right"></i></a>
 </div>
 </details>
 <details class="curriculum-topic">
-<summary>
-<span class="topic-number">Topic 050</span><strong>Deep-learning engineering</strong><span>10 notebooks</span>
-</summary>
+<summary><span class="topic-number">Topic 050</span><strong>Deep-learning engineering</strong></summary>
 <div class="topic-lessons">
-<p><a class="topic-lesson-link" href="deep-learning/050-deep-learning-engineering/01-dataset-pipelines.html"><span>050.01</span><strong>Dataset pipelines</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="deep-learning/050-deep-learning-engineering/02-gpu-fundamentals.html"><span>050.02</span><strong>GPU fundamentals</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="deep-learning/050-deep-learning-engineering/03-training-loops.html"><span>050.03</span><strong>Training loops</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="deep-learning/050-deep-learning-engineering/04-checkpointing.html"><span>050.04</span><strong>Checkpointing</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="deep-learning/050-deep-learning-engineering/05-mixed-precision.html"><span>050.05</span><strong>Mixed precision</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="deep-learning/050-deep-learning-engineering/06-distributed-training-concepts.html"><span>050.06</span><strong>Distributed-training concepts</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="deep-learning/050-deep-learning-engineering/07-hyperparameter-tuning.html"><span>050.07</span><strong>Hyperparameter tuning</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="deep-learning/050-deep-learning-engineering/08-experiment-tracking.html"><span>050.08</span><strong>Experiment tracking</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="deep-learning/050-deep-learning-engineering/09-model-serving.html"><span>050.09</span><strong>Model serving</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="deep-learning/050-deep-learning-engineering/10-training-system-project.html"><span>050.10</span><strong>Training-system project</strong><i class="bi bi-arrow-right"></i></a></p>
+<a class="topic-lesson-link" href="deep-learning/050-deep-learning-engineering/01-dataset-pipelines.html"><span>050.01</span><strong>Dataset pipelines</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="deep-learning/050-deep-learning-engineering/02-gpu-fundamentals.html"><span>050.02</span><strong>GPU fundamentals</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="deep-learning/050-deep-learning-engineering/03-training-loops.html"><span>050.03</span><strong>Training loops</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="deep-learning/050-deep-learning-engineering/04-checkpointing.html"><span>050.04</span><strong>Checkpointing</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="deep-learning/050-deep-learning-engineering/05-mixed-precision.html"><span>050.05</span><strong>Mixed precision</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="deep-learning/050-deep-learning-engineering/06-distributed-training-concepts.html"><span>050.06</span><strong>Distributed-training concepts</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="deep-learning/050-deep-learning-engineering/07-hyperparameter-tuning.html"><span>050.07</span><strong>Hyperparameter tuning</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="deep-learning/050-deep-learning-engineering/08-experiment-tracking.html"><span>050.08</span><strong>Experiment tracking</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="deep-learning/050-deep-learning-engineering/09-model-serving.html"><span>050.09</span><strong>Model serving</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="deep-learning/050-deep-learning-engineering/10-training-system-project.html"><span>050.10</span><strong>Training-system project</strong><i class="bi bi-arrow-right"></i></a>
 </div>
 </details>
 <details class="curriculum-topic">
-<summary>
-<span class="topic-number">Topic 051</span><strong>Applied deep learning</strong><span>10 notebooks</span>
-</summary>
+<summary><span class="topic-number">Topic 051</span><strong>Applied deep learning</strong></summary>
 <div class="topic-lessons">
-<p><a class="topic-lesson-link" href="deep-learning/051-applied-deep-learning/01-computer-vision-workflow.html"><span>051.01</span><strong>Computer-vision workflow</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="deep-learning/051-applied-deep-learning/02-nlp-workflow.html"><span>051.02</span><strong>NLP workflow</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="deep-learning/051-applied-deep-learning/03-audio-workflow.html"><span>051.03</span><strong>Audio workflow</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="deep-learning/051-applied-deep-learning/04-multimodal-learning.html"><span>051.04</span><strong>Multimodal learning</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="deep-learning/051-applied-deep-learning/05-recommendation-models.html"><span>051.05</span><strong>Recommendation models</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="deep-learning/051-applied-deep-learning/06-anomaly-detection.html"><span>051.06</span><strong>Anomaly detection</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="deep-learning/051-applied-deep-learning/07-explainability.html"><span>051.07</span><strong>Explainability</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="deep-learning/051-applied-deep-learning/08-robustness.html"><span>051.08</span><strong>Robustness</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="deep-learning/051-applied-deep-learning/09-responsible-deep-learning.html"><span>051.09</span><strong>Responsible deep learning</strong><i class="bi bi-arrow-right"></i></a> <a class="topic-lesson-link" href="deep-learning/051-applied-deep-learning/10-deep-learning-capstone.html"><span>051.10</span><strong>Deep-learning capstone</strong><i class="bi bi-arrow-right"></i></a></p>
+<a class="topic-lesson-link" href="deep-learning/051-applied-deep-learning/01-computer-vision-workflow.html"><span>051.01</span><strong>Computer-vision workflow</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="deep-learning/051-applied-deep-learning/02-nlp-workflow.html"><span>051.02</span><strong>NLP workflow</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="deep-learning/051-applied-deep-learning/03-audio-workflow.html"><span>051.03</span><strong>Audio workflow</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="deep-learning/051-applied-deep-learning/04-multimodal-learning.html"><span>051.04</span><strong>Multimodal learning</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="deep-learning/051-applied-deep-learning/05-recommendation-models.html"><span>051.05</span><strong>Recommendation models</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="deep-learning/051-applied-deep-learning/06-anomaly-detection.html"><span>051.06</span><strong>Anomaly detection</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="deep-learning/051-applied-deep-learning/07-explainability.html"><span>051.07</span><strong>Explainability</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="deep-learning/051-applied-deep-learning/08-robustness.html"><span>051.08</span><strong>Robustness</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="deep-learning/051-applied-deep-learning/09-responsible-deep-learning.html"><span>051.09</span><strong>Responsible deep learning</strong><i class="bi bi-arrow-right"></i></a>
+<a class="topic-lesson-link" href="deep-learning/051-applied-deep-learning/10-deep-learning-capstone.html"><span>051.10</span><strong>Deep-learning capstone</strong><i class="bi bi-arrow-right"></i></a>
 </div>
 </details>
-</section>
-<section id="completion-standard" class="level2">
+</div>
+<p class="syllabus-empty" hidden="" id="full-stack-ai-deep-learning-catalog-empty"><i class="bi bi-search"></i> No matching lessons were found.</p>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const catalog = document.getElementById("full-stack-ai-deep-learning-catalog");
+  const search = document.getElementById("full-stack-ai-deep-learning-catalog-search");
+  const empty = document.getElementById("full-stack-ai-deep-learning-catalog-empty");
+  if (!catalog || !search || !empty) return;
+
+  search.addEventListener("input", () => {
+    const query = search.value.trim().toLowerCase();
+    let visibleTopics = 0;
+    catalog.querySelectorAll(".curriculum-topic").forEach((topic) => {
+      const summary = topic.querySelector("summary");
+      const topicMatches = !query || summary.textContent.toLowerCase().includes(query);
+      let visibleLessons = 0;
+      topic.querySelectorAll(".topic-lesson-link").forEach((lesson) => {
+        const matches = topicMatches || lesson.textContent.toLowerCase().includes(query);
+        lesson.hidden = !matches;
+        if (matches) visibleLessons += 1;
+      });
+      const showTopic = topicMatches || visibleLessons > 0;
+      topic.hidden = !showTopic;
+      if (showTopic) visibleTopics += 1;
+      if (query && showTopic) topic.open = true;
+    });
+    empty.hidden = visibleTopics > 0;
+  });
+});
+</script>
+<section class="level2" id="completion-standard">
 <h2 class="anchored" data-anchor-id="completion-standard">Completion standard</h2>
 <p>You have completed <strong>Deep Learning</strong> when you can explain each topic, reproduce its core workflow, pass the notebook checks, defend the main tradeoffs, and combine the lessons into one reviewable portfolio project. Use the practice tasks as evidence rather than treating page reading alone as completion.</p>
-
-
 </section>
-
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
@@ -881,21 +919,17 @@ A complete notebook-first syllabus organized from foundations to applied deliver
   </script>
 </div> <!-- /content -->
 <footer class="footer">
-  <div class="nav-footer">
-    <div class="nav-footer-left">
+<div class="nav-footer">
+<div class="nav-footer-left">
 <p>© 2026 Edukron Notes</p>
-</div>   
-    <div class="nav-footer-center">
-      &nbsp;
+</div>
+<div class="nav-footer-center">
+       
     </div>
-    <div class="nav-footer-right">
+<div class="nav-footer-right">
 <p>Notebook courses for AI, data engineering, and DevOps</p>
 </div>
-  </div>
+</div>
 </footer>
-
-
-
-
 <script src="../../site_libs/quarto-html/zenscroll-min.js"></script>
 </body></html>
